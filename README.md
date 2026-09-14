@@ -39,6 +39,43 @@ cd vscode-language-pack-he
 npx @vscode/vsce package
 ```
 
+## עדכון לגרסת VS Code חדשה
+
+מחרוזות המקור נשמרות במאגר תחת `source/en/` כתמונת מצב של הגרסה שמולה תורגם.
+בזכותה אפשר לדעת בדיוק מה נוסף, מה נמחק, ומה **שינה נוסח באנגלית** ולכן התרגום
+הקיים לו כבר לא מדויק — במקום לנחש.
+
+```bash
+# 1. בדיקת מצב מול הבסיס הנוכחי
+node scripts/vsloc.mjs status
+
+# 2. אחרי התקנת גרסת VS Code חדשה — שליפת מחרוזות המקור שלה
+node scripts/vsloc.mjs extract --out source/en.new
+
+# 3. מה השתנה, והפקת רשימת המחרוזות לתרגום
+node scripts/vsloc.mjs diff --to source/en.new --json todo.json
+
+# 4. אחרי מילוי התרגומים ב-todo.json — מיזוג, ניקוי מיושנים ועדכון גרסה
+node scripts/vsloc.mjs apply --to source/en.new --translated todo.json
+```
+
+`todo.json` מגיע עם ההקשר המלא לכל מחרוזת: `en` הנוסח החדש, `was` הנוסח הקודם,
+`current` התרגום העברי הקיים, ו-`comment` ההערה שהמפתחים השאירו למתרגם.
+
+### מאיפה מגיעות מחרוזות המקור
+
+| מקטע | מקור | הערה |
+|---|---|---|
+| מחרוזות ליבה | `Visual Studio Code.app/Contents/Resources/app/out/nls.metadata.json` | מקומי, תואם במדויק לגרסה המותקנת |
+| הרחבות — `package` | `.../app/extensions/<name>/package.nls.json` | מקומי |
+| הרחבות — `bundle` | [vscode-loc](https://github.com/microsoft/vscode-loc) | דורש רשת |
+
+מקטע ה-`bundle` אינו נשלח בהתקנה: מחרוזות `vscode.l10n.t()` נשארות inline בתוך
+ה-JS המקומפל, וקובץ `bundle.l10n.json` נוצר רק בזמן build. אבל ב-`vscode.l10n.t()`
+**המפתח הוא מחרוזת המקור האנגלית עצמה**, ולכן אפשר לגזור אותן ממפתחות של כל חבילת
+שפה ב-vscode-loc — הערכים המתורגמים שם נזרקים. `--ref-lang` קובע מאיזו חבילה
+(ברירת מחדל `ru`). שים לב ש-vscode-loc מפגר לרוב אחרי גרסת ה-Stable האחרונה.
+
 ## תרומה
 
 להערות ולשיפורי תרגום, יש לפתוח Issue במאגר
