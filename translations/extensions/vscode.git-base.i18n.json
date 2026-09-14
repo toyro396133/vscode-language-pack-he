@@ -8,23 +8,23 @@
 	],
 	"version": "1.0.0",
 	"contents": {
+		"package": {
+			"displayName": "בסיס Git",
+			"description": "תרומות ובוררים סטטיים של Git.",
+			"command.api.getRemoteSources": "קבל מקורות מרוחקים"
+		},
 		"bundle": {
-			"Branch name": "שם ענף",
+			"Branch name": "שם הענף",
 			"Choose a URL to clone from.": "בחר כתובת URL לשכפול ממנה.",
 			"No remote repositories found.": "לא נמצאו מאגרים מרוחקים.",
-			"Provide repository URL": "ספק כתובת URL של מאגר",
-			"Provide repository URL or pick a repository source.": "ספק כתובת URL של מאגר או בחר מקור מאגר.",
+			"Provide repository URL": "הזן כתובת URL של מאגר",
+			"Provide repository URL or pick a repository source.": "הזן כתובת URL של מאגר או בחר מקור מאגר.",
 			"Repository name": "שם מאגר",
-			"Repository name (type to search)": "שם מאגר (הקלד לחיפוש)",
-			"URL": "כתובת אתר",
-			"recently opened": "נפתח לאחרונה",
+			"Repository name (type to search)": "שם מאגר (הקלד כדי לחפש)",
+			"URL": "URL",
+			"recently opened": "נפתחו לאחרונה",
 			"remote sources": "מקורות מרוחקים",
-			"{0} Error: {1}": "שגיאת {0}: {1}"
-		},
-		"package": {
-			"command.api.getRemoteSources": "קבל מקורות מרוחקים",
-			"description": "תרומות ובחירה סטטיות של Git.",
-			"displayName": "בסיס Git"
+			"{0} Error: {1}": "{0} שגיאה: {1}"
 		}
 	}
 }
