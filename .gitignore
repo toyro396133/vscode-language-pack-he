@@ -1,0 +1,3 @@
+# תוצרי בנייה
+*.vsix
+node_modules/
