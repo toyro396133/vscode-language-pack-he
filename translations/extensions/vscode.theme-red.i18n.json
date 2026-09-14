@@ -9,9 +9,9 @@
 	"version": "1.0.0",
 	"contents": {
 		"package": {
-			"description": "ערכת נושא אדומה עבור Visual Studio Code",
-			"displayName": "ערכת נושא אדומה",
-			"themeLabel": "אדום"
+			"displayName": "ערכת נושא Red",
+			"description": "ערכת נושא Red עבור Visual Studio Code",
+			"themeLabel": "Red"
 		}
 	}
 }

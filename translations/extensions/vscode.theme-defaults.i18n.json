@@ -9,17 +9,19 @@
 	"version": "1.0.0",
 	"contents": {
 		"package": {
-			"darkColorThemeLabel": "כהה (Visual Studio)",
-			"darkModernThemeLabel": "כהה מודרני",
-			"darkPlusColorThemeLabel": "כהה+",
-			"description": "ערכות הנושא הבהירות והכהות המוגדרות כברירת מחדל של Visual Studio",
 			"displayName": "ערכות נושא ברירת מחדל",
-			"hcColorThemeLabel": "ניגודיות גבוהה כהה",
-			"lightColorThemeLabel": "בהיר (Visual Studio)",
-			"lightHcColorThemeLabel": "ניגודיות גבוהה בהירה",
+			"description": "ערכות הנושא הבהירה והכהה המוגדרות כברירת מחדל של Visual Studio",
+			"light2026ThemeLabel": "Light 2026",
+			"dark2026ThemeLabel": "Dark 2026",
+			"darkPlusColorThemeLabel": "Dark+",
+			"darkModernThemeLabel": "כהה מודרני",
+			"lightPlusColorThemeLabel": "Light+",
 			"lightModernThemeLabel": "בהיר מודרני",
-			"lightPlusColorThemeLabel": "בהיר+",
-			"minimalIconThemeLabel": "מינימלי (Visual Studio Code)"
+			"darkColorThemeLabel": "Dark (Visual Studio)",
+			"lightColorThemeLabel": "Light (Visual Studio)",
+			"hcColorThemeLabel": "ניגודיות גבוהה כהה",
+			"lightHcColorThemeLabel": "ניגודיות גבוהה בהירה",
+			"minimalIconThemeLabel": "Minimal (Visual Studio Code)"
 		}
 	}
 }

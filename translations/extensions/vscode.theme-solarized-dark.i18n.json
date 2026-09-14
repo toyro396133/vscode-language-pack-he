@@ -9,8 +9,8 @@
 	"version": "1.0.0",
 	"contents": {
 		"package": {
-			"description": "ערכת נושא Solarized Dark עבור Visual Studio Code",
 			"displayName": "ערכת נושא Solarized Dark",
+			"description": "ערכת נושא Solarized Dark עבור Visual Studio Code",
 			"themeLabel": "Solarized Dark"
 		}
 	}

@@ -9,8 +9,8 @@
 	"version": "1.0.0",
 	"contents": {
 		"package": {
-			"description": "ערכת עיצוב לסמלי קבצים מסמלי הקבצים של Seti UI",
-			"displayName": "ערכת עיצוב סמלי קבצים של Seti",
+			"displayName": "ערכת נושא לסמלי קבצים Seti",
+			"description": "ערכת נושא לסמלי קבצים המבוססת על סמלי הקבצים של ממשק Seti",
 			"themeLabel": "Seti (Visual Studio Code)"
 		}
 	}

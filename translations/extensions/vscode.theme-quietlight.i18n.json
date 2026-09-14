@@ -9,9 +9,9 @@
 	"version": "1.0.0",
 	"contents": {
 		"package": {
-			"description": "ערכת נושא בהירה ושקטה עבור Visual Studio Code",
-			"displayName": "ערכת נושא בהירה ושקטה",
-			"themeLabel": "בהיר שקט"
+			"displayName": "ערכת נושא Quiet Light",
+			"description": "ערכת נושא Quiet Light עבור Visual Studio Code",
+			"themeLabel": "Quiet Light"
 		}
 	}
 }
