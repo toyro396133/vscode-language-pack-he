@@ -9,8 +9,8 @@
 	"version": "1.0.0",
 	"contents": {
 		"package": {
-			"description": "מספק קטעי קוד, הדגשת תחביר, התאמת סוגריים וקיפול בקבצי Visual Basic.",
-			"displayName": "יסודות שפת Visual Basic"
+			"displayName": "יסודות שפת Visual Basic",
+			"description": "מספק קטעי קוד, הדגשת תחביר, התאמת סוגריים וקיפול בקובצי Visual Basic."
 		}
 	}
 }

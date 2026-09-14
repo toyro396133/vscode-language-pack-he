@@ -9,8 +9,8 @@
 	"version": "1.0.0",
 	"contents": {
 		"package": {
-			"description": "מספק קטעי קוד, הדגשת תחביר, התאמת סוגריים וקיפול בקבצי CoffeeScript.",
-			"displayName": "יסודות שפת CoffeeScript"
+			"displayName": "יסודות שפת CoffeeScript",
+			"description": "מספק קטעי קוד, הדגשת תחביר, התאמת סוגריים וקיפול בקובצי CoffeeScript."
 		}
 	}
 }

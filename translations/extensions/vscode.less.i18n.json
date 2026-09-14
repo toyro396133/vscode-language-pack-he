@@ -9,8 +9,8 @@
 	"version": "1.0.0",
 	"contents": {
 		"package": {
-			"description": "מספק הדגשת תחביר, התאמת סוגריים וקיפול בקבצי LESS.",
-			"displayName": "יסודות שפת Less"
+			"displayName": "יסודות שפת Less",
+			"description": "מספק הדגשת תחביר, התאמת סוגריים וקיפול בקובצי Less."
 		}
 	}
 }

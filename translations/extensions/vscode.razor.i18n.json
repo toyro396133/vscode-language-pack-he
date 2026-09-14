@@ -9,8 +9,8 @@
 	"version": "1.0.0",
 	"contents": {
 		"package": {
-			"description": "מספק הדגשת תחביר, התאמת סוגריים וקיפול בקבצי Razor.",
-			"displayName": "יסודות שפת Razor"
+			"displayName": "יסודות שפת Razor",
+			"description": "מספק הדגשת תחביר, התאמת סוגריים וקיפול בקובצי Razor."
 		}
 	}
 }

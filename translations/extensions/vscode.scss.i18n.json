@@ -9,8 +9,8 @@
 	"version": "1.0.0",
 	"contents": {
 		"package": {
-			"description": "מספק הדגשת תחביר, התאמת סוגריים וקיפול בקבצי SCSS.",
-			"displayName": "יסודות שפת SCSS"
+			"displayName": "יסודות שפת SCSS",
+			"description": "מספק הדגשת תחביר, התאמת סוגריים וקיפול בקובצי SCSS."
 		}
 	}
 }

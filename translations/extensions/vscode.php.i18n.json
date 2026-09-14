@@ -9,8 +9,8 @@
 	"version": "1.0.0",
 	"contents": {
 		"package": {
-			"description": "מספק הדגשת תחביר והתאמת סוגריים עבור קבצי PHP.",
-			"displayName": "יסודות שפת PHP"
+			"displayName": "יסודות שפת PHP",
+			"description": "מספק הדגשת תחביר והתאמת סוגריים עבור קובצי PHP."
 		}
 	}
 }

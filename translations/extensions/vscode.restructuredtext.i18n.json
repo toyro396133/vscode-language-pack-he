@@ -9,8 +9,8 @@
 	"version": "1.0.0",
 	"contents": {
 		"package": {
-			"description": "מספק הדגשת תחביר בקבצי reStructuredText.",
-			"displayName": "יסודות שפת reStructuredText"
+			"displayName": "יסודות שפת reStructuredText",
+			"description": "מספק הדגשת תחביר בקובצי reStructuredText."
 		}
 	}
 }

@@ -9,8 +9,8 @@
 	"version": "1.0.0",
 	"contents": {
 		"package": {
-			"description": "מספק הדגשת תחביר והתאמת סוגריים בקבצי Clojure.",
-			"displayName": "יסודות שפת Clojure"
+			"displayName": "יסודות שפת Clojure",
+			"description": "מספק הדגשת תחביר והתאמת סוגריים בקובצי Clojure."
 		}
 	}
 }

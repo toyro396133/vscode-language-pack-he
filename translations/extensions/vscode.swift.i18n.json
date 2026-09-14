@@ -9,8 +9,8 @@
 	"version": "1.0.0",
 	"contents": {
 		"package": {
-			"description": "מספק קטעי קוד, הדגשת תחביר והתאמת סוגריים בקבצי Swift.",
-			"displayName": "יסודות שפת Swift"
+			"displayName": "יסודות שפת Swift",
+			"description": "מספק קטעי קוד, הדגשת תחביר והתאמת סוגריים בקובצי Swift."
 		}
 	}
 }

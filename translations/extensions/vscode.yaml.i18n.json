@@ -9,8 +9,8 @@
 	"version": "1.0.0",
 	"contents": {
 		"package": {
-			"description": "מספק הדגשת תחביר והתאמת סוגריים בקבצי YAML.",
-			"displayName": "יסודות שפת YAML"
+			"displayName": "יסודות שפת YAML",
+			"description": "מספק הדגשת תחביר והתאמת סוגריים בקובצי YAML."
 		}
 	}
 }

@@ -9,8 +9,8 @@
 	"version": "1.0.0",
 	"contents": {
 		"package": {
-			"description": "מספק קטעי קוד, הדגשת תחביר, התאמת סוגריים וקיפול בקבצי Java.",
-			"displayName": "יסודות שפת Java"
+			"displayName": "יסודות שפת Java",
+			"description": "מספק קטעי קוד, הדגשת תחביר, התאמת סוגריים וקיפול בקובצי Java."
 		}
 	}
 }

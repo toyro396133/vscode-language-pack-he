@@ -9,8 +9,8 @@
 	"version": "1.0.0",
 	"contents": {
 		"package": {
-			"description": "מספק הדגשת תחביר והתאמת סוגריים בקבצי Ruby.",
-			"displayName": "יסודות שפת Ruby"
+			"displayName": "יסודות שפת Ruby",
+			"description": "מספק הדגשת תחביר והתאמת סוגריים בקובצי Ruby."
 		}
 	}
 }

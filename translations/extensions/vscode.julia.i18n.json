@@ -9,8 +9,8 @@
 	"version": "1.0.0",
 	"contents": {
 		"package": {
-			"description": "מספק הדגשת תחביר והתאמת סוגריים בקבצי Julia.",
-			"displayName": "יסודות שפת Julia"
+			"displayName": "יסודות שפת Julia",
+			"description": "מספק הדגשת תחביר והתאמת סוגריים בקובצי Julia."
 		}
 	}
 }

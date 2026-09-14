@@ -9,8 +9,8 @@
 	"version": "1.0.0",
 	"contents": {
 		"package": {
-			"description": "מספק הדגשת תחביר והתאמת סוגריים בקבצי Make.",
-			"displayName": "יסודות שפת Make"
+			"displayName": "יסודות שפת Make",
+			"description": "מספק הדגשת תחביר והתאמת סוגריים בקובצי Make."
 		}
 	}
 }

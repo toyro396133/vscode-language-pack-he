@@ -9,10 +9,10 @@
 	"version": "1.0.0",
 	"contents": {
 		"package": {
-			"config.markdown.math.enabled": "אפשר/השבת רינדור מתמטיקה בתצוגה המקדימה המובנית של Markdown.",
-			"config.markdown.math.macros": "אוסף של מאקרואים מותאמים אישית. כל מאקרו הוא זוג מפתח-ערך שבו המפתח הוא שם פקודה חדש והערך הוא הרחבת המאקרו.",
-			"description": "מוסיף תמיכה במתמטיקה ל-Markdown במחברות.",
-			"displayName": "Markdown Math"
+			"displayName": "מתמטיקה ב-Markdown",
+			"description": "מוסיף תמיכה בנוסחאות מתמטיות ל-Markdown במחברות.",
+			"config.markdown.math.enabled": "הפעלה/השבתה של רינדור נוסחאות מתמטיות בתצוגה המקדימה המובנית של Markdown.",
+			"config.markdown.math.macros": "אוסף של מאקרו מותאמים אישית. כל מאקרו הוא זוג מפתח-ערך, כאשר המפתח הוא שם פקודה חדש והערך הוא ההרחבה של המאקרו."
 		}
 	}
 }

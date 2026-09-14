@@ -9,8 +9,8 @@
 	"version": "1.0.0",
 	"contents": {
 		"package": {
-			"description": "מספק הדגשת תחביר עבור קבצים עם סיומת .log.",
-			"displayName": "יומן"
+			"displayName": "יומן",
+			"description": "מספק הדגשת תחביר לקבצים בעלי הסיומת .log."
 		}
 	}
 }

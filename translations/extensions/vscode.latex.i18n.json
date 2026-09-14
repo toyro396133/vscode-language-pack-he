@@ -9,8 +9,8 @@
 	"version": "1.0.0",
 	"contents": {
 		"package": {
-			"description": "מספק הדגשת תחביר והתאמת סוגריים עבור TeX, LaTeX ו-BibTeX.",
-			"displayName": "יסודות שפת LaTeX"
+			"displayName": "יסודות שפת LaTeX",
+			"description": "מספק הדגשת תחביר והתאמת סוגריים עבור TeX, LaTeX ו-BibTeX."
 		}
 	}
 }

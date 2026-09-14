@@ -9,8 +9,8 @@
 	"version": "1.0.0",
 	"contents": {
 		"package": {
-			"description": "הדגשת תחביר למסמכי הנחיות והוראות.",
-			"displayName": "יסודות שפת הנחיה"
+			"displayName": "יסודות שפת Prompt",
+			"description": "הדגשת תחביר עבור מסמכי Prompt ו-Instructions."
 		}
 	}
 }

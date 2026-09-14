@@ -9,8 +9,8 @@
 	"version": "1.0.0",
 	"contents": {
 		"package": {
-			"description": "מספק הדגשת תחביר והתאמת סוגריים עבור קבצי CSS, LESS ו-SCSS.",
-			"displayName": "יסודות שפת CSS"
+			"displayName": "יסודות שפת CSS",
+			"description": "מספק הדגשת תחביר והתאמת סוגריים לקובצי CSS, LESS ו-SCSS."
 		}
 	}
 }

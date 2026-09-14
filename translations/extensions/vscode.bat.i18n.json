@@ -9,8 +9,8 @@
 	"version": "1.0.0",
 	"contents": {
 		"package": {
-			"description": "מספק גזירים, הדגשת תחביר, התאמת סוגריים וקיפול בקבצי אצווה של Windows.",
-			"displayName": "יסודות שפת Bat של Windows"
+			"displayName": "יסודות שפת Bat של Windows",
+			"description": "מספק קטעי קוד, הדגשת תחביר, התאמת סוגריים וקיפול בקובצי אצווה של Windows."
 		}
 	}
 }

@@ -9,8 +9,8 @@
 	"version": "1.0.0",
 	"contents": {
 		"package": {
-			"description": "מספק הדגשת תחביר והתאמת סוגריים בקבצי Handlebars.",
-			"displayName": "יסודות שפת Handlebars"
+			"displayName": "יסודות שפת Handlebars",
+			"description": "מספק הדגשת תחביר והתאמת סוגריים בקובצי Handlebars."
 		}
 	}
 }

@@ -9,8 +9,8 @@
 	"version": "1.0.0",
 	"contents": {
 		"package": {
-			"description": "מספק הדגשת תחביר והתאמת סוגריים בקבצי Rust.",
-			"displayName": "יסודות שפת Rust"
+			"displayName": "יסודות שפת Rust",
+			"description": "מספק הדגשת תחביר והתאמת סוגריים בקובצי Rust."
 		}
 	}
 }

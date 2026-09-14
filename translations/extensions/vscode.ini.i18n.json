@@ -9,8 +9,8 @@
 	"version": "1.0.0",
 	"contents": {
 		"package": {
-			"description": "מספק הדגשת תחביר והתאמת סוגריים בקבצי Ini.",
-			"displayName": "יסודות שפת Ini"
+			"displayName": "יסודות שפת Ini",
+			"description": "מספק הדגשת תחביר והתאמת סוגריים בקובצי Ini."
 		}
 	}
 }

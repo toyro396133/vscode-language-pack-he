@@ -9,8 +9,8 @@
 	"version": "1.0.0",
 	"contents": {
 		"package": {
-			"description": "מספק הדגשת תחביר והתאמת סוגריים בקבצי Shaderlab.",
-			"displayName": "יסודות שפת Shaderlab"
+			"displayName": "יסודות שפת Shaderlab",
+			"description": "מספק הדגשת תחביר והתאמת סוגריים בקובצי Shaderlab."
 		}
 	}
 }

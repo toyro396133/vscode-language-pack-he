@@ -9,8 +9,8 @@
 	"version": "1.0.0",
 	"contents": {
 		"package": {
-			"description": "מספק הדגשת תחביר והתאמת סוגריים בקבצי Pug.",
-			"displayName": "יסודות שפת Pug"
+			"displayName": "יסודות שפת Pug",
+			"description": "מספק הדגשת תחביר והתאמת סוגריים בקובצי Pug."
 		}
 	}
 }

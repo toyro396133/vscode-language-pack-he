@@ -9,8 +9,8 @@
 	"version": "1.0.0",
 	"contents": {
 		"package": {
-			"description": "מספק קטעי קוד והדגשת תחביר עבור Markdown.",
-			"displayName": "יסודות שפת Markdown"
+			"displayName": "יסודות שפת Markdown",
+			"description": "מספק קטעי קוד והדגשת תחביר עבור Markdown."
 		}
 	}
 }

@@ -9,8 +9,8 @@
 	"version": "1.0.0",
 	"contents": {
 		"package": {
-			"description": "מספק קטעי קוד, הדגשת תחביר, התאמת סוגריים וקיפול בקבצי Powershell.",
-			"displayName": "יסודות שפת Powershell"
+			"displayName": "יסודות שפת Powershell",
+			"description": "מספק קטעי קוד, הדגשת תחביר, התאמת סוגריים וקיפול בקובצי Powershell."
 		}
 	}
 }

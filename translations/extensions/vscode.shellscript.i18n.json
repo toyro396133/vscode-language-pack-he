@@ -9,8 +9,8 @@
 	"version": "1.0.0",
 	"contents": {
 		"package": {
-			"description": "מספק הדגשת תחביר והתאמת סוגריים בקבצי Shell Script.",
-			"displayName": "יסודות שפת Shell Script"
+			"displayName": "יסודות שפת Shell Script",
+			"description": "מספק הדגשת תחביר והתאמת סוגריים בקובצי Shell Script."
 		}
 	}
 }

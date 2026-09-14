@@ -9,8 +9,8 @@
 	"version": "1.0.0",
 	"contents": {
 		"package": {
-			"description": "מספק הדגשת תחביר והתאמת סוגריים בקבצי JSON.",
-			"displayName": "יסודות שפת JSON"
+			"displayName": "יסודות שפת JSON",
+			"description": "מספק הדגשת תחביר והתאמת סוגריים בקובצי JSON."
 		}
 	}
 }
