@@ -1,0 +1,86 @@
+name: Build & Release VSIX
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install vsce
+        run: npm install -g @vscode/vsce
+
+      - name: Validate translation files
+        run: |
+          python3 - <<'PY'
+          import json, sys, pathlib
+
+          root = pathlib.Path('.')
+          errors = []
+
+          # כל קובץ JSON במאגר חייב להיות תקין
+          for path in sorted(root.glob('translations/**/*.json')):
+              try:
+                  json.loads(path.read_text(encoding='utf-8'))
+              except Exception as exc:
+                  errors.append(f'{path}: JSON לא תקין — {exc}')
+
+          # כל נתיב שרשום במניפסט חייב להתקיים
+          pkg = json.loads(pathlib.Path('package.json').read_text(encoding='utf-8'))
+          entries = 0
+          for loc in pkg.get('contributes', {}).get('localizations', []):
+              for tr in loc.get('translations', []):
+                  entries += 1
+                  if not (root / tr['path']).is_file():
+                      errors.append(f"{tr['id']}: הקובץ {tr['path']} חסר")
+
+          if errors:
+              print('\n'.join(errors), file=sys.stderr)
+              sys.exit(1)
+          print(f'OK — {entries} קבצי תרגום רשומים, כולם קיימים ותקינים')
+          PY
+
+      - name: Resolve version and tag
+        id: meta
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+          TAG="v${VERSION}"
+          # גרסה זהה יכולה להידחף בכמה קומיטים — משייכים לתג ייחודי
+          if git rev-parse -q --verify "refs/tags/${TAG}" >/dev/null; then
+            TAG="v${VERSION}-build.${GITHUB_RUN_NUMBER}"
+          fi
+          echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
+          echo "tag=${TAG}" >> "$GITHUB_OUTPUT"
+          echo "vsix=hebrew-ui-translation-amaarets-${VERSION}.vsix" >> "$GITHUB_OUTPUT"
+
+      - name: Package VSIX
+        run: vsce package --out "${{ steps.meta.outputs.vsix }}"
+
+      - name: Create release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "${{ steps.meta.outputs.tag }}" \
+            "${{ steps.meta.outputs.vsix }}" \
+            --target "${GITHUB_SHA}" \
+            --title "${{ steps.meta.outputs.tag }}" \
+            --generate-notes
