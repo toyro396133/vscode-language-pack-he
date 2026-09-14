@@ -1,0 +1,7 @@
+{
+	"package": {
+		"displayName": "F# Language Basics",
+		"description": "Provides snippets, syntax highlighting, bracket matching and folding in F# files."
+	},
+	"bundle": {}
+}

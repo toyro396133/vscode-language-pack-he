@@ -1,0 +1,63 @@
+{
+	"package": {
+		"displayName": "Merge Conflict",
+		"description": "Highlighting and commands for inline merge conflicts.",
+		"command.category": "Merge Conflict",
+		"command.accept.all-current": "Accept All Current",
+		"command.accept.all-incoming": "Accept All Incoming",
+		"command.accept.all-both": "Accept All Both",
+		"command.accept.current": "Accept Current",
+		"command.accept.incoming": "Accept Incoming",
+		"command.accept.selection": "Accept Selection",
+		"command.accept.both": "Accept Both",
+		"command.next": "Next Conflict",
+		"command.previous": "Previous Conflict",
+		"command.compare": "Compare Current Conflict",
+		"config.title": "Merge Conflict",
+		"config.autoNavigateNextConflictEnabled": "Whether to automatically navigate to the next merge conflict after resolving a merge conflict.",
+		"config.codeLensEnabled": "Create a CodeLens for merge conflict blocks within editor.",
+		"config.decoratorsEnabled": "Create decorators for merge conflict blocks within editor.",
+		"config.diffViewPosition": "Controls where the diff view should be opened when comparing changes in merge conflicts.",
+		"config.diffViewPosition.current": "Open the diff view in the current editor group.",
+		"config.diffViewPosition.beside": "Open the diff view next to the current editor group.",
+		"config.diffViewPosition.below": "Open the diff view below the current editor group."
+	},
+	"bundle": {
+		"(Current Change)": {
+			"en": "(Current Change)"
+		},
+		"(Incoming Change)": {
+			"en": "(Incoming Change)"
+		},
+		"Accept Both Changes": {
+			"en": "Accept Both Changes"
+		},
+		"Accept Current Change": {
+			"en": "Accept Current Change"
+		},
+		"Accept Incoming Change": {
+			"en": "Accept Incoming Change"
+		},
+		"Compare Changes": {
+			"en": "Compare Changes"
+		},
+		"Editor cursor is not within a merge conflict": {
+			"en": "Editor cursor is not within a merge conflict"
+		},
+		"Editor cursor is within the common ancestors block, please move it to either the \"current\" or \"incoming\" block": {
+			"en": "Editor cursor is within the common ancestors block, please move it to either the \"current\" or \"incoming\" block"
+		},
+		"Editor cursor is within the merge conflict splitter, please move it to either the \"current\" or \"incoming\" block": {
+			"en": "Editor cursor is within the merge conflict splitter, please move it to either the \"current\" or \"incoming\" block"
+		},
+		"No merge conflicts found in this file": {
+			"en": "No merge conflicts found in this file"
+		},
+		"No other merge conflicts within this file": {
+			"en": "No other merge conflicts within this file"
+		},
+		"{0}: Current Changes ↔ Incoming Changes": {
+			"en": "{0}: Current Changes ↔ Incoming Changes"
+		}
+	}
+}

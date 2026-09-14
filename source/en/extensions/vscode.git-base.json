@@ -1,0 +1,42 @@
+{
+	"package": {
+		"displayName": "Git Base",
+		"description": "Git static contributions and pickers.",
+		"command.api.getRemoteSources": "Get Remote Sources"
+	},
+	"bundle": {
+		"Branch name": {
+			"en": "Branch name"
+		},
+		"Choose a URL to clone from.": {
+			"en": "Choose a URL to clone from."
+		},
+		"No remote repositories found.": {
+			"en": "No remote repositories found."
+		},
+		"Provide repository URL": {
+			"en": "Provide repository URL"
+		},
+		"Provide repository URL or pick a repository source.": {
+			"en": "Provide repository URL or pick a repository source."
+		},
+		"Repository name": {
+			"en": "Repository name"
+		},
+		"Repository name (type to search)": {
+			"en": "Repository name (type to search)"
+		},
+		"URL": {
+			"en": "URL"
+		},
+		"recently opened": {
+			"en": "recently opened"
+		},
+		"remote sources": {
+			"en": "remote sources"
+		},
+		"{0} Error: {1}": {
+			"en": "{0} Error: {1}"
+		}
+	}
+}

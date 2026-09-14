@@ -1,0 +1,11 @@
+{
+	"vscode": "1.137.0",
+	"refLang": "ru",
+	"extractedAt": "2026-09-14",
+	"counts": {
+		"modules": 1962,
+		"core": 24243,
+		"extensions": 93,
+		"bundle": 1942
+	}
+}

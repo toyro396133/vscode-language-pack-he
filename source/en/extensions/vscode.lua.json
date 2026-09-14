@@ -1,0 +1,7 @@
+{
+	"package": {
+		"displayName": "Lua Language Basics",
+		"description": "Provides syntax highlighting and bracket matching in Lua files."
+	},
+	"bundle": {}
+}

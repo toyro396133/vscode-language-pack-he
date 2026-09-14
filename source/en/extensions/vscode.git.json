@@ -1,0 +1,1867 @@
+{
+	"package": {
+		"displayName": "Git",
+		"description": "Git SCM Integration",
+		"command.continueInLocalClone": "Clone Repository Locally and Open on Desktop...",
+		"command.continueInLocalClone.qualifiedName": "Continue Working in New Local Clone",
+		"command.clone": "Clone",
+		"command.cloneRecursive": "Clone (Recursive)",
+		"command.init": "Initialize Repository",
+		"command.openRepository": "Open Repository",
+		"command.reopenClosedRepositories": "Reopen Closed Repositories...",
+		"command.close": "Close Repository",
+		"command.closeOtherRepositories": "Close Other Repositories",
+		"command.openWorktree": "Open Worktree in Current Window",
+		"command.openWorktree2": "Open",
+		"command.openWorktreeInNewWindow": "Open Worktree in New Window",
+		"command.openWorktreeInNewWindow2": "Open in New Window",
+		"command.refresh": "Refresh",
+		"command.compareWithWorkspace": "Compare with Workspace",
+		"command.openChange": "Open Changes",
+		"command.openAllChanges": "Open All Changes",
+		"command.openFile": "Open File",
+		"command.openHEADFile": "Open File (HEAD)",
+		"command.stage": "Stage Changes",
+		"command.stageAll": "Stage All Changes",
+		"command.stageAllTracked": "Stage All Tracked Changes",
+		"command.stageAllUntracked": "Stage All Untracked Changes",
+		"command.stageAllMerge": "Stage All Merge Changes",
+		"command.stageSelectedRanges": "Stage Selected Ranges",
+		"command.revertSelectedRanges": "Revert Selected Ranges",
+		"command.stageChange": "Stage Change",
+		"command.stageSelection": "Stage Selection",
+		"command.stageBlock": "Stage Block",
+		"command.revertChange": "Revert Change",
+		"command.unstage": "Unstage Changes",
+		"command.unstageAll": "Unstage All Changes",
+		"command.unstageChange": "Unstage Change",
+		"command.unstageSelectedRanges": "Unstage Selected Ranges",
+		"command.rename": "Rename",
+		"command.delete": "Delete",
+		"command.clean": "Discard Changes",
+		"command.cleanAll": "Discard All Changes",
+		"command.cleanAllTracked": "Discard All Tracked Changes",
+		"command.cleanAllUntracked": "Discard All Untracked Changes",
+		"command.closeAllDiffEditors": "Close All Diff Editors",
+		"command.closeAllUnmodifiedEditors": "Close All Unmodified Editors",
+		"command.commit": "Commit",
+		"command.commitAmend": "Commit (Amend)",
+		"command.commitSigned": "Commit (Signed Off)",
+		"command.commitStaged": "Commit Staged",
+		"command.commitEmpty": "Commit Empty",
+		"command.commitStagedSigned": "Commit Staged (Signed Off)",
+		"command.commitStagedAmend": "Commit Staged (Amend)",
+		"command.commitAll": "Commit All",
+		"command.commitAllSigned": "Commit All (Signed Off)",
+		"command.commitAllAmend": "Commit All (Amend)",
+		"command.commitNoVerify": "Commit (No Verify)",
+		"command.commitStagedNoVerify": "Commit Staged (No Verify)",
+		"command.commitEmptyNoVerify": "Commit Empty (No Verify)",
+		"command.commitStagedSignedNoVerify": "Commit Staged (Signed Off, No Verify)",
+		"command.commitAmendNoVerify": "Commit (Amend, No Verify)",
+		"command.commitSignedNoVerify": "Commit (Signed Off, No Verify)",
+		"command.commitStagedAmendNoVerify": "Commit Staged (Amend, No Verify)",
+		"command.commitAllNoVerify": "Commit All (No Verify)",
+		"command.commitAllSignedNoVerify": "Commit All (Signed Off, No Verify)",
+		"command.commitAllAmendNoVerify": "Commit All (Amend, No Verify)",
+		"command.commitMessageAccept": "Commit",
+		"command.commitMessageDiscard": "Cancel",
+		"command.restoreCommitTemplate": "Restore Commit Template",
+		"command.undoCommit": "Undo Last Commit",
+		"command.checkout": "Checkout to...",
+		"command.checkoutDetached": "Checkout to (Detached)...",
+		"command.branch": "Create Branch...",
+		"command.branchFrom": "Create Branch From...",
+		"command.deleteBranch": "Delete Branch...",
+		"command.deleteRemoteBranch": "Delete Remote Branch...",
+		"command.renameBranch": "Rename Branch...",
+		"command.cherryPick": "Cherry Pick...",
+		"command.cherryPickAbort": "Abort Cherry Pick",
+		"command.merge": "Merge...",
+		"command.merge2": "Merge",
+		"command.mergeAbort": "Abort Merge",
+		"command.rebase": "Rebase Branch...",
+		"command.rebase2": "Rebase",
+		"command.createFrom": "Create from...",
+		"command.createTag": "Create Tag...",
+		"command.deleteTag": "Delete Tag...",
+		"command.migrateWorktreeChanges": "Migrate Worktree Changes...",
+		"command.createWorktree": "Create Worktree...",
+		"command.deleteWorktree": "Delete Worktree...",
+		"command.deleteWorktree2": "Delete Worktree",
+		"command.deleteRemoteTag": "Delete Remote Tag...",
+		"command.fetch": "Fetch",
+		"command.fetchPrune": "Fetch (Prune)",
+		"command.fetchAll": "Fetch From All Remotes",
+		"command.pull": "Pull",
+		"command.pullRebase": "Pull (Rebase)",
+		"command.pullFrom": "Pull from...",
+		"command.push": "Push",
+		"command.pushForce": "Push (Force)",
+		"command.pushTo": "Push to...",
+		"command.pushToForce": "Push to... (Force)",
+		"command.pushFollowTags": "Push (Follow Tags)",
+		"command.pushFollowTagsForce": "Push (Follow Tags, Force)",
+		"command.pushTags": "Push Tags",
+		"command.addRemote": "Add Remote...",
+		"command.removeRemote": "Remove Remote",
+		"command.sync": "Sync",
+		"command.syncRebase": "Sync (Rebase)",
+		"command.publish": "Publish Branch...",
+		"command.showOutput": "Show Git Output",
+		"command.ignore": "Add to .gitignore",
+		"command.revealInExplorer": "Reveal in Explorer View",
+		"command.revealFileInOS.linux": "Open Containing Folder",
+		"command.revealFileInOS.mac": "Reveal in Finder",
+		"command.revealFileInOS.windows": "Reveal in File Explorer",
+		"command.rebaseAbort": "Abort Rebase",
+		"command.stashIncludeUntracked": "Stash (Include Untracked)",
+		"command.stash": "Stash",
+		"command.stashStaged": "Stash Staged",
+		"command.stashPop": "Pop Stash...",
+		"command.stashPopLatest": "Pop Latest Stash",
+		"command.stashPopEditor": "Pop Stash",
+		"command.stashApply": "Apply Stash...",
+		"command.stashApplyLatest": "Apply Latest Stash",
+		"command.stashApplyEditor": "Apply Stash",
+		"command.stashDrop": "Drop Stash...",
+		"command.stashDropAll": "Drop All Stashes...",
+		"command.stashDropEditor": "Drop Stash",
+		"command.stashView": "View Stash...",
+		"command.stashView2": "View Stash",
+		"command.timelineOpenDiff": "Open Changes",
+		"command.timelineCopyCommitId": "Copy Commit Hash",
+		"command.timelineCopyCommitMessage": "Copy Commit Message",
+		"command.timelineSelectForCompare": "Select for Compare",
+		"command.timelineCompareWithSelected": "Compare with Selected",
+		"command.manageUnsafeRepositories": "Manage Unsafe Repositories",
+		"command.openRepositoriesInParentFolders": "Open Repositories In Parent Folders",
+		"command.viewChanges": "Open Changes",
+		"command.viewStagedChanges": "Open Staged Changes",
+		"command.viewUntrackedChanges": "Open Untracked Changes",
+		"command.viewCommit": "Open Commit",
+		"command.graphCheckout": "Checkout",
+		"command.graphCheckoutDetached": "Checkout (Detached)",
+		"command.graphCherryPick": "Cherry Pick",
+		"command.graphDeleteBranch": "Delete Branch",
+		"command.graphDeleteTag": "Delete Tag",
+		"command.graphCompareRef": "Compare with...",
+		"command.graphCompareWithMergeBase": "Compare with Merge Base",
+		"command.graphCompareWithRemote": "Compare with Remote",
+		"command.deleteRef": "Delete",
+		"command.artifactCopyCommitHash": "Copy Commit Hash",
+		"command.artifactCopyBranchName": "Copy Branch Name",
+		"command.artifactCopyTagName": "Copy Tag Name",
+		"command.artifactCopyStashName": "Copy Stash Name",
+		"command.artifactCopyWorktreePath": "Copy Worktree Path",
+		"command.blameToggleEditorDecoration": "Toggle Git Blame Editor Decoration",
+		"command.blameToggleStatusBarItem": "Toggle Git Blame Status Bar Item",
+		"command.api.getRepositories": "Get Repositories",
+		"command.api.getRepositoryState": "Get Repository State",
+		"command.api.getRemoteSources": "Get Remote Sources",
+		"command.git.acceptMerge": "Complete Merge",
+		"command.git.openMergeEditor": "Resolve in Merge Editor",
+		"command.git.runGitMerge": "Compute Conflicts With Git",
+		"command.git.runGitMergeDiff3": "Compute Conflicts With Git (Diff3)",
+		"config.enabled": "Whether Git is enabled.",
+		"config.path": "Path and filename of the git executable, e.g. `C:\\Program Files\\Git\\bin\\git.exe` (Windows). This can also be an array of string values containing multiple paths to look up.",
+		"config.autoRepositoryDetection": "Configures when repositories should be automatically detected.",
+		"config.autoRepositoryDetection.true": "Scan for both subfolders of the current opened folder and parent folders of open files.",
+		"config.autoRepositoryDetection.false": "Disable automatic repository scanning.",
+		"config.autoRepositoryDetection.subFolders": "Scan for subfolders of the currently opened folder.",
+		"config.autoRepositoryDetection.openEditors": "Scan for parent folders of open files.",
+		"config.autorefresh": "Whether auto refreshing is enabled.",
+		"config.autofetch": "When set to true, commits will automatically be fetched from the default remote of the current Git repository. Setting to `all` will fetch from all remotes.",
+		"config.autofetchPeriod": "Duration in seconds between each automatic git fetch, when `#git.autofetch#` is enabled.",
+		"config.confirmSync": "Confirm before synchronizing Git repositories.",
+		"config.confirmCommittedDelete": "Confirm before deleting committed files with Git.",
+		"config.countBadge": "Controls the Git count badge.",
+		"config.countBadge.all": "Count all changes.",
+		"config.countBadge.tracked": "Count only tracked changes.",
+		"config.countBadge.off": "Turn off counter.",
+		"config.checkoutType": "Controls what type of Git refs are listed when running `Checkout to...`.",
+		"config.checkoutType.local": "Local branches",
+		"config.checkoutType.tags": "Tags",
+		"config.checkoutType.remote": "Remote branches",
+		"config.defaultBranchName": "The name of the default branch (example: main, trunk, development) when initializing a new Git repository. When set to empty, the default branch name configured in Git will be used. **Note:** Requires Git version `2.28.0` or later.",
+		"config.branchPrefix": "Prefix used when creating a new branch.",
+		"config.branchProtection": "List of protected branches. By default, a prompt is shown before changes are committed to a protected branch. The prompt can be controlled using the `#git.branchProtectionPrompt#`  setting.",
+		"config.branchProtectionPrompt": "Controls whether a prompt is being shown before changes are committed to a protected branch.",
+		"config.branchProtectionPrompt.alwaysCommit": "Always commit changes to the protected branch.",
+		"config.branchProtectionPrompt.alwaysCommitToNewBranch": "Always commit changes to a new branch.",
+		"config.branchProtectionPrompt.alwaysPrompt": "Always prompt before changes are committed to a protected branch.",
+		"config.branchRandomNameDictionary": "List of dictionaries used for the randomly generated branch name. Each value represents the dictionary used to generate the segment of the branch name. Supported dictionaries: `adjectives`, `animals`, `colors` and `numbers`.",
+		"config.branchRandomNameDictionary.adjectives": "A random adjective",
+		"config.branchRandomNameDictionary.animals": "A random animal name",
+		"config.branchRandomNameDictionary.colors": "A random color name",
+		"config.branchRandomNameDictionary.numbers": "A random number between 100 and 999",
+		"config.branchRandomNameEnable": "Controls whether a random name is generated when creating a new branch.",
+		"config.branchValidationRegex": "A regular expression to validate new branch names.",
+		"config.branchWhitespaceChar": "The character to replace whitespace in new branch names, and to separate segments of a randomly generated branch name.",
+		"config.ignoreLegacyWarning": "Ignores the legacy Git warning.",
+		"config.ignoreMissingGitWarning": "Ignores the warning when Git is missing.",
+		"config.ignoreWindowsGit27Warning": "Ignores the warning when Git 2.25 - 2.26 is installed on Windows.",
+		"config.ignoreLimitWarning": "Ignores the warning when there are too many changes in a repository.",
+		"config.ignoreRebaseWarning": "Ignores the warning when it looks like the branch might have been rebased when pulling.",
+		"config.defaultCloneDirectory": "The default location to clone a Git repository.",
+		"config.useEditorAsCommitInput": "Controls whether a full text editor will be used to author commit messages, whenever no message is provided in the commit input box.",
+		"config.verboseCommit": "Enable verbose output when `#git.useEditorAsCommitInput#` is enabled.",
+		"config.enableSmartCommit": "Commit all changes when there are no staged changes.",
+		"config.smartCommitChanges": "Control which changes are automatically staged by Smart Commit.",
+		"config.smartCommitChanges.all": "Automatically stage all changes.",
+		"config.smartCommitChanges.tracked": "Automatically stage tracked changes only.",
+		"config.suggestSmartCommit": "Suggests to enable smart commit (commit all changes when there are no staged changes).",
+		"config.enableCommitSigning": "Enables commit signing with GPG, X.509, or SSH.",
+		"config.discardAllScope": "Controls what changes are discarded by the `Discard all changes` command. `all` discards all changes. `tracked` discards only tracked files. `prompt` shows a prompt dialog every time the action is run.",
+		"config.decorations.enabled": "Controls whether Git contributes colors and badges to the Explorer and the Open Editors view.",
+		"config.enableStatusBarSync": "Controls whether the Git Sync command appears in the status bar.",
+		"config.followTagsWhenSync": "Push all annotated tags when running the sync command.",
+		"config.replaceTagsWhenPull": "Automatically replace the local tags with the remote tags in case of a conflict when running the pull command.",
+		"config.promptToSaveFilesBeforeStash": "Controls whether Git should check for unsaved files before stashing changes.",
+		"config.promptToSaveFilesBeforeStash.always": "Check for any unsaved files.",
+		"config.promptToSaveFilesBeforeStash.staged": "Check only for unsaved staged files.",
+		"config.promptToSaveFilesBeforeStash.never": "Disable this check.",
+		"config.promptToSaveFilesBeforeCommit": "Controls whether Git should check for unsaved files before committing.",
+		"config.promptToSaveFilesBeforeCommit.always": "Check for any unsaved files.",
+		"config.promptToSaveFilesBeforeCommit.staged": "Check only for unsaved staged files.",
+		"config.promptToSaveFilesBeforeCommit.never": "Disable this check.",
+		"config.postCommitCommand": "Run a git command after a successful commit.",
+		"config.postCommitCommand.none": "Don't run any command after a commit.",
+		"config.postCommitCommand.push": "Run 'git push' after a successful commit.",
+		"config.postCommitCommand.sync": "Run 'git pull' and 'git push' after a successful commit.",
+		"config.rememberPostCommitCommand": "Remember the last git command that ran after a commit.",
+		"config.openAfterClone": "Controls whether to open a repository automatically after cloning.",
+		"config.openAfterClone.always": "Always open in current window.",
+		"config.openAfterClone.alwaysNewWindow": "Always open in a new window.",
+		"config.openAfterClone.whenNoFolderOpen": "Only open in current window when no folder is opened.",
+		"config.openAfterClone.prompt": "Always prompt for action.",
+		"config.showInlineOpenFileAction": "Controls whether to show an inline Open File action in the Git changes view.",
+		"config.showPushSuccessNotification": "Controls whether to show a notification when a push is successful.",
+		"config.inputValidation": "Controls whether to show commit message input validation diagnostics.",
+		"config.inputValidationLength": "Controls the commit message length threshold for showing a warning.",
+		"config.inputValidationSubjectLength": "Controls the commit message subject length threshold for showing a warning. Unset it to inherit the value of `#git.inputValidationLength#`.",
+		"config.detectSubmodules": "Controls whether to automatically detect Git submodules.",
+		"config.detectSubmodulesLimit": "Controls the limit of Git submodules detected.",
+		"config.detectWorktrees": "Controls whether to automatically detect Git worktrees.",
+		"config.detectWorktreesLimit": "Controls the limit of Git worktrees detected.",
+		"config.worktreeIncludeFiles": "Configure [glob patterns](https://aka.ms/vscode-glob-patterns) for files and folders that are included when creating a new worktree. Only files and folders that match the patterns and are listed in `.gitignore` will be copied to the newly created worktree.",
+		"config.alwaysShowStagedChangesResourceGroup": "Always show the Staged Changes resource group.",
+		"config.alwaysSignOff": "Controls the signoff flag for all commits.",
+		"config.addAICoAuthor": "Controls whether a 'Co-authored-by' trailer is automatically added to the commit message when AI-generated code is included in the commit.",
+		"config.addAICoAuthor.off": "Never add the AI co-author trailer.",
+		"config.addAICoAuthor.chatAndAgent": "Add the AI co-author trailer when code from chat or agent edits is included.",
+		"config.addAICoAuthor.all": "Add the AI co-author trailer when any AI-generated code is included, such as inline completions, chat, or agent edits.",
+		"config.ignoreSubmodules": "Ignore modifications to submodules in the file tree.",
+		"config.ignoredRepositories": "List of Git repositories to ignore.",
+		"config.scanRepositories": "List of paths to search for Git repositories in.",
+		"config.commandsToLog": {
+			"message": "List of git commands (ex: commit, push) that would have their `stdout` logged to the [git output](command:git.showOutput). If the git command has a client-side hook configured, the client-side hook's `stdout` will also be logged to the [git output](command:git.showOutput).",
+			"comment": [
+				"{Locked='](command:git.showOutput'}",
+				"Do not translate the 'command:*' part inside of the '(..)'. It is an internal command syntax for VS Code",
+				"Please make sure there is no space between the right bracket and left parenthesis:  ]( this is an internal syntax for links"
+			]
+		},
+		"config.showProgress": "Controls whether Git actions should show progress.",
+		"config.rebaseWhenSync": "Force Git to use rebase when running the sync command.",
+		"config.confirmEmptyCommits": "Always confirm the creation of empty commits for the 'Git: Commit Empty' command.",
+		"config.fetchOnPull": "When enabled, fetch all branches when pulling. Otherwise, fetch just the current one.",
+		"config.pullBeforeCheckout": "Controls whether a branch that does not have outgoing commits is fast-forwarded before it is checked out.",
+		"config.pullTags": "Fetch all tags when pulling.",
+		"config.pruneOnFetch": "Prune when fetching.",
+		"config.autoStash": "Stash any changes before pulling and restore them after successful pull.",
+		"config.allowForcePush": "Controls whether force push (with or without lease) is enabled.",
+		"config.useForcePushWithLease": "Controls whether force pushing uses the safer force-with-lease variant.",
+		"config.useForcePushIfIncludes": "Controls whether force pushing uses the safer force-if-includes variant. Note: This setting requires the `#git.useForcePushWithLease#` setting to be enabled, and Git version `2.30.0` or later.",
+		"config.confirmForcePush": "Controls whether to ask for confirmation before force-pushing.",
+		"config.allowNoVerifyCommit": "Controls whether commits without running pre-commit and commit-msg hooks are allowed.",
+		"config.confirmNoVerifyCommit": "Controls whether to ask for confirmation before committing without verification.",
+		"config.closeDiffOnOperation": "Controls whether the diff editor should be automatically closed when changes are stashed, committed, discarded, staged, or unstaged.",
+		"config.openDiffOnClick": "Controls whether the diff editor should be opened when clicking a change. Otherwise the regular editor will be opened.",
+		"config.supportCancellation": "Controls whether a notification comes up when running the Sync action, which allows the user to cancel the operation.",
+		"config.branchSortOrder": "Controls the sort order for branches.",
+		"config.untrackedChanges": "Controls how untracked changes behave.",
+		"config.untrackedChanges.mixed": "All changes, tracked and untracked, appear together and behave equally.",
+		"config.untrackedChanges.separate": "Untracked changes appear separately in the Source Control view. They are also excluded from several actions.",
+		"config.untrackedChanges.hidden": "Untracked changes are hidden and excluded from several actions.",
+		"config.requireGitUserConfig": "Controls whether to require explicit Git user configuration or allow Git to guess if missing.",
+		"config.showCommitInput": "Controls whether to show the commit input in the Git source control panel.",
+		"config.terminalAuthentication": "Controls whether to enable VS Code to be the authentication handler for Git processes spawned in the Integrated Terminal. Note: Terminals need to be restarted to pick up a change in this setting.",
+		"config.terminalGitEditor": "Controls whether to enable VS Code to be the Git editor for Git processes spawned in the integrated terminal. Note: Terminals need to be restarted to pick up a change in this setting.",
+		"config.timeline.showAuthor": "Controls whether to show the commit author in the Timeline view.",
+		"config.timeline.showUncommitted": "Controls whether to show uncommitted changes in the Timeline view.",
+		"config.timeline.date": "Controls which date to use for items in the Timeline view.",
+		"config.timeline.date.committed": "Use the committed date",
+		"config.timeline.date.authored": "Use the authored date",
+		"config.useCommitInputAsStashMessage": "Controls whether to use the message from the commit input box as the default stash message.",
+		"config.showActionButton": "Controls whether an action button is shown in the Source Control view.",
+		"config.showActionButton.commit": "Show an action button to commit changes when the local branch has modified files ready to be committed.",
+		"config.showActionButton.publish": "Show an action button to publish the local branch when it does not have a tracking remote branch.",
+		"config.showActionButton.sync": "Show an action button to synchronize changes when the local branch is either ahead or behind the remote branch.",
+		"config.statusLimit": "Controls how to limit the number of changes that can be parsed from Git status command. Can be set to 0 for no limit.",
+		"config.experimental.installGuide": "Experimental improvements for the Git setup flow.",
+		"config.repositoryScanIgnoredFolders": "List of folders that are ignored while scanning for Git repositories when `#git.autoRepositoryDetection#` is set to `true` or `subFolders`.",
+		"config.repositoryScanMaxDepth": "Controls the depth used when scanning workspace folders for Git repositories when `#git.autoRepositoryDetection#` is set to `true` or `subFolders`. Can be set to `-1` for no limit.",
+		"config.useIntegratedAskPass": "Controls whether GIT_ASKPASS should be overwritten to use the integrated version.",
+		"config.mergeEditor": "Open the merge editor for files that are currently under conflict.",
+		"config.optimisticUpdate": "Controls whether to optimistically update the state of the Source Control view after running git commands.",
+		"config.openRepositoryInParentFolders": "Control whether a repository in parent folders of workspaces or open files should be opened.",
+		"config.openRepositoryInParentFolders.always": "Always open a repository in parent folders of workspaces or open files.",
+		"config.openRepositoryInParentFolders.never": "Never open a repository in parent folders of workspaces or open files.",
+		"config.openRepositoryInParentFolders.prompt": "Prompt before opening a repository the parent folders of workspaces or open files.",
+		"config.publishBeforeContinueOn": "Controls whether to publish unpublished Git state when using Continue Working On from a Git repository.",
+		"config.publishBeforeContinueOn.always": "Always publish unpublished Git state when using Continue Working On from a Git repository",
+		"config.publishBeforeContinueOn.never": "Never publish unpublished Git state when using Continue Working On from a Git repository",
+		"config.publishBeforeContinueOn.prompt": "Prompt to publish unpublished Git state when using Continue Working On from a Git repository",
+		"config.similarityThreshold": "Controls the threshold of the similarity index (the amount of additions/deletions compared to the file's size) for changes in a pair of added/deleted files to be considered a rename. **Note:** Requires Git version `2.18.0` or later.",
+		"config.blameEditorDecoration.enabled": "Controls whether to show blame information in the editor using editor decorations.",
+		"config.blameEditorDecoration.template": "Template for the blame information editor decoration. Supported variables:\n\n* `hash`: Commit hash\n\n* `hashShort`: First N characters of the commit hash according to `#git.commitShortHashLength#`\n\n* `subject`: First line of the commit message\n\n* `authorName`: Author name\n\n* `authorEmail`: Author email\n\n* `authorDate`: Author date\n\n* `authorDateAgo`: Time difference between now and the author date\n\n",
+		"config.blameEditorDecoration.disableHover": "Controls whether to disable the blame information editor decoration hover.",
+		"config.blameStatusBarItem.enabled": "Controls whether to show blame information in the status bar.",
+		"config.blameStatusBarItem.template": "Template for the blame information status bar item. Supported variables:\n\n* `hash`: Commit hash\n\n* `hashShort`: First N characters of the commit hash according to `#git.commitShortHashLength#`\n\n* `subject`: First line of the commit message\n\n* `authorName`: Author name\n\n* `authorEmail`: Author email\n\n* `authorDate`: Author date\n\n* `authorDateAgo`: Time difference between now and the author date\n\n",
+		"config.blameIgnoreWhitespace": "Controls whether to ignore whitespace changes when computing blame information.",
+		"config.commitShortHashLength": "Controls the length of the commit short hash.",
+		"config.diagnosticsCommitHook.enabled": "Controls whether to check for unresolved diagnostics before committing.",
+		"config.diagnosticsCommitHook.sources": "Controls the list of sources (**Item**) and the minimum severity (**Value**) to be considered before committing. **Note:** To ignore diagnostics from a particular source, add the source to the list and set the minimum severity to `none`.",
+		"config.discardUntrackedChangesToTrash": "Controls whether discarding untracked changes moves the file(s) to the Recycle Bin (Windows), Trash (macOS, Linux) instead of deleting them permanently. **Note:** This setting has no effect when connected to a remote or when running in Linux as a snap package.",
+		"config.showReferenceDetails": "Controls whether to show the details of the last commit for Git refs in the checkout, branch, and tag pickers.",
+		"submenu.explorer": "Git",
+		"submenu.commit": "Commit",
+		"submenu.commit.amend": "Amend",
+		"submenu.commit.signoff": "Sign Off",
+		"submenu.changes": "Changes",
+		"submenu.pullpush": "Pull, Push",
+		"submenu.branch": "Branch",
+		"submenu.remotes": "Remote",
+		"submenu.stash": "Stash",
+		"submenu.tags": "Tags",
+		"submenu.worktrees": "Worktrees",
+		"colors.added": "Color for added resources.",
+		"colors.modified": "Color for modified resources.",
+		"colors.stageModified": "Color for modified resources which have been staged.",
+		"colors.stageDeleted": "Color for deleted resources which have been staged.",
+		"colors.deleted": "Color for deleted resources.",
+		"colors.renamed": "Color for renamed or copied resources.",
+		"colors.untracked": "Color for untracked resources.",
+		"colors.ignored": "Color for ignored resources.",
+		"colors.conflict": "Color for resources with conflicts.",
+		"colors.submodule": "Color for submodule resources.",
+		"colors.incomingAdded": "Color for added incoming resource.",
+		"colors.incomingDeleted": "Color for deleted incoming resource.",
+		"colors.incomingRenamed": "Color for renamed incoming resource.",
+		"colors.incomingModified": "Color for modified incoming resource.",
+		"colors.blameEditorDecoration": "Color for the blame editor decoration.",
+		"view.workbench.scm.missing.windows": {
+			"message": "[Download Git for Windows](https://git-scm.com/download/win)\nAfter installing, please [reload](command:workbench.action.reloadWindow) (or [troubleshoot](command:git.showOutput)). Additional source control providers can be installed [from the Marketplace](command:workbench.extensions.search?%22%40category%3A%5C%22scm%20providers%5C%22%22).",
+			"comment": [
+				"{Locked='](command:workbench.action.reloadWindow'}",
+				"{Locked='](command:git.showOutput'}",
+				"{Locked='](command:workbench.extensions.search?%22%40category%3A%5C%22scm%20providers%5C%22%22'}",
+				"Do not translate the 'command:*' part inside of the '(..)'. It is an internal command syntax for VS Code",
+				"Please make sure there is no space between the right bracket and left parenthesis:  ]( this is an internal syntax for links"
+			]
+		},
+		"view.workbench.scm.missing.mac": {
+			"message": "[Download Git for macOS](https://git-scm.com/download/mac)\nAfter installing, please [reload](command:workbench.action.reloadWindow) (or [troubleshoot](command:git.showOutput)). Additional source control providers can be installed [from the Marketplace](command:workbench.extensions.search?%22%40category%3A%5C%22scm%20providers%5C%22%22).",
+			"comment": [
+				"{Locked='](command:workbench.action.reloadWindow'}",
+				"{Locked='](command:git.showOutput'}",
+				"{Locked='](command:workbench.extensions.search?%22%40category%3A%5C%22scm%20providers%5C%22%22'}",
+				"Do not translate the 'command:*' part inside of the '(..)'. It is an internal command syntax for VS Code",
+				"Please make sure there is no space between the right bracket and left parenthesis:  ]( this is an internal syntax for links"
+			]
+		},
+		"view.workbench.scm.missing.linux": {
+			"message": "Source control depends on Git being installed.\n[Download Git for Linux](https://git-scm.com/download/linux)\nAfter installing, please [reload](command:workbench.action.reloadWindow) (or [troubleshoot](command:git.showOutput)). Additional source control providers can be installed [from the Marketplace](command:workbench.extensions.search?%22%40category%3A%5C%22scm%20providers%5C%22%22).",
+			"comment": [
+				"{Locked='](command:workbench.action.reloadWindow'}",
+				"{Locked='](command:git.showOutput'}",
+				"{Locked='](command:workbench.extensions.search?%22%40category%3A%5C%22scm%20providers%5C%22%22'}",
+				"Do not translate the 'command:*' part inside of the '(..)'. It is an internal command syntax for VS Code",
+				"Please make sure there is no space between the right bracket and left parenthesis:  ]( this is an internal syntax for links"
+			]
+		},
+		"view.workbench.scm.missing": {
+			"message": "Install Git, a popular source control system, to track code changes and collaborate with others. Learn more in our [Git guides](https://aka.ms/vscode-scm).",
+			"comment": [
+				"{Locked='](https://aka.ms/vscode-scm'}",
+				"Please make sure there is no space between the right bracket and left parenthesis:  ]( this is an internal syntax for links"
+			]
+		},
+		"view.workbench.scm.disabled": {
+			"message": "If you would like to use Git features, please enable Git in your [settings](command:workbench.action.openSettings?%5B%22git.enabled%22%5D).\nTo learn more about how to use Git and source control in VS Code [read our docs](https://aka.ms/vscode-scm).",
+			"comment": [
+				"{Locked='](command:workbench.action.openSettings?%5B%22git.enabled%22%5D'}",
+				"Do not translate the 'command:*' part inside of the '(..)'. It is an internal command syntax for VS Code",
+				"Please make sure there is no space between the right bracket and left parenthesis:  ]( this is an internal syntax for links"
+			]
+		},
+		"view.workbench.scm.empty": {
+			"message": "In order to use Git features, you can open a folder containing a Git repository or clone from a URL.\n[Open Folder](command:vscode.openFolder)\n[Clone Repository](command:git.cloneRecursive)\nTo learn more about how to use Git and source control in VS Code [read our docs](https://aka.ms/vscode-scm).",
+			"comment": [
+				"{Locked='](command:vscode.openFolder'}",
+				"Do not translate the 'command:*' part inside of the '(..)'. It is an internal command syntax for VS Code",
+				"Please make sure there is no space between the right bracket and left parenthesis:  ]( this is an internal syntax for links"
+			]
+		},
+		"view.workbench.scm.folder": {
+			"message": "The folder currently open doesn't have a Git repository. You can initialize a repository which will enable source control features powered by Git.\n[Initialize Repository](command:git.init?%5Btrue%5D)\nTo learn more about how to use Git and source control in VS Code [read our docs](https://aka.ms/vscode-scm).",
+			"comment": [
+				"{Locked='](command:git.init?%5Btrue%5D'}",
+				"Do not translate the 'command:*' part inside of the '(..)'. It is an internal command syntax for VS Code",
+				"Please make sure there is no space between the right bracket and left parenthesis:  ]( this is an internal syntax for links"
+			]
+		},
+		"view.workbench.scm.workspace": {
+			"message": "The workspace currently open doesn't have any folders containing Git repositories. You can initialize a repository on a folder which will enable source control features powered by Git.\n[Initialize Repository](command:git.init)\nTo learn more about how to use Git and source control in VS Code [read our docs](https://aka.ms/vscode-scm).",
+			"comment": [
+				"{Locked='](command:git.init'}",
+				"Do not translate the 'command:*' part inside of the '(..)'. It is an internal command syntax for VS Code",
+				"Please make sure there is no space between the right bracket and left parenthesis:  ]( this is an internal syntax for links"
+			]
+		},
+		"view.workbench.scm.emptyWorkspace": {
+			"message": "The workspace currently open doesn't have any folders containing Git repositories.\n[Add Folder to Workspace](command:workbench.action.addRootFolder)\nTo learn more about how to use Git and source control in VS Code [read our docs](https://aka.ms/vscode-scm).",
+			"comment": [
+				"{Locked='](command:workbench.action.addRootFolder'}",
+				"Do not translate the 'command:*' part inside of the '(..)'. It is an internal command syntax for VS Code",
+				"Please make sure there is no space between the right bracket and left parenthesis:  ]( this is an internal syntax for links"
+			]
+		},
+		"view.workbench.scm.scanFolderForRepositories": {
+			"message": "Scanning folder for Git repositories..."
+		},
+		"view.workbench.scm.scanWorkspaceForRepositories": {
+			"message": "Scanning workspace for Git repositories..."
+		},
+		"view.workbench.scm.repositoryInParentFolders": {
+			"message": "A Git repository was found in the parent folders of the workspace or the open file(s).\n[Open Repository](command:git.openRepositoriesInParentFolders)\nUse the [git.openRepositoryInParentFolders](command:workbench.action.openSettings?%5B%22git.openRepositoryInParentFolders%22%5D) setting to control whether Git repositories in parent folders of workspaces or open files are opened. To learn more [read our docs](https://aka.ms/vscode-git-repository-in-parent-folders).",
+			"comment": [
+				"{Locked='](command:git.openRepositoriesInParentFolders'}",
+				"{Locked='](command:workbench.action.openSettings?%5B%22git.openRepositoryInParentFolders%22%5D'}",
+				"Do not translate the 'command:*' part inside of the '(..)'. It is an internal command syntax for VS Code",
+				"Please make sure there is no space between the right bracket and left parenthesis:  ]( this is an internal syntax for links"
+			]
+		},
+		"view.workbench.scm.repositoriesInParentFolders": {
+			"message": "Git repositories were found in the parent folders of the workspace or the open file(s).\n[Open Repository](command:git.openRepositoriesInParentFolders)\nUse the [git.openRepositoryInParentFolders](command:workbench.action.openSettings?%5B%22git.openRepositoryInParentFolders%22%5D) setting to control whether Git repositories in parent folders of workspace or open files are opened. To learn more [read our docs](https://aka.ms/vscode-git-repository-in-parent-folders).",
+			"comment": [
+				"{Locked='](command:git.openRepositoriesInParentFolders'}",
+				"{Locked='](command:workbench.action.openSettings?%5B%22git.openRepositoryInParentFolders%22%5D'}",
+				"Do not translate the 'command:*' part inside of the '(..)'. It is an internal command syntax for VS Code",
+				"Please make sure there is no space between the right bracket and left parenthesis:  ]( this is an internal syntax for links"
+			]
+		},
+		"view.workbench.scm.unsafeRepository": {
+			"message": "The detected Git repository is potentially unsafe as the folder is owned by someone other than the current user.\n[Manage Unsafe Repositories](command:git.manageUnsafeRepositories)\nTo learn more about unsafe repositories [read our docs](https://aka.ms/vscode-git-unsafe-repository).",
+			"comment": [
+				"{Locked='](command:git.manageUnsafeRepositories'}",
+				"Do not translate the 'command:*' part inside of the '(..)'. It is an internal command syntax for VS Code",
+				"Please make sure there is no space between the right bracket and left parenthesis:  ]( this is an internal syntax for links"
+			]
+		},
+		"view.workbench.scm.unsafeRepositories": {
+			"message": "The detected Git repositories are potentially unsafe as the folders are owned by someone other than the current user.\n[Manage Unsafe Repositories](command:git.manageUnsafeRepositories)\nTo learn more about unsafe repositories [read our docs](https://aka.ms/vscode-git-unsafe-repository).",
+			"comment": [
+				"{Locked='](command:git.manageUnsafeRepositories'}",
+				"Do not translate the 'command:*' part inside of the '(..)'. It is an internal command syntax for VS Code",
+				"Please make sure there is no space between the right bracket and left parenthesis:  ]( this is an internal syntax for links"
+			]
+		},
+		"view.workbench.scm.closedRepository": {
+			"message": "A Git repository was found that was previously closed.\n[Reopen Closed Repository](command:git.reopenClosedRepositories)\nTo learn more about how to use Git and source control in VS Code [read our docs](https://aka.ms/vscode-scm).",
+			"comment": [
+				"{Locked='](command:git.reopenClosedRepositories'}",
+				"Do not translate the 'command:*' part inside of the '(..)'. It is an internal command syntax for VS Code",
+				"Please make sure there is no space between the right bracket and left parenthesis:  ]( this is an internal syntax for links"
+			]
+		},
+		"view.workbench.scm.closedRepositories": {
+			"message": "Git repositories were found that were previously closed.\n[Reopen Closed Repositories](command:git.reopenClosedRepositories)\nTo learn more about how to use Git and source control in VS Code [read our docs](https://aka.ms/vscode-scm).",
+			"comment": [
+				"{Locked='](command:git.reopenClosedRepositories'}",
+				"Do not translate the 'command:*' part inside of the '(..)'. It is an internal command syntax for VS Code",
+				"Please make sure there is no space between the right bracket and left parenthesis:  ]( this is an internal syntax for links"
+			]
+		},
+		"view.workbench.cloneRepository": {
+			"message": "You can clone a repository locally.\n[Clone Repository](command:git.clone 'Clone a repository once the Git extension has activated')",
+			"comment": [
+				"{Locked='](command:git.clone'}",
+				"Do not translate the 'command:*' part inside of the '(..)'. It is an internal command syntax for VS Code",
+				"Please make sure there is no space between the right bracket and left parenthesis:  ]( this is an internal syntax for links"
+			]
+		},
+		"view.workbench.learnMore": "To learn more about how to use Git and source control in VS Code [read our docs](https://aka.ms/vscode-scm)."
+	},
+	"bundle": {
+		"\n\nAre you sure you want to discard ALL changes in {0} files?": {
+			"en": "\n\nAre you sure you want to discard ALL changes in {0} files?"
+		},
+		"\n\nAre you sure you want to discard changes in '{0}'?": {
+			"en": "\n\nAre you sure you want to discard changes in '{0}'?"
+		},
+		"\n and {0} more file{1}...": {
+			"en": "\n and {0} more file{1}..."
+		},
+		"\"{0}\" has fingerprint \"{1}\"": {
+			"en": "\"{0}\" has fingerprint \"{1}\""
+		},
+		"$(info) Remote \"{0}\" has no tags.": {
+			"en": "$(info) Remote \"{0}\" has no tags."
+		},
+		"$(info) This repository has no stashes.": {
+			"en": "$(info) This repository has no stashes."
+		},
+		"$(info) This repository has no tags.": {
+			"en": "$(info) This repository has no tags."
+		},
+		"$(info) This repository has no worktrees.": {
+			"en": "$(info) This repository has no worktrees."
+		},
+		"A branch named \"{0}\" already exists": {
+			"en": "A branch named \"{0}\" already exists"
+		},
+		"A git repository was found in the parent folders of the workspace or the open file(s). Would you like to open the repository?": {
+			"en": "A git repository was found in the parent folders of the workspace or the open file(s). Would you like to open the repository?"
+		},
+		"A worktree already exists at \"{0}\".": {
+			"en": "A worktree already exists at \"{0}\"."
+		},
+		"Absolute paths not supported in \"git.scanRepositories\" setting.": {
+			"en": "Absolute paths not supported in \"git.scanRepositories\" setting."
+		},
+		"Add Remote": {
+			"en": "Add Remote"
+		},
+		"Add a new remote...": {
+			"en": "Add a new remote..."
+		},
+		"Add remote from URL": {
+			"en": "Add remote from URL"
+		},
+		"Add remote from {0}": {
+			"en": "Add remote from {0}"
+		},
+		"Add to Workspace": {
+			"en": "Add to Workspace"
+		},
+		"All Repositories": {
+			"en": "All Repositories"
+		},
+		"Always": {
+			"en": "Always"
+		},
+		"Always Pull": {
+			"en": "Always Pull"
+		},
+		"Always Replace Local Tag(s)": {
+			"en": "Always Replace Local Tag(s)"
+		},
+		"Are you sure you want to DELETE the following untracked file: '{0}'?{1}": {
+			"en": "Are you sure you want to DELETE the following untracked file: '{0}'?{1}"
+		},
+		"Are you sure you want to DELETE the {0} untracked files?{1}": {
+			"en": "Are you sure you want to DELETE the {0} untracked files?{1}"
+		},
+		"Are you sure you want to continue connecting?": {
+			"en": "Are you sure you want to continue connecting?"
+		},
+		"Are you sure you want to create an empty commit?": {
+			"en": "Are you sure you want to create an empty commit?"
+		},
+		"Are you sure you want to delete branch \"{0}\"? This action will permanently remove the branch reference from the repository.": {
+			"en": "Are you sure you want to delete branch \"{0}\"? This action will permanently remove the branch reference from the repository."
+		},
+		"Are you sure you want to delete tag \"{0}\"? This action will permanently remove the tag reference from the repository.": {
+			"en": "Are you sure you want to delete tag \"{0}\"? This action will permanently remove the tag reference from the repository."
+		},
+		"Are you sure you want to discard ALL changes in {0} files?\n\nThis is IRREVERSIBLE!\nYour current working set will be FOREVER LOST if you proceed.": {
+			"en": "Are you sure you want to discard ALL changes in {0} files?\n\nThis is IRREVERSIBLE!\nYour current working set will be FOREVER LOST if you proceed."
+		},
+		"Are you sure you want to discard changes in '{0}'?": {
+			"en": "Are you sure you want to discard changes in '{0}'?"
+		},
+		"Are you sure you want to drop ALL stashes? There are {0} stashes that will be subject to pruning, and MAY BE IMPOSSIBLE TO RECOVER.": {
+			"en": "Are you sure you want to drop ALL stashes? There are {0} stashes that will be subject to pruning, and MAY BE IMPOSSIBLE TO RECOVER."
+		},
+		"Are you sure you want to drop ALL stashes? There is 1 stash that will be subject to pruning, and MAY BE IMPOSSIBLE TO RECOVER.": {
+			"en": "Are you sure you want to drop ALL stashes? There is 1 stash that will be subject to pruning, and MAY BE IMPOSSIBLE TO RECOVER."
+		},
+		"Are you sure you want to drop the stash: {0}?": {
+			"en": "Are you sure you want to drop the stash: {0}?"
+		},
+		"Are you sure you want to restore '{0}'?": {
+			"en": "Are you sure you want to restore '{0}'?"
+		},
+		"Are you sure you want to restore ALL {0} files?": {
+			"en": "Are you sure you want to restore ALL {0} files?"
+		},
+		"Are you sure you want to stage {0} files with merge conflicts?": {
+			"en": "Are you sure you want to stage {0} files with merge conflicts?"
+		},
+		"Are you sure you want to stage {0} with merge conflicts?": {
+			"en": "Are you sure you want to stage {0} with merge conflicts?"
+		},
+		"Ask Me Later": {
+			"en": "Ask Me Later"
+		},
+		"Branch \"{0}\" already exists": {
+			"en": "Branch \"{0}\" already exists"
+		},
+		"Branch \"{0}\" is already checked out in the current repository.": {
+			"en": "Branch \"{0}\" is already checked out in the current repository."
+		},
+		"Branch \"{0}\" is already checked out in the current window.": {
+			"en": "Branch \"{0}\" is already checked out in the current window."
+		},
+		"Branch \"{0}\" is already checked out in the worktree at \"{1}\".": {
+			"en": "Branch \"{0}\" is already checked out in the worktree at \"{1}\"."
+		},
+		"Branch name": {
+			"en": "Branch name"
+		},
+		"Branch name needs to match regex: {0}": {
+			"en": "Branch name needs to match regex: {0}"
+		},
+		"Branches": {
+			"en": "Branches"
+		},
+		"Can't force push refs to remote. The tip of the remote-tracking branch has been updated since the last checkout. Try running \"Pull\" first to pull the latest changes from the remote branch first.": {
+			"en": "Can't force push refs to remote. The tip of the remote-tracking branch has been updated since the last checkout. Try running \"Pull\" first to pull the latest changes from the remote branch first."
+		},
+		"Can't push refs to remote. Try running \"Pull\" first to integrate your changes.": {
+			"en": "Can't push refs to remote. Try running \"Pull\" first to integrate your changes."
+		},
+		"Can't undo because HEAD doesn't point to any commit.": {
+			"en": "Can't undo because HEAD doesn't point to any commit."
+		},
+		"Changes": {
+			"en": "Changes"
+		},
+		"Checking Out Branch/Tag...": {
+			"en": "Checking Out Branch/Tag..."
+		},
+		"Checking Out Changes...": {
+			"en": "Checking Out Changes..."
+		},
+		"Checkout Branch/Tag...": {
+			"en": "Checkout Branch/Tag..."
+		},
+		"Choose Folder...": {
+			"en": "Choose Folder..."
+		},
+		"Choose a folder to clone {0} into": {
+			"en": "Choose a folder to clone {0} into"
+		},
+		"Choose a repository": {
+			"en": "Choose a repository"
+		},
+		"Choose which repository to clone": {
+			"en": "Choose which repository to clone"
+		},
+		"Choose which repository to publish": {
+			"en": "Choose which repository to publish"
+		},
+		"Clear whitespace characters": {
+			"en": "Clear whitespace characters"
+		},
+		"Clone again": {
+			"en": "Clone again"
+		},
+		"Clone from URL": {
+			"en": "Clone from URL"
+		},
+		"Clone from {0}": {
+			"en": "Clone from {0}"
+		},
+		"Cloning git repository \"{0}\"...": {
+			"en": "Cloning git repository \"{0}\"..."
+		},
+		"Co-author": {
+			"en": "Co-author"
+		},
+		"Commit": {
+			"en": "Commit"
+		},
+		"Commit & Push Changes": {
+			"en": "Commit & Push Changes"
+		},
+		"Commit & Sync Changes": {
+			"en": "Commit & Sync Changes"
+		},
+		"Commit Anyway": {
+			"en": "Commit Anyway"
+		},
+		"Commit Changes": {
+			"en": "Commit Changes"
+		},
+		"Commit Changes on \"{0}\"": {
+			"en": "Commit Changes on \"{0}\""
+		},
+		"Commit Changes to New Branch": {
+			"en": "Commit Changes to New Branch"
+		},
+		"Commit Hash": {
+			"en": "Commit Hash"
+		},
+		"Commit message": {
+			"en": "Commit message"
+		},
+		"Commit operation was cancelled due to empty commit message.": {
+			"en": "Commit operation was cancelled due to empty commit message."
+		},
+		"Commit to New Branch & Push Changes": {
+			"en": "Commit to New Branch & Push Changes"
+		},
+		"Commit to New Branch & Synchronize Changes": {
+			"en": "Commit to New Branch & Synchronize Changes"
+		},
+		"Commit to a New Branch": {
+			"en": "Commit to a New Branch"
+		},
+		"Commits without verification are not allowed, please enable them with the \"git.allowNoVerifyCommit\" setting.": {
+			"en": "Commits without verification are not allowed, please enable them with the \"git.allowNoVerifyCommit\" setting."
+		},
+		"Committing & Pushing Changes...": {
+			"en": "Committing & Pushing Changes..."
+		},
+		"Committing & Synchronizing Changes...": {
+			"en": "Committing & Synchronizing Changes..."
+		},
+		"Committing Changes to New Branch...": {
+			"en": "Committing Changes to New Branch..."
+		},
+		"Committing Changes...": {
+			"en": "Committing Changes..."
+		},
+		"Committing to New Branch & Pushing Changes...": {
+			"en": "Committing to New Branch & Pushing Changes..."
+		},
+		"Committing to New Branch & Synchronizing Changes...": {
+			"en": "Committing to New Branch & Synchronizing Changes..."
+		},
+		"Conflict: Added By Them": {
+			"en": "Conflict: Added By Them"
+		},
+		"Conflict: Added By Us": {
+			"en": "Conflict: Added By Us"
+		},
+		"Conflict: Both Added": {
+			"en": "Conflict: Both Added"
+		},
+		"Conflict: Both Deleted": {
+			"en": "Conflict: Both Deleted"
+		},
+		"Conflict: Both Modified": {
+			"en": "Conflict: Both Modified"
+		},
+		"Conflict: Deleted By Them": {
+			"en": "Conflict: Deleted By Them"
+		},
+		"Conflict: Deleted By Us": {
+			"en": "Conflict: Deleted By Us"
+		},
+		"Continue Merge": {
+			"en": "Continue Merge"
+		},
+		"Continue Rebase": {
+			"en": "Continue Rebase"
+		},
+		"Continuing Merge...": {
+			"en": "Continuing Merge..."
+		},
+		"Continuing Rebase...": {
+			"en": "Continuing Rebase..."
+		},
+		"Copy Commit Hash": {
+			"en": "Copy Commit Hash"
+		},
+		"Could not clone your repository as Git is not installed.": {
+			"en": "Could not clone your repository as Git is not installed."
+		},
+		"Create Empty Commit": {
+			"en": "Create Empty Commit"
+		},
+		"Create New Branch": {
+			"en": "Create New Branch"
+		},
+		"Current": {
+			"en": "Current"
+		},
+		"Current commit message only contains whitespace characters": {
+			"en": "Current commit message only contains whitespace characters"
+		},
+		"Delete All {0} Files": {
+			"en": "Delete All {0} Files"
+		},
+		"Delete Branch": {
+			"en": "Delete Branch"
+		},
+		"Delete File": {
+			"en": "Delete File"
+		},
+		"Delete Tag": {
+			"en": "Delete Tag"
+		},
+		"Deleted": {
+			"en": "Deleted"
+		},
+		"Discard 1 Tracked File": {
+			"en": "Discard 1 Tracked File"
+		},
+		"Discard All {0} Files": {
+			"en": "Discard All {0} Files"
+		},
+		"Discard All {0} Tracked Files": {
+			"en": "Discard All {0} Tracked Files"
+		},
+		"Discard File": {
+			"en": "Discard File"
+		},
+		"Don't Pull": {
+			"en": "Don't Pull"
+		},
+		"Don't Show Again": {
+			"en": "Don't Show Again"
+		},
+		"Download Git": {
+			"en": "Download Git"
+		},
+		"Enables the following features: {0}": {
+			"en": "Enables the following features: {0}"
+		},
+		"Failed to authenticate to git remote.": {
+			"en": "Failed to authenticate to git remote."
+		},
+		"Failed to authenticate to git remote:\n\n{0}": {
+			"en": "Failed to authenticate to git remote:\n\n{0}"
+		},
+		"Failed to copy {0} folder(s)/file(s) to the worktree.": {
+			"en": "Failed to copy {0} folder(s)/file(s) to the worktree."
+		},
+		"Failed to delete using the Recycle Bin. Do you want to permanently delete instead?": {
+			"en": "Failed to delete using the Recycle Bin. Do you want to permanently delete instead?"
+		},
+		"Failed to delete using the Trash. Do you want to permanently delete instead?": {
+			"en": "Failed to delete using the Trash. Do you want to permanently delete instead?"
+		},
+		"Failed to open changes between \"{0}\" and \"{1}\": {2}": {
+			"en": "Failed to open changes between \"{0}\" and \"{1}\": {2}"
+		},
+		"File \"{0}\" was deleted by them and modified by us.\n\nWhat would you like to do?": {
+			"en": "File \"{0}\" was deleted by them and modified by us.\n\nWhat would you like to do?"
+		},
+		"File \"{0}\" was deleted by us and modified by them.\n\nWhat would you like to do?": {
+			"en": "File \"{0}\" was deleted by us and modified by them.\n\nWhat would you like to do?"
+		},
+		"Force Checkout": {
+			"en": "Force Checkout"
+		},
+		"Force Delete": {
+			"en": "Force Delete"
+		},
+		"Force push is not allowed, please enable it with the \"git.allowForcePush\" setting.": {
+			"en": "Force push is not allowed, please enable it with the \"git.allowForcePush\" setting."
+		},
+		"Git Blame Information": {
+			"en": "Git Blame Information"
+		},
+		"Git History": {
+			"en": "Git History"
+		},
+		"Git Local Changes (Index)": {
+			"en": "Git Local Changes (Index)"
+		},
+		"Git Local Changes (Working Tree)": {
+			"en": "Git Local Changes (Working Tree)"
+		},
+		"Git error": {
+			"en": "Git error"
+		},
+		"Git not found. Install it or configure it using the \"git.path\" setting.": {
+			"en": "Git not found. Install it or configure it using the \"git.path\" setting."
+		},
+		"Git repositories were found in the parent folders of the workspace or the open file(s). Would you like to open the repositories?": {
+			"en": "Git repositories were found in the parent folders of the workspace or the open file(s). Would you like to open the repositories?"
+		},
+		"Git: Delete can only be performed on committed files without uncommitted changes.": {
+			"en": "Git: Delete can only be performed on committed files without uncommitted changes."
+		},
+		"Git: {0}": {
+			"en": "Git: {0}"
+		},
+		"HEAD version of \"{0}\" is not available.": {
+			"en": "HEAD version of \"{0}\" is not available."
+		},
+		"Hard wrap all lines": {
+			"en": "Hard wrap all lines"
+		},
+		"Hard wrap line": {
+			"en": "Hard wrap line"
+		},
+		"Ignored": {
+			"en": "Ignored"
+		},
+		"Incoming": {
+			"en": "Incoming"
+		},
+		"Incoming Changes": {
+			"en": "Incoming Changes"
+		},
+		"Incoming Changes (added)": {
+			"en": "Incoming Changes (added)"
+		},
+		"Incoming Changes (deleted)": {
+			"en": "Incoming Changes (deleted)"
+		},
+		"Incoming Changes (modified)": {
+			"en": "Incoming Changes (modified)"
+		},
+		"Incoming Changes (renamed)": {
+			"en": "Incoming Changes (renamed)"
+		},
+		"Index Added": {
+			"en": "Index Added"
+		},
+		"Index Copied": {
+			"en": "Index Copied"
+		},
+		"Index Deleted": {
+			"en": "Index Deleted"
+		},
+		"Index Modified": {
+			"en": "Index Modified"
+		},
+		"Index Renamed": {
+			"en": "Index Renamed"
+		},
+		"Initialize Repository": {
+			"en": "Initialize Repository"
+		},
+		"Intent to Add": {
+			"en": "Intent to Add"
+		},
+		"Intent to Rename": {
+			"en": "Intent to Rename"
+		},
+		"Invalid branch name": {
+			"en": "Invalid branch name"
+		},
+		"It looks like the current branch \"{0}\" might have been rebased. Are you sure you still want to pull into it?": {
+			"en": "It looks like the current branch \"{0}\" might have been rebased. Are you sure you still want to pull into it?"
+		},
+		"It looks like the current branch might have been rebased. Are you sure you still want to pull into it?": {
+			"en": "It looks like the current branch might have been rebased. Are you sure you still want to pull into it?"
+		},
+		"It's not possible to change the commit message in the middle of a rebase. Please complete the rebase operation and use interactive rebase instead.": {
+			"en": "It's not possible to change the commit message in the middle of a rebase. Please complete the rebase operation and use interactive rebase instead."
+		},
+		"Keep Our Version": {
+			"en": "Keep Our Version"
+		},
+		"Keep Their Version": {
+			"en": "Keep Their Version"
+		},
+		"Learn More": {
+			"en": "Learn More"
+		},
+		"Make sure you configure your \"user.name\" and \"user.email\" in git.": {
+			"en": "Make sure you configure your \"user.name\" and \"user.email\" in git."
+		},
+		"Manage Unsafe Repositories": {
+			"en": "Manage Unsafe Repositories"
+		},
+		"Merge Changes": {
+			"en": "Merge Changes"
+		},
+		"Message": {
+			"en": "Message"
+		},
+		"Message (commit on \"{0}\")": {
+			"en": "Message (commit on \"{0}\")"
+		},
+		"Message ({0} to commit on \"{1}\")": {
+			"en": "Message ({0} to commit on \"{1}\")"
+		},
+		"Message ({0} to commit)": {
+			"en": "Message ({0} to commit)"
+		},
+		"Migrate Changes": {
+			"en": "Migrate Changes"
+		},
+		"Modified": {
+			"en": "Modified"
+		},
+		"Move to Recycle Bin": {
+			"en": "Move to Recycle Bin"
+		},
+		"Move to Trash": {
+			"en": "Move to Trash"
+		},
+		"Never": {
+			"en": "Never"
+		},
+		"No": {
+			"en": "No"
+		},
+		"No hunk found at cursor position.": {
+			"en": "No hunk found at cursor position."
+		},
+		"No rebase in progress.": {
+			"en": "No rebase in progress."
+		},
+		"Not Committed Yet": {
+			"en": "Not Committed Yet"
+		},
+		"Not Committed Yet (Staged)": {
+			"en": "Not Committed Yet (Staged)"
+		},
+		"OK": {
+			"en": "OK"
+		},
+		"OK, Don't Ask Again": {
+			"en": "OK, Don't Ask Again"
+		},
+		"OK, Don't Show Again": {
+			"en": "OK, Don't Show Again"
+		},
+		"Open": {
+			"en": "Open"
+		},
+		"Open Commit": {
+			"en": "Open Commit"
+		},
+		"Open Comparison": {
+			"en": "Open Comparison"
+		},
+		"Open Existing Repository Clone": {
+			"en": "Open Existing Repository Clone"
+		},
+		"Open File": {
+			"en": "Open File"
+		},
+		"Open Git Log": {
+			"en": "Open Git Log"
+		},
+		"Open Merge": {
+			"en": "Open Merge"
+		},
+		"Open Repositories In Parent Folders": {
+			"en": "Open Repositories In Parent Folders"
+		},
+		"Open Repository": {
+			"en": "Open Repository"
+		},
+		"Open Settings": {
+			"en": "Open Settings"
+		},
+		"Open Worktree in Current Window": {
+			"en": "Open Worktree in Current Window"
+		},
+		"Open Worktree in New Window": {
+			"en": "Open Worktree in New Window"
+		},
+		"Open in New Window": {
+			"en": "Open in New Window"
+		},
+		"Optionally provide a stash message": {
+			"en": "Optionally provide a stash message"
+		},
+		"Passphrase": {
+			"en": "Passphrase"
+		},
+		"Pick a branch to pull from": {
+			"en": "Pick a branch to pull from"
+		},
+		"Pick a provider to publish the branch \"{0}\" to:": {
+			"en": "Pick a provider to publish the branch \"{0}\" to:"
+		},
+		"Pick a remote to publish the branch \"{0}\" to:": {
+			"en": "Pick a remote to publish the branch \"{0}\" to:"
+		},
+		"Pick a remote to pull the branch from": {
+			"en": "Pick a remote to pull the branch from"
+		},
+		"Pick a remote to remove": {
+			"en": "Pick a remote to remove"
+		},
+		"Pick a repository to mark as safe and open": {
+			"en": "Pick a repository to mark as safe and open"
+		},
+		"Pick a repository to open": {
+			"en": "Pick a repository to open"
+		},
+		"Pick a repository to reopen": {
+			"en": "Pick a repository to reopen"
+		},
+		"Pick a stash to apply": {
+			"en": "Pick a stash to apply"
+		},
+		"Pick a stash to drop": {
+			"en": "Pick a stash to drop"
+		},
+		"Pick a stash to pop": {
+			"en": "Pick a stash to pop"
+		},
+		"Pick a stash to view": {
+			"en": "Pick a stash to view"
+		},
+		"Pick workspace folder to initialize git repo in": {
+			"en": "Pick workspace folder to initialize git repo in"
+		},
+		"Please check out a branch to push to a remote.": {
+			"en": "Please check out a branch to push to a remote."
+		},
+		"Please clean your repository working tree before checkout.": {
+			"en": "Please clean your repository working tree before checkout."
+		},
+		"Please provide a commit message": {
+			"en": "Please provide a commit message"
+		},
+		"Please provide a message to annotate the tag": {
+			"en": "Please provide a message to annotate the tag"
+		},
+		"Please provide a new branch name": {
+			"en": "Please provide a new branch name"
+		},
+		"Please provide a remote name": {
+			"en": "Please provide a remote name"
+		},
+		"Please provide a tag name": {
+			"en": "Please provide a tag name"
+		},
+		"Please provide a worktree path": {
+			"en": "Please provide a worktree path"
+		},
+		"Please provide the commit hash": {
+			"en": "Please provide the commit hash"
+		},
+		"Proceed": {
+			"en": "Proceed"
+		},
+		"Proceed with migrating changes to the current repository?": {
+			"en": "Proceed with migrating changes to the current repository?"
+		},
+		"Publish Branch": {
+			"en": "Publish Branch"
+		},
+		"Publish Branch \"{0}\"/{Locked=\"Branch\"}Do not translate \"Branch\" as it is a git term": {
+			"en": "Publish Branch \"{0}\"/{Locked=\"Branch\"}Do not translate \"Branch\" as it is a git term"
+		},
+		"Publish Branch/{Locked=\"Branch\"}Do not translate \"Branch\" as it is a git term": {
+			"en": "Publish Branch/{Locked=\"Branch\"}Do not translate \"Branch\" as it is a git term"
+		},
+		"Publish to {0}": {
+			"en": "Publish to {0}"
+		},
+		"Publish to...": {
+			"en": "Publish to..."
+		},
+		"Publishing Branch \"{0}\".../{Locked=\"Branch\"}Do not translate \"Branch\" as it is a git term": {
+			"en": "Publishing Branch \"{0}\".../{Locked=\"Branch\"}Do not translate \"Branch\" as it is a git term"
+		},
+		"Publishing Branch.../{Locked=\"Branch\"}Do not translate \"Branch\" as it is a git term": {
+			"en": "Publishing Branch.../{Locked=\"Branch\"}Do not translate \"Branch\" as it is a git term"
+		},
+		"Pull": {
+			"en": "Pull"
+		},
+		"Pull {0} and push {1} commits between {2}/{3}": {
+			"en": "Pull {0} and push {1} commits between {2}/{3}"
+		},
+		"Pull {0} commits from {1}/{2}": {
+			"en": "Pull {0} commits from {1}/{2}"
+		},
+		"Push {0} commits to {1}/{2}": {
+			"en": "Push {0} commits to {1}/{2}"
+		},
+		"Rebasing": {
+			"en": "Rebasing"
+		},
+		"Regenerate Branch Name": {
+			"en": "Regenerate Branch Name"
+		},
+		"Remote \"{0}\" already exists.": {
+			"en": "Remote \"{0}\" already exists."
+		},
+		"Remote branch at {0}": {
+			"en": "Remote branch at {0}"
+		},
+		"Remote name": {
+			"en": "Remote name"
+		},
+		"Remote name format invalid": {
+			"en": "Remote name format invalid"
+		},
+		"Remote tag at {0}": {
+			"en": "Remote tag at {0}"
+		},
+		"Reopen Closed Repositories": {
+			"en": "Reopen Closed Repositories"
+		},
+		"Replace Local Tag(s)": {
+			"en": "Replace Local Tag(s)"
+		},
+		"Restore All {0} Files": {
+			"en": "Restore All {0} Files"
+		},
+		"Restore File": {
+			"en": "Restore File"
+		},
+		"Save All & Commit Changes": {
+			"en": "Save All & Commit Changes"
+		},
+		"Save All & Stash": {
+			"en": "Save All & Stash"
+		},
+		"Select Worktree Destination": {
+			"en": "Select Worktree Destination"
+		},
+		"Select a branch or tag to checkout": {
+			"en": "Select a branch or tag to checkout"
+		},
+		"Select a branch or tag to create the new worktree from": {
+			"en": "Select a branch or tag to create the new worktree from"
+		},
+		"Select a branch or tag to merge from": {
+			"en": "Select a branch or tag to merge from"
+		},
+		"Select a branch to checkout in detached mode": {
+			"en": "Select a branch to checkout in detached mode"
+		},
+		"Select a branch to delete": {
+			"en": "Select a branch to delete"
+		},
+		"Select a branch to rebase onto": {
+			"en": "Select a branch to rebase onto"
+		},
+		"Select a ref to create the branch from": {
+			"en": "Select a ref to create the branch from"
+		},
+		"Select a reference to compare with": {
+			"en": "Select a reference to compare with"
+		},
+		"Select a remote branch to delete": {
+			"en": "Select a remote branch to delete"
+		},
+		"Select a remote tag to delete": {
+			"en": "Select a remote tag to delete"
+		},
+		"Select a remote to delete a tag from": {
+			"en": "Select a remote to delete a tag from"
+		},
+		"Select a remote to fetch": {
+			"en": "Select a remote to fetch"
+		},
+		"Select a tag to delete": {
+			"en": "Select a tag to delete"
+		},
+		"Select a worktree to delete": {
+			"en": "Select a worktree to delete"
+		},
+		"Select a worktree to migrate changes from": {
+			"en": "Select a worktree to migrate changes from"
+		},
+		"Select as Repository Destination": {
+			"en": "Select as Repository Destination"
+		},
+		"Select as Worktree Destination": {
+			"en": "Select as Worktree Destination"
+		},
+		"Show Changes": {
+			"en": "Show Changes"
+		},
+		"Show Command Output": {
+			"en": "Show Command Output"
+		},
+		"Staged Changes": {
+			"en": "Staged Changes"
+		},
+		"Stash & Checkout": {
+			"en": "Stash & Checkout"
+		},
+		"Stash Anyway": {
+			"en": "Stash Anyway"
+		},
+		"Stash message": {
+			"en": "Stash message"
+		},
+		"Stashed Changes": {
+			"en": "Stashed Changes"
+		},
+		"Stashes": {
+			"en": "Stashes"
+		},
+		"Successfully pushed.": {
+			"en": "Successfully pushed."
+		},
+		"Synchronize Changes": {
+			"en": "Synchronize Changes"
+		},
+		"Synchronizing Changes...": {
+			"en": "Synchronizing Changes..."
+		},
+		"Syncing. Cancelling may cause serious damages to the repository": {
+			"en": "Syncing. Cancelling may cause serious damages to the repository"
+		},
+		"Tag at {0}": {
+			"en": "Tag at {0}"
+		},
+		"Tag name": {
+			"en": "Tag name"
+		},
+		"Tags": {
+			"en": "Tags"
+		},
+		"The \"{0}\" repository has {1} submodules which won't be opened automatically. You can still open each one individually by opening a file within.": {
+			"en": "The \"{0}\" repository has {1} submodules which won't be opened automatically. You can still open each one individually by opening a file within."
+		},
+		"The \"{0}\" repository has {1} worktrees which won't be opened automatically. You can still open each one individually by opening a file within.": {
+			"en": "The \"{0}\" repository has {1} worktrees which won't be opened automatically. You can still open each one individually by opening a file within."
+		},
+		"The active branch cannot be deleted.": {
+			"en": "The active branch cannot be deleted."
+		},
+		"The branch \"{0}\" has no remote branch. Would you like to publish this branch?": {
+			"en": "The branch \"{0}\" has no remote branch. Would you like to publish this branch?"
+		},
+		"The branch \"{0}\" is not fully merged. Delete anyway?": {
+			"en": "The branch \"{0}\" is not fully merged. Delete anyway?"
+		},
+		"The changes are already present in the current branch.": {
+			"en": "The changes are already present in the current branch."
+		},
+		"The current branch is not published to the remote. Would you like to publish it to access your changes elsewhere?": {
+			"en": "The current branch is not published to the remote. Would you like to publish it to access your changes elsewhere?"
+		},
+		"The following file has unresolved diagnostics: '{0}'.\n\nHow would you like to proceed?": {
+			"en": "The following file has unresolved diagnostics: '{0}'.\n\nHow would you like to proceed?"
+		},
+		"The following file has unsaved changes which won't be included in the commit if you proceed: {0}.\n\nWould you like to save it before committing?": {
+			"en": "The following file has unsaved changes which won't be included in the commit if you proceed: {0}.\n\nWould you like to save it before committing?"
+		},
+		"The following file has unsaved changes which won't be included in the stash if you proceed: {0}.\n\nWould you like to save it before stashing?": {
+			"en": "The following file has unsaved changes which won't be included in the stash if you proceed: {0}.\n\nWould you like to save it before stashing?"
+		},
+		"The git repositories in the current folder are potentially unsafe as the folders are owned by someone other than the current user.": {
+			"en": "The git repositories in the current folder are potentially unsafe as the folders are owned by someone other than the current user."
+		},
+		"The git repository at \"{0}\" has too many active changes, only a subset of Git features will be enabled.": {
+			"en": "The git repository at \"{0}\" has too many active changes, only a subset of Git features will be enabled."
+		},
+		"The git repository in the current folder is potentially unsafe as the folder is owned by someone other than the current user.": {
+			"en": "The git repository in the current folder is potentially unsafe as the folder is owned by someone other than the current user."
+		},
+		"The last commit was a merge commit. Are you sure you want to undo it?": {
+			"en": "The last commit was a merge commit. Are you sure you want to undo it?"
+		},
+		"The new branch will be \"{0}\"": {
+			"en": "The new branch will be \"{0}\""
+		},
+		"The remote branch of the active branch cannot be deleted.": {
+			"en": "The remote branch of the active branch cannot be deleted."
+		},
+		"The repository does not have any changes.": {
+			"en": "The repository does not have any changes."
+		},
+		"The repository does not have any commits. Please make an initial commit before creating a stash.": {
+			"en": "The repository does not have any commits. Please make an initial commit before creating a stash."
+		},
+		"The repository does not have any staged changes.": {
+			"en": "The repository does not have any staged changes."
+		},
+		"The repository does not have any untracked changes.": {
+			"en": "The repository does not have any untracked changes."
+		},
+		"The selection range does not contain any changes.": {
+			"en": "The selection range does not contain any changes."
+		},
+		"The source repository could not be found.": {
+			"en": "The source repository could not be found."
+		},
+		"The worktree contains modified or untracked files. Do you want to force delete?": {
+			"en": "The worktree contains modified or untracked files. Do you want to force delete?"
+		},
+		"The worktree for session \"{0}\" contains modified or untracked files. Do you want to force delete?": {
+			"en": "The worktree for session \"{0}\" contains modified or untracked files. Do you want to force delete?"
+		},
+		"There are known issues with the installed Git \"{0}\". Please update to Git >= 2.27 for the git features to work correctly.": {
+			"en": "There are known issues with the installed Git \"{0}\". Please update to Git >= 2.27 for the git features to work correctly."
+		},
+		"There are merge conflicts from migrating changes. Please resolve them before committing.": {
+			"en": "There are merge conflicts from migrating changes. Please resolve them before committing."
+		},
+		"There are merge conflicts while applying the stash. Please resolve them before committing your changes.": {
+			"en": "There are merge conflicts while applying the stash. Please resolve them before committing your changes."
+		},
+		"There are merge conflicts. Please resolve them before committing your changes.": {
+			"en": "There are merge conflicts. Please resolve them before committing your changes."
+		},
+		"There are no available repositories": {
+			"en": "There are no available repositories"
+		},
+		"There are no available repositories matching the filter": {
+			"en": "There are no available repositories matching the filter"
+		},
+		"There are no changes between \"{0}\" and \"{1}\".": {
+			"en": "There are no changes between \"{0}\" and \"{1}\"."
+		},
+		"There are no changes in the selected worktree to migrate.": {
+			"en": "There are no changes in the selected worktree to migrate."
+		},
+		"There are no changes to commit.": {
+			"en": "There are no changes to commit."
+		},
+		"There are no changes to stash.": {
+			"en": "There are no changes to stash."
+		},
+		"There are no staged changes to commit.\n\nWould you like to stage all your changes and commit them directly?": {
+			"en": "There are no staged changes to commit.\n\nWould you like to stage all your changes and commit them directly?"
+		},
+		"There are no staged changes to stash.": {
+			"en": "There are no staged changes to stash."
+		},
+		"There are no stashes in the repository.": {
+			"en": "There are no stashes in the repository."
+		},
+		"There are {0} files that have unresolved diagnostics.\n\nHow would you like to proceed?": {
+			"en": "There are {0} files that have unresolved diagnostics.\n\nHow would you like to proceed?"
+		},
+		"There are {0} unsaved files.\n\nWould you like to save them before committing?": {
+			"en": "There are {0} unsaved files.\n\nWould you like to save them before committing?"
+		},
+		"There are {0} unsaved files.\n\nWould you like to save them before stashing?": {
+			"en": "There are {0} unsaved files.\n\nWould you like to save them before stashing?"
+		},
+		"There were merge conflicts while cherry picking the changes. Resolve the conflicts before committing them.": {
+			"en": "There were merge conflicts while cherry picking the changes. Resolve the conflicts before committing them."
+		},
+		"This action will pull and push commits from and to \"{0}/{1}\".": {
+			"en": "This action will pull and push commits from and to \"{0}/{1}\"."
+		},
+		"This is IRREVERSIBLE!\nThese files will be FOREVER LOST if you proceed.": {
+			"en": "This is IRREVERSIBLE!\nThese files will be FOREVER LOST if you proceed."
+		},
+		"This is IRREVERSIBLE!\nThis file will be FOREVER LOST if you proceed.": {
+			"en": "This is IRREVERSIBLE!\nThis file will be FOREVER LOST if you proceed."
+		},
+		"This repository has no remotes configured to fetch from.": {
+			"en": "This repository has no remotes configured to fetch from."
+		},
+		"This will apply the worktree's changes to this repository and discard changes in the worktree.\nThis is IRREVERSIBLE!": {
+			"en": "This will apply the worktree's changes to this repository and discard changes in the worktree.\nThis is IRREVERSIBLE!"
+		},
+		"This will create a Git repository in \"{0}\". Are you sure you want to continue?": {
+			"en": "This will create a Git repository in \"{0}\". Are you sure you want to continue?"
+		},
+		"Too many changes were detected. Only the first {0} changes will be shown below.": {
+			"en": "Too many changes were detected. Only the first {0} changes will be shown below."
+		},
+		"Type Changed": {
+			"en": "Type Changed"
+		},
+		"Unable to pull from remote repository due to conflicting tag(s): {0}. Would you like to resolve the conflict by replacing the local tag(s)?": {
+			"en": "Unable to pull from remote repository due to conflicting tag(s): {0}. Would you like to resolve the conflict by replacing the local tag(s)?"
+		},
+		"Uncommitted Changes": {
+			"en": "Uncommitted Changes"
+		},
+		"Undo merge commit": {
+			"en": "Undo merge commit"
+		},
+		"Untracked": {
+			"en": "Untracked"
+		},
+		"Untracked Changes": {
+			"en": "Untracked Changes"
+		},
+		"Update Git": {
+			"en": "Update Git"
+		},
+		"View Problems": {
+			"en": "View Problems"
+		},
+		"View Stash": {
+			"en": "View Stash"
+		},
+		"Workspace": {
+			"en": "Workspace"
+		},
+		"Workspace: {0}": {
+			"en": "Workspace: {0}"
+		},
+		"Worktree": {
+			"en": "Worktree"
+		},
+		"Worktree path": {
+			"en": "Worktree path"
+		},
+		"Worktree: {0}": {
+			"en": "Worktree: {0}"
+		},
+		"Worktrees": {
+			"en": "Worktrees"
+		},
+		"Would you like to add \"{0}\" to .gitignore?": {
+			"en": "Would you like to add \"{0}\" to .gitignore?"
+		},
+		"Would you like to open the initialized repository, or add it to the current workspace?": {
+			"en": "Would you like to open the initialized repository, or add it to the current workspace?"
+		},
+		"Would you like to open the initialized repository?": {
+			"en": "Would you like to open the initialized repository?"
+		},
+		"Would you like to open the repository, or add it to the current workspace?": {
+			"en": "Would you like to open the repository, or add it to the current workspace?"
+		},
+		"Would you like to open the repository?": {
+			"en": "Would you like to open the repository?"
+		},
+		"Would you like to publish this repository to continue working on it elsewhere?": {
+			"en": "Would you like to publish this repository to continue working on it elsewhere?"
+		},
+		"Would you like {0} to [periodically run \"git fetch\"]({1})?": {
+			"en": "Would you like {0} to [periodically run \"git fetch\"]({1})?"
+		},
+		"Yes": {
+			"en": "Yes"
+		},
+		"Yes, Don't Show Again": {
+			"en": "Yes, Don't Show Again"
+		},
+		"You": {
+			"en": "You"
+		},
+		"You are about to commit your changes without verification, this skips pre-commit hooks and can be undesirable.\n\nAre you sure to continue?": {
+			"en": "You are about to commit your changes without verification, this skips pre-commit hooks and can be undesirable.\n\nAre you sure to continue?"
+		},
+		"You are about to force push your changes, this can be destructive and could inadvertently overwrite changes made by others.\n\nAre you sure to continue?": {
+			"en": "You are about to force push your changes, this can be destructive and could inadvertently overwrite changes made by others.\n\nAre you sure to continue?"
+		},
+		"You are opening a repository from a location that is not trusted. Do you trust the authors of the files in the repository you are opening?": {
+			"en": "You are opening a repository from a location that is not trusted. Do you trust the authors of the files in the repository you are opening?"
+		},
+		"You are trying to commit to a protected branch. How would you like to proceed?": {
+			"en": "You are trying to commit to a protected branch. How would you like to proceed?"
+		},
+		"You can restore these files from the Recycle Bin.": {
+			"en": "You can restore these files from the Recycle Bin."
+		},
+		"You can restore these files from the Trash.": {
+			"en": "You can restore these files from the Trash."
+		},
+		"You can restore this file from the Recycle Bin.": {
+			"en": "You can restore this file from the Recycle Bin."
+		},
+		"You can restore this file from the Trash.": {
+			"en": "You can restore this file from the Trash."
+		},
+		"You cannot delete the worktree you are currently in. Please switch to the main repository first.": {
+			"en": "You cannot delete the worktree you are currently in. Please switch to the main repository first."
+		},
+		"You seem to have git \"{0}\" installed. Code works best with git >= 2": {
+			"en": "You seem to have git \"{0}\" installed. Code works best with git >= 2"
+		},
+		"Your local changes to the following files would be overwritten by merge:\n {0}\n\nPlease stage, commit, or stash your changes in the repository before migrating changes.": {
+			"en": "Your local changes to the following files would be overwritten by merge:\n {0}\n\nPlease stage, commit, or stash your changes in the repository before migrating changes."
+		},
+		"Your local changes would be overwritten by checkout.": {
+			"en": "Your local changes would be overwritten by checkout."
+		},
+		"Your repository has no remotes configured to publish to.": {
+			"en": "Your repository has no remotes configured to publish to."
+		},
+		"Your repository has no remotes configured to pull from.": {
+			"en": "Your repository has no remotes configured to pull from."
+		},
+		"Your repository has no remotes configured to push to.": {
+			"en": "Your repository has no remotes configured to push to."
+		},
+		"Your repository has no remotes.": {
+			"en": "Your repository has no remotes."
+		},
+		"[main] Log level: {0}": {
+			"en": "[main] Log level: {0}"
+		},
+		"[main] Skipped found git in: \"{0}\"": {
+			"en": "[main] Skipped found git in: \"{0}\""
+		},
+		"[main] Using git \"{0}\" from \"{1}\"": {
+			"en": "[main] Using git \"{0}\" from \"{1}\""
+		},
+		"[main] Validating found git in: \"{0}\"": {
+			"en": "[main] Validating found git in: \"{0}\""
+		},
+		"branches": {
+			"en": "branches"
+		},
+		"detached": {
+			"en": "detached"
+		},
+		"in {0}": {
+			"en": "in {0}"
+		},
+		"no": {
+			"en": "no"
+		},
+		"now": {
+			"en": "now"
+		},
+		"remote branches": {
+			"en": "remote branches"
+		},
+		"tags": {
+			"en": "tags"
+		},
+		"yes": {
+			"en": "yes"
+		},
+		"{0} (Deleted)": {
+			"en": "{0} (Deleted)"
+		},
+		"{0} (Index)": {
+			"en": "{0} (Index)"
+		},
+		"{0} (Intent to add)": {
+			"en": "{0} (Intent to add)"
+		},
+		"{0} (Ours)": {
+			"en": "{0} (Ours)"
+		},
+		"{0} (Theirs)": {
+			"en": "{0} (Theirs)"
+		},
+		"{0} (Type changed)": {
+			"en": "{0} (Type changed)"
+		},
+		"{0} (Untracked)": {
+			"en": "{0} (Untracked)"
+		},
+		"{0} (Working Tree)": {
+			"en": "{0} (Working Tree)"
+		},
+		"{0} ({1})": {
+			"en": "{0} ({1})"
+		},
+		"{0} ({1}) ș {0} ({2})": {
+			"en": "{0} ({1}) ș {0} ({2})"
+		},
+		"{0} Checkout detached...": {
+			"en": "{0} Checkout detached..."
+		},
+		"{0} Commit": {
+			"en": "{0} Commit"
+		},
+		"{0} Commit & Push": {
+			"en": "{0} Commit & Push"
+		},
+		"{0} Commit & Sync": {
+			"en": "{0} Commit & Sync"
+		},
+		"{0} Commit (Amend)": {
+			"en": "{0} Commit (Amend)"
+		},
+		"{0} Continue": {
+			"en": "{0} Continue"
+		},
+		"{0} Create new branch from...": {
+			"en": "{0} Create new branch from..."
+		},
+		"{0} Create new branch...": {
+			"en": "{0} Create new branch..."
+		},
+		"{0} Fetch all remotes": {
+			"en": "{0} Fetch all remotes"
+		},
+		"{0} Publish Branch/{Locked=\"Branch\"}Do not translate \"Branch\" as it is a git term": {
+			"en": "{0} Publish Branch/{Locked=\"Branch\"}Do not translate \"Branch\" as it is a git term"
+		},
+		"{0} Sync Changes{1}{2}": {
+			"en": "{0} Sync Changes{1}{2}"
+		},
+		"{0} character over {1} in current line": {
+			"en": "{0} character over {1} in current line"
+		},
+		"{0} characters over {1} in current line": {
+			"en": "{0} characters over {1} in current line"
+		},
+		"{0} day": {
+			"en": "{0} day"
+		},
+		"{0} day ago": {
+			"en": "{0} day ago"
+		},
+		"{0} days": {
+			"en": "{0} days"
+		},
+		"{0} days ago": {
+			"en": "{0} days ago"
+		},
+		"{0} deletions{1}": {
+			"en": "{0} deletions{1}"
+		},
+		"{0} deletion{1}": {
+			"en": "{0} deletion{1}"
+		},
+		"{0} file changed": {
+			"en": "{0} file changed"
+		},
+		"{0} files changed": {
+			"en": "{0} files changed"
+		},
+		"{0} hour": {
+			"en": "{0} hour"
+		},
+		"{0} hour ago": {
+			"en": "{0} hour ago"
+		},
+		"{0} hours": {
+			"en": "{0} hours"
+		},
+		"{0} hours ago": {
+			"en": "{0} hours ago"
+		},
+		"{0} hr": {
+			"en": "{0} hr"
+		},
+		"{0} hr ago": {
+			"en": "{0} hr ago"
+		},
+		"{0} hrs": {
+			"en": "{0} hrs"
+		},
+		"{0} hrs ago": {
+			"en": "{0} hrs ago"
+		},
+		"{0} insertions{1}": {
+			"en": "{0} insertions{1}"
+		},
+		"{0} insertion{1}": {
+			"en": "{0} insertion{1}"
+		},
+		"{0} min": {
+			"en": "{0} min"
+		},
+		"{0} min ago": {
+			"en": "{0} min ago"
+		},
+		"{0} mins": {
+			"en": "{0} mins"
+		},
+		"{0} mins ago": {
+			"en": "{0} mins ago"
+		},
+		"{0} minute": {
+			"en": "{0} minute"
+		},
+		"{0} minute ago": {
+			"en": "{0} minute ago"
+		},
+		"{0} minutes": {
+			"en": "{0} minutes"
+		},
+		"{0} minutes ago": {
+			"en": "{0} minutes ago"
+		},
+		"{0} mo": {
+			"en": "{0} mo"
+		},
+		"{0} mo ago": {
+			"en": "{0} mo ago"
+		},
+		"{0} month": {
+			"en": "{0} month"
+		},
+		"{0} month ago": {
+			"en": "{0} month ago"
+		},
+		"{0} months": {
+			"en": "{0} months"
+		},
+		"{0} months ago": {
+			"en": "{0} months ago"
+		},
+		"{0} mos": {
+			"en": "{0} mos"
+		},
+		"{0} mos ago": {
+			"en": "{0} mos ago"
+		},
+		"{0} sec": {
+			"en": "{0} sec"
+		},
+		"{0} sec ago": {
+			"en": "{0} sec ago"
+		},
+		"{0} second": {
+			"en": "{0} second"
+		},
+		"{0} second ago": {
+			"en": "{0} second ago"
+		},
+		"{0} seconds": {
+			"en": "{0} seconds"
+		},
+		"{0} seconds ago": {
+			"en": "{0} seconds ago"
+		},
+		"{0} secs": {
+			"en": "{0} secs"
+		},
+		"{0} secs ago": {
+			"en": "{0} secs ago"
+		},
+		"{0} week": {
+			"en": "{0} week"
+		},
+		"{0} week ago": {
+			"en": "{0} week ago"
+		},
+		"{0} weeks": {
+			"en": "{0} weeks"
+		},
+		"{0} weeks ago": {
+			"en": "{0} weeks ago"
+		},
+		"{0} wk": {
+			"en": "{0} wk"
+		},
+		"{0} wk ago": {
+			"en": "{0} wk ago"
+		},
+		"{0} wks": {
+			"en": "{0} wks"
+		},
+		"{0} wks ago": {
+			"en": "{0} wks ago"
+		},
+		"{0} year": {
+			"en": "{0} year"
+		},
+		"{0} year ago": {
+			"en": "{0} year ago"
+		},
+		"{0} years": {
+			"en": "{0} years"
+		},
+		"{0} years ago": {
+			"en": "{0} years ago"
+		},
+		"{0} yr": {
+			"en": "{0} yr"
+		},
+		"{0} yr ago": {
+			"en": "{0} yr ago"
+		},
+		"{0} yrs": {
+			"en": "{0} yrs"
+		},
+		"{0} yrs ago": {
+			"en": "{0} yrs ago"
+		},
+		"{0} ș {1}": {
+			"en": "{0} ș {1}"
+		}
+	}
+}

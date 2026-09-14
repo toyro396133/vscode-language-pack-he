@@ -1,0 +1,36 @@
+{
+	"package": {
+		"displayName": "Simple Browser",
+		"description": "A very basic built-in webview for displaying web content.",
+		"configuration.focusLockIndicator.enabled.description": "Enable/disable the floating indicator that shows when focused in the simple browser."
+	},
+	"bundle": {
+		"Back": {
+			"en": "Back"
+		},
+		"Enter url to visit": {
+			"en": "Enter url to visit"
+		},
+		"Focus Lock": {
+			"en": "Focus Lock"
+		},
+		"Forward": {
+			"en": "Forward"
+		},
+		"Open in browser": {
+			"en": "Open in browser"
+		},
+		"Open in simple browser": {
+			"en": "Open in simple browser"
+		},
+		"Reload": {
+			"en": "Reload"
+		},
+		"Simple Browser": {
+			"en": "Simple Browser"
+		},
+		"https://example.com": {
+			"en": "https://example.com"
+		}
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"package": {
+		"displayName": "Local Tunnel Port Forwarding",
+		"description": "Allows forwarding local ports to be accessible over the internet.",
+		"category": "Port Forwarding",
+		"command.showLog": "Show Log",
+		"command.restart": "Restart Forwarding System"
+	},
+	"bundle": {
+		"Continue": {
+			"en": "Continue"
+		},
+		"Don't show again": {
+			"en": "Don't show again"
+		},
+		"Port Forwarding": {
+			"en": "Port Forwarding"
+		},
+		"Private": {
+			"en": "Private"
+		},
+		"Public": {
+			"en": "Public"
+		},
+		"You're about to create a publicly forwarded port. Anyone on the internet will be able to connect to the service listening on port {0}. You should only proceed if this service is secure and non-sensitive.": {
+			"en": "You're about to create a publicly forwarded port. Anyone on the internet will be able to connect to the service listening on port {0}. You should only proceed if this service is secure and non-sensitive."
+		}
+	}
+}

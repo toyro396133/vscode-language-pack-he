@@ -1,0 +1,7 @@
+{
+	"package": {
+		"displayName": "Swift Language Basics",
+		"description": "Provides snippets, syntax highlighting and bracket matching in Swift files."
+	},
+	"bundle": {}
+}

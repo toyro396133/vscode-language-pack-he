@@ -1,0 +1,526 @@
+{
+	"package": {
+		"displayName": "JSON Language Features",
+		"description": "Provides rich language support for JSON files.",
+		"json.schemas.desc": "Associate schemas to JSON files in the current project.",
+		"json.schemas.url.desc": "A URL or absolute file path to a schema. Can be a relative path (starting with `./`) in workspace and workspace folder settings.",
+		"json.schemas.fileMatch.desc": "An array of file patterns to match against when resolving JSON files to schemas. `*` and `**` can be used as a wildcard. Exclusion patterns can also be defined and start with `!`. A file matches when there is at least one matching pattern and the last matching pattern is not an exclusion pattern.",
+		"json.schemas.fileMatch.item.desc": "A file pattern that can contain `*` and `**` to match against when resolving JSON files to schemas. When beginning with `!`, it defines an exclusion pattern.",
+		"json.schemas.schema.desc": "The schema definition for the given URL. The schema only needs to be provided to avoid accesses to the schema URL.",
+		"json.format.enable.desc": "Enable/disable default JSON formatter",
+		"json.format.keepLines.desc": "Keep all existing new lines when formatting.",
+		"json.validate.enable.desc": "Enable/disable JSON validation.",
+		"json.tracing.desc": "Traces the communication between VS Code and the JSON language server.",
+		"json.colorDecorators.enable.desc": "Enables or disables color decorators",
+		"json.colorDecorators.enable.deprecationMessage": "The setting `json.colorDecorators.enable` has been deprecated in favor of `editor.colorDecorators`.",
+		"json.schemaResolutionErrorMessage": "Unable to resolve schema.",
+		"json.clickToRetry": "Click to retry.",
+		"json.maxItemsComputed.desc": "The maximum number of outline symbols and folding regions computed (limited for performance reasons).",
+		"json.maxItemsExceededInformation.desc": "Show notification when exceeding the maximum number of outline symbols and folding regions.",
+		"json.enableSchemaDownload.desc": "When enabled, JSON schemas can be fetched from http and https locations.",
+		"json.command.clearCache": "Clear Schema Cache",
+		"json.command.sort": "Sort Document",
+		"json.workspaceTrust": "The extension requires workspace trust to load schemas from http and https.",
+		"json.schemaDownload.trustedDomains.desc": "List of trusted domains for downloading JSON schemas over http(s). Use `*` to trust all domains. `*` can also be used as a wildcard in domain names."
+	},
+	"bundle": {
+		"$ref '{0}' in '{1}' can not be resolved.": {
+			"en": "$ref '{0}' in '{1}' can not be resolved."
+		},
+		"<empty>": {
+			"en": "<empty>"
+		},
+		"A default value. Used by suggestions.": {
+			"en": "A default value. Used by suggestions."
+		},
+		"A descriptive title of the schema.": {
+			"en": "A descriptive title of the schema."
+		},
+		"A long description of the schema. Used in hover menus and suggestions.": {
+			"en": "A long description of the schema. Used in hover menus and suggestions."
+		},
+		"A map of property names to either an array of property names or a schema. An array of property names means the property named in the key depends on the properties in the array being present in the object in order to be valid. If the value is a schema, then the schema is only applied to the object if the property in the key exists on the object.": {
+			"en": "A map of property names to either an array of property names or a schema. An array of property names means the property named in the key depends on the properties in the array being present in the object in order to be valid. If the value is a schema, then the schema is only applied to the object if the property in the key exists on the object."
+		},
+		"A map of property names to schemas for each property.": {
+			"en": "A map of property names to schemas for each property."
+		},
+		"A map of regular expressions on property names to schemas for matching properties.": {
+			"en": "A map of regular expressions on property names to schemas for matching properties."
+		},
+		"A number that should cleanly divide the current value (i.e. have no remainder).": {
+			"en": "A number that should cleanly divide the current value (i.e. have no remainder)."
+		},
+		"A regular expression to match the string against. It is not implicitly anchored.": {
+			"en": "A regular expression to match the string against. It is not implicitly anchored."
+		},
+		"A schema which must not match.": {
+			"en": "A schema which must not match."
+		},
+		"A unique identifier for the schema.": {
+			"en": "A unique identifier for the schema."
+		},
+		"Allow all schemas from this domain": {
+			"en": "Allow all schemas from this domain"
+		},
+		"Allow only this specific schema": {
+			"en": "Allow only this specific schema"
+		},
+		"An array instance is valid against \"contains\" if at least one of its elements is valid against the given schema.": {
+			"en": "An array instance is valid against \"contains\" if at least one of its elements is valid against the given schema."
+		},
+		"An array of schemas, all of which must match.": {
+			"en": "An array of schemas, all of which must match."
+		},
+		"An array of schemas, exactly one of which must match.": {
+			"en": "An array of schemas, exactly one of which must match."
+		},
+		"An array of schemas, where at least one must match.": {
+			"en": "An array of schemas, where at least one must match."
+		},
+		"An array of strings that lists the names of all properties required on this object.": {
+			"en": "An array of strings that lists the names of all properties required on this object."
+		},
+		"An instance validates successfully against this keyword if its value is equal to the value of the keyword.": {
+			"en": "An instance validates successfully against this keyword if its value is equal to the value of the keyword."
+		},
+		"Array does not contain required item.": {
+			"en": "Array does not contain required item."
+		},
+		"Array has duplicate items.": {
+			"en": "Array has duplicate items."
+		},
+		"Array has too few items that match the contains contraint. Expected {0} or more.": {
+			"en": "Array has too few items that match the contains contraint. Expected {0} or more."
+		},
+		"Array has too few items. Expected {0} or more.": {
+			"en": "Array has too few items. Expected {0} or more."
+		},
+		"Array has too many items according to schema. Expected {0} or fewer.": {
+			"en": "Array has too many items according to schema. Expected {0} or fewer."
+		},
+		"Array has too many items that match the contains contraint. Expected {0} or less.": {
+			"en": "Array has too many items that match the contains contraint. Expected {0} or less."
+		},
+		"Array has too many items. Expected {0} or fewer.": {
+			"en": "Array has too many items. Expected {0} or fewer."
+		},
+		"Colon expected": {
+			"en": "Colon expected"
+		},
+		"Comments are not permitted in JSON.": {
+			"en": "Comments are not permitted in JSON."
+		},
+		"Comments from schema authors to readers or maintainers of the schema.": {
+			"en": "Comments from schema authors to readers or maintainers of the schema."
+		},
+		"Configure": {
+			"en": "Configure"
+		},
+		"Configure Setting": {
+			"en": "Configure Setting"
+		},
+		"Configure Trusted Domains...": {
+			"en": "Configure Trusted Domains..."
+		},
+		"Configured by extension: {0}": {
+			"en": "Configured by extension: {0}"
+		},
+		"Configured in user settings": {
+			"en": "Configured in user settings"
+		},
+		"Configured in workspace settings": {
+			"en": "Configured in workspace settings"
+		},
+		"Default value": {
+			"en": "Default value"
+		},
+		"Describes the content encoding of a string property.": {
+			"en": "Describes the content encoding of a string property."
+		},
+		"Describes the format expected for the value. By default, not used for validation": {
+			"en": "Describes the format expected for the value. By default, not used for validation"
+		},
+		"Describes the media type of a string property.": {
+			"en": "Describes the media type of a string property."
+		},
+		"Download disabled": {
+			"en": "Download disabled"
+		},
+		"Downloading schemas is disabled in untrusted workspaces": {
+			"en": "Downloading schemas is disabled in untrusted workspaces"
+		},
+		"Downloading schemas is disabled through setting '{0}'": {
+			"en": "Downloading schemas is disabled through setting '{0}'"
+		},
+		"Draft-03 schemas are not supported.": {
+			"en": "Draft-03 schemas are not supported."
+		},
+		"Duplicate anchor declaration: '{0}'": {
+			"en": "Duplicate anchor declaration: '{0}'"
+		},
+		"Duplicate object key": {
+			"en": "Duplicate object key"
+		},
+		"Either a schema or a boolean. If a schema, used to validate all properties not matched by 'properties', 'propertyNames', or 'patternProperties'. If false, any properties not defined by the adjacent keywords will cause this schema to fail.": {
+			"en": "Either a schema or a boolean. If a schema, used to validate all properties not matched by 'properties', 'propertyNames', or 'patternProperties'. If false, any properties not defined by the adjacent keywords will cause this schema to fail."
+		},
+		"Either a string of one of the basic schema types (number, integer, null, array, object, boolean, string) or an array of strings specifying a subset of those types.": {
+			"en": "Either a string of one of the basic schema types (number, integer, null, array, object, boolean, string) or an array of strings specifying a subset of those types."
+		},
+		"Enable Schema Downloading...": {
+			"en": "Enable Schema Downloading..."
+		},
+		"End of file expected.": {
+			"en": "End of file expected."
+		},
+		"Expected a JSON object, array or literal.": {
+			"en": "Expected a JSON object, array or literal."
+		},
+		"Expected comma": {
+			"en": "Expected comma"
+		},
+		"Expected comma or closing brace": {
+			"en": "Expected comma or closing brace"
+		},
+		"Expected comma or closing bracket": {
+			"en": "Expected comma or closing bracket"
+		},
+		"Failed to sort the JSONC document, please consider opening an issue.": {
+			"en": "Failed to sort the JSONC document, please consider opening an issue."
+		},
+		"For arrays, only when items is set as an array. If items are a schema, this schema validates items after the ones specified by the items schema. If false, additional items will cause validation to fail.": {
+			"en": "For arrays, only when items is set as an array. If items are a schema, this schema validates items after the ones specified by the items schema. If false, additional items will cause validation to fail."
+		},
+		"For arrays. Can either be a schema to validate every element against or an array of schemas to validate each item against in order (the first schema will validate the first element, the second schema will validate the second element, and so on.": {
+			"en": "For arrays. Can either be a schema to validate every element against or an array of schemas to validate each item against in order (the first schema will validate the first element, the second schema will validate the second element, and so on."
+		},
+		"If all of the items in the array must be unique. Defaults to false.": {
+			"en": "If all of the items in the array must be unique. Defaults to false."
+		},
+		"If the instance is an object, this keyword validates if every property name in the instance validates against the provided schema.": {
+			"en": "If the instance is an object, this keyword validates if every property name in the instance validates against the provided schema."
+		},
+		"Incorrect type. Expected \"{0}\".": {
+			"en": "Incorrect type. Expected \"{0}\"."
+		},
+		"Incorrect type. Expected one of {0}.": {
+			"en": "Incorrect type. Expected one of {0}."
+		},
+		"Indicates that the value of the instance is managed exclusively by the owning authority.": {
+			"en": "Indicates that the value of the instance is managed exclusively by the owning authority."
+		},
+		"Invalid characters in string. Control characters must be escaped.": {
+			"en": "Invalid characters in string. Control characters must be escaped."
+		},
+		"Invalid color format. Use #RGB, #RGBA, #RRGGBB or #RRGGBBAA.": {
+			"en": "Invalid color format. Use #RGB, #RGBA, #RRGGBB or #RRGGBBAA."
+		},
+		"Invalid escape character in string.": {
+			"en": "Invalid escape character in string."
+		},
+		"Invalid number format.": {
+			"en": "Invalid number format."
+		},
+		"Invalid unicode sequence in string.": {
+			"en": "Invalid unicode sequence in string."
+		},
+		"Item does not match any validation rule from the array.": {
+			"en": "Item does not match any validation rule from the array."
+		},
+		"JSON Language Server": {
+			"en": "JSON Language Server"
+		},
+		"JSON Outline Status": {
+			"en": "JSON Outline Status"
+		},
+		"JSON Validation Status": {
+			"en": "JSON Validation Status"
+		},
+		"JSON schema cache cleared.": {
+			"en": "JSON schema cache cleared."
+		},
+		"JSON schema configured": {
+			"en": "JSON schema configured"
+		},
+		"JSON: Schema Resolution Error": {
+			"en": "JSON: Schema Resolution Error"
+		},
+		"Learn more about JSON schema configuration...": {
+			"en": "Learn more about JSON schema configuration..."
+		},
+		"Loading JSON info": {
+			"en": "Loading JSON info"
+		},
+		"Location untrusted": {
+			"en": "Location untrusted"
+		},
+		"Location {0} is untrusted": {
+			"en": "Location {0} is untrusted"
+		},
+		"Makes the maximum property exclusive.": {
+			"en": "Makes the maximum property exclusive."
+		},
+		"Makes the minimum property exclusive.": {
+			"en": "Makes the minimum property exclusive."
+		},
+		"Matches a schema that is not allowed.": {
+			"en": "Matches a schema that is not allowed."
+		},
+		"Matches multiple schemas when only one must validate.": {
+			"en": "Matches multiple schemas when only one must validate."
+		},
+		"Missing property \"{0}\".": {
+			"en": "Missing property \"{0}\"."
+		},
+		"New array": {
+			"en": "New array"
+		},
+		"New object": {
+			"en": "New object"
+		},
+		"No schema configured for this file": {
+			"en": "No schema configured for this file"
+		},
+		"No schema validation": {
+			"en": "No schema validation"
+		},
+		"Not used for validation. Place subschemas here that you wish to reference inline with $ref.": {
+			"en": "Not used for validation. Place subschemas here that you wish to reference inline with $ref."
+		},
+		"Object has fewer properties than the required number of {0}": {
+			"en": "Object has fewer properties than the required number of {0}"
+		},
+		"Object has more properties than limit of {0}.": {
+			"en": "Object has more properties than limit of {0}."
+		},
+		"Object is missing property {0} required by property {1}.": {
+			"en": "Object is missing property {0} required by property {1}."
+		},
+		"Open Extension": {
+			"en": "Open Extension"
+		},
+		"Open Settings": {
+			"en": "Open Settings"
+		},
+		"Open settings editor": {
+			"en": "Open settings editor"
+		},
+		"Outline": {
+			"en": "Outline"
+		},
+		"Problem reading content from '{0}': UTF-8 with BOM detected, only UTF 8 is allowed.": {
+			"en": "Problem reading content from '{0}': UTF-8 with BOM detected, only UTF 8 is allowed."
+		},
+		"Problems loading reference '{0}': {1}": {
+			"en": "Problems loading reference '{0}': {1}"
+		},
+		"Property expected": {
+			"en": "Property expected"
+		},
+		"Property keys must be doublequoted": {
+			"en": "Property keys must be doublequoted"
+		},
+		"Property {0} is not allowed.": {
+			"en": "Property {0} is not allowed."
+		},
+		"Reference a definition hosted on any location.": {
+			"en": "Reference a definition hosted on any location."
+		},
+		"Sample JSON values associated with a particular schema, for the purpose of illustrating usage.": {
+			"en": "Sample JSON values associated with a particular schema, for the purpose of illustrating usage."
+		},
+		"Schema not found: {0}": {
+			"en": "Schema not found: {0}"
+		},
+		"Schema validated": {
+			"en": "Schema validated"
+		},
+		"Select how to configure trusted schema domains": {
+			"en": "Select how to configure trusted schema domains"
+		},
+		"Select the schema to use for {0}": {
+			"en": "Select the schema to use for {0}"
+		},
+		"Show Schemas": {
+			"en": "Show Schemas"
+		},
+		"Sort JSON": {
+			"en": "Sort JSON"
+		},
+		"String does not match the pattern of \"{0}\".": {
+			"en": "String does not match the pattern of \"{0}\"."
+		},
+		"String is longer than the maximum length of {0}.": {
+			"en": "String is longer than the maximum length of {0}."
+		},
+		"String is not a RFC3339 date-time.": {
+			"en": "String is not a RFC3339 date-time."
+		},
+		"String is not a RFC3339 date.": {
+			"en": "String is not a RFC3339 date."
+		},
+		"String is not a RFC3339 time.": {
+			"en": "String is not a RFC3339 time."
+		},
+		"String is not a URI: {0}": {
+			"en": "String is not a URI: {0}"
+		},
+		"String is not a hostname.": {
+			"en": "String is not a hostname."
+		},
+		"String is not a valid UUID.": {
+			"en": "String is not a valid UUID."
+		},
+		"String is not an IPv4 address.": {
+			"en": "String is not an IPv4 address."
+		},
+		"String is not an IPv6 address.": {
+			"en": "String is not an IPv6 address."
+		},
+		"String is not an ISO 8601 duration.": {
+			"en": "String is not an ISO 8601 duration."
+		},
+		"String is not an e-mail address.": {
+			"en": "String is not an e-mail address."
+		},
+		"String is shorter than the minimum length of {0}.": {
+			"en": "String is shorter than the minimum length of {0}."
+		},
+		"The \"else\" subschema is used for validation when the \"if\" subschema fails.": {
+			"en": "The \"else\" subschema is used for validation when the \"if\" subschema fails."
+		},
+		"The \"then\" subschema is used for validation when the \"if\" subschema succeeds.": {
+			"en": "The \"then\" subschema is used for validation when the \"if\" subschema succeeds."
+		},
+		"The maximum length of a string.": {
+			"en": "The maximum length of a string."
+		},
+		"The maximum number of items that can be inside an array. Inclusive.": {
+			"en": "The maximum number of items that can be inside an array. Inclusive."
+		},
+		"The maximum number of properties an object can have. Inclusive.": {
+			"en": "The maximum number of properties an object can have. Inclusive."
+		},
+		"The maximum numerical value, inclusive by default.": {
+			"en": "The maximum numerical value, inclusive by default."
+		},
+		"The minimum length of a string.": {
+			"en": "The minimum length of a string."
+		},
+		"The minimum number of items that can be inside an array. Inclusive.": {
+			"en": "The minimum number of items that can be inside an array. Inclusive."
+		},
+		"The minimum number of properties an object can have. Inclusive.": {
+			"en": "The minimum number of properties an object can have. Inclusive."
+		},
+		"The minimum numerical value, inclusive by default.": {
+			"en": "The minimum numerical value, inclusive by default."
+		},
+		"The schema to verify this document against.": {
+			"en": "The schema to verify this document against."
+		},
+		"The set of literal values that are valid.": {
+			"en": "The set of literal values that are valid."
+		},
+		"The validation outcome of the \"if\" subschema controls which of the \"then\" or \"else\" keywords are evaluated.": {
+			"en": "The validation outcome of the \"if\" subschema controls which of the \"then\" or \"else\" keywords are evaluated."
+		},
+		"Trailing comma": {
+			"en": "Trailing comma"
+		},
+		"Trust Domain: {0}": {
+			"en": "Trust Domain: {0}"
+		},
+		"Trust URI: {0}": {
+			"en": "Trust URI: {0}"
+		},
+		"URI expected.": {
+			"en": "URI expected."
+		},
+		"URI is expected.": {
+			"en": "URI is expected."
+		},
+		"URI with a scheme is expected.": {
+			"en": "URI with a scheme is expected."
+		},
+		"Unable to compute used schemas: No document": {
+			"en": "Unable to compute used schemas: No document"
+		},
+		"Unable to compute used schemas: {0}": {
+			"en": "Unable to compute used schemas: {0}"
+		},
+		"Unable to load schema from '{0}'. No schema request service available": {
+			"en": "Unable to load schema from '{0}'. No schema request service available"
+		},
+		"Unable to load schema from '{0}': No content.": {
+			"en": "Unable to load schema from '{0}': No content."
+		},
+		"Unable to load schema from '{0}': {1}.": {
+			"en": "Unable to load schema from '{0}': {1}."
+		},
+		"Unable to load {0}": {
+			"en": "Unable to load {0}"
+		},
+		"Unable to parse content from '{0}': Parse error at offset {1}.": {
+			"en": "Unable to parse content from '{0}': Parse error at offset {1}."
+		},
+		"Unable to resolve schema": {
+			"en": "Unable to resolve schema"
+		},
+		"Unexpected end of comment.": {
+			"en": "Unexpected end of comment."
+		},
+		"Unexpected end of number.": {
+			"en": "Unexpected end of number."
+		},
+		"Unexpected end of string.": {
+			"en": "Unexpected end of string."
+		},
+		"Validating...": {
+			"en": "Validating..."
+		},
+		"Value expected": {
+			"en": "Value expected"
+		},
+		"Value is above the exclusive maximum of {0}.": {
+			"en": "Value is above the exclusive maximum of {0}."
+		},
+		"Value is above the maximum of {0}.": {
+			"en": "Value is above the maximum of {0}."
+		},
+		"Value is below the exclusive minimum of {0}.": {
+			"en": "Value is below the exclusive minimum of {0}."
+		},
+		"Value is below the minimum of {0}.": {
+			"en": "Value is below the minimum of {0}."
+		},
+		"Value is deprecated": {
+			"en": "Value is deprecated"
+		},
+		"Value is not accepted. Valid values: {0}.": {
+			"en": "Value is not accepted. Valid values: {0}."
+		},
+		"Value is not divisible by {0}.": {
+			"en": "Value is not divisible by {0}."
+		},
+		"Value must be {0}.": {
+			"en": "Value must be {0}."
+		},
+		"Workspace untrusted": {
+			"en": "Workspace untrusted"
+		},
+		"multiple JSON schemas configured": {
+			"en": "multiple JSON schemas configured"
+		},
+		"no JSON schema configured": {
+			"en": "no JSON schema configured"
+		},
+		"only {0} document symbols shown for performance reasons": {
+			"en": "only {0} document symbols shown for performance reasons"
+		},
+		"{0} is a directory, not a file": {
+			"en": "{0} is a directory, not a file"
+		}
+	}
+}

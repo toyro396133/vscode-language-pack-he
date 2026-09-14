@@ -1,0 +1,7 @@
+{
+	"package": {
+		"displayName": "Powershell Language Basics",
+		"description": "Provides snippets, syntax highlighting, bracket matching and folding in Powershell files."
+	},
+	"bundle": {}
+}

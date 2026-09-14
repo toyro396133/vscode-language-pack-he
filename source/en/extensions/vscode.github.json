@@ -1,0 +1,167 @@
+{
+	"package": {
+		"displayName": "GitHub",
+		"description": "GitHub features for VS Code",
+		"command.copyVscodeDevLink": "Copy vscode.dev Link",
+		"command.publish": "Publish to GitHub",
+		"command.openOnGitHub": "Open on GitHub",
+		"command.openOnVscodeDev": "Open in vscode.dev",
+		"command.createPullRequest": "Create PR",
+		"command.openPullRequest": "Open PR",
+		"config.branchProtection": "Controls whether to query repository rules for GitHub repositories",
+		"config.gitAuthentication": "Controls whether to enable automatic GitHub authentication for git commands within VS Code.",
+		"config.gitProtocol": "Controls which protocol is used to clone a GitHub repository",
+		"config.showAvatar": "Controls whether to show the GitHub avatar of the commit author in various hovers (ex: Git blame, Timeline, Source Control Graph, etc.)",
+		"welcome.publishFolder": {
+			"message": "You can directly publish this folder to a GitHub repository. Once published, you'll have access to source control features powered by Git and GitHub.\n[$(github) Publish to GitHub](command:github.publish)",
+			"comment": [
+				"{Locked='$(github)'}",
+				"Do not translate '$(github)'. It will be rendered as an icon",
+				"{Locked='](command:github.publish'}",
+				"Do not translate the 'command:*' part inside of the '(..)'. It is an internal command syntax for VS Code",
+				"Please make sure there is no space between the right bracket and left parenthesis:  ]( this is an internal syntax for links"
+			]
+		},
+		"welcome.publishWorkspaceFolder": {
+			"message": "You can directly publish a workspace folder to a GitHub repository. Once published, you'll have access to source control features powered by Git and GitHub.\n[$(github) Publish to GitHub](command:github.publish)",
+			"comment": [
+				"{Locked='$(github)'}",
+				"Do not translate '$(github)'. It will be rendered as an icon",
+				"{Locked='](command:github.publish'}",
+				"Do not translate the 'command:*' part inside of the '(..)'. It is an internal command syntax for VS Code",
+				"Please make sure there is no space between the right bracket and left parenthesis:  ]( this is an internal syntax for links"
+			]
+		}
+	},
+	"bundle": {
+		"Checkout on vscode.dev": {
+			"en": "Checkout on vscode.dev"
+		},
+		"Commit Changes": {
+			"en": "Commit Changes"
+		},
+		"Copy Anyway": {
+			"en": "Copy Anyway"
+		},
+		"Copy vscode.dev Link": {
+			"en": "Copy vscode.dev Link"
+		},
+		"Could not determine the current branch.": {
+			"en": "Could not determine the current branch."
+		},
+		"Could not find a GitHub remote for this repository.": {
+			"en": "Could not find a GitHub remote for this repository."
+		},
+		"Could not find a git repository for the session worktree.": {
+			"en": "Could not find a git repository for the session worktree."
+		},
+		"Could not parse GitHub remote URL.": {
+			"en": "Could not parse GitHub remote URL."
+		},
+		"Create Fork": {
+			"en": "Create Fork"
+		},
+		"Create GitHub fork": {
+			"en": "Create GitHub fork"
+		},
+		"Create PR": {
+			"en": "Create PR"
+		},
+		"Creating GitHub Pull Request...": {
+			"en": "Creating GitHub Pull Request..."
+		},
+		"Creating first commit": {
+			"en": "Creating first commit"
+		},
+		"Failed to publish branch: {0}": {
+			"en": "Failed to publish branch: {0}"
+		},
+		"Forking \"{0}/{1}\"...": {
+			"en": "Forking \"{0}/{1}\"..."
+		},
+		"Learn More": {
+			"en": "Learn More"
+		},
+		"Log level: {0}": {
+			"en": "Log level: {0}"
+		},
+		"No": {
+			"en": "No"
+		},
+		"No GitHub remotes found that contain this commit.": {
+			"en": "No GitHub remotes found that contain this commit."
+		},
+		"No template": {
+			"en": "No template"
+		},
+		"Open PR": {
+			"en": "Open PR"
+		},
+		"Open on GitHub": {
+			"en": "Open on GitHub"
+		},
+		"Pick a folder to publish to GitHub": {
+			"en": "Pick a folder to publish to GitHub"
+		},
+		"Publish Branch & Copy Link": {
+			"en": "Publish Branch & Copy Link"
+		},
+		"Publishing branch to {0}...": {
+			"en": "Publishing branch to {0}..."
+		},
+		"Publishing to a private GitHub repository": {
+			"en": "Publishing to a private GitHub repository"
+		},
+		"Publishing to a public GitHub repository": {
+			"en": "Publishing to a public GitHub repository"
+		},
+		"Pull Changes & Copy Link": {
+			"en": "Pull Changes & Copy Link"
+		},
+		"Push Commits & Copy Link": {
+			"en": "Push Commits & Copy Link"
+		},
+		"Pushing changes...": {
+			"en": "Pushing changes..."
+		},
+		"Select the Pull Request template": {
+			"en": "Select the Pull Request template"
+		},
+		"Select which files should be included in the repository.": {
+			"en": "Select which files should be included in the repository."
+		},
+		"Successfully published the \"{0}\" repository to GitHub.": {
+			"en": "Successfully published the \"{0}\" repository to GitHub."
+		},
+		"The PR \"{0}/{1}#{2}\" was successfully created on GitHub.": {
+			"en": "The PR \"{0}/{1}#{2}\" was successfully created on GitHub."
+		},
+		"The current branch has unpublished commits. Would you like to push your commits before copying a link?": {
+			"en": "The current branch has unpublished commits. Would you like to push your commits before copying a link?"
+		},
+		"The current branch is not published to the remote. Would you like to publish your branch before copying a link?": {
+			"en": "The current branch is not published to the remote. Would you like to publish your branch before copying a link?"
+		},
+		"The current branch is not up to date. Would you like to pull before copying a link?": {
+			"en": "The current branch is not up to date. Would you like to pull before copying a link?"
+		},
+		"The current file has uncommitted changes. Please commit your changes before copying a link.": {
+			"en": "The current file has uncommitted changes. Please commit your changes before copying a link."
+		},
+		"The fork \"{0}\" was successfully created on GitHub.": {
+			"en": "The fork \"{0}\" was successfully created on GitHub."
+		},
+		"Uploading files": {
+			"en": "Uploading files"
+		},
+		"You don't have permissions to push to \"{0}/{1}\" on GitHub. Would you like to create a fork and push to it instead?": {
+			"en": "You don't have permissions to push to \"{0}/{1}\" on GitHub. Would you like to create a fork and push to it instead?"
+		},
+		"Your push to \"{0}/{1}\" was rejected by GitHub because push protection is enabled and one or more secrets were detected.": {
+			"en": "Your push to \"{0}/{1}\" was rejected by GitHub because push protection is enabled and one or more secrets were detected."
+		},
+		"{0} Open on GitHub": {
+			"en": "{0} Open on GitHub"
+		}
+	}
+}

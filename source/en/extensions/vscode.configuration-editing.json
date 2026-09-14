@@ -1,0 +1,185 @@
+{
+	"package": {
+		"displayName": "Configuration Editing",
+		"description": "Provides capabilities (advanced IntelliSense, auto-fixing) in configuration files like settings, launch, and extension recommendation files."
+	},
+	"bundle": {
+		"Example": {
+			"en": "Example"
+		},
+		"Files by Extension": {
+			"en": "Files by Extension"
+		},
+		"Files with Extension": {
+			"en": "Files with Extension"
+		},
+		"Files with Multiple Extensions": {
+			"en": "Files with Multiple Extensions"
+		},
+		"Files with Path": {
+			"en": "Files with Path"
+		},
+		"Files with Siblings by Name": {
+			"en": "Files with Siblings by Name"
+		},
+		"Folder by Name (Any Location)": {
+			"en": "Folder by Name (Any Location)"
+		},
+		"Folder by Name (Top Level)": {
+			"en": "Folder by Name (Top Level)"
+		},
+		"Folders with Multiple Names (Top Level)": {
+			"en": "Folders with Multiple Names (Top Level)"
+		},
+		"GitHub": {
+			"en": "GitHub"
+		},
+		"Map all files matching the absolute path glob pattern in their path to the language with the given identifier.": {
+			"en": "Map all files matching the absolute path glob pattern in their path to the language with the given identifier."
+		},
+		"Map all files matching the glob pattern in their filename to the language with the given identifier.": {
+			"en": "Map all files matching the glob pattern in their filename to the language with the given identifier."
+		},
+		"Match a folder with a specific name in any location.": {
+			"en": "Match a folder with a specific name in any location."
+		},
+		"Match a top level folder with a specific name.": {
+			"en": "Match a top level folder with a specific name."
+		},
+		"Match all files of a specific file extension.": {
+			"en": "Match all files of a specific file extension."
+		},
+		"Match all files with any of the file extensions.": {
+			"en": "Match all files with any of the file extensions."
+		},
+		"Match files that have siblings with the same name but a different extension.": {
+			"en": "Match files that have siblings with the same name but a different extension."
+		},
+		"Match multiple top level folders.": {
+			"en": "Match multiple top level folders."
+		},
+		"The character used by the operating system to separate components in file paths. Is also aliased to '/'.": {
+			"en": "The character used by the operating system to separate components in file paths. Is also aliased to '/'."
+		},
+		"The current opened file": {
+			"en": "The current opened file"
+		},
+		"The current opened file relative to ${workspaceFolder}": {
+			"en": "The current opened file relative to ${workspaceFolder}"
+		},
+		"The current opened file workspace folder name without any slashes (/)": {
+			"en": "The current opened file workspace folder name without any slashes (/)"
+		},
+		"The current opened file's basename": {
+			"en": "The current opened file's basename"
+		},
+		"The current opened file's basename with no file extension": {
+			"en": "The current opened file's basename with no file extension"
+		},
+		"The current opened file's dirname": {
+			"en": "The current opened file's dirname"
+		},
+		"The current opened file's dirname relative to ${workspaceFolder}": {
+			"en": "The current opened file's dirname relative to ${workspaceFolder}"
+		},
+		"The current opened file's extension": {
+			"en": "The current opened file's extension"
+		},
+		"The current opened file's folder name": {
+			"en": "The current opened file's folder name"
+		},
+		"The current selected line number in the active file": {
+			"en": "The current selected line number in the active file"
+		},
+		"The current selected text in the active file": {
+			"en": "The current selected text in the active file"
+		},
+		"The file extension of the editor (e.g. txt)": {
+			"en": "The file extension of the editor (e.g. txt)"
+		},
+		"The file name of the editor without its directory or extension (e.g. myFile)": {
+			"en": "The file name of the editor without its directory or extension (e.g. myFile)"
+		},
+		"The name of the default build task. If there is not a single default build task then a quick pick is shown to choose the build task.": {
+			"en": "The name of the default build task. If there is not a single default build task then a quick pick is shown to choose the build task."
+		},
+		"The name of the folder opened in VS Code without any slashes (/)": {
+			"en": "The name of the folder opened in VS Code without any slashes (/)"
+		},
+		"The nth parent folder name of the editor": {
+			"en": "The nth parent folder name of the editor"
+		},
+		"The parent folder name of the editor (e.g. myFileFolder)": {
+			"en": "The parent folder name of the editor (e.g. myFileFolder)"
+		},
+		"The path of the folder opened in VS Code": {
+			"en": "The path of the folder opened in VS Code"
+		},
+		"The path where an extension is installed.": {
+			"en": "The path where an extension is installed."
+		},
+		"The task runner's current working directory on startup": {
+			"en": "The task runner's current working directory on startup"
+		},
+		"Use the language of the currently active text editor if any": {
+			"en": "Use the language of the currently active text editor if any"
+		},
+		"a conditional separator (' - ') that only shows when surrounded by variables with values": {
+			"en": "a conditional separator (' - ') that only shows when surrounded by variables with values"
+		},
+		"an indicator for when the active editor has unsaved changes": {
+			"en": "an indicator for when the active editor has unsaved changes"
+		},
+		"e.g. SSH": {
+			"en": "e.g. SSH"
+		},
+		"e.g. VS Code": {
+			"en": "e.g. VS Code"
+		},
+		"file path of the workspace (e.g. /Users/Development/myWorkspace)": {
+			"en": "file path of the workspace (e.g. /Users/Development/myWorkspace)"
+		},
+		"file path of the workspace folder the file is contained in (e.g. /Users/Development/myFolder)": {
+			"en": "file path of the workspace folder the file is contained in (e.g. /Users/Development/myFolder)"
+		},
+		"gist": {
+			"en": "gist"
+		},
+		"name of the workspace folder the file is contained in (e.g. myFolder)": {
+			"en": "name of the workspace folder the file is contained in (e.g. myFolder)"
+		},
+		"name of the workspace with optional remote name and workspace indicator if applicable (e.g. myFolder, myRemoteFolder [SSH] or myWorkspace (Workspace))": {
+			"en": "name of the workspace with optional remote name and workspace indicator if applicable (e.g. myFolder, myRemoteFolder [SSH] or myWorkspace (Workspace))"
+		},
+		"shortened name of the workspace without suffixes (e.g. myFolder or myWorkspace)": {
+			"en": "shortened name of the workspace without suffixes (e.g. myFolder or myWorkspace)"
+		},
+		"the file name (e.g. myFile.txt)": {
+			"en": "the file name (e.g. myFile.txt)"
+		},
+		"the full path of the file (e.g. /Users/Development/myFolder/myFileFolder/myFile.txt)": {
+			"en": "the full path of the file (e.g. /Users/Development/myFolder/myFileFolder/myFile.txt)"
+		},
+		"the full path of the folder the file is contained in (e.g. /Users/Development/myFolder/myFileFolder)": {
+			"en": "the full path of the folder the file is contained in (e.g. /Users/Development/myFolder/myFileFolder)"
+		},
+		"the name of the active branch in the active repository (e.g. main)": {
+			"en": "the name of the active branch in the active repository (e.g. main)"
+		},
+		"the name of the active repository (e.g. vscode)": {
+			"en": "the name of the active repository (e.g. vscode)"
+		},
+		"the name of the folder the file is contained in (e.g. myFileFolder)": {
+			"en": "the name of the folder the file is contained in (e.g. myFileFolder)"
+		},
+		"the path of the file relative to the workspace folder (e.g. myFolder/myFileFolder/myFile.txt)": {
+			"en": "the path of the file relative to the workspace folder (e.g. myFolder/myFileFolder/myFile.txt)"
+		},
+		"the path of the folder the file is contained in, relative to the workspace folder (e.g. myFolder/myFileFolder)": {
+			"en": "the path of the folder the file is contained in, relative to the workspace folder (e.g. myFolder/myFileFolder)"
+		},
+		"the state of the active editor (e.g. modified).": {
+			"en": "the state of the active editor (e.g. modified)."
+		}
+	}
+}

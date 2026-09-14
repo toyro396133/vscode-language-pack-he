@@ -1,0 +1,69 @@
+{
+	"package": {
+		"displayName": "Media Preview",
+		"description": "Provides VS Code's built-in previews for images, audio, and video",
+		"customEditor.audioPreview.displayName": "Audio Preview",
+		"customEditor.imagePreview.displayName": "Image Preview",
+		"customEditor.videoPreview.displayName": "Video Preview",
+		"videoPreviewerAutoPlay": "Start playing videos on mute automatically.",
+		"videoPreviewerLoop": "Loop videos over again automatically.",
+		"command.zoomIn": "Zoom in",
+		"command.zoomOut": "Zoom out",
+		"command.copyImage": "Copy",
+		"command.reopenAsPreview": "Reopen as image preview",
+		"command.reopenAsText": "Reopen as source text"
+	},
+	"bundle": {
+		"An error occurred while loading the audio file.": {
+			"en": "An error occurred while loading the audio file."
+		},
+		"An error occurred while loading the image.": {
+			"en": "An error occurred while loading the image."
+		},
+		"An error occurred while loading the video file.": {
+			"en": "An error occurred while loading the video file."
+		},
+		"Image Binary Size": {
+			"en": "Image Binary Size"
+		},
+		"Image Size": {
+			"en": "Image Size"
+		},
+		"Image Zoom": {
+			"en": "Image Zoom"
+		},
+		"Open file using VS Code's standard text/binary editor?": {
+			"en": "Open file using VS Code's standard text/binary editor?"
+		},
+		"Select zoom level": {
+			"en": "Select zoom level"
+		},
+		"The audio file is stored with Git LFS and is not available for preview.": {
+			"en": "The audio file is stored with Git LFS and is not available for preview."
+		},
+		"The image is stored with Git LFS and is not available for preview.": {
+			"en": "The image is stored with Git LFS and is not available for preview."
+		},
+		"The video file is stored with Git LFS and is not available for preview.": {
+			"en": "The video file is stored with Git LFS and is not available for preview."
+		},
+		"Whole Image": {
+			"en": "Whole Image"
+		},
+		"{0}B": {
+			"en": "{0}B"
+		},
+		"{0}GB": {
+			"en": "{0}GB"
+		},
+		"{0}KB": {
+			"en": "{0}KB"
+		},
+		"{0}MB": {
+			"en": "{0}MB"
+		},
+		"{0}TB": {
+			"en": "{0}TB"
+		}
+	}
+}

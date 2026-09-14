@@ -1,0 +1,66 @@
+{
+	"package": {
+		"displayName": "Node Debug Auto-attach",
+		"description": "Helper for auto-attach feature when node-debug extensions are not active.",
+		"toggle.auto.attach": "Toggle Auto Attach"
+	},
+	"bundle": {
+		"Always": {
+			"en": "Always"
+		},
+		"Auto Attach: Always": {
+			"en": "Auto Attach: Always"
+		},
+		"Auto Attach: Disabled": {
+			"en": "Auto Attach: Disabled"
+		},
+		"Auto Attach: Smart": {
+			"en": "Auto Attach: Smart"
+		},
+		"Auto Attach: With Flag": {
+			"en": "Auto Attach: With Flag"
+		},
+		"Auto attach is disabled and not shown in status bar": {
+			"en": "Auto attach is disabled and not shown in status bar"
+		},
+		"Auto attach to every Node.js process launched in the terminal": {
+			"en": "Auto attach to every Node.js process launched in the terminal"
+		},
+		"Auto attach when running scripts that aren't in a node_modules folder": {
+			"en": "Auto attach when running scripts that aren't in a node_modules folder"
+		},
+		"Automatically attach to node.js processes in debug mode": {
+			"en": "Automatically attach to node.js processes in debug mode"
+		},
+		"Debug Auto Attach": {
+			"en": "Debug Auto Attach"
+		},
+		"Disabled": {
+			"en": "Disabled"
+		},
+		"Only With Flag": {
+			"en": "Only With Flag"
+		},
+		"Only auto attach when the `--inspect` flag is given": {
+			"en": "Only auto attach when the `--inspect` flag is given"
+		},
+		"Re-enable auto attach": {
+			"en": "Re-enable auto attach"
+		},
+		"Smart": {
+			"en": "Smart"
+		},
+		"Temporarily disable auto attach in this session": {
+			"en": "Temporarily disable auto attach in this session"
+		},
+		"Toggle Auto Attach": {
+			"en": "Toggle Auto Attach"
+		},
+		"Toggle auto attach in this workspace": {
+			"en": "Toggle auto attach in this workspace"
+		},
+		"Toggle auto attach on this machine": {
+			"en": "Toggle auto attach on this machine"
+		}
+	}
+}

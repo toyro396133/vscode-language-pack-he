@@ -1,0 +1,53 @@
+{
+	"package": {
+		"displayName": "Extension Authoring",
+		"description": "Provides linting capabilities for authoring extensions."
+	},
+	"bundle": {
+		"API proposal versions are no longer supported. Remove the '@<version>' suffix.": {
+			"en": "API proposal versions are no longer supported. Remove the '@<version>' suffix."
+		},
+		"Data URLs are not a valid image source.": {
+			"en": "Data URLs are not a valid image source."
+		},
+		"Embedded SVGs are not a valid image source.": {
+			"en": "Embedded SVGs are not a valid image source."
+		},
+		"Error parsing the when-clause:": {
+			"en": "Error parsing the when-clause:"
+		},
+		"Images must use the HTTPS protocol.": {
+			"en": "Images must use the HTTPS protocol."
+		},
+		"Language specific editor settings": {
+			"en": "Language specific editor settings"
+		},
+		"Override editor settings for language": {
+			"en": "Override editor settings for language"
+		},
+		"Relative badge URLs require a repository with HTTPS protocol to be specified in this package.json.": {
+			"en": "Relative badge URLs require a repository with HTTPS protocol to be specified in this package.json."
+		},
+		"Relative image URLs require a repository with HTTPS protocol to be specified in the package.json.": {
+			"en": "Relative image URLs require a repository with HTTPS protocol to be specified in the package.json."
+		},
+		"Remove activation event": {
+			"en": "Remove activation event"
+		},
+		"SVGs are not a valid image source.": {
+			"en": "SVGs are not a valid image source."
+		},
+		"This activation event can be removed as VS Code generates these automatically from your package.json contribution declarations.": {
+			"en": "This activation event can be removed as VS Code generates these automatically from your package.json contribution declarations."
+		},
+		"This activation event cannot be explicitly listed by your extension.": {
+			"en": "This activation event cannot be explicitly listed by your extension."
+		},
+		"This proposal cannot be used because for this extension the product defines a fixed set of API proposals. You can test your extension but before publishing you MUST reach out to the VS Code team.": {
+			"en": "This proposal cannot be used because for this extension the product defines a fixed set of API proposals. You can test your extension but before publishing you MUST reach out to the VS Code team."
+		},
+		"Using '*' activation is usually a bad idea as it impacts performance.": {
+			"en": "Using '*' activation is usually a bad idea as it impacts performance."
+		}
+	}
+}

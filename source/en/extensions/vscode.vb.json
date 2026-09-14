@@ -1,0 +1,7 @@
+{
+	"package": {
+		"displayName": "Visual Basic Language Basics",
+		"description": "Provides snippets, syntax highlighting, bracket matching and folding in Visual Basic files."
+	},
+	"bundle": {}
+}

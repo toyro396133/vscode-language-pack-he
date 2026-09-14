@@ -1,0 +1,7 @@
+{
+	"package": {
+		"displayName": "Markdown Language Basics",
+		"description": "Provides snippets and syntax highlighting for Markdown."
+	},
+	"bundle": {}
+}
