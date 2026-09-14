@@ -34,7 +34,7 @@
 ## בנייה מהמקור
 
 ```bash
-git clone https://github.com/AMAARETS/vscode-language-pack-he
+git clone https://github.com/Y-PLONI/vscode-language-pack-he
 cd vscode-language-pack-he
 npx @vscode/vsce package
 ```
@@ -79,7 +79,7 @@ node scripts/vsloc.mjs apply --to source/en.new --translated todo.json
 ## תרומה
 
 להערות ולשיפורי תרגום, יש לפתוח Issue במאגר
-[vscode-language-pack-he](https://github.com/AMAARETS/vscode-language-pack-he/issues).
+[vscode-language-pack-he](https://github.com/Y-PLONI/vscode-language-pack-he/issues).
 
 ## רישיון
 
@@ -87,8 +87,8 @@ node scripts/vsloc.mjs apply --to source/en.new --translated todo.json
 
 ## קרדיטים
 
-חבילת השפה העברית נוצרה על ידי הקהילה, עבור הקהילה, במסגרת מאמץ לוקליזציה קהילתי.
+**התרגום הנוכחי** — [Y-PLONI](https://github.com/Y-PLONI). כל 24,243 מחרוזות
+הליבה ו-4,056 מחרוזות ההרחבות תורגמו מחדש מהמקור עבור VS Code 1.137.
 
-**תורמים מובילים:**
-
-* AMAARETS
+**החבילה המקורית** — [AMAARETS](https://github.com/AMAARETS), שיצר את חבילת
+השפה העברית הראשונה ואת מבנה המאגר שעליו נבנה הפרויקט הזה.
