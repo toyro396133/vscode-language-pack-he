@@ -8,18 +8,18 @@
 	],
 	"version": "1.0.0",
 	"contents": {
-		"bundle": {
-			"Auto detecting Grunt for folder {0} failed with error: {1}', this.workspaceFolder.name, err.error ? err.error.toString() : 'unknown": "זיהוי אוטומטי של Grunt עבור תיקיה {0} נכשל עם שגיאה: {1}', this.workspaceFolder.name, err.error ? err.error.toString() : 'לא ידוע",
-			"Go to output": "עבור לפלט",
-			"Problem finding grunt tasks. See the output for more information.": "בעיה במציאת משימות grunt. ראה את הפלט למידע נוסף."
-		},
 		"package": {
-			"config.grunt.autoDetect": "שולט על הפעלת זיהוי משימות Grunt. זיהוי משימות Grunt יכול לגרום להרצת קבצים בכל סביבת עבודה פתוחה.",
-			"description": "הרחבה להוספת יכולות Grunt ל-VS Code.",
-			"displayName": "תמיכת Grunt עבור VS Code",
-			"grunt.taskDefinition.args.description": "ארגומנטים של שורת הפקודה להעברה למשימת Grunt",
-			"grunt.taskDefinition.file.description": "קובץ ה-Grunt המספק את המשימה. ניתן להשמיט.",
-			"grunt.taskDefinition.type.description": "משימת ה-Grunt להתאמה אישית."
+			"description": "הרחבה שמוסיפה יכולות Grunt ל-VS Code.",
+			"displayName": "תמיכה ב-Grunt עבור VS Code",
+			"config.grunt.autoDetect": "שולט בהפעלת זיהוי משימות Grunt. זיהוי משימות Grunt עלול לגרום להרצת קבצים בכל סביבת עבודה פתוחה.",
+			"grunt.taskDefinition.type.description": "משימת ה-Grunt להתאמה אישית.",
+			"grunt.taskDefinition.args.description": "ארגומנטים לשורת הפקודה להעברה למשימת ה-grunt",
+			"grunt.taskDefinition.file.description": "קובץ ה-Grunt שמספק את המשימה. ניתן להשמיט."
+		},
+		"bundle": {
+			"Auto detecting Grunt for folder {0} failed with error: {1}', this.workspaceFolder.name, err.error ? err.error.toString() : 'unknown": "זיהוי אוטומטי של Grunt עבור התיקייה {0} נכשל עם השגיאה: {1}', this.workspaceFolder.name, err.error ? err.error.toString() : 'unknown",
+			"Go to output": "עבור אל הפלט",
+			"Problem finding grunt tasks. See the output for more information.": "בעיה באיתור משימות grunt. ראה את הפלט למידע נוסף."
 		}
 	}
 }

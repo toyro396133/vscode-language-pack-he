@@ -9,9 +9,10 @@
 	"version": "1.0.0",
 	"contents": {
 		"package": {
-			"description": "הרחבה להוספת השלמות טרמינל עבור מסופי ZSH, Bash ו-Fish.",
-			"displayName": "הצעת טרמינל עבור VS Code",
-			"view.name": "הצעת טרמינל"
+			"description": "הרחבה שמוסיפה השלמות מסוף עבור מסופי zsh, bash ו-fish.",
+			"displayName": "הצעות מסוף עבור VS Code",
+			"view.name": "הצעות מסוף",
+			"terminal.integrated.suggest.clearCachedGlobals": "נקה משתנים גלובליים שמורים במטמון של ההצעות"
 		}
 	}
 }

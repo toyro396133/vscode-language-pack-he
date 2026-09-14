@@ -8,24 +8,25 @@
 	],
 	"version": "1.0.0",
 	"contents": {
-		"bundle": {
-			"Format uri ('{0}') must contain exactly one substitution placeholder.": "פורמט ה-URI ('{0}') חייב להכיל בדיוק מציין מיקום אחד להחלפה.",
-			"Format uri ('{0}') uses a substitution placeholder but pattern did not capture anything.": "פורמט ה-URI ('{0}') משתמש במציין מיקום להחלפה אך התבנית לא לכדה דבר."
-		},
 		"package": {
-			"debug.server.ready.action.debugWithChrome.description": "התחל לנפות באגים עם 'Debugger for Chrome'.",
-			"debug.server.ready.action.description": "פעולה לביצוע כאשר השרת מוכן.",
-			"debug.server.ready.action.openExternally.description": "פתח URI חיצונית עם היישום המוגדר כברירת מחדל.",
-			"debug.server.ready.action.startDebugging.description": "הפעל תצורת הפעלה אחרת.",
-			"debug.server.ready.debugConfig.description": "תצורת הניפוי באגים להפעלה.",
-			"debug.server.ready.debugConfigName.description": "שם תצורת ההפעלה להפעלה.",
-			"debug.server.ready.killOnServerStop.description": "הפסק את הפעלת הילד כאשר הפעלת האב נעצרת.",
-			"debug.server.ready.pattern.description": "השרת מוכן כאשר תבנית זו מופיעה במסוף הניפוי באגים. קבוצת הלכידה הראשונה חייבת להכיל URI או מספר יציאה.",
-			"debug.server.ready.serverReadyAction.description": "פעל על URI כאשר תוכנית שרת מוכנה במהלך ניפוי באגים (מסומן על ידי שליחת הודעה כמו 'מאזין ביציאה 3000' או 'מאזין כעת ב-https://localhost:5001' למסוף הניפוי באגים).",
-			"debug.server.ready.uriFormat.description": "מחרוזת פורמט המשמשת בעת בניית ה-URI ממספר יציאה. ה-'%s' הראשון מוחלף במספר היציאה.",
-			"debug.server.ready.webRoot.description": "ערך המועבר לתצורת הניפוי באגים עבור 'Debugger for Chrome'.",
-			"description": "פתח URI בדפדפן כאשר השרת המנופה באגים מוכן.",
-			"displayName": "פעולת שרת מוכן"
+			"displayName": "פעולת שרת מוכן",
+			"description": "פותחת URI בדפדפן אם השרת שבניפוי באגים מוכן.",
+			"debug.server.ready.serverReadyAction.description": "מבצעת פעולה על URI כאשר תוכנית שרת שבניפוי באגים מוכנה (מסומן על ידי שליחת פלט בתבנית 'listening on port 3000' או 'Now listening on: https://localhost:5001' אל מסוף ניפוי הבאגים.)",
+			"debug.server.ready.action.description": "מציינת מה לעשות עם ה-URI כאשר השרת מוכן.",
+			"debug.server.ready.action.openExternally.description": "פותחת את ה-URI באופן חיצוני, באמצעות אפליקציית ברירת המחדל.",
+			"debug.server.ready.action.openIntegratedBrowser.description": "פותחת את ה-URI בדפדפן המשולב.",
+			"debug.server.ready.action.debugWithChrome.description": "מתחילה ניפוי באגים באמצעות 'Debugger for Chrome'.",
+			"debug.server.ready.action.startDebugging.description": "מריצה תצורת הפעלה אחרת.",
+			"debug.server.ready.pattern.description": "השרת נחשב מוכן כאשר התבנית הזו מופיעה במסוף ניפוי הבאגים. קבוצת הלכידה הראשונה חייבת לכלול URI או מספר פורט.",
+			"debug.server.ready.debugConfig.description": "תצורת ניפוי הבאגים להרצה.",
+			"debug.server.ready.uriFormat.description": "מחרוזת תבנית המשמשת בעת בניית ה-URI ממספר פורט. ה-'%s' הראשון מוחלף במספר הפורט.",
+			"debug.server.ready.webRoot.description": "הערך שמועבר לתצורת ניפוי הבאגים עבור 'Debugger for Chrome'.",
+			"debug.server.ready.killOnServerStop.description": "עצור את הפעלת הצאצא כאשר הפעלת ההורה נעצרה.",
+			"debug.server.ready.debugConfigName.description": "שם תצורת ההפעלה להרצה."
+		},
+		"bundle": {
+			"Format uri ('{0}') must contain exactly one substitution placeholder.": "תבנית ה-URI ('{0}') חייבת להכיל מציין מיקום החלפה אחד בדיוק.",
+			"Format uri ('{0}') uses a substitution placeholder but pattern did not capture anything.": "תבנית ה-URI ('{0}') משתמשת במציין מיקום החלפה, אך התבנית לא לכדה דבר."
 		}
 	}
 }

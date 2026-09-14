@@ -8,30 +8,31 @@
 	],
 	"version": "1.0.0",
 	"contents": {
+		"package": {
+			"displayName": "חיבור אוטומטי לניפוי באגים ב-Node",
+			"description": "עוזרת לתכונת הצירוף האוטומטי כאשר הרחבות ניפוי-באגים של Node אינן פעילות.",
+			"toggle.auto.attach": "החלף מצב צירוף אוטומטי"
+		},
 		"bundle": {
 			"Always": "תמיד",
-			"Auto Attach: Always": "הצמדה אוטומטית: תמיד",
-			"Auto Attach: Disabled": "הצמדה אוטומטית: מושבתת",
-			"Auto Attach: Smart": "הצמדה אוטומטית: חכמה",
-			"Auto Attach: With Flag": "הצמדה אוטומטית: עם דגל",
-			"Auto attach is disabled and not shown in status bar": "הצמדה אוטומטית מושבתת ואינה מוצגת בשורת המצב",
-			"Auto attach to every Node.js process launched in the terminal": "הצמד אוטומטית לכל תהליך Node.js שיופעל במסוף",
-			"Auto attach when running scripts that aren't in a node_modules folder": "הצמד אוטומטית בעת הפעלת סקריפטים שאינם בתיקיית node_modules",
-			"Automatically attach to node.js processes in debug mode": "הצמד אוטומטית לתהליכי node.js במצב ניפוי באגים",
-			"Debug Auto Attach": "ניפוי באגים בהצמדה אוטומטית",
+			"Auto Attach: Always": "צירוף אוטומטי: תמיד",
+			"Auto Attach: Disabled": "צירוף אוטומטי: מושבת",
+			"Auto Attach: Smart": "צירוף אוטומטי: חכם",
+			"Auto Attach: With Flag": "צירוף אוטומטי: עם דגל",
+			"Auto attach is disabled and not shown in status bar": "הצירוף האוטומטי מושבת ואינו מוצג בשורת המצב",
+			"Auto attach to every Node.js process launched in the terminal": "מצטרף אוטומטית לכל תהליך Node.js שמופעל במסוף",
+			"Auto attach when running scripts that aren't in a node_modules folder": "מצטרף אוטומטית בעת הרצת סקריפטים שאינם בתיקיית node_modules",
+			"Automatically attach to node.js processes in debug mode": "מצטרף אוטומטית לתהליכי node.js במצב ניפוי באגים",
+			"Debug Auto Attach": "צירוף אוטומטי לניפוי באגים",
 			"Disabled": "מושבת",
 			"Only With Flag": "רק עם דגל",
-			"Only auto attach when the `--inspect` flag is given": "הצמד אוטומטית רק כאשר ניתן הדגל '--inspect'",
-			"Re-enable auto attach": "הפעל מחדש הצמדה אוטומטית",
+			"Only auto attach when the `--inspect` flag is given": "מצטרף אוטומטית רק כאשר יש דגל `--inspect`",
+			"Re-enable auto attach": "הפעל מחדש צירוף אוטומטי",
 			"Smart": "חכם",
-			"Temporarily disable auto attach in this session": "השבת זמנית הצמדה אוטומטית בהפעלה זו",
-			"Toggle auto attach in this workspace": "החלף הצמדה אוטומטית בסביבת עבודה זו",
-			"Toggle auto attach on this machine": "החלף הצמדה אוטומטית במחשב זה"
-		},
-		"package": {
-			"description": "כלי עזר לתכונת 'הצמדה אוטומטית' כאשר הרחבות ניפוי באגים של צמתים אינן פעילות.",
-			"displayName": "ניפוי באגים בצומת - הצמדה אוטומטית",
-			"toggle.auto.attach": "החלף הצמדה אוטומטית"
+			"Temporarily disable auto attach in this session": "השבת זמנית צירוף אוטומטי בהפעלה הזו",
+			"Toggle Auto Attach": "החלף מצב צירוף אוטומטי",
+			"Toggle auto attach in this workspace": "החלף מצב צירוף אוטומטי בסביבת העבודה הזו",
+			"Toggle auto attach on this machine": "החלף מצב צירוף אוטומטי במחשב הזה"
 		}
 	}
 }

@@ -9,8 +9,8 @@
 	"version": "1.0.0",
 	"contents": {
 		"package": {
-			"description": "מספק הדגשת תחביר והתאמת סוגריים בקבצי Docker.",
-			"displayName": "יסודות שפת Docker"
+			"displayName": "יסודות שפת Docker",
+			"description": "מספקת הדגשת תחביר והתאמת סוגריים בקובצי Docker."
 		}
 	}
 }

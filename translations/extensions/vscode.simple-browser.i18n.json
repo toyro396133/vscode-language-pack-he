@@ -8,21 +8,21 @@
 	],
 	"version": "1.0.0",
 	"contents": {
+		"package": {
+			"displayName": "דפדפן פשוט",
+			"description": "תצוגת רשת (webview) מובנית ובסיסית מאוד להצגת תוכן אינטרנט.",
+			"configuration.focusLockIndicator.enabled.description": "מפעיל/משבית את המחוון הצף המוצג כאשר הדפדפן הפשוט ממוקד."
+		},
 		"bundle": {
-			"Back": "אחורה",
+			"Back": "חזרה",
 			"Enter url to visit": "הזן כתובת URL לביקור",
-			"Focus Lock": "נעילת פוקוס",
+			"Focus Lock": "נעילת מיקוד",
 			"Forward": "קדימה",
 			"Open in browser": "פתח בדפדפן",
 			"Open in simple browser": "פתח בדפדפן פשוט",
 			"Reload": "טען מחדש",
 			"Simple Browser": "דפדפן פשוט",
 			"https://example.com": "https://example.com"
-		},
-		"package": {
-			"configuration.focusLockIndicator.enabled.description": "מאפשר/משבית את מחוון הציפה המוצג כאשר המיקוד נמצא בדפדפן הפשוט.",
-			"description": "תצוגת אינטרנט משובצת פשוטה מאוד להצגת תוכן אינטרנט.",
-			"displayName": "דפדפן פשוט"
 		}
 	}
 }

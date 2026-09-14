@@ -8,22 +8,22 @@
 	],
 	"version": "1.0.0",
 	"contents": {
-		"bundle": {
-			"Insert Image as Attachment": "הכנס תמונה כקובץ מצורף"
-		},
 		"package": {
-			"addCellOutputToChat.title": "הוסף פלט תא לצ'אט",
-			"cleanInvalidImageAttachment.title": "נקה הפניה לא חוקית לקובץ מצורף של תמונה",
-			"copyCellOutput.title": "העתק פלט תא",
-			"description": "מספק תמיכה בסיסית לפתיחה וקריאה של קבצי מחברת .ipynb של Jupyter",
-			"displayName": "תמיכת IPYNB",
-			"ipynb.experimental.serialization": "תכונה ניסיונית לסריאליזציה של מחברת Jupyter ב-worker thread.",
-			"ipynb.pasteImagesAsAttachments.enabled": "אפשר/השבת הדבקת תמונות לתאי Markdown בקבצי מחברת IPYNB. תמונות מודבקות יוחדרו כקבצים מצורפים לתא.",
-			"markdownAttachmentRenderer.displayName": "מעבד קבצים מצורפים של Markdown-It-IPYNB",
-			"newUntitledIpynb.shortTitle": "מחברת Jupyter",
+			"displayName": "תמיכה ב-.ipynb",
+			"description": "מספק תמיכה בסיסית בפתיחה ובקריאה של קובצי מחברת .ipynb של Jupyter",
+			"ipynb.pasteImagesAsAttachments.enabled": "אפשר/בטל הדבקת תמונות לתאי Markdown בקובצי מחברת ipynb. תמונות מודבקות מוכנסות כצרופות לתא.",
+			"ipynb.experimental.serialization": "תכונה ניסיונית לסריאליזציה של מחברת Jupyter בתהליכון עבודה.",
 			"newUntitledIpynb.title": "מחברת Jupyter חדשה",
+			"newUntitledIpynb.shortTitle": "מחברת Jupyter",
+			"openIpynbInNotebookEditor.title": "פתח קובץ IPYNB בעורך המחברות",
+			"cleanInvalidImageAttachment.title": "נקה הפניית צרופת תמונה לא תקינה",
+			"copyCellOutput.title": "העתק פלט תא",
+			"addCellOutputToChat.title": "הוסף פלט תא לצ'אט",
 			"openCellOutput.title": "פתח פלט תא בעורך טקסט",
-			"openIpynbInNotebookEditor.title": "פתח קובץ IPYNB בעורך המחברות"
+			"markdownAttachmentRenderer.displayName": "מעבד צרופות תא ipynb של Markdown-It"
+		},
+		"bundle": {
+			"Insert Image as Attachment": "הוסף תמונה כצרופה"
 		}
 	}
 }

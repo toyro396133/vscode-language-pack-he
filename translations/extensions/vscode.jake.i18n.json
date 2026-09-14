@@ -8,17 +8,17 @@
 	],
 	"version": "1.0.0",
 	"contents": {
-		"bundle": {
-			"Auto detecting Jake for folder {0} failed with error: {1}', this.workspaceFolder.name, err.error ? err.error.toString() : 'unknown": "זיהוי אוטומטי של Jake עבור תיקיה {0} נכשל עם שגיאה: {1}', this.workspaceFolder.name, err.error ? err.error.toString() : 'לא ידוע",
-			"Go to output": "עבור לפלט",
-			"Problem finding jake tasks. See the output for more information.": "בעיה במציאת משימות jake. ראה את הפלט למידע נוסף."
-		},
 		"package": {
-			"config.jake.autoDetect": "שולט על הפעלת זיהוי משימות Jake. זיהוי משימות Jake יכול לגרום להרצת קבצים בכל סביבת עבודה פתוחה.",
-			"description": "הרחבה להוספת יכולות Jake ל-VS Code.",
-			"displayName": "תמיכת Jake עבור VS Code",
-			"jake.taskDefinition.file.description": "קובץ ה-Jake המספק את המשימה. ניתן להשמיט.",
-			"jake.taskDefinition.type.description": "משימת ה-Jake להתאמה אישית."
+			"description": "הרחבה שמוסיפה יכולות Jake ל-VS Code.",
+			"displayName": "תמיכה ב-Jake עבור VS Code",
+			"jake.taskDefinition.type.description": "משימת ה-Jake להתאמה אישית.",
+			"jake.taskDefinition.file.description": "קובץ ה-Jake שמספק את המשימה. ניתן להשמיט.",
+			"config.jake.autoDetect": "שולט בהפעלת זיהוי משימות Jake. זיהוי משימות Jake עלול לגרום להרצת קבצים בכל סביבת עבודה פתוחה."
+		},
+		"bundle": {
+			"Auto detecting Jake for folder {0} failed with error: {1}', this.workspaceFolder.name, err.error ? err.error.toString() : 'unknown": "זיהוי אוטומטי של Jake עבור התיקייה {0} נכשל עם השגיאה: {1}', this.workspaceFolder.name, err.error ? err.error.toString() : 'unknown",
+			"Go to output": "עבור אל הפלט",
+			"Problem finding jake tasks. See the output for more information.": "בעיה באיתור משימות jake. ראה את הפלט למידע נוסף."
 		}
 	}
 }

@@ -8,17 +8,17 @@
 	],
 	"version": "1.0.0",
 	"contents": {
-		"bundle": {
-			"Auto detecting gulp for folder {0} failed with error: {1}', this.workspaceFolder.name, err.error ? err.error.toString() : 'unknown": "זיהוי אוטומטי של gulp עבור תיקיה {0} נכשל עם שגיאה: {1}', this.workspaceFolder.name, err.error ? err.error.toString() : 'לא ידוע",
-			"Go to output": "עבור לפלט",
-			"Problem finding gulp tasks. See the output for more information.": "בעיה במציאת משימות gulp. ראה את הפלט למידע נוסף."
-		},
 		"package": {
-			"config.gulp.autoDetect": "שולט על הפעלת זיהוי משימות Gulp. זיהוי משימות Gulp יכול לגרום להרצת קבצים בכל סביבת עבודה פתוחה.",
-			"description": "הרחבה להוספת יכולות Gulp ל-VSCode.",
-			"displayName": "תמיכת Gulp עבור VSCode",
-			"gulp.taskDefinition.file.description": "קובץ ה-Gulp המספק את המשימה. ניתן להשמיט.",
-			"gulp.taskDefinition.type.description": "משימת ה-Gulp להתאמה אישית."
+			"description": "הרחבה שמוסיפה יכולות Gulp ל-VSCode.",
+			"displayName": "תמיכה ב-Gulp עבור VSCode",
+			"config.gulp.autoDetect": "שולט בהפעלת זיהוי משימות Gulp. זיהוי משימות Gulp עלול לגרום להרצת קבצים בכל סביבת עבודה פתוחה.",
+			"gulp.taskDefinition.type.description": "משימת ה-Gulp להתאמה אישית.",
+			"gulp.taskDefinition.file.description": "קובץ ה-Gulp שמספק את המשימה. ניתן להשמיט."
+		},
+		"bundle": {
+			"Auto detecting gulp for folder {0} failed with error: {1}', this.workspaceFolder.name, err.error ? err.error.toString() : 'unknown": "זיהוי אוטומטי של gulp עבור התיקייה {0} נכשל עם השגיאה: {1}', this.workspaceFolder.name, err.error ? err.error.toString() : 'unknown",
+			"Go to output": "עבור אל הפלט",
+			"Problem finding gulp tasks. See the output for more information.": "בעיה באיתור משימות gulp. ראה את הפלט למידע נוסף."
 		}
 	}
 }
