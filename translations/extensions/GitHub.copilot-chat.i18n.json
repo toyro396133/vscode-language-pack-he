@@ -375,7 +375,6 @@
 			"github.copilot.config.cli.forkSessions.enabled": "הפעל פיצול הפעלות ב-Copilot CLI.",
 			"github.copilot.config.cli.planExitMode.enabled": "הפעל טיפול ביציאה ממצב תכנון ב-Copilot CLI.",
 			"github.copilot.config.cli.autoModel.enabled": "הפעל את אפשרות המודל Auto ב-Copilot CLI, שבוחרת אוטומטית את המודל הטוב ביותר לכל בקשה. דורש טעינה מחדש של VS Code.",
-			"github.copilot.config.chat.autoMode.tiers.enabled": "בחר שכבת ניתוב עבור המודל האוטומטי, שמטה את בחירת המודל לעבר עלות, יכולת או מהירות. כשהאפשרות מושבתת, השירות בוחר את פרופיל הניתוב.",
 			"github.copilot.config.chat.agent.modelDetails.enabled": "הצג פרטי מודל (שם המודל ומכפיל הבקשות) בתגובות הצ'אט של הסוכן ב-Copilot CLI. דורש טעינה מחדש של VS Code כדי לעדכן הפעלות שכבר נטענו.",
 			"github.copilot.config.cli.planCommand.enabled": "אפשר את הפקודה /plan ב-Copilot CLI ליצירת תוכניות מימוש לפני כתיבת קוד.",
 			"github.copilot.config.cli.lazyLoadSessionItem.enabled": "אפשר טעינה עצלה של פריטי הפעלה ב-Copilot CLI. דורש טעינה מחדש של VS Code.",

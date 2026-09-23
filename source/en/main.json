@@ -1748,6 +1748,15 @@
 		"formatOnType": {
 			"en": "Controls whether the editor should automatically format the line after typing."
 		},
+		"fullwidthCharacterWidth": {
+			"en": "Controls the width used to render full-width characters."
+		},
+		"fullwidthCharacterWidth.font": {
+			"en": "Render full-width characters using the width defined by the font."
+		},
+		"fullwidthCharacterWidth.twoCells": {
+			"en": "Render full-width characters centered in exactly two character cells. Only applies to monospace fonts. Does not apply to multi codepoint full-width characters or to GPU rendering. This has a performance impact on line rendering."
+		},
 		"glyphMargin": {
 			"en": "Controls whether the editor should render the vertical glyph margin. Glyph margin is mostly used for debugging."
 		},
@@ -6246,6 +6255,20 @@
 			"en": "An agent session will be able to read files, run commands, and make changes in this folder."
 		}
 	},
+	"vs/platform/agentHost/browser/agentHostSandboxToggle": {
+		"agentHostSandboxToggle.editableManagedTitle": {
+			"en": "Sandboxing is enabled by your organization, but you may disable it"
+		},
+		"agentHostSandboxToggle.label": {
+			"en": "Sandboxing for terminal"
+		},
+		"agentHostSandboxToggle.requiredTitle": {
+			"en": "Sandboxing is required by your organization"
+		},
+		"agentHostSandboxToggle.title": {
+			"en": "Run this session's terminal commands inside a sandbox that restricts file system and network access. This choice is saved for this session only."
+		}
+	},
 	"vs/platform/agentHost/common/agentHostCustomizationConfig": {
 		"agentHost.config.allowSignedOutWhenUsable.description": {
 			"en": "Experimental. When enabled, Agent Host sessions remain available while signed out as long as the selected agent has a usable model and authentication (for example Codex with ChatGPT authentication or Claude in native mode with your own Anthropic credentials). When disabled (the default), GitHub sign-in is required."
@@ -6294,8 +6317,14 @@
 		"agentHostEnabled": {
 			"en": "Whether Agent Host features are available and AI features are enabled in this window."
 		},
+		"agentHostExistingSessionHarnessPickerEnabled": {
+			"en": "Whether existing Agent Host sessions in the main VS Code window show the current harness as a disabled picker."
+		},
 		"chat.defaultToCopilotHarness": {
 			"en": "When enabled, new editor and panel chat sessions default to the Agent Host Copilot SDK instead of the local harness."
+		},
+		"chat.editor.agentHost.existingSessionHarnessPicker.enabled": {
+			"en": "When enabled, existing Agent Host sessions in the main VS Code window show the current harness as a disabled picker."
 		},
 		"chat.editor.localAgent.enabled": {
 			"en": "When enabled, shows the VS Code local chat harness in the chat picker. This setting is ignored in virtual workspaces, where the local chat harness is always available."
@@ -6325,6 +6354,24 @@
 		},
 		"agentHost.config.autoApprovePolicyRestricted": {
 			"en": "Auto Approve Policy Restricted"
+		},
+		"agentHost.config.autoArchiveMergedSessionsAfterDays.description": {
+			"en": "Number of inactive days after which a session with a merged pull request is automatically archived. Zero disables automatic archival."
+		},
+		"agentHost.config.autoArchiveMergedSessionsAfterDays.title": {
+			"en": "Auto-Archive Merged Sessions"
+		},
+		"agentHost.config.autoAttachPullRequests.description": {
+			"en": "Whether the Agent Host automatically discovers and associates a pull request for the currently checked-out branch. When disabled, only pull requests recorded as artifacts or explicitly associated by session actions are considered."
+		},
+		"agentHost.config.autoAttachPullRequests.title": {
+			"en": "Automatic Pull Request Association"
+		},
+		"agentHost.config.autoDeleteArchivedMergedSessionsAfterDays.description": {
+			"en": "Number of days after automatic archival before a session with a merged pull request is permanently deleted. Zero disables permanent deletion."
+		},
+		"agentHost.config.autoDeleteArchivedMergedSessionsAfterDays.title": {
+			"en": "Auto-Delete Archived Merged Sessions"
 		},
 		"agentHost.config.autoReplyEnabled.description": {
 			"en": "Whether VS Code's auto-reply setting is enabled. When `true`, `ask_user` questions are auto-answered instead of blocking on the user, mirroring autopilot mode."
@@ -6533,6 +6580,18 @@
 		"agentHost.config.terminalAutoApproveRules.title": {
 			"en": "Terminal Auto Approve Rules"
 		},
+		"agentHost.config.workspaceTrust": {
+			"en": "Workspace Trust"
+		},
+		"agentHost.config.workspaceTrust.enabled": {
+			"en": "Enabled"
+		},
+		"agentHost.config.workspaceTrust.trustedUris": {
+			"en": "Trusted Folders"
+		},
+		"agentHost.config.workspaceTrust.uri": {
+			"en": "Folder URI"
+		},
 		"agentHost.sessionConfig.autoApprove": {
 			"en": "Approvals"
 		},
@@ -6596,6 +6655,12 @@
 		"agentHost.sessionConfig.permissionsDescription": {
 			"en": "Per-tool session permissions. Updated automatically when approving a tool \"in this Session\"."
 		},
+		"agentHost.sessionConfig.sandboxEnabled": {
+			"en": "Sandbox"
+		},
+		"agentHost.sessionConfig.sandboxEnabledDescription": {
+			"en": "Sandbox behavior for this session. Default follows the global setting."
+		},
 		"agentHost.sessionConfig.shellInitScripts": {
 			"en": "Shell Init Script"
 		},
@@ -6648,6 +6713,9 @@
 		},
 		"chat.agentHost.experimental.activeAgentTitleGeneration": {
 			"en": "When enabled, the active agent names new sessions and chats using rename tools. When disabled, a utility model generates titles. Changes apply to sessions and chats created afterward."
+		},
+		"chat.agentHost.experimental.autoAttachPullRequests": {
+			"en": "Controls whether the Agent Host automatically discovers and associates a pull request for the currently checked-out branch. When disabled, only pull requests recorded by the agent as artifacts or explicitly selected or created through session actions are considered."
 		},
 		"chat.agentHost.experimental.markdownPlanRichLinks": {
 			"en": "When enabled, agents receive guidance for using rich links to issues, pull requests, commits, sessions, and chats, plus running task markers, when creating or editing Markdown plan documents."
@@ -6816,8 +6884,11 @@
 		"agentMerge.disabled.invalidPullRequestUrl": {
 			"en": "Agent Merge was disabled because the associated pull request URL is invalid."
 		},
+		"agentMerge.disabled.pullRequestAlreadyMerged": {
+			"en": "Pull request [#{0}]({1}) was merged. Agent Merge is now disabled."
+		},
 		"agentMerge.disabled.pullRequestClosed": {
-			"en": "Agent Merge was disabled because its pull request is closed or merged."
+			"en": "Agent Merge was disabled because its pull request was closed without merging."
 		},
 		"agentMerge.disabled.repairBudgetExhausted": {
 			"en": "Agent Merge was disabled because the same pull request blockers remained after repeated repair attempts."
@@ -6937,6 +7008,20 @@
 			"en": "Agent Merge merged pull request [#{0}]({1})."
 		}
 	},
+	"vs/platform/agentHost/common/agentModelConfiguration": {
+		"copilot.modelContextSize.default": {
+			"en": "Default"
+		},
+		"copilot.modelContextSize.description": {
+			"en": "Selects the context window size for this model."
+		},
+		"copilot.modelContextSize.longerSessions": {
+			"en": "Longer sessions"
+		},
+		"copilot.modelContextSize.title": {
+			"en": "Context Size"
+		}
+	},
 	"vs/platform/agentHost/common/autoModeTiers": {
 		"autoModeTier.balance": {
 			"en": "Balance"
@@ -7001,11 +7086,23 @@
 		}
 	},
 	"vs/platform/agentHost/common/copilotCliConfig": {
+		"agentHost.config.autoModeTierOverride.description": {
+			"en": "Overrides Auto's \"Optimize for\" preference, even when the picker is disabled. Accepts efficiency, balance, or intelligence. Applied when a session is created or resumed and when its model changes. Empty or unsupported values use the picker or service defaults."
+		},
+		"agentHost.config.autoModeTierOverride.title": {
+			"en": "Auto Optimize for Override"
+		},
 		"agentHost.config.autoModeTiers.description": {
-			"en": "When enabled, the Auto model offers an \"Optimize for\" picker that biases routing toward efficiency, balance, or intelligence. The profile is chosen before a session starts and applies for its lifetime."
+			"en": "When enabled, the Auto model offers an \"Optimize for\" picker with Efficiency, Balance, and Intelligence options. You can change the preference during a session. When disabled, the service chooses how to route unless an override is configured."
 		},
 		"agentHost.config.autoModeTiers.title": {
-			"en": "Auto Routing Profiles"
+			"en": "Auto Optimize for"
+		},
+		"agentHost.config.claudeAdvisor.description": {
+			"en": "When enabled, Copilot SDK sessions using supported Claude models expose the provider-native Advisor tool."
+		},
+		"agentHost.config.claudeAdvisor.title": {
+			"en": "Claude Advisor Tool"
 		},
 		"agentHost.config.copilotSdkLogLevel.description": {
 			"en": "Controls logging from the Copilot SDK runtime. Agent host trace logging always enables trace output."
@@ -7091,12 +7188,6 @@
 		"agentHost.config.modelCapabilityOverrides.title": {
 			"en": "Model Capability Overrides"
 		},
-		"agentHost.config.multiTurnContextRouting.description": {
-			"en": "When enabled, Auto model selection sends prior user messages to the router so it scores the conversation so far instead of the latest message alone."
-		},
-		"agentHost.config.multiTurnContextRouting.title": {
-			"en": "Auto Multi-Turn Context Routing"
-		},
 		"agentHost.config.opus48Prompt.description": {
 			"en": "When enabled, Copilot SDK sessions running a Claude Opus 4.8 model apply Opus 4.8-tuned system-prompt section overrides on top of the default system message."
 		},
@@ -7158,6 +7249,41 @@
 		},
 		"copilotConfigSlash.yolo": {
 			"en": "Set permissions to bypass approvals"
+		}
+	},
+	"vs/platform/agentHost/common/meta/agentPullRequestOperationMeta": {
+		"agentHost.pr.agentMergeOptionsWithoutEnablement": {
+			"en": "Enable Agent Merge to configure it for this pull request."
+		},
+		"agentHost.pr.conflictingMergeOptions": {
+			"en": "Agent Merge and GitHub auto-merge cannot be enabled together."
+		},
+		"agentHost.pr.draftAutoMerge": {
+			"en": "Draft pull requests cannot use GitHub auto-merge."
+		},
+		"agentHost.pr.invalidAgentMergeOptions": {
+			"en": "Invalid Agent Merge configuration."
+		},
+		"agentHost.pr.invalidContext": {
+			"en": "Invalid pull request preparation context."
+		},
+		"agentHost.pr.invalidDetails": {
+			"en": "Invalid pull request preparation result."
+		},
+		"agentHost.pr.invalidMergeMethod": {
+			"en": "Invalid pull request auto-merge method."
+		},
+		"agentHost.pr.invalidMeta": {
+			"en": "Invalid pull request operation metadata."
+		},
+		"agentHost.pr.invalidOptions": {
+			"en": "Invalid pull request creation options."
+		},
+		"agentHost.pr.invalidValidation": {
+			"en": "Invalid pull request context validation request."
+		},
+		"agentHost.pr.titleRequired": {
+			"en": "A pull request title is required."
 		}
 	},
 	"vs/platform/agentHost/common/openSessionLink": {
@@ -7652,6 +7778,9 @@
 		}
 	},
 	"vs/platform/agentHost/node/agentHostPullRequestOperationHandler": {
+		"agentHost.changeset.pr.agentMergeDisabled": {
+			"en": "Agent Merge is disabled in the host configuration."
+		},
 		"agentHost.changeset.pr.authRequired": {
 			"en": "Sign in to GitHub with repository access to create a pull request."
 		},
@@ -7666,6 +7795,9 @@
 		},
 		"agentHost.changeset.pr.autoMerge.squash": {
 			"en": "squash"
+		},
+		"agentHost.changeset.pr.autoMergeUnavailable": {
+			"en": "The repository does not allow the requested auto-merge method."
 		},
 		"agentHost.changeset.pr.body": {
 			"en": "Created from `{0}` targeting `{1}`."
@@ -7709,31 +7841,25 @@
 		"agentHost.changeset.pr.existing.autoMergeFailed": {
 			"en": "Pull request [#{0}]({1}) already exists, but auto-merge could not be enabled: {2}"
 		},
+		"agentHost.changeset.pr.generationAuthRequired": {
+			"en": "Sign in to Copilot to generate a pull request title and description, or enter them manually."
+		},
+		"agentHost.changeset.pr.generationInvalidResponse": {
+			"en": "The model did not return a pull request title and description. Enter them manually."
+		},
+		"agentHost.changeset.pr.generationNoContext": {
+			"en": "There is no conversation or change context to generate a pull request title and description."
+		},
 		"agentHost.changeset.pr.noChanges": {
 			"en": "There are no branch changes to create a pull request for."
+		},
+		"agentHost.changeset.pr.stalePreparation": {
+			"en": "The repository or branches have changed since this pull request was prepared. Reopen Create PR to review the current details."
 		}
 	},
 	"vs/platform/agentHost/node/agentHostPullRequestOperationProvider": {
-		"agentHost.changeset.createDraftPR": {
-			"en": "Create Draft PR"
-		},
-		"agentHost.changeset.createDraftPRAgentMerge": {
-			"en": "Create Draft PR & Agent Merge"
-		},
 		"agentHost.changeset.createPR": {
 			"en": "Create PR"
-		},
-		"agentHost.changeset.createPRAgentMerge": {
-			"en": "Create PR & Agent Merge"
-		},
-		"agentHost.changeset.createPRAutoMerge": {
-			"en": "Create PR (Auto-Merge)"
-		},
-		"agentHost.changeset.createPRAutoRebase": {
-			"en": "Create PR (Auto-Rebase)"
-		},
-		"agentHost.changeset.createPRAutoSquash": {
-			"en": "Create PR (Auto-Squash)"
 		},
 		"agentHost.changeset.disableAutoMerge": {
 			"en": "Disable Auto Merge"
@@ -7758,6 +7884,12 @@
 		},
 		"agentHost.changeset.mergePR.description": {
 			"en": "Merge the pull request using the configured merge method."
+		},
+		"agentHost.changeset.preparePR": {
+			"en": "Prepare PR"
+		},
+		"agentHost.changeset.preparePR.description": {
+			"en": "Generate a pull request title and description and read repository merge options without changing the repository."
 		}
 	},
 	"vs/platform/agentHost/node/agentHostRenameCommand": {
@@ -7776,6 +7908,12 @@
 	"vs/platform/agentHost/node/agentHostSyncOperationProvider": {
 		"agentHost.changeset.sync": {
 			"en": "Sync Changes {0}↑"
+		},
+		"agentHost.changeset.syncIncoming": {
+			"en": "Sync Changes {0}↓"
+		},
+		"agentHost.changeset.syncIncomingOutgoing": {
+			"en": "Sync Changes {0}↓ {1}↑"
 		}
 	},
 	"vs/platform/agentHost/node/agentService": {
@@ -7790,6 +7928,11 @@
 		},
 		"agentHost.importedSessionFallback": {
 			"en": "New Session"
+		}
+	},
+	"vs/platform/agentHost/node/chatContributions/pullRequest/pullRequestChatContribution": {
+		"agentHost.pullRequestChat.agentMergeDisabled": {
+			"en": "Agent Merge is disabled in the host configuration."
 		}
 	},
 	"vs/platform/agentHost/node/chatContributions/sessionWorkspaceConversion/sessionWorkspaceConversionContribution": {
@@ -8192,13 +8335,13 @@
 			"en": "Auto-Review"
 		},
 		"codex.sessionConfig.permissionsPreset.autoReviewDescription": {
-			"en": "Same workspace access as Default, but approval requests are routed through the auto-reviewer instead of prompting you."
+			"en": "Same sandboxed access as Default, but approval requests are routed through the auto-reviewer instead of prompting you."
 		},
 		"codex.sessionConfig.permissionsPreset.default": {
 			"en": "Default Permissions"
 		},
 		"codex.sessionConfig.permissionsPreset.defaultDescription": {
-			"en": "Codex can read and edit files in the workspace and run routine local commands. It asks before using the internet or going beyond the workspace."
+			"en": "Codex can read and edit workspace files and run routine local commands under the platform sandbox. It asks before using the internet or requesting broader access."
 		},
 		"codex.sessionConfig.permissionsPreset.fullAccess": {
 			"en": "Full Access"
@@ -8297,6 +8440,11 @@
 			"en": "Codex"
 		}
 	},
+	"vs/platform/agentHost/node/codex/codexCustomizations": {
+		"codex.invalidSkills": {
+			"en": "Invalid Skills"
+		}
+	},
 	"vs/platform/agentHost/node/codex/codexGuardianReview": {
 		"codex.guardianReview.aborted": {
 			"en": "Auto-review stopped"
@@ -8306,6 +8454,9 @@
 		},
 		"codex.guardianReview.timedOut": {
 			"en": "Auto-review timed out"
+		},
+		"codex.guardianReview.writeStdin": {
+			"en": "Send input to program"
 		}
 	},
 	"vs/platform/agentHost/node/codex/codexMapAppServerEvents": {
@@ -8380,6 +8531,12 @@
 		"codex.configuration.personalization": {
 			"en": "Personalization"
 		},
+		"codex.configuration.portableProvider.conflict": {
+			"en": "Cannot switch this ChatGPT conversation to Copilot because the Codex configuration already defines an incompatible 'model_providers.vscode-proxy'. Update that definition to use native OpenAI authentication before retrying. The existing configuration and original conversation have not been changed."
+		},
+		"codex.configuration.portableProvider.unavailable": {
+			"en": "Cannot switch this ChatGPT conversation to Copilot because the Codex user configuration could not be read safely. The original conversation has not been changed."
+		},
 		"codex.configuration.review": {
 			"en": "Review policy"
 		},
@@ -8401,18 +8558,6 @@
 		},
 		"copilot.modelAutoTier.title": {
 			"en": "Optimize for"
-		},
-		"copilot.modelContextSize.default": {
-			"en": "Default"
-		},
-		"copilot.modelContextSize.description": {
-			"en": "Selects the context window size for this model."
-		},
-		"copilot.modelContextSize.longerSessions": {
-			"en": "Longer sessions"
-		},
-		"copilot.modelContextSize.title": {
-			"en": "Context Size"
 		},
 		"copilot.modelThinkingLevel.description": {
 			"en": "Controls how much reasoning effort the model uses."
@@ -8534,6 +8679,15 @@
 		},
 		"agentHost.copilot.systemNotification.shellDescriptionCompleted": {
 			"en": "`{0}` completed"
+		},
+		"agentHost.copilot.systemNotification.unnamedAgentCompleted": {
+			"en": "Background agent completed"
+		},
+		"agentHost.copilot.systemNotification.unnamedAgentFailed": {
+			"en": "Background agent failed"
+		},
+		"agentHost.copilot.systemNotification.unnamedAgentIdle": {
+			"en": "Background agent is complete"
 		}
 	},
 	"vs/platform/agentHost/node/copilot/copilotToolDisplay": {
@@ -8857,8 +9011,20 @@
 		"devContainerAgentHost.commandFailed": {
 			"en": "Dev Container command failed (exit {0}): {1}\nstderr: {2}"
 		},
+		"devContainerAgentHost.dockerInspectFailed": {
+			"en": "Docker inspect failed (exit {0}): {1}"
+		},
+		"devContainerAgentHost.invalidMountJson": {
+			"en": "Unable to parse Docker mount information: {0}"
+		},
+		"devContainerAgentHost.invalidMounts": {
+			"en": "Docker returned invalid mount information: {0}"
+		},
 		"devContainerAgentHost.invalidUpResult": {
 			"en": "Dev Container CLI returned an invalid result: {0}"
+		},
+		"devContainerAgentHost.ownerLookupFailed": {
+			"en": "Unable to check the owner of {0}: {1}"
 		},
 		"devContainerAgentHost.unsupportedPlatform": {
 			"en": "Unsupported Dev Container platform: {0} {1}"
@@ -8973,13 +9139,19 @@
 			"en": "Rerun Workflow"
 		},
 		"agentMerge.tool.rerunWorkflow.complete": {
-			"en": "Reran failed workflow"
+			"en": "Requested workflow rerun"
+		},
+		"agentMerge.tool.rerunWorkflow.deferred": {
+			"en": "Deferred workflow rerun until the current attempt finishes"
 		},
 		"agentMerge.tool.rerunWorkflow.failed": {
 			"en": "Failed to rerun workflow"
 		},
+		"agentMerge.tool.rerunWorkflow.indeterminate": {
+			"en": "Could not confirm workflow rerun"
+		},
 		"agentMerge.tool.rerunWorkflow.running": {
-			"en": "Rerunning failed workflow"
+			"en": "Requesting workflow rerun"
 		}
 	},
 	"vs/platform/agentHost/node/shared/sessionServerTools": {
@@ -9472,6 +9644,9 @@
 	"vs/platform/contextkey/common/contextkeys": {
 		"inputFocus": {
 			"en": "Whether keyboard focus is inside an input box"
+		},
+		"isChromeOS": {
+			"en": "Whether the operating system is ChromeOS"
 		},
 		"isIOS": {
 			"en": "Whether the operating system is iOS"
@@ -12741,6 +12916,9 @@
 		"chatTabsAriaLabel": {
 			"en": "Chats"
 		},
+		"copyChatLink": {
+			"en": "Copy Link"
+		},
 		"deleteChat": {
 			"en": "Delete Chat"
 		},
@@ -13010,6 +13188,9 @@
 		}
 	},
 	"vs/sessions/browser/parts/sessionRemoteConnection": {
+		"sessionRemoteHost.connect": {
+			"en": "Connect"
+		},
 		"sessionRemoteHost.connectingTitle": {
 			"en": "Connecting to {0}"
 		},
@@ -13221,9 +13402,6 @@
 		},
 		"sessionHasGitRepository": {
 			"en": "Whether the session has a usable git repository"
-		},
-		"sessionHasGitSyncActionRunning": {
-			"en": "Whether the session has a git sync action currently running"
 		},
 		"sessionHasIssues": {
 			"en": "Whether the session view's session references at least one GitHub issue"
@@ -14057,9 +14235,6 @@
 		"automation.form.branchRequired": {
 			"en": "A branch is required for Worktree isolation."
 		},
-		"automation.form.chooseWorkspace": {
-			"en": "Choose Workspace"
-		},
 		"automation.form.day": {
 			"en": "Day of week"
 		},
@@ -14138,17 +14313,11 @@
 		"automation.form.sessionTypeRequired": {
 			"en": "Session type is required."
 		},
-		"automation.form.targetHint.choose": {
-			"en": "Choose a workspace or No workspace to see which agents can run this automation."
+		"automation.form.target": {
+			"en": "Target"
 		},
-		"automation.form.targetHint.singleQuickChat": {
-			"en": "Only {0} is available without a workspace. Choose a workspace to use a different agent."
-		},
-		"automation.form.targetHint.singleWorkspace": {
-			"en": "Only {0} is available for this workspace. Change the workspace to use a different agent."
-		},
-		"automation.form.targetHint.unavailable": {
-			"en": "No agents are currently available for this target."
+		"automation.form.targetOptions": {
+			"en": "Automation target options"
 		},
 		"automation.form.time": {
 			"en": "Time"
@@ -14413,20 +14582,26 @@
 		"changes": {
 			"en": "Changes"
 		},
+		"changesView.diffStats.accessibleLabel": {
+			"en": "{0}, {1} additions, {2} deletions"
+		},
 		"changesView.diffStats.file": {
 			"en": "1 file"
 		},
 		"changesView.diffStats.files": {
 			"en": "{0} files"
 		},
-		"changesView.diffStats.label": {
-			"en": "{0} files, {1} additions, {2} deletions"
-		},
 		"changesView.emptyTitle": {
 			"en": "Changes"
 		},
 		"changesView.noChanges": {
 			"en": "No changed files"
+		},
+		"changesView.picker.tooltip": {
+			"en": "{0}: {1}"
+		},
+		"changesView.picker.tooltipWithSummary": {
+			"en": "{0}: {1}, {2}"
 		},
 		"changesView.viewChanges": {
 			"en": "View All Changes"
@@ -14450,6 +14625,12 @@
 	"vs/sessions/contrib/changes/browser/changesViewActions": {
 		"agentSessions.collapseAllDiffs": {
 			"en": "Collapse All Diffs"
+		},
+		"agentSessions.diffEditorWordWrap": {
+			"en": "Word Wrap"
+		},
+		"agentSessions.editorWordWrap": {
+			"en": "Word Wrap"
 		},
 		"agentSessions.expandAllDiffs": {
 			"en": "Expand All Diffs"
@@ -14540,6 +14721,226 @@
 			"en": "Toggle Checks"
 		}
 	},
+	"vs/sessions/contrib/changes/browser/createPullRequestChatRequest": {
+		"createPR.chat.readOnly": {
+			"en": "Cannot send a pull request creation message to a read-only chat."
+		},
+		"createPR.message.autoMerge": {
+			"en": "Enable GitHub auto-merge using {0}, so the pull request merges when required checks and approvals pass. Do not bypass these requirements."
+		},
+		"createPR.message.context": {
+			"en": "The prepared context is repository {0}, current branch {1}, and base branch {2}. If this context has changed, stop and ask me to review it before committing, pushing, or creating the pull request."
+		},
+		"createPR.message.details": {
+			"en": "Use the following title and description exactly (provided as JSON):\n{0}"
+		},
+		"createPR.message.draft": {
+			"en": "Create a draft pull request for this session's changes. Keep it in draft."
+		},
+		"createPR.message.manualMerge": {
+			"en": "Do not merge the pull request or enable GitHub auto-merge."
+		},
+		"createPR.message.merge": {
+			"en": "a merge commit"
+		},
+		"createPR.message.newBranch": {
+			"en": "Create and switch to a new source branch before committing changes."
+		},
+		"createPR.message.push": {
+			"en": "Commit any uncommitted changes and push the source branch as needed."
+		},
+		"createPR.message.ready": {
+			"en": "Create a pull request ready for review for this session's changes."
+		},
+		"createPR.message.rebase": {
+			"en": "rebase merging"
+		},
+		"createPR.message.squash": {
+			"en": "squash merging"
+		}
+	},
+	"vs/sessions/contrib/changes/browser/createPullRequestWidget": {
+		"createPR.actions": {
+			"en": "Pull Request Actions"
+		},
+		"createPR.addressReviews": {
+			"en": "Address Reviews"
+		},
+		"createPR.addressReviewsHint": {
+			"en": "Agent Merge will automatically ask the agent to address feedback when the pull request has unresolved review comments."
+		},
+		"createPR.afterCreation": {
+			"en": "After creation"
+		},
+		"createPR.agentConfigurationUnavailable": {
+			"en": "Uses the session's existing Agent Merge settings. Update the agent host to configure them here."
+		},
+		"createPR.agentMerge": {
+			"en": "Agent Merge"
+		},
+		"createPR.agentMergeAlways": {
+			"en": "When Ready"
+		},
+		"createPR.agentMergeAlwaysHint": {
+			"en": "Merge when required checks and approvals pass."
+		},
+		"createPR.agentMergeDraftPolicyHint": {
+			"en": "{0} Drafts can be marked ready automatically."
+		},
+		"createPR.agentMergeNever": {
+			"en": "Off"
+		},
+		"createPR.agentMergeNeverHint": {
+			"en": "Leave the pull request open for you to merge."
+		},
+		"createPR.agentMergeOptions": {
+			"en": "Agent Merge configuration for this session"
+		},
+		"createPR.agentMergePolicy": {
+			"en": "Merge Pull Request"
+		},
+		"createPR.agentMergeUnchanged": {
+			"en": "If Unchanged"
+		},
+		"createPR.agentMergeUnchangedHint": {
+			"en": "Merge only if Agent Merge made no changes. A repair commit switches merging off."
+		},
+		"createPR.agentSessionHint": {
+			"en": "Applied to this session on submission. Your choices are remembered for future pull requests. Additional agent usage may apply."
+		},
+		"createPR.autoHint": {
+			"en": "GitHub merges when required checks and approvals pass. It does not fix failing checks or address reviews."
+		},
+		"createPR.autoMerge": {
+			"en": "Auto-Merge"
+		},
+		"createPR.autoMergeDraft": {
+			"en": "Mark the pull request ready before enabling GitHub auto-merge."
+		},
+		"createPR.autoMergeUnavailable": {
+			"en": "GitHub auto-merge is not available for this repository or session."
+		},
+		"createPR.baseBranch": {
+			"en": "Base branch: {0}"
+		},
+		"createPR.branchDirection": {
+			"en": "Merge source branch {0} into base branch {1}"
+		},
+		"createPR.cancel": {
+			"en": "Cancel"
+		},
+		"createPR.create": {
+			"en": "Create PR"
+		},
+		"createPR.createFailed": {
+			"en": "Could not create the pull request: {0}"
+		},
+		"createPR.creating": {
+			"en": "Creating PR..."
+		},
+		"createPR.description": {
+			"en": "Description"
+		},
+		"createPR.detailsReady": {
+			"en": "Pull request details are ready."
+		},
+		"createPR.draft": {
+			"en": "Create as Draft"
+		},
+		"createPR.draftHint": {
+			"en": "Keep the pull request in draft until it is ready for review."
+		},
+		"createPR.enterDescription": {
+			"en": "Describe what changed and how it was tested"
+		},
+		"createPR.enterTitle": {
+			"en": "Summarize your changes"
+		},
+		"createPR.fixCI": {
+			"en": "Fix CI Failures"
+		},
+		"createPR.fixCIHint": {
+			"en": "Agent Merge will automatically ask the agent to investigate and fix failures when required CI checks fail."
+		},
+		"createPR.generating": {
+			"en": "Generating pull request title and description."
+		},
+		"createPR.generationFailed": {
+			"en": "Could not generate details: {0} Enter your own or retry."
+		},
+		"createPR.generationFailedWithoutMessage": {
+			"en": "Could not generate details. Enter your own or retry."
+		},
+		"createPR.heading": {
+			"en": "Create pull request"
+		},
+		"createPR.loadingBranches": {
+			"en": "Loading branch information..."
+		},
+		"createPR.manual": {
+			"en": "Merge Manually"
+		},
+		"createPR.manualHint": {
+			"en": "You decide when to merge. No automatic fixes or merging."
+		},
+		"createPR.mergeCommit": {
+			"en": "Merge Commit"
+		},
+		"createPR.mergeCommitHint": {
+			"en": "Preserve all commits and add a merge commit."
+		},
+		"createPR.mergeMethod": {
+			"en": "Merge method"
+		},
+		"createPR.newBranch": {
+			"en": "A new branch will be created from {0}"
+		},
+		"createPR.newBranchLabel": {
+			"en": "New branch"
+		},
+		"createPR.prepareFailed": {
+			"en": "Could not load pull request details: {0} Enter your own or retry."
+		},
+		"createPR.pushHint": {
+			"en": "Uncommitted changes will be committed and your branch pushed."
+		},
+		"createPR.rebase": {
+			"en": "Rebase"
+		},
+		"createPR.rebaseHint": {
+			"en": "Replay each commit on the base branch without a merge commit."
+		},
+		"createPR.resolveConflicts": {
+			"en": "Resolve Conflicts and Behind Branches"
+		},
+		"createPR.resolveConflictsHint": {
+			"en": "Agent Merge will automatically ask the agent to update the source branch when it has merge conflicts or falls behind the base branch."
+		},
+		"createPR.retry": {
+			"en": "Retry"
+		},
+		"createPR.sendFailed": {
+			"en": "Could not send the create pull request message: {0}"
+		},
+		"createPR.sending": {
+			"en": "Sending Message..."
+		},
+		"createPR.sendToChat": {
+			"en": "Send Create PR Message"
+		},
+		"createPR.sourceBranch": {
+			"en": "Source branch: {0}"
+		},
+		"createPR.squash": {
+			"en": "Squash"
+		},
+		"createPR.squashHint": {
+			"en": "Combine all changes into one commit on the base branch."
+		},
+		"createPR.title": {
+			"en": "Title"
+		}
+	},
 	"vs/sessions/contrib/changes/browser/sessionChangesEditor": {
 		"changeset.notViewed.tooltip": {
 			"en": "Mark as Viewed"
@@ -14571,11 +14972,41 @@
 		"sessionsChanges.checks": {
 			"en": "The Checks section lists the continuous integration checks for the session's pull request. Its header is a button: press Enter or Space to collapse or expand it{0}."
 		},
+		"sessionsChanges.createPR": {
+			"en": "For Agent Host sessions, Create PR opens a form with generated, editable title and description, a draft checkbox, and merge options. The form appears while generation is in progress and preserves anything you type. Use Tab to navigate and Escape to cancel."
+		},
+		"sessionsChanges.createPR.agentMergeHints": {
+			"en": "Each Agent Merge checkbox has a description explaining what it does and when it acts. Focus a checkbox to hear its description, or hover over the info icon after its label to read it. Press Space to toggle it."
+		},
+		"sessionsChanges.createPR.branches": {
+			"en": "The header identifies the repository, followed by the base branch on the left and source branch on the right. The arrow points toward the base branch that will receive the changes."
+		},
+		"sessionsChanges.createPR.draft": {
+			"en": "Create as Draft keeps the pull request in draft until it is ready for review."
+		},
+		"sessionsChanges.createPR.merge": {
+			"en": "Merge Manually leaves merging to you. Selecting Agent Merge reveals checkboxes for addressing reviews, fixing CI failures, and resolving conflicts or behind branches. Merge Pull Request lets you turn merging off, merge only if Agent Merge made no changes, or merge when ready. Session settings are changed only on submission, not when opening or cancelling the form. Auto-Merge asks GitHub to merge when requirements pass and lets you choose an allowed merge method. GitHub auto-merge is not available for drafts."
+		},
+		"sessionsChanges.createPR.navigation": {
+			"en": "Use Tab and Shift+Tab to move between fields and buttons. Use arrow keys to choose a merge option and Space to toggle Create as Draft."
+		},
+		"sessionsChanges.createPR.overview": {
+			"en": "You are in the Create Pull Request form. Title and description are generated in the background. Each field shows a loading indicator and reports a busy state until generation finishes. You may start editing immediately; generated text never replaces your edits."
+		},
+		"sessionsChanges.createPR.preferences": {
+			"en": "Draft, merge options, and the last-used submission action are remembered across sessions in this profile, even if you cancel. Title, description, repository, and branches are not remembered. Unavailable options are not applied, but your preferences are kept for repositories and hosts that support them."
+		},
+		"sessionsChanges.createPR.submit": {
+			"en": "Create PR commits and pushes your changes and creates the pull request directly. When available, Tab to Pull Request Actions and press Enter or Space to open the dropdown. Choose Send Create PR Message to send the form details and options to this session's chat instead. The last-used action becomes the primary button. Control+Enter on Windows and Linux, or Command+Enter on macOS, runs that primary action. Press Escape to dismiss the dropdown, or Escape in the form or Cancel to close without submitting."
+		},
 		"sessionsChanges.diffView.classic": {
 			"en": "Use Diff View in the editor title area's More Actions menu to select inline, side-by-side, or automatic layout. The Toggle Preferred Diff View command switches between inline and automatic layout{0}."
 		},
 		"sessionsChanges.diffView.singlePane": {
 			"en": "Use Diff View in the editor title area's More Actions menu to select inline, side-by-side, or automatic layout. The Toggle Preferred Diff View command switches between inline and automatic layout{0}."
+		},
+		"sessionsChanges.editorWordWrap": {
+			"en": "Use Word Wrap in the editor title area's More Actions menu to control word wrapping independently for code and multi-diff editors in the Agents window."
 		},
 		"sessionsChanges.operations": {
 			"en": "When available, the Changes toolbar or editor title bar also provides actions to commit, merge, sync, or create a pull request. When Agent Merge is the primary action, activate it to toggle Agent Merge and use its dropdown to configure it. Use Tab and Shift+Tab to move between the file list and toolbar actions."
@@ -14590,12 +15021,55 @@
 			"en": "The Changes view can show files as a tree or a flat list. Use the view's toolbar actions to switch between Tree and List modes."
 		}
 	},
+	"vs/sessions/contrib/changes/browser/sessionSyncChanges": {
+		"sessions.syncChanges": {
+			"en": "Sync Changes"
+		},
+		"sessions.syncChanges.incomingCount": {
+			"en": "{0}↓"
+		},
+		"sessions.syncChanges.incomingOutgoingCounts": {
+			"en": "{0}↓ {1}↑"
+		},
+		"sessions.syncChanges.outgoingCount": {
+			"en": "{0}↑"
+		},
+		"sessions.syncChanges.pullPushTooltip": {
+			"en": "Pull {0} and push {1} commits between {2}"
+		},
+		"sessions.syncChanges.pullTooltip": {
+			"en": "Pull {0} commits from {1}"
+		},
+		"sessions.syncChanges.pushTooltip": {
+			"en": "Push {0} commits to {1}"
+		},
+		"sessions.syncChanges.running": {
+			"en": "Synchronizing Changes..."
+		},
+		"sessions.syncChanges.tooltip": {
+			"en": "Synchronize Changes"
+		},
+		"sessions.syncChanges.unavailable": {
+			"en": "Sync Changes is no longer available for this session."
+		}
+	},
 	"vs/sessions/contrib/changes/common/changes": {
 		"sessionChangesEditor.changedFiles": {
 			"en": "{0} files"
 		},
 		"sessionChangesEditor.oneChangedFile": {
 			"en": "1 file"
+		}
+	},
+	"vs/sessions/contrib/chat/browser/agentsWindowWorkspaceHandoff": {
+		"agentsHandoff.chooseWorkspace": {
+			"en": "Choose Workspace"
+		},
+		"agentsHandoff.retry": {
+			"en": "Retry"
+		},
+		"agentsHandoff.workspaceUnavailable": {
+			"en": "The workspace could not be selected. Try again or choose a workspace to continue."
 		}
 	},
 	"vs/sessions/contrib/chat/browser/aiCustomizationWorkspaceService": {
@@ -14696,6 +15170,9 @@
 	"vs/sessions/contrib/chat/browser/chat.contribution": {
 		"chat.agentHost.runWorktreeCreatedTasks": {
 			"en": "Whether to automatically run tasks tagged with `\"runOptions\": { \"runOn\": \"worktreeCreated\" }` when a new agent host session worktree is created. Manual `Run Task` invocations are unaffected."
+		},
+		"chat.agentSessions.archiveNudge.enabled": {
+			"en": "Suggests archiving an inactive session when all GitHub pull requests associated with the session have merged. Dismissing the suggestion hides it for that session until it is archived or deleted."
 		},
 		"chat.agentSessions.backgroundImageLayout.bottom.description": {
 			"en": "Shows the image at its original size at the bottom center."
@@ -14801,6 +15278,9 @@
 		},
 		"chat.agentSessions.clearBackground.cleared": {
 			"en": "Chat background cleared."
+		},
+		"chat.agentSessions.consolidatedRemoteWorkspaces.deprecated": {
+			"en": "Deprecated. Use the unified workspace picker setting instead."
 		},
 		"chat.agentSessions.preferredDarkBackgroundImage": {
 			"en": "Specifies `codicons`, an absolute file path, or a `file` URI for the background displayed behind chat content in the Agents Window when using a dark color theme. The background is hidden in high contrast themes."
@@ -15017,6 +15497,9 @@
 		},
 		"chatInput.accessibilityHelpNoKb": {
 			"en": "Chat input. Press Enter to send out the request. Use the Chat Accessibility Help command for more information."
+		},
+		"initializing": {
+			"en": "Initializing..."
 		},
 		"loading": {
 			"en": "Loading..."
@@ -15458,6 +15941,20 @@
 			"en": "Save this task in the current workspace"
 		}
 	},
+	"vs/sessions/contrib/chat/browser/sessionArchiveNudge": {
+		"archiveOnboarding.interrupted": {
+			"en": "The session list introduction was interrupted. Try again."
+		},
+		"archiveOnboarding.listUnavailable": {
+			"en": "The sessions list could not be opened. Try again."
+		},
+		"sessionArchiveNudge.noLongerAvailable": {
+			"en": "This suggestion is no longer available. Review the session before trying again."
+		},
+		"sessionArchiveNudge.updateFailed": {
+			"en": "The session could not be updated. Check its connection and try again."
+		}
+	},
 	"vs/sessions/contrib/chat/browser/sessionArtifacts": {
 		"sessionArtifacts.commits": {
 			"en": "Commits"
@@ -15570,11 +16067,20 @@
 		"sessionChatPills.pullRequestOpen": {
 			"en": "open"
 		},
+		"sessionChatPills.pullRequestRemoved": {
+			"en": "Pull request artifact removed from session."
+		},
 		"sessionChatPills.pullRequests": {
 			"en": "Pull Requests"
 		},
 		"sessionChatPills.pullRequestWithTitle": {
 			"en": "Pull Request #{0}: {1}"
+		},
+		"sessionChatPills.removePullRequest": {
+			"en": "Remove Pull Request Artifact from Session"
+		},
+		"sessionChatPills.removePullRequestFailed": {
+			"en": "Could not remove pull request artifact: {0}"
 		}
 	},
 	"vs/sessions/contrib/chat/browser/sessionChatInputToolbarDebug": {
@@ -15674,6 +16180,12 @@
 		"sessionsChat.aquariumAction": {
 			"en": "To show or hide the aquarium action on the new-session view, use the checked Aquarium item in the context menu outside the composer, or run the Toggle Aquarium Action Visibility command."
 		},
+		"sessionsChat.archiveNudge": {
+			"en": "When all GitHub pull requests associated with the session have merged and no chat is working or waiting for input, an archive suggestion may appear above the chat input. Use Tab or Shift+Tab to reach Archive, Configure Automatic Cleanup, or Dismiss Archive Suggestion, then Enter or Space to activate it. Configure Automatic Cleanup opens the settings for automatically archiving inactive merged sessions and permanently deleting automatically archived merged sessions. The explanation under What Does \"Archive\" Do? is collapsed by default. Use Tab to reach it and Enter or Space to expand or collapse it. Dismiss Archive Suggestion, or Escape while the suggestion is focused, hides the suggestion for this session, including after a reload, until it is archived or deleted, and returns focus to the chat input. Archiving the session hides it from the sessions list so you can focus on your remaining tasks. The session is not deleted. Ask your agent to find it, or look in the \"Archived\" section of the sessions list. You can unarchive it anytime. The worktree created for the session, if any, will be deleted. You can recreate it by unarchiving the session."
+		},
+		"sessionsChat.archiveNudgeOnboarding": {
+			"en": "The first time you activate the suggestion's Archive or Mark as Done button, a spotlight may reveal that session's action in the sessions list. The action waits until you activate the highlighted action, activate Understood, or press Escape to end the spotlight. Use Tab or Shift+Tab to move between the highlighted action and Understood, and Enter or Space to activate either. The session is then archived or marked as done, and the spotlight will not appear again."
+		},
 		"sessionsChat.archiveSession": {
 			"en": "To archive or mark one or more sessions as done, focus them in the Sessions list and invoke Archive or Mark as Done{0}."
 		},
@@ -15698,11 +16210,14 @@
 		"sessionsChat.conversations": {
 			"en": "When multiple chats appear as tabs in a single group, the tab row replaces the session header and includes the session actions. Side-by-side chat groups retain the session header and keep their tab rows compact."
 		},
+		"sessionsChat.copySessionLink": {
+			"en": "To copy a browser link that opens an Agent Host session in the Agents window, open the session's context menu and choose Copy Link."
+		},
 		"sessionsChat.createdBySession": {
 			"en": "When a session was created by another session, focus it in the Sessions list and use the Show Hover command{0}. Move focus to the Created by link, then press Enter or Space to open the creator session."
 		},
 		"sessionsChat.customizations": {
-			"en": "Focus the Chat Customizations view{0}."
+			"en": "Focus the Chat Customizations section at the bottom of the left sidebar{0}."
 		},
 		"sessionsChat.delegatedMessage": {
 			"en": "Messages sent by another session or chat show a source annotation above the message. Press Tab to focus the annotation, then press Enter or Space to open the source chat."
@@ -15714,10 +16229,13 @@
 			"en": "To permanently delete a session, open its context menu and choose Delete. This is destructive and cannot be undone."
 		},
 		"sessionsChat.devContainer": {
-			"en": "When Dev Container Agent Host sessions are enabled, Docker is available, and the selected local folder contains a Dev Container configuration, a Dev Container checkbox appears before New Worktree. Select it to run the session on an Agent Host inside that folder's Dev Container."
+			"en": "When Dev Container Agent Host sessions are enabled, Docker is available, and a local folder contains a Dev Container configuration, open the folder's submenu and choose Use Dev Container. The workspace picker then identifies the folder with a Dev Container suffix. Choose Use Local to switch back."
 		},
 		"sessionsChat.dictation": {
 			"en": "When dictation is configured, dictate your message into the input{0}. Tap to start and stop, or hold to dictate only while pressed. If the speech-to-text model is still preparing, activate the dictation control again to cancel."
+		},
+		"sessionsChat.doneNudge": {
+			"en": "When all GitHub pull requests associated with the session have merged and no chat is working or waiting for input, a mark as done suggestion may appear above the chat input. Use Tab or Shift+Tab to reach Mark as Done, Configure Automatic Cleanup, or Dismiss Mark as Done Suggestion, then Enter or Space to activate it. Configure Automatic Cleanup opens the settings for automatically archiving inactive merged sessions and permanently deleting automatically archived merged sessions. The explanation under What Does \"Mark as Done\" Do? is collapsed by default. Use Tab to reach it and Enter or Space to expand or collapse it. Dismiss Mark as Done Suggestion, or Escape while the suggestion is focused, hides the suggestion for this session, including after a reload, until it is marked as done or deleted, and returns focus to the chat input. Marking the session as done hides it from the sessions list so you can focus on your remaining tasks. The session is not deleted. Ask your agent to find it, or look in the \"Done\" section of the sessions list. You can restore it anytime. The worktree created for the session, if any, will be deleted. You can recreate it by restoring the session."
 		},
 		"sessionsChat.externalSessionBanner": {
 			"en": "When you first open a session created in another application, a banner appears at the top of the chat. Use Tab to reach its external-session picker, choose an option, and activate Save. The Close action dismisses the banner without changing the setting. Saving or closing permanently dismisses the banner."
@@ -15765,13 +16283,16 @@
 			"en": "Press Alt+Enter to start the session in the background without navigating into it. The started session appears in the Chat Sessions view."
 		},
 		"sessionsChat.inputPills": {
-			"en": "When session metadata or active-turn status pills appear above the input, press Tab to reach them, use the Left and Right arrow keys to move between them, and press Enter or Space to activate one. Right-click a pill to choose which pills are shown."
+			"en": "When session metadata or active-turn status pills appear above the input, press Tab to reach them, use the Left and Right arrow keys to move between them, and press Enter or Space to activate one. Open the context menu{0} to choose which pills are shown. Pull Requests Options lets you show all pull requests or only open and draft ones, remembered across sessions. If every pull request is filtered out, use the toolbar context menu to show all again."
 		},
 		"sessionsChat.micContextMenu": {
 			"en": "To choose a microphone or turn off dictation or Voice Mode, focus the microphone button in the input toolbar and open its context menu (for example Shift+F10)."
 		},
 		"sessionsChat.mobileConfig": {
 			"en": "On mobile, the mode and model pickers appear as tappable chips below the input. Tap a chip to open a bottom sheet where you can change the selection."
+		},
+		"sessionsChat.navigateChatTabs": {
+			"en": "When a chat tab is focused, use the left and right arrow keys to move to and activate an adjacent chat tab, or Home and End to activate the first and last tabs."
 		},
 		"sessionsChat.navigateNextSession": {
 			"en": "Navigate to the next session in the list{0}."
@@ -15809,6 +16330,9 @@
 		"sessionsChat.quickChat": {
 			"en": "To start a workspace-less quick chat, use the New Quick Chat command{0} or the plus button on the Chats section in the sessions list. When consolidated remote workspaces are enabled, this opens the new-session composer, where you can choose No workspace. Otherwise, it starts a workspace-less chat directly. The Toggle Side Panel command is disabled for quick chats."
 		},
+		"sessionsChat.removePullRequestArtifact": {
+			"en": "For pull requests recorded as session artifacts, the pull request dropdown offers Remove Pull Request Artifact from Session on each row. Use Tab to reach its actions. When only one pull request is visible, use the pull request pill's context menu instead. Removal is immediate and only deletes the artifact record; it does not close the pull request or remove independent session associations."
+		},
 		"sessionsChat.renameChat": {
 			"en": "When Rename is available for a non-main chat, focus its transcript or input or its nested row in the Sessions list, then invoke Rename{0}."
 		},
@@ -15816,7 +16340,7 @@
 			"en": "To rename a session, focus its row in the Sessions list or focus its main chat transcript or input, then invoke Rename{0}. You can also double-click its title in the Sessions list or open its context menu and choose Rename."
 		},
 		"sessionsChat.sessionsListChatContextMenu": {
-			"en": "Open a nested chat's context menu to rename it, open it to the side, or, when supported, permanently delete it."
+			"en": "Open a nested chat's context menu to rename it, open it to the side, or, when supported, permanently delete it. Agent Host chats also offer Copy Link."
 		},
 		"sessionsChat.sessionsListChats": {
 			"en": "Sessions with multiple user-facing chats show those chats nested beneath the session in the Sessions list. Use the arrow keys to navigate the list and Enter to open a chat. Side chats and subagent chats are omitted from this nested list: side chats are reachable from the Side Chats dropdown in the session's overflow menu, and subagent chats open from their pills in the chat transcript."
@@ -15827,11 +16351,14 @@
 		"sessionsChat.subagentPills": {
 			"en": "Subagent pills in the chat transcript can be dragged to a chat group's edge to open the subagent beside the current chat. With the keyboard, focus a subagent pill and press Alt+Enter to open it beside the current chat."
 		},
+		"sessionsChat.syncChanges": {
+			"en": "When available, Sync Changes appears as a separate sync icon with incoming and outgoing commit counts beside the branch picker below the input. Use Tab and the arrow keys to reach it, then Enter or Space to synchronize the session's repository. The action is disabled while synchronization is running."
+		},
 		"sessionsChat.toggleSidePanel": {
 			"en": "Toggle the side panel (the editor area together with the auxiliary bar) open or closed{0}."
 		},
 		"sessionsChat.viewAllChanges": {
-			"en": "Status pills above the chat input include the session's diff stats (lines added and removed). Activate the Changes pill to open the multi-file diff editor for all of the session's changes{0}."
+			"en": "Status pills above the chat input include the session's diff stats (lines added and removed). Activate the Changes pill to open the multi-file diff editor with Session Changes for a folder session or Branch Changes for a worktree session{0}."
 		},
 		"sessionsChat.voiceMode": {
 			"en": "Start or stop Voice Mode to interact with the agent using your microphone{0}."
@@ -15844,6 +16371,9 @@
 		},
 		"sessionsChat.workspace": {
 			"en": "Shift+Tab to navigate to the workspace picker and choose a workspace for your session. When consolidated remote workspaces are enabled, opening the picker focuses its search input so you can immediately type to filter workspaces. If quick chats are available, you can also choose No workspace to start a workspace-less chat."
+		},
+		"sessionsChat.workspaceHandoff": {
+			"en": "Opening Agents from an editor can suggest that editor's folder for a fresh session. Choosing a workspace yourself or starting another session cancels a pending suggestion. If an explicitly requested workspace cannot be selected, a notification offers Retry and Choose Workspace actions."
 		}
 	},
 	"vs/sessions/contrib/chat/browser/sessionTurnChanges": {
@@ -15878,6 +16408,12 @@
 		}
 	},
 	"vs/sessions/contrib/chat/browser/sessionWorkspacePicker": {
+		"pathNotExistDetail": {
+			"en": "The path '{0}' does not exist on this computer."
+		},
+		"pathNotExistTitle": {
+			"en": "Path does not exist"
+		},
 		"pickWorkspace": {
 			"en": "workspace"
 		},
@@ -15888,9 +16424,15 @@
 			"en": "{0}, {1} attached"
 		},
 		"workspacePicker.attachFolder": {
+			"en": "Attach Folder"
+		},
+		"workspacePicker.attachFolderWithEllipsis": {
 			"en": "Attach Folder..."
 		},
 		"workspacePicker.attachRepository": {
+			"en": "Attach Repository"
+		},
+		"workspacePicker.attachRepositoryWithEllipsis": {
 			"en": "Attach Repository..."
 		},
 		"workspacePicker.browseSelectLocal": {
@@ -15899,17 +16441,29 @@
 		"workspacePicker.categorySelectionAriaLabel": {
 			"en": "{0}: {1}"
 		},
+		"workspacePicker.chooseFolder": {
+			"en": "Choose Folder"
+		},
 		"workspacePicker.connectingRemoteAgentHost": {
 			"en": "Connecting to {0}..."
 		},
 		"workspacePicker.connectRemoteAgentHostFailed": {
 			"en": "Failed to connect to {0}."
 		},
+		"workspacePicker.devContainer.label": {
+			"en": "{0} - Dev Container"
+		},
+		"workspacePicker.devContainer.local": {
+			"en": "Use Local"
+		},
+		"workspacePicker.devContainer.use": {
+			"en": "Use Dev Container"
+		},
 		"workspacePicker.experimental": {
 			"en": "Experimental"
 		},
 		"workspacePicker.filter": {
-			"en": "Search Workspaces..."
+			"en": "Search"
 		},
 		"workspacePicker.githubLoading": {
 			"en": "GitHub repositories are still loading"
@@ -15923,11 +16477,17 @@
 		"workspacePicker.pickAriaLabel": {
 			"en": "Start by picking a workspace"
 		},
+		"workspacePicker.remote": {
+			"en": "Remote"
+		},
 		"workspacePicker.remoteAriaLabel": {
 			"en": "{0}, {1}"
 		},
 		"workspacePicker.selectedAriaLabel": {
 			"en": "New session in {0}"
+		},
+		"workspacePicker.startFromScratch": {
+			"en": "Start from Scratch"
 		},
 		"workspacePicker.statusWithActiveSession": {
 			"en": "{0} · {1} active session"
@@ -15967,6 +16527,11 @@
 	"vs/sessions/contrib/chat/browser/webWorkspacePicker": {
 		"scopedWorkspacePicker.githubLoading": {
 			"en": "GitHub repositories are still loading"
+		}
+	},
+	"vs/sessions/contrib/chat/electron-browser/chat.contribution": {
+		"agentsHandoff.sessionNotFound": {
+			"en": "The linked session could not be found: {0}"
 		}
 	},
 	"vs/sessions/contrib/chatDebug/browser/chatDebug.contribution": {
@@ -16020,6 +16585,32 @@
 		},
 		"newSearchTab": {
 			"en": "Search"
+		}
+	},
+	"vs/sessions/contrib/editor/browser/diffEditor.sessions.contribution": {
+		"sessions.diffEditor.wordWrap": {
+			"en": "Controls how diff editors in the Agents window wrap lines."
+		},
+		"sessions.diffEditor.wordWrap.inherit": {
+			"en": "Lines will wrap according to the {0} setting."
+		},
+		"sessions.diffEditor.wordWrap.off": {
+			"en": "Lines will never wrap."
+		},
+		"sessions.diffEditor.wordWrap.on": {
+			"en": "Lines will wrap at the viewport width."
+		},
+		"sessions.editor.wordWrap": {
+			"en": "Controls how code editors in the Agents window wrap lines."
+		},
+		"sessions.editor.wordWrap.inherit": {
+			"en": "Lines will wrap according to the {0} setting."
+		},
+		"sessions.editor.wordWrap.off": {
+			"en": "Lines will never wrap."
+		},
+		"sessions.editor.wordWrap.on": {
+			"en": "Lines will wrap at the viewport width."
 		}
 	},
 	"vs/sessions/contrib/editor/browser/editor.contribution": {
@@ -16109,9 +16700,6 @@
 		},
 		"sessionsFilesViewIcon": {
 			"en": "View icon of the files view in the sessions window."
-		},
-		"syncChanges": {
-			"en": "Sync Changes"
 		}
 	},
 	"vs/sessions/contrib/files/browser/filesView": {
@@ -16381,6 +16969,23 @@
 			"en": "Choose a model"
 		}
 	},
+	"vs/sessions/contrib/onboardingTours/browser/tours/sessionArchiveTour": {
+		"archiveOnboarding.archiveDescription": {
+			"en": "You can archive any session directly from the sessions list. Hover over a session or focus it to show Archive."
+		},
+		"archiveOnboarding.archiveTitle": {
+			"en": "Archive sessions from the list"
+		},
+		"archiveOnboarding.doneDescription": {
+			"en": "You can mark any session as done directly from the sessions list. Hover over a session or focus it to show Mark as Done."
+		},
+		"archiveOnboarding.doneTitle": {
+			"en": "Mark sessions as done from the list"
+		},
+		"archiveOnboarding.understood": {
+			"en": "Understood"
+		}
+	},
 	"vs/sessions/contrib/policyBlocked/browser/sessionsPolicyBlocked": {
 		"accountGate.approvedOrgs": {
 			"en": "Allowed organizations:"
@@ -16494,6 +17099,9 @@
 		"agentHostModePicker.ariaLabel": {
 			"en": "Agent Mode Picker"
 		},
+		"agentHostModePicker.combinedAriaLabel": {
+			"en": "Mode and Permissions Picker"
+		},
 		"agentHostModePicker.triggerAriaLabel": {
 			"en": "Pick Agent Mode, {0}"
 		}
@@ -16525,8 +17133,14 @@
 		}
 	},
 	"vs/sessions/contrib/providers/agentHost/browser/agentHostSessionBranchActions": {
+		"copyAgentHostChatLink": {
+			"en": "Copy Link"
+		},
+		"copyAgentHostSessionLink": {
+			"en": "Copy Link"
+		},
 		"copySessionBranchName": {
-			"en": "Copy Session Branch Name"
+			"en": "Copy Branch Name"
 		}
 	},
 	"vs/sessions/contrib/providers/agentHost/browser/agentHostSessionChangesets": {
@@ -16591,12 +17205,6 @@
 		},
 		"agentHostSessionConfig.branchItemUncommittedSingular": {
 			"en": "1 uncommitted file"
-		},
-		"agentHostSessionConfig.devContainer": {
-			"en": "Dev Container"
-		},
-		"agentHostSessionConfig.devContainer.worktreeDisabled": {
-			"en": "Dev Container execution cannot be combined with New Worktree."
 		},
 		"agentHostSessionConfig.filter": {
 			"en": "Filter options..."
@@ -16831,6 +17439,9 @@
 		"notConnectedSend": {
 			"en": "Cannot send request: not connected to agent host."
 		},
+		"removeSessionArtifactUnavailable": {
+			"en": "Removing artifacts is unavailable for this session."
+		},
 		"sessionHome": {
 			"en": "Session"
 		},
@@ -16957,6 +17568,9 @@
 		"automationCloudAgentUnsupported": {
 			"en": "This provider does not support custom agents in Automation session templates."
 		},
+		"cloneRepository.workspaceFile": {
+			"en": "The selected clone is a workspace file. Choose the repository again to select a repository folder."
+		},
 		"copilotChatSessionsProvider": {
 			"en": "Copilot Chat"
 		},
@@ -16989,6 +17603,9 @@
 		},
 		"sandboxModelNotApplied": {
 			"en": "Couldn't use {0} for this session. The agent's default model will be used instead."
+		},
+		"workInRepository": {
+			"en": "Work in Repository..."
 		}
 	},
 	"vs/sessions/contrib/providers/copilotChatSessions/browser/mobilePermissionPicker": {
@@ -17014,23 +17631,11 @@
 		"permissionPicker.ariaLabel": {
 			"en": "Permission Picker"
 		},
-		"permissionPicker.editableManagedSandboxToggleTitle": {
-			"en": "Sandboxing is enabled by your organization, but you may disable it"
-		},
-		"permissionPicker.requiredSandboxToggleTitle": {
-			"en": "Sandboxing is required by your organization"
-		},
 		"permissionPicker.sandboxedHover": {
 			"en": "{0} Terminal commands are sandboxed."
 		},
 		"permissionPicker.sandboxedLabel": {
 			"en": "{0} (sandboxed)"
-		},
-		"permissionPicker.sandboxToggle": {
-			"en": "Sandboxing for terminal"
-		},
-		"permissionPicker.sandboxToggleTitle": {
-			"en": "Run terminal commands inside a sandbox that restricts file system and network access"
 		},
 		"permissionPicker.triggerAriaLabel": {
 			"en": "Pick Permission Level, {0}"
@@ -17087,6 +17692,30 @@
 		}
 	},
 	"vs/sessions/contrib/providers/remoteAgentHost/browser/cloudSandboxAgentHostContribution": {
+		"cloudSandbox.connecting": {
+			"en": "Connecting..."
+		},
+		"cloudSandbox.connectingTitle": {
+			"en": "Connecting to the Environment"
+		},
+		"cloudSandbox.incompatible": {
+			"en": "This environment is incompatible with this version of Visual Studio Code."
+		},
+		"cloudSandbox.incompatibleTitle": {
+			"en": "Cannot Connect to the Environment"
+		},
+		"cloudSandbox.offline": {
+			"en": "Environment offline."
+		},
+		"cloudSandbox.offlineTitle": {
+			"en": "Environment Offline"
+		},
+		"cloudSandbox.reconnecting": {
+			"en": "Reconnecting..."
+		},
+		"cloudSandbox.reconnectingIn": {
+			"en": "Reconnecting in {0}s"
+		},
 		"githubSandbox.hostGroup": {
 			"en": "GitHub Sandboxes"
 		}
@@ -17215,13 +17844,13 @@
 			"en": "Connect to Remote Agent Host via SSH"
 		},
 		"connectViaSSHShort": {
-			"en": "SSH..."
+			"en": "SSH"
 		},
 		"connectViaTunnel": {
 			"en": "Connect to Remote Agent Host via Dev Tunnel"
 		},
 		"connectViaTunnelShort": {
-			"en": "Tunnels..."
+			"en": "Tunnels"
 		},
 		"connectViaWSL": {
 			"en": "Connect to Remote Agent Host via WSL"
@@ -17688,6 +18317,14 @@
 			"en": "Search"
 		}
 	},
+	"vs/sessions/contrib/search/browser/searchEditorEmptyState.contribution": {
+		"searchEditor.emptyDescription": {
+			"en": "Search for text in your files"
+		},
+		"searchEditor.emptyTitle": {
+			"en": "Search"
+		}
+	},
 	"vs/sessions/contrib/sessionInputBanners/browser/sessionInputBanners": {
 		"inputBanner.addressComments": {
 			"en": "Address Comments"
@@ -17894,6 +18531,9 @@
 				"&& denotes a mnemonic"
 			]
 		},
+		"sessions.archiveSessionConfetti": {
+			"en": "Controls whether a confetti animation is shown when archiving a session."
+		},
 		"sessions.automations.newBadgeStyle": {
 			"en": "Controls the visual style of the Automations first-use badge."
 		},
@@ -17902,6 +18542,9 @@
 		},
 		"sessions.newSessionButton.style": {
 			"en": "Controls the visual style of the New Session button."
+		},
+		"sessions.useWorktree": {
+			"en": "Controls whether New Worktree is checked when no previous isolation choice has been saved. Once a choice is saved, it is used across workspaces instead of this setting."
 		}
 	},
 	"vs/sessions/contrib/sessions/browser/sessionsActions": {
@@ -18154,6 +18797,9 @@
 		"automationsAccessibleView.automationDisabled": {
 			"en": "{0}, disabled"
 		},
+		"automationsAccessibleView.builtInTemplates": {
+			"en": "Built-in Templates"
+		},
 		"automationsAccessibleView.completed": {
 			"en": "Completed"
 		},
@@ -18196,6 +18842,12 @@
 		"automationsAccessibleView.pending": {
 			"en": "Pending"
 		},
+		"automationsAccessibleView.pluginTemplate": {
+			"en": "{0}, {1}. {2} From {3}."
+		},
+		"automationsAccessibleView.pluginTemplates": {
+			"en": "Templates from Plugins"
+		},
 		"automationsAccessibleView.prompt": {
 			"en": "Prompt: {0}"
 		},
@@ -18232,6 +18884,12 @@
 		"automationsCustomView.help.accessibleView": {
 			"en": "Use Open Accessible View to read the current automations and run history as text."
 		},
+		"automationsCustomView.help.builtInTemplatesCollapsed": {
+			"en": "The Built-in Templates section is collapsed by default because saved automations exist. Press Enter or Space on its disclosure control to expand it."
+		},
+		"automationsCustomView.help.builtInTemplatesExpanded": {
+			"en": "The Built-in Templates section is expanded by default while there are no saved automations. Tab to a template and press Enter or Space to open a New automation dialog with an editable name, prompt, and schedule."
+		},
 		"automationsCustomView.help.cards": {
 			"en": "For saved automations, Tab to a card's Edit control and action buttons. Use Left Arrow and Right Arrow to move between Run now and Delete. Press Enter or Space to activate a control. Edit, or clicking anywhere else on the card, opens the automation dialog. Open a card's context menu{0} (for example Shift+F10). Duplicate opens a prefilled New automation dialog, Disable prevents scheduled runs, and Delete asks for confirmation. Run now starts a session immediately."
 		},
@@ -18241,11 +18899,14 @@
 		"automationsCustomView.help.overview": {
 			"en": "You are in the Automations view. It contains available automation cards followed by run history. Loading, unavailable, and error messages indicate that the catalogue may be incomplete."
 		},
+		"automationsCustomView.help.pluginTemplates": {
+			"en": "The Templates from Plugins section is available whenever enabled plugins provide templates. Press Enter or Space on its disclosure control to expand or collapse it. A blue marker indicates templates added since the section was last expanded. Plugin templates start disabled."
+		},
 		"automationsCustomView.help.read": {
 			"en": "Completed and failed runs that have not been opened are announced as unread. Use Mark all as read to clear all available unread runs."
 		},
-		"automationsCustomView.help.templates": {
-			"en": "Starter templates are available. Tab to a template and press Enter or Space to open a New automation dialog with an editable name, prompt, and schedule."
+		"automationsCustomView.help.sharing": {
+			"en": "Use Import Automation in the view header, or drop one .automation.md file anywhere in the view, to review a shared Automation blueprint. Imported Automations start disabled. Open a saved Automation's context menu and choose Export to save a portable blueprint."
 		}
 	},
 	"vs/sessions/contrib/sessions/browser/views/automationsView": {
@@ -18255,6 +18916,39 @@
 		"automationAlreadyRunningStatus": {
 			"en": "Automation {0} is already running"
 		},
+		"automationBlueprint.invalidField": {
+			"en": "The property '{0}' is missing or invalid."
+		},
+		"automationBlueprint.invalidFrontmatter": {
+			"en": "The file must start with valid YAML frontmatter."
+		},
+		"automationBlueprint.invalidId": {
+			"en": "The blueprint id '{0}' is invalid."
+		},
+		"automationBlueprint.missingPrompt": {
+			"en": "The Automation prompt must follow the frontmatter."
+		},
+		"automationBlueprint.unknownProperty": {
+			"en": "The property '{0}' is not supported."
+		},
+		"automationBlueprint.unsupportedSchedule": {
+			"en": "The cron expression '{0}' cannot be represented by the current Automation editor."
+		},
+		"automationBlueprint.unsupportedTimeZone": {
+			"en": "The time zone '{0}' is not supported. Use 'local' so the schedule follows the importing user's time zone."
+		},
+		"automationBlueprint.unsupportedVersion": {
+			"en": "Automation blueprint version {0} is not supported."
+		},
+		"automationBlueprintFileFilter": {
+			"en": "Automation Blueprint"
+		},
+		"automationBuiltInTemplatesDescription": {
+			"en": "Choose a starting point, then review and customize it before creating."
+		},
+		"automationBuiltInTemplatesTitle": {
+			"en": "Built-in Templates"
+		},
 		"automationCard": {
 			"en": "{0} — {1}"
 		},
@@ -18263,6 +18957,9 @@
 		},
 		"automationChangedDuringEdit": {
 			"en": "This automation changed while the dialog was open. Reopen it to review the latest values."
+		},
+		"automationChangedDuringEnable": {
+			"en": "This automation changed before it could be enabled. Try again."
 		},
 		"automationCopyName": {
 			"en": "{0} Copy"
@@ -18279,6 +18976,9 @@
 		"automationDeletedDuringEdit": {
 			"en": "This automation was deleted while the dialog was open."
 		},
+		"automationDeletedDuringEnable": {
+			"en": "This automation was deleted before it could be enabled."
+		},
 		"automationDeletedStatus": {
 			"en": "Deleted automation {0}"
 		},
@@ -18291,11 +18991,53 @@
 		"automationDisableFailed": {
 			"en": "Failed to disable automation."
 		},
+		"automationDropDescription": {
+			"en": "You can review the Automation before creating it."
+		},
+		"automationDropFailed": {
+			"en": "Unable to import automation."
+		},
+		"automationDropMultiple": {
+			"en": "Drop one Automation blueprint file at a time."
+		},
+		"automationDropTitle": {
+			"en": "Drop to import automation"
+		},
+		"automationDropUnsupported": {
+			"en": "Only .automation.md files can be imported."
+		},
 		"automationDuplicatedStatus": {
 			"en": "Created duplicate automation {0}"
 		},
 		"automationDuplicateFailed": {
 			"en": "Failed to duplicate automation."
+		},
+		"automationEnabledStatus": {
+			"en": "Enabled automation {0}"
+		},
+		"automationEnableFailed": {
+			"en": "Failed to enable automation."
+		},
+		"automationExportedStatus": {
+			"en": "Exported automation {0}"
+		},
+		"automationExportFailed": {
+			"en": "Failed to export automation."
+		},
+		"automationExportInvalidFileName": {
+			"en": "Use a file name ending in exactly one .automation.md suffix."
+		},
+		"automationExportInvalidFileNameTitle": {
+			"en": "Unable to export automation."
+		},
+		"automationImportedStatus": {
+			"en": "Imported automation {0}"
+		},
+		"automationImportFailed": {
+			"en": "Failed to import automation."
+		},
+		"automationImportReadFailed": {
+			"en": "Failed to import automation."
 		},
 		"automationIndexedCopyName": {
 			"en": "{0} Copy {1}"
@@ -18305,6 +19047,21 @@
 		},
 		"automationNotStartedStatus": {
 			"en": "Automation {0} did not start"
+		},
+		"automationPluginTemplateBadge": {
+			"en": "Plugin"
+		},
+		"automationPluginTemplatesDescription": {
+			"en": "Templates provided by enabled plugins start disabled."
+		},
+		"automationPluginTemplatesManyNewAriaLabel": {
+			"en": "Templates from Plugins, {0} new templates"
+		},
+		"automationPluginTemplatesOneNewAriaLabel": {
+			"en": "Templates from Plugins, 1 new template"
+		},
+		"automationPluginTemplatesTitle": {
+			"en": "Templates from Plugins"
 		},
 		"automationRunActionFailed": {
 			"en": "Failed to run automation."
@@ -18335,6 +19092,12 @@
 		},
 		"automationsDisabledBeforeDuplicate": {
 			"en": "Automations were disabled before the duplicate could be saved."
+		},
+		"automationsDisabledBeforeEnable": {
+			"en": "Automations were disabled before the automation could be enabled."
+		},
+		"automationsDisabledBeforeImport": {
+			"en": "Automations were disabled before the imported automation could be saved."
 		},
 		"automationsDisabledBeforeSave": {
 			"en": "Automations were disabled before the change could be saved."
@@ -18375,11 +19138,8 @@
 		"automationTemplateBadge": {
 			"en": "Template"
 		},
-		"automationTemplatesDescription": {
-			"en": "Choose a starting point, then review and customize it before creating."
-		},
-		"automationTemplatesTitle": {
-			"en": "Start with a template"
+		"automationTemplateSource": {
+			"en": "From {0}"
 		},
 		"automationUpdatedStatus": {
 			"en": "Updated automation {0}"
@@ -18399,9 +19159,6 @@
 		"delete": {
 			"en": "Delete"
 		},
-		"deleteAutomation": {
-			"en": "Delete"
-		},
 		"deleteAutomationContextMenu": {
 			"en": "Delete"
 		},
@@ -18417,8 +19174,29 @@
 		"editAutomationNamed": {
 			"en": "Edit automation {0}"
 		},
+		"enableAutomationContextMenu": {
+			"en": "Enable"
+		},
+		"exportAutomation": {
+			"en": "Export"
+		},
+		"exportAutomationDialogSave": {
+			"en": "Export"
+		},
+		"exportAutomationDialogTitle": {
+			"en": "Export Automation"
+		},
 		"historyHeader": {
 			"en": "History"
+		},
+		"importAutomation": {
+			"en": "Import Automation"
+		},
+		"importAutomationDialogOpen": {
+			"en": "Import"
+		},
+		"importAutomationDialogTitle": {
+			"en": "Import Automation"
 		},
 		"lastWeek": {
 			"en": "Last week"
@@ -18437,6 +19215,9 @@
 		},
 		"markAutomationRunSessionUnreadAction": {
 			"en": "Mark as Unread"
+		},
+		"moreActionsForAutomation": {
+			"en": "More Actions for {0}"
 		},
 		"newAutomation": {
 			"en": "New Automation"
@@ -18483,6 +19264,9 @@
 		"useAutomationTemplate": {
 			"en": "Use template: {0}, {1}"
 		},
+		"usePluginAutomationTemplate": {
+			"en": "Use template: {0}, {1}, from {2}"
+		},
 		"yesterday": {
 			"en": "Yesterday"
 		}
@@ -18514,6 +19298,9 @@
 		},
 		"automationTemplate.mainUpdates.prompt": {
 			"en": "Pull the latest main and summarize the commits that were pulled.\n\nInspect this repository's current branch, working tree, and configured remotes. Resolve the remote for main from the repository configuration rather than assuming origin. Record HEAD, then pull that remote's main into the current checkout using --ff-only. Proceed only with a clean working tree and a fast-forward update. If the remote is ambiguous, main is missing, or the update is blocked, stop and explain why. Do not switch branches, stash or discard local changes, rebase, or force an update.\n\nCompare the starting and ending HEAD and summarize only newly pulled commits, grouped by theme. Highlight user-visible changes, bug fixes, breaking changes, and follow-up actions. Include commit links and related pull requests when available. If no commits were pulled, say so."
+		},
+		"automationTemplate.pluginDescription": {
+			"en": "Provided by {0}."
 		}
 	},
 	"vs/sessions/contrib/sessions/browser/views/sessionsList": {
@@ -18636,6 +19423,9 @@
 		},
 		"sessionsList": {
 			"en": "Sessions"
+		},
+		"sessionsList.archiveOnboardingUnavailable": {
+			"en": "The session could not be revealed in the sessions list. Try again."
 		},
 		"showLessAria": {
 			"en": "Show fewer sessions"
@@ -18946,6 +19736,9 @@
 	"vs/sessions/services/sessions/browser/sessionsManagementService": {
 		"sessions.cancelCurrentRequest.loadFailed": {
 			"en": "Failed to load chat session for cancellation."
+		},
+		"sessions.removeSessionArtifact.unsupported": {
+			"en": "Removing artifacts is not supported for this session."
 		}
 	},
 	"vs/sessions/services/sessions/browser/sessionsService": {
@@ -25166,6 +25959,12 @@
 		"modernEditorTabSelectedActionBackground": {
 			"en": "Opaque background color of tab actions on selected editor tabs when the modern tab style is enabled."
 		},
+		"modernPanelBorder": {
+			"en": "Border color of the panel surface when the modern UI is enabled."
+		},
+		"modernSashGripForeground": {
+			"en": "Color of the grip handles marking the resizable boundaries between workbench parts when the modern UI is enabled."
+		},
 		"modernTabActiveBackground": {
 			"en": "Background color of active tabs when the modern tab style is enabled."
 		},
@@ -25177,6 +25976,12 @@
 		},
 		"modernTabHoverForeground": {
 			"en": "Foreground color of tabs when hovering and the modern tab style is enabled."
+		},
+		"modernUIInactiveShellBackground": {
+			"en": "Background color of the shell visible around floating workbench surfaces when the window is inactive and the modern UI is enabled."
+		},
+		"modernUIShellBackground": {
+			"en": "Background color of the shell visible around floating workbench surfaces when the modern UI is enabled."
 		},
 		"notificationCenterBorder": {
 			"en": "Notifications center border color. Notifications slide in from the bottom right of the window."
@@ -25348,6 +26153,9 @@
 		},
 		"statusBarForeground": {
 			"en": "Status bar foreground color when a workspace or folder is opened. The status bar is shown in the bottom of the window."
+		},
+		"statusBarInactiveBackground": {
+			"en": "Status bar background color when a workspace or folder is opened and the window is inactive. Debugging and other background overrides take precedence. If not set, the current status bar background is used."
 		},
 		"statusBarItemActiveBackground": {
 			"en": "Status bar item background color when clicking. The status bar is shown in the bottom of the window."
@@ -26003,6 +26811,9 @@
 		},
 		"verbosity.comments": {
 			"en": "Provide information about actions that can be taken in the comment widget or in a file which contains comments."
+		},
+		"verbosity.customizationMigrations.description": {
+			"en": "Provide information about how to access accessibility help for the customization migration checklist."
 		},
 		"verbosity.debug": {
 			"en": "Provide information about how to access the debug console accessibility help dialog when the debug console or run and debug viewlet is focused. Note that a reload of the window is required for this to take effect."
@@ -28299,7 +29110,7 @@
 			"en": "To mention an attached context item at a specific position without removing it from the attached context, type # or @ and select the attachment from the suggestions."
 		},
 		"chat.attachments.pastedText": {
-			"en": "Long pasted text is stored as an attached text item and replaced in the input with a numbered inline reference."
+			"en": "Long pasted text, including single-line text, is stored as an attached text item and replaced in the input with a numbered inline reference."
 		},
 		"chat.attachments.removal": {
 			"en": "To remove attached contexts, focus an attachment and press Delete or Backspace."
@@ -28340,6 +29151,18 @@
 		"chat.inspectResponseThinkingToggle": {
 			"en": "To include or exclude thinking content in the accessible view, run the Toggle Thinking Content in Accessible View command from the Command Palette."
 		},
+		"chat.modelPicker.optimizeFor": {
+			"en": "In the tabbed model picker, the selected model's details open beside the list. Moving between model rows updates the details immediately without selecting a model. The card stays visible when the pointer leaves a row. Press Right Arrow from a model row to focus its details, and Left Arrow to return. When Auto's \"Optimize for\" options are available, Efficiency, Balance, and Intelligence remain visible while Auto is off. They look muted while off but remain interactive. Use arrow keys to move between options, then Enter or Space to choose a preference and turn Auto on. Turning Auto off preserves the selected preference."
+		},
+		"chat.modelPicker.pricingDetails": {
+			"en": "Pricing Details expands in place without moving the model's controls. Expansion and collapse are immediate when reduced motion is enabled. If the details exceed the available space, use Page Up or Page Down while the model details have focus to scroll."
+		},
+		"chat.modelPicker.resetToDefault": {
+			"en": "In a model's details, use Tab to reach thinking effort, context, and model actions. Use arrow keys to move between options, then Enter or Space to choose one. Reset to Default appears beside Pin Model when thinking effort or context has been changed. It restores both settings to the model's defaults without changing its pinned state. Choosing an option or resetting the settings selects that model and keeps its details open. Pinning or unpinning moves the model in the list without moving its details or keyboard focus. Press Escape to return to the list, and Escape again to close the picker."
+		},
+		"chat.modelPicker.search": {
+			"en": "Type while the model list is focused to search across all providers. In the search field, use Up and Down Arrow to navigate results, Enter to select a model, and Escape to close the picker. Left and Right Arrow move the text cursor."
+		},
 		"chat.nextQuestionCarouselQuestion": {
 			"en": "When a chat question is focused, move to the next question{0}."
 		},
@@ -28358,14 +29181,23 @@
 		"chat.progressVerbosity": {
 			"en": "As the chat request is being processed, you will hear verbose progress updates if the request takes more than 4 seconds. This includes information like searched text for <search term> with X results, created file <file_name>, or read file <file path>. This can be disabled with accessibility.verboseChatProgressUpdates."
 		},
+		"chat.readOnlyThinking": {
+			"en": "In read-only chats, thinking details preview while streaming and collapse when finished, regardless of your thinking-style setting. Focus a thinking header and press Enter or Space to expand or collapse its details."
+		},
 		"chat.renameSession": {
 			"en": "To rename the current chat session when supported, invoke the Rename command{0}. Agent Host sessions can be renamed after sending the first request."
 		},
 		"chat.requestHistory": {
 			"en": "In the input box, use up and down arrows to navigate your request history. Edit input and use enter or the submit button to run a new request."
 		},
+		"chat.sessionArchiveNudge": {
+			"en": "An archive suggestion appears above the chat input when the session's pull requests are merged. Use Tab or Shift+Tab to reach Archive, Configure Automatic Cleanup, or Dismiss Archive Suggestion, then press Enter or Space. Configure Automatic Cleanup opens the settings for automatically archiving inactive merged sessions and permanently deleting automatically archived merged sessions. The explanation under What Does \"Archive\" Do? is collapsed by default. Use Tab to reach it and Enter or Space to expand or collapse it. Dismissing the suggestion, including with Escape while it is focused, returns to the chat input. Archiving the session hides it from the sessions list so you can focus on your remaining tasks. The session is not deleted. Ask your agent to find it, or look in the \"Archived\" section of the sessions list. You can unarchive it anytime. The worktree created for the session, if any, will be deleted. You can recreate it by unarchiving the session."
+		},
+		"chat.sessionDoneNudge": {
+			"en": "A mark as done suggestion appears above the chat input when the session's pull requests are merged. Use Tab or Shift+Tab to reach Mark as Done, Configure Automatic Cleanup, or Dismiss Mark as Done Suggestion, then press Enter or Space. Configure Automatic Cleanup opens the settings for automatically archiving inactive merged sessions and permanently deleting automatically archived merged sessions. The explanation under What Does \"Mark as Done\" Do? is collapsed by default. Use Tab to reach it and Enter or Space to expand or collapse it. Dismissing the suggestion, including with Escape while it is focused, returns to the chat input. Marking the session as done hides it from the sessions list so you can focus on your remaining tasks. The session is not deleted. Ask your agent to find it, or look in the \"Done\" section of the sessions list. You can restore it anytime. The worktree created for the session, if any, will be deleted. You can recreate it by restoring the session."
+		},
 		"chat.sessionStatusPills": {
-			"en": "When session status pills appear above the input, use Tab to focus the toolbar, then use the left and right arrow keys to move between pills. Press Enter or Space to activate a pill. Open the context menu{0} to choose which optional pills are visible."
+			"en": "When session status pills appear above the input, use Tab to focus the toolbar, then use the left and right arrow keys to move between pills. Press Enter or Space to activate a pill. Open the context menu{0} to choose which optional pills are visible. Pull Requests Options lets you show all pull requests or only open and draft ones, remembered across sessions. If every pull request is filtered out, use the toolbar context menu to show all again."
 		},
 		"chat.showHiddenTerminals": {
 			"en": "If there are any hidden chat terminals, you can view them by invoking the View Hidden Chat Terminals command{0}."
@@ -29942,15 +30774,6 @@
 		"agentHostChatInputPicker.defaultApprovalsHover": {
 			"en": "Copilot asks before running tools unless your configured settings allow the tool."
 		},
-		"agentHostChatInputPicker.defaultSandboxToggle": {
-			"en": "Sandboxing for terminal"
-		},
-		"agentHostChatInputPicker.defaultSandboxToggleTitle": {
-			"en": "Run terminal commands inside a sandbox that restricts file system and network access"
-		},
-		"agentHostChatInputPicker.editableManagedSandboxToggleTitle": {
-			"en": "Sandboxing is enabled by your organization, but you may disable it"
-		},
 		"agentHostChatInputPicker.filter": {
 			"en": "Filter..."
 		},
@@ -29959,9 +30782,6 @@
 		},
 		"agentHostChatInputPicker.policyDisabledHover": {
 			"en": "Disabled by your organization. Contact your administrator."
-		},
-		"agentHostChatInputPicker.requiredSandboxToggleTitle": {
-			"en": "Sandboxing is required by your organization"
 		},
 		"agentHostChatInputPicker.sandboxedLabel": {
 			"en": "{0} (sandboxed)"
@@ -30042,6 +30862,50 @@
 			"en": "{0}% discount"
 		}
 	},
+	"vs/workbench/contrib/chat/browser/agentSessions/agentHost/agentHostModePickerPresentation": {
+		"agentHostModePicker.accessibilityHelp": {
+			"en": "When the experimental combined picker is enabled for a Copilot Agent Host session, Tab reaches separate Mode and Permissions buttons. Press Enter or Space on Mode to open the picker with Agent Mode expanded, or on Permissions to open it with Permissions expanded. Each section header shows its current selection, and the opened section initially focuses that selection. Press Enter or Space on a section header to expand or collapse it, or use Right Arrow to expand and Left Arrow to collapse. Hover or keyboard navigation moves the single row highlight without changing the selection until you activate a choice. Focus the Permissions header and press Tab to reach Configure Permissions, which opens the related settings. Use Up and Down Arrow to navigate and Enter to select a mode, permission level, or terminal sandboxing. Escape closes the picker and returns focus to the button that opened it."
+		},
+		"agentHostModePicker.agentMode": {
+			"en": "Agent mode"
+		},
+		"agentHostModePicker.allowAll": {
+			"en": "Allow all"
+		},
+		"agentHostModePicker.assisted": {
+			"en": "Assisted"
+		},
+		"agentHostModePicker.configurePermissions": {
+			"en": "Configure Permissions"
+		},
+		"agentHostModePicker.currentMode": {
+			"en": "Current mode: {0}"
+		},
+		"agentHostModePicker.manual": {
+			"en": "Manual"
+		},
+		"agentHostModePicker.modeButton": {
+			"en": "Pick Mode, {0}"
+		},
+		"agentHostModePicker.permissions": {
+			"en": "Permissions"
+		},
+		"agentHostModePicker.permissionsButton": {
+			"en": "Pick Permissions, {0}"
+		},
+		"agentHostModePicker.permissionsButtonSandboxed": {
+			"en": "Pick Permissions, {0}, terminal sandboxed"
+		},
+		"agentHostModePicker.permissionsSandboxed": {
+			"en": "{0}, terminal sandboxed"
+		},
+		"agentHostModePicker.withPermissions": {
+			"en": "Pick Mode and Permissions, {0}, {1}"
+		},
+		"agentHostModePicker.withSandboxedPermissions": {
+			"en": "Pick Mode and Permissions, {0}, {1}, terminal sandboxed"
+		}
+	},
 	"vs/workbench/contrib/chat/browser/agentSessions/agentHost/agentHostPermissionUiContribution": {
 		"agentHost.permission.allow": {
 			"en": "Allow"
@@ -30088,6 +30952,9 @@
 		},
 		"agentHost.sdkSetup.downloadDescription": {
 			"en": "To use the {0} Agent, we need to download the {0} Agent SDK."
+		},
+		"agentHost.sdkSetup.downloadDescription.withModels": {
+			"en": "Click Download or send a message to download the {0} Agent SDK."
 		},
 		"agentHost.sdkSetup.gitHubSignInAction": {
 			"en": "Sign in to GitHub"
@@ -30237,6 +31104,9 @@
 		"agentHostSessionPills.issue.number": {
 			"en": "Issue #{0}"
 		},
+		"agentHostSessionPills.issue.numberWithTitle": {
+			"en": "Issue #{0}: {1}"
+		},
 		"agentHostSessionPills.issues.section": {
 			"en": "Issues"
 		},
@@ -30245,6 +31115,9 @@
 		},
 		"agentHostSessionPills.pullRequest.number": {
 			"en": "Pull Request #{0}"
+		},
+		"agentHostSessionPills.pullRequest.numberWithTitle": {
+			"en": "Pull Request #{0}: {1}"
 		},
 		"agentHostSessionPills.pullRequests.section": {
 			"en": "Pull Requests"
@@ -30437,7 +31310,7 @@
 			"en": "Border color for the badges in selected agent session items when the view is unfocused."
 		},
 		"chat.session.providerDescription.agentHostCodex": {
-			"en": "Delegate tasks to the Codex agent using models included in your GitHub Copilot subscription. The agent iterates via chat and works interactively to implement changes on your main workspace."
+			"en": "Work with OpenAI's Codex agent using your ChatGPT or GitHub Copilot subscription."
 		},
 		"chat.session.providerDescription.agentHostCopilot": {
 			"en": "Run a Copilot SDK agent in the local agent host process."
@@ -31075,6 +31948,17 @@
 			"en": "Requires GitHub Copilot Pro"
 		}
 	},
+	"vs/workbench/contrib/chat/browser/agentSessionsConfiguration": {
+		"autoArchiveMergedSessions.description": {
+			"en": "Controls the number of inactive days before agent sessions with a merged pull request are automatically archived. Archiving safely removes eligible worktrees. Permanent deletion is controlled separately by {0}. Set to 0 to disable automatic archival. The recommended value is 15."
+		},
+		"autoDeleteArchivedMergedSessions.description": {
+			"en": "Controls the number of days after automatic archival before agent sessions with a merged pull request are permanently deleted. Retained eligible worktrees are safely removed before deletion. Automatic archival is controlled separately by {0}. Set to 0 to disable permanent deletion. The recommended value is 15."
+		},
+		"sessions.chat.unifiedWorkspacePicker.enabled": {
+			"en": "Controls whether the Agents Window uses the unified workspace picker, which combines GitHub and remote workspaces, provides search, and, when supported, allows creating sessions with no workspace."
+		}
+	},
 	"vs/workbench/contrib/chat/browser/aiCustomization/agentGlobalConfigurationSettingsWidget": {
 		"agentSettings.save": {
 			"en": "Save"
@@ -31616,6 +32500,12 @@
 		"backToCustomizationMigration": {
 			"en": "Back to migration"
 		},
+		"backToCustomizationMigrationDashboard": {
+			"en": "Back to customization migrations"
+		},
+		"backToCustomizationMigrationDashboardTooltip": {
+			"en": "Back to customization migrations"
+		},
 		"backToList": {
 			"en": "Back to list"
 		},
@@ -31649,11 +32539,38 @@
 		"cancelSaveTarget": {
 			"en": "Cancel"
 		},
+		"changeCustomizationMigrationDestination": {
+			"en": "Change destination for {0}, currently {1}"
+		},
+		"chooseAnotherMigrationFolder": {
+			"en": "Choose another folder..."
+		},
+		"chooseAnotherMigrationFolderDescription": {
+			"en": "Use a custom migration destination"
+		},
+		"chooseCustomMigrationDestination": {
+			"en": "Choose a Custom Migration Destination"
+		},
+		"chooseMigrationDestination": {
+			"en": "Choose a destination for {0}"
+		},
+		"chooseMigrationLocationToCustomize": {
+			"en": "Choose a migration location to customize"
+		},
+		"configureCustomizationMigrationDestination": {
+			"en": "Configure destination for {0}"
+		},
 		"confirmDeleteCustomizationFile": {
 			"en": "Are you sure you want to delete '{0}'?"
 		},
 		"confirmDeleteDetail": {
 			"en": "This action cannot be undone."
+		},
+		"customizationMigrationAgentsDestination": {
+			"en": "{0} agents"
+		},
+		"customizationMigrationAllTooltip": {
+			"en": "Migrate all customizations"
 		},
 		"customizationMigrationClearSettings": {
 			"en": "Clear unused location settings after migration"
@@ -31673,8 +32590,14 @@
 		"customizationMigrationConvertWithCount": {
 			"en": "Convert {0} to Skills"
 		},
+		"customizationMigrationDestinationNotConfigured": {
+			"en": "Not configured"
+		},
 		"customizationMigrationGroupEmpty": {
 			"en": "No customizations are available to migrate from {0}."
+		},
+		"customizationMigrationInstructionsDestination": {
+			"en": "{0} instructions"
 		},
 		"customizationMigrationItemAriaLabel": {
 			"en": "{0}, {1}"
@@ -31709,9 +32632,6 @@
 		"customizationMigrationSelectAll": {
 			"en": "Select all"
 		},
-		"customizationMigrationSelectAriaLabel": {
-			"en": "Select {0}"
-		},
 		"customizationMigrationSelectedCount": {
 			"en": "{0} selected"
 		},
@@ -31720,6 +32640,30 @@
 		},
 		"customizationMigrationSettingsGroup": {
 			"en": "Settings"
+		},
+		"customizationMigrationShortcut": {
+			"en": "Migrations"
+		},
+		"customizationMigrationShortcutAriaLabel": {
+			"en": "Migrations, {0} customizations need attention"
+		},
+		"customizationMigrationShortcutAriaLabelSingle": {
+			"en": "Migrations, 1 customization needs attention"
+		},
+		"customizationMigrationShortcutLabel": {
+			"en": "Migrations"
+		},
+		"customizationMigrationShortcutTooltip": {
+			"en": "Review customizations that need migration"
+		},
+		"customizationMigrationSkillsDestination": {
+			"en": "{0} skills"
+		},
+		"customizationMigrationUserScope": {
+			"en": "User"
+		},
+		"customizationMigrationWorkspaceScope": {
+			"en": "Workspace"
 		},
 		"customizationPreviewAriaLabel": {
 			"en": "Customization preview"
@@ -31780,6 +32724,78 @@
 		},
 		"mcpServersDesc": {
 			"en": "Connect external tool servers that extend AI capabilities with custom tools and data sources."
+		},
+		"migrationAccessibleActivity": {
+			"en": "Migration activity: {0}, {1}"
+		},
+		"migrationAccessibleCategory": {
+			"en": "{0}: {1}. {2}{3}"
+		},
+		"migrationAccessibleComplete": {
+			"en": "No remaining migrations."
+		},
+		"migrationAccessibleHighRisk": {
+			"en": "High risk. "
+		},
+		"migrationAccessiblePaths": {
+			"en": "{0}: from {1} to {2}"
+		},
+		"migrationAccessibleSkipped": {
+			"en": "Skipped"
+		},
+		"migrationAccessibleTitle": {
+			"en": "Your migration checklist"
+		},
+		"migrationChecklistAgentsCount": {
+			"en": "{0} agents"
+		},
+		"migrationChecklistInstructionsCount": {
+			"en": "{0} instructions"
+		},
+		"migrationChecklistMcp": {
+			"en": "MCP Servers"
+		},
+		"migrationChecklistMcpDescription": {
+			"en": "Move supported workspace servers to the root .mcp.json so agents can discover them directly."
+		},
+		"migrationChecklistOneAgent": {
+			"en": "1 agent"
+		},
+		"migrationChecklistOneInstruction": {
+			"en": "1 instruction"
+		},
+		"migrationChecklistOnePrompt": {
+			"en": "1 prompt"
+		},
+		"migrationChecklistOneServer": {
+			"en": "1 server"
+		},
+		"migrationChecklistProfile": {
+			"en": "Your profile"
+		},
+		"migrationChecklistPrompts": {
+			"en": "Prompts to skills"
+		},
+		"migrationChecklistPromptsCount": {
+			"en": "{0} prompts"
+		},
+		"migrationChecklistPromptsDescription": {
+			"en": "Convert reusable prompt files into skills so agents can discover and run them as supported customizations."
+		},
+		"migrationChecklistServersCount": {
+			"en": "{0} servers"
+		},
+		"migrationChecklistUserData": {
+			"en": "User Data"
+		},
+		"migrationChecklistUserDataDescription": {
+			"en": "Move agents and instructions to shared locations so they remain available to supported agent experiences."
+		},
+		"migrationChecklistWorkspace": {
+			"en": "Workspace"
+		},
+		"migrationNoEditableDestinations": {
+			"en": "There are no file migration destinations to configure. MCP servers migrate to the workspace root .mcp.json."
 		},
 		"migrationNoGlobalAgentFolder": {
 			"en": "No global agents folder is configured for the active harness."
@@ -31856,6 +32872,9 @@
 		"promptsDesc": {
 			"en": "Reusable prompt templates that can be invoked as slash commands."
 		},
+		"recommendedCustomizationMigrationFolder": {
+			"en": "{0} (Recommended)"
+		},
 		"retry": {
 			"en": "Retry"
 		},
@@ -31888,6 +32907,9 @@
 		},
 		"sectionsAriaLabel": {
 			"en": "Agent Customization Sections"
+		},
+		"selectFolder": {
+			"en": "Select Folder"
 		},
 		"skills": {
 			"en": "Skills"
@@ -31949,6 +32971,15 @@
 		"configureCategoryAriaLabel": {
 			"en": "Configure {0}"
 		},
+		"customizationMigrationOverviewCardDescription": {
+			"en": "{0} customizations need an update before they can be used by {1}. Review what will change before migrating."
+		},
+		"customizationMigrationOverviewCardDescriptionSingle": {
+			"en": "1 customization needs an update before it can be used by {0}. Review what will change before migrating."
+		},
+		"customizationMigrationOverviewCardLabel": {
+			"en": "Review Customization Migrations"
+		},
 		"dictationInstructions": {
 			"en": "Dictation Instructions"
 		},
@@ -32005,6 +33036,12 @@
 		},
 		"pluginsDesc": {
 			"en": "Install reusable packages that extend the agent. Plugins can add tools, skills, agents, hooks, and MCP servers."
+		},
+		"reviewCustomizationMigrations": {
+			"en": "Review Migrations..."
+		},
+		"reviewCustomizationMigrationsAriaLabel": {
+			"en": "Review {0} customizations that need migration"
 		},
 		"sentToChat": {
 			"en": "Sent to chat ✓"
@@ -32068,9 +33105,32 @@
 			"en": "Select a directory for the new customization file"
 		}
 	},
+	"vs/workbench/contrib/chat/browser/aiCustomization/customizationMigrationAccessibility": {
+		"migrationHelpActivity": {
+			"en": "Migration activity records successful changes locally. Expand an activity entry with Enter or Space to read its source and destination paths. Dismiss removes the activity record, not the migrated files."
+		},
+		"migrationHelpLocations": {
+			"en": "Change destinations configures file migration locations. MCP servers always migrate to the workspace root .mcp.json."
+		},
+		"migrationHelpNavigation": {
+			"en": "Use Tab and Shift+Tab to move between controls. Review opens the existing migration page filtered to that location. No files change until you confirm migration."
+		},
+		"migrationHelpOverview": {
+			"en": "The migration checklist groups supported migrations by your profile and workspace."
+		},
+		"migrationHelpSkip": {
+			"en": "Skip Workspace excludes workspace migrations from the checklist count without changing files. Include Workspace restores them."
+		},
+		"migrationHelpView": {
+			"en": "Use {0} to read the checklist and activity in the Accessible View."
+		}
+	},
 	"vs/workbench/contrib/chat/browser/aiCustomization/customizationMigrationCategories": {
 		"backToConfiguredLocationsMigration": {
 			"en": "Back to Migrate Location Settings"
+		},
+		"backToMcpMigration": {
+			"en": "Back to Migrate MCP Servers"
 		},
 		"backToPromptMigration": {
 			"en": "Back to Migrate Prompt Files"
@@ -32183,8 +33243,125 @@
 		"configuredLocationsMigrationSkillsGroup": {
 			"en": "Skills"
 		},
+		"customizationMigrationSelectAriaLabel": {
+			"en": "Select {0}"
+		},
 		"fourConfiguredLocationSettings": {
 			"en": "{0}, {1}, {2}, and {3}"
+		},
+		"mcpMigrationBannerConsequence": {
+			"en": "Migrated entries are removed from .vscode/mcp.json only after the root .mcp.json entries are written successfully."
+		},
+		"mcpMigrationBannerMessage": {
+			"en": "Eligible servers move from .vscode/mcp.json to .mcp.json at each workspace root so {0} can discover them directly. Unsupported and unselected servers stay in their current files."
+		},
+		"mcpMigrationCardAction": {
+			"en": "Migrate..."
+		},
+		"mcpMigrationCardActionAriaLabel": {
+			"en": "Migrate supported workspace MCP servers"
+		},
+		"mcpMigrationCardDescriptionMultiple": {
+			"en": "Found {0} supported servers in .vscode/mcp.json that can move to workspace root files so {1} can discover them directly."
+		},
+		"mcpMigrationCardDescriptionSingle": {
+			"en": "Found 1 supported server in .vscode/mcp.json that can move to the workspace root so {0} can discover it directly."
+		},
+		"mcpMigrationCardLabel": {
+			"en": "Migrate MCP Servers"
+		},
+		"mcpMigrationCompletedMultiple": {
+			"en": "Migrated {0} MCP servers."
+		},
+		"mcpMigrationCompletedSingle": {
+			"en": "Migrated 1 MCP server."
+		},
+		"mcpMigrationConfirmButton": {
+			"en": "Migrate"
+		},
+		"mcpMigrationConfirmDetail": {
+			"en": "Selected entries are removed from .vscode/mcp.json after they are written and verified in .mcp.json. Unsupported and unselected entries stay in place."
+		},
+		"mcpMigrationConfirmMessageMultiple": {
+			"en": "Migrate {0} MCP servers to .mcp.json?"
+		},
+		"mcpMigrationConfirmMessageSingle": {
+			"en": "Migrate 1 MCP server to .mcp.json?"
+		},
+		"mcpMigrationCrossRootConflict": {
+			"en": "Could not migrate '{0}' because another workspace root defines an MCP server with the same name. Rename or remove the duplicate before migrating."
+		},
+		"mcpMigrationCrossRootConflicts": {
+			"en": "Some MCP servers could not be migrated because their names conflict across workspace roots. Rename or remove the duplicates before migrating."
+		},
+		"mcpMigrationFailedMultiple": {
+			"en": "Failed to migrate {0} MCP servers: {1}."
+		},
+		"mcpMigrationFailedSingle": {
+			"en": "Failed to migrate MCP server: {0}."
+		},
+		"mcpMigrationFailedWithRemainder": {
+			"en": "Failed to migrate {0} MCP servers: {1}, and {2} more."
+		},
+		"mcpMigrationInvalidTarget": {
+			"en": "Could not migrate '{0}' because the destination .mcp.json is invalid."
+		},
+		"mcpMigrationItemPath": {
+			"en": "{0} to {1}"
+		},
+		"mcpMigrationLearnMore": {
+			"en": "Learn more about MCP servers"
+		},
+		"mcpMigrationNoLongerEligible": {
+			"en": "Could not migrate '{0}' because it is no longer eligible."
+		},
+		"mcpMigrationNoneMigrated": {
+			"en": "No MCP servers were migrated."
+		},
+		"mcpMigrationPageButtonTooltip": {
+			"en": "Move selected MCP servers to root .mcp.json files"
+		},
+		"mcpMigrationPageDescriptionMultiple": {
+			"en": "Select supported MCP servers to move so {0} can discover them directly. Unsupported and unselected servers stay in .vscode/mcp.json."
+		},
+		"mcpMigrationPageDescriptionSingle": {
+			"en": "Select the supported MCP server to move so {0} can discover it directly. Unsupported and unselected servers stay in .vscode/mcp.json."
+		},
+		"mcpMigrationPageEmpty": {
+			"en": "No supported workspace MCP servers are available to migrate."
+		},
+		"mcpMigrationPageTitle": {
+			"en": "Migrate MCP Servers"
+		},
+		"mcpMigrationRollbackFailed": {
+			"en": "Could not safely complete or roll back the migration for '{0}'. Review both MCP configuration files."
+		},
+		"mcpMigrationRollbackFailedMultiple": {
+			"en": "Some MCP server migrations could not be safely completed or rolled back. Review the affected source and destination MCP configuration files."
+		},
+		"mcpMigrationSelectAriaLabel": {
+			"en": "Select {0} from {1}"
+		},
+		"mcpMigrationShortcutAriaLabelSingle": {
+			"en": "MCP servers, 1 server can be migrated"
+		},
+		"mcpMigrationShortcutAriaLabelWithCount": {
+			"en": "MCP servers, {0} servers can be migrated"
+		},
+		"mcpMigrationShortcutLabel": {
+			"en": "Migrate MCP Servers"
+		},
+		"mcpMigrationShortcutTooltip": {
+			"en": "Move supported workspace MCP servers to root .mcp.json files"
+		},
+		"mcpMigrationSourceChanged": {
+			"en": "Could not migrate '{0}' because its source configuration changed."
+		},
+		"mcpMigrationTargetConflict": {
+			"en": "Could not migrate '{0}' because .mcp.json already contains a different server with that name."
+		},
+		"mcpMigrationWorkspaceGroup": {
+			"en": "Workspace"
 		},
 		"promptMigrationBannerMessage": {
 			"en": "Prompts are no longer supported by {0}. Convert them to skills to keep them available in both VS Code and this harness."
@@ -32412,15 +33589,146 @@
 			"en": "Move user data agents and instructions to the active harness"
 		}
 	},
+	"vs/workbench/contrib/chat/browser/aiCustomization/customizationMigrationDashboard": {
+		"activityMigrations": {
+			"en": "{0} items migrated"
+		},
+		"changeDestinations": {
+			"en": "Change destinations for {0}"
+		},
+		"convertedToSkill": {
+			"en": "Converted to skill"
+		},
+		"copiedFile": {
+			"en": "Copied file"
+		},
+		"dismissMigrationActivity": {
+			"en": "Dismiss {0} activity from {1}"
+		},
+		"dismissMigrationResult": {
+			"en": "Dismiss migration result"
+		},
+		"highRisk": {
+			"en": "High risk"
+		},
+		"highRiskDescription": {
+			"en": "Conversion can remove prompt-only metadata and change how prompts are invoked."
+		},
+		"includeWorkspace": {
+			"en": "Include Workspace"
+		},
+		"includeWorkspaceLabel": {
+			"en": "Include workspace {0}"
+		},
+		"inProgress": {
+			"en": "In progress"
+		},
+		"migrated": {
+			"en": "Migrated"
+		},
+		"migrationActivity": {
+			"en": "Migration activity"
+		},
+		"migrationActivityTitle": {
+			"en": "{0} · {1}"
+		},
+		"migrationChecklist": {
+			"en": "Your migration checklist"
+		},
+		"migrationComplete": {
+			"en": "Migration complete"
+		},
+		"migrationFrom": {
+			"en": "From"
+		},
+		"migrationProgress": {
+			"en": "{0} of {1} complete"
+		},
+		"migrationsComplete": {
+			"en": "{0} customizations migrated"
+		},
+		"migrationsCompletedDescription": {
+			"en": "Your file migrations are complete. See the checklist below for the status of each location."
+		},
+		"migrationsDescription": {
+			"en": "Some of your agent customizations need an update to keep working. Review and migrate them to the new formats and locations."
+		},
+		"migrationsTitle": {
+			"en": "Migrations"
+		},
+		"migrationTo": {
+			"en": "To"
+		},
+		"movedFile": {
+			"en": "Moved file"
+		},
+		"movedServer": {
+			"en": "Moved server"
+		},
+		"noMigrations": {
+			"en": "No migrations are needed."
+		},
+		"noRemainingMigrations": {
+			"en": "No remaining migrations."
+		},
+		"oneActivityMigration": {
+			"en": "1 item migrated"
+		},
+		"oneMigrationComplete": {
+			"en": "1 customization migrated"
+		},
+		"profileMigrations": {
+			"en": "Personal customizations"
+		},
+		"retry": {
+			"en": "Retry"
+		},
+		"retryMigrations": {
+			"en": "Retry loading migrations"
+		},
+		"review": {
+			"en": "Review"
+		},
+		"reviewMigrationCategory": {
+			"en": "Review {0} from {1}"
+		},
+		"skipped": {
+			"en": "Skipped"
+		},
+		"skipWorkspace": {
+			"en": "Skip Workspace"
+		},
+		"skipWorkspaceLabel": {
+			"en": "Skip workspace {0}"
+		},
+		"viewChanges": {
+			"en": "View Changes"
+		},
+		"viewMigrationChanges": {
+			"en": "View migration changes"
+		},
+		"workspaceMigrations": {
+			"en": "Workspace customizations. Skip this workspace if you do not own it."
+		}
+	},
 	"vs/workbench/contrib/chat/browser/aiCustomization/customizationMigrationServiceImpl": {
 		"customizationMigrationHintCombined": {
 			"en": "{0} {1}"
+		},
+		"customizationMigrationHintCombinedAll": {
+			"en": "{0} {1} {2}"
 		},
 		"customizationMigrationHintMcpMultiple": {
 			"en": "Found {0} MCP servers that are not fully supported by {1}."
 		},
 		"customizationMigrationHintMcpSingle": {
 			"en": "Found 1 MCP server that is not fully supported by {0}."
+		},
+		"customizationMigrationHintMigratableMcpMultiple": {
+			"en": "Found {0} workspace MCP servers that can be migrated for {1}."
+		},
+		"customizationMigrationHintMigratableMcpSingle": {
+			"en": "Found 1 workspace MCP server that can be migrated for {0}."
 		},
 		"customizationMigrationHintMultiple": {
 			"en": "Found {0} customizations that are present but not used by {1} and could be migrated."
@@ -32489,6 +33797,9 @@
 		},
 		"pluginDetailAgents": {
 			"en": "Agents"
+		},
+		"pluginDetailAutomations": {
+			"en": "Automations"
 		},
 		"pluginDetailCommands": {
 			"en": "Commands"
@@ -32687,12 +33998,6 @@
 		"error": {
 			"en": "Error"
 		},
-		"featuredMcpServers": {
-			"en": "Featured"
-		},
-		"featuredMcpServersDescription": {
-			"en": "Discover MCP servers that connect agents to popular tools and services."
-		},
 		"fromPlugin": {
 			"en": "Plugin: {0}"
 		},
@@ -32735,14 +34040,14 @@
 		"mcpAuthenticationFailed": {
 			"en": "Unable to sign in to {0}: {1}"
 		},
+		"mcpErrorShowLess": {
+			"en": "Show Less"
+		},
+		"mcpErrorShowMore": {
+			"en": "Show More"
+		},
 		"mcpInstallFailed": {
 			"en": "Unable to install MCP server: {0}"
-		},
-		"mcpMarketplaceUnavailable": {
-			"en": "Featured MCP servers could not be loaded"
-		},
-		"mcpMarketplaceUnavailableDescription": {
-			"en": "Check your connection, then try loading marketplace results again."
 		},
 		"mcpMoreActionsAria": {
 			"en": "More actions for {0}"
@@ -32753,6 +34058,12 @@
 		"mcpSearchMarketplaceUnavailable": {
 			"en": "Marketplace results are unavailable. Showing installed MCP servers only."
 		},
+		"mcpServerAriaLabelWithCollapsedError": {
+			"en": "{0}, {1}, {2}. Use Show More to read the full error."
+		},
+		"mcpServerAriaLabelWithError": {
+			"en": "{0}, {1}, {2}"
+		},
 		"mcpServerAriaLabelWithStatus": {
 			"en": "{0}, {1}"
 		},
@@ -32761,6 +34072,9 @@
 		},
 		"mcpServerEnabledStatus": {
 			"en": "{0} enabled."
+		},
+		"mcpServerErrorWithoutDetails": {
+			"en": "The server reported an error without additional details."
 		},
 		"mcpServerInstalledStatus": {
 			"en": "{0} installed."
@@ -32783,11 +34097,8 @@
 		"noMatchingServers": {
 			"en": "No servers match '{0}'"
 		},
-		"retry": {
-			"en": "Retry"
-		},
-		"retryMcpMarketplace": {
-			"en": "Retry Loading MCP Servers"
+		"output": {
+			"en": "Show Output"
 		},
 		"running": {
 			"en": "Running"
@@ -32797,9 +34108,6 @@
 		},
 		"searchMcpPlaceholder": {
 			"en": "Type to search..."
-		},
-		"showMcpServerOutput": {
-			"en": "Show output for {0}"
 		},
 		"showPlugin": {
 			"en": "Show Plugin"
@@ -32869,9 +34177,6 @@
 		"disablePlugin": {
 			"en": "Disable {0} from sync"
 		},
-		"discoverMorePluginsDescription": {
-			"en": "Curated plugins that add tools and expertise."
-		},
 		"emptyMarketplace": {
 			"en": "No plugins available"
 		},
@@ -32886,9 +34191,6 @@
 		},
 		"expanded": {
 			"en": "expanded"
-		},
-		"featuredPlugins": {
-			"en": "Featured"
 		},
 		"hookCommandCount": {
 			"en": "{0} commands"
@@ -32985,12 +34287,6 @@
 		},
 		"oneSkillContribution": {
 			"en": "1 skill"
-		},
-		"pluginDiscoveryUnavailable": {
-			"en": "Available plugins could not be loaded"
-		},
-		"pluginDiscoveryUnavailableDescription": {
-			"en": "Check your connection, then try loading results from the configured marketplaces again."
 		},
 		"pluginGroupAriaLabel": {
 			"en": "{0}, {1} items, {2}"
@@ -33105,12 +34401,6 @@
 		},
 		"remotePluginsSectionDescription": {
 			"en": "Plugins configured directly on the active remote agent host."
-		},
-		"retry": {
-			"en": "Retry"
-		},
-		"retryPluginDiscovery": {
-			"en": "Retry Loading Plugins"
 		},
 		"searchMarketplacePlaceholder": {
 			"en": "Search plugin marketplace..."
@@ -33622,7 +34912,7 @@
 			"en": "Show thinking in a fixed-height streaming panel that auto-scrolls; click header to expand to full height."
 		},
 		"chat.agent.thinkingStyle": {
-			"en": "Controls how thinking is rendered."
+			"en": "Controls how thinking is rendered. Read-only chats always use the collapsed preview style."
 		},
 		"chat.agentHost.agentDebugLog.enabled": {
 			"en": "Enable agent debug logging for agent host sessions: surface their debug events in the agent debug panel. Takes effect immediately; only sessions that run while this is enabled are captured."
@@ -33635,9 +34925,6 @@
 		},
 		"chat.agentHost.allowSignedOutWhenUsable": {
 			"en": "When enabled, Agent Host sessions remain available while signed out. The Agents window opens without forcing GitHub sign-in, and editor chat lets you select the Copilot harness. Agents usable without GitHub (for example Codex with ChatGPT authentication or Claude in native mode with your own Anthropic credentials) work while signed out; agents that require GitHub prompt you to add a model or sign in. When disabled (the default), GitHub sign-in is required before the Agents window opens."
-		},
-		"chat.agentHost.copilot.autoModeTiers": {
-			"en": "When enabled, the Auto model in Copilot SDK agent sessions offers an \"Optimize for\" picker that biases routing toward efficiency, balance, or intelligence. The profile applies when a session is created and stays fixed for that session."
 		},
 		"chat.agentHost.copilot.mapLegacySettingsToManagedSettings": {
 			"en": "When enabled, maps supported legacy VS Code settings to equivalent Copilot SDK managed settings for local Agent Host sessions. Only restrictions are mapped, and only from globally-scoped values — workspace and folder values are ignored. Applies to local sessions using the Copilot agent; remote hosts and other agents are unaffected. This compatibility bridge is temporary and is not used for new settings."
@@ -33665,9 +34952,6 @@
 		},
 		"chat.agentHost.copilot.modelCapabilityOverrides.reasoningEffort": {
 			"en": "Reasoning effort for sessions on this model, overriding the model picker's thinking level. Use the `*` entry to set it for every model. Unrecognized values are ignored."
-		},
-		"chat.agentHost.copilot.multiTurnContextRouting": {
-			"en": "When enabled, Auto model selection in Copilot SDK agent sessions routes on the conversation so far, sending prior user messages to the router instead of scoring the latest message alone."
 		},
 		"chat.agentHost.copilot.toolSearch.deferThreshold": {
 			"en": "Minimum number of tools before MCP and external tools are deferred behind tool search. Set to 0 to always defer external tools. Only effective when tool search is enabled."
@@ -33746,9 +35030,6 @@
 		},
 		"chat.agentSessionProjection.enabled": {
 			"en": "Controls whether Agent Session Projection mode is enabled for reviewing agent sessions in a focused workspace."
-		},
-		"chat.agentSessions.consolidatedRemoteWorkspaces": {
-			"en": "Controls whether GitHub and remote workspaces are combined under Remote in the Agents Window workspace picker, with search always available and, when supported, a No workspace option."
 		},
 		"chat.agentSessions.migrateLegacyCopilotCli": {
 			"en": "Controls whether legacy extension host Copilot CLI chat sessions are migrated in place to the Agent host when opened, so their history becomes editable. When disabled, legacy sessions open as before.\n\nChanging this setting requires a restart to take effect."
@@ -33876,6 +35157,15 @@
 		"chat.contextUsage.enabled": {
 			"en": "Show the context window usage indicator in the chat input."
 		},
+		"chat.copilot.autoModeTierOverride": {
+			"en": "Override Auto's \"Optimize for\" preference for evals and debugging, even when the picker is disabled. Accepts `efficiency`, `balance`, or `intelligence` in both Copilot Chat and Copilot SDK sessions; `fast` is extension-only. Set to `null` to clear."
+		},
+		"chat.copilot.autoModeTiers": {
+			"en": "Show the Auto model's \"Optimize for\" picker with Efficiency, Balance, and Intelligence options in Copilot Chat and Copilot SDK sessions. When disabled, the service chooses how to route unless an override is configured."
+		},
+		"chat.copilot.claudeAdvisor.enabled": {
+			"en": "When enabled, Copilot Agent Host sessions using a supported Claude model can call the provider-native Advisor tool. Changing this setting restarts the Copilot SDK client after active turns finish."
+		},
 		"chat.copilot.semanticSearch.enabled": {
 			"en": "Controls whether Copilot Agent Host sessions can use VS Code's semantic workspace search. When disabled, semantic search is unavailable."
 		},
@@ -33884,6 +35174,9 @@
 		},
 		"chat.customizations.locationsMigration.enabled": {
 			"en": "Controls whether the Chat Customizations editor offers to move agents, instructions, and skills from configured locations that are not supported by the active agent-host harness. When disabled, the migration card and sidebar shortcut are hidden."
+		},
+		"chat.customizations.mcpServerMigration.enabled": {
+			"en": "Controls whether the Chat Customizations editor offers to move supported workspace MCP servers out of .vscode/mcp.json and into a .mcp.json file at the workspace root, where the active agent-host harness discovers them directly. When disabled, the migration card and sidebar shortcut are hidden."
 		},
 		"chat.customizations.migrationHint": {
 			"en": "Controls whether chat shows information about customizations that are not used by the active Agent Host harness."
@@ -34033,7 +35326,7 @@
 			"en": "Controls whether Open in Agents Window reveals the current local Agent Host session instead of opening a new session."
 		},
 		"chat.experimental.permissionsSandboxToggle.enabled": {
-			"en": "Controls whether the permissions picker shows a \"Sandboxing for terminal\" toggle. Local sessions show it on the Default permissions option; Copilot Agent Host sessions show it as a separate setting that applies to every permission mode. For Copilot SDK sessions using the built-in shell tool, the toggle reflects and updates `#chat.agentHost.sdkSandbox.enabled#` or `#chat.agentHost.sdkSandbox.enabledWindows#`."
+			"en": "Controls whether the permissions picker shows a \"Sandboxing for terminal\" toggle. Local sessions show it on the Default permissions option. Copilot Agent Host sessions show it as a session-specific setting that applies to every permission mode; changing it saves the choice only for that session. New Copilot Agent Host sessions initially follow `#chat.agentHost.sdkSandbox.enabled#` or `#chat.agentHost.sdkSandbox.enabledWindows#` when using the SDK's built-in shell tool, and `#chat.agent.sandbox.enabled#` or `#chat.agent.sandbox.enabledWindows#` when using the Agent Host terminal tool."
 		},
 		"chat.experimental.richLinks.enabled": {
 			"en": "Controls whether supported links in chat are rendered as rich links with live metadata. Enabling this may make authenticated requests to services such as GitHub."
@@ -34048,13 +35341,16 @@
 			"en": "Use Mark as Done, Mark All as Done, Restore, and Restore All."
 		},
 		"chat.experimental.sessionStateIndicator.enabled": {
-			"en": "Enable state indicators around chat editor sessions."
+			"en": "Enable state indicators around chat editor sessions that are in progress, need input, or have an unvisited completion. Customize the borders with `chat.sessionStateIndicator.inProgressBorder`, `chat.sessionStateIndicator.needsInputBorder`, and `chat.sessionStateIndicator.unvisitedBorder` in `#workbench.colorCustomizations#`."
 		},
 		"chat.experimental.stickyScroll.enabled": {
 			"en": "Controls whether chat requests use experimental tree-based sticky scroll instead of the sticky prompt header."
 		},
 		"chat.experimentalModelPicker": {
 			"en": "When enabled, the model picker uses a tab per model provider and configures thinking effort and context from a detail card next to each model, instead of a separate configuration button."
+		},
+		"chat.experimentalModePermissionsPicker": {
+			"en": "Shows mode and permissions in a combined picker with expandable permission choices for Copilot Agent Host sessions."
 		},
 		"chat.experimentalSessionsWindowOverride": {
 			"en": "When true, enables sessions-window-specific behavior for extensions."
@@ -34288,7 +35584,7 @@
 			"en": "Show OS notifications for responses when the window is not focused."
 		},
 		"chat.pasteAsAttachmentThreshold": {
-			"en": "The number of characters a paste must exceed before it is added to the chat input as an attachment instead of being inserted inline. A paste must also span several lines, so a long single-line paste is always inserted inline. Set this to a very large number to always paste inline."
+			"en": "The number of characters a paste must exceed before it is added to the chat input as an attachment instead of being inserted inline. Set this to a very large number to always paste inline."
 		},
 		"chat.permissions.default.autoApprove.description": {
 			"en": "Start new chat sessions in Bypass Approvals mode."
@@ -34452,21 +35748,6 @@
 		"chat.tools.todos.showWidget": {
 			"en": "Controls whether to show the todo list widget above the chat input. When enabled, the widget displays todo items created by the agent and updates as progress is made."
 		},
-		"chat.turnStatusPills": {
-			"en": "Controls whether agent status pills are shown above the chat input and inside completed responses. Only applies to agent sessions."
-		},
-		"chat.turnStatusPills.browser": {
-			"en": "Show a pill for browser activity in the turn."
-		},
-		"chat.turnStatusPills.changes": {
-			"en": "Show a pill summarizing the files changed and the lines added and removed in the turn."
-		},
-		"chat.turnStatusPills.objectDeprecated": {
-			"en": "The per-pill object form is deprecated. Use a boolean value instead."
-		},
-		"chat.turnStatusPills.preview": {
-			"en": "Show a pill to preview a Markdown or HTML file created or edited in the turn."
-		},
 		"chat.undoRequests.restoreInput": {
 			"en": "Controls whether the input of the chat should be restored when an undo request is made. The input will be filled with the text of the request that was restored."
 		},
@@ -34567,7 +35848,7 @@
 			"en": "Debug View"
 		},
 		"dictation.enabled": {
-			"en": "Enables dictation across the product (chat input, editor, and terminal). When enabled on a supported platform, a microphone button appears in the chat input and the dictation shortcut becomes available; the on-device transcription model is downloaded on first use and runs locally."
+			"en": "Enables dictation across the product (chat input, editor, and terminal). When enabled, a microphone button appears in the chat input and the dictation shortcut becomes available. Desktop uses the selected transcription model; web uses cloud transcription."
 		},
 		"dictation.enabled.policy": {
 			"en": "Controls whether dictation is available across the product (chat input, editor, and terminal)."
@@ -34582,7 +35863,7 @@
 			"en": "Controls the language model used for experimental dictation cleanup. `auto` follows the experiment-provided default."
 		},
 		"dictation.model": {
-			"en": "The model used for dictation. On-device models download on first use and run locally through Microsoft Foundry Local; the cloud option streams audio to the Microsoft AI voice service."
+			"en": "The model used for dictation. On-device models download on first use and run locally through Microsoft Foundry Local; the cloud option streams audio to the Microsoft AI voice service. On the web, user and default on-device selections use cloud transcription because local transcription is unsupported. If policy requires on-device transcription, dictation is unavailable on the web."
 		},
 		"dictation.model.mai": {
 			"en": "Cloud transcription through the same Microsoft AI voice service used by Voice Mode. Requires a network connection and GitHub sign-in; audio is streamed to the service."
@@ -36566,6 +37847,9 @@
 	"vs/workbench/contrib/chat/browser/chatInputPills": {
 		"chatInputPills.configure": {
 			"en": "Configure Session Status Pills"
+		},
+		"chatInputPills.options": {
+			"en": "{0} Options"
 		},
 		"chatInputPills.viewChanges": {
 			"en": "View {0}"
@@ -39235,6 +40519,14 @@
 			"en": "Background Activities"
 		}
 	},
+	"vs/workbench/contrib/chat/browser/sessionPullRequestPill": {
+		"chatInputPills.pullRequests.showAll": {
+			"en": "Show All"
+		},
+		"chatInputPills.pullRequests.showOpen": {
+			"en": "Show Open/Draft"
+		}
+	},
 	"vs/workbench/contrib/chat/browser/speechToText/chatSpeechToTextService": {
 		"chatStt.audioError": {
 			"en": "Speech-to-text stopped because audio could not be sent for transcription: {0}"
@@ -40873,6 +42165,12 @@
 		"chat.subagent.openChat.invalidResource": {
 			"en": "The subagent chat could not be opened."
 		},
+		"chat.subagent.openChat.unavailable": {
+			"en": "Subagent chat is not available yet."
+		},
+		"chat.subagent.pendingChat.aria": {
+			"en": "Subagent: {0}"
+		},
 		"chat.subagent.status.completed": {
 			"en": "Subagent completed"
 		},
@@ -42188,6 +43486,68 @@
 			"en": "Send this message at the next opportunity, signaling the current request to yield. The current response will stop and the new message will be sent immediately."
 		}
 	},
+	"vs/workbench/contrib/chat/browser/widget/input/chatSessionArchiveNudge": {
+		"chat.sessionArchiveNudge.actionDetails": {
+			"en": "What Does \"{0}\" Do?"
+		},
+		"chat.sessionArchiveNudge.archiveError": {
+			"en": "Unable to archive the session: {0}"
+		},
+		"chat.sessionArchiveNudge.archiveQuestion": {
+			"en": "PR merged. Archive this session?"
+		},
+		"chat.sessionArchiveNudge.archiveQuestionAll": {
+			"en": "All PRs merged. Archive this session?"
+		},
+		"chat.sessionArchiveNudge.archiving": {
+			"en": "Archiving..."
+		},
+		"chat.sessionArchiveNudge.configureAutomaticCleanup": {
+			"en": "Configure Automatic Cleanup"
+		},
+		"chat.sessionArchiveNudge.dismiss": {
+			"en": "Dismiss Archive Suggestion"
+		},
+		"chat.sessionArchiveNudge.dismissDone": {
+			"en": "Dismiss Mark as Done Suggestion"
+		},
+		"chat.sessionArchiveNudge.doneError": {
+			"en": "Unable to mark the session as done: {0}"
+		},
+		"chat.sessionArchiveNudge.doneOverview": {
+			"en": "Mark this session as done to hide it from the sessions list and focus on your remaining tasks."
+		},
+		"chat.sessionArchiveNudge.doneQuestion": {
+			"en": "PR merged. Mark this session as done?"
+		},
+		"chat.sessionArchiveNudge.doneQuestionAll": {
+			"en": "All PRs merged. Mark this session as done?"
+		},
+		"chat.sessionArchiveNudge.doneRecovery": {
+			"en": "The session is not deleted. Ask your agent to find it, or look in the \"{0}\" section of the sessions list. You can restore it anytime."
+		},
+		"chat.sessionArchiveNudge.doneWorktree": {
+			"en": "The worktree created for this session will be deleted. You can recreate it by restoring the session."
+		},
+		"chat.sessionArchiveNudge.markingDone": {
+			"en": "Marking as Done..."
+		},
+		"chat.sessionArchiveNudge.openCleanupSettingsError": {
+			"en": "Unable to open automatic cleanup settings: {0}"
+		},
+		"chat.sessionArchiveNudge.overview": {
+			"en": "Archive this session to hide it from the sessions list and focus on your remaining tasks."
+		},
+		"chat.sessionArchiveNudge.recovery": {
+			"en": "The session is not deleted. Ask your agent to find it, or look in the \"{0}\" section of the sessions list. You can unarchive it anytime."
+		},
+		"chat.sessionArchiveNudge.sessionActions": {
+			"en": "Session suggestion actions"
+		},
+		"chat.sessionArchiveNudge.worktree": {
+			"en": "The worktree created for this session will be deleted. You can recreate it by unarchiving the session."
+		}
+	},
 	"vs/workbench/contrib/chat/browser/widget/input/delegationSessionPickerActionItem": {
 		"chat.learnMoreAgentHandOff": {
 			"en": "Learn about agent handoff..."
@@ -42351,8 +43711,14 @@
 		"chat.effort.header": {
 			"en": "Thinking Effort"
 		},
+		"chat.modelPicker.modelActions": {
+			"en": "Model Actions"
+		},
 		"chat.modelPicker.pin": {
 			"en": "Pin Model"
+		},
+		"chat.modelPicker.resetToDefault": {
+			"en": "Reset to Default"
 		},
 		"chat.modelPicker.unpin": {
 			"en": "Unpin Model"
@@ -42360,11 +43726,11 @@
 		"models.cost": {
 			"en": "Cost: {0}"
 		},
+		"models.optimizeFor": {
+			"en": "Optimize for"
+		},
 		"models.pricingDetails": {
 			"en": "Pricing details"
-		},
-		"models.routingProfile": {
-			"en": "Routing Profile"
 		},
 		"models.speed": {
 			"en": "Speed"
@@ -42441,8 +43807,8 @@
 		"models.longContext": {
 			"en": "Long Context"
 		},
-		"models.routingProfile": {
-			"en": "Routing Profile"
+		"models.optimizeFor": {
+			"en": "Optimize for"
 		}
 	},
 	"vs/workbench/contrib/chat/browser/widget/input/modelPicker/modelPickerItemPrimitives": {
@@ -42492,6 +43858,9 @@
 		},
 		"chat.manageModels.tooltip": {
 			"en": "Manage Language Models"
+		},
+		"chat.modelPicker.currentModel": {
+			"en": "Current model"
 		}
 	},
 	"vs/workbench/contrib/chat/browser/widget/input/modelPicker/modelPickerItemSections": {
@@ -43158,13 +44527,16 @@
 			"en": "True when the chat request in progress message should be skipped."
 		},
 		"chatSpeechToTextConfigured": {
-			"en": "True when on-device speech-to-text is available for dictating into the chat input."
+			"en": "True when speech-to-text is available for dictating into the chat input."
 		},
 		"chatSpeechToTextPreparing": {
 			"en": "True while the selected speech-to-text backend is preparing."
 		},
 		"chatSpeechToTextRecording": {
 			"en": "True while the chat input is recording audio for speech-to-text transcription."
+		},
+		"chatSpeechToTextUsesMai": {
+			"en": "True when dictation uses the MAI cloud transcription backend."
 		},
 		"enableRemoteCodingAgentPromptFileOverlay": {
 			"en": "Whether the remote coding agent prompt file overlay feature is enabled"
@@ -45385,13 +46757,19 @@
 			"en": "Background color of the other search matches in a chat transcript. The color must not be opaque so as not to hide underlying content."
 		},
 		"chat.inputWorkingBorderColor1": {
-			"en": "First color stop of the animated chat input border shown while a request is in flight."
+			"en": "Accent color of the animated chat input border shown while a request is in flight."
 		},
 		"chat.inputWorkingBorderColor2": {
-			"en": "Secondary accent color used by other animated chat input affordances. Not used by the in-flight chat input border."
+			"en": "Unused secondary chat input accent color."
+		},
+		"chat.inputWorkingBorderColor2.deprecated": {
+			"en": "This color is no longer used. Use 'chat.inputWorkingBorderColor1' to customize the animated chat input border."
 		},
 		"chat.inputWorkingBorderColor3": {
-			"en": "Tertiary accent color used by other animated chat input affordances. Not used by the in-flight chat input border."
+			"en": "Unused tertiary chat input accent color."
+		},
+		"chat.inputWorkingBorderColor3.deprecated": {
+			"en": "This color is no longer used. Use 'chat.inputWorkingBorderColor1' to customize the animated chat input border."
 		},
 		"chat.linesAddedForeground": {
 			"en": "Foreground color of lines added in chat code block pill."
@@ -45413,6 +46791,15 @@
 		},
 		"chat.requestCodeBorder": {
 			"en": "Border color of code blocks within the chat request bubble."
+		},
+		"chat.sessionStateIndicator.inProgressBorder": {
+			"en": "Border color of a Chat Editor with a request in progress."
+		},
+		"chat.sessionStateIndicator.needsInputBorder": {
+			"en": "Border color of a Chat Editor that needs user input."
+		},
+		"chat.sessionStateIndicator.unvisitedBorder": {
+			"en": "Border color of a Chat Editor with an unvisited completion."
 		},
 		"chat.slashCommandBackground": {
 			"en": "The background color of a chat slash command."
@@ -63557,14 +64944,6 @@
 		}
 	},
 	"vs/workbench/contrib/search/browser/search.common.contribution": {
-		"search.searchOnType": {
-			"en": "Search all files as you type."
-		},
-		"search.searchOnTypeDebouncePeriod": {
-			"en": "When {0} is enabled, controls the timeout in milliseconds between a character being typed and the search starting. Has no effect when {0} is disabled."
-		}
-	},
-	"vs/workbench/contrib/search/browser/search.contribution": {
 		"exclude": {
 			"en": "Configure [glob patterns](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options) for excluding files and folders in fulltext searches and file search in quick open. To exclude files from the recently opened list in quick open, patterns must be absolute (for example `**/node_modules/**`). Inherits all glob patterns from the `#files.exclude#` setting."
 		},
@@ -63577,6 +64956,56 @@
 				"\\$(basename) should not be translated"
 			]
 		},
+		"search.followSymlinks": {
+			"en": "Controls whether to follow symlinks while searching."
+		},
+		"search.maxResults": {
+			"en": "Controls the maximum number of search results, this can be set to `null` (empty) to return unlimited results."
+		},
+		"search.ripgrep.maxThreads": {
+			"en": "Number of threads to use for searching. When set to 0, the engine automatically determines this value."
+		},
+		"search.searchOnType": {
+			"en": "Search all files as you type."
+		},
+		"search.searchOnTypeDebouncePeriod": {
+			"en": "When {0} is enabled, controls the timeout in milliseconds between a character being typed and the search starting. Has no effect when {0} is disabled."
+		},
+		"search.smartCase": {
+			"en": "Search case-insensitively if the pattern is all lowercase, otherwise, search case-sensitively."
+		},
+		"search.sortOrder": {
+			"en": "Controls sorting order of search results."
+		},
+		"searchSortOrder.countAscending": {
+			"en": "Results are sorted by count per file, in ascending order."
+		},
+		"searchSortOrder.countDescending": {
+			"en": "Results are sorted by count per file, in descending order."
+		},
+		"searchSortOrder.default": {
+			"en": "Results are sorted by folder and file names, in alphabetical order."
+		},
+		"searchSortOrder.filesOnly": {
+			"en": "Results are sorted by file names ignoring folder order, in alphabetical order."
+		},
+		"searchSortOrder.modified": {
+			"en": "Results are sorted by file last modified date, in descending order."
+		},
+		"searchSortOrder.type": {
+			"en": "Results are sorted by file extensions, in alphabetical order."
+		},
+		"useGlobalIgnoreFiles": {
+			"en": "Controls whether to use your global gitignore file (for example, from `$HOME/.config/git/ignore`) when searching for files. Requires {0} to be enabled."
+		},
+		"useIgnoreFiles": {
+			"en": "Controls whether to use `.gitignore` and `.ignore` files when searching for files."
+		},
+		"useParentIgnoreFiles": {
+			"en": "Controls whether to use `.gitignore` and `.ignore` files in parent directories when searching for files. Requires {0} to be enabled."
+		}
+	},
+	"vs/workbench/contrib/search/browser/search.contribution": {
 		"filterSortOrder": {
 			"en": "Controls sorting order of editor history in quick open when filtering."
 		},
@@ -63631,14 +65060,8 @@
 		"search.experimental.useIgnoreFilesInFindFiles": {
 			"en": "When enabled, the legacy `findFiles` extension API honors the user's `#search.useIgnoreFiles#` setting instead of always ignoring `.gitignore`. Extensions that explicitly pass `null` as the `exclude` argument still get unfiltered results. Telemetry is emitted regardless of this setting to help decide future defaults."
 		},
-		"search.followSymlinks": {
-			"en": "Controls whether to follow symlinks while searching."
-		},
 		"search.globalFindClipboard": {
 			"en": "Controls whether the Search view should read or modify the shared find clipboard on macOS."
-		},
-		"search.maxResults": {
-			"en": "Controls the maximum number of search results, this can be set to `null` (empty) to return unlimited results."
 		},
 		"search.mode": {
 			"en": "Controls where new `Search: Find in Files` and `Find in Folder` operations occur: either in the Search view, or in a search editor."
@@ -63660,9 +65083,6 @@
 		},
 		"search.quickOpen.includeSymbols": {
 			"en": "Whether to include results from a global symbol search in the file results for Quick Open."
-		},
-		"search.ripgrep.maxThreads": {
-			"en": "Number of threads to use for searching. When set to 0, the engine automatically determines this value."
 		},
 		"search.searchView.keywordSuggestions": {
 			"en": "Enable keyword suggestions in the Search view."
@@ -63688,47 +65108,14 @@
 		"search.showLineNumbers": {
 			"en": "Controls whether to show line numbers for search results."
 		},
-		"search.smartCase": {
-			"en": "Search case-insensitively if the pattern is all lowercase, otherwise, search case-sensitively."
-		},
-		"search.sortOrder": {
-			"en": "Controls sorting order of search results."
-		},
 		"search.useReplacePreview": {
 			"en": "Controls whether to open Replace Preview when selecting or replacing a match."
-		},
-		"searchSortOrder.countAscending": {
-			"en": "Results are sorted by count per file, in ascending order."
-		},
-		"searchSortOrder.countDescending": {
-			"en": "Results are sorted by count per file, in descending order."
-		},
-		"searchSortOrder.default": {
-			"en": "Results are sorted by folder and file names, in alphabetical order."
-		},
-		"searchSortOrder.filesOnly": {
-			"en": "Results are sorted by file names ignoring folder order, in alphabetical order."
-		},
-		"searchSortOrder.modified": {
-			"en": "Results are sorted by file last modified date, in descending order."
-		},
-		"searchSortOrder.type": {
-			"en": "Results are sorted by file extensions, in alphabetical order."
 		},
 		"textSearchPickerHelp": {
 			"en": "Search for Text"
 		},
 		"textSearchPickerPlaceholder": {
 			"en": "Search for text in your workspace files."
-		},
-		"useGlobalIgnoreFiles": {
-			"en": "Controls whether to use your global gitignore file (for example, from `$HOME/.config/git/ignore`) when searching for files. Requires {0} to be enabled."
-		},
-		"useIgnoreFiles": {
-			"en": "Controls whether to use `.gitignore` and `.ignore` files when searching for files."
-		},
-		"useParentIgnoreFiles": {
-			"en": "Controls whether to use `.gitignore` and `.ignore` files in parent directories when searching for files. Requires {0} to be enabled."
 		}
 	},
 	"vs/workbench/contrib/search/browser/searchAccessibilityHelp": {

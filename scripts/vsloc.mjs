@@ -289,7 +289,7 @@ function apply(o) {
     const pp = path.join(ROOT, 'package.json');
     const pkg = readJson(pp);
     pkg.version = to.meta.vscode;
-    pkg.engines.vscode = `^${to.meta.vscode}`;
+    // engines.vscode נשאר במכוון ^1.0.0 — לא לקשור את החבילה לגרסה מינימלית
     writeJson(pp, pkg);
     console.log(`package.json עודכן לגרסה ${to.meta.vscode}.`);
   }

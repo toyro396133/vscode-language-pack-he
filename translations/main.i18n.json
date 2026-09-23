@@ -858,7 +858,10 @@
 			"wrappingIndent.same": "שורות שנגלשות מקבלות הזחה זהה לזו של ההורה.",
 			"wrappingStrategy": "קובע את האלגוריתם שמחשב את נקודות הגלישה. שים לב שבמצב נגישות ייעשה שימוש ב-advanced לקבלת החוויה הטובה ביותר.",
 			"wrappingStrategy.advanced": "מאציל את חישוב נקודות הגלישה לדפדפן. זהו אלגוריתם איטי שעלול לגרום להקפאות בקבצים גדולים, אך הוא פועל נכון בכל המקרים.",
-			"wrappingStrategy.simple": "מניח שכל התווים הם באותו רוחב. זהו אלגוריתם מהיר שפועל נכון עבור גופנים ברוחב קבוע ועבור כתבים מסוימים (כגון תווים לטיניים) שבהם רוחב הגליפים זהה."
+			"wrappingStrategy.simple": "מניח שכל התווים הם באותו רוחב. זהו אלגוריתם מהיר שפועל נכון עבור גופנים ברוחב קבוע ועבור כתבים מסוימים (כגון תווים לטיניים) שבהם רוחב הגליפים זהה.",
+			"fullwidthCharacterWidth": "קובע את הרוחב המשמש להצגת תווים ברוחב מלא.",
+			"fullwidthCharacterWidth.font": "הצג תווים ברוחב מלא לפי הרוחב שמוגדר בגופן.",
+			"fullwidthCharacterWidth.twoCells": "הצג תווים ברוחב מלא ממורכזים בדיוק בשני תאי תווים. חל רק על גופנים ברוחב קבוע. אינו חל על תווים ברוחב מלא המורכבים מכמה נקודות קוד או על עיבוד באמצעות GPU. יש לכך השפעה על ביצועי הצגת השורות."
 		},
 		"vs/editor/common/core/editorColorRegistry": {
 			"caret": "צבע הסמן בעורך.",
@@ -2241,7 +2244,9 @@
 			"chat.editor.localAgent.enabled": "כאשר האפשרות מופעלת, מנגנון הצ'אט המקומי של VS Code מוצג בבורר הצ'אט. הגדרה זו מתעלמת בסביבות עבודה וירטואליות, שבהן מנגנון הצ'אט המקומי תמיד זמין.",
 			"chat.editor.preferCopilotHarness": "כאשר האפשרות מופעלת, נעשה שימוש ב-Agent Host Copilot SDK בכל פעם שהמנגנון המקומי היה אמור להיבחר עבור הפעלת צ'אט חדשה בעורך. הבחירות של Claude ו-Codex אינן מושפעות.",
 			"chat.editor.preferCopilotHarness.policy": "הגדר אם VS Code משתמש ב-Agent Host Copilot SDK במקום במנגנון המקומי עבור הפעלות צ'אט חדשות בעורך.",
-			"chatAgentHostConfigurationTitle": "ה-Agent Host של הצ'אט"
+			"chatAgentHostConfigurationTitle": "ה-Agent Host של הצ'אט",
+			"agentHostExistingSessionHarnessPickerEnabled": "האם הפעלות Agent Host קיימות בחלון הראשי של VS Code מציגות את המנגנון הנוכחי כבורר מושבת.",
+			"chat.editor.agentHost.existingSessionHarnessPicker.enabled": "כאשר האפשרות מופעלת, הפעלות Agent Host קיימות בחלון הראשי של VS Code מציגות את המנגנון הנוכחי כבורר מושבת."
 		},
 		"vs/platform/agentHost/common/agentHostSchema": {
 			"agentHost.config.activeAgentTitleGeneration.description": "האם הסוכן הפעיל נותן שמות להפעלות ולצ'אטים באמצעות כלי שינוי שם, במקום יצירת כותרות על ידי מודל עזר.",
@@ -2343,7 +2348,19 @@
 			"agentHost.sessionConfig.shellInitScripts.item": "סקריפט אתחול Shell",
 			"agentHost.sessionConfig.shellInitScripts.script": "סקריפט",
 			"agentHost.sessionConfig.shellInitScripts.shell": "Shell",
-			"agentHost.sessionConfig.shellInitScriptsDescription": "סקריפט שנטען לפני כל פקודת כלי Shell מובנית."
+			"agentHost.sessionConfig.shellInitScriptsDescription": "סקריפט שנטען לפני כל פקודת כלי Shell מובנית.",
+			"agentHost.config.autoArchiveMergedSessionsAfterDays.description": "מספר ימי חוסר פעילות שלאחריהם הפעלה עם בקשת משיכה ממוזגת מועברת לארכיון באופן אוטומטי. אפס משבית את ההעברה האוטומטית לארכיון.",
+			"agentHost.config.autoArchiveMergedSessionsAfterDays.title": "העברה אוטומטית לארכיון של הפעלות ממוזגות",
+			"agentHost.config.autoAttachPullRequests.description": "האם Agent Host מגלה באופן אוטומטי בקשת משיכה עבור הענף שמוצא כעת ומשייך אותה. כאשר האפשרות מושבתת, נלקחות בחשבון רק בקשות משיכה שתועדו כארטיפקטים או שויכו במפורש על ידי פעולות הפעלה.",
+			"agentHost.config.autoAttachPullRequests.title": "שיוך אוטומטי של בקשות משיכה",
+			"agentHost.config.autoDeleteArchivedMergedSessionsAfterDays.description": "מספר הימים לאחר ההעברה האוטומטית לארכיון שבהם הפעלה עם בקשת משיכה ממוזגת נמחקת לצמיתות. אפס משבית את המחיקה הצמיתה.",
+			"agentHost.config.autoDeleteArchivedMergedSessionsAfterDays.title": "מחיקה אוטומטית של הפעלות ממוזגות שבארכיון",
+			"agentHost.config.workspaceTrust": "מהימנות סביבת העבודה",
+			"agentHost.config.workspaceTrust.enabled": "מופעל",
+			"agentHost.config.workspaceTrust.trustedUris": "תיקיות מהימנות",
+			"agentHost.config.workspaceTrust.uri": "URI של תיקייה",
+			"agentHost.sessionConfig.sandboxEnabled": "ארגז חול",
+			"agentHost.sessionConfig.sandboxEnabledDescription": "התנהגות ארגז החול עבור הפעלה זו. ברירת המחדל פועלת לפי ההגדרה הגלובלית."
 		},
 		"vs/platform/agentHost/common/agentHostStarter.config.contribution": {
 			"chat.agentHost.byokModels.enabled": "כשהאפשרות מופעלת, מודלים מסוג BYOK ('הבא את המפתח שלך') שמסופקים על ידי הרחבות יכולים לפעול בהפעלות מארח הסוכנים. השינויים מסונכרנים למארח הסוכנים הפעיל ואינם דורשים הפעלה מחדש.",
@@ -2399,7 +2416,8 @@
 			"chat.agentMerge.replyAttribution": "קובעת אם תגובות בשרשורי סקירה שמפרסם מיזוג הסוכן כוללות הערת ייחוס לתגובה אוטומטית.",
 			"chat.agentMerge.resolveConflicts": "קובעת אם הפעלות מיזוג הסוכן המופעלות מבקשות מהסוכן לעדכן ענפים שמפגרים אחור או לפתור התנגשויות מיזוג.",
 			"chat.artifactTools.enabled": "כשהאפשרות מופעלת, סוכנים יכולים לתעד תוצרים — בקשות משיכה, סוגיות, קומיטים, אתרים, קבצים ומשאבים נוספים — שמוצגים מעל שדה הקלט של הצ'אט.",
-			"chatAgentHostStarterConfigurationTitle": "מאתחל מארח סוכן הצ'אט"
+			"chatAgentHostStarterConfigurationTitle": "מאתחל מארח סוכן הצ'אט",
+			"chat.agentHost.experimental.autoAttachPullRequests": "קובע אם Agent Host מגלה באופן אוטומטי בקשת משיכה עבור הענף שמוצא כעת ומשייך אותה. כאשר האפשרות מושבתת, נלקחות בחשבון רק בקשות משיכה שתועדו על ידי הסוכן כארטיפקטים, או שנבחרו או נוצרו במפורש באמצעות פעולות הפעלה."
 		},
 		"vs/platform/agentHost/common/agentMerge": {
 			"agentMerge.config.addressReviews": "טפל בסקירות",
@@ -2415,7 +2433,7 @@
 			"agentMerge.disabled.differentPullRequest": "מיזוג הסוכן הושבת כי ההפעלה הזו שויכה לבקשת משיכה אחרת.",
 			"agentMerge.disabled.indeterminate": "מיזוג הסוכן הושבת כי לא ניתן היה להעריך את מצב בקשת המשיכה שלו במשך {0} דקות.",
 			"agentMerge.disabled.invalidPullRequestUrl": "מיזוג הסוכן הושבת כי כתובת ה-URL של בקשת המשיכה המשויכת אינה תקינה.",
-			"agentMerge.disabled.pullRequestClosed": "מיזוג הסוכן הושבת כי בקשת המשיכה שלו סגורה או ממוזגת.",
+			"agentMerge.disabled.pullRequestClosed": "מיזוג הסוכן הושבת כי בקשת המשיכה שלו נסגרה ללא מיזוג.",
 			"agentMerge.disabled.repairBudgetExhausted": "מיזוג הסוכן הושבת כי אותם חוסמים בבקשת המשיכה נותרו לאחר ניסיונות תיקון חוזרים.",
 			"agentMerge.disabled.sessionArchived": "מיזוג הסוכן הושבת כי ההפעלה הזו הועברה לארכיון.",
 			"agentMerge.notice.configuration.addressReviews.disabled": "הוא לא יטפל עוד בתגובות סקירה חדשות בבקשת המשיכה, ולא ימתין להן לפני המיזוג.",
@@ -2454,7 +2472,8 @@
 			"agentMerge.notice.mergeMethod.merge": "הוא ייצור קומיט מיזוג.",
 			"agentMerge.notice.mergeMethod.rebase": "הוא יבצע ריבייס וימזג את בקשת המשיכה.",
 			"agentMerge.notice.mergeMethod.squash": "הוא יבצע מיזוג סקווש לבקשת המשיכה.",
-			"agentMerge.pullRequestMerged": "מיזוג הסוכן מיזג את בקשת המשיכה [#{0}]({1})."
+			"agentMerge.pullRequestMerged": "מיזוג הסוכן מיזג את בקשת המשיכה [#{0}]({1}).",
+			"agentMerge.disabled.pullRequestAlreadyMerged": "בקשת המשיכה [#{0}]({1}) מוזגה. מיזוג הסוכן מושבת כעת."
 		},
 		"vs/platform/agentHost/common/autoModeTiers": {
 			"autoModeTier.balance": "איזון",
@@ -2482,8 +2501,8 @@
 			"claude.modelThinkingLevel.title": "רמת חשיבה"
 		},
 		"vs/platform/agentHost/common/copilotCliConfig": {
-			"agentHost.config.autoModeTiers.description": "כשהאפשרות מופעלת, מודל Auto מציע בורר \"מיטוב עבור\" שמטה את הניתוב לעבר יעילות, איזון או אינטליגנציה. הפרופיל נבחר לפני שההפעלה מתחילה וחל למשך כל חייה.",
-			"agentHost.config.autoModeTiers.title": "פרופילי ניתוב אוטומטי",
+			"agentHost.config.autoModeTiers.description": "כשהאפשרות מופעלת, מודל Auto מציע בורר \"מיטוב עבור\" עם האפשרויות יעילות, איזון ואינטליגנציה. ניתן לשנות את ההעדפה במהלך ההפעלה. כשהאפשרות מושבתת, השירות בוחר כיצד לנתב, אלא אם הוגדרה עקיפה.",
+			"agentHost.config.autoModeTiers.title": "\"מיטוב עבור\" של Auto",
 			"agentHost.config.copilotSdkLogLevel.description": "קובעת את רישום היומן מסביבת ההרצה של Copilot SDK. רישום מעקבים (trace) של מארח הסוכנים תמיד מפעיל פלט מעקבים.",
 			"agentHost.config.copilotSdkLogLevel.info": "מידע",
 			"agentHost.config.copilotSdkLogLevel.title": "רמת יומן של Copilot SDK",
@@ -2512,8 +2531,6 @@
 			"agentHost.config.modelCapabilityOverrides.reasoningEffort.description": "מאמץ החשיבה עבור הפעלות על המודל הזה; דורס את רמת החשיבה בבורר המודלים. ערכים שאינם מזוהים מתעלמים מהם.",
 			"agentHost.config.modelCapabilityOverrides.reasoningEffort.title": "מאמץ חשיבה",
 			"agentHost.config.modelCapabilityOverrides.title": "דריסות יכולת מודל",
-			"agentHost.config.multiTurnContextRouting.description": "כשהאפשרות מופעלת, בחירת מודל Auto שולחת הודעות משתמש קודמות לנתב, כך שהוא מדרג את השיחה עד כה במקום את ההודעה האחרונה בלבד.",
-			"agentHost.config.multiTurnContextRouting.title": "ניתוב הקשר רב-תורות של Auto",
 			"agentHost.config.opus48Prompt.description": "כשהאפשרות מופעלת, הפעלות Copilot SDK שרצות על מודל Claude Opus 4.8 מחילות דריסות של קטעי פרומפט מערכת המכוילות ל-Opus 4.8 מעל הודעת המערכת המוגדרת כברירת מחדל.",
 			"agentHost.config.opus48Prompt.title": "פרומפט סוכן Opus 4.8",
 			"agentHost.config.reasoningSummary.description": "כשהאפשרות מופעלת, מבקשת תקצירי חשיבה תמציתיים עבור הפעלות Copilot SDK נתמכות.",
@@ -2525,7 +2542,11 @@
 			"agentHost.config.toolSearchDeferThreshold.description": "המספר המינימלי של כלים לפני שכלי MCP וכלים חיצוניים נדחים מאחורי חיפוש כלים. הגדר ל-0 כדי לדחות תמיד כלים חיצוניים. אפקטיבי רק כאשר חיפוש כלים מופעל.",
 			"agentHost.config.toolSearchDeferThreshold.title": "סף דחייה לחיפוש כלים",
 			"agentHost.config.toolSearchEnabled.description": "כשהאפשרות מופעלת, הפעלות Copilot SDK דוחות כלי MCP וכלי VS Code שאינם ליבה מאחורי כלי חיפוש-כלים, כך שהמודל מגלה אותם לפי דרישה במקום לטעון כל הגדרת כלי מראש.",
-			"agentHost.config.toolSearchEnabled.title": "חיפוש כלים של מארח הסוכנים"
+			"agentHost.config.toolSearchEnabled.title": "חיפוש כלים של מארח הסוכנים",
+			"agentHost.config.autoModeTierOverride.description": "עוקף את ההעדפה \"מיטוב עבור\" של Auto, גם כאשר הבורר מושבת. מקבל efficiency, balance או intelligence. מוחל כאשר הפעלה נוצרת או מתחדשת וכאשר המודל שלה משתנה. ערכים ריקים או לא נתמכים משתמשים בבורר או בברירות המחדל של השירות.",
+			"agentHost.config.autoModeTierOverride.title": "עקיפת \"מיטוב עבור\" של Auto",
+			"agentHost.config.claudeAdvisor.description": "כאשר האפשרות מופעלת, הפעלות Copilot SDK המשתמשות במודלי Claude נתמכים חושפות את הכלי Advisor המקורי של הספק.",
+			"agentHost.config.claudeAdvisor.title": "כלי Advisor של Claude"
 		},
 		"vs/platform/agentHost/common/copilotConfigSlashCommands": {
 			"copilotConfigSlash.autopilot.on": "עבור למצב טייס אוטומטי",
@@ -2746,16 +2767,16 @@
 			"agentHost.changeset.pr.existing.agentMerge": "בקשת המשיכה [#{0}]({1}) כבר קיימת; הופעל מיזוג סוכן.",
 			"agentHost.changeset.pr.existing.autoMerge": "בקשת המשיכה [#{0}]({1}) כבר קיימת; הופעל מיזוג אוטומטי ({2}).",
 			"agentHost.changeset.pr.existing.autoMergeFailed": "בקשת המשיכה [#{0}]({1}) כבר קיימת, אך לא ניתן היה להפעיל מיזוג אוטומטי: {2}",
-			"agentHost.changeset.pr.noChanges": "אין שינויי ענף שעבורם ניתן ליצור בקשת משיכה."
+			"agentHost.changeset.pr.noChanges": "אין שינויי ענף שעבורם ניתן ליצור בקשת משיכה.",
+			"agentHost.changeset.pr.agentMergeDisabled": "מיזוג הסוכן מושבת בתצורת המארח.",
+			"agentHost.changeset.pr.autoMergeUnavailable": "המאגר אינו מאפשר את שיטת המיזוג האוטומטי המבוקשת.",
+			"agentHost.changeset.pr.generationAuthRequired": "היכנס ל-Copilot כדי ליצור כותרת ותיאור לבקשת המשיכה, או הזן אותם באופן ידני.",
+			"agentHost.changeset.pr.generationInvalidResponse": "המודל לא החזיר כותרת ותיאור לבקשת המשיכה. הזן אותם באופן ידני.",
+			"agentHost.changeset.pr.generationNoContext": "אין הקשר של שיחה או של שינויים שממנו ניתן ליצור כותרת ותיאור לבקשת המשיכה.",
+			"agentHost.changeset.pr.stalePreparation": "המאגר או הענפים השתנו מאז שבקשת משיכה זו הוכנה. פתח מחדש את 'צור PR' כדי לסקור את הפרטים הנוכחיים."
 		},
 		"vs/platform/agentHost/node/agentHostPullRequestOperationProvider": {
-			"agentHost.changeset.createDraftPR": "צור טיוטת PR",
-			"agentHost.changeset.createDraftPRAgentMerge": "צור טיוטת PR ומיזוג סוכן",
 			"agentHost.changeset.createPR": "צור PR",
-			"agentHost.changeset.createPRAgentMerge": "צור PR ומיזוג סוכן",
-			"agentHost.changeset.createPRAutoMerge": "צור PR (מיזוג אוטומטי)",
-			"agentHost.changeset.createPRAutoRebase": "צור PR (ריבייס אוטומטי)",
-			"agentHost.changeset.createPRAutoSquash": "צור PR (סקווש אוטומטי)",
 			"agentHost.changeset.disableAutoMerge": "השבת מיזוג אוטומטי",
 			"agentHost.changeset.disableAutoMerge.description": "עוצר את GitHub ממיזוג בקשת המשיכה באופן אוטומטי לאחר שתהיה מוכנה.",
 			"agentHost.changeset.enableAutoMerge": "הפעל מיזוג אוטומטי",
@@ -2763,7 +2784,9 @@
 			"agentHost.changeset.markReady": "סמן כמוכן",
 			"agentHost.changeset.markReady.description": "מוציא את בקשת המשיכה ממצב טיוטה כדי שניתן יהיה לבדוק ולמזג אותה.",
 			"agentHost.changeset.mergePR": "מזג",
-			"agentHost.changeset.mergePR.description": "ממזג את בקשת המשיכה באמצעות שיטת המיזוג שהוגדרה."
+			"agentHost.changeset.mergePR.description": "ממזג את בקשת המשיכה באמצעות שיטת המיזוג שהוגדרה.",
+			"agentHost.changeset.preparePR": "הכן PR",
+			"agentHost.changeset.preparePR.description": "צור כותרת ותיאור לבקשת משיכה וקרא את אפשרויות המיזוג של המאגר מבלי לשנות את המאגר."
 		},
 		"vs/platform/agentHost/node/agentHostRenameCommand": {
 			"agentHostSlashCommand.rename.description": "שנה שם שיחה זו"
@@ -2773,7 +2796,9 @@
 			"agentHost.changeset.sync.synced": "השינויים סונכרנו."
 		},
 		"vs/platform/agentHost/node/agentHostSyncOperationProvider": {
-			"agentHost.changeset.sync": "סנכרן שינויים {0}↑"
+			"agentHost.changeset.sync": "סנכרן שינויים {0}↑",
+			"agentHost.changeset.syncIncoming": "סנכרן שינויים {0}↓",
+			"agentHost.changeset.syncIncomingOutgoing": "סנכרן שינויים {0}↓ {1}↑"
 		},
 		"vs/platform/agentHost/node/agentService": {
 			"agentHost.download.agentSdkTitle": "מוריד סוכן {0}",
@@ -2924,9 +2949,9 @@
 			"codex.sessionConfig.networkAccessEnabledDescription": "מאפשר לקריאות כלים בתוך ארגז החול לבצע בקשות רשת יוצאות. חל רק כאשר ארגז החול מוגדר לכתיבה בסביבת העבודה.",
 			"codex.sessionConfig.permissionsPreset": "אישורים",
 			"codex.sessionConfig.permissionsPreset.autoReview": "בדיקה אוטומטית",
-			"codex.sessionConfig.permissionsPreset.autoReviewDescription": "אותה גישה לסביבת העבודה כמו ברירת המחדל, אך בקשות אישור מנותבות דרך הבודק האוטומטי במקום לשאול אותך.",
+			"codex.sessionConfig.permissionsPreset.autoReviewDescription": "אותה גישה בארגז חול כמו ברירת המחדל, אך בקשות אישור מנותבות דרך הבודק האוטומטי במקום לשאול אותך.",
 			"codex.sessionConfig.permissionsPreset.default": "הרשאות ברירת מחדל",
-			"codex.sessionConfig.permissionsPreset.defaultDescription": "Codex יכול לקרוא ולערוך קבצים בסביבת העבודה ולהריץ פקודות מקומיות שגרתיות. הוא שואל לפני שימוש באינטרנט או יציאה מחוץ לסביבת העבודה.",
+			"codex.sessionConfig.permissionsPreset.defaultDescription": "Codex יכול לקרוא ולערוך קבצים בסביבת העבודה ולהריץ פקודות מקומיות שגרתיות תחת ארגז החול של הפלטפורמה. הוא שואל לפני שימוש באינטרנט או בקשת גישה רחבה יותר.",
 			"codex.sessionConfig.permissionsPreset.fullAccess": "גישה מלאה",
 			"codex.sessionConfig.permissionsPreset.fullAccessDescription": "Codex יכול לערוך קבצים מחוץ לסביבת העבודה ולהשתמש באינטרנט בלי לשאול. יש להשתמש באפשרות זו רק כשרוצים גישה מלאה למחשב.",
 			"codex.sessionConfig.permissionsPresetDescription": "כמה Codex יכול לבצע בעצמו לפני שהוא מבקש אישור.",
@@ -2963,7 +2988,8 @@
 		"vs/platform/agentHost/node/codex/codexGuardianReview": {
 			"codex.guardianReview.aborted": "הבדיקה האוטומטית נעצרה",
 			"codex.guardianReview.requestedAction": "פעולה מבוקשת: {0}",
-			"codex.guardianReview.timedOut": "הבדיקה האוטומטית חרגה מהזמן הקצוב"
+			"codex.guardianReview.timedOut": "הבדיקה האוטומטית חרגה מהזמן הקצוב",
+			"codex.guardianReview.writeStdin": "שלח קלט לתוכנית"
 		},
 		"vs/platform/agentHost/node/codex/codexMapAppServerEvents": {
 			"codex.compaction.completed": "השיחה כווצה",
@@ -2993,7 +3019,9 @@
 			"codex.configuration.personalization": "התאמה אישית",
 			"codex.configuration.review": "מדיניות בדיקה",
 			"codex.configuration.review.save": "שמור מדיניות",
-			"codex.configuration.title": "Codex"
+			"codex.configuration.title": "Codex",
+			"codex.configuration.portableProvider.conflict": "לא ניתן להעביר שיחת ChatGPT זו ל-Copilot מכיוון שתצורת Codex כבר מגדירה 'model_providers.vscode-proxy' שאינו תואם. עדכן הגדרה זו כך שתשתמש באימות OpenAI מקורי לפני שתנסה שוב. התצורה הקיימת והשיחה המקורית לא שונו.",
+			"codex.configuration.portableProvider.unavailable": "לא ניתן להעביר שיחת ChatGPT זו ל-Copilot מכיוון שלא ניתן היה לקרוא בבטחה את תצורת המשתמש של Codex. השיחה המקורית לא שונתה."
 		},
 		"vs/platform/agentHost/node/codexCompactCommand": {
 			"codex.compact.description": "כווץ את ההקשר של שיחה זו"
@@ -3001,10 +3029,6 @@
 		"vs/platform/agentHost/node/copilot/copilotAgent": {
 			"copilot.modelAutoTier.description": "משפיע על אילו מודלים 'אוטומטי' מנתב את ההפעלה הזו.",
 			"copilot.modelAutoTier.title": "אופטימיזציה עבור",
-			"copilot.modelContextSize.default": "ברירת מחדל",
-			"copilot.modelContextSize.description": "בוחר את גודל חלון ההקשר עבור מודל זה.",
-			"copilot.modelContextSize.longerSessions": "הפעלות ארוכות יותר",
-			"copilot.modelContextSize.title": "גודל ההקשר",
 			"copilot.modelThinkingLevel.description": "שולט בכמות מאמץ החשיבה שהמודל משתמש בו.",
 			"copilot.modelThinkingLevel.title": "רמת חשיבה",
 			"copilotAgent.connectionClosed": "Copilot נעצר באופן בלתי צפוי. נסה את הבקשה שוב.",
@@ -3047,7 +3071,10 @@
 			"agentHost.copilot.systemNotification.instructionDiscovered": "התגלתה הנחיה: {0}",
 			"agentHost.copilot.systemNotification.newInboxMessage": "הודעת דואר נכנס חדשה מ-{0}",
 			"agentHost.copilot.systemNotification.shellCompleted": "הפעולה במסוף הסתיימה",
-			"agentHost.copilot.systemNotification.shellDescriptionCompleted": "`{0}` הושלם"
+			"agentHost.copilot.systemNotification.shellDescriptionCompleted": "`{0}` הושלם",
+			"agentHost.copilot.systemNotification.unnamedAgentCompleted": "סוכן הרקע הושלם",
+			"agentHost.copilot.systemNotification.unnamedAgentFailed": "סוכן הרקע נכשל",
+			"agentHost.copilot.systemNotification.unnamedAgentIdle": "סוכן הרקע סיים"
 		},
 		"vs/platform/agentHost/node/copilot/copilotToolDisplay": {
 			"copilot.permission.create.title": "ליצור קובץ?",
@@ -3159,7 +3186,11 @@
 		"vs/platform/agentHost/node/devContainerAgentHostService": {
 			"devContainerAgentHost.commandFailed": "פקודת Dev Container נכשלה (קוד יציאה {0}): {1}\nstderr: {2}",
 			"devContainerAgentHost.invalidUpResult": "ה-CLI של Dev Container החזיר תוצאה לא תקינה: {0}",
-			"devContainerAgentHost.unsupportedPlatform": "פלטפורמת Dev Container לא נתמכת: {0} {1}"
+			"devContainerAgentHost.unsupportedPlatform": "פלטפורמת Dev Container לא נתמכת: {0} {1}",
+			"devContainerAgentHost.dockerInspectFailed": "Docker inspect נכשל (קוד יציאה {0}): {1}",
+			"devContainerAgentHost.invalidMountJson": "לא ניתן לנתח את מידע ה-mount של Docker: {0}",
+			"devContainerAgentHost.invalidMounts": "Docker החזיר מידע mount לא חוקי: {0}",
+			"devContainerAgentHost.ownerLookupFailed": "לא ניתן לבדוק את הבעלים של {0}: {1}"
 		},
 		"vs/platform/agentHost/node/localCommands/bangLocalCommand": {
 			"agentHostBang.background": "הפקודה רצה ברקע",
@@ -3203,9 +3234,11 @@
 			"agentMerge.tool.replyReview.failed": "המענה למשוב הבדיקה נכשל",
 			"agentMerge.tool.replyReview.running": "מגיב למשוב הבדיקה",
 			"agentMerge.tool.rerunWorkflow": "הרץ מחדש את זרימת העבודה",
-			"agentMerge.tool.rerunWorkflow.complete": "הריץ מחדש זרימת עבודה שנכשלה",
+			"agentMerge.tool.rerunWorkflow.complete": "התבקשה הרצה מחדש של זרימת העבודה",
 			"agentMerge.tool.rerunWorkflow.failed": "ההרצה מחדש של זרימת העבודה נכשלה",
-			"agentMerge.tool.rerunWorkflow.running": "מריץ מחדש זרימת עבודה שנכשלה"
+			"agentMerge.tool.rerunWorkflow.running": "מבקש הרצה מחדש של זרימת העבודה",
+			"agentMerge.tool.rerunWorkflow.deferred": "ההרצה מחדש של זרימת העבודה נדחתה עד לסיום הניסיון הנוכחי",
+			"agentMerge.tool.rerunWorkflow.indeterminate": "לא ניתן היה לאשר את ההרצה מחדש של זרימת העבודה"
 		},
 		"vs/platform/agentHost/node/shared/sessionServerTools": {
 			"toolComplete.createChatInCurrentSession": "נוצרה שיחה בהפעלה הנוכחית",
@@ -3397,7 +3430,8 @@
 			"isMobile": "האם הפלטפורמה היא דפדפן אינטרנט לנייד",
 			"isWeb": "האם הפלטפורמה היא דפדפן אינטרנט",
 			"isWindows": "האם מערכת ההפעלה היא Windows",
-			"productQualityType": "סוג האיכות של VS Code"
+			"productQualityType": "סוג האיכות של VS Code",
+			"isChromeOS": "האם מערכת ההפעלה היא ChromeOS"
 		},
 		"vs/platform/contextkey/common/scanner": {
 			"contextkey.scanner.hint.didYouForgetToEscapeSlash": "שכחת לתת תו בריחה ל-'/' (לוכסן)? הוסף שני לוכסנים הפוכים לפניו כדי לתת לו תו בריחה, למשל: '\\/'.",
@@ -4563,7 +4597,8 @@
 			"chatTabsAriaLabel": "צ'אטים",
 			"deleteChat": "מחק צ'אט",
 			"renameChat": "שנה שם",
-			"renameChat.aria": "שנה שם לצ'אט"
+			"renameChat.aria": "שנה שם לצ'אט",
+			"copyChatLink": "העתק קישור"
 		},
 		"vs/sessions/browser/parts/chatGroupView": {
 			"chatGroupAriaLabel": "קבוצת צ'אט {0} מתוך {1}",
@@ -4674,7 +4709,8 @@
 			"sessionRemoteHost.startingDescription": "מפעיל את {0}.",
 			"sessionRemoteHost.tryNow": "נסה עכשיו",
 			"sessionRemoteHost.unknown": "המארח המרוחק",
-			"sessionRemoteHost.waitingForConnection": "ממתין לחיבור למארח הסוכן..."
+			"sessionRemoteHost.waitingForConnection": "ממתין לחיבור למארח הסוכן...",
+			"sessionRemoteHost.connect": "התחבר"
 		},
 		"vs/sessions/browser/sessionConversationGroups": {
 			"sessionConversationStatus.ariaLabel": "מצב: {0}",
@@ -4739,7 +4775,6 @@
 			"sessionHasCachedChanges": "האם להפעלה של תצוגת ההפעלה יש שינויים זכורים מהפעם האחרונה שבה הוצגה תווית השינויים שלה, בעוד שהיא עדיין לא דיווחה על השינויים שלה. משמש להצגה אופטימית של תווית השינויים כאשר הפעלה נפתחת",
 			"sessionHasChanges": "האם להפעלה של תצוגת ההפעלה יש שינויים ממתינים (הוספות או מחיקות)",
 			"sessionHasGitRepository": "האם להפעלה יש מאגר Git שמיש",
-			"sessionHasGitSyncActionRunning": "האם להפעלה יש פעולת סנכרון Git הפועלת כרגע",
 			"sessionHasIssues": "האם ההפעלה של תצוגת ההפעלה מפנה לפחות לסוגיית GitHub אחת",
 			"sessionHasMultipleCommittedChats": "האם להפעלה של תצוגת ההפעלה יש יותר מצ'אט מחויב (שאינו טיוטה) אחד, מה שקובע את הצגת התפריט הנפתח של הצ'אטים",
 			"sessionHasMultipleOpenChats": "האם להפעלה של תצוגת ההפעלה יש יותר מצ'אט פתוח אחד (הלשוניות המוצגות בשורה, כולל טיוטות בתוך חלון הכתיבה). משמש להגבלת הניווט בין צ'אטים (הצ'אט הבא/הקודם, מחליף הצ'אטים ב-Ctrl+Tab)",
@@ -5043,7 +5078,6 @@
 			"automation.form.branch.unknown": "—",
 			"automation.form.branch.unsupportedReason": "סוג ההפעלה שנבחר אינו תומך בהגדרת ענף עץ עבודה.",
 			"automation.form.branchRequired": "נדרש ענף לבידוד באמצעות עץ עבודה.",
-			"automation.form.chooseWorkspace": "בחר סביבת עבודה",
 			"automation.form.day": "יום בשבוע",
 			"automation.form.enabled": "מופעל (המתזמן מריץ אוטומציה זו כשמגיע המועד)",
 			"automation.form.folderRequired": "נדרשת תיקיית סביבת עבודה.",
@@ -5070,10 +5104,6 @@
 			"automation.form.sessionConfigurationUnavailable": "תצורת ההפעלה אינה זמינה",
 			"automation.form.sessionControls": "פקדי הפעלה",
 			"automation.form.sessionTypeRequired": "נדרש סוג הפעלה.",
-			"automation.form.targetHint.choose": "בחר סביבת עבודה או 'אין סביבת עבודה' כדי לראות אילו סוכנים יכולים להריץ אוטומציה זו.",
-			"automation.form.targetHint.singleQuickChat": "רק {0} זמין ללא סביבת עבודה. בחר סביבת עבודה כדי להשתמש בסוכן אחר.",
-			"automation.form.targetHint.singleWorkspace": "רק {0} זמין עבור סביבת עבודה זו. שנה את סביבת העבודה כדי להשתמש בסוכן אחר.",
-			"automation.form.targetHint.unavailable": "אין סוכנים זמינים כרגע ליעד זה.",
 			"automation.form.time": "שעה",
 			"automation.form.trustFolderMessage": "הפעלת סוכן תוכל לקרוא קבצים, להריץ פקודות ולבצע שינויים בתיקייה זו.",
 			"automation.form.workspacePicker.action": "בורר סביבת העבודה של האוטומציות",
@@ -5082,7 +5112,9 @@
 			"automation.interval.daily": "יומי",
 			"automation.interval.hourly": "כל שעה",
 			"automation.interval.manual": "ידני",
-			"automation.interval.weekly": "שבועי"
+			"automation.interval.weekly": "שבועי",
+			"automation.form.target": "יעד",
+			"automation.form.targetOptions": "אפשרויות יעד האוטומציה"
 		},
 		"vs/sessions/contrib/automations/browser/automationDialogService": {
 			"automation.dialog.cancel": "ביטול",
@@ -5176,7 +5208,6 @@
 			"changes": "שינויים",
 			"changesView.diffStats.file": "קובץ אחד",
 			"changesView.diffStats.files": "{0} קבצים",
-			"changesView.diffStats.label": "{0} קבצים, {1} הוספות, {2} מחיקות",
 			"changesView.emptyTitle": "שינויים",
 			"changesView.noChanges": "אין קבצים שהשתנו",
 			"changesView.viewChanges": "הצג את כל השינויים",
@@ -5184,7 +5215,10 @@
 			"chatEditing.versionsPicker": "גרסאות",
 			"revealChecks": "הצג בדיקות",
 			"setListViewMode": "הצג כרשימה",
-			"setTreeViewMode": "הצג כעץ"
+			"setTreeViewMode": "הצג כעץ",
+			"changesView.diffStats.accessibleLabel": "{0}, {1} הוספות, {2} מחיקות",
+			"changesView.picker.tooltip": "{0}: {1}",
+			"changesView.picker.tooltipWithSummary": "{0}: {1}, {2}"
 		},
 		"vs/sessions/contrib/changes/browser/changesViewActions": {
 			"agentSessions.collapseAllDiffs": "כווץ את כל ההשוואות",
@@ -5203,7 +5237,9 @@
 			"openChangesView": "שינויים",
 			"openFile": "פתח קובץ",
 			"openPullRequest": "פתח בקשת משיכה",
-			"togglePreferredDiffView": "החלף את תצוגת ההשוואה המועדפת"
+			"togglePreferredDiffView": "החלף את תצוגת ההשוואה המועדפת",
+			"agentSessions.diffEditorWordWrap": "גלישת מילים",
+			"agentSessions.editorWordWrap": "גלישת מילים"
 		},
 		"vs/sessions/contrib/changes/browser/checksActions": {
 			"ci.failedState": "נכשל",
@@ -5241,7 +5277,17 @@
 			"sessionsChanges.operations": "כשזמין, סרגל הכלים של השינויים או שורת כותרת העורך מספקים גם פעולות לביצוע קומיט, מיזוג, סנכרון או יצירת בקשת משיכה. כש'מיזוג סוכן' היא הפעולה הראשית, הפעלתה מחליפה את מצב 'מיזוג סוכן' והתפריט הנפתח שלה משמש להגדרתה. השתמש ב-Tab וב-Shift+Tab כדי לעבור בין רשימת הקבצים לפעולות סרגל הכלים.",
 			"sessionsChanges.overview": "אתה נמצא בתצוגת השינויים. היא מציגה את הקבצים שהשתנו על ידי ההפעלה הנוכחית כעץ, ולאחריו קטע בדיקות שניתן לכווץ.",
 			"sessionsChanges.tree": "השתמש בחצים למעלה ולמטה כדי לעבור בין קבצים שהשתנו, ובחצים שמאלה וימינה כדי לכווץ או להרחיב תיקיות. הקש Enter כדי לפתוח את ההשוואה של הקובץ הנבחר.",
-			"sessionsChanges.viewMode": "תצוגת השינויים יכולה להציג קבצים כעץ או כרשימה שטוחה. השתמש בפעולות סרגל הכלים של התצוגה כדי לעבור בין מצבי עץ ורשימה."
+			"sessionsChanges.viewMode": "תצוגת השינויים יכולה להציג קבצים כעץ או כרשימה שטוחה. השתמש בפעולות סרגל הכלים של התצוגה כדי לעבור בין מצבי עץ ורשימה.",
+			"sessionsChanges.createPR": "עבור הפעלות מארח סוכן, 'צור PR' פותח טופס עם כותרת ותיאור שנוצרו וניתנים לעריכה, תיבת סימון לטיוטה ואפשרויות מיזוג. הטופס מופיע בזמן שהיצירה מתבצעת ושומר כל דבר שאתה מקליד. השתמש ב-Tab כדי לנווט וב-Escape כדי לבטל.",
+			"sessionsChanges.createPR.agentMergeHints": "לכל תיבת סימון של מיזוג הסוכן יש תיאור שמסביר מה היא עושה ומתי היא פועלת. מקד תיבת סימון כדי לשמוע את התיאור שלה, או רחף מעל סמל המידע שאחרי התווית שלה כדי לקרוא אותו. לחץ Space כדי להחליף את מצבה.",
+			"sessionsChanges.createPR.branches": "הכותרת מזהה את המאגר, ואחריה ענף הבסיס משמאל וענף המקור מימין. החץ מצביע לכיוון ענף הבסיס שיקבל את השינויים.",
+			"sessionsChanges.createPR.draft": "'צור כטיוטה' משאיר את בקשת המשיכה כטיוטה עד שתהיה מוכנה לסקירה.",
+			"sessionsChanges.createPR.merge": "'מזג ידנית' משאיר את המיזוג בידיך. בחירה ב'מיזוג הסוכן' חושפת תיבות סימון לטיפול בסקירות, לתיקון כשלי CI ולפתרון התנגשויות או ענפים שמפגרים אחור. 'מזג בקשת משיכה' מאפשר לכבות את המיזוג, למזג רק אם מיזוג הסוכן לא ביצע שינויים, או למזג כשמוכן. הגדרות ההפעלה משתנות רק בעת השליחה, ולא בעת פתיחת הטופס או ביטולו. 'מיזוג אוטומטי' מבקש מ-GitHub למזג כאשר הדרישות מתקיימות ומאפשר לבחור שיטת מיזוג מותרת. המיזוג האוטומטי של GitHub אינו זמין עבור טיוטות.",
+			"sessionsChanges.createPR.navigation": "השתמש ב-Tab וב-Shift+Tab כדי לעבור בין שדות ולחצנים. השתמש במקשי החצים כדי לבחור אפשרות מיזוג וב-Space כדי להחליף את מצב 'צור כטיוטה'.",
+			"sessionsChanges.createPR.overview": "אתה נמצא בטופס 'צור בקשת משיכה'. הכותרת והתיאור נוצרים ברקע. כל שדה מציג מחוון טעינה ומדווח על מצב עסוק עד שהיצירה מסתיימת. ניתן להתחיל לערוך מיד; טקסט שנוצר לעולם אינו מחליף את העריכות שלך.",
+			"sessionsChanges.createPR.preferences": "טיוטה, אפשרויות מיזוג ופעולת השליחה האחרונה שבה נעשה שימוש נשמרים בין הפעלות בפרופיל זה, גם אם תבטל. כותרת, תיאור, מאגר וענפים אינם נשמרים. אפשרויות שאינן זמינות אינן מוחלות, אך ההעדפות שלך נשמרות עבור מאגרים ומארחים שתומכים בהן.",
+			"sessionsChanges.createPR.submit": "'צור PR' מבצע קומיט ודחיפה של השינויים שלך ויוצר את בקשת המשיכה ישירות. כשזמין, עבור עם Tab אל 'פעולות בקשת משיכה' ולחץ Enter או Space כדי לפתוח את התפריט הנפתח. בחר 'שלח הודעת יצירת PR' כדי לשלוח במקום זאת את פרטי הטופס והאפשרויות לצ'אט של הפעלה זו. הפעולה האחרונה שבה נעשה שימוש הופכת ללחצן הראשי. Control+Enter ב-Windows ובלינוקס, או Command+Enter ב-macOS, מריץ את הפעולה הראשית הזו. לחץ Escape כדי לסגור את התפריט הנפתח, או Escape בטופס או 'ביטול' כדי לסגור ללא שליחה.",
+			"sessionsChanges.editorWordWrap": "השתמש ב'גלישת מילים' בתפריט 'פעולות נוספות' שבאזור כותרת העורך כדי לשלוט בגלישת מילים באופן נפרד עבור עורכי קוד ועורכי השוואה מרובי קבצים בחלון הסוכנים."
 		},
 		"vs/sessions/contrib/changes/common/changes": {
 			"sessionChangesEditor.changedFiles": "{0} קבצים",
@@ -5334,7 +5380,9 @@
 			"chat.agentSessions.setBackground.placeholder": "בחר סוג רקע",
 			"chat.agentSessions.setBackground.recentImage": "תמונת רקע הצ'אט הוגדרה ל-{0}.",
 			"chat.agentSessions.setBackground.title": "הגדר את רקע הצ'אט",
-			"sessions.newSession.label": "הפעלה חדשה"
+			"sessions.newSession.label": "הפעלה חדשה",
+			"chat.agentSessions.archiveNudge.enabled": "מציעה להעביר לארכיון הפעלה לא פעילה כאשר כל בקשות המשיכה של GitHub המשויכות להפעלה מוזגו. דחיית ההצעה מסתירה אותה עבור אותה הפעלה עד שהיא תועבר לארכיון או תימחק.",
+			"chat.agentSessions.consolidatedRemoteWorkspaces.deprecated": "הוצא משימוש. השתמש במקום זאת בהגדרה של בורר סביבות העבודה המאוחד."
 		},
 		"vs/sessions/contrib/chat/browser/externalSessionBanner": {
 			"externalSessionBanner.actions.ariaLabel": "פעולות של באנר הפעלה חיצונית",
@@ -5427,7 +5475,8 @@
 			"sessionsStt.cancelPreparing": "בטל הכתבה. {0}",
 			"sessionsStt.dictate": "הכתבה (דיבור לטקסט)",
 			"sessionsStt.stop": "עצור הכתבה",
-			"voiceInputMode": "מצב קלט קולי"
+			"voiceInputMode": "מצב קלט קולי",
+			"initializing": "מאתחל..."
 		},
 		"vs/sessions/contrib/chat/browser/newChatInSessionWidget": {
 			"newChatInSessionPlaceholder": "שאל שאלת המשך או התחל נושא חדש בתוך הפעלה זו...",
@@ -5605,7 +5654,10 @@
 			"sessionChatPills.pullRequestMerged": "ממוזגת",
 			"sessionChatPills.pullRequestOpen": "פתח",
 			"sessionChatPills.pullRequests": "בקשות משיכה",
-			"sessionChatPills.pullRequestWithTitle": "בקשת משיכה #{0}: {1}"
+			"sessionChatPills.pullRequestWithTitle": "בקשת משיכה #{0}: {1}",
+			"sessionChatPills.pullRequestRemoved": "ארטיפקט בקשת המשיכה הוסר מההפעלה.",
+			"sessionChatPills.removePullRequest": "הסר ארטיפקט בקשת משיכה מההפעלה",
+			"sessionChatPills.removePullRequestFailed": "לא ניתן היה להסיר את ארטיפקט בקשת המשיכה: {0}"
 		},
 		"vs/sessions/contrib/chat/browser/sessionChatInputToolbarDebug": {
 			"sessions.debug.chatPills.agentFeedback": "משוב סוכן לטיפול",
@@ -5653,11 +5705,11 @@
 			"sessionsChat.contextReferences": "הקלד # בקלט הצ'אט כדי לצרף הקשר. השתמש ב-#file כדי להפנות לקובץ או לתיקייה, או ב-#session כדי להפנות להפעלת סוכן אחרת. הפניה להפעלה יחד עם הפקודה `/troubleshoot` מנתחת את היומנים של אותה הפעלה במקום את היומנים של ההפעלה הנוכחית. קבל הצעה באמצעות Tab או Enter. הפניות שניתן לפתוח מופיעות ככפתורים מעל הקלט; הפעלת אחת פותחת אותה, וכפתור ההסרה שלה מנתק אותה.",
 			"sessionsChat.conversations": "כאשר מספר צ'אטים מופיעים ככרטיסיות בקבוצה אחת, שורת הכרטיסיות מחליפה את כותרת ההפעלה וכוללת את פעולות ההפעלה. קבוצות צ'אט זו לצד זו שומרות על כותרת ההפעלה ומשאירות את שורות הכרטיסיות שלהן קומפקטיות.",
 			"sessionsChat.createdBySession": "כאשר הפעלה נוצרה על ידי הפעלה אחרת, מקד אותה ברשימת ההפעלות והשתמש בפקודה 'הצג ריחוף'{0}. העבר את המיקוד לקישור 'נוצר על ידי', ולאחר מכן הקש Enter או מקש הרווח כדי לפתוח את ההפעלה היוצרת.",
-			"sessionsChat.customizations": "מקד את תצוגת התאמות הצ'אט האישיות{0}.",
+			"sessionsChat.customizations": "מקד את מקטע התאמות הצ'אט האישיות בתחתית סרגל הצד השמאלי{0}.",
 			"sessionsChat.delegatedMessage": "הודעות שנשלחו על ידי הפעלה או צ'אט אחר מציגות סימון מקור מעל ההודעה. הקש Tab כדי למקד את הסימון, ולאחר מכן הקש Enter או מקש הרווח כדי לפתוח את הצ'אט המקורי.",
 			"sessionsChat.deleteChat": "כדי למחוק צ'אט לצמיתות, פתח את תפריט ההקשר של כרטיסיית הצ'אט ובחר 'מחק צ'אט'. פעולה זו הרסנית ולא ניתן לבטל אותה.",
 			"sessionsChat.deleteSession": "כדי למחוק הפעלה לצמיתות, פתח את תפריט ההקשר שלה ובחר במחיקה. פעולה זו הרסנית ואינה ניתנת לביטול.",
-			"sessionsChat.devContainer": "כאשר הפעלות מארח סוכן של Dev Container מופעלות, Docker זמין, והתיקייה המקומית שנבחרה מכילה תצורת Dev Container, מופיעה תיבת סימון Dev Container לפני עץ עבודה חדש. סמן אותה כדי להריץ את ההפעלה על מארח סוכן בתוך ה-Dev Container של אותה תיקייה.",
+			"sessionsChat.devContainer": "כאשר הפעלות מארח סוכן של Dev Container מופעלות, Docker זמין, ותיקייה מקומית מכילה תצורת Dev Container, פתח את תפריט המשנה של התיקייה ובחר 'השתמש ב-Dev Container'. בורר סביבות העבודה יזהה אז את התיקייה עם הסיומת Dev Container. בחר 'השתמש במקומי' כדי לחזור.",
 			"sessionsChat.dictation": "כאשר הכתבה מוגדרת, הכתב את ההודעה שלך לתוך שדה הקלט{0}. הקש כדי להתחיל ולעצור, או החזק לחוץ כדי להכתיב רק בזמן הלחיצה. אם מודל ההמרה מדיבור לטקסט עדיין מתכונן, הפעל את פקד ההכתבה שוב כדי לבטל.",
 			"sessionsChat.externalSessionBanner": "כשאתה פותח לראשונה הפעלה שנוצרה באפליקציה אחרת, מופיע באנר בראש הצ'אט. השתמש ב-Tab כדי להגיע לבורר ההפעלות החיצוניות שלו, בחר אפשרות והפעל את שמירה. הפעולה סגור מבטלת את הבאנר מבלי לשנות את ההגדרה. שמירה או סגירה מבטלות את הבאנר לצמיתות.",
 			"sessionsChat.externalSessionFilter": "תפריט הסינון של רשימת ההפעלות כולל תת-תפריט חיצוני. השתמש בו כדי לבחור אם הפעלות חיצוניות מאפליקציה אחרת מוצגות ב-24 השעות האחרונות, ב-7 הימים האחרונים, תמיד, או כלל לא.",
@@ -5674,7 +5726,7 @@
 			"sessionsChat.history": "השתמש בחצי מעלה ומטה כדי לנווט בהיסטוריית הבקשות שלך בתיבת הקלט.",
 			"sessionsChat.input": "אתה נמצא בשדה קלט הצ'אט. הקלד הודעה ולחץ Enter כדי לשלוח אותה.",
 			"sessionsChat.inputBackground": "לחץ Alt+Enter כדי להתחיל את ההפעלה ברקע מבלי לנווט אליה. ההפעלה שהותחלה מופיעה בתצוגת הפעלות הצ'אט.",
-			"sessionsChat.inputPills": "כאשר תוויות מטא-נתוני הפעלה או סטטוס תור פעיל מופיעות מעל שדה הקלט, לחץ Tab כדי להגיע אליהן, השתמש במקשי החצים שמאלה וימינה כדי לעבור ביניהן, ולחץ Enter או Space כדי להפעיל אחת מהן. לחץ קליק ימני על תווית כדי לבחור אילו תוויות מוצגות.",
+			"sessionsChat.inputPills": "כאשר תוויות מטא-נתוני הפעלה או סטטוס תור פעיל מופיעות מעל שדה הקלט, לחץ Tab כדי להגיע אליהן, השתמש במקשי החצים שמאלה וימינה כדי לעבור ביניהן, ולחץ Enter או Space כדי להפעיל אחת מהן. פתח את תפריט ההקשר{0} כדי לבחור אילו תוויות מוצגות. 'אפשרויות בקשות משיכה' מאפשרת להציג את כל בקשות המשיכה או רק את הפתוחות ואת הטיוטות, והבחירה נשמרת בין הפעלות. אם כל בקשות המשיכה מסוננות החוצה, השתמש בתפריט ההקשר של סרגל הכלים כדי להציג שוב את כולן.",
 			"sessionsChat.micContextMenu": "כדי לבחור מיקרופון או לכבות הכתבה או מצב קול, מקד את כפתור המיקרופון בסרגל הכלים של הקלט ופתח את תפריט ההקשר שלו (למשל Shift+F10).",
 			"sessionsChat.mobileConfig": "בנייד, בוררי המצב והמודל מופיעים כשבבים לחיצים מתחת לשדה הקלט. הקש על שבב כדי לפתוח גיליון תחתון שבו ניתן לשנות את הבחירה.",
 			"sessionsChat.navigateNextSession": "נווט אל ההפעלה הבאה ברשימה{0}.",
@@ -5691,16 +5743,24 @@
 			"sessionsChat.quickChat": "כדי להתחיל צ'אט מהיר ללא סביבת עבודה, השתמש בפקודה צ'אט מהיר חדש{0} או בכפתור הפלוס במקטע צ'אטים ברשימת ההפעלות. כאשר סביבות עבודה מרוחקות מאוחדות מופעלות, פעולה זו פותחת את מרכיב ההפעלה החדשה, שבו ניתן לבחור ללא סביבת עבודה. אחרת, היא מתחילה צ'אט ללא סביבת עבודה ישירות. הפקודה החלף פאנל צד מושבתת עבור צ'אטים מהירים.",
 			"sessionsChat.renameChat": "כאשר שינוי שם זמין עבור צ'אט שאינו ראשי, מקד את התמליל או את שדה הקלט שלו או את השורה המקוננת שלו ברשימת ההפעלות, ולאחר מכן הפעל את שינוי שם{0}.",
 			"sessionsChat.renameSession": "כדי לשנות את שמה של הפעלה, מקד את השורה שלה ברשימת ההפעלות או מקד את תמליל הצ'אט הראשי או שדה הקלט שלה, ולאחר מכן הפעל את שינוי שם{0}. ניתן גם ללחוץ לחיצה כפולה על הכותרת שלה ברשימת ההפעלות או לפתוח את תפריט ההקשר שלה ולבחור שינוי שם.",
-			"sessionsChat.sessionsListChatContextMenu": "פתח את תפריט ההקשר של צ'אט מקונן כדי לשנות את שמו, לפתוח אותו בצד, או, כשזה נתמך, למחוק אותו לצמיתות.",
+			"sessionsChat.sessionsListChatContextMenu": "פתח את תפריט ההקשר של צ'אט מקונן כדי לשנות את שמו, לפתוח אותו בצד, או, כשזה נתמך, למחוק אותו לצמיתות. צ'אטים של מארח סוכן מציעים גם 'העתק קישור'.",
 			"sessionsChat.sessionsListChats": "הפעלות עם מספר צ'אטים הפונים למשתמש מציגות את הצ'אטים הללו מקוננים מתחת להפעלה ברשימת ההפעלות. השתמש במקשי החצים לניווט ברשימה וב-Enter כדי לפתוח צ'אט. צ'אטים צדדיים וצ'אטים של תת-סוכנים מושמטים מרשימה מקוננת זו: ניתן להגיע לצ'אטים צדדיים מהתפריט הנפתח צ'אטים צדדיים בתפריט הגלישה של ההפעלה, וצ'אטים של תת-סוכנים נפתחים מהתוויות שלהם בתמליל הצ'אט.",
 			"sessionsChat.sessionsView": "מקד את תצוגת הפעלות הצ'אט{0}.",
 			"sessionsChat.subagentPills": "ניתן לגרור תוויות תת-סוכן בתמליל הצ'אט לקצה של קבוצת צ'אט כדי לפתוח את תת-הסוכן לצד הצ'אט הנוכחי. במקלדת, מקד תווית תת-סוכן ולחץ Alt+Enter כדי לפתוח אותה לצד הצ'אט הנוכחי.",
 			"sessionsChat.toggleSidePanel": "החלף את מצב פאנל הצד (אזור העורך יחד עם הסרגל המשני) בין פתוח לסגור{0}.",
-			"sessionsChat.viewAllChanges": "תוויות סטטוס מעל שדה קלט הצ'אט כוללות את נתוני ההשוואה של ההפעלה (שורות שנוספו והוסרו). הפעל את תווית השינויים כדי לפתוח את עורך ההשוואה מרובה הקבצים עבור כל שינויי ההפעלה{0}.",
+			"sessionsChat.viewAllChanges": "תוויות סטטוס מעל שדה קלט הצ'אט כוללות את נתוני ההשוואה של ההפעלה (שורות שנוספו והוסרו). הפעל את תווית השינויים כדי לפתוח את עורך ההשוואה מרובה הקבצים עם 'שינויי הפעלה' עבור הפעלת תיקייה או 'שינויי ענף' עבור הפעלת עץ עבודה{0}.",
 			"sessionsChat.voiceMode": "התחל או עצור את מצב קול כדי לתקשר עם הסוכן באמצעות המיקרופון שלך{0}.",
 			"sessionsChat.vscodePet": "השתמש בפריט המסומן חיית מחמד בתפריט ההקשר של תצוגת ההפעלה החדשה, או הקלד /vscode-pet, כדי להציג או להסתיר את חיית המחמד של VS Code מעל שדה הקלט. גרור אותה אופקית כדי למקם אותה מחדש, או השתמש ב-Tab כדי למקד אליה ובמקשי החצים שמאלה וימינה כדי להזיז אותה. לחץ Enter או Space כדי להראות לה קצת אהבה.",
 			"sessionsChat.vscodePetAchievements": "כאשר חיית המחמד מופעלת, תפריט חשבון המשתמש מפרט תגי הישג שנפתחו לפני תגים נעולים, ומספק כפתור הצג הישגים. כוכב זהב על חיית המחמד מבשר על הישג שנפתח לאחרונה; הפעל את חיית המחמד בזמן שהכוכב גלוי כדי לפתוח את הישגים.",
-			"sessionsChat.workspace": "לחץ Shift+Tab כדי לנווט אל בורר סביבות העבודה ולבחור סביבת עבודה עבור ההפעלה שלך. כאשר סביבות עבודה מרוחקות מאוחדות מופעלות, פתיחת הבורר ממקדת את שדה החיפוש שלו כך שניתן להקליד מיד כדי לסנן סביבות עבודה. אם צ'אטים מהירים זמינים, ניתן גם לבחור ללא סביבת עבודה כדי להתחיל צ'אט ללא סביבת עבודה."
+			"sessionsChat.workspace": "לחץ Shift+Tab כדי לנווט אל בורר סביבות העבודה ולבחור סביבת עבודה עבור ההפעלה שלך. כאשר סביבות עבודה מרוחקות מאוחדות מופעלות, פתיחת הבורר ממקדת את שדה החיפוש שלו כך שניתן להקליד מיד כדי לסנן סביבות עבודה. אם צ'אטים מהירים זמינים, ניתן גם לבחור ללא סביבת עבודה כדי להתחיל צ'אט ללא סביבת עבודה.",
+			"sessionsChat.archiveNudge": "כאשר כל בקשות המשיכה של GitHub המשויכות להפעלה מוזגו ואף צ'אט אינו עובד או ממתין לקלט, הצעה להעברה לארכיון עשויה להופיע מעל שדה קלט הצ'אט. השתמש ב-Tab או ב-Shift+Tab כדי להגיע אל 'ארכב', 'הגדר ניקוי אוטומטי' או 'דחה את הצעת הארכוב', ולאחר מכן ב-Enter או Space כדי להפעיל. 'הגדר ניקוי אוטומטי' פותח את ההגדרות להעברה אוטומטית לארכיון של הפעלות ממוזגות לא פעילות ולמחיקה לצמיתות של הפעלות ממוזגות שהועברו לארכיון באופן אוטומטי. ההסבר תחת \"מה עושה 'ארכב'?\" מכווץ כברירת מחדל. השתמש ב-Tab כדי להגיע אליו וב-Enter או Space כדי להרחיב או לכווץ אותו. 'דחה את הצעת הארכוב', או Escape כשההצעה ממוקדת, מסתיר את ההצעה עבור הפעלה זו, גם לאחר טעינה מחדש, עד שהיא תועבר לארכיון או תימחק, ומחזיר את המיקוד לשדה קלט הצ'אט. העברת ההפעלה לארכיון מסתירה אותה מרשימת ההפעלות כדי שתוכל להתמקד במשימות שנותרו לך. ההפעלה אינה נמחקת. בקש מהסוכן שלך למצוא אותה, או חפש במקטע \"בארכיון\" של רשימת ההפעלות. ניתן להוציא אותה מהארכיון בכל עת. עץ העבודה שנוצר עבור ההפעלה, אם קיים, יימחק. ניתן ליצור אותו מחדש על ידי הוצאת ההפעלה מהארכיון.",
+			"sessionsChat.archiveNudgeOnboarding": "בפעם הראשונה שאתה מפעיל את הלחצן 'ארכב' או 'סמן כבוצע' של ההצעה, זרקור עשוי לחשוף את הפעולה של אותה הפעלה ברשימת ההפעלות. הפעולה ממתינה עד שתפעיל את הפעולה המודגשת, תפעיל את 'הבנתי', או תלחץ Escape כדי לסיים את הזרקור. השתמש ב-Tab או ב-Shift+Tab כדי לעבור בין הפעולה המודגשת לבין 'הבנתי', וב-Enter או Space כדי להפעיל אחת מהן. לאחר מכן ההפעלה מועברת לארכיון או מסומנת כבוצעה, והזרקור לא יופיע שוב.",
+			"sessionsChat.copySessionLink": "כדי להעתיק קישור דפדפן שפותח הפעלת מארח סוכן בחלון הסוכנים, פתח את תפריט ההקשר של ההפעלה ובחר 'העתק קישור'.",
+			"sessionsChat.doneNudge": "כאשר כל בקשות המשיכה של GitHub המשויכות להפעלה מוזגו ואף צ'אט אינו עובד או ממתין לקלט, הצעה לסימון כבוצע עשויה להופיע מעל שדה קלט הצ'אט. השתמש ב-Tab או ב-Shift+Tab כדי להגיע אל 'סמן כבוצע', 'הגדר ניקוי אוטומטי' או 'דחה את ההצעה לסמן כבוצע', ולאחר מכן ב-Enter או Space כדי להפעיל. 'הגדר ניקוי אוטומטי' פותח את ההגדרות להעברה אוטומטית לארכיון של הפעלות ממוזגות לא פעילות ולמחיקה לצמיתות של הפעלות ממוזגות שהועברו לארכיון באופן אוטומטי. ההסבר תחת \"מה עושה 'סמן כבוצע'?\" מכווץ כברירת מחדל. השתמש ב-Tab כדי להגיע אליו וב-Enter או Space כדי להרחיב או לכווץ אותו. 'דחה את ההצעה לסמן כבוצע', או Escape כשההצעה ממוקדת, מסתיר את ההצעה עבור הפעלה זו, גם לאחר טעינה מחדש, עד שהיא תסומן כבוצעה או תימחק, ומחזיר את המיקוד לשדה קלט הצ'אט. סימון ההפעלה כבוצעה מסתיר אותה מרשימת ההפעלות כדי שתוכל להתמקד במשימות שנותרו לך. ההפעלה אינה נמחקת. בקש מהסוכן שלך למצוא אותה, או חפש במקטע \"בוצע\" של רשימת ההפעלות. ניתן לשחזר אותה בכל עת. עץ העבודה שנוצר עבור ההפעלה, אם קיים, יימחק. ניתן ליצור אותו מחדש על ידי שחזור ההפעלה.",
+			"sessionsChat.navigateChatTabs": "כאשר לשונית צ'אט ממוקדת, השתמש במקשי החצים שמאלה וימינה כדי לעבור ללשונית צ'אט סמוכה ולהפעיל אותה, או ב-Home וב-End כדי להפעיל את הלשונית הראשונה והאחרונה.",
+			"sessionsChat.removePullRequestArtifact": "עבור בקשות משיכה שתועדו כארטיפקטים של ההפעלה, התפריט הנפתח של בקשות המשיכה מציע 'הסר ארטיפקט בקשת משיכה מההפעלה' בכל שורה. השתמש ב-Tab כדי להגיע לפעולות שלה. כאשר רק בקשת משיכה אחת גלויה, השתמש במקום זאת בתפריט ההקשר של תווית בקשת המשיכה. ההסרה מיידית ומוחקת רק את רשומת הארטיפקט; היא אינה סוגרת את בקשת המשיכה ואינה מסירה שיוכים עצמאיים של ההפעלה.",
+			"sessionsChat.syncChanges": "כשזמין, 'סנכרן שינויים' מופיע כסמל סנכרון נפרד עם מספרי הקומיטים הנכנסים והיוצאים לצד בורר הענפים שמתחת לשדה הקלט. השתמש ב-Tab ובמקשי החצים כדי להגיע אליו, ולאחר מכן ב-Enter או Space כדי לסנכרן את המאגר של ההפעלה. הפעולה מושבתת בזמן שהסנכרון פועל.",
+			"sessionsChat.workspaceHandoff": "פתיחת הסוכנים מתוך עורך יכולה להציע את התיקייה של אותו עורך עבור הפעלה חדשה. בחירה עצמאית של סביבת עבודה או התחלת הפעלה אחרת מבטלת הצעה ממתינה. אם לא ניתן לבחור סביבת עבודה שהתבקשה במפורש, הודעה מציעה את הפעולות 'נסה שוב' ו'בחר סביבת עבודה'."
 		},
 		"vs/sessions/contrib/chat/browser/sessionTurnChanges": {
 			"chatTurnPills.changes.title": "שינויי קבצים בתור",
@@ -5719,14 +5779,14 @@
 			"pickWorkspace": "סביבת עבודה",
 			"workspacePicker.ariaLabel": "בורר סביבת עבודה",
 			"workspacePicker.attachedContextCountAriaLabel": "{0}, {1} מצורפים",
-			"workspacePicker.attachFolder": "צרף תיקייה...",
-			"workspacePicker.attachRepository": "צרף מאגר...",
+			"workspacePicker.attachFolder": "צרף תיקייה",
+			"workspacePicker.attachRepository": "צרף מאגר",
 			"workspacePicker.browseSelectLocal": "בחר...",
 			"workspacePicker.categorySelectionAriaLabel": "{0}: {1}",
 			"workspacePicker.connectingRemoteAgentHost": "מתחבר אל {0}...",
 			"workspacePicker.connectRemoteAgentHostFailed": "החיבור אל {0} נכשל.",
 			"workspacePicker.experimental": "ניסיוני",
-			"workspacePicker.filter": "חיפוש סביבות עבודה...",
+			"workspacePicker.filter": "חיפוש",
 			"workspacePicker.githubLoading": "מאגרי GitHub עדיין נטענים",
 			"workspacePicker.noWorkspace": "אין סביבת עבודה",
 			"workspacePicker.noWorkspaceSelectedAriaLabel": "הפעלה חדשה ללא סביבת עבודה",
@@ -5734,7 +5794,17 @@
 			"workspacePicker.remoteAriaLabel": "{0}, {1}",
 			"workspacePicker.selectedAriaLabel": "הפעלה חדשה ב-{0}",
 			"workspacePicker.statusWithActiveSession": "{0} · {1} הפעלה פעילה",
-			"workspacePicker.statusWithActiveSessions": "{0} · {1} הפעלות פעילות"
+			"workspacePicker.statusWithActiveSessions": "{0} · {1} הפעלות פעילות",
+			"pathNotExistDetail": "הנתיב '{0}' אינו קיים במחשב זה.",
+			"pathNotExistTitle": "הנתיב אינו קיים",
+			"workspacePicker.attachFolderWithEllipsis": "צרף תיקייה...",
+			"workspacePicker.attachRepositoryWithEllipsis": "צרף מאגר...",
+			"workspacePicker.chooseFolder": "בחר תיקייה",
+			"workspacePicker.devContainer.label": "{0} - Dev Container",
+			"workspacePicker.devContainer.local": "השתמש במקומי",
+			"workspacePicker.devContainer.use": "השתמש ב-Dev Container",
+			"workspacePicker.remote": "מרוחק",
+			"workspacePicker.startFromScratch": "התחל מאפס"
 		},
 		"vs/sessions/contrib/chat/browser/slashCommands": {
 			"slashCommand.agents": "הצג ונהל סוכנים מותאמים אישית",
@@ -5810,8 +5880,7 @@
 			"explore": "סייר",
 			"files": "קבצים",
 			"miFiles": "קבצ&&ים",
-			"sessionsFilesViewIcon": "סמל התצוגה של תצוגת הקבצים בחלון ההפעלות.",
-			"syncChanges": "סנכרן שינויים"
+			"sessionsFilesViewIcon": "סמל התצוגה של תצוגת הקבצים בחלון ההפעלות."
 		},
 		"vs/sessions/contrib/files/browser/filesView": {
 			"filesView.noFiles": "תיקיות וקבצים יופיעו כאן."
@@ -5967,7 +6036,8 @@
 		},
 		"vs/sessions/contrib/providers/agentHost/browser/agentHostModePicker": {
 			"agentHostModePicker.ariaLabel": "בורר מצב סוכן",
-			"agentHostModePicker.triggerAriaLabel": "בחר מצב סוכן, {0}"
+			"agentHostModePicker.triggerAriaLabel": "בחר מצב סוכן, {0}",
+			"agentHostModePicker.combinedAriaLabel": "בורר מצב והרשאות"
 		},
 		"vs/sessions/contrib/providers/agentHost/browser/agentHostPermissionPickerDelegate": {
 			"agentHostPermissionPicker.allowAll.detail": "מריץ קריאות לכלים בלי לשאול",
@@ -5980,7 +6050,9 @@
 			"agentHostPermissionPicker.manual.label": "הרשאות ידניות"
 		},
 		"vs/sessions/contrib/providers/agentHost/browser/agentHostSessionBranchActions": {
-			"copySessionBranchName": "העתק את שם ענף ההפעלה"
+			"copySessionBranchName": "העתק את שם הענף",
+			"copyAgentHostChatLink": "העתק קישור",
+			"copyAgentHostSessionLink": "העתק קישור"
 		},
 		"vs/sessions/contrib/providers/agentHost/browser/agentHostSessionChangesets": {
 			"lastTurnChanges": "שינויי הסבב האחרון",
@@ -6005,8 +6077,6 @@
 			"agentHostSessionConfig.branchItemShowChanges": "הצג שינויים",
 			"agentHostSessionConfig.branchItemUncommittedPlural": "{0} קבצים ללא קומיט",
 			"agentHostSessionConfig.branchItemUncommittedSingular": "קובץ אחד ללא קומיט",
-			"agentHostSessionConfig.devContainer": "Dev Container",
-			"agentHostSessionConfig.devContainer.worktreeDisabled": "אי אפשר לשלב הרצת Dev Container עם עץ עבודה חדש.",
 			"agentHostSessionConfig.filter": "אפשרויות סינון…",
 			"agentHostSessionConfig.isolation.devContainerDisabled": "אי אפשר לשלב עץ עבודה חדש עם הרצת Dev Container.",
 			"agentHostSessionConfig.isolation.worktree": "עץ עבודה חדש",
@@ -6095,7 +6165,8 @@
 			"noAgents": "מארח הסוכן טרם פרסם אף סוכן.",
 			"notConnectedSend": "לא ניתן לשלוח בקשה: אין חיבור למארח הסוכן.",
 			"sessionHome": "הפעלה",
-			"sessionNotCommitted": "לא בוצע קומיט להפעלת מארח הסוכן."
+			"sessionNotCommitted": "לא בוצע קומיט להפעלת מארח הסוכן.",
+			"removeSessionArtifactUnavailable": "הסרת תוצרים אינה זמינה עבור הפעלה זו."
 		},
 		"vs/sessions/contrib/providers/agentHost/browser/codexCustomizationSettings.contribution": {
 			"codexCustomizationSettings.navigationDescription": "הגדר התנהגות גלובלית עבור סביבת ההרצה הזו.",
@@ -6158,7 +6229,9 @@
 			"new session": "הפעלה חדשה",
 			"pullRequest": "בקשת משיכה...",
 			"repository": "מאגר...",
-			"sandboxModelNotApplied": "לא ניתן להשתמש ב-{0} עבור הפעלה זו. במקום זאת ייעשה שימוש במודל ברירת המחדל של הסוכן."
+			"sandboxModelNotApplied": "לא ניתן להשתמש ב-{0} עבור הפעלה זו. במקום זאת ייעשה שימוש במודל ברירת המחדל של הסוכן.",
+			"cloneRepository.workspaceFile": "השכפול שנבחר הוא קובץ סביבת עבודה. בחר שוב את המאגר כדי לבחור תיקיית מאגר.",
+			"workInRepository": "עבוד במאגר..."
 		},
 		"vs/sessions/contrib/providers/copilotChatSessions/browser/mobilePermissionPicker": {
 			"permissionPicker.title": "אישורים",
@@ -6171,12 +6244,8 @@
 		},
 		"vs/sessions/contrib/providers/copilotChatSessions/browser/permissionPicker": {
 			"permissionPicker.ariaLabel": "בורר הרשאות",
-			"permissionPicker.editableManagedSandboxToggleTitle": "ארגז החול מופעל על ידי הארגון שלך, אך ניתן לכבות אותו",
-			"permissionPicker.requiredSandboxToggleTitle": "ארגז החול נדרש על ידי הארגון שלך",
 			"permissionPicker.sandboxedHover": "{0} פקודות מסוף פועלות בארגז חול.",
 			"permissionPicker.sandboxedLabel": "{0} (בארגז חול)",
-			"permissionPicker.sandboxToggle": "ארגז חול למסוף",
-			"permissionPicker.sandboxToggleTitle": "מריץ פקודות מסוף בתוך ארגז חול המגביל גישה למערכת הקבצים ולרשת",
 			"permissionPicker.triggerAriaLabel": "בחר רמת הרשאה, {0}",
 			"permissionPicker.triggerAriaLabelWithDescription": "בחר רמת הרשאה, {0}, {1}",
 			"permissions.assisted": "הרשאות בסיוע",
@@ -6198,7 +6267,15 @@
 			"sandboxPicker.noRepository": "נדרש מאגר כדי להריץ בארגז חול"
 		},
 		"vs/sessions/contrib/providers/remoteAgentHost/browser/cloudSandboxAgentHostContribution": {
-			"githubSandbox.hostGroup": "ארגזי חול של GitHub"
+			"githubSandbox.hostGroup": "ארגזי חול של GitHub",
+			"cloudSandbox.connecting": "מתחבר...",
+			"cloudSandbox.connectingTitle": "מתחבר לסביבה",
+			"cloudSandbox.incompatible": "סביבה זו אינה תואמת לגרסה זו של Visual Studio Code.",
+			"cloudSandbox.incompatibleTitle": "לא ניתן להתחבר לסביבה",
+			"cloudSandbox.offline": "הסביבה במצב לא מקוון.",
+			"cloudSandbox.offlineTitle": "הסביבה לא מקוונת",
+			"cloudSandbox.reconnecting": "מתחבר מחדש...",
+			"cloudSandbox.reconnectingIn": "מתחבר מחדש בעוד {0} שניות"
 		},
 		"vs/sessions/contrib/providers/remoteAgentHost/browser/cloudSandboxReadOnlySessionHandler": {
 			"cloudSandbox.truncatedHistory": "השיחה הזו אינה שלמה. ההיסטוריה המתועדת שלה מסתיימת באמצע תגובה, כך שייתכן שההחלפה האחרונה חסרה."
@@ -6247,9 +6324,9 @@
 			"addRemoteValidationInvalid": "הזן מארח תקין, host:port, או כתובת WebSocket URL תקינה.",
 			"configureSSHHosts": "הגדר מארחי SSH...",
 			"connectViaSSH": "התחבר אל מארח סוכן מרוחק דרך SSH",
-			"connectViaSSHShort": "SSH...",
+			"connectViaSSHShort": "SSH",
 			"connectViaTunnel": "התחבר אל מארח סוכן מרוחק דרך מנהרה",
-			"connectViaTunnelShort": "מנהרות...",
+			"connectViaTunnelShort": "מנהרות",
 			"connectViaWSL": "התחבר אל מארח סוכן מרוחק דרך WSL",
 			"connectViaWSLShort": "WSL...",
 			"nameRemotePlaceholder": "המרוחק שלי",
@@ -6499,7 +6576,9 @@
 			"miSessions": "&&הפעלות",
 			"sessions.automations.newBadgeStyle": "שולט בסגנון החזותי של תווית השימוש הראשון של האוטומציות.",
 			"sessions.list.showEmptyDefaultGroups": "שולט אם קבוצת הצ'אטים מוצגת ברשימת ההפעלות גם כשהיא ריקה.",
-			"sessions.newSessionButton.style": "שולט בסגנון החזותי של כפתור ההפעלה החדשה."
+			"sessions.newSessionButton.style": "שולט בסגנון החזותי של כפתור ההפעלה החדשה.",
+			"sessions.archiveSessionConfetti": "קובע אם תוצג אנימציית קונפטי בעת העברת הפעלה לארכיון.",
+			"sessions.useWorktree": "קובע אם 'עץ עבודה חדש' מסומן כאשר טרם נשמרה בחירת בידוד קודמת. לאחר שנשמרה בחירה, נעשה בה שימוש בכל סביבות העבודה במקום בהגדרה זו."
 		},
 		"vs/sessions/contrib/sessions/browser/sessionsActions": {
 			"chatCompositeBar.addChat": "צ'אט חדש בהפעלה זו",
@@ -6617,7 +6696,13 @@
 			"automationsCustomView.help.history": "היסטוריית ההרצות מקובצת לפי תאריך. בזמן שהרצה ממתינה להפעלה שלה, שורה קלה מציגה את שם האוטומציה עם תיאור 'עובד...'. כאשר ההפעלה זמינה, השתמש בחץ למעלה ובחץ למטה כדי לנווט ברשימת ההפעלות, ב-Enter כדי לפתוח, וב-Tab כדי להגיע לעצור, לפעולת הארכיון או 'סמן כהושלם' המוגדרת, או למחוק כאשר זמין. פתח את תפריט ההקשר של שורה, לדוגמה עם Shift+F10, כדי לשנות את שמה, לשנות את מצב הפעילות או הקריאה שלה, או למחוק אותה. מחיקה מוחקת לצמיתות את ההפעלה ומסירה אותה מהיסטוריית ההרצות לאחר אישור.",
 			"automationsCustomView.help.overview": "אתה נמצא בתצוגת האוטומציות. היא מכילה כרטיסי אוטומציה זמינים ולאחריהם היסטוריית הרצות. הודעות טעינה, אי-זמינות ושגיאה מציינות שהקטלוג עשוי להיות לא שלם.",
 			"automationsCustomView.help.read": "הרצות שהושלמו או נכשלו ולא נפתחו מוכרזות כלא נקראות. השתמש ב'סמן הכול כנקרא' כדי לנקות את כל ההרצות הלא נקראות הזמינות.",
-			"automationsCustomView.help.templates": "תבניות התחלה זמינות. עבור באמצעות Tab לתבנית והקש Enter או Space כדי לפתוח דו-שיח 'אוטומציה חדשה' עם שם, פרומפט ולוח זמנים הניתנים לעריכה."
+			"automationsAccessibleView.builtInTemplates": "תבניות מובנות",
+			"automationsAccessibleView.pluginTemplate": "{0}, {1}. {2} מאת {3}.",
+			"automationsAccessibleView.pluginTemplates": "תבניות מתוספים",
+			"automationsCustomView.help.builtInTemplatesCollapsed": "המקטע 'תבניות מובנות' מכווץ כברירת מחדל מכיוון שקיימות אוטומציות שמורות. הקש Enter או Space על פקד ההרחבה שלו כדי להרחיב אותו.",
+			"automationsCustomView.help.builtInTemplatesExpanded": "המקטע 'תבניות מובנות' מורחב כברירת מחדל כל עוד אין אוטומציות שמורות. עבור באמצעות Tab לתבנית והקש Enter או Space כדי לפתוח דו-שיח 'אוטומציה חדשה' עם שם, פרומפט ולוח זמנים הניתנים לעריכה.",
+			"automationsCustomView.help.pluginTemplates": "המקטע 'תבניות מתוספים' זמין בכל פעם שתוספים מופעלים מספקים תבניות. הקש Enter או Space על פקד ההרחבה שלו כדי להרחיב או לכווץ אותו. סמן כחול מציין תבניות שנוספו מאז שהמקטע הורחב לאחרונה. תבניות תוספים מתחילות במצב מושבת.",
+			"automationsCustomView.help.sharing": "השתמש ב'ייבוא אוטומציה' בכותרת התצוגה, או שחרר קובץ .automation.md אחד בכל מקום בתצוגה, כדי לסקור שרטוט אוטומציה משותף. אוטומציות מיובאות מתחילות במצב מושבת. פתח את תפריט ההקשר של אוטומציה שמורה ובחר 'ייצוא' כדי לשמור שרטוט נייד."
 		},
 		"vs/sessions/contrib/sessions/browser/views/automationsView": {
 			"automationActions": "פעולות עבור {0}",
@@ -6662,15 +6747,12 @@
 			"automationsUnavailable": "חלק מהאוטומציות אינן זמינות",
 			"automationsUnavailableDescription": "ספק אחד או יותר מנותק, מושבת, או שאינו תומך באוטומציות.",
 			"automationTemplateBadge": "תבנית",
-			"automationTemplatesDescription": "בחר נקודת התחלה, ולאחר מכן סקור והתאם אותה לפני היצירה.",
-			"automationTemplatesTitle": "התחל עם תבנית",
 			"automationUpdatedStatus": "עודכנה אוטומציה {0}",
 			"automationUpdateFailed": "עדכון האוטומציה נכשל.",
 			"confirmDeleteAutomation": "למחוק את האוטומציה \"{0}\"?",
 			"confirmDeleteDetail": "פעולה זו תמחק לצמיתות את האוטומציה ואת היסטוריית ההרצות שלה.",
 			"createAutomation": "צור אוטומציה",
 			"delete": "מחק",
-			"deleteAutomation": "מחק",
 			"deleteAutomationContextMenu": "מחק",
 			"disableAutomationContextMenu": "השבת",
 			"disabled": "מושבת",
@@ -6698,7 +6780,51 @@
 			"today": "היום",
 			"unknownAutomation": "לא ידוע",
 			"useAutomationTemplate": "השתמש בתבנית: {0}, {1}",
-			"yesterday": "אתמול"
+			"yesterday": "אתמול",
+			"automationBlueprint.invalidField": "המאפיין '{0}' חסר או לא חוקי.",
+			"automationBlueprint.invalidFrontmatter": "הקובץ חייב להתחיל ב-frontmatter חוקי של YAML.",
+			"automationBlueprint.invalidId": "מזהה השרטוט '{0}' אינו חוקי.",
+			"automationBlueprint.missingPrompt": "הפרומפט של האוטומציה חייב לבוא אחרי ה-frontmatter.",
+			"automationBlueprint.unknownProperty": "המאפיין '{0}' אינו נתמך.",
+			"automationBlueprint.unsupportedSchedule": "לא ניתן לייצג את ביטוי ה-cron '{0}' בעורך האוטומציות הנוכחי.",
+			"automationBlueprint.unsupportedTimeZone": "אזור הזמן '{0}' אינו נתמך. השתמש ב-'local' כדי שלוח הזמנים יתאים לאזור הזמן של המשתמש המייבא.",
+			"automationBlueprint.unsupportedVersion": "גרסה {0} של שרטוט אוטומציה אינה נתמכת.",
+			"automationBlueprintFileFilter": "שרטוט אוטומציה",
+			"automationBuiltInTemplatesDescription": "בחר נקודת התחלה, ולאחר מכן סקור והתאם אותה לפני היצירה.",
+			"automationBuiltInTemplatesTitle": "תבניות מובנות",
+			"automationChangedDuringEnable": "האוטומציה הזו השתנתה לפני שניתן היה להפעיל אותה. נסה שוב.",
+			"automationDeletedDuringEnable": "האוטומציה הזו נמחקה לפני שניתן היה להפעיל אותה.",
+			"automationDropDescription": "ניתן לסקור את האוטומציה לפני יצירתה.",
+			"automationDropFailed": "לא ניתן לייבא את האוטומציה.",
+			"automationDropMultiple": "שחרר קובץ שרטוט אוטומציה אחד בכל פעם.",
+			"automationDropTitle": "שחרר כדי לייבא אוטומציה",
+			"automationDropUnsupported": "ניתן לייבא רק קובצי .automation.md.",
+			"automationEnabledStatus": "האוטומציה {0} הופעלה",
+			"automationEnableFailed": "הפעלת האוטומציה נכשלה.",
+			"automationExportedStatus": "האוטומציה {0} יוצאה",
+			"automationExportFailed": "ייצוא האוטומציה נכשל.",
+			"automationExportInvalidFileName": "השתמש בשם קובץ שמסתיים בסיומת .automation.md אחת בדיוק.",
+			"automationExportInvalidFileNameTitle": "לא ניתן לייצא את האוטומציה.",
+			"automationImportedStatus": "האוטומציה {0} יובאה",
+			"automationImportFailed": "ייבוא האוטומציה נכשל.",
+			"automationImportReadFailed": "ייבוא האוטומציה נכשל.",
+			"automationPluginTemplateBadge": "תוסף",
+			"automationPluginTemplatesDescription": "תבניות שמסופקות על ידי תוספים מופעלים מתחילות במצב מושבת.",
+			"automationPluginTemplatesManyNewAriaLabel": "תבניות מתוספים, {0} תבניות חדשות",
+			"automationPluginTemplatesOneNewAriaLabel": "תבניות מתוספים, תבנית חדשה אחת",
+			"automationPluginTemplatesTitle": "תבניות מתוספים",
+			"automationsDisabledBeforeEnable": "האוטומציות הושבתו לפני שניתן היה להפעיל את האוטומציה.",
+			"automationsDisabledBeforeImport": "האוטומציות הושבתו לפני שניתן היה לשמור את האוטומציה המיובאת.",
+			"automationTemplateSource": "מאת {0}",
+			"enableAutomationContextMenu": "הפעל",
+			"exportAutomation": "ייצוא",
+			"exportAutomationDialogSave": "ייצוא",
+			"exportAutomationDialogTitle": "ייצוא אוטומציה",
+			"importAutomation": "ייבוא אוטומציה",
+			"importAutomationDialogOpen": "ייבוא",
+			"importAutomationDialogTitle": "ייבוא אוטומציה",
+			"moreActionsForAutomation": "פעולות נוספות עבור {0}",
+			"usePluginAutomationTemplate": "השתמש בתבנית: {0}, {1}, מאת {2}"
 		},
 		"vs/sessions/contrib/sessions/browser/views/automationTemplates": {
 			"automationTemplate.findBugs.description": "סייר בקוד הבסיס ודווח על באגים מאומתים וברי-שחזור.",
@@ -6709,7 +6835,8 @@
 			"automationTemplate.issueTriage.prompt": "מיין את הסוגיות במאגרי ה-GitHub שלי תוך שימוש בתקדימים קיימים במאגר.\n\nהשתמש בחשבון ה-GitHub המאומת כדי למצוא את המאגרים שלי, תוך מתן עדיפות למאגרים פעילים ולסוגיות חדשות או שלא מוינו. עבור כל מאגר, קרא את הנחיות התרומה שלו, תבניות הסוגיות, התוויות הקיימות, וסוגיות דומות עם החלטות מתחזקים. למד את המוסכמות של כל מאגר בנפרד לפני מתן המלצות.\n\nהפק דוח המקובץ לפי מאגר. קשר לכל סוגיה, המלץ על תוויות קיימות, זהה כפילויות סבירות, ונסח תגובה כאשר מועיל. צטט סוגיות קודמות, בקשות משיכה, או תגובות מתחזקים התומכות בכל המלצה. סמן אי-ודאות או היעדר תקדים במקום להמציא כלל. אל תחיל תוויות, תפרסם תגובות, תסגור סוגיות, או תבצע שינויי GitHub אחרים. ציין אילו מאגרים וסוגיות נסקרו וכל מגבלות גישה.",
 			"automationTemplate.mainUpdates.description": "משוך את ה-main העדכני וסכם את הקומיטים החדשים.",
 			"automationTemplate.mainUpdates.name": "התעדכן ב-main",
-			"automationTemplate.mainUpdates.prompt": "משוך את ה-main העדכני וסכם את הקומיטים שנמשכו.\n\nבדוק את הענף הנוכחי של המאגר הזה, את עץ העבודה, ואת המאגרים המרוחקים המוגדרים. קבע את המאגר המרוחק של main מתוך תצורת המאגר, במקום להניח שמדובר ב-origin. תעד את ה-HEAD, ולאחר מכן משוך את ה-main של אותו מאגר מרוחק אל תוך הצ'ק-אאוט הנוכחי באמצעות --ff-only. המשך רק אם עץ העבודה נקי והעדכון הוא fast-forward. אם המאגר המרוחק אינו חד-משמעי, main חסר, או שהעדכון חסום — עצור והסבר מדוע. אל תחליף ענפים, אל תבצע סטאש או תשליך שינויים מקומיים, אל תבצע ריבייס, ואל תכפה עדכון.\n\nהשווה בין ה-HEAD ההתחלתי לסופי וסכם רק את הקומיטים שנמשכו לאחרונה, מקובצים לפי נושא. הדגש שינויים גלויים למשתמש, תיקוני באגים, שינויים שוברים, ופעולות המשך. כלול קישורים לקומיטים ובקשות משיכה קשורות כאשר זמין. אם לא נמשכו קומיטים, ציין זאת."
+			"automationTemplate.mainUpdates.prompt": "משוך את ה-main העדכני וסכם את הקומיטים שנמשכו.\n\nבדוק את הענף הנוכחי של המאגר הזה, את עץ העבודה, ואת המאגרים המרוחקים המוגדרים. קבע את המאגר המרוחק של main מתוך תצורת המאגר, במקום להניח שמדובר ב-origin. תעד את ה-HEAD, ולאחר מכן משוך את ה-main של אותו מאגר מרוחק אל תוך הצ'ק-אאוט הנוכחי באמצעות --ff-only. המשך רק אם עץ העבודה נקי והעדכון הוא fast-forward. אם המאגר המרוחק אינו חד-משמעי, main חסר, או שהעדכון חסום — עצור והסבר מדוע. אל תחליף ענפים, אל תבצע סטאש או תשליך שינויים מקומיים, אל תבצע ריבייס, ואל תכפה עדכון.\n\nהשווה בין ה-HEAD ההתחלתי לסופי וסכם רק את הקומיטים שנמשכו לאחרונה, מקובצים לפי נושא. הדגש שינויים גלויים למשתמש, תיקוני באגים, שינויים שוברים, ופעולות המשך. כלול קישורים לקומיטים ובקשות משיכה קשורות כאשר זמין. אם לא נמשכו קומיטים, ציין זאת.",
+			"automationTemplate.pluginDescription": "מסופק על ידי {0}."
 		},
 		"vs/sessions/contrib/sessions/browser/views/sessionsList": {
 			"addToGroupAction": "הוסף לקבוצה",
@@ -6763,7 +6890,8 @@
 			"showMoreWorkspacesAria": "הצג {0} סביבות עבודה נוספות",
 			"showMoreWorkspacesCompact": "+{0} סביבות עבודה נוספות",
 			"unknown": "לא ידוע",
-			"untitledChat": "צ'אט ללא כותרת"
+			"untitledChat": "צ'אט ללא כותרת",
+			"sessionsList.archiveOnboardingUnavailable": "לא ניתן היה להציג את ההפעלה ברשימת ההפעלות. נסה שוב."
 		},
 		"vs/sessions/contrib/sessions/browser/views/sessionsView": {
 			"filterRead": "נקרא",
@@ -6869,7 +6997,8 @@
 			"join.closeStorage": "שומר את מצב הממשק"
 		},
 		"vs/sessions/services/sessions/browser/sessionsManagementService": {
-			"sessions.cancelCurrentRequest.loadFailed": "טעינת הפעלת הצ'אט לביטול נכשלה."
+			"sessions.cancelCurrentRequest.loadFailed": "טעינת הפעלת הצ'אט לביטול נכשלה.",
+			"sessions.removeSessionArtifact.unsupported": "הסרת תוצרים אינה נתמכת עבור הפעלה זו."
 		},
 		"vs/sessions/services/sessions/browser/sessionsService": {
 			"sessionsService.trustFolderMessage": "הפעלת סוכן תוכל לקרוא קבצים, להריץ פקודות ולבצע שינויים בתיקייה זו."
@@ -9085,7 +9214,12 @@
 			"unfocusedActiveModifiedBorder": "גבול בראש לשוניות פעילות ששונו בקבוצה לא ממוקדת. לשוניות הן המכולות של עורכים באזור העריכה. ניתן לפתוח מספר לשוניות בקבוצת עורכים אחת. יכולות להיות מספר קבוצות עורכים.",
 			"unfocusedINactiveModifiedBorder": "גבול בראש לשוניות לא פעילות ששונו בקבוצה לא ממוקדת. לשוניות הן המכולות של עורכים באזור העריכה. ניתן לפתוח מספר לשוניות בקבוצת עורכים אחת. יכולות להיות מספר קבוצות עורכים.",
 			"windowActiveBorder": "הצבע המשמש לגבול החלון כאשר הוא פעיל ב-macOS או ב-Linux. דורש סגנון שורת כותרת מותאם אישית ופקדי חלון מותאמים אישית או מוסתרים ב-Linux.",
-			"windowInactiveBorder": "הצבע המשמש לגבול החלון כאשר הוא אינו פעיל ב-macOS או ב-Linux. דורש סגנון שורת כותרת מותאם אישית ופקדי חלון מותאמים אישית או מוסתרים ב-Linux."
+			"windowInactiveBorder": "הצבע המשמש לגבול החלון כאשר הוא אינו פעיל ב-macOS או ב-Linux. דורש סגנון שורת כותרת מותאם אישית ופקדי חלון מותאמים אישית או מוסתרים ב-Linux.",
+			"modernPanelBorder": "צבע הגבול של משטח החלונית כאשר ממשק המשתמש המודרני מופעל.",
+			"modernSashGripForeground": "צבע ידיות האחיזה המסמנות את הגבולות הניתנים לשינוי גודל בין חלקי סביבת העבודה כאשר ממשק המשתמש המודרני מופעל.",
+			"modernUIInactiveShellBackground": "צבע הרקע של המעטפת הנראית סביב משטחי סביבת העבודה הצפים כאשר החלון אינו פעיל וממשק המשתמש המודרני מופעל.",
+			"modernUIShellBackground": "צבע הרקע של המעטפת הנראית סביב משטחי סביבת העבודה הצפים כאשר ממשק המשתמש המודרני מופעל.",
+			"statusBarInactiveBackground": "צבע הרקע של שורת המצב כאשר סביבת עבודה או תיקייה פתוחה והחלון אינו פעיל. ניפוי באגים ודריסות רקע אחרות מקבלים עדיפות. אם לא מוגדר, נעשה שימוש ברקע הנוכחי של שורת המצב."
 		},
 		"vs/workbench/common/views": {
 			"defaultViewIcon": "סמל ברירת מחדל של תצוגה.",
@@ -9265,7 +9399,8 @@
 			"verbosity.walkthrough": "ספק מידע על אופן פתיחת המדריך המודרך בתצוגה הנגישה.",
 			"voice.ignoreCodeBlocks": "האם להתעלם מקטעי קוד בסינתזת טקסט לדיבור.",
 			"voice.speechLanguage": "השפה שבה ישתמשו הפיכת טקסט לדיבור והפיכת דיבור לטקסט. בחר `auto` כדי להשתמש בשפת התצוגה המוגדרת אם ניתן. שים לב שייתכן שלא כל שפות התצוגה נתמכות על ידי זיהוי דיבור ומסנתזים.",
-			"voice.speechTimeout": "משך הזמן במילישניות שבו זיהוי הדיבור הקולי נשאר פעיל לאחר שהפסקת לדבר. לדוגמה, בשיחת צ'אט, הטקסט המתומלל נשלח אוטומטית לאחר שחלף פרק הזמן. הגדר ל-`0` כדי להשבית תכונה זו."
+			"voice.speechTimeout": "משך הזמן במילישניות שבו זיהוי הדיבור הקולי נשאר פעיל לאחר שהפסקת לדבר. לדוגמה, בשיחת צ'אט, הטקסט המתומלל נשלח אוטומטית לאחר שחלף פרק הזמן. הגדר ל-`0` כדי להשבית תכונה זו.",
+			"verbosity.customizationMigrations.description": "ספק מידע על אופן הגישה לעזרת הנגישות עבור רשימת המשימות של העברת ההתאמות האישיות."
 		},
 		"vs/workbench/contrib/accessibility/browser/accessibilityStatus": {
 			"screenReaderDetected": "מותאם לקורא מסך",
@@ -10071,7 +10206,7 @@
 			"chat.announcement": "תשובות הצ'אט יוכרזו ככל שהן מתקבלות. תשובה תציין את מספר בלוקי הקוד, אם ישנם, ולאחר מכן את שאר התשובה.",
 			"chat.attachments.inlineReferenceHover": "כדי לבדוק הפניה לצירוף מוטבע, הצב את הסמן עליה והפעל את הצג או מקד חלונית ריחוף{0}. הפניות לתמונות כוללות תצוגה מקדימה, ואילו הפניות לקבצים ולתיקיות כוללות את הנתיב שלהן.",
 			"chat.attachments.inlineReferences": "כדי לאזכר פריט הקשר מצורף במיקום מסוים מבלי להסירו מההקשר המצורף, הקלד # או @ ובחר את הצירוף מתוך ההצעות.",
-			"chat.attachments.pastedText": "טקסט מודבק ארוך מאוחסן כפריט טקסט מצורף ומוחלף בשדה הקלט בהפניה מוטבעת ממוספרת.",
+			"chat.attachments.pastedText": "טקסט מודבק ארוך, כולל טקסט בשורה אחת, מאוחסן כפריט טקסט מצורף ומוחלף בשדה הקלט בהפניה מוטבעת ממוספרת.",
 			"chat.attachments.removal": "כדי להסיר הקשרים מצורפים, מקד צירוף והקש Delete או Backspace.",
 			"chat.completedResponseDisclosure": "כאשר כיווץ תשובות שהושלמו מופעל, התשובה הסופית נשארת גלויה בעוד העבודה הקודמת מכווצת. השתמש ב-Tab כדי למקד את חלונית הגילוי של העבודה, והקש Enter או Space כדי להציג או להסתיר אותה.",
 			"chat.differencePanel": "תצוגת הצ'אט היא ממשק קבוע שתומך גם בניווט בין שאלות המשך מוצעות, ואילו תצוגת הצ'אט המהיר היא ממשק זמני להגשת בקשות ולצפייה בהן.",
@@ -10093,7 +10228,7 @@
 			"chat.progressVerbosity": "בזמן עיבוד בקשת הצ'אט תישמע התקדמות מפורטת אם הבקשה נמשכת יותר מ-4 שניות. זה כולל מידע כמו חיפוש טקסט <מונח חיפוש> עם X תוצאות, יצירת קובץ <שם_קובץ>, או קריאת קובץ <נתיב קובץ>. ניתן להשבית זאת באמצעות accessibility.verboseChatProgressUpdates.",
 			"chat.renameSession": "כדי לשנות את שם הפעלת הצ'אט הנוכחית, כאשר הדבר נתמך, הפעל את הפקודה שנה שם{0}. אפשר לשנות שם של הפעלות Agent Host אחרי שליחת הבקשה הראשונה.",
 			"chat.requestHistory": "בתיבת הקלט, השתמש בחצים למעלה ולמטה כדי לנווט בהיסטוריית הבקשות שלך. ערוך את הקלט והשתמש ב-Enter או בכפתור השליחה כדי להריץ בקשה חדשה.",
-			"chat.sessionStatusPills": "כאשר תוויות מצב ההפעלה מופיעות מעל הקלט, השתמש ב-Tab כדי להתמקד בסרגל הכלים, ואז בחצים ימינה ושמאלה כדי לנוע בין התוויות. הקש Enter או רווח כדי להפעיל תווית. פתח את תפריט ההקשר{0} כדי לבחור אילו תוויות אופציונליות גלויות.",
+			"chat.sessionStatusPills": "כאשר תוויות מצב ההפעלה מופיעות מעל הקלט, השתמש ב-Tab כדי להתמקד בסרגל הכלים, ואז בחצים ימינה ושמאלה כדי לנוע בין התוויות. הקש Enter או רווח כדי להפעיל תווית. פתח את תפריט ההקשר{0} כדי לבחור אילו תוויות אופציונליות גלויות. 'אפשרויות בקשות משיכה' מאפשר להציג את כל בקשות המשיכה או רק את הפתוחות ואת הטיוטות, והבחירה נשמרת בין הפעלות. אם כל בקשות המשיכה מסוננות, השתמש בתפריט ההקשר של סרגל הכלים כדי להציג שוב את כולן.",
 			"chat.showHiddenTerminals": "אם יש מסופי צ'אט מוסתרים, תוכל להציג אותם באמצעות הפקודה הצג מסופי צ'אט מוסתרים{0}.",
 			"chat.signals": "ניתן לשנות את אותות הנגישות בהגדרות עם הקידומת signals.chat. כברירת מחדל, אם בקשה נמשכת יותר מ-4 שניות, יישמע צליל המציין שההתקדמות עדיין נמשכת.",
 			"chat.speechToText.contextMenu": "כדי לבחור מיקרופון או לכבות את ההכתבה או את מצב הקול, התמקד בכפתור המיקרופון בסרגל הכלים של הקלט ופתח את תפריט ההקשר שלו{0} (לדוגמה Shift+F10).",
@@ -10152,7 +10287,14 @@
 			"workbench.action.chat.restoreLastCheckpoint": "- שחזר לנקודת הביקורת האחרונה{0}.",
 			"workbench.action.chat.toggleSpeechToText": "כדי להכתיב את הבקשה שלך לתוך תיבת הקלט, הפעל את הפקודה 'הכתב'{0}. הפעל אותה שוב כדי לעצור; תחילת ההקלטה וסיומה מסומנים באמצעות אותות נגישות.",
 			"workbench.action.chat.undoEdits": "- בטל עריכות{0}.",
-			"workbench.action.openAgentsWindow": "כדי לפתוח את חלון הסוכנים, הפעל את הפקודה 'פתח חלון סוכנים'{0}. במצב קורא מסך, מיפוי המקשים הזה כולל את המקש Alt כדי למנוע התנגשויות עם קיצורי הדרך של קורא המסך."
+			"workbench.action.openAgentsWindow": "כדי לפתוח את חלון הסוכנים, הפעל את הפקודה 'פתח חלון סוכנים'{0}. במצב קורא מסך, מיפוי המקשים הזה כולל את המקש Alt כדי למנוע התנגשויות עם קיצורי הדרך של קורא המסך.",
+			"chat.modelPicker.optimizeFor": "בבורר המודלים עם הכרטיסיות, פרטי המודל הנבחר נפתחים לצד הרשימה. מעבר בין שורות המודלים מעדכן את הפרטים באופן מיידי מבלי לבחור מודל. הכרטיס נשאר גלוי כאשר המצביע עוזב שורה. הקש חץ ימינה משורת מודל כדי להתמקד בפרטים שלו, וחץ שמאלה כדי לחזור. כאשר אפשרויות \"מיטוב עבור\" של Auto זמינות, יעילות, איזון ואינטליגנציה נשארות גלויות גם כאשר Auto כבוי. הן נראות מעומעמות כשהוא כבוי אך נשארות אינטראקטיביות. השתמש במקשי החצים כדי לנוע בין האפשרויות, ולאחר מכן ב-Enter או Space כדי לבחור העדפה ולהפעיל את Auto. כיבוי Auto שומר על ההעדפה שנבחרה.",
+			"chat.modelPicker.pricingDetails": "'פרטי תמחור' מתרחב במקומו מבלי להזיז את פקדי המודל. ההרחבה והכיווץ מיידיים כאשר תנועה מופחתת מופעלת. אם הפרטים חורגים מהשטח הזמין, השתמש ב-Page Up או Page Down בזמן שפרטי המודל ממוקדים כדי לגלול.",
+			"chat.modelPicker.resetToDefault": "בפרטי מודל, השתמש ב-Tab כדי להגיע למאמץ החשיבה, להקשר ולפעולות המודל. השתמש במקשי החצים כדי לנוע בין האפשרויות, ולאחר מכן ב-Enter או Space כדי לבחור אחת. 'אפס לברירת מחדל' מופיע לצד 'הצמד מודל' כאשר מאמץ החשיבה או ההקשר שונו. הוא משחזר את שתי ההגדרות לברירות המחדל של המודל מבלי לשנות את מצב ההצמדה שלו. בחירת אפשרות או איפוס ההגדרות בוחרים את המודל הזה ומשאירים את הפרטים שלו פתוחים. הצמדה או ביטול הצמדה מזיזים את המודל ברשימה מבלי להזיז את הפרטים שלו או את מיקוד המקלדת. הקש Escape כדי לחזור לרשימה, ושוב Escape כדי לסגור את הבורר.",
+			"chat.modelPicker.search": "הקלד בזמן שרשימת המודלים ממוקדת כדי לחפש בכל הספקים. בשדה החיפוש, השתמש בחץ למעלה ולמטה כדי לנווט בתוצאות, ב-Enter כדי לבחור מודל וב-Escape כדי לסגור את הבורר. חץ ימינה ושמאלה מזיזים את סמן הטקסט.",
+			"chat.readOnlyThinking": "בצ'אטים לקריאה בלבד, פרטי החשיבה מוצגים בתצוגה מקדימה במהלך הזרמה ומתכווצים בסיום, ללא קשר להגדרת סגנון החשיבה שלך. התמקד בכותרת חשיבה והקש Enter או Space כדי להרחיב או לכווץ את הפרטים שלה.",
+			"chat.sessionArchiveNudge": "הצעה להעברה לארכיון מופיעה מעל קלט הצ'אט כאשר בקשות המשיכה של ההפעלה מוזגו. השתמש ב-Tab או ב-Shift+Tab כדי להגיע אל 'העבר לארכיון', 'הגדר ניקוי אוטומטי' או 'בטל הצעת העברה לארכיון', ולאחר מכן הקש Enter או Space. 'הגדר ניקוי אוטומטי' פותח את ההגדרות להעברה אוטומטית לארכיון של הפעלות ממוזגות לא פעילות ולמחיקה לצמיתות של הפעלות ממוזגות שהועברו לארכיון באופן אוטומטי. ההסבר תחת \"מה עושה 'העבר לארכיון'?\" מכווץ כברירת מחדל. השתמש ב-Tab כדי להגיע אליו וב-Enter או Space כדי להרחיב או לכווץ אותו. ביטול ההצעה, כולל באמצעות Escape כשהיא ממוקדת, מחזיר לקלט הצ'אט. העברת ההפעלה לארכיון מסתירה אותה מרשימת ההפעלות כדי שתוכל להתמקד במשימות הנותרות שלך. ההפעלה אינה נמחקת. בקש מהסוכן שלך למצוא אותה, או חפש במקטע \"בארכיון\" ברשימת ההפעלות. ניתן להוציא אותה מהארכיון בכל עת. עץ העבודה שנוצר עבור ההפעלה, אם קיים, יימחק. ניתן ליצור אותו מחדש על ידי הוצאת ההפעלה מהארכיון.",
+			"chat.sessionDoneNudge": "הצעה לסימון כבוצע מופיעה מעל קלט הצ'אט כאשר בקשות המשיכה של ההפעלה מוזגו. השתמש ב-Tab או ב-Shift+Tab כדי להגיע אל 'סמן כבוצע', 'הגדר ניקוי אוטומטי' או 'בטל הצעת סימון כבוצע', ולאחר מכן הקש Enter או Space. 'הגדר ניקוי אוטומטי' פותח את ההגדרות להעברה אוטומטית לארכיון של הפעלות ממוזגות לא פעילות ולמחיקה לצמיתות של הפעלות ממוזגות שהועברו לארכיון באופן אוטומטי. ההסבר תחת \"מה עושה 'סמן כבוצע'?\" מכווץ כברירת מחדל. השתמש ב-Tab כדי להגיע אליו וב-Enter או Space כדי להרחיב או לכווץ אותו. ביטול ההצעה, כולל באמצעות Escape כשהיא ממוקדת, מחזיר לקלט הצ'אט. סימון ההפעלה כבוצעה מסתיר אותה מרשימת ההפעלות כדי שתוכל להתמקד במשימות הנותרות שלך. ההפעלה אינה נמחקת. בקש מהסוכן שלך למצוא אותה, או חפש במקטע \"בוצע\" ברשימת ההפעלות. ניתן לשחזר אותה בכל עת. עץ העבודה שנוצר עבור ההפעלה, אם קיים, יימחק. ניתן ליצור אותו מחדש על ידי שחזור ההפעלה."
 		},
 		"vs/workbench/contrib/chat/browser/actions/chatActions": {
 			"actions.interactiveSession.focus": "התמקד ברשימת הצ'אטים",
@@ -10675,13 +10817,9 @@
 			"agentHostChatInputPicker.boolean.onLabel": "מופעל",
 			"agentHostChatInputPicker.boolean.true": "מופעל",
 			"agentHostChatInputPicker.defaultApprovalsHover": "Copilot שואל לפני הרצת כלים, אלא אם ההגדרות שהגדרת מתירות את הכלי.",
-			"agentHostChatInputPicker.defaultSandboxToggle": "ארגז חול למסוף",
-			"agentHostChatInputPicker.defaultSandboxToggleTitle": "מריץ פקודות מסוף בתוך ארגז חול המגביל גישה למערכת הקבצים ולרשת",
-			"agentHostChatInputPicker.editableManagedSandboxToggleTitle": "ארגז החול מופעל על ידי הארגון שלך, אך ניתן לכבות אותו",
 			"agentHostChatInputPicker.filter": "סנן...",
 			"agentHostChatInputPicker.learnMorePermissions": "מידע נוסף על הרשאות",
 			"agentHostChatInputPicker.policyDisabledHover": "מושבת על ידי הארגון שלך. פנה למנהל המערכת שלך.",
-			"agentHostChatInputPicker.requiredSandboxToggleTitle": "ארגז החול נדרש על ידי הארגון שלך",
 			"agentHostChatInputPicker.sandboxedLabel": "{0} (בארגז חול)",
 			"agentHostChatInputPicker.triggerAria": "{0}: {1}",
 			"agentHostChatInputPicker.triggerAriaReadOnly": "{0}: {1}, לקריאה בלבד"
@@ -10742,7 +10880,8 @@
 			"agentHost.sdkSetup.noAccountDescription.all": "התחבר ל-GitHub כדי להשתמש במודלים של GitHub Copilot, התחבר ל-{2} כדי להשתמש במנוי ה-{2} שלך, או [טען מחדש את התצורה]({1}) אם הגדרת את {0} במקום אחר. לדרכים נוספות להגדיר את {0}, [קרא עוד]({3}) בתיעוד שלהם.",
 			"agentHost.sdkSetup.noAccountDescription.docs": "התחבר ל-GitHub כדי להשתמש במודלים של GitHub Copilot, או [טען מחדש את התצורה]({1}) אם הגדרת את {0} במקום אחר. לדרכים נוספות להגדיר את {0}, [קרא עוד]({2}) בתיעוד שלהם.",
 			"agentHost.sdkSetup.noAccountDescription.signIn": "התחבר ל-GitHub כדי להשתמש במודלים של GitHub Copilot, התחבר ל-{2} כדי להשתמש במנוי ה-{2} שלך, או [טען מחדש את התצורה]({1}) אם הגדרת את {0} במקום אחר.",
-			"agentHost.sdkSetup.signInAction": "התחבר ל-{0}"
+			"agentHost.sdkSetup.signInAction": "התחבר ל-{0}",
+			"agentHost.sdkSetup.downloadDescription.withModels": "לחץ על 'הורד' או שלח הודעה כדי להוריד את {0} Agent SDK."
 		},
 		"vs/workbench/contrib/chat/browser/agentSessions/agentHost/agentHostSessionHandler": {
 			"agentHost.authRequired": "נדרש אימות כדי להתחיל הפעלה. התחבר ונסה שוב.",
@@ -10791,7 +10930,9 @@
 			"agentHostSessionPills.issues.section": "סוגיות",
 			"agentHostSessionPills.pullRequest": "בקשת משיכה",
 			"agentHostSessionPills.pullRequest.number": "בקשת משיכה #{0}",
-			"agentHostSessionPills.pullRequests.section": "בקשות משיכה"
+			"agentHostSessionPills.pullRequests.section": "בקשות משיכה",
+			"agentHostSessionPills.issue.numberWithTitle": "סוגיה #{0}: {1}",
+			"agentHostSessionPills.pullRequest.numberWithTitle": "בקשת משיכה #{0}: {1}"
 		},
 		"vs/workbench/contrib/chat/browser/agentSessions/agentHost/agentHostSessionWorkingDirectorySynchronizer": {
 			"agentHostWorkingDirectories.untrusted": "תיקיית סביבת העבודה '{0}' אינה מהימנה."
@@ -10869,7 +11010,7 @@
 			"agentSessionReadIndicatorForeground": "צבע חזית עבור מחוון הקריאה בהפעלת סוכן.",
 			"agentSessionSelectedBadgeBorder": "צבע גבול עבור התוויות בפריטי הפעלת סוכן נבחרים.",
 			"agentSessionSelectedUnfocusedBadgeBorder": "צבע גבול עבור התוויות בפריטי הפעלת סוכן נבחרים כאשר התצוגה אינה ממוקדת.",
-			"chat.session.providerDescription.agentHostCodex": "האצל משימות לסוכן Codex תוך שימוש במודלים הכלולים במנוי ה-GitHub Copilot שלך. הסוכן פועל בשלבים דרך צ'אט ועובד באופן אינטראקטיבי כדי ליישם שינויים בסביבת העבודה הראשית שלך.",
+			"chat.session.providerDescription.agentHostCodex": "עבוד עם סוכן Codex של OpenAI באמצעות מנוי ChatGPT או GitHub Copilot שלך.",
 			"chat.session.providerDescription.agentHostCopilot": "הרץ סוכן Copilot SDK בתהליך מארח הסוכן המקומי.",
 			"chat.session.providerDescription.background": "האצל משימות לסוכן רקע הרץ מקומית על המחשב שלך. הסוכן פועל בשלבים דרך צ'אט ועובד באופן אסינכרוני בעץ עבודה של Git כדי ליישם שינויים המבודדים מסביבת העבודה הראשית שלך, באמצעות ה-CLI של GitHub Copilot.",
 			"chat.session.providerDescription.claude": "האצל משימות ל-Claude Agent SDK תוך שימוש במודלים של Claude הכלולים במנוי ה-GitHub Copilot שלך. הסוכן פועל בשלבים דרך צ'אט ועובד באופן אינטראקטיבי כדי ליישם שינויים בסביבת העבודה הראשית שלך.",
@@ -11328,7 +11469,6 @@
 			"customizationMigrationPageButton": "העבר",
 			"customizationMigrationPageButtonWithCount": "העבר את {0}",
 			"customizationMigrationSelectAll": "בחר הכול",
-			"customizationMigrationSelectAriaLabel": "בחר {0}",
 			"customizationMigrationSelectedCount": "{0} נבחרו",
 			"customizationMigrationSelectGroupAriaLabel": "בחר את כל ההתאמות האישיות ב-{0}",
 			"customizationMigrationSettingsGroup": "הגדרות",
@@ -11393,7 +11533,54 @@
 			"tools": "כלים",
 			"toolsDesc": "אפשר או השבת קבוצות של כלי מודל שפה הזמינים לצ'אט.",
 			"userSaveTarget": "משתמש",
-			"workspaceSaveTarget": "סביבת עבודה"
+			"workspaceSaveTarget": "סביבת עבודה",
+			"backToCustomizationMigrationDashboard": "חזרה להעברות של התאמות אישיות",
+			"backToCustomizationMigrationDashboardTooltip": "חזרה להעברות של התאמות אישיות",
+			"changeCustomizationMigrationDestination": "שנה יעד עבור {0}, כרגע {1}",
+			"chooseAnotherMigrationFolder": "בחר תיקייה אחרת...",
+			"chooseAnotherMigrationFolderDescription": "השתמש ביעד העברה מותאם אישית",
+			"chooseCustomMigrationDestination": "בחר יעד העברה מותאם אישית",
+			"chooseMigrationDestination": "בחר יעד עבור {0}",
+			"chooseMigrationLocationToCustomize": "בחר מיקום העברה להתאמה אישית",
+			"configureCustomizationMigrationDestination": "הגדר יעד עבור {0}",
+			"customizationMigrationAgentsDestination": "{0} סוכנים",
+			"customizationMigrationAllTooltip": "העבר את כל ההתאמות האישיות",
+			"customizationMigrationDestinationNotConfigured": "לא הוגדר",
+			"customizationMigrationInstructionsDestination": "{0} הנחיות",
+			"customizationMigrationShortcut": "העברות",
+			"customizationMigrationShortcutAriaLabel": "העברות, {0} התאמות אישיות דורשות תשומת לב",
+			"customizationMigrationShortcutAriaLabelSingle": "העברות, התאמה אישית אחת דורשת תשומת לב",
+			"customizationMigrationShortcutLabel": "העברות",
+			"customizationMigrationShortcutTooltip": "סקור התאמות אישיות שדורשות העברה",
+			"customizationMigrationSkillsDestination": "{0} מיומנויות",
+			"customizationMigrationUserScope": "משתמש",
+			"customizationMigrationWorkspaceScope": "סביבת עבודה",
+			"migrationAccessibleActivity": "פעילות העברה: {0}, {1}",
+			"migrationAccessibleCategory": "{0}: {1}. {2}{3}",
+			"migrationAccessibleComplete": "אין העברות שנותרו.",
+			"migrationAccessibleHighRisk": "סיכון גבוה. ",
+			"migrationAccessiblePaths": "{0}: מ-{1} אל {2}",
+			"migrationAccessibleSkipped": "דולג",
+			"migrationAccessibleTitle": "רשימת הבדיקה של ההעברה שלך",
+			"migrationChecklistAgentsCount": "{0} סוכנים",
+			"migrationChecklistInstructionsCount": "{0} הנחיות",
+			"migrationChecklistMcp": "שרתי MCP",
+			"migrationChecklistMcpDescription": "העבר שרתי סביבת עבודה נתמכים לקובץ .mcp.json בשורש כדי שסוכנים יוכלו לגלות אותם ישירות.",
+			"migrationChecklistOneAgent": "סוכן אחד",
+			"migrationChecklistOneInstruction": "הנחיה אחת",
+			"migrationChecklistOnePrompt": "פרומפט אחד",
+			"migrationChecklistOneServer": "שרת אחד",
+			"migrationChecklistProfile": "הפרופיל שלך",
+			"migrationChecklistPrompts": "הנחיות למיומנויות",
+			"migrationChecklistPromptsCount": "{0} פרומפטים",
+			"migrationChecklistPromptsDescription": "המר קובצי הנחיות לשימוש חוזר למיומנויות כדי שסוכנים יוכלו לגלות ולהריץ אותם כהתאמות אישיות נתמכות.",
+			"migrationChecklistServersCount": "{0} שרתים",
+			"migrationChecklistUserData": "נתוני משתמש",
+			"migrationChecklistUserDataDescription": "העבר סוכנים והוראות למיקומים משותפים כדי שיישארו זמינים לחוויות סוכן נתמכות.",
+			"migrationChecklistWorkspace": "סביבת עבודה",
+			"migrationNoEditableDestinations": "אין יעדי העברת קבצים להגדרה. שרתי MCP מועברים לקובץ .mcp.json בשורש סביבת העבודה.",
+			"recommendedCustomizationMigrationFolder": "{0} (מומלץ)",
+			"selectFolder": "בחר תיקייה"
 		},
 		"vs/workbench/contrib/chat/browser/aiCustomization/aiCustomizationManagementEditorInput": {
 			"aiCustomizationManagementEditorDescriptionWithHarnessAndWorkspace": "({0} · {1})",
@@ -11443,7 +11630,12 @@
 			"workflowInputAriaLabel": "תאר את ההעדפות שלך כדי להתאים אישית את הסוכן שלך",
 			"workflowInputPlaceholder": "העדף קומיטים תמציתיים, ביקורות קוד יסודיות וקוד בדוק...",
 			"workflowSubmitAriaLabel": "התאם אישית סוכן",
-			"workflowSubmitTooltip": "פתח בצ'אט"
+			"workflowSubmitTooltip": "פתח בצ'אט",
+			"customizationMigrationOverviewCardDescription": "{0} התאמות אישיות דורשות עדכון לפני שניתן יהיה להשתמש בהן על ידי {1}. סקור מה ישתנה לפני ההעברה.",
+			"customizationMigrationOverviewCardDescriptionSingle": "התאמה אישית אחת דורשת עדכון לפני שניתן יהיה להשתמש בה על ידי {0}. סקור מה ישתנה לפני ההעברה.",
+			"customizationMigrationOverviewCardLabel": "סקור העברות של התאמות אישיות",
+			"reviewCustomizationMigrations": "סקור העברות...",
+			"reviewCustomizationMigrationsAriaLabel": "סקור {0} התאמות אישיות שדורשות העברה"
 		},
 		"vs/workbench/contrib/chat/browser/aiCustomization/customizationCardList": {
 			"collapseCustomizationSection": "כווץ {0}",
@@ -11569,7 +11761,47 @@
 			"userDataMigrationShortcutAriaLabelSingle": "נתוני משתמש, התאמה אישית אחת דורשת העברה",
 			"userDataMigrationShortcutAriaLabelWithCount": "נתוני משתמש, {0} התאמות אישיות דורשות העברה",
 			"userDataMigrationShortcutLabel": "העברת נתוני משתמש",
-			"userDataMigrationShortcutTooltip": "העבר סוכני נתוני משתמש והנחיות אל המארח הפעיל"
+			"userDataMigrationShortcutTooltip": "העבר סוכני נתוני משתמש והנחיות אל המארח הפעיל",
+			"backToMcpMigration": "חזרה להעברת שרתי MCP",
+			"customizationMigrationSelectAriaLabel": "בחר {0}",
+			"mcpMigrationBannerConsequence": "רשומות שהועברו מוסרות מ-.vscode/mcp.json רק לאחר שהרשומות בקובץ .mcp.json בשורש נכתבו בהצלחה.",
+			"mcpMigrationBannerMessage": "שרתים מתאימים עוברים מ-.vscode/mcp.json אל .mcp.json בכל שורש של סביבת העבודה כדי ש-{0} יוכל לגלות אותם ישירות. שרתים שאינם נתמכים ושרתים שלא נבחרו נשארים בקבצים הנוכחיים שלהם.",
+			"mcpMigrationCardAction": "העבר...",
+			"mcpMigrationCardActionAriaLabel": "העבר שרתי MCP נתמכים של סביבת העבודה",
+			"mcpMigrationCardDescriptionMultiple": "נמצאו {0} שרתים נתמכים ב-.vscode/mcp.json שניתן להעביר לקובצי השורש של סביבת העבודה כדי ש-{1} יוכל לגלות אותם ישירות.",
+			"mcpMigrationCardDescriptionSingle": "נמצא שרת נתמך אחד ב-.vscode/mcp.json שניתן להעביר לשורש סביבת העבודה כדי ש-{0} יוכל לגלות אותו ישירות.",
+			"mcpMigrationCardLabel": "העבר שרתי MCP",
+			"mcpMigrationCompletedMultiple": "הועברו {0} שרתי MCP.",
+			"mcpMigrationCompletedSingle": "הועבר שרת MCP אחד.",
+			"mcpMigrationConfirmButton": "העבר",
+			"mcpMigrationConfirmDetail": "הרשומות שנבחרו מוסרות מ-.vscode/mcp.json לאחר שנכתבו ואומתו ב-.mcp.json. רשומות שאינן נתמכות ורשומות שלא נבחרו נשארות במקומן.",
+			"mcpMigrationConfirmMessageMultiple": "להעביר {0} שרתי MCP אל .mcp.json?",
+			"mcpMigrationConfirmMessageSingle": "להעביר שרת MCP אחד אל .mcp.json?",
+			"mcpMigrationCrossRootConflict": "לא ניתן היה להעביר את '{0}' מכיוון ששורש אחר של סביבת העבודה מגדיר שרת MCP באותו שם. שנה את השם של הכפיל או הסר אותו לפני ההעברה.",
+			"mcpMigrationCrossRootConflicts": "לא ניתן היה להעביר חלק משרתי ה-MCP מכיוון שהשמות שלהם מתנגשים בין שורשים של סביבת העבודה. שנה את השמות של הכפילים או הסר אותם לפני ההעברה.",
+			"mcpMigrationFailedMultiple": "העברת {0} שרתי MCP נכשלה: {1}.",
+			"mcpMigrationFailedSingle": "העברת שרת MCP נכשלה: {0}.",
+			"mcpMigrationFailedWithRemainder": "העברת {0} שרתי MCP נכשלה: {1}, ועוד {2}.",
+			"mcpMigrationInvalidTarget": "לא ניתן היה להעביר את '{0}' מכיוון שקובץ היעד .mcp.json אינו חוקי.",
+			"mcpMigrationItemPath": "{0} אל {1}",
+			"mcpMigrationLearnMore": "מידע נוסף על שרתי MCP",
+			"mcpMigrationNoLongerEligible": "לא ניתן היה להעביר את '{0}' מכיוון שהוא כבר אינו מתאים.",
+			"mcpMigrationNoneMigrated": "לא הועברו שרתי MCP.",
+			"mcpMigrationPageButtonTooltip": "העבר את שרתי ה-MCP שנבחרו לקובצי .mcp.json בשורש",
+			"mcpMigrationPageDescriptionMultiple": "בחר שרתי MCP נתמכים להעברה כדי ש-{0} יוכל לגלות אותם ישירות. שרתים שאינם נתמכים ושרתים שלא נבחרו נשארים ב-.vscode/mcp.json.",
+			"mcpMigrationPageDescriptionSingle": "בחר את שרת ה-MCP הנתמך להעברה כדי ש-{0} יוכל לגלות אותו ישירות. שרתים שאינם נתמכים ושרתים שלא נבחרו נשארים ב-.vscode/mcp.json.",
+			"mcpMigrationPageEmpty": "אין שרתי MCP נתמכים של סביבת העבודה הזמינים להעברה.",
+			"mcpMigrationPageTitle": "העבר שרתי MCP",
+			"mcpMigrationRollbackFailed": "לא ניתן היה להשלים או לבטל בבטחה את ההעברה עבור '{0}'. בדוק את שני קובצי התצורה של MCP.",
+			"mcpMigrationRollbackFailedMultiple": "לא ניתן היה להשלים או לבטל בבטחה חלק מהעברות שרתי ה-MCP. בדוק את קובצי התצורה של MCP במקור וביעד שהושפעו.",
+			"mcpMigrationSelectAriaLabel": "בחר את {0} מתוך {1}",
+			"mcpMigrationShortcutAriaLabelSingle": "שרתי MCP, ניתן להעביר שרת אחד",
+			"mcpMigrationShortcutAriaLabelWithCount": "שרתי MCP, ניתן להעביר {0} שרתים",
+			"mcpMigrationShortcutLabel": "העבר שרתי MCP",
+			"mcpMigrationShortcutTooltip": "העבר שרתי MCP נתמכים של סביבת העבודה לקובצי .mcp.json בשורש",
+			"mcpMigrationSourceChanged": "לא ניתן היה להעביר את '{0}' מכיוון שתצורת המקור שלו השתנתה.",
+			"mcpMigrationTargetConflict": "לא ניתן היה להעביר את '{0}' מכיוון ש-.mcp.json כבר מכיל שרת אחר בשם זה.",
+			"mcpMigrationWorkspaceGroup": "סביבת עבודה"
 		},
 		"vs/workbench/contrib/chat/browser/aiCustomization/customizationMigrationServiceImpl": {
 			"customizationMigrationHintCombined": "{0} {1}",
@@ -11579,7 +11811,10 @@
 			"customizationMigrationHintSingle": "נמצא {0} קובץ התאמה אישית שקיים אך אינו בשימוש על ידי {1}, וניתן להעביר אותו.",
 			"customizationMigrationHintUser": "{0} משתמש",
 			"customizationMigrationHintWorkspace": "{0} סביבת עבודה",
-			"customizationMigrationHintWorkspaceAndUser": "{0} סביבת עבודה ו-{1} משתמש"
+			"customizationMigrationHintWorkspaceAndUser": "{0} סביבת עבודה ו-{1} משתמש",
+			"customizationMigrationHintCombinedAll": "{0} {1} {2}",
+			"customizationMigrationHintMigratableMcpMultiple": "נמצאו {0} שרתי MCP של סביבת העבודה שניתן להעביר עבור {1}.",
+			"customizationMigrationHintMigratableMcpSingle": "נמצא שרת MCP אחד של סביבת העבודה שניתן להעביר עבור {0}."
 		},
 		"vs/workbench/contrib/chat/browser/aiCustomization/embeddedAgentPluginDetail": {
 			"copiedPluginPath": "הועתק",
@@ -11619,7 +11854,8 @@
 			"pluginReadmeMissing": "לא סופק קובץ README עבור התוסף הזה.",
 			"pluginReadmeTitle": "README של התוסף",
 			"pluginSourceFactsTitle": "פרטים",
-			"pluginUninstallFailed": "לא ניתן להסיר את התקנת התוסף: {0}"
+			"pluginUninstallFailed": "לא ניתן להסיר את התקנת התוסף: {0}",
+			"pluginDetailAutomations": "אוטומציות"
 		},
 		"vs/workbench/contrib/chat/browser/aiCustomization/embeddedExtensionToolsDetail": {
 			"toolDetailBy": "מאת {0}",
@@ -11670,8 +11906,6 @@
 			"disableMcpServerAria": "השבת {0}",
 			"enableMcpServerAria": "הפעל את {0}",
 			"error": "שגיאה",
-			"featuredMcpServers": "נבחרים",
-			"featuredMcpServersDescription": "גלה שרתי MCP המחברים סוכנים לכלים ולשירותים פופולריים.",
 			"fromPlugin": "תוסף: {0}",
 			"install": "התקן",
 			"installedMcpServersSection": "מותקן",
@@ -11687,8 +11921,6 @@
 			"mcpAccessDisabledTitle": "שרתי MCP מושבתים",
 			"mcpAuthenticationFailed": "לא ניתן להתחבר אל {0}: {1}",
 			"mcpInstallFailed": "לא ניתן להתקין שרת MCP: {0}",
-			"mcpMarketplaceUnavailable": "לא ניתן היה לטעון שרתי MCP נבחרים",
-			"mcpMarketplaceUnavailableDescription": "בדוק את החיבור שלך ולאחר מכן נסה לטעון שוב את תוצאות החנות.",
 			"mcpMoreActionsAria": "פעולות נוספות עבור {0}",
 			"mcpNoDescription": "לא סופק תיאור.",
 			"mcpSearchMarketplaceUnavailable": "תוצאות החנות אינן זמינות. מוצגים רק שרתי MCP מותקנים.",
@@ -11702,12 +11934,9 @@
 			"noAvailableMcpServers": "אין שרתי MCP זמינים בחנות.",
 			"noInstalledMcpServers": "לא מותקנים שרתי MCP.",
 			"noMatchingServers": "אין שרתים התואמים ל-'{0}'",
-			"retry": "נסה שוב",
-			"retryMcpMarketplace": "נסה שוב לטעון שרתי MCP",
 			"running": "פועל",
 			"searchingMcpMarketplace": "מחפש בחנות ה-MCP...",
 			"searchMcpPlaceholder": "הקלד כדי לחפש...",
-			"showMcpServerOutput": "הצג פלט עבור {0}",
 			"showPlugin": "הצג תוסף",
 			"signIn": "התחבר",
 			"signInToMcpServer": "התחבר ל-{0}",
@@ -11715,7 +11944,13 @@
 			"stopped": "נעצר",
 			"tryDifferentSearch": "נסה מונח חיפוש אחר",
 			"uninstallPlugin": "הסר התקנת תוסף",
-			"uninstallPluginBtn": "הסר התקנת תוסף"
+			"uninstallPluginBtn": "הסר התקנת תוסף",
+			"mcpErrorShowLess": "הצג פחות",
+			"mcpErrorShowMore": "הצג עוד",
+			"mcpServerAriaLabelWithCollapsedError": "{0}, {1}, {2}. השתמש ב'הצג עוד' כדי לקרוא את השגיאה המלאה.",
+			"mcpServerAriaLabelWithError": "{0}, {1}, {2}",
+			"mcpServerErrorWithoutDetails": "השרת דיווח על שגיאה ללא פרטים נוספים.",
+			"output": "הצג פלט"
 		},
 		"vs/workbench/contrib/chat/browser/aiCustomization/pluginListWidget": {
 			"addPlugin": "הוסף תוסף",
@@ -11732,13 +11967,11 @@
 			"createPlugin": "צור תוסף",
 			"createPluginNarrow": "צור",
 			"disablePlugin": "השבת סנכרון של {0}",
-			"discoverMorePluginsDescription": "תוספים אצורים שמוסיפים כלים ומומחיות.",
 			"emptyMarketplace": "אין תוספים זמינים",
 			"enablePlugin": "הפעל סנכרון של {0}",
 			"excludePluginProfileAria": "הוצא את {0} מהפרופיל",
 			"excludePluginWorkspaceAria": "הוצא את {0} מסביבת העבודה",
 			"expanded": "מורחב",
-			"featuredPlugins": "נבחרים",
 			"hookCommandCount": "{0} פקודות",
 			"includePluginProfileAria": "כלול את {0} בפרופיל",
 			"includePluginWorkspaceAria": "כלול את {0} בסביבת העבודה",
@@ -11771,8 +12004,6 @@
 			"oneInstructionContribution": "הנחיה אחת",
 			"oneMcpContribution": "שרת MCP אחד",
 			"oneSkillContribution": "מיומנות אחת",
-			"pluginDiscoveryUnavailable": "לא ניתן היה לטעון תוספים זמינים",
-			"pluginDiscoveryUnavailableDescription": "בדוק את החיבור שלך ולאחר מכן נסה לטעון שוב את התוצאות מהחנויות המוגדרות.",
 			"pluginGroupAriaLabel": "{0}, {1} פריטים, {2}",
 			"pluginInclusionChanged": "{0}. {1}.",
 			"pluginInstalledItemAriaLabelDisabled": "{0}. מושבת",
@@ -11811,8 +12042,6 @@
 			"remotePluginSource": "מרוחק",
 			"remotePluginsSection": "תוספי הפעלה מרוחקת",
 			"remotePluginsSectionDescription": "תוספים המוגדרים ישירות במארח הסוכן המרוחק הפעיל.",
-			"retry": "נסה שוב",
-			"retryPluginDiscovery": "נסה שוב לטעון תוספים",
 			"searchMarketplacePlaceholder": "חפש בחנות התוספים...",
 			"searchPluginsPlaceholder": "הקלד כדי לחפש...",
 			"tryAgainLater": "בדוק את החיבור שלך ונסה שוב",
@@ -11992,12 +12221,11 @@
 			"chat.agent.thinkingMode.collapsed": "חלקי החשיבה יהיו מכווצים כברירת מחדל.",
 			"chat.agent.thinkingMode.collapsedPreview": "חלקי החשיבה יורחבו תחילה, ולאחר מכן יכווצו כאשר נגיע לחלק שאינו חשיבה.",
 			"chat.agent.thinkingMode.fixedScrolling": "הצג את החשיבה בחלונית זרימה בגובה קבוע שגוללת אוטומטית; לחץ על הכותרת כדי להרחיב לגובה מלא.",
-			"chat.agent.thinkingStyle": "שולט כיצד החשיבה מוצגת.",
+			"chat.agent.thinkingStyle": "שולט כיצד החשיבה מוצגת. צ'אטים לקריאה בלבד משתמשים תמיד בסגנון התצוגה המקדימה המכווצת.",
 			"chat.agentHost.agentDebugLog.enabled": "הפעל רישום ניפוי באגים של סוכן עבור הפעלות מארח סוכן: הצג את אירועי ניפוי הבאגים שלהן בחלונית ניפוי הבאגים של הסוכן. נכנס לתוקף באופן מיידי; רק הפעלות הרצות בזמן שהאפשרות מופעלת נלכדות.",
 			"chat.agentHost.agentDebugLog.maxEventsInMemory": "המספר המרבי של אירועי ניפוי באגים הנשמרים בזיכרון עבור כל הפעלת מארח סוכן, עבור חלונית ניפוי הבאגים של הסוכן. אירועים ישנים יותר מעבר למגבלה זו מוסרים מהמאגר הזמני בזיכרון, מה שגם מוריד את הסכומים הכוללים (כגון שימוש באסימונים) המוצגים בסקירת החלונית.",
 			"chat.agentHost.ahpJsonlLogging": "כאשר האפשרות מופעלת, נרשמות כל הודעות התעבורה של AHP עבור חיבורי מארח סוכן לקבצי JSONL תחת תיקיית היומן של החלון.",
 			"chat.agentHost.allowSignedOutWhenUsable": "כאשר האפשרות מופעלת, הפעלות מארח סוכן נשארות זמינות גם כשאין התחברות. חלון הסוכנים נפתח מבלי לכפות התחברות ל-GitHub, וצ'אט העורך מאפשר לבחור את מנגנון ההרצה של Copilot. סוכנים שניתן להשתמש בהם ללא GitHub (למשל Codex עם אימות ChatGPT, או Claude במצב native עם פרטי הזדהות Anthropic משלך) פועלים גם ללא התחברות; סוכנים המחייבים GitHub מבקשים ממך להוסיף מודל או להתחבר. כאשר האפשרות מושבתת (ברירת המחדל), נדרשת התחברות ל-GitHub לפני פתיחת חלון הסוכנים.",
-			"chat.agentHost.copilot.autoModeTiers": "כאשר האפשרות מופעלת, מודל ה-Auto בהפעלות סוכן של Copilot SDK מציע בורר \"אופטימיזציה עבור\" שמטה את הניתוב לעבר יעילות, איזון או אינטליגנציה. הפרופיל חל כאשר ההפעלה נוצרת ונשאר קבוע עבור אותה הפעלה.",
 			"chat.agentHost.copilot.mapLegacySettingsToManagedSettings": "כאשר האפשרות מופעלת, ההגדרות הישנות הנתמכות של VS Code ממופות להגדרות המנוהלות המקבילות של Copilot SDK עבור הפעלות מארח סוכן מקומיות. רק הגבלות ממופות, ורק מערכים בהיקף גלובלי — ערכים ברמת סביבת העבודה או התיקייה מתעלמים מהם. חל על הפעלות מקומיות המשתמשות בסוכן Copilot; מארחים מרוחקים וסוכנים אחרים אינם מושפעים. גשר תאימות זה זמני ואינו בשימוש עבור הגדרות חדשות.",
 			"chat.agentHost.copilot.modelCapabilityOverrides": "דריסות לפי מודל עבור הפעלות מארח סוכן של Copilot. השתמש ב-`*` כדי להתאים לכל מודל. נתמכים משפחת מודל, מאמץ הנמקה, מסנני כלים, יכולות מודל, ודריסות פרומפט ב-YAML.",
 			"chat.agentHost.copilot.modelCapabilityOverrides.availableTools": "כאשר ההגדרה מוגדרת, רק כלים תואמים זמינים להפעלות במודל זה. תבניות: שמות כלים גולמיים, `builtin:*` או `builtin:<name>` (כלי זמן ריצה של Copilot), `mcp:*` או `mcp:<name>` (כלי שרתי MCP), ו-`custom:*` או `custom:<name>` (כל כלי ש-VS Code רושם אצל ה-SDK, כולל כלי המסוף של מארח הסוכן עצמו); `*` גולמי מתרחב לכל שלושת המקורות.",
@@ -12007,7 +12235,6 @@
 			"chat.agentHost.copilot.modelCapabilityOverrides.promptOverrideFile": "נתיב לקובץ YAML המכיל דריסות של `systemPrompt` ו/או `toolDescriptions`. מתעלמים ממנו כאשר `promptOverrideString` מוגדר.",
 			"chat.agentHost.copilot.modelCapabilityOverrides.promptOverrideString": "YAML מוטבע המכיל דריסות של `systemPrompt` ו/או `toolDescriptions`. גובר על `promptOverrideFile`. פרומפט מערכת מחליף את כל קטעי הפרומפט ואמצעי ההגנה של מארח הסוכן וה-SDK.",
 			"chat.agentHost.copilot.modelCapabilityOverrides.reasoningEffort": "מאמץ הנמקה עבור הפעלות במודל זה, הדורס את רמת החשיבה בבורר המודלים. השתמש בערך `*` כדי להגדיר זאת עבור כל מודל. ערכים שאינם מזוהים מתעלמים מהם.",
-			"chat.agentHost.copilot.multiTurnContextRouting": "כאשר האפשרות מופעלת, בחירת מודל Auto בהפעלות סוכן של Copilot SDK מנתבת על סמך השיחה עד כה, ושולחת הודעות משתמש קודמות לנתב במקום לדרג רק את ההודעה האחרונה.",
 			"chat.agentHost.copilot.toolSearch.deferThreshold": "המספר המינימלי של כלים לפני שכלי MCP וכלים חיצוניים נדחים מאחורי חיפוש כלים. הגדר ל-0 כדי לדחות תמיד כלים חיצוניים. אפקטיבי רק כאשר חיפוש כלים מופעל.",
 			"chat.agentHost.copilot.toolSearch.enabled": "כשהאפשרות מופעלת, הפעלות Copilot SDK דוחות כלי MCP וכלי VS Code שאינם ליבה מאחורי כלי חיפוש-כלים, כך שהמודל מגלה אותם לפי דרישה במקום לטעון כל הגדרת כלי מראש.",
 			"chat.agentHost.copilotSdk.logLevel": "שולט ברמת הרישום עבור זמן הריצה של Copilot SDK שבו משתמש מארח הסוכן המקומי. שינוי הגדרה זו מפעיל מחדש את לקוח Copilot SDK; הפעלות פעילות נטענות מחדש בפעם הבאה שבה הן בשימוש.",
@@ -12034,7 +12261,6 @@
 			"chat.agentsControl.enabled": "שולט כיצד מחוון 'סטטוס הסוכן' מופיע במרכז הפקודות בשורת הכותרת. כאשר מוגדר ל-`hidden`, המחוון אינו מוצג. ערכים אחרים מציגים את המחוון ומפעילים אוטומטית את {0}. מחווני ההפעלות שלא נקראו והפעלות בביצוע מחייבים ש-{1} יהיה מופעל.",
 			"chat.agentsControl.hidden": "מחוון סטטוס הסוכן מוסתר משורת הכותרת.",
 			"chat.agentSessionProjection.enabled": "שולט אם מצב הקרנת הפעלת סוכן מופעל לסקירת הפעלות סוכן בסביבת עבודה ממוקדת.",
-			"chat.agentSessions.consolidatedRemoteWorkspaces": "שולט אם סביבות עבודה של GitHub וסביבות עבודה מרוחקות משולבות תחת 'מרוחק' בבורר סביבות העבודה של חלון הסוכנים, כאשר חיפוש זמין תמיד וכאשר נתמך — קיימת אפשרות 'ללא סביבת עבודה'.",
 			"chat.agentSessions.migrateLegacyCopilotCli": "שולט אם הפעלות צ'אט ישנות של Copilot CLI במארח הרחבות עוברות מיגרציה במקום למארח הסוכן בעת פתיחתן, כך שההיסטוריה שלהן הופכת לניתנת לעריכה. כאשר האפשרות מושבתת, הפעלות ישנות נפתחות כרגיל.\n\nשינוי הגדרה זו מחייב הפעלה מחדש כדי להיכנס לתוקף.",
 			"chat.agentSessions.showExternal": "שולט אילו הפעלות סוכן חיצוניות, שנוצרו מחוץ למארח הסוכן של VS Code, מוצגות.",
 			"chat.agentSessions.showExternal.last24Hours": "הצג הפעלות חיצוניות שעודכנו ב-24 השעות האחרונות.",
@@ -12129,12 +12355,12 @@
 			"chat.experimental.incrementalRendering.buffering.word": "חושף את התוכן מילה אחר מילה.",
 			"chat.experimental.incrementalRendering.enabled": "מאפשר רינדור מצטבר עם אנימציה אופציונלית ברמת הבלוק בעת הזרמת תגובות צ'אט.",
 			"chat.experimental.openInAgentsWindow.revealCurrentSession": "קובע האם 'פתח בחלון סוכנים' חושף את הפעלת מארח הסוכן המקומית הנוכחית במקום לפתוח הפעלה חדשה.",
-			"chat.experimental.permissionsSandboxToggle.enabled": "קובע האם בורר ההרשאות מציג מתג \"ארגז חול למסוף\". הפעלות מקומיות מציגות אותו באפשרות ברירת המחדל של ההרשאות; הפעלות מארח הסוכן של Copilot מציגות אותו כהגדרה נפרדת החלה על כל מצבי ההרשאה. עבור הפעלות Copilot SDK המשתמשות בכלי המעטפת המובנה, המתג משקף ומעדכן את `#chat.agentHost.sdkSandbox.enabled#` או את `#chat.agentHost.sdkSandbox.enabledWindows#`.",
+			"chat.experimental.permissionsSandboxToggle.enabled": "קובע האם בורר ההרשאות מציג מתג \"ארגז חול למסוף\". הפעלות מקומיות מציגות אותו באפשרות ברירת המחדל של ההרשאות. הפעלות מארח הסוכן של Copilot מציגות אותו כהגדרה ספציפית להפעלה החלה על כל מצבי ההרשאה; שינוי שלו שומר את הבחירה רק עבור אותה הפעלה. הפעלות חדשות של מארח הסוכן של Copilot עוקבות תחילה אחר `#chat.agentHost.sdkSandbox.enabled#` או `#chat.agentHost.sdkSandbox.enabledWindows#` בעת שימוש בכלי המעטפת המובנה של ה-SDK, ואחר `#chat.agent.sandbox.enabled#` או `#chat.agent.sandbox.enabledWindows#` בעת שימוש בכלי המסוף של Agent Host.",
 			"chat.experimental.richLinks.enabled": "קובע האם קישורים נתמכים בצ'אט מוצגים כקישורים עשירים עם מטא-נתונים חיים. הפעלת אפשרות זו עשויה לבצע בקשות מאומתות לשירותים כגון GitHub.",
 			"chat.experimental.sessionArchiveActionWording": "קובע את הניסוח והסמלים המשמשים בפעולות שמעבירות הפעלות צ'אט לארכיון ומוציאות אותן ממנו, וכן את התווית של מקטע ההפעלות שבארכיון.",
 			"chat.experimental.sessionArchiveActionWording.archive": "משתמש במונחים Archive, Archive All, Unarchive ו-Unarchive All.",
 			"chat.experimental.sessionArchiveActionWording.done": "משתמש במונחים Mark as Done, Mark All as Done, Restore ו-Restore All.",
-			"chat.experimental.sessionStateIndicator.enabled": "מאפשר מחווני מצב סביב הפעלות עורך הצ'אט.",
+			"chat.experimental.sessionStateIndicator.enabled": "מאפשר מחווני מצב סביב הפעלות עורך הצ'אט שנמצאות בתהליך, ממתינות לקלט או שיש להן השלמה שלא נצפתה. התאם אישית את הגבולות באמצעות `chat.sessionStateIndicator.inProgressBorder`, `chat.sessionStateIndicator.needsInputBorder` ו-`chat.sessionStateIndicator.unvisitedBorder` ב-`#workbench.colorCustomizations#`.",
 			"chat.experimental.stickyScroll.enabled": "קובע האם בקשות צ'אט משתמשות בגלילה דביקה ניסיונית מבוססת עץ במקום בכותרת הפרומפט הדביקה.",
 			"chat.experimentalModelPicker": "כאשר האפשרות מופעלת, בורר המודלים משתמש בכרטיסייה לכל ספק מודלים ומגדיר את מאמץ החשיבה וההקשר מכרטיס פרטים לצד כל מודל, במקום כפתור תצורה נפרד.",
 			"chat.experimentalSessionsWindowOverride": "כאשר הערך הוא true, מפעיל התנהגות ייעודית לחלון הפעלות עבור הרחבות.",
@@ -12214,7 +12440,7 @@
 			"chat.notifyWindowOnResponseReceived.always": "הצג תמיד הודעות מערכת הפעלה עבור תגובות, גם כאשר החלון ממוקד.",
 			"chat.notifyWindowOnResponseReceived.off": "לעולם אל תציג הודעות מערכת הפעלה עבור תגובות.",
 			"chat.notifyWindowOnResponseReceived.windowNotFocused": "הצג הודעות מערכת הפעלה עבור תגובות כאשר החלון אינו ממוקד.",
-			"chat.pasteAsAttachmentThreshold": "מספר התווים שהדבקה חייבת לחרוג ממנו כדי שתתווסף לקלט הצ'אט כצירוף במקום להיות מוכנסת בתוך השורה. הדבקה חייבת גם להשתרע על פני כמה שורות, כך שהדבקה ארוכה בשורה בודדת תמיד תוכנס בתוך השורה. הגדר ערך גדול מאוד כדי להדביק תמיד בתוך השורה.",
+			"chat.pasteAsAttachmentThreshold": "מספר התווים שהדבקה חייבת לחרוג ממנו כדי שתתווסף לקלט הצ'אט כצירוף במקום להיות מוכנסת בתוך השורה. הגדר ערך גדול מאוד כדי להדביק תמיד בתוך השורה.",
 			"chat.permissions.default.autoApprove.description": "התחל הפעלות צ'אט חדשות במצב עקיפת אישורים.",
 			"chat.permissions.default.autoApprove.label": "עקיפת אישורים",
 			"chat.permissions.default.autopilot.description": "התחל הפעלות צ'אט חדשות במצב טייס אוטומטי.",
@@ -12269,11 +12495,6 @@
 			"chat.tools.riskAssessment.model": "מזהה מודל השפה המשמש ליצירת הערכות סיכון של כלים. מומלץ מודל קטן ומהיר.",
 			"chat.tools.terminal.simpleCollapsible": "כאשר האפשרות מופעלת, קריאות כלי מסוף תמיד מוצגות במכל ניתן לכיווץ עם תצוגה מפושטת.",
 			"chat.tools.todos.showWidget": "קובע האם להציג את ווידג'ט רשימת המשימות מעל קלט הצ'אט. כאשר האפשרות מופעלת, הווידג'ט מציג פריטי משימות שנוצרו על ידי הסוכן ומתעדכן ככל שמתקדם.",
-			"chat.turnStatusPills": "קובע האם תוויות מצב הסוכן מוצגות מעל קלט הצ'אט ובתוך תגובות שהושלמו. חל רק על הפעלות סוכן.",
-			"chat.turnStatusPills.browser": "הצג תווית לפעילות דפדפן בתור.",
-			"chat.turnStatusPills.changes": "הצג תווית המסכמת את הקבצים שהשתנו ואת מספר השורות שנוספו והוסרו בתור.",
-			"chat.turnStatusPills.objectDeprecated": "צורת האובייקט לכל תווית הוצאה משימוש. יש להשתמש בערך בוליאני במקום זאת.",
-			"chat.turnStatusPills.preview": "הצג תווית לתצוגה מקדימה של קובץ Markdown או HTML שנוצר או נערך בתור.",
 			"chat.undoRequests.restoreInput": "קובע האם קלט הצ'אט משוחזר כאשר מבוצעת בקשת ביטול. הקלט יתמלא בטקסט של הבקשה ששוחזרה.",
 			"chat.unifiedAgentsBar.enabled": "מחליף את תיבת חיפוש מרכז הפקודות בווידג'ט מאוחד של צ'אט וחיפוש.",
 			"chat.upvoteAnimation": "קובע האם מוצגת אנימציה בעת לחיצה על כפתור האגודל למעלה בתגובת צ'אט.",
@@ -12307,12 +12528,12 @@
 			"chat.viewSessions.orientation.sideBySide": "הצג הפעלות צ'אט זו לצד זו אם יש מספיק מקום, אחרת חזור למצב מוערם מעל שדה הקלט של הצ'אט, אלא אם כן הפעלת צ'אט גלויה.",
 			"chat.viewSessions.orientation.stacked": "הצג הפעלות צ'אט במחסנית אנכית מעל שדה הקלט של הצ'אט, אלא אם כן הפעלת צ'אט גלויה.",
 			"chatDebug": "תצוגת ניפוי באגים",
-			"dictation.enabled": "מאפשר הכתבה בכל רחבי המוצר (שדה הקלט של הצ'אט, העורך והמסוף). כשמופעל בפלטפורמה נתמכת, מופיע כפתור מיקרופון בשדה הקלט של הצ'אט וקיצור הדרך להכתבה הופך לזמין; מודל התמלול על המכשיר מורד בשימוש הראשון ופועל באופן מקומי.",
+			"dictation.enabled": "מאפשר הכתבה בכל רחבי המוצר (שדה הקלט של הצ'אט, העורך והמסוף). כשמופעל, מופיע כפתור מיקרופון בשדה הקלט של הצ'אט וקיצור הדרך להכתבה הופך לזמין. בשולחן העבודה נעשה שימוש במודל התמלול שנבחר; באינטרנט נעשה שימוש בתמלול בענן.",
 			"dictation.enabled.policy": "קובע אם הכתבה זמינה בכל רחבי המוצר (שדה הקלט של הצ'אט, העורך והמסוף).",
 			"dictation.experimental.llmCleanup": "ניסיוני: כשההכתבה מסתיימת, התמלול הסופי עובר דרך מודל שפה קטן כדי לשחזר סימני פיסוק, אותיות רישיות, פסקאות ורשימות. דורש הפעלת Copilot; התמלול נשלח למודל השפה לצורך ניקוי. חוזר לתמלול הגולמי כשאין מודל זמין. השתמש ב[הוראות ההכתבה](command:{0}) כדי להתאים אישית מינוח ועיצוב.",
 			"dictation.experimental.llmCleanup.policy": "קובע אם תמלולי הכתבה סופיים נשלחים למודל שפה לצורך ניקוי.",
 			"dictation.experimental.llmCleanupModel": "שולט במודל השפה המשמש לניקוי הכתבה ניסיוני. `auto` פועל לפי ברירת המחדל שמספק הניסוי.",
-			"dictation.model": "המודל המשמש להכתבה. מודלים במכשיר מורדים בשימוש הראשון ופועלים מקומית דרך Microsoft Foundry Local; אפשרות הענן משדרת אודיו לשירות הקול של Microsoft AI.",
+			"dictation.model": "המודל המשמש להכתבה. מודלים במכשיר מורדים בשימוש הראשון ופועלים מקומית דרך Microsoft Foundry Local; אפשרות הענן משדרת אודיו לשירות הקול של Microsoft AI. באינטרנט, בחירות של מודל במכשיר על ידי המשתמש או כברירת מחדל משתמשות בתמלול בענן, מכיוון שתמלול מקומי אינו נתמך. אם מדיניות מחייבת תמלול במכשיר, ההכתבה אינה זמינה באינטרנט.",
 			"dictation.model.mai": "תמלול בענן דרך אותו שירות הקול של Microsoft AI שבו משתמש מצב הקול (Voice Mode). דורש חיבור לרשת והתחברות ל-GitHub; האודיו משודר לשירות.",
 			"dictation.model.mai.label": "MAI — ענן",
 			"dictation.model.mai.policy": "שימוש בשירות התמלול בענן. האודיו משודר לשירות.",
@@ -12335,7 +12556,12 @@
 			"mcp.enterpriseManagedAuth.idp.issuer": "כתובת ה-URL של מנפיק ה-OAuth/OIDC של שרת ההרשאה SSO. חייבת להיות כתובת `https://`.",
 			"mcp.enterpriseManagedAuth.idp.policy": "תצורת ה-IdP של OAuth/OIDC המשמשת לאימות שרתי Model Context Protocol (MCP) המנוהלים ארגונית.",
 			"mcp.gallery.serviceUrl": "הגדר את כתובת ה-URL של שירות גלריית ה-MCP להתחברות אליה",
-			"mcp.list": "הצג שרתים"
+			"mcp.list": "הצג שרתים",
+			"chat.copilot.autoModeTierOverride": "עוקף את העדפת \"מיטוב עבור\" של Auto לצורך הערכות וניפוי באגים, גם כאשר הבורר מושבת. מקבל `efficiency`, `balance` או `intelligence` הן בהפעלות Copilot Chat והן בהפעלות Copilot SDK; `fast` זמין להרחבה בלבד. הגדר ל-`null` כדי לנקות.",
+			"chat.copilot.autoModeTiers": "הצג את בורר \"מיטוב עבור\" של מודל Auto עם האפשרויות יעילות, איזון ואינטליגנציה בהפעלות Copilot Chat ו-Copilot SDK. כאשר האפשרות מושבתת, השירות בוחר כיצד לנתב, אלא אם הוגדרה עקיפה.",
+			"chat.copilot.claudeAdvisor.enabled": "כאשר האפשרות מופעלת, הפעלות מארח הסוכן של Copilot המשתמשות במודל Claude נתמך יכולות לקרוא לכלי Advisor המקורי של הספק. שינוי הגדרה זו מפעיל מחדש את לקוח Copilot SDK לאחר שהתורות הפעילים מסתיימים.",
+			"chat.customizations.mcpServerMigration.enabled": "קובע אם עורך התאמות הצ'אט האישיות מציע להעביר שרתי MCP נתמכים של סביבת העבודה מתוך .vscode/mcp.json לקובץ .mcp.json בשורש סביבת העבודה, שם רתמת מארח הסוכן הפעילה מגלה אותם ישירות. כאשר האפשרות מושבתת, כרטיס ההעברה וקיצור הדרך בסרגל הצד מוסתרים.",
+			"chat.experimentalModePermissionsPicker": "מציג מצב והרשאות בבורר משולב עם אפשרויות הרשאה הניתנות להרחבה עבור הפעלות מארח הסוכן של Copilot."
 		},
 		"vs/workbench/contrib/chat/browser/chatDebug/agentHostChatDebugProvider": {
 			"agentHost.debug.aborted": "הופסק",
@@ -13022,7 +13248,8 @@
 		},
 		"vs/workbench/contrib/chat/browser/chatInputPills": {
 			"chatInputPills.configure": "הגדר תוויות סטטוס הפעלה",
-			"chatInputPills.viewChanges": "הצג {0}"
+			"chatInputPills.viewChanges": "הצג {0}",
+			"chatInputPills.options": "אפשרויות {0}"
 		},
 		"vs/workbench/contrib/chat/browser/chatManagement/chatManagement.contribution": {
 			"enableChatForByok": "מפעיל תכונות AI…",
@@ -14601,7 +14828,9 @@
 			"chat.subagent.status.working": "תת-הסוכן עובד",
 			"chat.subagent.workedDuration": "עבד במשך {0}",
 			"chat.subagent.working": "עובד על זה...",
-			"chat.subagent.workingDuration": "עובד במשך {0}"
+			"chat.subagent.workingDuration": "עובד במשך {0}",
+			"chat.subagent.openChat.unavailable": "צ'אט תת-הסוכן אינו זמין עדיין.",
+			"chat.subagent.pendingChat.aria": "תת-סוכן: {0}"
 		},
 		"vs/workbench/contrib/chat/browser/widget/chatContentParts/chatSuggestNextWidget": {
 			"chat.currentMode": "מצב נוכחי",
@@ -15166,10 +15395,12 @@
 			"chat.modelPicker.unpin": "בטל הצמדת מודל",
 			"models.cost": "עלות: {0}",
 			"models.pricingDetails": "פרטי תמחור",
-			"models.routingProfile": "פרופיל ניתוב",
 			"models.speed": "מהירות",
 			"models.speed.fast": "מהיר",
-			"models.speed.standard": "רגיל"
+			"models.speed.standard": "רגיל",
+			"chat.modelPicker.modelActions": "פעולות מודל",
+			"chat.modelPicker.resetToDefault": "אפס לברירת המחדל",
+			"models.optimizeFor": "אופטימיזציה עבור"
 		},
 		"vs/workbench/contrib/chat/browser/widget/input/modelPicker/modelPickerConfiguration": {
 			"chat.config.cacheBreakHint": "שינוי אפשרויות אלה באמצע ההפעלה מאפס את מטמון הפרומפט ועלול להעלות את העלות.",
@@ -15196,7 +15427,7 @@
 			"models.cost": "עלות: {0}",
 			"models.defaultContext": "ברירת מחדל",
 			"models.longContext": "הקשר ארוך",
-			"models.routingProfile": "פרופיל ניתוב"
+			"models.optimizeFor": "אופטימיזציה עבור"
 		},
 		"vs/workbench/contrib/chat/browser/widget/input/modelPicker/modelPickerItemPrimitives": {
 			"chat.modelPicker.adminDescription": "פנה למנהל המערכת שלך",
@@ -15215,7 +15446,8 @@
 		},
 		"vs/workbench/contrib/chat/browser/widget/input/modelPicker/modelPickerItems": {
 			"chat.manageModels": "נהל מודלים...",
-			"chat.manageModels.tooltip": "נהל מודלי שפה"
+			"chat.manageModels.tooltip": "נהל מודלי שפה",
+			"chat.modelPicker.currentModel": "המודל הנוכחי"
 		},
 		"vs/workbench/contrib/chat/browser/widget/input/modelPicker/modelPickerItemSections": {
 			"chat.modelPicker.auto": "אוטומטי",
@@ -15460,7 +15692,7 @@
 			"chatSessionSupportsRename": "נכון כאשר הפעלת הצ'אט הנוכחית תומכת בשינוי שם.",
 			"chatSessionType": "הסוג של הפעלת הצ'אט הנוכחית.",
 			"chatSkipRequestInProgressMessage": "נכון כאשר יש לדלג על הודעת הבקשה בתהליך של הצ'אט.",
-			"chatSpeechToTextConfigured": "נכון כאשר המרת דיבור לטקסט במכשיר זמינה להכתבה לתוך קלט הצ'אט.",
+			"chatSpeechToTextConfigured": "נכון כאשר המרת דיבור לטקסט זמינה להכתבה לתוך קלט הצ'אט.",
 			"chatSpeechToTextPreparing": "נכון בזמן שמנוע המרת הדיבור לטקסט הנבחר מתכונן.",
 			"chatSpeechToTextRecording": "נכון בזמן שקלט הצ'אט מקליט אודיו לצורך תמלול מדיבור לטקסט.",
 			"enableRemoteCodingAgentPromptFileOverlay": "האם תכונת שכבת-העל של קובץ הפרומפט של סוכן הקידוד המרוחק מופעלת",
@@ -15488,7 +15720,8 @@
 			"lockedToCodingAgent": "נכון כאשר רכיב הצ'אט נעול להפעלת סוכן הקידוד.",
 			"multipleChatTips": "נכון כאשר יש כמה טיפים של צ'אט זמינים.",
 			"toolsCount": "מספר הכלים הזמינים בצ'אט.",
-			"withinEditSessionDiff": "נכון כאשר רכיב הצ'אט מעביר להפעלת צ'אט העריכה."
+			"withinEditSessionDiff": "נכון כאשר רכיב הצ'אט מעביר להפעלת צ'אט העריכה.",
+			"chatSpeechToTextUsesMai": "נכון כאשר ההכתבה משתמשת בשירות התמלול בענן של MAI."
 		},
 		"vs/workbench/contrib/chat/common/attachments/chatVariableEntries": {
 			"chat.attachment.problems.all": "כל הבעיות",
@@ -16241,9 +16474,9 @@
 			"chat.editedFileForeground": "צבע הקדמה של קובץ שנערך בצ'אט, ברשימת הקבצים שנערכו.",
 			"chat.findMatchBackground": "צבע הרקע של התאמת החיפוש הנוכחית בתמלול הצ'אט.",
 			"chat.findMatchHighlightBackground": "צבע הרקע של שאר התאמות החיפוש בתמלול הצ'אט. הצבע חייב שלא להיות אטום, כדי שלא יסתיר את התוכן שמתחתיו.",
-			"chat.inputWorkingBorderColor1": "עצירת הצבע הראשונה של גבול קלט הצ'אט המונפש, המוצג בזמן שבקשה נמצאת בתהליך.",
-			"chat.inputWorkingBorderColor2": "צבע הדגשה משני המשמש עבור אלמנטים מונפשים אחרים של קלט הצ'אט. אינו משמש עבור גבול קלט הצ'אט בזמן שהבקשה בתהליך.",
-			"chat.inputWorkingBorderColor3": "צבע הדגשה שלישוני המשמש עבור אלמנטים מונפשים אחרים של קלט הצ'אט. אינו משמש עבור גבול קלט הצ'אט בזמן שהבקשה בתהליך.",
+			"chat.inputWorkingBorderColor1": "צבע ההדגשה של גבול קלט הצ'אט המונפש, המוצג בזמן שבקשה נמצאת בתהליך.",
+			"chat.inputWorkingBorderColor2": "צבע הדגשה משני של קלט הצ'אט שאינו בשימוש.",
+			"chat.inputWorkingBorderColor3": "צבע הדגשה שלישוני של קלט הצ'אט שאינו בשימוש.",
 			"chat.linesAddedForeground": "צבע הקדמה של שורות שנוספו בתווית בלוק הקוד של הצ'אט.",
 			"chat.linesRemovedForeground": "צבע הקדמה של שורות שהוסרו בתווית בלוק הקוד של הצ'אט.",
 			"chat.requestBackground": "צבע הרקע של בקשת צ'אט.",
@@ -16258,7 +16491,12 @@
 			"chat.voiceGlowBaseColor": "צבע ההדגשה הבסיסי שממנו נגזר הזוהר הסביבתי של מצב הקול. זוהרי ההאזנה והדיבור מוסטים בגוון מהצבע הזה.",
 			"chat.voiceListeningGlow": "צבע ההדגשה של הזוהר של מצב הקול בזמן האזנה. נגזר מ-{0} כאשר אינו מוגדר.",
 			"chat.voiceSpeakingGlow": "צבע ההדגשה של הזוהר של מצב הקול בזמן שהסוכן מדבר. נגזר מ-{0} כאשר אינו מוגדר.",
-			"chatCheckpointSeparator": "צבע מפריד נקודת הביקורת של הצ'אט."
+			"chatCheckpointSeparator": "צבע מפריד נקודת הביקורת של הצ'אט.",
+			"chat.inputWorkingBorderColor2.deprecated": "צבע זה אינו בשימוש עוד. השתמש ב-'chat.inputWorkingBorderColor1' כדי להתאים אישית את גבול קלט הצ'אט המונפש.",
+			"chat.inputWorkingBorderColor3.deprecated": "צבע זה אינו בשימוש עוד. השתמש ב-'chat.inputWorkingBorderColor1' כדי להתאים אישית את גבול קלט הצ'אט המונפש.",
+			"chat.sessionStateIndicator.inProgressBorder": "צבע הגבול של עורך צ'אט עם בקשה בתהליך.",
+			"chat.sessionStateIndicator.needsInputBorder": "צבע הגבול של עורך צ'אט הממתין לקלט מהמשתמש.",
+			"chat.sessionStateIndicator.unvisitedBorder": "צבע הגבול של עורך צ'אט עם השלמה שלא נצפתה."
 		},
 		"vs/workbench/contrib/chat/electron-browser/actions/chatDeveloperActions": {
 			"workbench.action.chat.openStorageFolder.label": "פתח את תיקיית האחסון של הצ'אט"
@@ -22647,12 +22885,26 @@
 		},
 		"vs/workbench/contrib/search/browser/search.common.contribution": {
 			"search.searchOnType": "חיפוש בכל הקבצים תוך כדי הקלדה.",
-			"search.searchOnTypeDebouncePeriod": "כאשר {0} מופעל, קובע את הזמן הקצוב באלפיות שנייה בין הקלדת תו לבין תחילת החיפוש. אין השפעה כאשר {0} מושבת."
-		},
-		"vs/workbench/contrib/search/browser/search.contribution": {
+			"search.searchOnTypeDebouncePeriod": "כאשר {0} מופעל, קובע את הזמן הקצוב באלפיות שנייה בין הקלדת תו לבין תחילת החיפוש. אין השפעה כאשר {0} מושבת.",
 			"exclude": "הגדר תבניות [glob](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options) להחרגת קבצים ותיקיות בחיפוש טקסט מלא ובחיפוש קבצים בפתיחה מהירה. כדי להחריג קבצים מרשימת הקבצים שנפתחו לאחרונה בפתיחה מהירה, התבניות חייבות להיות מוחלטות (למשל `**/node_modules/**`). יורש את כל תבניות ה-glob מההגדרה `#files.exclude#`.",
 			"exclude.boolean": "דפוס ה-glob להתאמת נתיבי קבצים אליו. הגדר כ-true או false כדי להפעיל או להשבית את הדפוס.",
 			"exclude.when": "בדיקה נוספת על קבצי האחים של קובץ מתאים. השתמש ב-\\$(basename) כמשתנה עבור שם הקובץ המתאים.",
+			"search.followSymlinks": "קובע אם לעקוב אחר קישורים סימבוליים בעת חיפוש.",
+			"search.maxResults": "קובע את המספר המרבי של תוצאות חיפוש; ניתן להגדיר זאת כ-`null` (ריק) כדי להחזיר תוצאות ללא הגבלה.",
+			"search.ripgrep.maxThreads": "מספר התהליכונים לשימוש בחיפוש. כאשר מוגדר ל-0, המנוע קובע את הערך אוטומטית.",
+			"search.smartCase": "חפש ללא רגישות לרישיות אם התבנית כולה באותיות קטנות, אחרת חפש ברגישות לרישיות.",
+			"search.sortOrder": "קובע את סדר המיון של תוצאות החיפוש.",
+			"searchSortOrder.countAscending": "התוצאות ממוינות לפי מספר לכל קובץ, בסדר עולה.",
+			"searchSortOrder.countDescending": "התוצאות ממוינות לפי מספר לכל קובץ, בסדר יורד.",
+			"searchSortOrder.default": "התוצאות ממוינות לפי שמות תיקיות וקבצים, בסדר אלפביתי.",
+			"searchSortOrder.filesOnly": "התוצאות ממוינות לפי שמות קבצים תוך התעלמות מסדר התיקיות, בסדר אלפביתי.",
+			"searchSortOrder.modified": "התוצאות ממוינות לפי תאריך השינוי האחרון של הקובץ, בסדר יורד.",
+			"searchSortOrder.type": "התוצאות ממוינות לפי סיומות קבצים, בסדר אלפביתי.",
+			"useGlobalIgnoreFiles": "קובע אם להשתמש בקובץ ה-gitignore הגלובלי שלך (למשל מ-`$HOME/.config/git/ignore`) בעת חיפוש קבצים. מחייב הפעלה של {0}.",
+			"useIgnoreFiles": "קובע אם להשתמש בקובצי `.gitignore` ו-`.ignore` בעת חיפוש קבצים.",
+			"useParentIgnoreFiles": "קובע אם להשתמש בקובצי `.gitignore` ו-`.ignore` בתיקיות ההורה בעת חיפוש קבצים. מחייב הפעלה של {0}."
+		},
+		"vs/workbench/contrib/search/browser/search.contribution": {
 			"filterSortOrder": "קובע את סדר המיון של היסטוריית העורך בפתיחה מהירה בעת סינון.",
 			"filterSortOrder.default": "רשומות ההיסטוריה ממוינות לפי רלוונטיות בהתאם לערך הסינון שבו נעשה שימוש. הרשומות הרלוונטיות ביותר מופיעות ראשונות.",
 			"filterSortOrder.recency": "רשומות ההיסטוריה ממוינות לפי עדכניות. הרשומות שנפתחו לאחרונה מופיעות ראשונות.",
@@ -22670,9 +22922,7 @@
 			"search.defaultViewMode": "קובע את מצב התצוגה המוגדר כברירת מחדל של תוצאות החיפוש.",
 			"search.experimental.closedNotebookResults": "הצג תוצאות תוכן עשיר של עורך המחברת עבור מחברות סגורות. רענן את תוצאות החיפוש לאחר שינוי הגדרה זו.",
 			"search.experimental.useIgnoreFilesInFindFiles": "כאשר מופעל, ה-API הישן של הרחבות `findFiles` מכבד את הגדרת המשתמש `#search.useIgnoreFiles#` במקום להתעלם תמיד מ-`.gitignore`. הרחבות שמעבירות באופן מפורש `null` כארגומנט `exclude` עדיין מקבלות תוצאות לא מסוננות. טלמטריה נשלחת ללא קשר להגדרה זו, כדי לסייע בקביעת ברירות המחדל העתידיות.",
-			"search.followSymlinks": "קובע אם לעקוב אחר קישורים סימבוליים בעת חיפוש.",
 			"search.globalFindClipboard": "קובע אם תצוגת החיפוש תקרא או תשנה את לוח ה'חיפוש' המשותף ב-macOS.",
-			"search.maxResults": "קובע את המספר המרבי של תוצאות חיפוש; ניתן להגדיר זאת כ-`null` (ריק) כדי להחזיר תוצאות ללא הגבלה.",
 			"search.mode": "קובע היכן מתבצעות פעולות `Search: Find in Files` ו-`Find in Folder` חדשות: בתצוגת החיפוש או בעורך חיפוש.",
 			"search.mode.newEditor": "חיפוש בעורך חיפוש חדש.",
 			"search.mode.reuseEditor": "חיפוש בעורך חיפוש קיים אם יש כזה, אחרת בעורך חיפוש חדש.",
@@ -22680,7 +22930,6 @@
 			"search.quickAccess.preserveInput": "קובע אם הקלט האחרון שהוקלד בחיפוש המהיר ישוחזר בפתיחה הבאה.",
 			"search.quickOpen.includeHistory": "אם לכלול תוצאות מקבצים שנפתחו לאחרונה בתוצאות הקבצים של פתיחה מהירה.",
 			"search.quickOpen.includeSymbols": "אם לכלול תוצאות מחיפוש סמלים גלובלי בתוצאות הקבצים של פתיחה מהירה.",
-			"search.ripgrep.maxThreads": "מספר התהליכונים לשימוש בחיפוש. כאשר מוגדר ל-0, המנוע קובע את הערך אוטומטית.",
 			"search.searchView.keywordSuggestions": "הפעל הצעות מילות מפתח בתצוגת החיפוש.",
 			"search.searchView.semanticSearchBehavior": "קובע את התנהגות תוצאות החיפוש הסמנטי המוצגות בתצוגת החיפוש.",
 			"search.searchView.semanticSearchBehavior.auto": "בקש תוצאות סמנטיות אוטומטית בכל חיפוש.",
@@ -22689,20 +22938,9 @@
 			"search.seedOnFocus": "עדכן את שאילתת החיפוש לטקסט המסומן בעורך בעת מיקוד בתצוגת החיפוש. הדבר קורה בעת לחיצה או בעת הפעלת הפקודה `workbench.views.search.focus`.",
 			"search.seedWithNearestWord": "הפעל אתחול חיפוש מהמילה הקרובה ביותר לסמן כאשר לעורך הפעיל אין טקסט מסומן.",
 			"search.showLineNumbers": "קובע אם להציג מספרי שורות עבור תוצאות חיפוש.",
-			"search.smartCase": "חפש ללא רגישות לרישיות אם התבנית כולה באותיות קטנות, אחרת חפש ברגישות לרישיות.",
-			"search.sortOrder": "קובע את סדר המיון של תוצאות החיפוש.",
 			"search.useReplacePreview": "קובע אם לפתוח תצוגה מקדימה של החלפה בעת בחירה או החלפה של התאמה.",
-			"searchSortOrder.countAscending": "התוצאות ממוינות לפי מספר לכל קובץ, בסדר עולה.",
-			"searchSortOrder.countDescending": "התוצאות ממוינות לפי מספר לכל קובץ, בסדר יורד.",
-			"searchSortOrder.default": "התוצאות ממוינות לפי שמות תיקיות וקבצים, בסדר אלפביתי.",
-			"searchSortOrder.filesOnly": "התוצאות ממוינות לפי שמות קבצים תוך התעלמות מסדר התיקיות, בסדר אלפביתי.",
-			"searchSortOrder.modified": "התוצאות ממוינות לפי תאריך השינוי האחרון של הקובץ, בסדר יורד.",
-			"searchSortOrder.type": "התוצאות ממוינות לפי סיומות קבצים, בסדר אלפביתי.",
 			"textSearchPickerHelp": "חיפוש טקסט",
-			"textSearchPickerPlaceholder": "חיפוש טקסט בקבצי סביבת העבודה שלך.",
-			"useGlobalIgnoreFiles": "קובע אם להשתמש בקובץ ה-gitignore הגלובלי שלך (למשל מ-`$HOME/.config/git/ignore`) בעת חיפוש קבצים. מחייב הפעלה של {0}.",
-			"useIgnoreFiles": "קובע אם להשתמש בקובצי `.gitignore` ו-`.ignore` בעת חיפוש קבצים.",
-			"useParentIgnoreFiles": "קובע אם להשתמש בקובצי `.gitignore` ו-`.ignore` בתיקיות ההורה בעת חיפוש קבצים. מחייב הפעלה של {0}."
+			"textSearchPickerPlaceholder": "חיפוש טקסט בקבצי סביבת העבודה שלך."
 		},
 		"vs/workbench/contrib/search/browser/searchAccessibilityHelp": {
 			"search.closingDesc": "הקש Escape כדי לסגור את החיפוש. המיקוד חוזר לעורך, והיסטוריית החיפוש שלך נשמרת.",
@@ -28174,6 +28412,257 @@
 			"saveWorkspaceMessage": "האם ברצונך לשמור את תצורת סביבת העבודה שלך כקובץ?",
 			"workspaceOpenedDetail": "סביבת העבודה כבר פתוחה בחלון אחר. יש לסגור תחילה את החלון הזה ולנסות שוב.",
 			"workspaceOpenedMessage": "לא ניתן לשמור את סביבת העבודה '{0}'"
+		},
+		"vs/platform/agentHost/browser/agentHostSandboxToggle": {
+			"agentHostSandboxToggle.editableManagedTitle": "ארגז החול מופעל על ידי הארגון שלך, אך ניתן לכבות אותו",
+			"agentHostSandboxToggle.label": "ארגז חול למסוף",
+			"agentHostSandboxToggle.requiredTitle": "ארגז החול נדרש על ידי הארגון שלך",
+			"agentHostSandboxToggle.title": "הרץ את פקודות המסוף של הפעלה זו בתוך ארגז חול שמגביל את הגישה למערכת הקבצים ולרשת. בחירה זו נשמרת עבור הפעלה זו בלבד."
+		},
+		"vs/platform/agentHost/common/agentModelConfiguration": {
+			"copilot.modelContextSize.default": "ברירת מחדל",
+			"copilot.modelContextSize.description": "בוחר את גודל חלון ההקשר עבור מודל זה.",
+			"copilot.modelContextSize.longerSessions": "הפעלות ארוכות יותר",
+			"copilot.modelContextSize.title": "גודל ההקשר"
+		},
+		"vs/platform/agentHost/common/meta/agentPullRequestOperationMeta": {
+			"agentHost.pr.agentMergeOptionsWithoutEnablement": "הפעל את מיזוג הסוכן כדי להגדיר אותו עבור בקשת משיכה זו.",
+			"agentHost.pr.conflictingMergeOptions": "לא ניתן להפעיל יחד את מיזוג הסוכן ואת המיזוג האוטומטי של GitHub.",
+			"agentHost.pr.draftAutoMerge": "בקשות משיכה בטיוטה אינן יכולות להשתמש במיזוג האוטומטי של GitHub.",
+			"agentHost.pr.invalidAgentMergeOptions": "תצורת מיזוג הסוכן אינה חוקית.",
+			"agentHost.pr.invalidContext": "הקשר הכנת בקשת המשיכה אינו חוקי.",
+			"agentHost.pr.invalidDetails": "תוצאת הכנת בקשת המשיכה אינה חוקית.",
+			"agentHost.pr.invalidMergeMethod": "שיטת המיזוג האוטומטי של בקשת המשיכה אינה חוקית.",
+			"agentHost.pr.invalidMeta": "מטא-נתוני פעולת בקשת המשיכה אינם חוקיים.",
+			"agentHost.pr.invalidOptions": "אפשרויות יצירת בקשת המשיכה אינן חוקיות.",
+			"agentHost.pr.invalidValidation": "בקשת אימות ההקשר של בקשת המשיכה אינה חוקית.",
+			"agentHost.pr.titleRequired": "נדרשת כותרת לבקשת המשיכה."
+		},
+		"vs/platform/agentHost/node/chatContributions/pullRequest/pullRequestChatContribution": {
+			"agentHost.pullRequestChat.agentMergeDisabled": "מיזוג הסוכן מושבת בתצורת המארח."
+		},
+		"vs/platform/agentHost/node/codex/codexCustomizations": {
+			"codex.invalidSkills": "כישורים לא חוקיים"
+		},
+		"vs/sessions/contrib/changes/browser/createPullRequestChatRequest": {
+			"createPR.chat.readOnly": "לא ניתן לשלוח הודעת יצירת בקשת משיכה לצ'אט לקריאה בלבד.",
+			"createPR.message.autoMerge": "הפעל את המיזוג האוטומטי של GitHub באמצעות {0}, כך שבקשת המשיכה תמוזג כאשר הבדיקות והאישורים הנדרשים יעברו. אל תעקוף דרישות אלה.",
+			"createPR.message.context": "ההקשר שהוכן הוא המאגר {0}, הענף הנוכחי {1} וענף הבסיס {2}. אם הקשר זה השתנה, עצור ובקש ממני לסקור אותו לפני ביצוע קומיט, דחיפה או יצירת בקשת המשיכה.",
+			"createPR.message.details": "השתמש בכותרת ובתיאור הבאים בדיוק כפי שהם (מסופקים כ-JSON):\n{0}",
+			"createPR.message.draft": "צור בקשת משיכה בטיוטה עבור השינויים של הפעלה זו. השאר אותה בטיוטה.",
+			"createPR.message.manualMerge": "אל תמזג את בקשת המשיכה ואל תפעיל את המיזוג האוטומטי של GitHub.",
+			"createPR.message.merge": "קומיט מיזוג",
+			"createPR.message.newBranch": "צור ענף מקור חדש ועבור אליו לפני ביצוע קומיט לשינויים.",
+			"createPR.message.push": "בצע קומיט לכל השינויים שטרם נכללו בקומיט, ודחוף את ענף המקור לפי הצורך.",
+			"createPR.message.ready": "צור בקשת משיכה מוכנה לסקירה עבור השינויים של הפעלה זו.",
+			"createPR.message.rebase": "מיזוג ריבייס",
+			"createPR.message.squash": "מיזוג סקווש"
+		},
+		"vs/sessions/contrib/changes/browser/createPullRequestWidget": {
+			"createPR.actions": "פעולות בקשת משיכה",
+			"createPR.addressReviews": "טפל בסקירות",
+			"createPR.addressReviewsHint": "מיזוג הסוכן יבקש מהסוכן באופן אוטומטי לטפל במשוב כאשר יש לבקשת המשיכה הערות סקירה שלא נפתרו.",
+			"createPR.afterCreation": "לאחר היצירה",
+			"createPR.agentConfigurationUnavailable": "משתמש בהגדרות מיזוג הסוכן הקיימות של ההפעלה. עדכן את מארח הסוכן כדי להגדיר אותן כאן.",
+			"createPR.agentMerge": "מיזוג הסוכן",
+			"createPR.agentMergeAlways": "כשמוכן",
+			"createPR.agentMergeAlwaysHint": "מזג כאשר הבדיקות והאישורים הנדרשים עוברים.",
+			"createPR.agentMergeDraftPolicyHint": "{0} ניתן לסמן טיוטות כמוכנות באופן אוטומטי.",
+			"createPR.agentMergeNever": "כבוי",
+			"createPR.agentMergeNeverHint": "השאר את בקשת המשיכה פתוחה כדי שתמזג אותה בעצמך.",
+			"createPR.agentMergeOptions": "תצורת מיזוג הסוכן עבור הפעלה זו",
+			"createPR.agentMergePolicy": "מזג בקשת משיכה",
+			"createPR.agentMergeUnchanged": "אם לא שונה",
+			"createPR.agentMergeUnchangedHint": "מזג רק אם מיזוג הסוכן לא ביצע שינויים. קומיט תיקון מבטל את המיזוג.",
+			"createPR.agentSessionHint": "מוחל על הפעלה זו בעת השליחה. הבחירות שלך נשמרות עבור בקשות משיכה עתידיות. ייתכן שיחול שימוש נוסף בסוכן.",
+			"createPR.autoHint": "GitHub ממזג כאשר הבדיקות והאישורים הנדרשים עוברים. הוא אינו מתקן בדיקות שנכשלות ואינו מטפל בסקירות.",
+			"createPR.autoMerge": "מיזוג אוטומטי",
+			"createPR.autoMergeDraft": "סמן את בקשת המשיכה כמוכנה לפני הפעלת המיזוג האוטומטי של GitHub.",
+			"createPR.autoMergeUnavailable": "המיזוג האוטומטי של GitHub אינו זמין עבור מאגר או הפעלה זו.",
+			"createPR.baseBranch": "ענף בסיס: {0}",
+			"createPR.branchDirection": "מזג את ענף המקור {0} לתוך ענף הבסיס {1}",
+			"createPR.cancel": "ביטול",
+			"createPR.create": "צור PR",
+			"createPR.createFailed": "לא ניתן היה ליצור את בקשת המשיכה: {0}",
+			"createPR.creating": "יוצר PR...",
+			"createPR.description": "תיאור",
+			"createPR.detailsReady": "פרטי בקשת המשיכה מוכנים.",
+			"createPR.draft": "צור כטיוטה",
+			"createPR.draftHint": "השאר את בקשת המשיכה כטיוטה עד שתהיה מוכנה לסקירה.",
+			"createPR.enterDescription": "תאר מה השתנה וכיצד זה נבדק",
+			"createPR.enterTitle": "סכם את השינויים שלך",
+			"createPR.fixCI": "תקן כשלי CI",
+			"createPR.fixCIHint": "מיזוג הסוכן יבקש מהסוכן באופן אוטומטי לחקור ולתקן כשלים כאשר בדיקות CI נדרשות נכשלות.",
+			"createPR.generating": "יוצר כותרת ותיאור לבקשת המשיכה.",
+			"createPR.generationFailed": "לא ניתן היה ליצור פרטים: {0} הזן פרטים משלך או נסה שוב.",
+			"createPR.generationFailedWithoutMessage": "לא ניתן היה ליצור פרטים. הזן פרטים משלך או נסה שוב.",
+			"createPR.heading": "צור בקשת משיכה",
+			"createPR.loadingBranches": "טוען את פרטי הענף...",
+			"createPR.manual": "מזג ידנית",
+			"createPR.manualHint": "אתה מחליט מתי למזג. ללא תיקונים או מיזוג אוטומטיים.",
+			"createPR.mergeCommit": "קומיט מיזוג",
+			"createPR.mergeCommitHint": "שמור את כל הקומיטים והוסף קומיט מיזוג.",
+			"createPR.mergeMethod": "שיטת מיזוג",
+			"createPR.newBranch": "ענף חדש ייווצר מ-{0}",
+			"createPR.newBranchLabel": "ענף חדש",
+			"createPR.prepareFailed": "לא ניתן היה לטעון את פרטי בקשת המשיכה: {0} הזן פרטים משלך או נסה שוב.",
+			"createPR.pushHint": "שינויים שלא בוצע להם קומיט ייכנסו לקומיט, והענף שלך יידחף.",
+			"createPR.rebase": "ריבייס",
+			"createPR.rebaseHint": "החל מחדש כל קומיט על ענף הבסיס ללא קומיט מיזוג.",
+			"createPR.resolveConflicts": "פתור התנגשויות וענפים מאחור",
+			"createPR.resolveConflictsHint": "מיזוג הסוכן יבקש מהסוכן באופן אוטומטי לעדכן את ענף המקור כאשר יש בו התנגשויות מיזוג או כשהוא מפגר אחרי ענף הבסיס.",
+			"createPR.retry": "נסה שוב",
+			"createPR.sendFailed": "לא ניתן היה לשלוח את הודעת יצירת בקשת המשיכה: {0}",
+			"createPR.sending": "שולח הודעה...",
+			"createPR.sendToChat": "שלח הודעת יצירת PR",
+			"createPR.sourceBranch": "ענף מקור: {0}",
+			"createPR.squash": "סקווש",
+			"createPR.squashHint": "שלב את כל השינויים לקומיט אחד בענף הבסיס.",
+			"createPR.title": "כותרת"
+		},
+		"vs/sessions/contrib/changes/browser/sessionSyncChanges": {
+			"sessions.syncChanges": "סנכרן שינויים",
+			"sessions.syncChanges.incomingCount": "{0}↓",
+			"sessions.syncChanges.incomingOutgoingCounts": "{0}↓ {1}↑",
+			"sessions.syncChanges.outgoingCount": "{0}↑",
+			"sessions.syncChanges.pullPushTooltip": "משוך {0} ודחוף {1} קומיטים בין {2}",
+			"sessions.syncChanges.pullTooltip": "משוך {0} קומיטים מ-{1}",
+			"sessions.syncChanges.pushTooltip": "דחוף {0} קומיטים אל {1}",
+			"sessions.syncChanges.running": "מסנכרן שינויים...",
+			"sessions.syncChanges.tooltip": "סנכרן שינויים",
+			"sessions.syncChanges.unavailable": "סנכרון שינויים אינו זמין עוד עבור הפעלה זו."
+		},
+		"vs/sessions/contrib/chat/browser/agentsWindowWorkspaceHandoff": {
+			"agentsHandoff.chooseWorkspace": "בחר סביבת עבודה",
+			"agentsHandoff.retry": "נסה שוב",
+			"agentsHandoff.workspaceUnavailable": "לא ניתן היה לבחור את סביבת העבודה. נסה שוב או בחר סביבת עבודה כדי להמשיך."
+		},
+		"vs/sessions/contrib/chat/browser/sessionArchiveNudge": {
+			"archiveOnboarding.interrupted": "ההיכרות עם רשימת ההפעלות נקטעה. נסה שוב.",
+			"archiveOnboarding.listUnavailable": "לא ניתן היה לפתוח את רשימת ההפעלות. נסה שוב.",
+			"sessionArchiveNudge.noLongerAvailable": "הצעה זו אינה זמינה עוד. סקור את ההפעלה לפני שתנסה שוב.",
+			"sessionArchiveNudge.updateFailed": "לא ניתן היה לעדכן את ההפעלה. בדוק את החיבור שלה ונסה שוב."
+		},
+		"vs/sessions/contrib/chat/electron-browser/chat.contribution": {
+			"agentsHandoff.sessionNotFound": "לא ניתן היה למצוא את ההפעלה המקושרת: {0}"
+		},
+		"vs/sessions/contrib/editor/browser/diffEditor.sessions.contribution": {
+			"sessions.diffEditor.wordWrap": "קובעת כיצד עורכי השוואה בחלון הסוכנים גולשים שורות.",
+			"sessions.diffEditor.wordWrap.inherit": "שורות יגלשו בהתאם להגדרה {0}.",
+			"sessions.diffEditor.wordWrap.off": "שורות לעולם לא יגלשו.",
+			"sessions.diffEditor.wordWrap.on": "שורות יגלשו לפי רוחב אזור התצוגה.",
+			"sessions.editor.wordWrap": "קובעת כיצד עורכי קוד בחלון הסוכנים גולשים שורות.",
+			"sessions.editor.wordWrap.inherit": "שורות יגלשו בהתאם להגדרה {0}.",
+			"sessions.editor.wordWrap.off": "שורות לעולם לא יגלשו.",
+			"sessions.editor.wordWrap.on": "שורות יגלשו לפי רוחב אזור התצוגה."
+		},
+		"vs/sessions/contrib/onboardingTours/browser/tours/sessionArchiveTour": {
+			"archiveOnboarding.archiveDescription": "ניתן להעביר לארכיון כל הפעלה ישירות מרשימת ההפעלות. רחף מעל הפעלה או התמקד בה כדי להציג את 'העבר לארכיון'.",
+			"archiveOnboarding.archiveTitle": "העברת הפעלות לארכיון מהרשימה",
+			"archiveOnboarding.doneDescription": "ניתן לסמן כל הפעלה כבוצעה ישירות מרשימת ההפעלות. רחף מעל הפעלה או התמקד בה כדי להציג את 'סמן כבוצע'.",
+			"archiveOnboarding.doneTitle": "סימון הפעלות כבוצעו מהרשימה",
+			"archiveOnboarding.understood": "הבנתי"
+		},
+		"vs/sessions/contrib/search/browser/searchEditorEmptyState.contribution": {
+			"searchEditor.emptyDescription": "חפש טקסט בקבצים שלך",
+			"searchEditor.emptyTitle": "חיפוש"
+		},
+		"vs/workbench/contrib/chat/browser/agentSessions/agentHost/agentHostModePickerPresentation": {
+			"agentHostModePicker.accessibilityHelp": "כאשר הבורר המשולב הניסיוני מופעל עבור הפעלת Copilot Agent Host, מקש Tab מגיע ללחצני 'מצב' ו'הרשאות' נפרדים. הקש Enter או Space על 'מצב' כדי לפתוח את הבורר כאשר 'מצב סוכן' מורחב, או על 'הרשאות' כדי לפתוח אותו כאשר 'הרשאות' מורחב. כל כותרת מקטע מציגה את הבחירה הנוכחית שלה, והמקטע שנפתח ממקד תחילה את הבחירה הזו. הקש Enter או Space על כותרת מקטע כדי להרחיב או לכווץ אותו, או השתמש בחץ ימינה כדי להרחיב ובחץ שמאלה כדי לכווץ. ריחוף או ניווט במקלדת מזיזים את הדגשת השורה היחידה מבלי לשנות את הבחירה עד שתפעיל אפשרות. התמקד בכותרת 'הרשאות' והקש Tab כדי להגיע אל 'הגדר הרשאות', שפותח את ההגדרות הקשורות. השתמש בחץ למעלה ולמטה כדי לנווט וב-Enter כדי לבחור מצב, רמת הרשאה או ארגז חול למסוף. Escape סוגר את הבורר ומחזיר את המיקוד ללחצן שפתח אותו.",
+			"agentHostModePicker.agentMode": "מצב סוכן",
+			"agentHostModePicker.allowAll": "אפשר הכול",
+			"agentHostModePicker.assisted": "בסיוע",
+			"agentHostModePicker.configurePermissions": "הגדר הרשאות",
+			"agentHostModePicker.currentMode": "מצב נוכחי: {0}",
+			"agentHostModePicker.manual": "ידני",
+			"agentHostModePicker.modeButton": "בחר מצב, {0}",
+			"agentHostModePicker.permissions": "הרשאות",
+			"agentHostModePicker.permissionsButton": "בחר הרשאות, {0}",
+			"agentHostModePicker.permissionsButtonSandboxed": "בחר הרשאות, {0}, מסוף בארגז חול",
+			"agentHostModePicker.permissionsSandboxed": "{0}, מסוף בארגז חול",
+			"agentHostModePicker.withPermissions": "בחר מצב והרשאות, {0}, {1}",
+			"agentHostModePicker.withSandboxedPermissions": "בחר מצב והרשאות, {0}, {1}, מסוף בארגז חול"
+		},
+		"vs/workbench/contrib/chat/browser/agentSessionsConfiguration": {
+			"autoArchiveMergedSessions.description": "קובע את מספר ימי חוסר הפעילות לפני שהפעלות סוכן עם בקשת משיכה ממוזגת מועברות לארכיון באופן אוטומטי. העברה לארכיון מסירה בבטחה עצי עבודה מתאימים. מחיקה לצמיתות נשלטת בנפרד על ידי {0}. הגדר ל-0 כדי להשבית העברה אוטומטית לארכיון. הערך המומלץ הוא 15.",
+			"autoDeleteArchivedMergedSessions.description": "קובע את מספר הימים לאחר ההעברה האוטומטית לארכיון עד שהפעלות סוכן עם בקשת משיכה ממוזגת נמחקות לצמיתות. עצי עבודה מתאימים שנשמרו מוסרים בבטחה לפני המחיקה. העברה אוטומטית לארכיון נשלטת בנפרד על ידי {0}. הגדר ל-0 כדי להשבית מחיקה לצמיתות. הערך המומלץ הוא 15.",
+			"sessions.chat.unifiedWorkspacePicker.enabled": "קובע אם חלון הסוכנים משתמש בבורר סביבות העבודה המאוחד, המשלב סביבות עבודה של GitHub וסביבות עבודה מרוחקות, מספק חיפוש, וכאשר הדבר נתמך, מאפשר ליצור הפעלות ללא סביבת עבודה."
+		},
+		"vs/workbench/contrib/chat/browser/aiCustomization/customizationMigrationAccessibility": {
+			"migrationHelpActivity": "פעילות ההעברה מתעדת שינויים מוצלחים באופן מקומי. הרחב רשומת פעילות באמצעות Enter או Space כדי לקרוא את נתיבי המקור והיעד שלה. 'התעלם' מסיר את רשומת הפעילות, לא את הקבצים שהועברו.",
+			"migrationHelpLocations": "'שנה יעדים' מגדיר את מיקומי העברת הקבצים. שרתי MCP מועברים תמיד לקובץ .mcp.json בשורש סביבת העבודה.",
+			"migrationHelpNavigation": "השתמש ב-Tab וב-Shift+Tab כדי לעבור בין הפקדים. 'סקור' פותח את דף ההעברה הקיים, מסונן למיקום זה. שום קובץ לא משתנה עד שתאשר את ההעברה.",
+			"migrationHelpOverview": "רשימת הבדיקה של ההעברה מקבצת העברות נתמכות לפי הפרופיל וסביבת העבודה שלך.",
+			"migrationHelpSkip": "'דלג על סביבת העבודה' מחריג העברות של סביבת העבודה מהספירה ברשימת הבדיקה מבלי לשנות קבצים. 'כלול את סביבת העבודה' משחזר אותן.",
+			"migrationHelpView": "השתמש ב-{0} כדי לקרוא את רשימת הבדיקה ואת הפעילות בתצוגה הנגישה."
+		},
+		"vs/workbench/contrib/chat/browser/aiCustomization/customizationMigrationDashboard": {
+			"activityMigrations": "{0} פריטים הועברו",
+			"changeDestinations": "שנה יעדים עבור {0}",
+			"convertedToSkill": "הומר למיומנות",
+			"copiedFile": "הקובץ הועתק",
+			"dismissMigrationActivity": "התעלם מהפעילות {0} מתוך {1}",
+			"dismissMigrationResult": "התעלם מתוצאת ההעברה",
+			"highRisk": "סיכון גבוה",
+			"highRiskDescription": "ההמרה עלולה להסיר מטא-נתונים הייחודיים להנחיות ולשנות את אופן הפעלת ההנחיות.",
+			"includeWorkspace": "כלול סביבת עבודה",
+			"includeWorkspaceLabel": "כלול את סביבת העבודה {0}",
+			"inProgress": "בתהליך",
+			"migrated": "הועבר",
+			"migrationActivity": "פעילות ההעברה",
+			"migrationActivityTitle": "{0} · {1}",
+			"migrationChecklist": "רשימת המשימות שלך להעברה",
+			"migrationComplete": "ההעברה הושלמה",
+			"migrationFrom": "מ",
+			"migrationProgress": "{0} מתוך {1} הושלמו",
+			"migrationsComplete": "{0} התאמות אישיות הועברו",
+			"migrationsCompletedDescription": "העברות הקבצים שלך הושלמו. עיין ברשימת המשימות שלהלן לקבלת המצב של כל מיקום.",
+			"migrationsDescription": "חלק מהתאמות הסוכן האישיות שלך דורשות עדכון כדי להמשיך לעבוד. סקור אותן והעבר אותן לתבניות ולמיקומים החדשים.",
+			"migrationsTitle": "העברות",
+			"migrationTo": "אל",
+			"movedFile": "הקובץ הועבר",
+			"movedServer": "השרת הועבר",
+			"noMigrations": "אין צורך בהעברות.",
+			"noRemainingMigrations": "אין העברות נותרות.",
+			"oneActivityMigration": "פריט אחד הועבר",
+			"oneMigrationComplete": "התאמה אישית אחת הועברה",
+			"profileMigrations": "התאמות אישיות פרטיות",
+			"retry": "נסה שוב",
+			"retryMigrations": "נסה שוב לטעון את ההעברות",
+			"review": "סקירה",
+			"reviewMigrationCategory": "סקור את {0} מתוך {1}",
+			"skipped": "דולג",
+			"skipWorkspace": "דלג על סביבת העבודה",
+			"skipWorkspaceLabel": "דלג על סביבת העבודה {0}",
+			"viewChanges": "הצג שינויים",
+			"viewMigrationChanges": "הצג את שינויי ההעברה",
+			"workspaceMigrations": "התאמות אישיות של סביבת העבודה. דלג על סביבת עבודה זו אם אינה בבעלותך."
+		},
+		"vs/workbench/contrib/chat/browser/sessionPullRequestPill": {
+			"chatInputPills.pullRequests.showAll": "הצג הכול",
+			"chatInputPills.pullRequests.showOpen": "הצג פתוחות/טיוטות"
+		},
+		"vs/workbench/contrib/chat/browser/widget/input/chatSessionArchiveNudge": {
+			"chat.sessionArchiveNudge.actionDetails": "מה עושה \"{0}\"?",
+			"chat.sessionArchiveNudge.archiveError": "לא ניתן להעביר את ההפעלה לארכיון: {0}",
+			"chat.sessionArchiveNudge.archiveQuestion": "בקשת המשיכה מוזגה. להעביר הפעלה זו לארכיון?",
+			"chat.sessionArchiveNudge.archiveQuestionAll": "כל בקשות המשיכה מוזגו. להעביר הפעלה זו לארכיון?",
+			"chat.sessionArchiveNudge.archiving": "מעביר לארכיון...",
+			"chat.sessionArchiveNudge.configureAutomaticCleanup": "הגדר ניקוי אוטומטי",
+			"chat.sessionArchiveNudge.dismiss": "בטל את ההצעה להעברה לארכיון",
+			"chat.sessionArchiveNudge.dismissDone": "בטל את ההצעה לסימון כהושלם",
+			"chat.sessionArchiveNudge.doneError": "לא ניתן לסמן את ההפעלה כהושלמה: {0}",
+			"chat.sessionArchiveNudge.doneOverview": "סמן הפעלה זו כהושלמה כדי להסתיר אותה מרשימת ההפעלות ולהתמקד במשימות הנותרות שלך.",
+			"chat.sessionArchiveNudge.doneQuestion": "בקשת המשיכה מוזגה. לסמן הפעלה זו כהושלמה?",
+			"chat.sessionArchiveNudge.doneQuestionAll": "כל בקשות המשיכה מוזגו. לסמן הפעלה זו כהושלמה?",
+			"chat.sessionArchiveNudge.doneRecovery": "ההפעלה אינה נמחקת. בקש מהסוכן שלך למצוא אותה, או חפש במקטע \"{0}\" ברשימת ההפעלות. ניתן לשחזר אותה בכל עת.",
+			"chat.sessionArchiveNudge.doneWorktree": "עץ העבודה שנוצר עבור הפעלה זו יימחק. ניתן ליצור אותו מחדש על ידי שחזור ההפעלה.",
+			"chat.sessionArchiveNudge.markingDone": "מסמן כהושלם...",
+			"chat.sessionArchiveNudge.openCleanupSettingsError": "לא ניתן לפתוח את הגדרות הניקוי האוטומטי: {0}",
+			"chat.sessionArchiveNudge.overview": "העבר הפעלה זו לארכיון כדי להסתיר אותה מרשימת ההפעלות ולהתמקד במשימות הנותרות שלך.",
+			"chat.sessionArchiveNudge.recovery": "ההפעלה אינה נמחקת. בקש מהסוכן שלך למצוא אותה, או חפש במקטע \"{0}\" ברשימת ההפעלות. ניתן להוציא אותה מהארכיון בכל עת.",
+			"chat.sessionArchiveNudge.sessionActions": "פעולות הצעה להפעלה",
+			"chat.sessionArchiveNudge.worktree": "עץ העבודה שנוצר עבור הפעלה זו יימחק. ניתן ליצור אותו מחדש על ידי הוצאת ההפעלה מהארכיון."
 		}
 	}
 }
