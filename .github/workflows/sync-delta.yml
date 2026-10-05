@@ -1,0 +1,168 @@
+name: Prepare VS Code localization delta
+
+on:
+  push:
+    branches:
+      - 'officialization/**'
+      - 'translation/**'
+    paths:
+      - '.github/workflows/sync-delta.yml'
+      - 'scripts/vsloc.mjs'
+      - 'scripts/translation-memory.mjs'
+      - 'scripts/translation-worklist.mjs'
+      - 'scripts/compile-translation-batches.mjs'
+      - 'translation-work/**'
+  workflow_dispatch:
+    inputs:
+      vscode_version:
+        description: VS Code version to compare against the checked-in source snapshot
+        required: true
+        default: '1.140.0'
+
+permissions:
+  contents: read
+
+jobs:
+  delta:
+    runs-on: ubuntu-latest
+    env:
+      DEFAULT_VSCODE_VERSION: '1.140.0'
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Resolve VS Code version
+        id: version
+        shell: bash
+        run: |
+          VERSION="${{ inputs.vscode_version }}"
+          if [ -z "$VERSION" ]; then
+            VERSION="$DEFAULT_VSCODE_VERSION"
+          fi
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+
+      - name: Download VS Code
+        shell: bash
+        run: |
+          URL="https://update.code.visualstudio.com/${{ steps.version.outputs.version }}/linux-deb-x64/stable"
+          for attempt in 1 2 3 4 5; do
+            echo "Download attempt $attempt"
+            curl --fail --location --retry 5 --retry-all-errors --retry-delay 2 \
+              --continue-at - "$URL" --output code.deb && break
+            if [ "$attempt" = "5" ]; then
+              echo "VS Code download failed after $attempt attempts" >&2
+              exit 1
+            fi
+            sleep $((attempt * 2))
+          done
+          dpkg-deb -x code.deb vscode-root
+          test -f vscode-root/usr/share/code/resources/app/package.json
+
+      - name: Extract source snapshot
+        run: |
+          node scripts/vsloc.mjs extract \
+            --app vscode-root/usr/share/code/resources/app \
+            --out source/en.new \
+            --ref-lang ru
+
+      - name: Generate localization delta
+        run: |
+          node scripts/vsloc.mjs diff \
+            --from source/en \
+            --to source/en.new \
+            --json todo.json
+
+      - name: Count localization delta
+        id: delta_state
+        shell: bash
+        run: |
+          node - <<'NODE'
+          const fs = require('fs');
+          const todo = JSON.parse(fs.readFileSync('todo.json', 'utf8'));
+          let total = 0;
+          for (const bucket of Object.values(todo.core || {})) {
+            total += Object.keys(bucket || {}).length;
+          }
+          for (const ext of Object.values(todo.extensions || {})) {
+            for (const section of Object.values(ext || {})) {
+              total += Object.keys(section || {}).length;
+            }
+          }
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, `count=${total}\n`);
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, `has_delta=${total > 0 ? 'true' : 'false'}\n`);
+          console.log(`Localization delta items: ${total}`);
+          NODE
+
+      - name: Reuse exact translation memory
+        run: |
+          node scripts/translation-memory.mjs \
+            --todo todo.json \
+            --out todo.prefilled.json \
+            --remaining todo.remaining.json \
+            --report translation-memory-report.json
+
+      - name: Generate deduplicated translation worklist
+        run: |
+          node scripts/translation-worklist.mjs \
+            --input todo.remaining.json \
+            --out translation-worklist.json
+
+      - name: Compile reviewed translation batches
+        if: ${{ steps.delta_state.outputs.has_delta == 'true' && hashFiles('translation-work/v1.140/*.json') != '' }}
+        run: |
+          node scripts/compile-translation-batches.mjs \
+            --todo todo.json \
+            --prefilled todo.prefilled.json \
+            --workdir translation-work/v1.140 \
+            --manual-out todo.manual.json \
+            --merged-out todo.he.partial.json \
+            --remaining-out todo.after-manual.json \
+            --report translation-batch-report.json
+      - name: Summarize delta
+        shell: bash
+        run: |
+          node - <<'NODE'
+          const fs = require('fs');
+          const todo = JSON.parse(fs.readFileSync('todo.json', 'utf8'));
+          let core = 0;
+          let extensions = 0;
+          for (const bucket of Object.values(todo.core || {})) core += Object.keys(bucket).length;
+          for (const ext of Object.values(todo.extensions || {})) {
+            for (const section of Object.values(ext || {})) extensions += Object.keys(section || {}).length;
+          }
+          const summary = [
+            '## Hebrew localization delta',
+            '',
+            `Target VS Code: ${todo.vscode || 'unknown'}`,
+            `Core strings requiring review: ${core}`,
+            `Built-in extension strings requiring review: ${extensions}`,
+            `Total requiring review: ${core + extensions}`,
+          ].join('\n');
+          fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, summary + '\n');
+          console.log(summary);
+          NODE
+
+      - name: Archive source snapshot
+        run: tar -czf source-en-new.tar.gz -C source en.new
+
+      - name: Upload delta artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: vscode-hebrew-delta-${{ steps.version.outputs.version }}
+          path: |
+            todo.json
+            todo.prefilled.json
+            todo.remaining.json
+            translation-memory-report.json
+            translation-worklist.json
+            todo.manual.json
+            todo.he.partial.json
+            todo.after-manual.json
+            translation-batch-report.json
+            source-en-new.tar.gz

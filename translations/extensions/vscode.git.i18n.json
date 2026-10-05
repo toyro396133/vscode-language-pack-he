@@ -253,7 +253,7 @@
 			"config.detectSubmodulesLimit": "קובע את המגבלה על תת-המודולים של Git שיזוהו.",
 			"config.detectWorktrees": "קובע אם לזהות עצי עבודה של Git באופן אוטומטי.",
 			"config.detectWorktreesLimit": "קובע את המגבלה על עצי העבודה של Git שיזוהו.",
-			"config.worktreeIncludeFiles": "הגדרת [דפוסי glob](https://aka.ms/vscode-glob-patterns) עבור קבצים ותיקיות שייכללו בעת יצירת עץ עבודה חדש. רק קבצים ותיקיות שתואמים לדפוסים ומופיעים ב-`.gitignore` יועתקו לעץ העבודה החדש שנוצר.",
+			"config.worktreeIncludeFiles": "הגדר תבניות, בתחביר `.gitignore`, עבור קבצים ותיקיות שייכללו בעת יצירת עץ עבודה חדש. רק קבצים ותיקיות שתואמים לתבניות וש-Git מתעלם מהם (לדוגמה, מופיעים ב-`.gitignore`) יועתקו לעץ העבודה החדש שנוצר.",
 			"config.alwaysShowStagedChangesResourceGroup": "מציג תמיד את קבוצת המשאבים 'שינויים מוכנים'.",
 			"config.alwaysSignOff": "קובע את דגל ה-signoff לכל הקומיטים.",
 			"config.addAICoAuthor": "קובע אם טריילר 'Co-authored-by' נוסף אוטומטית להודעת הקומיט כאשר קוד שנוצר על ידי AI נכלל בקומיט.",
@@ -371,7 +371,8 @@
 			"view.workbench.scm.closedRepository": "נמצא מאגר Git שנסגר בעבר.\n[פתח מחדש מאגר סגור](command:git.reopenClosedRepositories)\nלמידע נוסף על השימוש ב-Git ובבקרת המקור ב-VS Code [קרא את התיעוד שלנו](https://aka.ms/vscode-scm).",
 			"view.workbench.scm.closedRepositories": "נמצאו מאגרי Git שנסגרו בעבר.\n[פתח מחדש מאגרים סגורים](command:git.reopenClosedRepositories)\nלמידע נוסף על השימוש ב-Git ובבקרת המקור ב-VS Code [קרא את התיעוד שלנו](https://aka.ms/vscode-scm).",
 			"view.workbench.cloneRepository": "באפשרותך לשכפל מאגר באופן מקומי.\n[שכפל מאגר](command:git.clone 'שכפל מאגר לאחר שהרחבת Git הופעלה')",
-			"view.workbench.learnMore": "למידע נוסף על השימוש ב-Git ובבקרת המקור ב-VS Code [קרא את התיעוד שלנו](https://aka.ms/vscode-scm)."
+			"view.workbench.learnMore": "למידע נוסף על השימוש ב-Git ובבקרת המקור ב-VS Code [קרא את התיעוד שלנו](https://aka.ms/vscode-scm).",
+			"config.worktreeSymlinkFolders": "הגדר תבניות, בתחביר `.gitignore`, עבור תיקיות שיש לקשר בקישור סמלי מהצ'ק-אאוט הנוכחי אל עצי עבודה חדשים. רק תיקיות שתואמות לתבניות וש-Git מתעלם מהן, לדוגמה כאלה שמופיעות ב-`.gitignore`, יקושרו בקישור סמלי. שינויים שמתבצעים דרך קישור סמלי משפיעים על התיקייה בצ'ק-אאוט הנוכחי."
 		},
 		"bundle": {
 			"\n\nAre you sure you want to discard ALL changes in {0} files?": "\n\nהאם אתה בטוח שברצונך להשליך את כל השינויים ב-{0} קבצים?",

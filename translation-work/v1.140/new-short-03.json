@@ -1,0 +1,307 @@
+{
+  "vscode": "1.140.0",
+  "kind": "new-source-translation",
+  "batch": "new-short-03",
+  "entries": [
+    {
+      "en": "Collapse unchanged lines",
+      "he": "כווץ שורות שלא השתנו"
+    },
+    {
+      "en": "Show {0} hidden lines",
+      "he": "הצג {0} שורות מוסתרות"
+    },
+    {
+      "en": "The MCP server's installation source is invalid.",
+      "he": "מקור ההתקנה של שרת ה-MCP אינו חוקי."
+    },
+    {
+      "en": "The customization catalog query is invalid.",
+      "he": "שאילתת קטלוג ההתאמות האישיות אינה חוקית."
+    },
+    {
+      "en": "Automatic reconnect timed out after {0}ms.",
+      "he": "החיבור האוטומטי מחדש חרג מהזמן לאחר {0}ms."
+    },
+    {
+      "en": "Do not enforce agent orchestration safety limits.",
+      "he": "אל תאכוף מגבלות בטיחות לתזמור סוכנים."
+    },
+    {
+      "en": "Enforce agent orchestration safety limits.",
+      "he": "אכוף מגבלות בטיחות לתזמור סוכנים."
+    },
+    {
+      "en": "Agent Orchestration Limits",
+      "he": "מגבלות תזמור סוכנים"
+    },
+    {
+      "en": "Copilot Connectors",
+      "he": "מחברי Copilot"
+    },
+    {
+      "en": "Session Catalog",
+      "he": "קטלוג הפעלות"
+    },
+    {
+      "en": "Do not enforce the limits.",
+      "he": "אל תאכוף את המגבלות."
+    },
+    {
+      "en": "Enforce the limits.",
+      "he": "אכוף את המגבלות."
+    },
+    {
+      "en": "Agent Merge is enabled for {0}. {1}",
+      "he": "מיזוג הסוכן מופעל עבור {0}. {1}"
+    },
+    {
+      "en": "Automatic merge is on.",
+      "he": "מיזוג אוטומטי מופעל."
+    },
+    {
+      "en": "Automatic merge is on only while unchanged.",
+      "he": "מיזוג אוטומטי מופעל רק כל עוד אין שינויים."
+    },
+    {
+      "en": "Monitoring only; automatic merge is off.",
+      "he": "ניטור בלבד; מיזוג אוטומטי מושבת."
+    },
+    {
+      "en": "Automation Run Timeout",
+      "he": "זמן קצוב להרצת אוטומציה"
+    },
+    {
+      "en": "Maximum duration of an automation run, in minutes.",
+      "he": "משך ההרצה המרבי של אוטומציה, בדקות."
+    },
+    {
+      "en": "Whether this Agent Host may run automations.",
+      "he": "האם מארח סוכן זה רשאי להריץ אוטומציות."
+    },
+    {
+      "en": "Claude Default Thinking Level",
+      "he": "רמת החשיבה המוגדרת כברירת מחדל של Claude"
+    },
+    {
+      "en": "Copilot Runtime Path",
+      "he": "נתיב סביבת הריצה של Copilot"
+    },
+    {
+      "en": "Skill Character Budget",
+      "he": "תקציב התווים למיומנויות"
+    },
+    {
+      "en": "Indexed Search (tgrep)",
+      "he": "חיפוש מאונדקס (tgrep)"
+    },
+    {
+      "en": "Invalid pull request conversation chat.",
+      "he": "צ'אט השיחה של בקשת המשיכה אינו חוקי."
+    },
+    {
+      "en": "Git diff is unavailable for the session changeset.",
+      "he": "Git diff אינו זמין עבור ערכת השינויים של ההפעלה."
+    },
+    {
+      "en": "Git diff is unavailable for the requested turn.",
+      "he": "Git diff אינו זמין עבור התור המבוקש."
+    },
+    {
+      "en": "Model '{0}' is not available.",
+      "he": "המודל '{0}' אינו זמין."
+    },
+    {
+      "en": "Installed plugins",
+      "he": "תוספים מותקנים"
+    },
+    {
+      "en": "Available skills",
+      "he": "מיומנויות זמינות"
+    },
+    {
+      "en": "{0} skills found.",
+      "he": "נמצאו {0} מיומנויות."
+    },
+    {
+      "en": "Review accepted the result.",
+      "he": "הסקירה אישרה את התוצאה."
+    },
+    {
+      "en": "HydraFusion workflow completed with a fallback",
+      "he": "תהליך העבודה של HydraFusion הושלם באמצעות חלופה"
+    },
+    {
+      "en": "Continuing the HydraFusion workflow...",
+      "he": "ממשיך את תהליך העבודה של HydraFusion..."
+    },
+    {
+      "en": "HydraFusion workflow ended: {0}",
+      "he": "תהליך העבודה של HydraFusion הסתיים: {0}"
+    },
+    {
+      "en": "Continuing with a fallback phase...",
+      "he": "ממשיך עם שלב חלופי..."
+    },
+    {
+      "en": "HydraFusion workflow interrupted",
+      "he": "תהליך העבודה של HydraFusion נקטע"
+    },
+    {
+      "en": "Preparing the {0} workflow...",
+      "he": "מכין את תהליך העבודה {0}..."
+    },
+    {
+      "en": "Review requested changes.",
+      "he": "הסקירה ביקשה שינויים."
+    },
+    {
+      "en": "Changes requested",
+      "he": "נדרשו שינויים"
+    },
+    {
+      "en": "HydraFusion routing failed; continuing with {0}",
+      "he": "הניתוב של HydraFusion נכשל; ממשיך עם {0}"
+    },
+    {
+      "en": "Choosing a HydraFusion workflow...",
+      "he": "בוחר תהליך עבודה של HydraFusion..."
+    },
+    {
+      "en": "Selected {0} workflow",
+      "he": "נבחר תהליך העבודה {0}"
+    },
+    {
+      "en": "{0}: running a tool",
+      "he": "{0}: מפעיל כלי"
+    },
+    {
+      "en": "The sandbox backend is unavailable on this host.",
+      "he": "מנגנון ארגז החול אינו זמין במארח זה."
+    },
+    {
+      "en": "Effective sandbox policy",
+      "he": "מדיניות ארגז החול בפועל"
+    },
+    {
+      "en": "Open Sandbox Policy",
+      "he": "פתח את מדיניות ארגז החול"
+    },
+    {
+      "en": "Show the effective sandbox policy for this session",
+      "he": "הצג את מדיניות ארגז החול בפועל עבור הפעלה זו"
+    },
+    {
+      "en": "The SDK did not return a sandbox policy.",
+      "he": "ה-SDK לא החזיר מדיניות ארגז חול."
+    },
+    {
+      "en": "Workflow {0} was cancelled",
+      "he": "תהליך העבודה {0} בוטל"
+    },
+    {
+      "en": "Workflow {0} completed",
+      "he": "תהליך העבודה {0} הושלם"
+    },
+    {
+      "en": "Workflow {0} failed",
+      "he": "תהליך העבודה {0} נכשל"
+    },
+    {
+      "en": "Workflow {0} was halted",
+      "he": "תהליך העבודה {0} נעצר"
+    },
+    {
+      "en": "Write to agents {0}",
+      "he": "כתוב לסוכנים {0}"
+    },
+    {
+      "en": "Write to child agents",
+      "he": "כתוב לסוכנים צאצאים"
+    },
+    {
+      "en": "Write to sibling agents",
+      "he": "כתוב לסוכנים אחים"
+    },
+    {
+      "en": "Dev Container for '{0}' is stopped.",
+      "he": "ה-Dev Container עבור '{0}' נעצר."
+    },
+    {
+      "en": "Docker is not available.",
+      "he": "Docker אינו זמין."
+    },
+    {
+      "en": "Do not address pull request review comments.",
+      "he": "אל תטפל בהערות הסקירה של בקשת המשיכה."
+    },
+    {
+      "en": "Address new pull request review comments.",
+      "he": "טפל בהערות סקירה חדשות של בקשת המשיכה."
+    },
+    {
+      "en": "Configure Agent Merge?",
+      "he": "להגדיר את מיזוג הסוכן?"
+    },
+    {
+      "en": "Do not fix failing CI checks.",
+      "he": "אל תתקן בדיקות CI שנכשלו."
+    },
+    {
+      "en": "Fix failing CI checks.",
+      "he": "תקן בדיקות CI שנכשלו."
+    },
+    {
+      "en": "Configuring Agent Merge",
+      "he": "מגדיר את מיזוג הסוכן"
+    },
+    {
+      "en": "Disabled Agent Merge",
+      "he": "מיזוג הסוכן הושבת"
+    },
+    {
+      "en": "Disable Agent Merge?",
+      "he": "להשבית את מיזוג הסוכן?"
+    },
+    {
+      "en": "Disabling Agent Merge",
+      "he": "משבית את מיזוג הסוכן"
+    },
+    {
+      "en": "Enabled Agent Merge",
+      "he": "מיזוג הסוכן הופעל"
+    },
+    {
+      "en": "Agent Merge enabled. {0}",
+      "he": "מיזוג הסוכן הופעל. {0}"
+    },
+    {
+      "en": "Enable Agent Merge?",
+      "he": "להפעיל את מיזוג הסוכן?"
+    },
+    {
+      "en": "Enabling Agent Merge",
+      "he": "מפעיל את מיזוג הסוכן"
+    },
+    {
+      "en": "Failed to update Agent Merge",
+      "he": "עדכון מיזוג הסוכן נכשל"
+    },
+    {
+      "en": "Worktree Symlink Folders",
+      "he": "תיקיות קישור סמלי של עץ העבודה"
+    },
+    {
+      "en": "Creating isolated worktree (symlinking folders)",
+      "he": "יוצר עץ עבודה מבודד (מקשר תיקיות בקישורים סמליים)"
+    },
+    {
+      "en": "Failed to resolve SSH known-hosts files: {0}",
+      "he": "פתרון קובצי known-hosts של SSH נכשל: {0}"
+    },
+    {
+      "en": "SSH ProxyCommand exited ({0}): {1}",
+      "he": "SSH ProxyCommand הסתיים ({0}): {1}"
+    }
+  ]
+}

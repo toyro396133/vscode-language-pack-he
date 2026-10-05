@@ -1,0 +1,107 @@
+{
+  "vscode": "1.140.0",
+  "kind": "new-source-translation",
+  "batch": "new-long-01",
+  "entries": [
+    {
+      "en": "Controls whether original line numbers are hidden in inline diffs. When set to null, uses the editor's default: hidden in compact multi diff editors and visible in other diff editors.",
+      "he": "קובע אם מספרי השורות המקוריים מוסתרים ב-diff מוטמע. כאשר הערך הוא null, נעשה שימוש בברירת המחדל של העורך: המספרים מוסתרים בעורכי multi diff קומפקטיים ומוצגים בעורכי diff אחרים."
+    },
+    {
+      "en": "Controls how occurrences of selected text are matched when selecting the next, previous, or all occurrences and when highlighting selection matches. `caseSensitive` and `caseInsensitive` match substrings independently of the Find widget. An empty selection always starts a whole-word, case-sensitive search.",
+      "he": "קובע כיצד מותאמים מופעים של הטקסט שנבחר בעת בחירת המופע הבא, הקודם או כל המופעים, ובעת הדגשת התאמות לבחירה. `caseSensitive` ו-`caseInsensitive` מתאימים מחרוזות משנה בנפרד מווידג'ט החיפוש. בחירה ריקה תמיד מתחילה חיפוש של מילה שלמה תוך התחשבות ברישיות."
+    },
+    {
+      "en": "Controls process-wide limits on sessions and chats created, messages sent, and recursive session spawning by Agent Host session tools. Confirmation requirements and input validation are unchanged.",
+      "he": "קובע מגבלות כלל-תהליך על מספר ההפעלות והצ'אטים שנוצרים, ההודעות שנשלחות ויצירה רקורסיבית של הפעלות באמצעות כלי ההפעלה של מארח הסוכן. דרישות האישור ואימות הקלט אינם משתנים."
+    },
+    {
+      "en": "By continuing, you agree to {0}'s [Terms]({1}) and [Privacy Statement]({2}). {3} Copilot may show [public code]({4}) suggestions and use your data to improve the product. You can change these settings anytime.",
+      "he": "בהמשך, אתה מסכים ל-[תנאים]({1}) ול-[הצהרת הפרטיות]({2}) של {0}. {3} Copilot עשוי להציג הצעות של [קוד ציבורי]({4}) ולהשתמש בנתונים שלך כדי לשפר את המוצר. ניתן לשנות הגדרות אלה בכל עת."
+    },
+    {
+      "en": "Controls whether the new-session composer groups workspace, repository, and harness controls above the chat input. This setting only applies when the unified workspace picker is enabled.",
+      "he": "קובע אם עורך ההפעלה החדשה מקבץ את פקדי סביבת העבודה, המאגר ומנגנון ההרצה מעל שדה הקלט של הצ'אט. הגדרה זו חלה רק כאשר בורר סביבת העבודה המאוחד מופעל."
+    },
+    {
+      "en": "Specifies the name used in new-session welcome messages. Leave empty to use the first name from your signed-in GitHub profile when available; otherwise, welcome messages omit the name.",
+      "he": "מציין את השם שישמש בהודעות הברכה של הפעלות חדשות. השאר ריק כדי להשתמש בשם הפרטי מפרופיל GitHub המחובר, כאשר הוא זמין; אחרת הודעות הברכה יוצגו ללא שם."
+    },
+    {
+      "en": "To archive an individual nested chat without archiving its session, open the chat's context menu in the Sessions list or chat tab and choose Archive. The chat is hidden from the Sessions list and closed, but is not deleted. Open the Sessions list Filter menu and enable Archived to show it again, then open the chat's context menu and choose Unarchive.",
+      "he": "כדי להעביר לארכיון צ'אט מקונן יחיד בלי להעביר את ההפעלה שלו לארכיון, פתח את תפריט ההקשר של הצ'אט ברשימת ההפעלות או בלשונית הצ'אט ובחר 'העבר לארכיון'. הצ'אט מוסתר מרשימת ההפעלות ונסגר, אך אינו נמחק. פתח את תפריט הסינון של רשימת ההפעלות והפעל 'בארכיון' כדי להציג אותו שוב, ולאחר מכן פתח את תפריט ההקשר של הצ'אט ובחר 'הוצא מהארכיון'."
+    },
+    {
+      "en": "When a background image is set, use Tint Window to Match Background in the Command Palette or the background context menu to turn matching window colors on or off. A check mark means tinting is enabled. Turning it off keeps the background image and restores the original window colors.",
+      "he": "כאשר מוגדרת תמונת רקע, השתמש ב'צבע את החלון כך שיתאים לרקע' בלוח הפקודות או בתפריט ההקשר של הרקע כדי להפעיל או להשבית התאמת צבעי החלון. סימן ביקורת מציין שהצביעה מופעלת. השבתתה משאירה את תמונת הרקע ומשחזרת את צבעי החלון המקוריים."
+    },
+    {
+      "en": "For a new Agent Host session in a Git repository, use Tab to reach the branch picker and press Enter or Space to choose a base branch. With New Worktree checked, the current branch's tracked upstream is selected by default when available; otherwise the default branch is selected. When either the current branch or its upstream is selected, both appear together at the top with the upstream first and focused when the picker opens. Use the arrow keys to choose a branch and press Enter to select it.",
+      "he": "בהפעלה חדשה של מארח סוכן במאגר Git, השתמש ב-Tab כדי להגיע לבורר הענפים והקש Enter או Space כדי לבחור ענף בסיס. כאשר 'עץ עבודה חדש' מסומן, ה-upstream שנמצא במעקב עבור הענף הנוכחי נבחר כברירת מחדל כאשר הוא זמין; אחרת נבחר ענף ברירת המחדל. כאשר הענף הנוכחי או ה-upstream שלו נבחרים, שניהם מופיעים יחד בראש הרשימה, כאשר ה-upstream ראשון וממוקד בעת פתיחת הבורר. השתמש במקשי החצים כדי לבחור ענף והקש Enter כדי לבחור בו."
+    },
+    {
+      "en": "After you successfully use the suggestion to archive or mark a session as done three times, future suggestions appear in a compact layout without the explanation. The buttons wrap below the title when space is limited, while Dismiss stays at the top right. The keyboard order is Archive or Mark as Done, Configure, then Dismiss. Configure opens the same automatic cleanup settings.",
+      "he": "לאחר שתשתמש בהצלחה שלוש פעמים בהצעה להעביר הפעלה לארכיון או לסמן אותה כבוצעה, הצעות עתידיות יוצגו בפריסה קומפקטית ללא ההסבר. כאשר המקום מוגבל, הלחצנים עוברים לשורה שמתחת לכותרת, בעוד 'סגור' נשאר בפינה הימנית העליונה. סדר המקלדת הוא 'העבר לארכיון' או 'סמן כבוצע', לאחר מכן 'הגדר' ולבסוף 'סגור'. 'הגדר' פותח את אותן הגדרות ניקוי אוטומטי."
+    },
+    {
+      "en": "Chats open directly in the session view without a tab row. Side-by-side chats each show a session header. Pin keeps that chat visible when another chat opens. Close removes that chat group. Closing the last group closes the session from the grid. Non-main chats are hidden and can be reopened later. For sessions that support multiple chats, use Show Chat Tabs in the session overflow menu to show multiple tabs.",
+      "he": "צ'אטים נפתחים ישירות בתצוגת ההפעלה ללא שורת לשוניות. כל צ'אט שמוצג זה לצד זה מציג כותרת הפעלה. 'הצמד' משאיר את הצ'אט גלוי כאשר צ'אט אחר נפתח. 'סגור' מסיר את קבוצת הצ'אט. סגירת הקבוצה האחרונה סוגרת את ההפעלה מהגריד. צ'אטים שאינם ראשיים מוסתרים וניתן לפתוח אותם מחדש מאוחר יותר. בהפעלות שתומכות במספר צ'אטים, השתמש ב'הצג לשוניות צ'אט' בתפריט הנוסף של ההפעלה כדי להציג לשוניות מרובות."
+    },
+    {
+      "en": "When multiple chats appear as tabs in a single group, the tab row replaces the session header and includes the session actions. Side-by-side chat groups retain the session header and keep their tab rows compact. For sessions that support multiple chats, use Show Chat Tabs in the session overflow menu to show a single chat.",
+      "he": "כאשר צ'אטים מרובים מוצגים כלשוניות בקבוצה אחת, שורת הלשוניות מחליפה את כותרת ההפעלה וכוללת את פעולות ההפעלה. קבוצות צ'אט שמוצגות זו לצד זו שומרות על כותרת ההפעלה ועל שורות לשוניות קומפקטיות. בהפעלות שתומכות במספר צ'אטים, השתמש ב'הצג לשוניות צ'אט' בתפריט הנוסף של ההפעלה כדי להציג צ'אט יחיד."
+    },
+    {
+      "en": "To mark an individual nested chat as done without marking its session as done, open the chat's context menu in the Sessions list or chat tab and choose Mark as Done. The chat is hidden from the Sessions list and closed, but is not deleted. Open the Sessions list Filter menu and enable Done to show it again, then open the chat's context menu and choose Restore.",
+      "he": "כדי לסמן צ'אט מקונן יחיד כבוצע בלי לסמן את ההפעלה שלו כבוצעה, פתח את תפריט ההקשר של הצ'אט ברשימת ההפעלות או בלשונית הצ'אט ובחר 'סמן כבוצע'. הצ'אט מוסתר מרשימת ההפעלות ונסגר, אך אינו נמחק. פתח את תפריט הסינון של רשימת ההפעלות והפעל 'בוצע' כדי להציג אותו שוב, ולאחר מכן פתח את תפריט ההקשר של הצ'אט ובחר 'שחזר'."
+    },
+    {
+      "en": "Once you send a message to an external session's agent, it becomes a regular session. Its banner and External hover label disappear, and it is no longer grouped or filtered as external.",
+      "he": "לאחר שתשלח הודעה לסוכן של הפעלה חיצונית, היא הופכת להפעלה רגילה. הבאנר שלה ותווית הריחוף 'חיצוני' נעלמים, והיא אינה מקובצת או מסוננת עוד כהפעלה חיצונית."
+    },
+    {
+      "en": "To make an external session a regular session without sending a message, use Import in its row toolbar, before Archive or Mark as Done, or focus the session and choose Import from its context menu{0}. This action is available when the host supports importing sessions.",
+      "he": "כדי להפוך הפעלה חיצונית להפעלה רגילה בלי לשלוח הודעה, השתמש ב'ייבא' בסרגל הכלים של השורה, לפני 'העבר לארכיון' או 'סמן כבוצע', או מקד את ההפעלה ובחר 'ייבא' מתפריט ההקשר שלה{0}. פעולה זו זמינה כאשר המארח תומך בייבוא הפעלות."
+    },
+    {
+      "en": "External sessions appear in an External section above Archived unless they are pinned or in a custom group. The section is hidden when empty. Focus its heading and open the context menu{0} to configure which external sessions are shown or archive the section's sessions.",
+      "he": "הפעלות חיצוניות מופיעות במקטע 'חיצוני' מעל 'בארכיון', אלא אם הן מוצמדות או נמצאות בקבוצה מותאמת אישית. המקטע מוסתר כאשר הוא ריק. מקד את הכותרת שלו ופתח את תפריט ההקשר{0} כדי להגדיר אילו הפעלות חיצוניות יוצגו או להעביר לארכיון את ההפעלות שבמקטע."
+    },
+    {
+      "en": "External sessions appear in an External section above Done unless they are pinned or in a custom group. The section is hidden when empty. Focus its heading and open the context menu{0} to configure which external sessions are shown or mark the section's sessions as done.",
+      "he": "הפעלות חיצוניות מופיעות במקטע 'חיצוני' מעל 'בוצע', אלא אם הן מוצמדות או נמצאות בקבוצה מותאמת אישית. המקטע מוסתר כאשר הוא ריק. מקד את הכותרת שלו ופתח את תפריט ההקשר{0} כדי להגדיר אילו הפעלות חיצוניות יוצגו או לסמן את ההפעלות שבמקטע כבוצעו."
+    },
+    {
+      "en": "Alt-click, or Option-click on macOS, the Fork Conversation button at a checkpoint to open the fork beside its source. Ordinary activation keeps its existing behavior. With the keyboard, activate Fork Conversation, reopen the source from the Sessions list, then choose Open to the Side from the fork's context menu.",
+      "he": "לחץ Alt יחד עם לחיצה, או Option עם לחיצה ב-macOS, על הלחצן 'פצל שיחה' בנקודת ביקורת כדי לפתוח את הפיצול לצד המקור שלו. הפעלה רגילה שומרת על ההתנהגות הקיימת. באמצעות המקלדת, הפעל 'פצל שיחה', פתח מחדש את המקור מרשימת ההפעלות ולאחר מכן בחר 'פתח בצד' מתפריט ההקשר של הפיצול."
+    },
+    {
+      "en": "After you switch from Copilot to Local, a two-step feedback survey may appear above the chat input. Use Shift+Tab to reach it. In the first step, use Up and Down Arrow to choose why you switched, then press Enter or Space. In the second step, enter any optional feedback and use Tab to reach Submit. Dismiss Survey or Escape closes the survey. After submission, the questions are replaced above the input by a message that your feedback was recorded. Use Dismiss Feedback Acknowledgement or Escape to close it.",
+      "he": "לאחר מעבר מ-Copilot למצב מקומי, ייתכן שיופיע מעל שדה הקלט של הצ'אט סקר משוב בשני שלבים. השתמש ב-Shift+Tab כדי להגיע אליו. בשלב הראשון השתמש בחצים למעלה ולמטה כדי לבחור מדוע עברת, ולאחר מכן הקש Enter או Space. בשלב השני הזן משוב אופציונלי והשתמש ב-Tab כדי להגיע אל 'שלח'. 'סגור סקר' או Escape סוגרים את הסקר. לאחר השליחה, השאלות מוחלפות מעל שדה הקלט בהודעה שהמשוב שלך נרשם. השתמש ב'סגור אישור משוב' או Escape כדי לסגור אותה."
+    },
+    {
+      "en": "To open the main chat beside a peer chat, choose Open to the Side from the session row's context menu. You can also Alt-click (Option-click on macOS) the row or drag it to a chat pane's edge.",
+      "he": "כדי לפתוח את הצ'אט הראשי לצד צ'אט מקביל, בחר 'פתח בצד' מתפריט ההקשר של שורת ההפעלה. ניתן גם ללחוץ על השורה עם Alt, או עם Option ב-macOS, או לגרור אותה לקצה חלונית צ'אט."
+    },
+    {
+      "en": "When agent customizations need an update, a notice below the new-session input shows how many need attention. Use Tab to reach Review Migrations and open the Migrations page. Dismiss Migration Notice for This Workspace hides the notice for that workspace, including after restarting, and returns focus to the input.",
+      "he": "כאשר התאמות אישיות של הסוכן דורשות עדכון, הודעה מתחת לשדה הקלט של ההפעלה החדשה מציגה כמה מהן דורשות טיפול. השתמש ב-Tab כדי להגיע אל 'סקור העברות' ולפתוח את דף ההעברות. 'התעלם מהודעת ההעברה עבור סביבת עבודה זו' מסתיר את ההודעה עבור סביבת העבודה, גם לאחר הפעלה מחדש, ומחזיר את המיקוד לשדה הקלט."
+    },
+    {
+      "en": "While a new session is being prepared, the transcript shows your submitted prompt and attachments followed by startup progress. Use Tab to reach Show Log beside the progress message and press Enter to open the Dev Container output channel. The chat input and attachment controls are disabled until preparation finishes. Use the input's Stop action or Cancel Chat command{0} to cancel preparation. If preparation fails or is canceled, your original prompt and attachments remain in the new-session composer.",
+      "he": "בזמן שהפעלה חדשה מוכנה, התמליל מציג את הפרומפט והקבצים המצורפים ששלחת ולאחריהם את התקדמות ההפעלה. השתמש ב-Tab כדי להגיע אל 'הצג יומן' לצד הודעת ההתקדמות והקש Enter כדי לפתוח את ערוץ הפלט של Dev Container. שדה הקלט של הצ'אט ופקדי הקבצים המצורפים מושבתים עד שההכנה מסתיימת. השתמש בפעולת 'עצור' של שדה הקלט או בפקודה 'בטל צ'אט'{0} כדי לבטל את ההכנה. אם ההכנה נכשלת או מבוטלת, הפרומפט והקבצים המצורפים המקוריים שלך נשארים בעורך ההפעלה החדשה."
+    },
+    {
+      "en": "Ask the agent to list remote agent hosts or create a remote session with platform and resource requirements. Creation uses the standard tool confirmation and does not change the focused chat. The result includes a link to the remote session. Remote sessions can send messages back to the originating chat while this Agents window remains connected.",
+      "he": "בקש מהסוכן להציג רשימת מארחי סוכן מרוחקים או ליצור הפעלה מרוחקת עם דרישות פלטפורמה ומשאבים. היצירה משתמשת באישור הכלים הרגיל ואינה משנה את הצ'אט הממוקד. התוצאה כוללת קישור להפעלה המרוחקת. הפעלות מרוחקות יכולות לשלוח הודעות בחזרה לצ'אט המקור כל עוד חלון הסוכנים הזה נשאר מחובר."
+    },
+    {
+      "en": "Ask the agent to inspect a remote session using its session link. Inspection reads its current state and latest response or error without changing focus, marking the chat as read, or approving pending requests. If the host is unavailable, the result explains why; inspection does not reconnect it.",
+      "he": "בקש מהסוכן לבדוק הפעלה מרוחקת באמצעות קישור ההפעלה שלה. הבדיקה קוראת את המצב הנוכחי ואת התגובה או השגיאה האחרונה בלי לשנות את המיקוד, לסמן את הצ'אט כנקרא או לאשר בקשות ממתינות. אם המארח אינו זמין, התוצאה מסבירה מדוע; הבדיקה אינה מחברת אותו מחדש."
+    },
+    {
+      "en": "Recorded artifacts and references offer Remove from Session for each row. Use Tab to reach row actions. When only one item is visible, use its pill hover actions or context menu instead. Removal waits for persistence and only deletes the session record; it does not delete the linked resource, close a pull request or issue, or remove independent session associations.",
+      "he": "פריטים והפניות שנרשמו מציעים 'הסר מההפעלה' עבור כל שורה. השתמש ב-Tab כדי להגיע לפעולות השורה. כאשר מוצג פריט אחד בלבד, השתמש במקום זאת בפעולות הריחוף של התווית שלו או בתפריט ההקשר. ההסרה ממתינה לשמירה ורק מוחקת את הרשומה מההפעלה; היא אינה מוחקת את המשאב המקושר, סוגרת בקשת משיכה או סוגיה, או מסירה שיוכים עצמאיים להפעלות."
+    }
+  ]
+}

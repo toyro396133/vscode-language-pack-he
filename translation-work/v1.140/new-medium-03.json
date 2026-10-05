@@ -1,0 +1,207 @@
+{
+  "vscode": "1.140.0",
+  "kind": "new-source-translation",
+  "batch": "new-medium-03",
+  "entries": [
+    {
+      "en": "The automation's Agent Host is not ready to run it.",
+      "he": "מארח הסוכן של האוטומציה עדיין אינו מוכן להריץ אותה."
+    },
+    {
+      "en": "Visible automations: {0}; incomplete providers: {1} of {2}",
+      "he": "אוטומציות גלויות: {0}; ספקים שלא הושלמו: {1} מתוך {2}"
+    },
+    {
+      "en": "Connect to an Agent Host that supports automations before creating one.",
+      "he": "התחבר למארח סוכן שתומך באוטומציות לפני יצירת אוטומציה."
+    },
+    {
+      "en": "Automation '{0}' is unavailable. Its Agent Host may be disconnected or the automation may have been deleted.",
+      "he": "האוטומציה '{0}' אינה זמינה. ייתכן שמארח הסוכן שלה מנותק או שהאוטומציה נמחקה."
+    },
+    {
+      "en": "Generate a title and description that summarize the changes.",
+      "he": "צור כותרת ותיאור שמסכמים את השינויים."
+    },
+    {
+      "en": "Repository merge settings could not be loaded. Check your GitHub access and retry loading the pull request details.",
+      "he": "לא ניתן היה לטעון את הגדרות המיזוג של המאגר. בדוק את הגישה שלך ל-GitHub ונסה שוב לטעון את פרטי בקשת המשיכה."
+    },
+    {
+      "en": "GitHub auto-merge is disabled for this repository. Ask a repository administrator to enable \"Allow auto-merge\" in the repository's Settings > General > Pull Requests.",
+      "he": "המיזוג האוטומטי של GitHub מושבת עבור מאגר זה. בקש ממנהל המאגר להפעיל את \"Allow auto-merge\" תחת Settings > General > Pull Requests של המאגר."
+    },
+    {
+      "en": "Repository merge settings could not be loaded or no merge methods are enabled. Check your GitHub access and the repository's Settings > General > Pull Requests.",
+      "he": "לא ניתן היה לטעון את הגדרות המיזוג של המאגר, או שלא מופעלות שיטות מיזוג. בדוק את הגישה שלך ל-GitHub ואת Settings > General > Pull Requests של המאגר."
+    },
+    {
+      "en": "The draft could not be copied to the Agents Window. Your prompt and attachments are still in the editor. Try again or choose a workspace to continue.",
+      "he": "לא ניתן היה להעתיק את הטיוטה לחלון הסוכנים. הפרומפט והקבצים המצורפים שלך עדיין בעורך. נסה שוב או בחר סביבת עבודה כדי להמשיך."
+    },
+    {
+      "en": "Match the Agents window colors to your chat background image. Other windows keep their current theme. Not available in high contrast themes.",
+      "he": "התאם את צבעי חלון הסוכנים לתמונת הרקע של הצ'אט. חלונות אחרים שומרים על ערכת הנושא הנוכחית שלהם. האפשרות אינה זמינה בערכות נושא בניגודיות גבוהה."
+    },
+    {
+      "en": "Shows an enhanced action menu with Ask in a Side Chat, Quote, and Copy when selecting assistant response text in the Agents Window.",
+      "he": "מציג תפריט פעולות מורחב עם 'שאל בצ'אט צדדי', 'ציטוט' ו'העתק' בעת בחירת טקסט מתשובת העוזר בחלון הסוכנים."
+    },
+    {
+      "en": "Controls whether rotating welcome phrases are shown above the new-session composer.",
+      "he": "קובע אם יוצגו משפטי ברכה מתחלפים מעל עורך ההפעלה החדשה."
+    },
+    {
+      "en": "Welcome name reset to your GitHub first name when available.",
+      "he": "שם הברכה אופס לשם הפרטי שלך ב-GitHub, כאשר הוא זמין."
+    },
+    {
+      "en": "Leave empty to use your GitHub first name when available",
+      "he": "השאר ריק כדי להשתמש בשם הפרטי שלך ב-GitHub, כאשר הוא זמין"
+    },
+    {
+      "en": "Enter the name to use in new-session welcome messages",
+      "he": "הזן את השם לשימוש בהודעות הברכה של הפעלות חדשות"
+    },
+    {
+      "en": "Wait for session preparation to finish before adding attachments.",
+      "he": "המתן לסיום הכנת ההפעלה לפני הוספת קבצים מצורפים."
+    },
+    {
+      "en": "{0}\nTo disable this announcement, set {1} to false.",
+      "he": "{0}\nכדי להשבית הודעה זו, הגדר את {1} ל-false."
+    },
+    {
+      "en": "The requested picker is not available in the current Agents composer.",
+      "he": "הבורר המבוקש אינו זמין בעורך הסוכנים הנוכחי."
+    },
+    {
+      "en": "While connecting to a Dev Container for an existing session, use Tab to reach Show Log and press Enter to open the Dev Container output channel.",
+      "he": "בעת התחברות ל-Dev Container עבור הפעלה קיימת, השתמש ב-Tab כדי להגיע אל 'הצג יומן' והקש Enter כדי לפתוח את ערוץ הפלט של Dev Container."
+    },
+    {
+      "en": "In a new-session composer, open and focus the workspace picker{0} or the harness picker{1}. Focus either picker control and open its context menu{2} to configure its keybinding.",
+      "he": "בעורך של הפעלה חדשה, פתח ומקד את בורר סביבת העבודה{0} או את בורר מנגנון ההרצה{1}. מקד אחד מפקדי הבורר ופתח את תפריט ההקשר שלו{2} כדי להגדיר את קיצור המקשים שלו."
+    },
+    {
+      "en": "The session row toolbar offers Pin or Unpin before Archive. For sessions that support multiple chats, open the session's context menu to start a new chat.",
+      "he": "סרגל הכלים של שורת ההפעלה מציע 'הצמד' או 'בטל הצמדה' לפני 'העבר לארכיון'. עבור הפעלות שתומכות במספר צ'אטים, פתח את תפריט ההקשר של ההפעלה כדי להתחיל צ'אט חדש."
+    },
+    {
+      "en": "The session row toolbar offers Pin or Unpin before Mark as Done. For sessions that support multiple chats, open the session's context menu to start a new chat.",
+      "he": "סרגל הכלים של שורת ההפעלה מציע 'הצמד' או 'בטל הצמדה' לפני 'סמן כבוצע'. עבור הפעלות שתומכות במספר צ'אטים, פתח את תפריט ההקשר של ההפעלה כדי להתחיל צ'אט חדש."
+    },
+    {
+      "en": "For sessions that support multiple chats, the session row toolbar offers New Chat in This Session before Archive. Open the session's context menu to pin or unpin it.",
+      "he": "עבור הפעלות שתומכות במספר צ'אטים, סרגל הכלים של שורת ההפעלה מציע 'צ'אט חדש בהפעלה זו' לפני 'העבר לארכיון'. פתח את תפריט ההקשר של ההפעלה כדי להצמיד או לבטל את הצמדתה."
+    },
+    {
+      "en": "For sessions that support multiple chats, the session row toolbar offers New Chat in This Session before Mark as Done. Open the session's context menu to pin or unpin it.",
+      "he": "עבור הפעלות שתומכות במספר צ'אטים, סרגל הכלים של שורת ההפעלה מציע 'צ'אט חדש בהפעלה זו' לפני 'סמן כבוצע'. פתח את תפריט ההקשר של ההפעלה כדי להצמיד או לבטל את הצמדתה."
+    },
+    {
+      "en": "Use Archived in the Sessions list Filter menu to control whether archived sessions and nested chats are shown. A check mark means archived content is shown.",
+      "he": "השתמש ב'בארכיון' בתפריט הסינון של רשימת ההפעלות כדי לקבוע אם יוצגו הפעלות וצ'אטים מקוננים שבארכיון. סימן ביקורת מציין שתוכן שבארכיון מוצג."
+    },
+    {
+      "en": "Use Done in the Sessions list Filter menu to control whether done sessions and nested chats are shown. A check mark means done content is shown.",
+      "he": "השתמש ב'בוצע' בתפריט הסינון של רשימת ההפעלות כדי לקבוע אם יוצגו הפעלות וצ'אטים מקוננים שסומנו כבוצעו. סימן ביקורת מציין שתוכן שבוצע מוצג."
+    },
+    {
+      "en": "The draft could not be copied. Your prompt and attachments are still in the editor.",
+      "he": "לא ניתן היה להעתיק את הטיוטה. הפרומפט והקבצים המצורפים שלך עדיין בעורך."
+    },
+    {
+      "en": "A workspace is the folder or repository where your agent reads context and makes changes. Choose one for project-specific work, or continue without one.",
+      "he": "סביבת עבודה היא התיקייה או המאגר שבהם הסוכן שלך קורא הקשר ומבצע שינויים. בחר אחת לעבודה ספציפית לפרויקט, או המשך בלעדיה."
+    },
+    {
+      "en": "Keep track of your running session in the sessions list while you start another task. Your agent can keep working in parallel.",
+      "he": "עקוב אחר ההפעלה הפעילה ברשימת ההפעלות בזמן שאתה מתחיל משימה נוספת. הסוכן שלך יכול להמשיך לעבוד במקביל."
+    },
+    {
+      "en": "Automation operation '{0}' is not available for '{1}'.",
+      "he": "פעולת האוטומציה '{0}' אינה זמינה עבור '{1}'."
+    },
+    {
+      "en": "The automation target must belong to this Agent Host.",
+      "he": "יעד האוטומציה חייב להשתייך למארח סוכן זה."
+    },
+    {
+      "en": "The selected Dev Container is not available. Restore its configuration and connection, or explicitly select the host workspace to continue without a container.",
+      "he": "ה-Dev Container שנבחר אינו זמין. שחזר את התצורה והחיבור שלו, או בחר במפורש את סביבת העבודה של המארח כדי להמשיך ללא קונטיינר."
+    },
+    {
+      "en": "The source Agent Host does not support preparing a worktree for a Dev Container.",
+      "he": "מארח הסוכן המקורי אינו תומך בהכנת עץ עבודה עבור Dev Container."
+    },
+    {
+      "en": "Automations are disabled. Enable the {0} setting and try again.",
+      "he": "האוטומציות מושבתות. הפעל את ההגדרה {0} ונסה שוב."
+    },
+    {
+      "en": "The Agent Host is disconnected. Reconnect to the host and try again.",
+      "he": "מארח הסוכן מנותק. התחבר מחדש למארח ונסה שוב."
+    },
+    {
+      "en": "The Agent Host is still connecting. Wait for the connection to finish, then try again.",
+      "he": "מארח הסוכן עדיין מתחבר. המתן לסיום החיבור ולאחר מכן נסה שוב."
+    },
+    {
+      "en": "The Agent Host is unavailable. Reconnect to the host and try again.",
+      "he": "מארח הסוכן אינו זמין. התחבר מחדש למארח ונסה שוב."
+    },
+    {
+      "en": "This Agent Host does not support automations. Update the host or use an Agent Host with Automation support.",
+      "he": "מארח סוכן זה אינו תומך באוטומציות. עדכן את המארח או השתמש במארח סוכן שתומך באוטומציות."
+    },
+    {
+      "en": "Update this Agent Host to a newer version, then reconnect to use automations.",
+      "he": "עדכן את מארח הסוכן לגרסה חדשה יותר ולאחר מכן התחבר מחדש כדי להשתמש באוטומציות."
+    },
+    {
+      "en": "This picker supports github.com repositories only. Switch to a github.com account, then try again.",
+      "he": "בורר זה תומך במאגרי github.com בלבד. עבור לחשבון github.com ולאחר מכן נסה שוב."
+    },
+    {
+      "en": "A GitHub sandbox session is already being started. Wait for it to finish before sending another message.",
+      "he": "הפעלת ארגז חול של GitHub כבר מתחילה. המתן לסיום לפני שליחת הודעה נוספת."
+    },
+    {
+      "en": "GitHub sandbox creation is no longer available. Enable the feature and choose a repository to try again.",
+      "he": "יצירת ארגז חול של GitHub אינה זמינה עוד. הפעל את התכונה ובחר מאגר כדי לנסות שוב."
+    },
+    {
+      "en": "This configuration is not supported for a new GitHub sandbox session.",
+      "he": "תצורה זו אינה נתמכת עבור הפעלת ארגז חול חדשה של GitHub."
+    },
+    {
+      "en": "Escape or Close dismisses diagnostics. Closing this accessible view returns to the diagnostics snapshot.",
+      "he": "Escape או 'סגור' סוגרים את האבחון. סגירת התצוגה הנגישה הזו מחזירה לתמונת המצב של האבחון."
+    },
+    {
+      "en": "Use Tab and Shift+Tab to move between the header actions, report, and collapsed sections. Use arrow keys to scroll the focused report. Use Enter or Space to expand client details.",
+      "he": "השתמש ב-Tab וב-Shift+Tab כדי לעבור בין פעולות הכותרת, הדוח והמקטעים המכווצים. השתמש במקשי החצים כדי לגלול את הדוח הממוקד. השתמש ב-Enter או Space כדי להרחיב את פרטי הלקוח."
+    },
+    {
+      "en": "Connection diagnostics shows a read-only snapshot of local connection state.",
+      "he": "אבחון החיבור מציג תמונת מצב לקריאה בלבד של מצב החיבור המקומי."
+    },
+    {
+      "en": "Use {0} for connection diagnostics accessibility help.",
+      "he": "השתמש ב-{0} לעזרת נגישות עבור אבחון החיבור."
+    },
+    {
+      "en": "No matching connection lifecycle lines were found in this bounded excerpt.",
+      "he": "לא נמצאו שורות תואמות של מחזור חיי החיבור בקטע המוגבל הזה."
+    },
+    {
+      "en": "Snapshot refreshed, but one or more host discovery operations failed.",
+      "he": "תמונת המצב רועננה, אך פעולת גילוי מארח אחת או יותר נכשלה."
+    },
+    {
+      "en": "Host summaries and controls are live. Details and exports use the captured snapshot.",
+      "he": "סיכומי המארחים והפקדים חיים ומתעדכנים. הפרטים והייצוא משתמשים בתמונת המצב שנאספה."
+    }
+  ]
+}

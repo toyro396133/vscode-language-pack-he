@@ -1,0 +1,132 @@
+name: Finalize VS Code 1.140 Hebrew pack
+
+on:
+  push:
+    branches:
+      - 'translation/v1.140'
+    paths:
+      - '.github/workflows/finalize-v1.140.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    env:
+      VSCODE_VERSION: '1.140.0'
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Download VS Code
+        shell: bash
+        run: |
+          URL="https://update.code.visualstudio.com/${VSCODE_VERSION}/linux-deb-x64/stable"
+          for attempt in 1 2 3 4 5; do
+            echo "Download attempt $attempt"
+            curl --fail --location --retry 5 --retry-all-errors --retry-delay 2 \
+              --continue-at - "$URL" --output code.deb && break
+            if [ "$attempt" = "5" ]; then
+              echo "VS Code download failed after $attempt attempts" >&2
+              exit 1
+            fi
+            sleep $((attempt * 2))
+          done
+          dpkg-deb -x code.deb vscode-root
+          test -f vscode-root/usr/share/code/resources/app/package.json
+
+      - name: Extract VS Code 1.140 source snapshot
+        run: |
+          node scripts/vsloc.mjs extract \
+            --app vscode-root/usr/share/code/resources/app \
+            --out source/en.new \
+            --ref-lang ru
+
+      - name: Build translation delta
+        run: |
+          node scripts/vsloc.mjs diff \
+            --from source/en \
+            --to source/en.new \
+            --json todo.json
+
+      - name: Reuse translation memory
+        run: |
+          node scripts/translation-memory.mjs \
+            --todo todo.json \
+            --out todo.prefilled.json \
+            --remaining todo.remaining.json \
+            --report translation-memory-report.json
+
+      - name: Compile reviewed translations
+        run: |
+          node scripts/compile-translation-batches.mjs \
+            --todo todo.json \
+            --prefilled todo.prefilled.json \
+            --workdir translation-work/v1.140 \
+            --manual-out todo.manual.json \
+            --merged-out todo.he.partial.json \
+            --remaining-out todo.after-manual.json \
+            --report translation-batch-report.json
+
+      - name: Require complete coverage
+        run: |
+          node - <<'NODE'
+          const fs = require('fs');
+          const report = JSON.parse(fs.readFileSync('translation-batch-report.json', 'utf8'));
+          if (report.remaining !== 0 || report.covered !== report.deltaItems) {
+            console.error(`Translation is incomplete: ${report.covered}/${report.deltaItems}, remaining ${report.remaining}`);
+            process.exit(1);
+          }
+          console.log(`Complete delta coverage: ${report.covered}/${report.deltaItems}`);
+          NODE
+
+      - name: Apply VS Code 1.140 translations
+        run: |
+          node scripts/vsloc.mjs apply \
+            --to source/en.new \
+            --translated todo.he.partial.json
+
+      - name: Verify finalized translation
+        run: |
+          node scripts/vsloc.mjs status
+          node scripts/validate-translation.mjs
+          test "$(node -p "require('./package.json').version")" = "$VSCODE_VERSION"
+
+      - name: Generate final statistics
+        run: node scripts/translation-stats.mjs > translation-stats-1.140.json
+
+      - name: Package VSIX
+        run: npx --yes @vscode/vsce package --out hebrew-language-pack-1.140.0.vsix
+
+      - name: Commit finalized localization
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add package.json translations source/en
+          git diff --cached --check
+          if git diff --cached --quiet; then
+            echo "No localization changes to commit."
+          else
+            git commit -m "feat: update Hebrew language pack to VS Code 1.140"
+            git push origin HEAD:translation/v1.140
+          fi
+
+      - name: Upload finalized artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: vscode-hebrew-1.140-final
+          path: |
+            hebrew-language-pack-1.140.0.vsix
+            translation-stats-1.140.json
+            translation-batch-report.json

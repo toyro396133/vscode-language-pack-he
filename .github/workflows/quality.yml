@@ -1,0 +1,54 @@
+name: Hebrew language pack quality
+
+on:
+  push:
+    branches:
+      - main
+      - 'officialization/**'
+      - 'translation/**'
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Syntax-check maintenance scripts
+        run: |
+          node --check scripts/vsloc.mjs
+          node --check scripts/validate-translation.mjs
+          node --check scripts/translation-stats.mjs
+          node --check scripts/translation-memory.mjs
+          node --check scripts/translation-worklist.mjs
+          node --check scripts/compile-translation-batches.mjs
+
+      - name: Verify snapshot is fully translated
+        run: node scripts/vsloc.mjs status
+
+      - name: Validate localization files
+        run: node scripts/validate-translation.mjs
+
+      - name: Generate translation statistics
+        run: node scripts/translation-stats.mjs > translation-stats.json
+
+      - name: Package VSIX
+        run: npx --yes @vscode/vsce package --out hebrew-language-pack.vsix
+
+      - name: Upload QA artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: hebrew-language-pack-qa
+          path: |
+            hebrew-language-pack.vsix
+            translation-stats.json

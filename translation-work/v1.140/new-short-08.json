@@ -1,0 +1,307 @@
+{
+  "vscode": "1.140.0",
+  "kind": "new-source-translation",
+  "batch": "new-short-08",
+  "entries": [
+    {
+      "en": "Uninstallation cancelled for {0}.",
+      "he": "הסרת ההתקנה של {0} בוטלה."
+    },
+    {
+      "en": "Uninstalled {0}.",
+      "he": "{0} הוסר."
+    },
+    {
+      "en": "Could not uninstall {0}. {1}",
+      "he": "לא ניתן היה להסיר את {0}. {1}"
+    },
+    {
+      "en": "Uninstalling...",
+      "he": "מסיר התקנה..."
+    },
+    {
+      "en": "Uninstalling {0}.",
+      "he": "מסיר את {0}."
+    },
+    {
+      "en": "Could not verify installation",
+      "he": "לא ניתן היה לאמת את ההתקנה"
+    },
+    {
+      "en": "View setup instructions for {0}",
+      "he": "הצג הוראות הגדרה עבור {0}"
+    },
+    {
+      "en": "Back to Customizations",
+      "he": "חזרה להתאמות אישיות"
+    },
+    {
+      "en": "{0} cannot be migrated: {1}",
+      "he": "לא ניתן להעביר את {0}: {1}"
+    },
+    {
+      "en": "Open details for {0}",
+      "he": "פתח פרטים עבור {0}"
+    },
+    {
+      "en": "Open source for {0}: {1}",
+      "he": "פתח מקור עבור {0}: {1}"
+    },
+    {
+      "en": "MCP servers that cannot be migrated",
+      "he": "שרתי MCP שלא ניתן להעביר"
+    },
+    {
+      "en": "{0}, cannot be migrated. Source: {1}",
+      "he": "{0}, לא ניתן להעברה. מקור: {1}"
+    },
+    {
+      "en": "Custom location settings",
+      "he": "הגדרות מיקום מותאמות אישית"
+    },
+    {
+      "en": "{0} migratable · {1} not migratable",
+      "he": "{0} ניתנים להעברה · {1} אינם ניתנים להעברה"
+    },
+    {
+      "en": "Check Connection",
+      "he": "בדוק חיבור"
+    },
+    {
+      "en": "Connection pending",
+      "he": "החיבור ממתין"
+    },
+    {
+      "en": "Reconnect required",
+      "he": "נדרש חיבור מחדש"
+    },
+    {
+      "en": "Connection failed",
+      "he": "החיבור נכשל"
+    },
+    {
+      "en": "Review required",
+      "he": "נדרשת סקירה"
+    },
+    {
+      "en": "Sign in required",
+      "he": "נדרשת התחברות"
+    },
+    {
+      "en": "Currently unavailable",
+      "he": "אינו זמין כעת"
+    },
+    {
+      "en": "Connection status not checked",
+      "he": "מצב החיבור לא נבדק"
+    },
+    {
+      "en": "Connect {0} to GitHub Copilot.",
+      "he": "חבר את {0} אל GitHub Copilot."
+    },
+    {
+      "en": "Sign in to view connectors.",
+      "he": "התחבר כדי להציג מחברים."
+    },
+    {
+      "en": "Enable AI features to install customizations.",
+      "he": "הפעל תכונות AI כדי להתקין התאמות אישיות."
+    },
+    {
+      "en": "Enable agent plugins to install this resource.",
+      "he": "הפעל תוספי סוכן כדי להתקין משאב זה."
+    },
+    {
+      "en": "The source's SKILL.md file is empty.",
+      "he": "קובץ `SKILL.md` של המקור ריק."
+    },
+    {
+      "en": "Installing skill '{0}'",
+      "he": "מתקין את המיומנות '{0}'"
+    },
+    {
+      "en": "The recorded skill installation is invalid.",
+      "he": "רישום התקנת המיומנות אינו חוקי."
+    },
+    {
+      "en": "The skill's installation source is invalid.",
+      "he": "מקור התקנת המיומנות אינו חוקי."
+    },
+    {
+      "en": "Repairing skill '{0}'",
+      "he": "מתקן את המיומנות '{0}'"
+    },
+    {
+      "en": "The skill exceeds the 50 MB installation limit.",
+      "he": "המיומנות חורגת ממגבלת ההתקנה של 50 MB."
+    },
+    {
+      "en": "Retry {0}. Reload all sources from the first page.",
+      "he": "נסה שוב את {0}. טען מחדש את כל המקורות מהעמוד הראשון."
+    },
+    {
+      "en": "{0} to view {1}.",
+      "he": "{0} כדי להציג את {1}."
+    },
+    {
+      "en": "{0} Choose {1} to restore this source.",
+      "he": "{0} בחר {1} כדי לשחזר מקור זה."
+    },
+    {
+      "en": "Marketplace sources",
+      "he": "מקורות Marketplace"
+    },
+    {
+      "en": "{0} Choose {1} to view {2}.",
+      "he": "{0} בחר {1} כדי להציג את {2}."
+    },
+    {
+      "en": "Authorize Connectors",
+      "he": "אשר מחברים"
+    },
+    {
+      "en": "Migrate {0} MCP servers?",
+      "he": "להעביר {0} שרתי MCP?"
+    },
+    {
+      "en": "Migrate 1 MCP server?",
+      "he": "להעביר שרת MCP אחד?"
+    },
+    {
+      "en": "Unable to update {0}: {1}",
+      "he": "לא ניתן לעדכן את {0}: {1}"
+    },
+    {
+      "en": "No connector selected.",
+      "he": "לא נבחר מחבר."
+    },
+    {
+      "en": "Unable to refresh connector details: {0}",
+      "he": "לא ניתן לרענן את פרטי המחבר: {0}"
+    },
+    {
+      "en": "Export Supported",
+      "he": "ייצוא נתמך"
+    },
+    {
+      "en": "Other Information",
+      "he": "מידע נוסף"
+    },
+    {
+      "en": "the current harness",
+      "he": "מנגנון ההרצה הנוכחי"
+    },
+    {
+      "en": "Edit Configuration",
+      "he": "ערוך תצורה"
+    },
+    {
+      "en": "Checking compatibility with {0}",
+      "he": "בודק תאימות עם {0}"
+    },
+    {
+      "en": "Compatibility with {0} could not be determined",
+      "he": "לא ניתן היה לקבוע תאימות עם {0}"
+    },
+    {
+      "en": "Could not open the configuration for '{0}': {1}",
+      "he": "לא ניתן היה לפתוח את התצורה עבור '{0}': {1}"
+    },
+    {
+      "en": "Could not read the configuration for '{0}': {1}",
+      "he": "לא ניתן היה לקרוא את התצורה עבור '{0}': {1}"
+    },
+    {
+      "en": "Migrate MCP Server",
+      "he": "העבר שרת MCP"
+    },
+    {
+      "en": "No diagnostics to show",
+      "he": "אין אבחון להצגה"
+    },
+    {
+      "en": "Partially supported by {0}",
+      "he": "נתמך חלקית על ידי {0}"
+    },
+    {
+      "en": "This server reported an error",
+      "he": "שרת זה דיווח על שגיאה"
+    },
+    {
+      "en": "Not supported by {0}",
+      "he": "אינו נתמך על ידי {0}"
+    },
+    {
+      "en": "{0}. Connector: {1}.",
+      "he": "{0}. מחבר: {1}."
+    },
+    {
+      "en": "{0}. See [[Migrations]] for details.",
+      "he": "{0}. לפרטים ראה [[Migrations]]."
+    },
+    {
+      "en": "Disabled (Globally)",
+      "he": "מושבת (באופן גלובלי)"
+    },
+    {
+      "en": "Partially supported",
+      "he": "נתמך חלקית"
+    },
+    {
+      "en": "{0}, configured in {1}",
+      "he": "{0}, מוגדר ב-{1}"
+    },
+    {
+      "en": "Signing in to {0}.",
+      "he": "מתחבר אל {0}."
+    },
+    {
+      "en": "Support unknown",
+      "he": "התמיכה אינה ידועה"
+    },
+    {
+      "en": "No MCP servers in this group",
+      "he": "אין שרתי MCP בקבוצה זו"
+    },
+    {
+      "en": "Open extension details for {0}",
+      "he": "פתח פרטי הרחבה עבור {0}"
+    },
+    {
+      "en": "Open plugin details for {0}",
+      "he": "פתח פרטי תוסף עבור {0}"
+    },
+    {
+      "en": "Show output for {0}",
+      "he": "הצג פלט עבור {0}"
+    },
+    {
+      "en": "Copilot Icon Popup",
+      "he": "חלון קופץ של סמל Copilot"
+    },
+    {
+      "en": "Subagent Options",
+      "he": "אפשרויות תת-סוכנים"
+    },
+    {
+      "en": "Chat Update Requirement",
+      "he": "דרישת עדכון צ'אט"
+    },
+    {
+      "en": "Draw (Monochrome)",
+      "he": "ציור (מונוכרום)"
+    },
+    {
+      "en": "Draw (Monochrome, No Icon)",
+      "he": "ציור (מונוכרום, ללא סמל)"
+    },
+    {
+      "en": "The promoted model is no longer available.",
+      "he": "המודל המקודם אינו זמין עוד."
+    },
+    {
+      "en": "Unable to open Chat to try this model.",
+      "he": "לא ניתן לפתוח את הצ'אט כדי לנסות מודל זה."
+    }
+  ]
+}

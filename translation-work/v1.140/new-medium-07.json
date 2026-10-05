@@ -1,0 +1,207 @@
+{
+  "vscode": "1.140.0",
+  "kind": "new-source-translation",
+  "batch": "new-medium-07",
+  "entries": [
+    {
+      "en": "Discover customizations searches installed agents, skills, instructions, prompts, hooks, MCP servers, and plugins, and can browse available marketplace items.",
+      "he": "'גלה התאמות אישיות' מחפש סוכנים, מיומנויות, הוראות, פרומפטים, hooks, שרתי MCP ותוספים מותקנים, ויכול לעיין בפריטים זמינים ב-Marketplace."
+    },
+    {
+      "en": "Scrolling near the end of search results loads another page without removing loaded items. Retry repeats a failed marketplace request.",
+      "he": "גלילה סמוך לסוף תוצאות החיפוש טוענת עמוד נוסף בלי להסיר פריטים שכבר נטענו. 'נסה שוב' חוזר על בקשת Marketplace שנכשלה."
+    },
+    {
+      "en": "Type words or use @installed, @type:skill, @type:mcp, and @type:plugin. The search filter menu updates the same query and filters can be combined.",
+      "he": "הקלד מילים או השתמש ב-`@installed`, `@type:skill`, `@type:mcp` ו-`@type:plugin`. תפריט מסנן החיפוש מעדכן את אותה שאילתה, וניתן לשלב מסננים."
+    },
+    {
+      "en": "A source that needs sign-in shows a Sign In action, not a warning. Sign-in starts only when you choose it; cancelling keeps the other results available.",
+      "he": "מקור שדורש התחברות מציג פעולת 'התחבר' ולא אזהרה. ההתחברות מתחילה רק כאשר בוחרים בה; ביטול משאיר את שאר התוצאות זמינות."
+    },
+    {
+      "en": "Use the source picker to search all available marketplace feeds or one feed. Configure Marketplaces opens the related settings.",
+      "he": "השתמש בבורר המקורות כדי לחפש בכל פידי ה-Marketplace הזמינים או בפיד אחד. 'הגדר שווקים' פותח את ההגדרות הקשורות."
+    },
+    {
+      "en": "Use {0} to read the current browse or search results in the Accessible View.",
+      "he": "השתמש ב-{0} כדי לקרוא את תוצאות העיון או החיפוש הנוכחיות בתצוגה הנגישה."
+    },
+    {
+      "en": "When customizations need migration, choose Review Customization Migrations to see what will change.",
+      "he": "כאשר התאמות אישיות דורשות העברה, בחר 'סקור העברות של התאמות אישיות' כדי לראות מה ישתנה."
+    },
+    {
+      "en": "Use Tab and Shift+Tab to navigate the category cards, and Enter or Space to open a category.",
+      "he": "השתמש ב-Tab וב-Shift+Tab כדי לנווט בין כרטיסי הקטגוריות, וב-Enter או Space כדי לפתוח קטגוריה."
+    },
+    {
+      "en": "The Customizations overview shows categories you can open to manage agents, skills, MCP servers, plugins, and other customizations.",
+      "he": "סקירת ההתאמות האישיות מציגה קטגוריות שניתן לפתוח כדי לנהל סוכנים, מיומנויות, שרתי MCP, תוספים והתאמות אישיות אחרות."
+    },
+    {
+      "en": "Shows Discover instead of Overview when a customization marketplace source is enabled. When disabled, marketplace discovery remains in the existing customization management pages.",
+      "he": "מציג 'גלה' במקום 'סקירה' כאשר מקור Marketplace להתאמות אישיות מופעל. כאשר האפשרות מושבתת, גילוי ב-Marketplace נשאר בדפי ניהול ההתאמות האישיות הקיימים."
+    },
+    {
+      "en": "Enables the GitHub Feed as a source of skills, MCP servers, and plugins when Marketplace is shown. If Marketplace or this setting is disabled, the GitHub Feed is not queried.",
+      "he": "מפעיל את פיד GitHub כמקור למיומנויות, שרתי MCP ותוספים כאשר ה-Marketplace מוצג. אם ה-Marketplace או הגדרה זו מושבתים, לא מתבצעת שאילתה לפיד GitHub."
+    },
+    {
+      "en": "The customization installation contains too much metadata to record safely.",
+      "he": "התקנת ההתאמה האישית מכילה יותר מדי מטא-נתונים מכדי לשמור אותם בבטחה."
+    },
+    {
+      "en": "Too many customization marketplace installations are recorded. Uninstall an existing marketplace customization before installing another.",
+      "he": "נרשמו יותר מדי התקנות של התאמות אישיות מה-Marketplace. הסר התאמה אישית קיימת מה-Marketplace לפני התקנת התאמה נוספת."
+    },
+    {
+      "en": "The GitHub account used to connect this resource is no longer available.",
+      "he": "חשבון GitHub ששימש לחיבור משאב זה אינו זמין עוד."
+    },
+    {
+      "en": "Copilot connector installation metadata is unavailable.",
+      "he": "מטא-נתוני ההתקנה של מחבר Copilot אינם זמינים."
+    },
+    {
+      "en": "Copilot connectors do not have a local installation target.",
+      "he": "למחברי Copilot אין יעד התקנה מקומי."
+    },
+    {
+      "en": "This connector is no longer available from the Copilot Connectors catalog.",
+      "he": "מחבר זה אינו זמין עוד בקטלוג מחברי Copilot."
+    },
+    {
+      "en": "This connector cannot be connected while its status is '{0}'. Refresh and try again.",
+      "he": "לא ניתן לחבר מחבר זה כאשר המצב שלו הוא '{0}'. רענן ונסה שוב."
+    },
+    {
+      "en": "The connector could not be reconnected. Refresh its status and try again.",
+      "he": "לא ניתן היה לחבר מחדש את המחבר. רענן את המצב שלו ונסה שוב."
+    },
+    {
+      "en": "This connector cannot be reconnected while its status is '{0}'.",
+      "he": "לא ניתן לחבר מחדש מחבר זה כאשר המצב שלו הוא '{0}'."
+    },
+    {
+      "en": "Enable the Copilot connectors experiment to connect this resource.",
+      "he": "הפעל את ניסוי מחברי Copilot כדי לחבר משאב זה."
+    },
+    {
+      "en": "This connector is no longer available. Refresh Discover and try again.",
+      "he": "מחבר זה אינו זמין עוד. רענן את 'גלה' ונסה שוב."
+    },
+    {
+      "en": "Cursor plugins cannot be installed in VS Code. Open the resource to view its installation instructions.",
+      "he": "לא ניתן להתקין תוספי Cursor ב-VS Code. פתח את המשאב כדי להציג את הוראות ההתקנה שלו."
+    },
+    {
+      "en": "Enable the customization marketplace to install this resource.",
+      "he": "הפעל את Marketplace ההתאמות האישיות כדי להתקין משאב זה."
+    },
+    {
+      "en": "Could not verify this customization installation. {0}",
+      "he": "לא ניתן היה לאמת את התקנת ההתאמה האישית הזו. {0}"
+    },
+    {
+      "en": "The MCP registry changed after '{0}' was discovered. Refresh Discover and try again.",
+      "he": "מרשם ה-MCP השתנה לאחר ש-'{0}' התגלה. רענן את 'גלה' ונסה שוב."
+    },
+    {
+      "en": "The MCP server '{0}' is not available in the configured registry.",
+      "he": "שרת ה-MCP '{0}' אינו זמין במרשם המוגדר."
+    },
+    {
+      "en": "The MCP server could not be installed. Review the installation error and try again.",
+      "he": "לא ניתן היה להתקין את שרת ה-MCP. סקור את שגיאת ההתקנה ונסה שוב."
+    },
+    {
+      "en": "This MCP server requires manual setup. Review the publisher's instructions before adding it.",
+      "he": "שרת MCP זה דורש הגדרה ידנית. סקור את הוראות המפרסם לפני הוספתו."
+    },
+    {
+      "en": "This MCP server requires manual setup. Open the publisher's instructions to configure it.",
+      "he": "שרת MCP זה דורש הגדרה ידנית. פתח את הוראות המפרסם כדי להגדיר אותו."
+    },
+    {
+      "en": "This MCP server requires manual setup, but no publisher instructions are available.",
+      "he": "שרת MCP זה דורש הגדרה ידנית, אך אין הוראות מפרסם זמינות."
+    },
+    {
+      "en": "The MCP server '{0}' is no longer available from the GitHub Feed.",
+      "he": "שרת ה-MCP '{0}' אינו זמין עוד בפיד GitHub."
+    },
+    {
+      "en": "The plugin could not be installed. Review the installation error and try again.",
+      "he": "לא ניתן היה להתקין את התוסף. סקור את שגיאת ההתקנה ונסה שוב."
+    },
+    {
+      "en": "The recorded plugin revision is no longer available from its source.",
+      "he": "גרסת התוסף שנרשמה אינה זמינה עוד מהמקור שלה."
+    },
+    {
+      "en": "This plugin is no longer available from a configured marketplace. Refresh Discover and try again.",
+      "he": "תוסף זה אינו זמין עוד ב-Marketplace שהוגדר. רענן את 'גלה' ונסה שוב."
+    },
+    {
+      "en": "This plugin cannot be uninstalled from the customization marketplace.",
+      "he": "לא ניתן להסיר תוסף זה מ-Marketplace ההתאמות האישיות."
+    },
+    {
+      "en": "Installing configured marketplace plugins is not available in VS Code for the Web.",
+      "he": "התקנת תוספים מ-Marketplace שהוגדר אינה זמינה ב-VS Code for the Web."
+    },
+    {
+      "en": "The customization could not be fully repaired. Review the installation and try again.",
+      "he": "לא ניתן היה לתקן את ההתאמה האישית במלואה. סקור את ההתקנה ונסה שוב."
+    },
+    {
+      "en": "Enable this resource's marketplace source to install it.",
+      "he": "הפעל את מקור ה-Marketplace של משאב זה כדי להתקין אותו."
+    },
+    {
+      "en": "This resource does not provide a supported installation source.",
+      "he": "משאב זה אינו מספק מקור התקנה נתמך."
+    },
+    {
+      "en": "This resource's marketplace source is no longer available, so it cannot be repaired.",
+      "he": "מקור ה-Marketplace של משאב זה אינו זמין עוד, ולכן לא ניתן לתקן אותו."
+    },
+    {
+      "en": "Skills can supply instructions and scripts that an agent may run. Only install resources from sources you trust.\n\nSource: {0}\nRevision: {1}\nDestination: {2}",
+      "he": "מיומנויות יכולות לספק הוראות וסקריפטים שסוכן עשוי להריץ. התקן משאבים רק ממקורות שאתה נותן בהם אמון.\n\nמקור: {0}\nגרסה: {1}\nיעד: {2}"
+    },
+    {
+      "en": "Missing files will be restored without overwriting existing files.\n\nSource: {0}\nRevision: {1}\nDestination: {2}",
+      "he": "קבצים חסרים ישוחזרו בלי לדרוס קבצים קיימים.\n\nמקור: {0}\nגרסה: {1}\nיעד: {2}"
+    },
+    {
+      "en": "The skill's folder name '{0}' is not supported. Open the source to review its installation instructions.",
+      "he": "שם התיקייה של המיומנות '{0}' אינו נתמך. פתח את המקור כדי לסקור את הוראות ההתקנה שלו."
+    },
+    {
+      "en": "The skill source did not resolve to an immutable Git revision.",
+      "he": "מקור המיומנות לא נפתר לגרסת Git בלתי משתנה."
+    },
+    {
+      "en": "The source does not contain a regular SKILL.md file.",
+      "he": "המקור אינו מכיל קובץ `SKILL.md` רגיל."
+    },
+    {
+      "en": "The source changed before the skill was fully copied. Try installing it again.",
+      "he": "המקור השתנה לפני שהמיומנות הועתקה במלואה. נסה להתקין אותה שוב."
+    },
+    {
+      "en": "The selected agent does not provide a writable skill installation location.",
+      "he": "הסוכן שנבחר אינו מספק מיקום התקנה ניתן לכתיבה עבור מיומנויות."
+    },
+    {
+      "en": "A skill already exists at '{0}'. Remove or rename it before installing this resource.",
+      "he": "כבר קיימת מיומנות ב-'{0}'. הסר או שנה את שמה לפני התקנת משאב זה."
+    },
+    {
+      "en": "The skill could not be installed. Review the installation error and try again.",
+      "he": "לא ניתן היה להתקין את המיומנות. סקור את שגיאת ההתקנה ונסה שוב."
+    }
+  ]
+}

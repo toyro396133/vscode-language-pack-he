@@ -1,0 +1,137 @@
+{
+  "vscode": "1.140.0",
+  "kind": "changed-string-review",
+  "batch": "03-of-03",
+  "entries": [
+    {
+      "path": "core/vs/workbench/contrib/chat/browser/aiCustomization/mcpListWidget/builtinMcpServerDisable",
+      "en": "Disable (Globally)",
+      "he": "השבת (באופן גלובלי)"
+    },
+    {
+      "path": "core/vs/workbench/contrib/chat/browser/aiCustomization/pluginListWidget/checkForAndApplyPluginUpdates",
+      "en": "Check for and Apply Updates",
+      "he": "בדוק עדכונים והחל אותם"
+    },
+    {
+      "path": "core/vs/workbench/contrib/chat/browser/chat.shared.contribution/chat.agents.config.locations.deprecated",
+      "en": "This setting and the Local agent harness will be removed in a future release. Review the {0} in the Agent Customizations editor to move agents into supported locations.",
+      "he": "הגדרה זו ומנגנון ההרצה המקומי של הסוכן יוסרו בגרסה עתידית. סקור את {0} בעורך ההתאמות האישיות של הסוכן כדי להעביר סוכנים למיקומים נתמכים."
+    },
+    {
+      "path": "core/vs/workbench/contrib/chat/browser/chat.shared.contribution/chat.agentSessions.showExternal",
+      "en": "Controls which external agent sessions are shown. External sessions are sessions that were created in a different application and have not received a message from this application yet.",
+      "he": "קובע אילו הפעלות סוכן חיצוניות מוצגות. הפעלות חיצוניות הן הפעלות שנוצרו ביישום אחר ועדיין לא קיבלו הודעה מיישום זה."
+    },
+    {
+      "path": "core/vs/workbench/contrib/chat/browser/chat.shared.contribution/chat.agentSkillsLocations.deprecated",
+      "en": "This setting and the Local agent harness will be removed in a future release. Review the {0} in the Agent Customizations editor to move skills into supported locations.",
+      "he": "הגדרה זו ומנגנון ההרצה המקומי של הסוכן יוסרו בגרסה עתידית. סקור את {0} בעורך ההתאמות האישיות של הסוכן כדי להעביר מיומנויות למיקומים נתמכים."
+    },
+    {
+      "path": "core/vs/workbench/contrib/chat/browser/chat.shared.contribution/chat.copilot.autoModeTierOverride",
+      "en": "Override Auto's \"Optimize for\" preference for evals and debugging. Accepts `efficiency`, `balance`, or `intelligence` in both Copilot Chat and Copilot SDK sessions; `fast` is extension-only. Set to `null` to clear.",
+      "he": "עוקף את העדפת \"מיטוב עבור\" של Auto לצורך הערכות וניפוי באגים. מקבל `efficiency`, `balance` או `intelligence` הן בהפעלות Copilot Chat והן בהפעלות Copilot SDK; הערך `fast` זמין להרחבה בלבד. הגדר ל-`null` כדי לנקות."
+    },
+    {
+      "path": "core/vs/workbench/contrib/chat/browser/chat.shared.contribution/chat.customizations.mcpServerMigration.enabled",
+      "en": "Controls whether VS Code shows MCP server migration actions, hints, compatibility badges, and compatibility details. Migration moves eligible workspace MCP servers out of .vscode/mcp.json and into a .mcp.json file at the workspace root, where the active agent-host harness discovers them directly.",
+      "he": "קובע אם VS Code מציג פעולות להעברת שרתי MCP, רמזים, תגי תאימות ופרטי תאימות. ההעברה מוציאה שרתי MCP מתאימים של סביבת העבודה מתוך `.vscode/mcp.json` ומעבירה אותם לקובץ `.mcp.json` בשורש סביבת העבודה, שם מנגנון ההרצה הפעיל של מארח הסוכן מגלה אותם ישירות."
+    },
+    {
+      "path": "core/vs/workbench/contrib/chat/browser/chat.shared.contribution/chat.experimental.permissionsSandboxToggle.enabled",
+      "en": "Controls whether the permissions picker shows a \"Sandboxing for terminal\" toggle. Local sessions show it on the Default permissions option. Local and remote Copilot Agent Host sessions show it as a session-specific setting that applies to every permission mode; changing it saves the choice only for that session. New Copilot Agent Host sessions initially follow `#chat.agent.sandbox.enabled#` or `#chat.agent.sandbox.enabledWindows#` based on the host's operating system, for both the SDK's built-in shell tool and the Agent Host terminal tool.",
+      "he": "קובע אם בורר ההרשאות מציג מתג \"ארגז חול למסוף\". הפעלות מקומיות מציגות אותו באפשרות ההרשאות 'ברירת מחדל'. הפעלות מקומיות ומרוחקות של Copilot Agent Host מציגות אותו כהגדרה ספציפית להפעלה שחלה על כל מצבי ההרשאה; שינוי שלה שומר את הבחירה רק עבור אותה הפעלה. הפעלות חדשות של Copilot Agent Host פועלות בתחילה לפי `#chat.agent.sandbox.enabled#` או `#chat.agent.sandbox.enabledWindows#`, בהתאם למערכת ההפעלה של המארח, הן עבור כלי המעטפת המובנה של ה-SDK והן עבור כלי המסוף של Agent Host."
+    },
+    {
+      "path": "core/vs/workbench/contrib/chat/browser/chat.shared.contribution/chat.experimentalModelPicker",
+      "en": "When enabled, the model picker uses provider tabs and a model details page for information and configuration. Open details from a model's information button or the thinking effort and context readout in the chat input.",
+      "he": "כאשר האפשרות מופעלת, בורר המודלים משתמש בלשוניות ספקים ובדף פרטי מודל לצורך מידע ותצורה. פתח את הפרטים באמצעות לחצן המידע של המודל או מתצוגת מאמץ החשיבה וההקשר בשדה הקלט של הצ'אט."
+    },
+    {
+      "path": "core/vs/workbench/contrib/chat/browser/chat.shared.contribution/chat.instructions.config.locations.deprecated",
+      "en": "This setting and the Local agent harness will be removed in a future release. Review the {0} in the Agent Customizations editor to move instructions into supported locations.",
+      "he": "הגדרה זו ומנגנון ההרצה המקומי של הסוכן יוסרו בגרסה עתידית. סקור את {0} בעורך ההתאמות האישיות של הסוכן כדי להעביר הוראות למיקומים נתמכים."
+    },
+    {
+      "path": "core/vs/workbench/contrib/chat/browser/chat.shared.contribution/chat.locations.migrate",
+      "en": "Migrations tab",
+      "he": "לשונית העברות"
+    },
+    {
+      "path": "core/vs/workbench/contrib/chat/browser/chat.shared.contribution/chat.locations.migrate.tooltip",
+      "en": "Open the Migrations Tab",
+      "he": "פתח את לשונית ההעברות"
+    },
+    {
+      "path": "core/vs/workbench/contrib/chat/browser/chat.shared.contribution/chat.mode.config.locations.deprecated",
+      "en": "This setting and the Local agent harness will be removed in a future release. Chat modes are now called custom agents and are located in `.github/agents`. Review the {0} in the Agent Customizations editor to move them into supported locations.",
+      "he": "הגדרה זו ומנגנון ההרצה המקומי של הסוכן יוסרו בגרסה עתידית. מצבי צ'אט נקראים כעת סוכנים מותאמים אישית ונמצאים ב-`.github/agents`. סקור את {0} בעורך ההתאמות האישיות של הסוכן כדי להעביר אותם למיקומים נתמכים."
+    },
+    {
+      "path": "core/vs/workbench/contrib/chat/browser/chat.shared.contribution/chat.reusablePrompts.config.locations.deprecated",
+      "en": "This setting and the Local agent harness will be removed in a future release. Review the {0} in the Agent Customizations editor to convert prompt files into skills.",
+      "he": "הגדרה זו ומנגנון ההרצה המקומי של הסוכן יוסרו בגרסה עתידית. סקור את {0} בעורך ההתאמות האישיות של הסוכן כדי להמיר קובצי פרומפט למיומנויות."
+    },
+    {
+      "path": "core/vs/workbench/contrib/chat/browser/chat.shared.contribution/chat.tools.confirmationCarousel",
+      "en": "When enabled, tool confirmations are shown in a carousel above the input, including confirmations from subagents and earlier responses.",
+      "he": "כאשר האפשרות מופעלת, אישורי כלים מוצגים בקרוסלה מעל שדה הקלט, כולל אישורים מתת-סוכנים ומתשובות קודמות."
+    },
+    {
+      "path": "core/vs/workbench/contrib/chat/common/chatService/chatServiceImpl/customizationMigrationHint.dismiss.tooltip",
+      "en": "Do not show this migration hint again for this harness in this workspace",
+      "he": "אל תציג שוב את רמז ההעברה הזה עבור מנגנון ההרצה הזה בסביבת עבודה זו"
+    },
+    {
+      "path": "core/vs/workbench/contrib/chat/common/chatService/chatServiceImpl/customizationMigrationHint.review",
+      "en": "Review Migrations",
+      "he": "סקור העברות"
+    },
+    {
+      "path": "core/vs/workbench/contrib/files/browser/files.contribution/candidateGuessEncodings",
+      "en": "List of character set encodings that the editor should attempt to guess. If guessing fails for non-UTF-8 content, a legacy encoding is used only if it is the only lossless match among the candidates. If no encoding can be determined, {0} is respected.",
+      "he": "רשימת קידודי ערכות התווים שהעורך צריך לנסות לנחש. אם הניחוש נכשל עבור תוכן שאינו UTF-8, נעשה שימוש בקידוד ישן רק אם הוא ההתאמה היחידה ללא אובדן מבין המועמדים. אם לא ניתן לקבוע קידוד, מתחשבים ב-{0}."
+    },
+    {
+      "path": "core/vs/workbench/contrib/mcp/browser/mcpServerActions/disableGlobally",
+      "en": "Disable (Globally)",
+      "he": "השבת (באופן גלובלי)"
+    },
+    {
+      "path": "core/vs/workbench/contrib/mcp/common/mcpConfiguration/app.mcp.json.headers",
+      "en": "Additional headers sent to the server. These headers are not sent to a different origin, including across redirects.",
+      "he": "כותרות נוספות שנשלחות לשרת. כותרות אלה אינן נשלחות למקור אחר, גם בעת הפניות מחדש."
+    },
+    {
+      "path": "core/vs/workbench/contrib/terminalContrib/chatAgentTools/browser/tools/task/createAndRunTaskTool/alreadyRunning",
+      "en": "Task '{0}' is already running.",
+      "he": "המשימה '{0}' כבר פועלת."
+    },
+    {
+      "path": "core/vs/workbench/contrib/terminalContrib/chatAgentTools/browser/tools/task/createAndRunTaskTool/createTask",
+      "en": "Task '{0}' will be created in '{1}' and run with this command:",
+      "he": "המשימה '{0}' תיווצר ב-'{1}' ותופעל באמצעות הפקודה הבאה:"
+    },
+    {
+      "path": "core/vs/workbench/contrib/terminalContrib/chatAgentTools/browser/tools/task/createAndRunTaskTool/taskExists",
+      "en": "Task '{0}' already exists. Use the run task tool to run it.",
+      "he": "המשימה '{0}' כבר קיימת. השתמש בכלי להפעלת משימה כדי להפעיל אותה."
+    },
+    {
+      "path": "core/vs/workbench/services/agentHost/browser/codexAccountService/downloadingCodexAgent",
+      "en": "Downloading Codex Agent…",
+      "he": "מוריד את סוכן Codex…"
+    },
+    {
+      "path": "extensions/GitHub.copilot-chat/package/github.copilot.config.responsesApi.promptCacheBreakpoint.enabled",
+      "en": "Enables explicit prompt caching for supported OpenAI models using the Responses API. Agent requests retain up to 20 conversation breakpoints in addition to two prefix anchors for system instructions and global context.\n\n**Note**: For bring-your-own-key models, explicit prompt caching is only used when this setting is explicitly enabled, because some gateways do not forward the cache breakpoint markers.",
+      "he": "מפעיל מטמון פרומפט מפורש עבור מודלי OpenAI נתמכים באמצעות Responses API. בקשות סוכן שומרות עד 20 נקודות עצירה של השיחה, בנוסף לשני עוגני קידומת עבור הוראות מערכת והקשר גלובלי.\n\n**הערה**: עבור מודלים שבהם משתמשים במפתח API משלך, נעשה שימוש במטמון פרומפט מפורש רק כאשר הגדרה זו מופעלת במפורש, מכיוון ששערים מסוימים אינם מעבירים את סימוני נקודות העצירה של המטמון."
+    },
+    {
+      "path": "extensions/vscode.git/package/config.worktreeIncludeFiles",
+      "en": "Configure patterns, using `.gitignore` syntax, for files and folders that are included when creating a new worktree. Only files and folders that match the patterns and are ignored by git (for example, listed in `.gitignore`) will be copied to the newly created worktree.",
+      "he": "הגדר תבניות, בתחביר `.gitignore`, עבור קבצים ותיקיות שייכללו בעת יצירת עץ עבודה חדש. רק קבצים ותיקיות שתואמים לתבניות וש-Git מתעלם מהם (לדוגמה, מופיעים ב-`.gitignore`) יועתקו לעץ העבודה החדש שנוצר."
+    }
+  ]
+}

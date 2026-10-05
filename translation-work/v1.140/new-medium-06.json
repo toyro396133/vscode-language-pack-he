@@ -1,0 +1,207 @@
+{
+  "vscode": "1.140.0",
+  "kind": "new-source-translation",
+  "batch": "new-medium-06",
+  "entries": [
+    {
+      "en": "This server no longer meets the migration requirements.",
+      "he": "שרת זה אינו עומד עוד בדרישות ההעברה."
+    },
+    {
+      "en": "The source MCP configuration or server definition is invalid.",
+      "he": "תצורת ה-MCP של המקור או הגדרת השרת אינן חוקיות."
+    },
+    {
+      "en": "This server is not associated with the current workspace.",
+      "he": "שרת זה אינו משויך לסביבת העבודה הנוכחית."
+    },
+    {
+      "en": "This server is not forwarded from its current configuration to the active agent.",
+      "he": "שרת זה אינו מועבר מהתצורה הנוכחית שלו אל הסוכן הפעיל."
+    },
+    {
+      "en": "Environment variables with null values are not supported in the destination MCP configuration. Remove or replace the null value to migrate this server.",
+      "he": "משתני סביבה עם ערכי null אינם נתמכים בתצורת ה-MCP ביעד. הסר או החלף את ערך ה-null כדי להעביר שרת זה."
+    },
+    {
+      "en": "The server configuration cannot be moved without changing its behavior.",
+      "he": "לא ניתן להעביר את תצורת השרת בלי לשנות את התנהגותו."
+    },
+    {
+      "en": "Environment files are not supported by the Copilot harness.\nTo migrate this server, move required variables from the environment file into the server env configuration.",
+      "he": "קובצי סביבה אינם נתמכים על ידי מנגנון ההרצה של Copilot.\nכדי להעביר שרת זה, העבר את המשתנים הנדרשים מקובץ הסביבה לתצורת ה-env של השרת."
+    },
+    {
+      "en": "The launch configuration for this server is not supported by the Copilot harness.\nTo migrate this server, add a command for a local server or a valid URL for a remote server.",
+      "he": "תצורת ההפעלה של שרת זה אינה נתמכת על ידי מנגנון ההרצה של Copilot.\nכדי להעביר שרת זה, הוסף פקודה עבור שרת מקומי או כתובת URL חוקית עבור שרת מרוחק."
+    },
+    {
+      "en": "Per-server sandbox settings are not supported by the Copilot harness.\nTo migrate this server, remove the server sandbox setting.",
+      "he": "הגדרות ארגז חול לכל שרת אינן נתמכות על ידי מנגנון ההרצה של Copilot.\nכדי להעביר שרת זה, הסר את הגדרת ארגז החול של השרת."
+    },
+    {
+      "en": "Server version metadata cannot be migrated to the workspace root .mcp.json file.\nTo migrate this server, remove the version property.",
+      "he": "לא ניתן להעביר מטא-נתוני גרסת שרת לקובץ `.mcp.json` שבשורש סביבת העבודה.\nכדי להעביר שרת זה, הסר את מאפיין הגרסה."
+    },
+    {
+      "en": "SSE transport settings cannot be migrated to the workspace root .mcp.json file.\nTo migrate this server, use the default HTTP transport.",
+      "he": "לא ניתן להעביר הגדרות תעבורת SSE לקובץ `.mcp.json` שבשורש סביבת העבודה.\nכדי להעביר שרת זה, השתמש בתעבורת HTTP המוגדרת כברירת מחדל."
+    },
+    {
+      "en": "The current configuration location for this server is not supported by the Copilot harness.\nTo migrate this server, move its configuration to the workspace root .mcp.json file.",
+      "he": "מיקום התצורה הנוכחי של שרת זה אינו נתמך על ידי מנגנון ההרצה של Copilot.\nכדי להעביר שרת זה, העבר את התצורה שלו לקובץ `.mcp.json` שבשורש סביבת העבודה."
+    },
+    {
+      "en": "Working directory settings cannot be migrated to the workspace root .mcp.json file.\nTo migrate this server, remove the cwd property.",
+      "he": "לא ניתן להעביר הגדרות תיקיית עבודה לקובץ `.mcp.json` שבשורש סביבת העבודה.\nכדי להעביר שרת זה, הסר את המאפיין `cwd`."
+    },
+    {
+      "en": "Could not change terminal sandboxing. Try the action again. {0}",
+      "he": "לא ניתן היה לשנות את ארגז החול של המסוף. נסה את הפעולה שוב. {0}"
+    },
+    {
+      "en": "{0} Then send your message again in VS Code. Your message has not been sent.",
+      "he": "{0} לאחר מכן שלח שוב את ההודעה שלך ב-VS Code. ההודעה שלך לא נשלחה."
+    },
+    {
+      "en": "Removing references is unavailable for this session.",
+      "he": "הסרת הפניות אינה זמינה עבור הפעלה זו."
+    },
+    {
+      "en": "Continue your sessions across windows and apps, without changing how you work. [Let us know]({0}) how it goes.",
+      "he": "המשך את ההפעלות שלך בין חלונות ויישומים בלי לשנות את אופן העבודה שלך. [ספר לנו]({0}) איך זה עובד עבורך."
+    },
+    {
+      "en": "This agent harness brings new capabilities to the way you already work. If anything seems off, [let us know]({0}).",
+      "he": "מנגנון הרצת הסוכן הזה מוסיף יכולות חדשות לאופן שבו אתה כבר עובד. אם משהו נראה לא תקין, [ספר לנו]({0})."
+    },
+    {
+      "en": "This agent harness opens up new ways to work across windows and apps. Continue as usual, and [let us know]({0}) how it goes.",
+      "he": "מנגנון הרצת הסוכן הזה פותח דרכים חדשות לעבוד בין חלונות ויישומים. המשך כרגיל ו[ספר לנו]({0}) איך זה עובד עבורך."
+    },
+    {
+      "en": "This new implementation unlocks exciting new capabilities, while previous agent harnesses remain available. If anything seems off, [let us know]({0}).",
+      "he": "המימוש החדש הזה פותח יכולות חדשות, בעוד מנגנוני ההרצה הקודמים של הסוכן נשארים זמינים. אם משהו נראה לא תקין, [ספר לנו]({0})."
+    },
+    {
+      "en": "Could not load repositories. Check your GitHub sign-in and connection, then try searching again.",
+      "he": "לא ניתן היה לטעון מאגרים. בדוק את ההתחברות והחיבור שלך ל-GitHub ולאחר מכן נסה לחפש שוב."
+    },
+    {
+      "en": "Search for a repository or paste a repository URL...",
+      "he": "חפש מאגר או הדבק כתובת URL של מאגר..."
+    },
+    {
+      "en": "Show an invitation to work in parallel in the Agents Window when starting a new Agent Host chat while another Agent Host session is running.",
+      "he": "הצג הזמנה לעבוד במקביל בחלון הסוכנים בעת התחלת צ'אט חדש של מארח סוכן בזמן שהפעלה אחרת של מארח סוכן פועלת."
+    },
+    {
+      "en": "Show the introduction after the first request is submitted in a new Copilot harness session.",
+      "he": "הצג את המבוא לאחר שליחת הבקשה הראשונה בהפעלה חדשה של מנגנון ההרצה של Copilot."
+    },
+    {
+      "en": "Controls when the introduction to the new Copilot experience is shown.",
+      "he": "קובע מתי מוצג המבוא לחוויית Copilot החדשה."
+    },
+    {
+      "en": "Show the introduction when a new Copilot harness session starts.",
+      "he": "הצג את המבוא כאשר מתחילה הפעלה חדשה של מנגנון ההרצה של Copilot."
+    },
+    {
+      "en": "Show a one-time feedback survey after switching from Copilot to Local.",
+      "he": "הצג סקר משוב חד-פעמי לאחר מעבר מ-Copilot למצב מקומי."
+    },
+    {
+      "en": "Copy the prompt and attachments from a new chat when opening the Agents Window. Existing drafts in the Agents Window are preserved.",
+      "he": "העתק את הפרומפט ואת הקבצים המצורפים מצ'אט חדש בעת פתיחת חלון הסוכנים. טיוטות קיימות בחלון הסוכנים נשמרות."
+    },
+    {
+      "en": "Foreground color for MCP server compatibility warnings.",
+      "he": "צבע החזית של אזהרות תאימות שרת MCP."
+    },
+    {
+      "en": "Search your installed customizations, or enable a marketplace source to explore available items.",
+      "he": "חפש בהתאמות האישיות המותקנות שלך, או הפעל מקור Marketplace כדי לעיין בפריטים זמינים."
+    },
+    {
+      "en": "Find new ways to extend your agent with [[Plugins]], [[MCP Servers]], [[Skills]], [[Instructions]], [[Agents]], and [[Hooks]].",
+      "he": "גלה דרכים חדשות להרחיב את הסוכן שלך באמצעות [[Plugins]], [[MCP Servers]], [[Skills]], [[Instructions]], [[Agents]] ו-[[Hooks]]."
+    },
+    {
+      "en": "Manual setup required. View Setup opens the publisher's instructions.",
+      "he": "נדרשת הגדרה ידנית. 'הצג הגדרה' פותח את הוראות המפרסם."
+    },
+    {
+      "en": "Search customizations. Use {0} for accessibility help.",
+      "he": "חפש התאמות אישיות. השתמש ב-{0} לעזרת נגישות."
+    },
+    {
+      "en": "Available customizations could not be fully loaded. Retry an unavailable source.",
+      "he": "לא ניתן היה לטעון במלואן את ההתאמות האישיות הזמינות. נסה שוב מקור שאינו זמין."
+    },
+    {
+      "en": "Move customizations out of locations configured in settings that the active agent no longer uses.",
+      "he": "העבר התאמות אישיות ממיקומים שהוגדרו בהגדרות ואינם משמשים עוד את הסוכן הפעיל."
+    },
+    {
+      "en": "Move eligible user servers to mcp-config.json in Copilot home and review servers that cannot be migrated.",
+      "he": "העבר שרתי משתמש מתאימים אל `mcp-config.json` בתיקיית הבית של Copilot וסקור שרתים שלא ניתן להעביר."
+    },
+    {
+      "en": "Discover skills, MCP servers, and plugins for your agents. Review their sources before installing.",
+      "he": "גלה מיומנויות, שרתי MCP ותוספים עבור הסוכנים שלך. סקור את המקורות שלהם לפני ההתקנה."
+    },
+    {
+      "en": "The connector catalog is unavailable (HTTP 403). Browsing without connector authorization may not yet be available for this account.",
+      "he": "קטלוג המחברים אינו זמין (HTTP 403). ייתכן שגלישה ללא הרשאת מחברים עדיין אינה זמינה עבור חשבון זה."
+    },
+    {
+      "en": "Connector authorization did not finish in time. Complete authorization in the browser, then try again.",
+      "he": "הרשאת המחבר לא הסתיימה בזמן. השלם את ההרשאה בדפדפן ולאחר מכן נסה שוב."
+    },
+    {
+      "en": "The connector did not disconnect in time. Try again.",
+      "he": "המחבר לא התנתק בזמן. נסה שוב."
+    },
+    {
+      "en": "Copilot connectors are not available for this GitHub Enterprise account.",
+      "he": "מחברי Copilot אינם זמינים עבור חשבון GitHub Enterprise זה."
+    },
+    {
+      "en": "The Copilot connectors page is invalid. Start a new search.",
+      "he": "עמוד מחברי Copilot אינו חוקי. התחל חיפוש חדש."
+    },
+    {
+      "en": "Use a positive page size and at most {0} characters and {1} words to search Copilot connectors.",
+      "he": "השתמש בגודל עמוד חיובי ובעד {0} תווים ו-{1} מילים כדי לחפש מחברי Copilot."
+    },
+    {
+      "en": "The connector authorization page could not be opened.",
+      "he": "לא ניתן היה לפתוח את עמוד הרשאת המחבר."
+    },
+    {
+      "en": "GitHub did not grant permission to manage Copilot connectors. Try authorizing connectors again.",
+      "he": "GitHub לא העניק הרשאה לנהל מחברי Copilot. נסה לאשר את המחברים שוב."
+    },
+    {
+      "en": "Authorize connectors with the same GitHub account that you use for GitHub Copilot.",
+      "he": "אשר מחברים באמצעות אותו חשבון GitHub שבו אתה משתמש עבור GitHub Copilot."
+    },
+    {
+      "en": "Clear the search to browse. Show All on a section applies its type filter and moves to search results.",
+      "he": "נקה את החיפוש כדי לעיין. 'הצג הכול' במקטע מחיל את מסנן הסוג שלו ועובר לתוצאות החיפוש."
+    },
+    {
+      "en": "The customization type links below the heading open their respective management sections.",
+      "he": "קישורי סוגי ההתאמות האישיות שמתחת לכותרת פותחים את מקטעי הניהול המתאימים."
+    },
+    {
+      "en": "When a source provides an external resource, its available customization name opens that resource so you can review it before installing.",
+      "he": "כאשר מקור מספק משאב חיצוני, שם ההתאמה האישית הזמינה שלו פותח את המשאב כדי שתוכל לסקור אותו לפני ההתקנה."
+    },
+    {
+      "en": "Use Tab and Shift+Tab between controls. In search results, use the arrow keys, Home, and End to navigate the list. Press Enter to open an installed item.",
+      "he": "השתמש ב-Tab וב-Shift+Tab כדי לעבור בין הפקדים. בתוצאות החיפוש השתמש במקשי החצים, Home ו-End כדי לנווט ברשימה. הקש Enter כדי לפתוח פריט מותקן."
+    }
+  ]
+}

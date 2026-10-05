@@ -1,0 +1,307 @@
+{
+  "vscode": "1.140.0",
+  "kind": "new-source-translation",
+  "batch": "new-short-07",
+  "entries": [
+    {
+      "en": "Imported {0} sessions.",
+      "he": "יובאו {0} הפעלות."
+    },
+    {
+      "en": "Count sessions that need input or approval.",
+      "he": "ספור הפעלות שזקוקות לקלט או לאישור."
+    },
+    {
+      "en": "Importing is not supported for this session.",
+      "he": "ייבוא אינו נתמך עבור הפעלה זו."
+    },
+    {
+      "en": "Unable to revalidate authentication for {0}.",
+      "he": "לא ניתן לאמת מחדש את האימות עבור {0}."
+    },
+    {
+      "en": "Selected telemetry block",
+      "he": "מקטע הטלמטריה שנבחר"
+    },
+    {
+      "en": "Image preview unavailable.",
+      "he": "תצוגה מקדימה של התמונה אינה זמינה."
+    },
+    {
+      "en": "Remove Artifact",
+      "he": "הסר פריט"
+    },
+    {
+      "en": "Remove Reference",
+      "he": "הסר הפניה"
+    },
+    {
+      "en": "Show editor tabs as separate rounded pills.",
+      "he": "הצג לשוניות עורך כתוויות מעוגלות נפרדות."
+    },
+    {
+      "en": "Plays a joyful sound when confetti is shown.",
+      "he": "משמיע צליל שמח כאשר מוצג קונפטי."
+    },
+    {
+      "en": "Voice Mode: Toggle Mute Microphone",
+      "he": "מצב קולי: החלף מצב השתקת מיקרופון"
+    },
+    {
+      "en": "Select Plugin Folder",
+      "he": "בחר תיקיית תוסף"
+    },
+    {
+      "en": "Checking whether this conversation is available…",
+      "he": "בודק אם השיחה הזו זמינה…"
+    },
+    {
+      "en": "Checking Conversation",
+      "he": "בודק את השיחה"
+    },
+    {
+      "en": "This chat is open in another app",
+      "he": "צ'אט זה פתוח ביישום אחר"
+    },
+    {
+      "en": "Conversation Unavailable",
+      "he": "השיחה אינה זמינה"
+    },
+    {
+      "en": "Research preview",
+      "he": "תצוגה מקדימה של מחקר"
+    },
+    {
+      "en": "The source MCP configuration could not be read.",
+      "he": "לא ניתן היה לקרוא את תצורת ה-MCP של המקור."
+    },
+    {
+      "en": "Sandboxing is unavailable in this environment",
+      "he": "ארגז חול אינו זמין בסביבה זו"
+    },
+    {
+      "en": "Terminal output is unavailable: {0}",
+      "he": "פלט המסוף אינו זמין: {0}"
+    },
+    {
+      "en": "{0}, chat in session {1} ({2})",
+      "he": "{0}, צ'אט בהפעלה {1} ({2})"
+    },
+    {
+      "en": "{0}, chat in session {1}",
+      "he": "{0}, צ'אט בהפעלה {1}"
+    },
+    {
+      "en": "{0} session {1}, {2} peer chats ({3}), created {4}",
+      "he": "{0} הפעלה {1}, {2} צ'אטים מקבילים ({3}), נוצרה {4}"
+    },
+    {
+      "en": "{0} session {1}, 1 peer chat ({2}), created {3}",
+      "he": "{0} הפעלה {1}, צ'אט מקביל אחד ({2}), נוצרה {3}"
+    },
+    {
+      "en": "You're using a new Copilot agent",
+      "he": "אתה משתמש בסוכן Copilot חדש"
+    },
+    {
+      "en": "You're using a new Copilot experience",
+      "he": "אתה משתמש בחוויית Copilot חדשה"
+    },
+    {
+      "en": "Search for a repository...",
+      "he": "חפש מאגר..."
+    },
+    {
+      "en": "Session summary",
+      "he": "סיכום ההפעלה"
+    },
+    {
+      "en": "Do not show the Copilot harness introduction.",
+      "he": "אל תציג את המבוא למנגנון ההרצה של Copilot."
+    },
+    {
+      "en": "Source: All sources",
+      "he": "מקור: כל המקורות"
+    },
+    {
+      "en": "{0}, {1}, source {2}. {3}. {4}",
+      "he": "{0}, {1}, מקור {2}. {3}. {4}"
+    },
+    {
+      "en": "Cancel connecting {0}",
+      "he": "בטל התחברות אל {0}"
+    },
+    {
+      "en": "Cancel reconnecting {0}",
+      "he": "בטל התחברות מחדש אל {0}"
+    },
+    {
+      "en": "Checking installation",
+      "he": "בודק את ההתקנה"
+    },
+    {
+      "en": "Clear Customization Search Results",
+      "he": "נקה תוצאות חיפוש התאמות אישיות"
+    },
+    {
+      "en": "Configure Marketplaces",
+      "he": "הגדר שווקים"
+    },
+    {
+      "en": "Checking connection",
+      "he": "בודק את החיבור"
+    },
+    {
+      "en": "Connection cancelled for {0}.",
+      "he": "החיבור אל {0} בוטל."
+    },
+    {
+      "en": "Could not connect {0}. {1}",
+      "he": "לא ניתן היה להתחבר אל {0}. {1}"
+    },
+    {
+      "en": "Disconnection cancelled for {0}.",
+      "he": "הניתוק מ-{0} בוטל."
+    },
+    {
+      "en": "Disconnected {0}.",
+      "he": "נותק {0}."
+    },
+    {
+      "en": "Could not disconnect {0}. {1}",
+      "he": "לא ניתן היה לנתק את {0}. {1}"
+    },
+    {
+      "en": "Disconnecting...",
+      "he": "מתנתק..."
+    },
+    {
+      "en": "Disconnecting {0}.",
+      "he": "מתנתק מ-{0}."
+    },
+    {
+      "en": "Reconnection cancelled for {0}.",
+      "he": "ההתחברות מחדש אל {0} בוטלה."
+    },
+    {
+      "en": "Reconnected {0}.",
+      "he": "החיבור אל {0} חודש."
+    },
+    {
+      "en": "Could not reconnect {0}. {1}",
+      "he": "לא ניתן היה להתחבר מחדש אל {0}. {1}"
+    },
+    {
+      "en": "Reconnecting {0}.",
+      "he": "מתחבר מחדש אל {0}."
+    },
+    {
+      "en": "Could not verify connection",
+      "he": "לא ניתן היה לאמת את החיבור"
+    },
+    {
+      "en": "No catalog customizations are available.",
+      "he": "אין התאמות אישיות זמינות בקטלוג."
+    },
+    {
+      "en": "Could not load available customizations. {0}",
+      "he": "לא ניתן היה לטעון התאמות אישיות זמינות. {0}"
+    },
+    {
+      "en": "Filter Customizations...",
+      "he": "סנן התאמות אישיות..."
+    },
+    {
+      "en": "Import a customization",
+      "he": "ייבא התאמה אישית"
+    },
+    {
+      "en": "Installation cancelled for {0}.",
+      "he": "ההתקנה של {0} בוטלה."
+    },
+    {
+      "en": "{0}, {1}, {2}{3}{4}. {5}",
+      "he": "{0}, {1}, {2}{3}{4}. {5}"
+    },
+    {
+      "en": "Installed agent plugin",
+      "he": "תוסף סוכן מותקן"
+    },
+    {
+      "en": "Could not install {0}. {1}",
+      "he": "לא ניתן היה להתקין את {0}. {1}"
+    },
+    {
+      "en": "Install {0}. {1}",
+      "he": "התקן את {0}. {1}"
+    },
+    {
+      "en": "Expand your agent's horizons",
+      "he": "הרחב את האופקים של הסוכן שלך"
+    },
+    {
+      "en": "Loading more customizations...",
+      "he": "טוען התאמות אישיות נוספות..."
+    },
+    {
+      "en": "More catalog results may match this search.",
+      "he": "ייתכן שתוצאות נוספות בקטלוג תואמות לחיפוש זה."
+    },
+    {
+      "en": "New Instructions",
+      "he": "הוראות חדשות"
+    },
+    {
+      "en": "No customizations match this search.",
+      "he": "אין התאמות אישיות שתואמות לחיפוש זה."
+    },
+    {
+      "en": "Could not open the customization resource. {0}",
+      "he": "לא ניתן היה לפתוח את משאב ההתאמה האישית. {0}"
+    },
+    {
+      "en": "Could not load installed plugins. {0}",
+      "he": "לא ניתן היה לטעון תוספים מותקנים. {0}"
+    },
+    {
+      "en": "Reloading customizations...",
+      "he": "טוען מחדש התאמות אישיות..."
+    },
+    {
+      "en": "Repair cancelled for {0}.",
+      "he": "התיקון של {0} בוטל."
+    },
+    {
+      "en": "Could not repair {0}. {1}",
+      "he": "לא ניתן היה לתקן את {0}. {1}"
+    },
+    {
+      "en": "{0} customizations found.",
+      "he": "נמצאו {0} התאמות אישיות."
+    },
+    {
+      "en": "Customization search results",
+      "he": "תוצאות חיפוש התאמות אישיות"
+    },
+    {
+      "en": "Retry Uninstall",
+      "he": "נסה להסיר שוב"
+    },
+    {
+      "en": "Customization Search Actions",
+      "he": "פעולות חיפוש התאמות אישיות"
+    },
+    {
+      "en": "Search customizations",
+      "he": "חפש התאמות אישיות"
+    },
+    {
+      "en": "Customization source: {0}",
+      "he": "מקור ההתאמה האישית: {0}"
+    },
+    {
+      "en": "Discover customizations",
+      "he": "גלה התאמות אישיות"
+    }
+  ]
+}

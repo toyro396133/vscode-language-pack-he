@@ -1,0 +1,95 @@
+{
+  "vscode": "1.140.0",
+  "kind": "new-source-translation",
+  "batch": "new-long-03",
+  "entries": [
+    {
+      "en": "When workspace customizations need an update, a notice above the new-chat input shows how many need attention. Use Tab to reach Review Migrations and open the Migrations page. Dismiss Migration Notice for This Workspace hides the notice for that workspace, including after restarting, and returns focus to the input. The Customizations toolbar button also announces when migrations are available.",
+      "he": "כאשר התאמות אישיות של סביבת העבודה דורשות עדכון, הודעה מעל שדה הקלט של צ'אט חדש מציגה כמה מהן דורשות טיפול. השתמש ב-Tab כדי להגיע אל 'סקור העברות' ולפתוח את דף ההעברות. 'התעלם מהודעת ההעברה עבור סביבת עבודה זו' מסתיר את ההודעה עבור אותה סביבת עבודה, גם לאחר הפעלה מחדש, ומחזיר את המיקוד לשדה הקלט. גם לחצן ההתאמות האישיות בסרגל הכלים מודיע כאשר קיימות העברות."
+    },
+    {
+      "en": "When another Codex app is using a conversation, a banner above the input explains how to release it. You can keep editing your draft, but sending is disabled. Quit the app holding the conversation, such as ChatGPT, or exit the Codex CLI session. Use Tab to focus Retry in the banner, then press Enter or Space to check again. Retry does not send your draft.",
+      "he": "כאשר יישום Codex אחר משתמש בשיחה, באנר מעל שדה הקלט מסביר כיצד לשחרר אותה. ניתן להמשיך לערוך את הטיוטה, אך השליחה מושבתת. צא מהיישום שמחזיק את השיחה, כגון ChatGPT, או צא מהפעלת Codex CLI. השתמש ב-Tab כדי למקד את 'נסה שוב' בבאנר, ולאחר מכן הקש Enter או Space כדי לבדוק שוב. 'נסה שוב' אינו שולח את הטיוטה."
+    },
+    {
+      "en": "Focus a link in the chat transcript and press Shift+F10 to open its context menu. Use Copy Link to copy its target. File links with additional editor choices also provide Open With.",
+      "he": "מקד קישור בתמליל הצ'אט והקש Shift+F10 כדי לפתוח את תפריט ההקשר שלו. השתמש ב'העתק קישור' כדי להעתיק את היעד שלו. קישורי קבצים שיש להם אפשרויות עורך נוספות מציעים גם 'פתח באמצעות'."
+    },
+    {
+      "en": "When a chat turn is waiting for MCP servers to start, a Skip link may appear. Use Tab to focus Skip and press Enter or Space to continue the turn while those servers start in the background. The current startup message disappears immediately and focus returns to the chat input. New server startups may show another message.",
+      "he": "כאשר תור צ'אט ממתין להפעלת שרתי MCP, עשוי להופיע קישור 'דלג'. השתמש ב-Tab כדי למקד את 'דלג' והקש Enter או Space כדי להמשיך את התור בזמן שהשרתים מופעלים ברקע. הודעת ההפעלה הנוכחית נעלמת מיד והמיקוד חוזר לשדה הקלט של הצ'אט. הפעלות חדשות של שרתים עשויות להציג הודעה נוספת."
+    },
+    {
+      "en": "In the tabbed model picker, the active Copilot tab has an Auto switch beside the provider name. The provider button and switch are separate keyboard targets. Turning Auto on replaces Copilot's individual models with automatic routing choices; provider tabs and search remain available. Turn Auto off to restore the previous manual Copilot model. The switch is disabled when no individual Copilot model is available. Browsing another provider does not change the selected model.",
+      "he": "בבורר המודלים בעל הלשוניות, ללשונית Copilot הפעילה יש מתג Auto לצד שם הספק. לחצן הספק והמתג הם יעדי מקלדת נפרדים. הפעלת Auto מחליפה את המודלים הנפרדים של Copilot באפשרויות ניתוב אוטומטיות; לשוניות הספקים והחיפוש נשארים זמינים. כבה את Auto כדי לשחזר את מודל Copilot הידני הקודם. המתג מושבת כאשר אין מודל Copilot נפרד זמין. מעבר לספק אחר אינו משנה את המודל שנבחר."
+    },
+    {
+      "en": "In the tabbed model picker, thinking effort and context appear as a configuration button on the hovered, selected, or keyboard-focused model. Use Up and Down Arrow to focus a model, then Tab to reach its configuration button and Enter or Space to open its information and configuration page without selecting it. The button shows Details when no readout is available. Models without configurable settings still open their information page. The thinking effort and context readout beside the model name in the chat input opens the same page for the current model. Opening a configuration button focuses its configuration controls when available. Known values are shown even at their defaults. The Back to Models arrow is beside the model name; navigation and model actions stay at the top while details scroll. Back to Models returns to the previous provider, search, and model list. Escape closes the picker from any page and restores focus.",
+      "he": "בבורר המודלים בעל הלשוניות, מאמץ החשיבה וההקשר מופיעים כלחצן תצורה במודל שמרחפים מעליו, שנבחר או שממוקד באמצעות המקלדת. השתמש בחצים למעלה ולמטה כדי למקד מודל, לאחר מכן ב-Tab כדי להגיע ללחצן התצורה שלו וב-Enter או Space כדי לפתוח את דף המידע והתצורה שלו בלי לבחור בו. הלחצן מציג 'פרטים' כאשר אין תצוגת ערכים זמינה. גם מודלים ללא הגדרות שניתנות לשינוי פותחים את דף המידע שלהם. תצוגת מאמץ החשיבה וההקשר לצד שם המודל בשדה הקלט של הצ'אט פותחת את אותו דף עבור המודל הנוכחי. פתיחת לחצן תצורה ממקדת את פקדי התצורה שלו כאשר הם זמינים. ערכים ידועים מוצגים גם כאשר הם ערכי ברירת המחדל. החץ 'חזרה למודלים' נמצא לצד שם המודל; הניווט ופעולות המודל נשארים בראש בזמן שפרטי המודל נגללים. 'חזרה למודלים' מחזיר לספק, לחיפוש ולרשימת המודלים הקודמים. Escape סוגר את הבורר מכל דף ומחזיר את המיקוד."
+    },
+    {
+      "en": "In the tabbed model picker, Org default identifies the model your organization sets for new chats. It remains on that model when you choose another model for this chat; the checkmark identifies your current selection. The Auto section carries the same label when Auto is the organization default.",
+      "he": "בבורר המודלים בעל הלשוניות, 'ברירת המחדל של הארגון' מזהה את המודל שהארגון שלך מגדיר לצ'אטים חדשים. התווית נשארת על אותו מודל גם כאשר בוחרים מודל אחר לצ'אט זה; סימן הביקורת מזהה את הבחירה הנוכחית שלך. מקטע Auto נושא את אותה תווית כאשר Auto הוא ברירת המחדל של הארגון."
+    },
+    {
+      "en": "When retained full output is available for a completed command, click the output preview to open it in a read-only editor. You can also use the Open Full Output (Read-Only) action in the command header or terminal output Accessible View, or focus the output region and press Enter.",
+      "he": "כאשר פלט מלא שנשמר זמין עבור פקודה שהושלמה, לחץ על התצוגה המקדימה של הפלט כדי לפתוח אותו בעורך לקריאה בלבד. ניתן גם להשתמש בפעולה 'פתח פלט מלא (לקריאה בלבד)' בכותרת הפקודה או בתצוגה הנגישה של פלט המסוף, או למקד את אזור הפלט ולהקיש Enter."
+    },
+    {
+      "en": "The chat.experimental.persistentProgress setting defaults to Draw in VS Code Insiders and Off in Stable. Experiments can override either default; an explicit setting takes precedence. Choose Draw, Draw (Monochrome), or Draw (Monochrome, No Icon) to keep a working progress indicator at the bottom until the response finishes. The No Icon variant hides only the decorative VS Code icon; progress text and spoken updates are unchanged. The chat.experimental.persistentProgressVerbosity setting defaults to Compact: tool calls preview while running, then collapse in place to a single summary row when thinking or response text resumes, or the response finishes. Choose Verbose to keep tool chains expanded without a group header or an internal scrolling limit. Use Tab to focus a summary and press Enter or Space to expand or collapse its tool calls. Automatic collapse waits until keyboard focus leaves the group. Completed responses still follow chat.agent.collapseCompletedResponses. Reasoning appears separately as collapsible previews; focus a reasoning header and press Enter or Space to expand or collapse it. Standalone tools keep their decorative icons. Terminal activity animations and subagent pills are unchanged. While the response waits on subagents or background commands, the indicator reports what it is waiting for, including work started in an earlier turn. After 90 seconds without response activity or known background work, it reports that the response is taking longer than usual. Reduced motion disables the collapse animation and keeps the indicator visible without animation. Spoken progress updates are controlled by accessibility.verboseChatProgressUpdates.",
+      "he": "ההגדרה `chat.experimental.persistentProgress` משתמשת כברירת מחדל ב-Draw ב-VS Code Insiders וב-Off ב-Stable. ניסויים יכולים לעקוף כל אחת מברירות המחדל; הגדרה מפורשת מקבלת קדימות. בחר Draw, Draw (Monochrome) או Draw (Monochrome, No Icon) כדי להשאיר מחוון התקדמות עבודה בתחתית עד שהתשובה מסתיימת. גרסת No Icon מסתירה רק את סמל VS Code הדקורטיבי; טקסט ההתקדמות והעדכונים המדוברים אינם משתנים. ההגדרה `chat.experimental.persistentProgressVerbosity` משתמשת כברירת מחדל ב-Compact: קריאות כלים מוצגות בתצוגה מקדימה בזמן ההפעלה ולאחר מכן מתכווצות במקומן לשורת סיכום אחת כאשר החשיבה או טקסט התשובה מתחדשים, או כאשר התשובה מסתיימת. בחר Verbose כדי להשאיר שרשראות כלים מורחבות ללא כותרת קבוצה או מגבלת גלילה פנימית. השתמש ב-Tab כדי למקד סיכום והקש Enter או Space כדי להרחיב או לכווץ את קריאות הכלים שלו. כיווץ אוטומטי ממתין עד שמיקוד המקלדת עוזב את הקבוצה. תשובות שהושלמו עדיין פועלות לפי `chat.agent.collapseCompletedResponses`. חשיבה מופיעה בנפרד כתצוגות מקדימות שניתנות לכיווץ; מקד כותרת חשיבה והקש Enter או Space כדי להרחיב או לכווץ אותה. כלים עצמאיים שומרים על הסמלים הדקורטיביים שלהם. הנפשות פעילות המסוף ותוויות תת-הסוכנים אינן משתנות. כאשר התשובה ממתינה לתת-סוכנים או לפקודות רקע, המחוון מציג למה היא ממתינה, כולל עבודה שהתחילה בתור קודם. לאחר 90 שניות ללא פעילות בתשובה או עבודת רקע ידועה, הוא מדווח שהתשובה נמשכת זמן רב מהרגיל. מצב תנועה מופחת משבית את הנפשת הכיווץ ומשאיר את המחוון גלוי ללא הנפשה. עדכוני התקדמות מדוברים נשלטים על ידי `accessibility.verboseChatProgressUpdates`."
+    },
+    {
+      "en": "While a response is running, automatically collapsing a reasoning or tool preview keeps a visible header in place. If the header is above the visible content but its details are visible, it moves below the pinned prompt, or to the top of the viewport when there is no pinned prompt. Only the space needed for the visible viewport is reserved. That space is removed when the response finishes or is stopped, after any pending transition and content rendering finish. Expanding a preview consumes reserved space as its content grows. Scrolling to the bottom removes the reserved space. Manual collapses do not add padding. The following response content appears after an automatic collapse finishes. Reduced motion skips this delay. If keyboard focus keeps a preview open, new content continues to appear without waiting for focus to move.",
+      "he": "בזמן שתשובה פועלת, כיווץ אוטומטי של תצוגה מקדימה של חשיבה או כלי משאיר כותרת גלויה במקומה. אם הכותרת נמצאת מעל התוכן הגלוי אך הפרטים שלה גלויים, היא עוברת מתחת לפרומפט המוצמד, או לראש אזור התצוגה כאשר אין פרומפט מוצמד. נשמר רק המקום הנדרש לאזור התצוגה הגלוי. המקום הזה מוסר כאשר התשובה מסתיימת או נעצרת, לאחר שכל מעבר ממתין ועיבוד התוכן מסתיימים. הרחבת תצוגה מקדימה צורכת את המקום השמור ככל שהתוכן שלה גדל. גלילה לתחתית מסירה את המקום השמור. כיווץ ידני אינו מוסיף ריווח. תוכן התשובה הבא מופיע לאחר שכיווץ אוטומטי מסתיים. מצב תנועה מופחת מדלג על ההשהיה הזו. אם מיקוד המקלדת משאיר תצוגה מקדימה פתוחה, תוכן חדש ממשיך להופיע בלי להמתין למעבר המיקוד."
+    },
+    {
+      "en": "With Compact persistent progress, a single tool uses its normal rendering, icon, and details without a group summary or automatic group collapse. MCP tools use the MCP icon. The working indicator reports when chat is waiting for your answers instead of showing a separate question-tool progress row. Question controls remain available, answered questions remain in the response, and question-tool failures remain visible.",
+      "he": "עם התקדמות מתמשכת במצב Compact, כלי יחיד משתמש בעיבוד, בסמל ובפרטים הרגילים שלו ללא סיכום קבוצה או כיווץ אוטומטי של הקבוצה. כלי MCP משתמשים בסמל MCP. מחוון העבודה מדווח כאשר הצ'אט ממתין לתשובות שלך במקום להציג שורת התקדמות נפרדת לכלי השאלות. פקדי השאלות נשארים זמינים, שאלות שנענו נשארות בתשובה וכשלים של כלי השאלות נשארים גלויים."
+    },
+    {
+      "en": "With persistent progress, reasoning headers say Thinking while content arrives. When reasoning finishes, a single heading becomes the header and is removed from the details. Multiple headings remain in the details, with a summary in the header when chat.agent.thinking.generateTitles is enabled and title generation is available.",
+      "he": "עם התקדמות מתמשכת, כותרות החשיבה מציגות 'חושב' בזמן שהתוכן מגיע. כאשר החשיבה מסתיימת, כותרת יחידה הופכת לכותרת הראשית ומוסרת מהפרטים. מספר כותרות נשארות בפרטים, עם סיכום בכותרת כאשר `chat.agent.thinking.generateTitles` מופעל ויצירת כותרות זמינה."
+    },
+    {
+      "en": "If the agent host cannot support the configured sandbox, a notification above the input explains why. Use Tab to reach Dismiss notification. Dismissing hides the warning for this session until the window reloads, without changing sandboxing or preventing messages.",
+      "he": "אם מארח הסוכן אינו יכול לתמוך בארגז החול שהוגדר, הודעה מעל שדה הקלט מסבירה מדוע. השתמש ב-Tab כדי להגיע אל 'סגור הודעה'. סגירת ההודעה מסתירה את האזהרה עבור הפעלה זו עד לטעינה מחדש של החלון, בלי לשנות את ארגז החול ובלי למנוע שליחת הודעות."
+    },
+    {
+      "en": "While a session is being prepared, a progress message appears in the transcript. Use Tab or Shift+Tab to reach Show Log, when available, and press Enter or Space to open the output log. Use Stop to cancel preparation. The chat input and attachment controls are disabled until preparation finishes.",
+      "he": "בזמן שהפעלה מוכנה, הודעת התקדמות מופיעה בתמליל. השתמש ב-Tab או ב-Shift+Tab כדי להגיע אל 'הצג יומן', כאשר הוא זמין, והקש Enter או Space כדי לפתוח את יומן הפלט. השתמש ב'עצור' כדי לבטל את ההכנה. שדה הקלט של הצ'אט ופקדי הקבצים המצורפים מושבתים עד שההכנה מסתיימת."
+    },
+    {
+      "en": "Subagents appear as pills in the response. Use Tab to focus a subagent pill, then Enter or Space to open its chat. If the subagent has no separate chat, Enter or Space expands or collapses its inline details instead. The pill announces its running state and any pending confirmations.",
+      "he": "תת-סוכנים מופיעים כתוויות בתשובה. השתמש ב-Tab כדי למקד תווית של תת-סוכן, ולאחר מכן ב-Enter או Space כדי לפתוח את הצ'אט שלו. אם לתת-הסוכן אין צ'אט נפרד, Enter או Space מרחיבים או מכווצים במקום זאת את הפרטים המוטמעים שלו. התווית מכריזה על מצב ההפעלה שלו ועל אישורים ממתינים."
+    },
+    {
+      "en": "Terminal output reflows to fit the chat width by default. Set {0} to false to keep fixed-width previews with horizontal scrolling. This only changes the preview, not the terminal running the command.",
+      "he": "פלט המסוף זורם מחדש כברירת מחדל כדי להתאים לרוחב הצ'אט. הגדר את {0} ל-false כדי לשמור תצוגות מקדימות ברוחב קבוע עם גלילה אופקית. הדבר משנה רק את התצוגה המקדימה, לא את המסוף שמפעיל את הפקודה."
+    },
+    {
+      "en": "Failed tool calls use an error icon in place of their normal tool icon. Their content and available actions stay the same. The Accessible View includes the failure reason or terminal exit code when available.",
+      "he": "קריאות כלי שנכשלו משתמשות בסמל שגיאה במקום בסמל הכלי הרגיל. התוכן והפעולות הזמינות שלהן נשארים ללא שינוי. התצוגה הנגישה כוללת את סיבת הכשל או את קוד היציאה של המסוף כאשר הוא זמין."
+    },
+    {
+      "en": "Finished thinking and tool-call sections stop showing activity. The Working indicator is omitted when subagent pills are the last visible content; it appears after other content while the response remains in progress.",
+      "he": "מקטעי חשיבה וקריאות כלים שהסתיימו מפסיקים להציג פעילות. מחוון 'עובד' אינו מוצג כאשר תוויות תת-סוכנים הן התוכן הגלוי האחרון; הוא מופיע לאחר תוכן אחר כל עוד התשובה עדיין בתהליך."
+    },
+    {
+      "en": "Compatibility cannot be determined because the server definition has not loaded.\nTo migrate this server, wait for MCP discovery to finish, then refresh this view. If the issue persists, check the server configuration for errors.",
+      "he": "לא ניתן לקבוע תאימות מכיוון שהגדרת השרת עדיין לא נטענה.\nכדי להעביר שרת זה, המתן לסיום גילוי ה-MCP ולאחר מכן רענן תצוגה זו. אם הבעיה נמשכת, בדוק אם יש שגיאות בתצורת השרת."
+    },
+    {
+      "en": "MCP development mode is not supported by the Copilot harness.\nTo migrate this server, remove the development mode setting and restart the server manually after configuration changes.",
+      "he": "מצב הפיתוח של MCP אינו נתמך על ידי מנגנון ההרצה של Copilot.\nכדי להעביר שרת זה, הסר את הגדרת מצב הפיתוח והפעל מחדש את השרת ידנית לאחר שינויי תצורה."
+    },
+    {
+      "en": "Custom OAuth client configuration is not supported by the Copilot harness.\nTo migrate this server, remove the custom OAuth client configuration and sign in when the Copilot harness prompts for authentication.",
+      "he": "תצורת לקוח OAuth מותאמת אישית אינה נתמכת על ידי מנגנון ההרצה של Copilot.\nכדי להעביר שרת זה, הסר את תצורת לקוח ה-OAuth המותאמת והתחבר כאשר מנגנון ההרצה של Copilot מבקש אימות."
+    },
+    {
+      "en": "Input and command variables are not supported by the Copilot harness.\nTo migrate this server, replace them with concrete values or environment variables defined directly in the server configuration.",
+      "he": "משתני קלט ופקודה אינם נתמכים על ידי מנגנון ההרצה של Copilot.\nכדי להעביר שרת זה, החלף אותם בערכים מפורשים או במשתני סביבה שמוגדרים ישירות בתצורת השרת."
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "vscode": "1.140.0",
+  "kind": "new-source-translation",
+  "batch": "new-long-04",
+  "entries": [
+    {
+      "en": "Compatibility cannot be determined because the server configuration source is unknown.\nTo migrate this server, move its configuration to a recognized location such as the workspace root .mcp.json file.",
+      "he": "לא ניתן לקבוע תאימות מכיוון שמקור תצורת השרת אינו ידוע.\nכדי להעביר שרת זה, העבר את התצורה שלו למיקום מוכר, כגון קובץ `.mcp.json` שבשורש סביבת העבודה."
+    },
+    {
+      "en": "Unresolved configuration, environment, or workspace variables are not supported by the Copilot harness.\nTo migrate this server, define the missing variables or replace them with concrete values.",
+      "he": "משתני תצורה, סביבה או סביבת עבודה שלא נפתרו אינם נתמכים על ידי מנגנון ההרצה של Copilot.\nכדי להעביר שרת זה, הגדר את המשתנים החסרים או החלף אותם בערכים מפורשים."
+    },
+    {
+      "en": "Controls the number of days after being automatically marked as done before agent sessions with a merged pull request are permanently deleted. Retained eligible worktrees are safely removed before deletion. Automatically marking sessions as done is controlled separately by {0}. Set to 0 to disable permanent deletion. The recommended value is 15.",
+      "he": "קובע את מספר הימים לאחר סימון אוטומטי כבוצע לפני שהפעלות סוכן עם בקשת משיכה שמוזגה נמחקות לצמיתות. עצי עבודה מתאימים שנשמרו מוסרים בבטחה לפני המחיקה. סימון אוטומטי של הפעלות כבוצעו נשלט בנפרד על ידי {0}. הגדר ל-0 כדי להשבית מחיקה לצמיתות. הערך המומלץ הוא 15."
+    },
+    {
+      "en": "Controls the number of inactive days before agent sessions with a merged pull request are automatically marked as done. Marking a session as done safely removes its eligible worktree. Permanent deletion is controlled separately by {0}. Set to 0 to disable automatically marking sessions as done. The recommended value is 15.",
+      "he": "קובע את מספר ימי חוסר הפעילות לפני שהפעלות סוכן עם בקשת משיכה שמוזגה מסומנות אוטומטית כבוצעו. סימון הפעלה כבוצעה מסיר בבטחה את עץ העבודה המתאים שלה. מחיקה לצמיתות נשלטת בנפרד על ידי {0}. הגדר ל-0 כדי להשבית סימון אוטומטי של הפעלות כבוצעו. הערך המומלץ הוא 15."
+    },
+    {
+      "en": "Controls the delay, in seconds, after the latest user message before offering to continue an in-progress session in the Agents Window. Requires `#chat.agentsHandoffTip.mode#` to be `default` or `custom`.",
+      "he": "קובע את ההשהיה, בשניות, לאחר הודעת המשתמש האחרונה לפני שתוצע האפשרות להמשיך הפעלה שנמצאת בתהליך בחלון הסוכנים. נדרש שהערך של `#chat.agentsHandoffTip.mode#` יהיה `default` או `custom`."
+    },
+    {
+      "en": "Review an available item's source, then choose Install. VS Code records the exact installed target instead of associating same-name local items. If recorded skill files are missing, choose Repair to restore only those files without overwriting existing files. Installed marketplace items provide an Uninstall action. MCP servers that require unsupported local prerequisites provide View Setup. VS Code continues to apply destination, trust, policy, and compatibility checks.",
+      "he": "סקור את המקור של פריט זמין ולאחר מכן בחר 'התקן'. VS Code רושם את יעד ההתקנה המדויק במקום לשייך פריטים מקומיים בעלי אותו שם. אם חסרים קובצי מיומנות שנרשמו, בחר 'תקן' כדי לשחזר רק את הקבצים האלה בלי לדרוס קבצים קיימים. פריטי Marketplace מותקנים מציעים פעולת 'הסר התקנה'. שרתי MCP שדורשים תנאים מקומיים מוקדמים שאינם נתמכים מציעים 'הצג הגדרה'. VS Code ממשיך להחיל בדיקות יעד, אמון, מדיניות ותאימות."
+    },
+    {
+      "en": "Available search results are ordered by source-assigned relevance, not trust or quality. Feed priority breaks equal relevance scores. Browsing without search text shows higher-priority custom entries first and interleaves entries at the same priority while preserving each catalog's order.",
+      "he": "תוצאות החיפוש הזמינות מסודרות לפי הרלוונטיות שהמקור הקצה, ולא לפי אמון או איכות. עדיפות הפיד מכריעה ציוני רלוונטיות שווים. עיון ללא טקסט חיפוש מציג תחילה רשומות מותאמות אישית בעדיפות גבוהה יותר ומשלב רשומות באותה עדיפות תוך שמירה על הסדר של כל קטלוג."
+    },
+    {
+      "en": "Unavailable sources show a warning and Retry action above the results. Scrolling continues healthy sources. Retrying a source reloads all sources from the first page to restore relevance order.",
+      "he": "מקורות שאינם זמינים מציגים אזהרה ופעולת 'נסה שוב' מעל התוצאות. הגלילה ממשיכה עבור מקורות תקינים. ניסיון חוזר של מקור טוען מחדש את כל המקורות מהעמוד הראשון כדי לשחזר את סדר הרלוונטיות."
+    },
+    {
+      "en": "User servers move to mcp-config.json in Copilot home, making them available across profiles and workspaces. Disabled user servers may become enabled after migration. Workspace servers move to the root .mcp.json. Unselected servers and servers that cannot be migrated stay in their current files.",
+      "he": "שרתי משתמש עוברים אל `mcp-config.json` בתיקיית הבית של Copilot, וכך הם זמינים בין פרופילים וסביבות עבודה. שרתי משתמש מושבתים עשויים להפוך למופעלים לאחר ההעברה. שרתי סביבת עבודה עוברים אל `.mcp.json` שבשורש. שרתים שלא נבחרו ושרתים שלא ניתן להעביר נשארים בקבצים הנוכחיים שלהם."
+    },
+    {
+      "en": "Absolute path to a local `copilot-runtime` executable. The bundled Copilot SDK wrapper remains in use. Empty uses the bundled runtime. Changing this setting restarts the Copilot SDK client after active turns finish.",
+      "he": "נתיב מוחלט לקובץ הפעלה מקומי של `copilot-runtime`. מעטפת Copilot SDK המצורפת ממשיכה להיות בשימוש. ערך ריק משתמש בסביבת הריצה המצורפת. שינוי הגדרה זו מפעיל מחדש את לקוח Copilot SDK לאחר סיום התורים הפעילים."
+    },
+    {
+      "en": "Controls whether the agent session list is served from the Agent host's session catalog. When disabled, sessions are listed from provider metadata and per-session storage instead, which is slower.\n\nChanging this setting requires a restart to take effect.",
+      "he": "קובע אם רשימת הפעלות הסוכן מסופקת מקטלוג ההפעלות של מארח הסוכן. כאשר האפשרות מושבתת, ההפעלות מוצגות במקום זאת ממטא-נתוני הספק ומאחסון נפרד לכל הפעלה, פעולה איטית יותר.\n\nשינוי הגדרה זו דורש הפעלה מחדש כדי להיכנס לתוקף."
+    },
+    {
+      "en": "Controls whether a live model promo is shown on the Copilot icon when Chat is closed. When explicitly set, this overrides the experiment without an experiment lookup. Otherwise, eligible promos use the experiment treatment.",
+      "he": "קובע אם קידום חי של מודל מוצג על סמל Copilot כאשר הצ'אט סגור. כאשר הערך מוגדר במפורש, הוא עוקף את הניסוי בלי לבצע בדיקת ניסוי. אחרת, קידומים מתאימים משתמשים בטיפול של הניסוי."
+    },
+    {
+      "en": "Show a promo tooltip when hovering or clicking the Copilot status icon while Chat is closed. Viewing the offer clears its indicator; the offer remains available for the current window session. Choosing Try dismisses the offer and its chat banner.",
+      "he": "הצג תיאור קידום בעת ריחוף או לחיצה על סמל המצב של Copilot כאשר הצ'אט סגור. צפייה בהצעה מנקה את המחוון שלה; ההצעה נשארת זמינה במשך הפעלת החלון הנוכחית. בחירה ב'נסה' סוגרת את ההצעה ואת הבאנר שלה בצ'אט."
+    },
+    {
+      "en": "When enabled, local Copilot Agent Host sessions force-enable tgrep indexed search, bypassing the repository-size threshold. Requires a local Git repository on a non-virtual filesystem. Changing this setting restarts the Copilot SDK client after active turns finish.",
+      "he": "כאשר האפשרות מופעלת, הפעלות מקומיות של Copilot Agent Host מפעילות בכפייה חיפוש מאונדקס באמצעות tgrep ועוקפות את סף גודל המאגר. נדרש מאגר Git מקומי במערכת קבצים שאינה וירטואלית. שינוי הגדרה זו מפעיל מחדש את לקוח Copilot SDK לאחר סיום התורים הפעילים."
+    },
+    {
+      "en": "Controls whether terminal output in chat reflows to fit the available width. When disabled, previews use the terminal's column count, or 80 columns when no terminal is available, and scroll horizontally when needed. This does not resize the terminal running the command.",
+      "he": "קובע אם פלט המסוף בצ'אט זורם מחדש כדי להתאים לרוחב הזמין. כאשר האפשרות מושבתת, תצוגות מקדימות משתמשות במספר העמודות של המסוף, או ב-80 עמודות כאשר אין מסוף זמין, ונגללות אופקית לפי הצורך. הדבר אינו משנה את גודל המסוף שמפעיל את הפקודה."
+    },
+    {
+      "en": "Offer the workspace root `.mcp.json` file when adding MCP servers manually. When `.vscode/mcp.json` exists, choose which file to add to. Marketplace installations continue to use `.vscode/mcp.json`. Existing `.mcp.json` files can be opened and read independently of this setting.",
+      "he": "הצע את הקובץ `.mcp.json` שבשורש סביבת העבודה בעת הוספה ידנית של שרתי MCP. כאשר `.vscode/mcp.json` קיים, בחר לאיזה קובץ להוסיף. התקנות מה-Marketplace ממשיכות להשתמש ב-`.vscode/mcp.json`. ניתן לפתוח ולקרוא קובצי `.mcp.json` קיימים בלי קשר להגדרה זו."
+    },
+    {
+      "en": "Keep a working progress indicator at the bottom until the response finishes, with a colored or monochrome Draw animation, or without an icon. The default is Draw in VS Code Insiders and Off in Stable. Experiments can override either default; an explicit setting takes precedence. Tool calls follow {0}, and reasoning is separated into collapsible previews that break the tool chain. Standalone tools retain their icons. Completed responses still follow {1}. This replaces inner working progress; terminal activity animations and rich subagent pills are unchanged. Changes apply immediately; reduced motion keeps the indicator visible without animation.",
+      "he": "השאר מחוון התקדמות עבודה בתחתית עד שהתשובה מסתיימת, עם הנפשת Draw צבעונית או מונוכרומית, או ללא סמל. ברירת המחדל היא Draw ב-VS Code Insiders ו-Off ב-Stable. ניסויים יכולים לעקוף כל אחת מברירות המחדל; הגדרה מפורשת מקבלת קדימות. קריאות כלים פועלות לפי {0}, והחשיבה מופרדת לתצוגות מקדימות שניתנות לכיווץ ושוברות את שרשרת הכלים. כלים עצמאיים שומרים על הסמלים שלהם. תשובות שהושלמו עדיין פועלות לפי {1}. הדבר מחליף את התקדמות העבודה הפנימית; הנפשות פעילות המסוף ותוויות תת-סוכנים עשירות אינן משתנות. השינויים חלים מיד; מצב תנועה מופחת משאיר את המחוון גלוי ללא הנפשה."
+    },
+    {
+      "en": "Control tool call details when {0} is enabled. Compact is the default and collapses tool groups in place when thinking or response text resumes, or the response finishes. Expand a summary to inspect its tool calls. Has no effect when persistent progress is Off. Changes apply immediately.",
+      "he": "קבע את פרטי קריאות הכלים כאשר {0} מופעל. Compact הוא ברירת המחדל ומכווץ קבוצות כלים במקומן כאשר החשיבה או טקסט התשובה מתחדשים, או כאשר התשובה מסתיימת. הרחב סיכום כדי לבדוק את קריאות הכלים שלו. אין לכך השפעה כאשר התקדמות מתמשכת היא Off. השינויים חלים מיד."
+    },
+    {
+      "en": "Enable discovering and opening Copilot cloud sandbox sessions in the Editor Window and Agents Window over a live Agent Host Protocol relay. Also adds a Sandbox option when starting a cloud session in the Agents Window.",
+      "he": "אפשר גילוי ופתיחה של הפעלות ארגז חול בענן של Copilot בחלון העורך ובחלון הסוכנים באמצעות ממסר חי של Agent Host Protocol. בנוסף, האפשרות מוסיפה 'ארגז חול' בעת התחלת הפעלת ענן בחלון הסוכנים."
+    },
+    {
+      "en": "In compact diff presentations, use Tab to focus a hidden-lines disclosure, then Enter or Space to expand or collapse unchanged lines. Breadcrumbs are separate buttons that reveal their symbol.",
+      "he": "בתצוגות diff קומפקטיות, השתמש ב-Tab כדי למקד פקד חשיפה של שורות מוסתרות, ולאחר מכן ב-Enter או Space כדי להרחיב או לכווץ שורות שלא השתנו. פירורי הניווט הם לחצנים נפרדים שחושפים את הסמל שלהם."
+    },
+    {
+      "en": "Added MCP server '{0}' to {1}. Set any referenced environment variables on the agent-host machine before starting a new Copilot session. VS Code input variables are not supported in this file.",
+      "he": "שרת ה-MCP '{0}' נוסף אל {1}. הגדר את כל משתני הסביבה שאליהם יש הפניה במחשב מארח הסוכן לפני התחלת הפעלת Copilot חדשה. משתני קלט של VS Code אינם נתמכים בקובץ זה."
+    },
+    {
+      "en": "Press Tab or Shift+Tab to move between links, settings, the update preference checkbox, and available setup actions. Press Enter to activate a link. Press Space or Enter to activate a setup button.",
+      "he": "הקש Tab או Shift+Tab כדי לעבור בין קישורים, הגדרות, תיבת הסימון של העדפת העדכון ופעולות ההגדרה הזמינות. הקש Enter כדי להפעיל קישור. הקש Space או Enter כדי להפעיל לחצן הגדרה."
+    },
+    {
+      "en": "Try This links open locally registered feature examples. Reading, hovering, or focusing a link does not run it. If an example is unavailable, its explanation and any available setup action appear beside it. Setup does not automatically run the example.",
+      "he": "קישורי 'נסה זאת' פותחים דוגמאות תכונה שנרשמו מקומית. קריאה, ריחוף או מיקוד של קישור אינם מפעילים אותו. אם דוגמה אינה זמינה, ההסבר שלה וכל פעולת הגדרה זמינה מופיעים לצדה. ההגדרה אינה מפעילה את הדוגמה אוטומטית."
+    },
+    {
+      "en": "The window banner is also available with the Focus Banner command. In the banner, use the arrow keys to reach its actions. Closing the banner does not dismiss the explanation in Chat or change your organization's requirement.",
+      "he": "באנר החלון זמין גם באמצעות הפקודה 'מקד באנר'. בתוך הבאנר השתמש במקשי החצים כדי להגיע לפעולות שלו. סגירת הבאנר אינה מסירה את ההסבר בצ'אט ואינה משנה את דרישת הארגון שלך."
+    },
+    {
+      "en": "Overrides the default thinking effort shown in the model picker for Claude models, in both Copilot Chat and local Copilot CLI (Agent Host) sessions. Remote Agent Host sessions are not affected. Leave empty to use the built-in default. Ignored if the model does not support the chosen level.",
+      "he": "עוקף את מאמץ החשיבה המוגדר כברירת מחדל שמוצג בבורר המודלים עבור מודלי Claude, הן ב-Copilot Chat והן בהפעלות מקומיות של Copilot CLI (Agent Host). הפעלות מרוחקות של Agent Host אינן מושפעות. השאר ריק כדי להשתמש בברירת המחדל המובנית. ההגדרה מתעלמת אם המודל אינו תומך ברמה שנבחרה."
+    },
+    {
+      "en": "When true (default), js-debug uses source maps to remap a non-`.js` `program` path to its compiled output before launching. Set to false to execute the `program` path exactly as written.",
+      "he": "כאשר הערך true (ברירת המחדל), js-debug משתמש במפות מקור כדי למפות מחדש נתיב `program` שאינו מסתיים ב-`.js` אל הפלט המהודר שלו לפני ההפעלה. הגדר ל-false כדי להפעיל את נתיב `program` בדיוק כפי שנכתב."
+    },
+    {
+      "en": "Configure patterns, using `.gitignore` syntax, for folders to symlink from the current checkout into newly created worktrees. Only folders that match the patterns and are ignored by git (for example, listed in `.gitignore`) will be symlinked. Changes made through a symlink affect the folder in the current checkout.",
+      "he": "הגדר תבניות, בתחביר `.gitignore`, עבור תיקיות שיש לקשר בקישור סמלי מהצ'ק-אאוט הנוכחי אל עצי עבודה חדשים. רק תיקיות שתואמות לתבניות וש-Git מתעלם מהן, לדוגמה כאלה שמופיעות ב-`.gitignore`, יקושרו בקישור סמלי. שינויים שמתבצעים דרך קישור סמלי משפיעים על התיקייה בצ'ק-אאוט הנוכחי."
+    }
+  ]
+}

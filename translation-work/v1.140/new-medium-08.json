@@ -1,0 +1,207 @@
+{
+  "vscode": "1.140.0",
+  "kind": "new-source-translation",
+  "batch": "new-medium-08",
+  "entries": [
+    {
+      "en": "Installing a plugin subdirectory requires a Git repository source.",
+      "he": "התקנת תיקיית משנה של תוסף דורשת מקור שהוא מאגר Git."
+    },
+    {
+      "en": "The plugin directory must be a directory inside its repository, without symbolic links.",
+      "he": "תיקיית התוסף חייבת להיות תיקייה בתוך המאגר שלה, ללא קישורים סמליים."
+    },
+    {
+      "en": "Connecting to the sandbox timed out after {0} seconds.",
+      "he": "ההתחברות לארגז החול חרגה מהזמן לאחר {0} שניות."
+    },
+    {
+      "en": "The sandbox requested a retry beyond the connection deadline.",
+      "he": "ארגז החול ביקש ניסיון חוזר מעבר למועד האחרון להתחברות."
+    },
+    {
+      "en": "The cloud sandbox returned an invalid repository cloning response.",
+      "he": "ארגז החול בענן החזיר תגובה לא חוקית לשכפול המאגר."
+    },
+    {
+      "en": "The cloud sandbox did not return a usable repository directory.",
+      "he": "ארגז החול בענן לא החזיר תיקיית מאגר שניתן להשתמש בה."
+    },
+    {
+      "en": "The cloud sandbox requires a GitHub repository URL without credentials, a query, or a fragment.",
+      "he": "ארגז החול בענן דורש כתובת URL של מאגר GitHub ללא פרטי התחברות, שאילתה או מקטע."
+    },
+    {
+      "en": "The cloud sandbox no longer advertises repository preparation.",
+      "he": "ארגז החול בענן אינו מפרסם עוד תמיכה בהכנת מאגר."
+    },
+    {
+      "en": "The repository was removed from the cloud sandbox while it was being prepared.",
+      "he": "המאגר הוסר מארגז החול בענן בזמן שהוכן."
+    },
+    {
+      "en": "Repository cloning did not finish within five minutes.",
+      "he": "שכפול המאגר לא הסתיים בתוך חמש דקות."
+    },
+    {
+      "en": "Find remote agent hosts, delegate and inspect work, and send messages between hosts.",
+      "he": "מצא מארחי סוכן מרוחקים, האצל ובדוק עבודה ושלח הודעות בין מארחים."
+    },
+    {
+      "en": "Terminal output for {0}. Press Enter to open the full output in a read-only editor.",
+      "he": "פלט המסוף עבור {0}. הקש Enter כדי לפתוח את הפלט המלא בעורך לקריאה בלבד."
+    },
+    {
+      "en": "Use Open Full Output (Read-Only) to view the captured output.",
+      "he": "השתמש ב'פתח פלט מלא (לקריאה בלבד)' כדי להציג את הפלט שנאסף."
+    },
+    {
+      "en": "Showing a preview. Use Open Full Output (Read-Only) to view the captured output.",
+      "he": "מוצגת תצוגה מקדימה. השתמש ב'פתח פלט מלא (לקריאה בלבד)' כדי להציג את הפלט שנאסף."
+    },
+    {
+      "en": "Output truncated. Click the output preview to view the full output.",
+      "he": "הפלט קוצר. לחץ על התצוגה המקדימה של הפלט כדי להציג את הפלט המלא."
+    },
+    {
+      "en": "Your organization sets {0} as the default for new chats. You can choose another model for this chat.",
+      "he": "הארגון שלך מגדיר את {0} כברירת המחדל לצ'אטים חדשים. ניתן לבחור מודל אחר עבור צ'אט זה."
+    },
+    {
+      "en": "HydraFusion picks a workflow for each task, using one or more models to draft, review, or escalate when needed.",
+      "he": "HydraFusion בוחר תהליך עבודה לכל משימה ומשתמש במודל אחד או יותר כדי לנסח, לסקור או להסלים לפי הצורך."
+    },
+    {
+      "en": "True when the current agent session item is a child chat.",
+      "he": "True כאשר פריט הפעלת הסוכן הנוכחי הוא צ'אט צאצא."
+    },
+    {
+      "en": "Whether the chat context menu link can be opened with an alternate editor.",
+      "he": "האם ניתן לפתוח את הקישור בתפריט ההקשר של הצ'אט באמצעות עורך חלופי."
+    },
+    {
+      "en": "Whether the chat context menu was opened on a link.",
+      "he": "האם תפריט ההקשר של הצ'אט נפתח על קישור."
+    },
+    {
+      "en": "Whether the chat context menu was opened from the transcript background rather than chat item content.",
+      "he": "האם תפריט ההקשר של הצ'אט נפתח מרקע התמליל ולא מתוכן של פריט צ'אט."
+    },
+    {
+      "en": "True when sending to the current chat is temporarily blocked.",
+      "he": "True כאשר השליחה לצ'אט הנוכחי חסומה זמנית."
+    },
+    {
+      "en": "True while cancellable transcript preparation is running.",
+      "he": "True בזמן שהכנת תמליל הניתנת לביטול פועלת."
+    },
+    {
+      "en": "An automation cannot move between Agent Hosts. Duplicate it on the new host to keep the original run history. The original continues scheduling until you disable it.",
+      "he": "לא ניתן להעביר אוטומציה בין מארחי סוכן. שכפל אותה במארח החדש כדי לשמור את היסטוריית ההרצות המקורית. המקורית ממשיכה לפעול לפי לוח הזמנים עד שתשבית אותה."
+    },
+    {
+      "en": "The plugin marketplace page is invalid. Start a new search.",
+      "he": "עמוד ה-Marketplace של התוספים אינו חוקי. התחל חיפוש חדש."
+    },
+    {
+      "en": "Foreground color of the Insiders VS Code icon in the chat working progress indicator.",
+      "he": "צבע החזית של סמל VS Code Insiders במחוון התקדמות העבודה של הצ'אט."
+    },
+    {
+      "en": "Foreground color of the Stable VS Code icon in the chat working progress indicator.",
+      "he": "צבע החזית של סמל VS Code Stable במחוון התקדמות העבודה של הצ'אט."
+    },
+    {
+      "en": "The Agents window is unavailable because agent mode is disabled.",
+      "he": "חלון הסוכנים אינו זמין מכיוון שמצב סוכן מושבת."
+    },
+    {
+      "en": "This draft contains context that is only available in this window. Your prompt and attachments have been kept here instead of copied to the Agents Window.",
+      "he": "טיוטה זו מכילה הקשר שזמין רק בחלון זה. הפרומפט והקבצים המצורפים נשמרו כאן במקום להיות מועתקים לחלון הסוכנים."
+    },
+    {
+      "en": "Run multiple tasks in the Agents Window, in one workspace or across projects.",
+      "he": "הפעל משימות מרובות בחלון הסוכנים, בסביבת עבודה אחת או בין פרויקטים."
+    },
+    {
+      "en": "Open a read-only sample comparison. Use Diff View to choose Inline, Side by Side, or Automatic, then resize the editor.",
+      "he": "פתח השוואת דוגמה לקריאה בלבד. השתמש ב'תצוגת Diff' כדי לבחור Inline, זה לצד זה או אוטומטי, ולאחר מכן שנה את גודל העורך."
+    },
+    {
+      "en": "This server requires VS Code input variables. Add it to a VS Code configuration file instead of the current agent session.",
+      "he": "שרת זה דורש משתני קלט של VS Code. הוסף אותו לקובץ תצורה של VS Code במקום להפעלת הסוכן הנוכחית."
+    },
+    {
+      "en": "Select a .mcp.json or .vscode/mcp.json file at the root of an open workspace folder.",
+      "he": "בחר קובץ `.mcp.json` או `.vscode/mcp.json` בשורש של תיקיית סביבת עבודה פתוחה."
+    },
+    {
+      "en": "Enable {0} to add servers to .mcp.json, or use .vscode/mcp.json.",
+      "he": "הפעל את {0} כדי להוסיף שרתים ל-`.mcp.json`, או השתמש ב-`.vscode/mcp.json`."
+    },
+    {
+      "en": "The GitHub Feed returned a different MCP server or version than requested.",
+      "he": "פיד GitHub החזיר שרת MCP או גרסה שונים מאלה שהתבקשו."
+    },
+    {
+      "en": "The MCP registry changed. Try installing the server again.",
+      "he": "מרשם ה-MCP השתנה. נסה להתקין את השרת שוב."
+    },
+    {
+      "en": "The HTTP transport to preserve when sharing this configuration with other MCP clients.",
+      "he": "תעבורת ה-HTTP שיש לשמר בעת שיתוף תצורה זו עם לקוחות MCP אחרים."
+    },
+    {
+      "en": "The MCP setup extension returned an unexpected configuration format. Update the Copilot extension and try again.",
+      "he": "הרחבת הגדרת ה-MCP החזירה פורמט תצורה בלתי צפוי. עדכן את הרחבת Copilot ונסה שוב."
+    },
+    {
+      "en": "The generated MCP server configuration is invalid. Try again or add the server manually.",
+      "he": "תצורת שרת ה-MCP שנוצרה אינה חוקית. נסה שוב או הוסף את השרת ידנית."
+    },
+    {
+      "en": "Controls the experimental variant of the multi diff editor.",
+      "he": "קובע את הגרסה הניסיונית של עורך ה-multi diff."
+    },
+    {
+      "en": "The example opened, but its highlighted control is not available.",
+      "he": "הדוגמה נפתחה, אך הפקד המודגש שלה אינו זמין."
+    },
+    {
+      "en": "The guided feature example '{0}' has an invalid presentation.",
+      "he": "לדוגמת התכונה המודרכת '{0}' יש תצוגה לא חוקית."
+    },
+    {
+      "en": "Language support for this example is not available yet.",
+      "he": "תמיכת שפה עבור דוגמה זו עדיין אינה זמינה."
+    },
+    {
+      "en": "This sample is no longer available. Open its feature example from the release notes again.",
+      "he": "דוגמה זו אינה זמינה עוד. פתח שוב את דוגמת התכונה שלה מתוך הערות הגרסה."
+    },
+    {
+      "en": "This command is not available in the current context.",
+      "he": "פקודה זו אינה זמינה בהקשר הנוכחי."
+    },
+    {
+      "en": "The example opened, but its target is no longer available.",
+      "he": "הדוגמה נפתחה, אך היעד שלה אינו זמין עוד."
+    },
+    {
+      "en": "The example's availability changed. Try opening it again.",
+      "he": "זמינות הדוגמה השתנתה. נסה לפתוח אותה שוב."
+    },
+    {
+      "en": "This example is not available in the current context.",
+      "he": "דוגמה זו אינה זמינה בהקשר הנוכחי."
+    },
+    {
+      "en": "This feature example is not available in this version.",
+      "he": "דוגמת תכונה זו אינה זמינה בגרסה זו."
+    },
+    {
+      "en": "The feature example '{0}' is not available in this version.",
+      "he": "דוגמת התכונה '{0}' אינה זמינה בגרסה זו."
+    }
+  ]
+}
