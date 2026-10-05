@@ -17,7 +17,7 @@
     },
     {
       "en": "SSH configuration directive {0} is not supported for remote agent host connections.",
-      "he": "הנחיית תצורת SSH ‏{0} אינה נתמכת עבור חיבורים למארח סוכן מרוחק."
+      "he": "הנחיית תצורת SSH {0} אינה נתמכת עבור חיבורים למארח סוכן מרוחק."
     },
     {
       "en": "SSH ProxyCommand cannot safely expand this host or username on Windows.",
