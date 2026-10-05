@@ -45,9 +45,17 @@ jobs:
       - name: Download VS Code
         shell: bash
         run: |
-          curl --fail --location --retry 3 \
-            "https://update.code.visualstudio.com/${{ steps.version.outputs.version }}/linux-deb-x64/stable" \
-            --output code.deb
+          URL="https://update.code.visualstudio.com/${{ steps.version.outputs.version }}/linux-deb-x64/stable"
+          for attempt in 1 2 3 4 5; do
+            echo "Download attempt $attempt"
+            curl --fail --location --retry 5 --retry-all-errors --retry-delay 2 \
+              --continue-at - "$URL" --output code.deb && break
+            if [ "$attempt" = "5" ]; then
+              echo "VS Code download failed after $attempt attempts" >&2
+              exit 1
+            fi
+            sleep $((attempt * 2))
+          done
           dpkg-deb -x code.deb vscode-root
           test -f vscode-root/usr/share/code/resources/app/package.json
 
