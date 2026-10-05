@@ -29,6 +29,7 @@ jobs:
           node --check scripts/validate-translation.mjs
           node --check scripts/translation-stats.mjs
           node --check scripts/translation-memory.mjs
+          node --check scripts/translation-worklist.mjs
 
       - name: Verify snapshot is fully translated
         run: node scripts/vsloc.mjs status
