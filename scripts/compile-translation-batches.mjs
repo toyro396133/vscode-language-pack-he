@@ -47,6 +47,15 @@ for (const [id, sections] of Object.entries(todo.extensions || {})) {
   }
 }
 
+const englishIndex = new Map();
+for (const [location, ref] of index) {
+  const en = ref.item?.en;
+  if (typeof en !== 'string') continue;
+  let targets = englishIndex.get(en);
+  if (!targets) englishIndex.set(en, (targets = []));
+  targets.push({ location, ref });
+}
+
 const BIDI = /[\u200E\u200F\u202A-\u202E\u2066-\u2069]/u;
 const ZERO_WIDTH = /[\u200B\u200C\u200D\uFEFF]/u;
 const PH = /\{\d+\}/g;
@@ -78,6 +87,7 @@ const files = fs.existsSync(workDir)
   : [];
 
 let manualCount = 0;
+let manualSourceEntries = 0;
 
 for (const file of files) {
   const full = path.join(workDir, file);
@@ -86,45 +96,56 @@ for (const file of files) {
   for (const [i, entry] of (doc.entries || []).entries()) {
     const where = `${file}#${i + 1}`;
 
-    if (!entry?.path || typeof entry?.en !== 'string' || typeof entry?.he !== 'string') {
-      errors.push(`${where}: each entry must contain path, en and he strings`);
-      continue;
-    }
-
-    if (seen.has(entry.path)) {
-      errors.push(`${where}: duplicate path already translated in ${seen.get(entry.path)}: ${entry.path}`);
-      continue;
-    }
-    seen.set(entry.path, where);
-
-    const ref = index.get(entry.path);
-    if (!ref) {
-      errors.push(`${where}: path does not exist in VS Code ${todo.vscode} delta: ${entry.path}`);
-      continue;
-    }
-
-    if (entry.en !== ref.item.en) {
-      errors.push(`${where}: English source mismatch for ${entry.path}`);
+    if (typeof entry?.en !== 'string' || typeof entry?.he !== 'string') {
+      errors.push(`${where}: each entry must contain en and he strings; path is optional`);
       continue;
     }
 
     if (!entry.he.trim()) {
-      errors.push(`${where}: empty Hebrew translation for ${entry.path}`);
+      errors.push(`${where}: empty Hebrew translation`);
       continue;
     }
 
-    if (BIDI.test(entry.he)) errors.push(`${where}: forbidden BiDi control character in ${entry.path}`);
-    if (ZERO_WIDTH.test(entry.he)) warnings.push(`${where}: zero-width character in ${entry.path}`);
+    if (BIDI.test(entry.he)) errors.push(`${where}: forbidden BiDi control character`);
+    if (ZERO_WIDTH.test(entry.he)) warnings.push(`${where}: zero-width character`);
 
     const expected = placeholders(entry.en);
     const actual = placeholders(entry.he);
     if (!sameArray(expected, actual)) {
-      errors.push(`${where}: placeholder mismatch for ${entry.path}; source=${JSON.stringify(expected)} translation=${JSON.stringify(actual)}`);
+      errors.push(`${where}: placeholder mismatch; source=${JSON.stringify(expected)} translation=${JSON.stringify(actual)}`);
       continue;
     }
 
-    setOverlay(manual, ref, entry.he);
-    manualCount++;
+    let targets;
+    if (entry.path) {
+      const ref = index.get(entry.path);
+      if (!ref) {
+        errors.push(`${where}: path does not exist in VS Code ${todo.vscode} delta: ${entry.path}`);
+        continue;
+      }
+      if (entry.en !== ref.item.en) {
+        errors.push(`${where}: English source mismatch for ${entry.path}`);
+        continue;
+      }
+      targets = [{ location: entry.path, ref }];
+    } else {
+      targets = englishIndex.get(entry.en) || [];
+      if (!targets.length) {
+        errors.push(`${where}: English source does not exist in VS Code ${todo.vscode} delta: ${JSON.stringify(entry.en)}`);
+        continue;
+      }
+    }
+
+    manualSourceEntries++;
+    for (const { location, ref } of targets) {
+      if (seen.has(location)) {
+        errors.push(`${where}: duplicate target already translated in ${seen.get(location)}: ${location}`);
+        continue;
+      }
+      seen.set(location, where);
+      setOverlay(manual, ref, entry.he);
+      manualCount++;
+    }
   }
 }
 
@@ -207,6 +228,7 @@ const report = {
   vscode: todo.vscode,
   batchFiles: files,
   deltaItems: index.size,
+  manualTranslationEntries: manualSourceEntries,
   manualTranslations: manualCount,
   prefilledTranslations: prefilledCount,
   covered,
@@ -231,7 +253,8 @@ writeJson(remainingOut, remaining);
 writeJson(reportOut, report);
 
 console.log(`Batch files: ${files.length}`);
-console.log(`Manual translations compiled: ${manualCount}`);
+console.log(`Manual source entries compiled: ${manualSourceEntries}`);
+console.log(`Manual translation locations compiled: ${manualCount}`);
 console.log(`Prefilled translations: ${prefilledCount}`);
 console.log(`Delta coverage: ${covered}/${index.size}`);
 console.log(`Changed strings covered: ${changedCovered}/${changedTotal}`);
