@@ -41,6 +41,15 @@ function placeholders(value) {
   return [...String(value).matchAll(/\{\d+\}/g)].map((m) => m[0]).sort().join('|');
 }
 
+function cosmeticEnglish(value) {
+  return String(value)
+    .normalize('NFKC')
+    .toLowerCase()
+    .replace(/[\`'‘’“”"]/g, "'")
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
 function manifestExtensions() {
   const pkg = readJson(path.join(ROOT, 'package.json'));
   const map = new Map();
@@ -113,6 +122,7 @@ const ambiguous = [];
 
 let total = 0;
 let reused = 0;
+let cosmeticCarriedForward = 0;
 
 function routeItem(item, destinationSetter, location) {
   total++;
@@ -133,6 +143,27 @@ function routeItem(item, destinationSetter, location) {
       he: hit.he,
       priorUses: hit.meta.count,
       examples: hit.meta.examples,
+      reason: 'exact-translation-memory',
+    });
+    return;
+  }
+
+  if (
+    typeof item?.was === 'string' &&
+    typeof item?.current === 'string' &&
+    cosmeticEnglish(item.was) === cosmeticEnglish(en) &&
+    placeholders(en) === placeholders(item.current)
+  ) {
+    destinationSetter(prefilled, item.current);
+    reused++;
+    cosmeticCarriedForward++;
+    matches.push({
+      location,
+      en,
+      he: item.current,
+      priorUses: 1,
+      examples: [location],
+      reason: 'cosmetic-source-change',
     });
     return;
   }
@@ -192,7 +223,9 @@ const report = {
   translationMemoryPairs: memoryPairs,
   distinctEnglishStrings: memory.size,
   todoItems: total,
-  exactUniqueReused: reused,
+  reusedTotal: reused,
+  exactUniqueReused: reused - cosmeticCarriedForward,
+  cosmeticCarriedForward,
   remaining: total - reused,
   reuseRate: total ? Number(((reused / total) * 100).toFixed(2)) : 0,
   ambiguousEnglishStringsEncountered: ambiguous.length,
@@ -207,7 +240,9 @@ writeJson(reportPath, report);
 console.log(`Translation-memory pairs indexed: ${memoryPairs}`);
 console.log(`Distinct English source strings indexed: ${memory.size}`);
 console.log(`Todo items: ${total}`);
-console.log(`Exact unique matches reused: ${reused}`);
+console.log(`Exact unique matches reused: ${reused - cosmeticCarriedForward}`);
+console.log(`Cosmetic source changes safely carried forward: ${cosmeticCarriedForward}`);
+console.log(`Total reused: ${reused}`);
 console.log(`Remaining for translation/review: ${total - reused}`);
 console.log(`Reuse rate: ${report.reuseRate}%`);
 console.log(`Ambiguous exact-source matches left unresolved: ${ambiguous.length}`);
