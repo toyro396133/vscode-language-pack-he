@@ -1,0 +1,307 @@
+{
+  "vscode": "1.140.0",
+  "kind": "new-source-translation",
+  "batch": "new-short-04",
+  "entries": [
+    {
+      "en": "Unsupported SSH ProxyCommand token: %{0}",
+      "he": "אסימון SSH ProxyCommand אינו נתמך: %{0}"
+    },
+    {
+      "en": "Copilot connectors returned an invalid response.",
+      "he": "מחברי Copilot החזירו תגובה לא חוקית."
+    },
+    {
+      "en": "The Copilot connectors response is too large.",
+      "he": "התגובה ממחברי Copilot גדולה מדי."
+    },
+    {
+      "en": "The marketplace query is invalid.",
+      "he": "שאילתת ה-Marketplace אינה חוקית."
+    },
+    {
+      "en": "Configured Plugin Marketplaces",
+      "he": "שווקי תוספים מוגדרים"
+    },
+    {
+      "en": "The configured MCP gallery is changing. Try again.",
+      "he": "גלריית ה-MCP המוגדרת משתנה. נסה שוב."
+    },
+    {
+      "en": "File is a directory",
+      "he": "הקובץ הוא תיקייה"
+    },
+    {
+      "en": "File is not a regular file",
+      "he": "הקובץ אינו קובץ רגיל"
+    },
+    {
+      "en": "The MCP server configuration is invalid.",
+      "he": "תצורת שרת ה-MCP אינה חוקית."
+    },
+    {
+      "en": "The MCP registry returned invalid server metadata.",
+      "he": "מרשם ה-MCP החזיר מטא-נתוני שרת לא חוקיים."
+    },
+    {
+      "en": "The MCP registry response is too large to install.",
+      "he": "התגובה ממרשם ה-MCP גדולה מדי להתקנה."
+    },
+    {
+      "en": "The MCP gallery returned an empty response.",
+      "he": "גלריית ה-MCP החזירה תגובה ריקה."
+    },
+    {
+      "en": "The MCP gallery has no query endpoint.",
+      "he": "לגלריית ה-MCP אין נקודת קצה לשאילתות."
+    },
+    {
+      "en": "The MCP gallery is not configured.",
+      "he": "גלריית ה-MCP אינה מוגדרת."
+    },
+    {
+      "en": "The MCP gallery returned HTTP {0}.",
+      "he": "גלריית ה-MCP החזירה HTTP {0}."
+    },
+    {
+      "en": "Variable '{0}' has conflicting definitions.",
+      "he": "למשתנה '{0}' יש הגדרות סותרות."
+    },
+    {
+      "en": "Cannot add Copilot Global MCP server '{0}': {1}",
+      "he": "לא ניתן להוסיף את שרת ה-MCP הגלובלי של Copilot '{0}': {1}"
+    },
+    {
+      "en": "The feature example request is invalid.",
+      "he": "בקשת דוגמת התכונה אינה חוקית."
+    },
+    {
+      "en": "Opens the Agents Window",
+      "he": "פותח את חלון הסוכנים"
+    },
+    {
+      "en": "Adding pull request comment",
+      "he": "מוסיף הערה לבקשת המשיכה"
+    },
+    {
+      "en": "Add PR Comment ({0}/{1}#{2})",
+      "he": "הוסף הערת PR ({0}/{1}#{2})"
+    },
+    {
+      "en": "Failed to add pull request comment: {0}",
+      "he": "הוספת ההערה לבקשת המשיכה נכשלה: {0}"
+    },
+    {
+      "en": "Failed to load pull request comment targets: {0}",
+      "he": "טעינת יעדי ההערה לבקשת המשיכה נכשלה: {0}"
+    },
+    {
+      "en": "Pull Request Comment",
+      "he": "הערה לבקשת משיכה"
+    },
+    {
+      "en": "Pull Request ({0}/{1}#{2}) Comment",
+      "he": "הערה לבקשת משיכה ({0}/{1}#{2})"
+    },
+    {
+      "en": "Automation '{0}' did not start a session: {1}",
+      "he": "האוטומציה '{0}' לא התחילה הפעלה: {1}"
+    },
+    {
+      "en": "The Agent Host ended the run without a session.",
+      "he": "מארח הסוכן סיים את ההרצה ללא הפעלה."
+    },
+    {
+      "en": "Checking GitHub auto-merge availability...",
+      "he": "בודק זמינות של מיזוג אוטומטי ב-GitHub..."
+    },
+    {
+      "en": "Set Welcome Name...",
+      "he": "הגדר שם ברכה..."
+    },
+    {
+      "en": "Welcome name set to {0}.",
+      "he": "שם הברכה הוגדר ל-{0}."
+    },
+    {
+      "en": "Focus Harness Picker",
+      "he": "מקד את בורר מנגנון ההרצה"
+    },
+    {
+      "en": "Focus Workspace Picker",
+      "he": "מקד את בורר סביבת העבודה"
+    },
+    {
+      "en": "Window tinting disabled.",
+      "he": "צביעת החלון הושבתה."
+    },
+    {
+      "en": "Window tinting enabled.",
+      "he": "צביעת החלון הופעלה."
+    },
+    {
+      "en": "Tint Window to Match Background",
+      "he": "צבע את החלון כך שיתאים לרקע"
+    },
+    {
+      "en": "Dismiss Migration Notice for This Workspace",
+      "he": "התעלם מהודעת ההעברה עבור סביבת עבודה זו"
+    },
+    {
+      "en": "Customization migrations",
+      "he": "העברות התאמות אישיות"
+    },
+    {
+      "en": "Review Migrations",
+      "he": "סקור העברות"
+    },
+    {
+      "en": "Failed to start session: {0}",
+      "he": "התחלת ההפעלה נכשלה: {0}"
+    },
+    {
+      "en": "Welcome message actions",
+      "he": "פעולות הודעת הברכה"
+    },
+    {
+      "en": "What are we building?",
+      "he": "מה אנחנו בונים?"
+    },
+    {
+      "en": "Time to lock in",
+      "he": "הגיע הזמן להתמקד"
+    },
+    {
+      "en": "What’s the move?",
+      "he": "מה עושים עכשיו?"
+    },
+    {
+      "en": "What are we building, {0}?",
+      "he": "מה אנחנו בונים, {0}?"
+    },
+    {
+      "en": "Time to lock in, {0}",
+      "he": "הגיע הזמן להתמקד, {0}"
+    },
+    {
+      "en": "What’s the move, {0}?",
+      "he": "מה עושים עכשיו, {0}?"
+    },
+    {
+      "en": "Let’s ship something, {0}",
+      "he": "בוא נשלח משהו, {0}"
+    },
+    {
+      "en": "Let’s ship something",
+      "he": "בוא נשלח משהו"
+    },
+    {
+      "en": "Choose the harness for the new session",
+      "he": "בחר את מנגנון ההרצה עבור ההפעלה החדשה"
+    },
+    {
+      "en": "Select Repository",
+      "he": "בחר מאגר"
+    },
+    {
+      "en": "Choose a repository for the new session",
+      "he": "בחר מאגר עבור ההפעלה החדשה"
+    },
+    {
+      "en": "Ask in a Side Chat",
+      "he": "שאל בצ'אט צדדי"
+    },
+    {
+      "en": "Selected response text copied.",
+      "he": "טקסט התשובה שנבחר הועתק."
+    },
+    {
+      "en": "The selected response text could not be copied.",
+      "he": "לא ניתן היה להעתיק את טקסט התשובה שנבחר."
+    },
+    {
+      "en": "Selected response text actions",
+      "he": "פעולות עבור טקסט התשובה שנבחר"
+    },
+    {
+      "en": "Quoted selection inserted.",
+      "he": "הבחירה המצוטטת נוספה."
+    },
+    {
+      "en": "{0} removed from session.",
+      "he": "{0} הוסר מההפעלה."
+    },
+    {
+      "en": "Copy Website URL",
+      "he": "העתק כתובת URL של האתר"
+    },
+    {
+      "en": "Remove Artifact {0} from Session",
+      "he": "הסר את הפריט {0} מההפעלה"
+    },
+    {
+      "en": "Could not remove {0} from this session: {1}",
+      "he": "לא ניתן היה להסיר את {0} מהפעלה זו: {1}"
+    },
+    {
+      "en": "Remove Reference {0} from Session",
+      "he": "הסר את ההפניה {0} מההפעלה"
+    },
+    {
+      "en": "Subagents: Completed",
+      "he": "תת-סוכנים: הושלמו"
+    },
+    {
+      "en": "Subagents: In Progress",
+      "he": "תת-סוכנים: בתהליך"
+    },
+    {
+      "en": "Show In Progress",
+      "he": "הצג בתהליך"
+    },
+    {
+      "en": "Remove Issue Artifact from Session",
+      "he": "הסר את פריט הסוגיה מההפעלה"
+    },
+    {
+      "en": "Use Remote Host",
+      "he": "השתמש במארח מרוחק"
+    },
+    {
+      "en": "Start the session in a temporary directory.",
+      "he": "התחל את ההפעלה בתיקייה זמנית."
+    },
+    {
+      "en": "Your session is here",
+      "he": "ההפעלה שלך נמצאת כאן"
+    },
+    {
+      "en": "Open Editor Window",
+      "he": "פתח חלון עורך"
+    },
+    {
+      "en": "The Agent Host is not ready to create automations.",
+      "he": "מארח הסוכן עדיין אינו מוכן ליצור אוטומציות."
+    },
+    {
+      "en": "Archiving this chat is unavailable.",
+      "he": "העברת צ'אט זה לארכיון אינה זמינה."
+    },
+    {
+      "en": "The chat could not be found.",
+      "he": "לא ניתן היה למצוא את הצ'אט."
+    },
+    {
+      "en": "Importing is unavailable for this session.",
+      "he": "ייבוא אינו זמין עבור הפעלה זו."
+    },
+    {
+      "en": "Initializing Agent Host session",
+      "he": "מאתחל הפעלת מארח סוכן"
+    },
+    {
+      "en": "Preparing Dev Container",
+      "he": "מכין Dev Container"
+    }
+  ]
+}
