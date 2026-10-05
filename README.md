@@ -92,3 +92,22 @@ node scripts/vsloc.mjs apply --to source/en.new --translated todo.json
 
 **החבילה המקורית** — [AMAARETS](https://github.com/AMAARETS), שיצר את חבילת
 השפה העברית הראשונה ואת מבנה המאגר שעליו נבנה הפרויקט הזה.
+
+
+## בדיקות איכות והכנה למסלול הרשמי
+
+במאגר יש שכבת QA שמוודאת שהתרגום נשאר מסונכרן עם תמונת המקור שנשמרת תחת `source/en/`,
+שקובצי הלוקליזציה תקינים וש-placeholders מספריים כמו `{0}` ו-`{1}` לא נשברים.
+
+```bash
+npm run qa
+npm run stats
+npm run package:vsix
+```
+
+בדיקות ה-PR אורזות גם VSIX כ-artifact, כך שאפשר לבצע smoke test לפני מיזוג.
+
+המסלול המוצע להעברת עברית לתמיכה רשמית של Microsoft מתועד ב-`docs/OFFICIALIZATION.md`.
+טיוטת העדכון ל-`microsoft/vscode-loc#1911` נמצאת ב-`docs/MICROSOFT_ISSUE_1911_COMMENT.md`.
+
+> החבילה הזו נשארת חבילת קהילה עד שמיקרוסופט מאמצת אותה בפועל. אין להשתמש ב-publisher של Microsoft בפרסום קהילתי.
