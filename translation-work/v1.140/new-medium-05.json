@@ -129,7 +129,7 @@
     },
     {
       "en": "MCP server selected a non-http(s) destination ({0}), which is not allowed",
-      "he": "שרת ה-MCP בחר יעד שאינו http(s) ‏({0}), דבר שאינו מותר"
+      "he": "שרת ה-MCP בחר יעד שאינו http(s) ({0}), דבר שאינו מותר"
     },
     {
       "en": "Telemetry contributions excluded by the selected block",
