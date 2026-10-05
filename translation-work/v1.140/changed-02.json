@@ -1,0 +1,157 @@
+{
+  "vscode": "1.140.0",
+  "kind": "changed-string-review",
+  "batch": "02-of-03",
+  "entries": [
+    {
+      "path": "core/vs/sessions/contrib/chat/browser/sessionsChatAccessibilityHelp/sessionsChat.subagentPills",
+      "en": "Activate a subagent pill in the chat transcript to open the subagent beside the current chat. With the keyboard, focus a pill and press Enter or Space; Alt+Enter also opens it to the side. You can also drag a pill to a chat group's edge to choose where it opens.",
+      "he": "הפעל תווית תת-סוכן בתמליל הצ'אט כדי לפתוח את תת-הסוכן לצד הצ'אט הנוכחי. במקלדת, מקד תווית והקש Enter או Space; גם Alt+Enter פותח אותה בצד. ניתן גם לגרור תווית לקצה של קבוצת צ'אט כדי לבחור היכן היא תיפתח."
+    },
+    {
+      "path": "core/vs/sessions/contrib/chat/browser/sessionsChatAccessibilityHelp/sessionsChat.syncChanges",
+      "en": "When available for a folder session with incoming or outgoing commits, Sync Changes appears with the commit counts in the same repository toolbar as the worktree and branch controls below the input. It is hidden when New Worktree is selected. Use Tab and the arrow keys to reach it, then Enter or Space to synchronize the session's repository. The action is disabled while synchronization is running.",
+      "he": "כאשר האפשרות זמינה עבור הפעלת תיקייה עם קומיטים נכנסים או יוצאים, 'סנכרן שינויים' מופיע עם מספרי הקומיטים באותו סרגל כלים של המאגר שבו נמצאים פקדי עץ העבודה והענף מתחת לשדה הקלט. הוא מוסתר כאשר 'עץ עבודה חדש' נבחר. השתמש ב-Tab ובמקשי החצים כדי להגיע אליו, ולאחר מכן ב-Enter או Space כדי לסנכרן את מאגר ההפעלה. הפעולה מושבתת בזמן שהסנכרון פועל."
+    },
+    {
+      "path": "core/vs/sessions/contrib/providers/agentHost/browser/agentHostAutomationStore/agentHostAutomation.interruptedLegacyRun",
+      "en": "Legacy run tracking was interrupted.",
+      "he": "המעקב אחר הרצה ישנה נקטע."
+    },
+    {
+      "path": "core/vs/sessions/contrib/sessions/browser/mobile/mobileOverlayContribution/mobileChangesNotAvailable",
+      "en": "File-level changes are not available yet.",
+      "he": "שינויים ברמת הקובץ עדיין אינם זמינים."
+    },
+    {
+      "path": "core/vs/sessions/contrib/sessions/browser/sessions.contribution/sessions.useWorktree",
+      "en": "Controls whether New Worktree is checked for a workspace that has not started a session before. Each workspace otherwise uses the choice from its last started session.",
+      "he": "קובע אם 'עץ עבודה חדש' מסומן עבור סביבת עבודה שעדיין לא התחילה הפעלה. בכל מקרה אחר, כל סביבת עבודה משתמשת בבחירה מההפעלה האחרונה שהתחילה בה."
+    },
+    {
+      "path": "core/vs/sessions/contrib/sessions/electron-browser/sessions.contribution/sessions.showApplicationBadge",
+      "en": "Controls whether the application icon shows a badge with the number of unarchived sessions matching {0}. The badge appears on the dock icon on macOS, on the launcher icon on Linux and over the taskbar icon on Windows.",
+      "he": "קובע אם סמל היישום מציג תג עם מספר ההפעלות שאינן בארכיון ותואמות ל-{0}. התג מופיע על סמל ה-Dock ב-macOS, על סמל המשגר ב-Linux ומעל סמל שורת המשימות ב-Windows."
+    },
+    {
+      "path": "core/vs/workbench/contrib/chat/browser/actions/chatAccessibilityHelp/chat.completedResponseDisclosure",
+      "en": "When completed response collapsing is enabled, the final response remains visible while earlier work is collapsed. Use Tab to focus the work disclosure and press Enter or Space to show or hide that work. With persistent progress enabled, a separate file changes button shows lines added and deleted when the collapsed work includes edits. Activate it to open those file changes without expanding the work.",
+      "he": "כאשר כיווץ תשובות שהושלמו מופעל, התשובה הסופית נשארת גלויה בעוד העבודה הקודמת מכווצת. השתמש ב-Tab כדי למקד את פקד גילוי העבודה והקש Enter או Space כדי להציג או להסתיר אותה. כאשר התקדמות מתמשכת מופעלת, לחצן נפרד של שינויי קבצים מציג את מספר השורות שנוספו ונמחקו כאשר העבודה המכווצת כוללת עריכות. הפעל אותו כדי לפתוח את שינויי הקבצים בלי להרחיב את העבודה."
+    },
+    {
+      "path": "core/vs/workbench/contrib/chat/browser/actions/chatAccessibilityHelp/chat.modelPicker.optimizeFor",
+      "en": "In Auto mode, use Up and Down Arrow to focus an \"Optimize for\" preference: Efficiency, Balance, or Intelligence. Enter or Space applies the preference and keeps the picker open. HydraFusion, when available, is an alternative routing choice, not an additional toggle. Focus HydraFusion and press Right Arrow to open its description and focus Learn more. Selecting it clears the active Auto tier; selecting a tier returns to Auto. Turning Auto off preserves the preference and routing choice. Auto has no separate details page: both the Auto name and preference readout in the chat input open these routing choices.",
+      "he": "במצב Auto, השתמש בחצים למעלה ולמטה כדי למקד העדפת 'מיטוב עבור': יעילות, איזון או אינטליגנציה. Enter או Space מחילים את ההעדפה ומשאירים את הבורר פתוח. HydraFusion, כאשר הוא זמין, הוא אפשרות ניתוב חלופית ולא מתג נוסף. מקד את HydraFusion והקש חץ ימינה כדי לפתוח את התיאור שלו ולמקד את 'מידע נוסף'. בחירה בו מנקה את רמת Auto הפעילה; בחירת רמה מחזירה ל-Auto. כיבוי Auto שומר את ההעדפה ואת בחירת הניתוב. ל-Auto אין דף פרטים נפרד: גם השם Auto וגם תצוגת ההעדפה בשדה הקלט של הצ'אט פותחים את אפשרויות הניתוב האלה."
+    },
+    {
+      "path": "core/vs/workbench/contrib/chat/browser/actions/chatAccessibilityHelp/chat.modelPicker.resetToDefault",
+      "en": "In a model's details, use Tab to reach thinking effort, context, and model actions. Use arrow keys to move between options, then Enter or Space to choose one. Reset to Default appears beside Pin Model when thinking effort or context has been changed. It restores both settings to the model's defaults without changing its pinned state. Choosing an option or resetting the settings selects that model and keeps its details open. Pinning or unpinning updates the model list without moving its details or keyboard focus. Back does not undo saved settings, but a save that finishes after leaving details does not override a newer model selection.",
+      "he": "בפרטי מודל, השתמש ב-Tab כדי להגיע למאמץ החשיבה, להקשר ולפעולות המודל. השתמש במקשי החצים כדי לעבור בין האפשרויות, ולאחר מכן ב-Enter או Space כדי לבחור אחת. 'אפס לברירת מחדל' מופיע לצד 'הצמד מודל' כאשר מאמץ החשיבה או ההקשר שונו. הוא משחזר את שתי ההגדרות לברירות המחדל של המודל בלי לשנות את מצב ההצמדה שלו. בחירת אפשרות או איפוס ההגדרות בוחרים את המודל הזה ומשאירים את פרטיו פתוחים. הצמדה או ביטול הצמדה מעדכנים את רשימת המודלים בלי להזיז את הפרטים או את מיקוד המקלדת. 'חזרה' אינה מבטלת הגדרות שנשמרו, אך שמירה שמסתיימת לאחר יציאה מהפרטים אינה דורסת בחירת מודל חדשה יותר."
+    },
+    {
+      "path": "core/vs/workbench/contrib/chat/browser/actions/chatAccessibilityHelp/chat.sessionStatusPills",
+      "en": "When session status pills appear above the input, use Tab to focus the toolbar, then use the left and right arrow keys to move between pills. Press Enter or Space to activate a pill. Open the context menu{0} to choose which optional pills are visible. Pull Requests Options lets you show all pull requests or only open and draft ones, remembered across sessions. If every pull request is filtered out, these options are also available in any other pill's context menu or the toolbar context menu.",
+      "he": "כאשר תוויות מצב ההפעלה מופיעות מעל שדה הקלט, השתמש ב-Tab כדי למקד את סרגל הכלים ולאחר מכן בחצים שמאלה וימינה כדי לעבור בין התוויות. הקש Enter או Space כדי להפעיל תווית. פתח את תפריט ההקשר{0} כדי לבחור אילו תוויות אופציונליות יהיו גלויות. 'אפשרויות בקשות משיכה' מאפשרות להציג את כל בקשות המשיכה או רק את הפתוחות והטיוטות, והבחירה נשמרת בין הפעלות. אם כל בקשות המשיכה מסוננות, אפשרויות אלה זמינות גם בתפריט ההקשר של כל תווית אחרת או בתפריט ההקשר של סרגל הכלים."
+    },
+    {
+      "path": "core/vs/workbench/contrib/chat/browser/actions/chatAccessibilityHelp/chatAgent.acceptTool",
+      "en": "To accept a tool action, use the Accept Tool Confirmation command{0}. When the confirmation carousel is shown, this activates the primary button of the selected confirmation. Disabled actions cannot be accepted.",
+      "he": "כדי לאשר פעולת כלי, השתמש בפקודה 'אשר אישור כלי'{0}. כאשר קרוסלת האישורים מוצגת, פעולה זו מפעילה את הלחצן הראשי של האישור שנבחר. לא ניתן לאשר פעולות מושבתות."
+    },
+    {
+      "path": "core/vs/workbench/contrib/chat/browser/agentSessions/agentHost/agentHostModePickerPresentation/agentHostModePicker.accessibilityHelp",
+      "en": "When the experimental combined picker is enabled for a Copilot Agent Host session, Tab reaches separate Mode and Permissions buttons. Press Enter or Space on Mode to open the picker with Agent Mode expanded, or on Permissions to open it with Permissions expanded. Each section header shows its current selection, and the opened section initially focuses that selection. Press Enter or Space on a section header to expand or collapse it, or use Right Arrow to expand and Left Arrow to collapse. Hover or keyboard navigation moves the single row highlight without changing the selection until you activate a choice. Focus the Permissions header and press Tab to reach Configure Permissions, which opens the related settings. Use Up and Down Arrow to navigate and Enter to select a mode, permission level, or terminal sandboxing. Assisted permissions is experimental and evaluates risk before running tools. Enterprise policy can disable Assisted permissions and Allow all. When the session's host requires terminal sandboxing, its sandbox toggle is checked and disabled. If your organization permits bypassing, a supported outside-sandbox permission prompt can offer Allow in this Session. After that action succeeds, you can use the toggle to enable sandboxing again. This restriction applies only to that session. Escape closes the picker and returns focus to the button that opened it.",
+      "he": "כאשר הבורר המשולב הניסיוני מופעל עבור הפעלת Copilot Agent Host, מקש Tab מגיע ללחצני 'מצב' ו'הרשאות' נפרדים. הקש Enter או Space על 'מצב' כדי לפתוח את הבורר כאשר 'מצב סוכן' מורחב, או על 'הרשאות' כדי לפתוח אותו כאשר 'הרשאות' מורחב. כל כותרת מקטע מציגה את הבחירה הנוכחית שלה, והמקטע שנפתח ממקד תחילה את הבחירה הזו. הקש Enter או Space על כותרת מקטע כדי להרחיב או לכווץ אותו, או השתמש בחץ ימינה כדי להרחיב ובחץ שמאלה כדי לכווץ. ריחוף או ניווט במקלדת מזיזים את הדגשת השורה בלי לשנות את הבחירה עד להפעלת אפשרות. מקד את כותרת 'הרשאות' והקש Tab כדי להגיע אל 'הגדר הרשאות', שפותח את ההגדרות הקשורות. השתמש בחצים למעלה ולמטה כדי לנווט וב-Enter כדי לבחור מצב, רמת הרשאה או ארגז חול למסוף. הרשאות בסיוע הן ניסיוניות ומעריכות סיכון לפני הפעלת כלים. מדיניות ארגונית יכולה להשבית הרשאות בסיוע ואת 'אפשר הכול'. כאשר המארח של ההפעלה דורש ארגז חול למסוף, מתג ארגז החול מסומן ומושבת. אם הארגון שלך מאפשר עקיפה, בקשת הרשאה נתמכת לפעולה מחוץ לארגז החול יכולה להציע 'אפשר בהפעלה זו'. לאחר שהפעולה מצליחה, ניתן להשתמש במתג כדי להפעיל שוב את ארגז החול. הגבלה זו חלה רק על אותה הפעלה. Escape סוגר את הבורר ומחזיר את המיקוד ללחצן שפתח אותו."
+    },
+    {
+      "path": "core/vs/workbench/contrib/chat/browser/agentSessions/agentHost/agentHostSessionInputPills/agentHostSessionPills.copyCommit",
+      "en": "Copy Commit Hash for {0}",
+      "he": "העתק גיבוב קומיט עבור {0}"
+    },
+    {
+      "path": "core/vs/workbench/contrib/chat/browser/aiCustomization/aiCustomizationManagementEditor/homeButtonLabel",
+      "en": "Discover",
+      "he": "גילוי"
+    },
+    {
+      "path": "core/vs/workbench/contrib/chat/browser/aiCustomization/aiCustomizationManagementEditor/migrationChecklistMcpDescription",
+      "en": "Move eligible workspace servers to the root .mcp.json and review servers that cannot be migrated.",
+      "he": "העבר שרתי סביבת עבודה מתאימים אל `.mcp.json` שבשורש וסקור שרתים שלא ניתן להעביר."
+    },
+    {
+      "path": "core/vs/workbench/contrib/chat/browser/aiCustomization/aiCustomizationManagementEditor/migrationNoEditableDestinations",
+      "en": "There are no file migration destinations to configure. Workspace MCP servers migrate to the root .mcp.json; user MCP servers migrate to mcp-config.json in Copilot home.",
+      "he": "אין יעדי העברת קבצים להגדרה. שרתי MCP של סביבת העבודה מועברים אל `.mcp.json` שבשורש; שרתי MCP של המשתמש מועברים אל `mcp-config.json` בתיקיית הבית של Copilot."
+    },
+    {
+      "path": "core/vs/workbench/contrib/chat/browser/aiCustomization/customizationMigrationAccessibility/migrationHelpLocations",
+      "en": "Change destinations configures file migration locations. Workspace MCP servers migrate to the root .mcp.json. User MCP servers migrate to mcp-config.json in Copilot home. Disabled user servers may become enabled after migration. Servers that cannot be migrated are listed separately with the reason.",
+      "he": "'שנה יעדים' מגדיר את מיקומי העברת הקבצים. שרתי MCP של סביבת העבודה מועברים אל `.mcp.json` שבשורש. שרתי MCP של המשתמש מועברים אל `mcp-config.json` בתיקיית הבית של Copilot. שרתי משתמש מושבתים עשויים להפוך למופעלים לאחר ההעברה. שרתים שלא ניתן להעביר מוצגים בנפרד יחד עם הסיבה."
+    },
+    {
+      "path": "core/vs/workbench/contrib/chat/browser/aiCustomization/customizationMigrationCategories/mcpMigrationBannerMessage",
+      "en": "Eligible servers move from .vscode/mcp.json to .mcp.json at each workspace root so {0} can discover them directly. Servers that cannot be migrated and unselected servers stay in their current files.",
+      "he": "שרתים מתאימים עוברים מ-`.vscode/mcp.json` אל `.mcp.json` בכל שורש של סביבת עבודה כדי ש-{0} יוכל לגלות אותם ישירות. שרתים שלא ניתן להעביר ושרתים שלא נבחרו נשארים בקבצים הנוכחיים שלהם."
+    },
+    {
+      "path": "core/vs/workbench/contrib/chat/browser/aiCustomization/customizationMigrationCategories/mcpMigrationCardActionAriaLabel",
+      "en": "Migrate eligible MCP servers",
+      "he": "העבר שרתי MCP מתאימים"
+    },
+    {
+      "path": "core/vs/workbench/contrib/chat/browser/aiCustomization/customizationMigrationCategories/mcpMigrationCardDescriptionMultiple",
+      "en": "Found {0} eligible servers in .vscode/mcp.json that can move to workspace root files so {1} can discover them directly.",
+      "he": "נמצאו {0} שרתים מתאימים ב-`.vscode/mcp.json` שניתן להעביר לקובצי השורש של סביבת העבודה כדי ש-{1} יוכל לגלות אותם ישירות."
+    },
+    {
+      "path": "core/vs/workbench/contrib/chat/browser/aiCustomization/customizationMigrationCategories/mcpMigrationCardDescriptionSingle",
+      "en": "Found 1 eligible server in .vscode/mcp.json that can move to the workspace root so {0} can discover it directly.",
+      "he": "נמצא שרת מתאים אחד ב-`.vscode/mcp.json` שניתן להעביר לשורש סביבת העבודה כדי ש-{0} יוכל לגלות אותו ישירות."
+    },
+    {
+      "path": "core/vs/workbench/contrib/chat/browser/aiCustomization/customizationMigrationCategories/mcpMigrationConfirmDetail",
+      "en": "Selected entries are removed from .vscode/mcp.json after they are written and verified in .mcp.json. Entries that cannot be migrated and unselected entries stay in place.",
+      "he": "הרשומות שנבחרו מוסרות מ-`.vscode/mcp.json` לאחר שנכתבו ואומתו ב-`.mcp.json`. רשומות שלא ניתן להעביר ורשומות שלא נבחרו נשארות במקומן."
+    },
+    {
+      "path": "core/vs/workbench/contrib/chat/browser/aiCustomization/customizationMigrationCategories/mcpMigrationInvalidTarget",
+      "en": "Could not migrate '{0}' because the destination MCP configuration is invalid.",
+      "he": "לא ניתן היה להעביר את '{0}' מכיוון שתצורת MCP ביעד אינה חוקית."
+    },
+    {
+      "path": "core/vs/workbench/contrib/chat/browser/aiCustomization/customizationMigrationCategories/mcpMigrationPageButtonTooltip",
+      "en": "Move selected MCP servers to workspace root or Copilot home configuration files",
+      "he": "העבר את שרתי ה-MCP שנבחרו לקובצי התצורה בשורש סביבת העבודה או בתיקיית הבית של Copilot"
+    },
+    {
+      "path": "core/vs/workbench/contrib/chat/browser/aiCustomization/customizationMigrationCategories/mcpMigrationPageDescriptionMultiple",
+      "en": "Select eligible MCP servers to move so {0} can discover them directly. Servers that cannot be migrated and unselected servers stay in their current files.",
+      "he": "בחר שרתי MCP מתאימים להעברה כדי ש-{0} יוכל לגלות אותם ישירות. שרתים שלא ניתן להעביר ושרתים שלא נבחרו נשארים בקבצים הנוכחיים שלהם."
+    },
+    {
+      "path": "core/vs/workbench/contrib/chat/browser/aiCustomization/customizationMigrationCategories/mcpMigrationPageDescriptionSingle",
+      "en": "Select the eligible MCP server to move so {0} can discover it directly. Servers that cannot be migrated and unselected servers stay in their current files.",
+      "he": "בחר את שרת ה-MCP המתאים להעברה כדי ש-{0} יוכל לגלות אותו ישירות. שרתים שלא ניתן להעביר ושרתים שלא נבחרו נשארים בקבצים הנוכחיים שלהם."
+    },
+    {
+      "path": "core/vs/workbench/contrib/chat/browser/aiCustomization/customizationMigrationCategories/mcpMigrationPageEmpty",
+      "en": "No MCP servers are eligible to migrate.",
+      "he": "אין שרתי MCP שמתאימים להעברה."
+    },
+    {
+      "path": "core/vs/workbench/contrib/chat/browser/aiCustomization/customizationMigrationCategories/mcpMigrationShortcutTooltip",
+      "en": "Move eligible MCP servers to workspace root or Copilot home configuration files",
+      "he": "העבר שרתי MCP מתאימים לקובצי התצורה בשורש סביבת העבודה או בתיקיית הבית של Copilot"
+    },
+    {
+      "path": "core/vs/workbench/contrib/chat/browser/aiCustomization/customizationMigrationCategories/mcpMigrationTargetConflict",
+      "en": "Could not migrate '{0}' because the destination already contains a different server with that name.",
+      "he": "לא ניתן היה להעביר את '{0}' מכיוון שהיעד כבר מכיל שרת אחר בשם זה."
+    },
+    {
+      "path": "core/vs/workbench/contrib/chat/browser/aiCustomization/mcpListWidget/agentHostMcpServerDisable",
+      "en": "Disable (Globally)",
+      "he": "השבת (באופן גלובלי)"
+    }
+  ]
+}
