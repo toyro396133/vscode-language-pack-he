@@ -1,0 +1,207 @@
+{
+  "vscode": "1.140.0",
+  "kind": "new-source-translation",
+  "batch": "new-medium-10",
+  "entries": [
+    {
+      "en": "The skill contains too much file metadata to install safely.",
+      "he": "המיומנות מכילה יותר מדי מטא-נתוני קבצים מכדי להתקין אותה בבטחה."
+    },
+    {
+      "en": "A recorded skill file cannot be repaired because its destination is occupied by another file type.",
+      "he": "לא ניתן לתקן קובץ מיומנות שנרשם מכיוון שהיעד שלו תפוס על ידי סוג קובץ אחר."
+    },
+    {
+      "en": "The recorded skill revision is no longer available from its source.",
+      "he": "גרסת המיומנות שנרשמה אינה זמינה עוד מהמקור שלה."
+    },
+    {
+      "en": "The recorded skill files are no longer available from the original source.",
+      "he": "קובצי המיומנות שנרשמו אינם זמינים עוד מהמקור המקורי."
+    },
+    {
+      "en": "The skill cannot be repaired because its destination contains a symbolic link or non-directory path.",
+      "he": "לא ניתן לתקן את המיומנות מכיוון שהיעד שלה מכיל קישור סמלי או נתיב שאינו תיקייה."
+    },
+    {
+      "en": "The skill source changed while it was being copied. Try installing it again.",
+      "he": "מקור המיומנות השתנה בזמן ההעתקה. נסה להתקין אותה שוב."
+    },
+    {
+      "en": "The skill contains symbolic links or too many files. Review the source before installing it manually.",
+      "he": "המיומנות מכילה קישורים סמליים או יותר מדי קבצים. סקור את המקור לפני התקנה ידנית."
+    },
+    {
+      "en": "The skill must be a directory inside its repository, without symbolic links.",
+      "he": "המיומנות חייבת להיות תיקייה בתוך המאגר שלה, ללא קישורים סמליים."
+    },
+    {
+      "en": "The skill contains a file type that cannot be installed.",
+      "he": "המיומנות מכילה סוג קובץ שלא ניתן להתקין."
+    },
+    {
+      "en": "{0} for {1}. Reload all sources from the first page.",
+      "he": "{0} עבור {1}. טען מחדש את כל המקורות מהעמוד הראשון."
+    },
+    {
+      "en": "Results may be incomplete. Retry reloads all sources from the first page.",
+      "he": "ייתכן שהתוצאות אינן מלאות. 'נסה שוב' טוען מחדש את כל המקורות מהעמוד הראשון."
+    },
+    {
+      "en": "Open an MCP server that cannot be migrated to review its details. Edit Configuration opens the source file and selects that server's JSON configuration.",
+      "he": "פתח שרת MCP שלא ניתן להעביר כדי לסקור את פרטיו. 'ערוך תצורה' פותח את קובץ המקור ובוחר את תצורת ה-JSON של אותו שרת."
+    },
+    {
+      "en": "Found {0} eligible MCP servers. User servers move to mcp-config.json in Copilot home; workspace servers move to the root .mcp.json so {1} can discover them directly.",
+      "he": "נמצאו {0} שרתי MCP מתאימים. שרתי משתמש עוברים אל `mcp-config.json` בתיקיית הבית של Copilot; שרתי סביבת עבודה עוברים אל `.mcp.json` שבשורש כדי ש-{1} יוכל לגלות אותם ישירות."
+    },
+    {
+      "en": "Move user servers to Copilot home and workspace servers to .mcp.json. The original entries will be removed.\n\nDisabled user servers may become enabled.",
+      "he": "העבר שרתי משתמש לתיקיית הבית של Copilot ושרתי סביבת עבודה אל `.mcp.json`. הרשומות המקוריות יוסרו.\n\nשרתי משתמש מושבתים עשויים להפוך למופעלים."
+    },
+    {
+      "en": "Move to Copilot home for use across profiles and workspaces. The original entries will be removed.\n\nDisabled servers may become enabled.",
+      "he": "העבר לתיקיית הבית של Copilot לשימוש בין פרופילים וסביבות עבודה. הרשומות המקוריות יוסרו.\n\nשרתים מושבתים עשויים להפוך למופעלים."
+    },
+    {
+      "en": "Move to Copilot home for use across profiles and workspaces. The original entry will be removed.\n\nDisabled servers may become enabled.",
+      "he": "העבר לתיקיית הבית של Copilot לשימוש בין פרופילים וסביבות עבודה. הרשומה המקורית תוסר.\n\nשרתים מושבתים עשויים להפוך למופעלים."
+    },
+    {
+      "en": "{0} workspace and {1} user customizations need an update to keep working.",
+      "he": "{0} התאמות אישיות של סביבת העבודה ו-{1} התאמות משתמש זקוקות לעדכון כדי להמשיך לפעול."
+    },
+    {
+      "en": "{0} user customizations need an update to keep working.",
+      "he": "{0} התאמות משתמש זקוקות לעדכון כדי להמשיך לפעול."
+    },
+    {
+      "en": "{0} user customization needs an update to keep working.",
+      "he": "התאמת משתמש אחת מתוך {0} זקוקה לעדכון כדי להמשיך לפעול."
+    },
+    {
+      "en": "{0} workspace customizations need an update to keep working.",
+      "he": "{0} התאמות אישיות של סביבת העבודה זקוקות לעדכון כדי להמשיך לפעול."
+    },
+    {
+      "en": "{0} workspace customization needs an update to keep working.",
+      "he": "התאמה אישית אחת של סביבת העבודה מתוך {0} זקוקה לעדכון כדי להמשיך לפעול."
+    },
+    {
+      "en": "Could not locate the configuration for '{0}'. Opening the source file instead.",
+      "he": "לא ניתן היה לאתר את התצורה עבור '{0}'. פותח במקום זאת את קובץ המקור."
+    },
+    {
+      "en": "This MCP server needs to be migrated to keep working.",
+      "he": "יש להעביר שרת MCP זה כדי שימשיך לפעול."
+    },
+    {
+      "en": "MCP servers installed or provided by the active workspace, plugins, extensions, and agent host.",
+      "he": "שרתי MCP שמותקנים או מסופקים על ידי סביבת העבודה הפעילה, תוספים, הרחבות ומארח הסוכן."
+    },
+    {
+      "en": "Plugins installed locally or configured by the active remote session.",
+      "he": "תוספים שמותקנים מקומית או מוגדרים על ידי ההפעלה המרוחקת הפעילה."
+    },
+    {
+      "en": "The default folder for archives and folders created by the Developer: Export Agent Host Debug Logs command. When empty or unavailable, the default file-dialog location is used.",
+      "he": "תיקיית ברירת המחדל עבור ארכיונים ותיקיות שנוצרים על ידי הפקודה Developer: Export Agent Host Debug Logs. כאשר הערך ריק או אינו זמין, נעשה שימוש במיקום ברירת המחדל של דו-שיח הקבצים."
+    },
+    {
+      "en": "The default Agent Host debug-log export location must be an absolute path (for example, C:\\\\myFolder or /myFolder).",
+      "he": "מיקום ברירת המחדל לייצוא יומני ניפוי של מארח הסוכן חייב להיות נתיב מוחלט, לדוגמה `C:\\\\myFolder` או `/myFolder`."
+    },
+    {
+      "en": "This setting no longer has any effect. Use `#chat.agent.sandbox.enabled#` for both the SDK's built-in shell tool and the Agent Host's custom terminal tool.",
+      "he": "להגדרה זו אין עוד השפעה. השתמש ב-`#chat.agent.sandbox.enabled#` הן עבור כלי המעטפת המובנה של ה-SDK והן עבור כלי המסוף המותאם של מארח הסוכן."
+    },
+    {
+      "en": "Deprecated sandbox mode for the Copilot SDK's built-in shell tool on macOS and Linux.",
+      "he": "מצב ארגז חול מיושן עבור כלי המעטפת המובנה של Copilot SDK ב-macOS ו-Linux."
+    },
+    {
+      "en": "This setting no longer has any effect. Use `#chat.agent.sandbox.enabledWindows#` for both the SDK's built-in shell tool and the Agent Host's custom terminal tool.",
+      "he": "להגדרה זו אין עוד השפעה. השתמש ב-`#chat.agent.sandbox.enabledWindows#` הן עבור כלי המעטפת המובנה של ה-SDK והן עבור כלי המסוף המותאם של מארח הסוכן."
+    },
+    {
+      "en": "Deprecated sandbox mode for the Copilot SDK's built-in shell tool on Windows.",
+      "he": "מצב ארגז חול מיושן עבור כלי המעטפת המובנה של Copilot SDK ב-Windows."
+    },
+    {
+      "en": "Controls whether the Agents Window shows a tip about using `/btw` to ask side questions.",
+      "he": "קובע אם חלון הסוכנים מציג טיפ על שימוש ב-`/btw` כדי לשאול שאלות צדדיות."
+    },
+    {
+      "en": "Do not show a promo on the Copilot icon when Chat is closed.",
+      "he": "אל תציג קידום על סמל Copilot כאשר הצ'אט סגור."
+    },
+    {
+      "en": "When enabled, makes the experimental HydraFusion model available to local Copilot Agent Host sessions. Changing this setting restarts the local Copilot runtime.",
+      "he": "כאשר האפשרות מופעלת, מודל HydraFusion הניסיוני נעשה זמין להפעלות מקומיות של Copilot Agent Host. שינוי הגדרה זו מפעיל מחדש את סביבת הריצה המקומית של Copilot."
+    },
+    {
+      "en": "Enables Copilot connectors in the unified marketplace and exposes connected connector MCP servers in Chat Customizations and Copilot agent sessions.",
+      "he": "מפעיל מחברי Copilot ב-Marketplace המאוחד וחושף שרתי MCP של מחברים מחוברים בהתאמות האישיות של הצ'אט ובהפעלות סוכן Copilot."
+    },
+    {
+      "en": "Controls whether Plugin, MCP, and Tools customization pages use checkboxes or switches for enablement.",
+      "he": "קובע אם דפי ההתאמות האישיות של Plugin, ‏MCP ו-Tools משתמשים בתיבות סימון או במתגים להפעלה."
+    },
+    {
+      "en": "Use checkboxes for customization enablement controls.",
+      "he": "השתמש בתיבות סימון עבור פקדי הפעלת התאמות אישיות."
+    },
+    {
+      "en": "Use switches for customization enablement controls.",
+      "he": "השתמש במתגים עבור פקדי הפעלת התאמות אישיות."
+    },
+    {
+      "en": "Controls whether the Welcome page shows a GitHub sign-in button instead of the Agents window button when signed out.",
+      "he": "קובע אם דף הברכה מציג לחצן התחברות ל-GitHub במקום לחצן חלון הסוכנים כאשר המשתמש מנותק."
+    },
+    {
+      "en": "Draw the right-slanting ribbon, right edge, and left-slanting ribbon in sequence, then erase them in the same counterclockwise direction and order.",
+      "he": "צייר ברצף את הסרט האלכסוני ימינה, הקצה הימני והסרט האלכסוני שמאלה, ולאחר מכן מחק אותם באותו כיוון נגד כיוון השעון ובאותו סדר."
+    },
+    {
+      "en": "Use the Draw animation with the same grayscale treatment as the VS Code icon in the Agents window. High contrast themes retain their contrast color.",
+      "he": "השתמש בהנפשת Draw עם אותו עיבוד בגווני אפור כמו סמל VS Code בחלון הסוכנים. ערכות נושא בניגודיות גבוהה שומרות על צבע הניגוד שלהן."
+    },
+    {
+      "en": "Keep the same persistent progress text and tool rendering as Draw (Monochrome), but hide the VS Code icon.",
+      "he": "שמור על אותו טקסט התקדמות מתמשכת ועיבוד כלים כמו Draw (Monochrome), אך הסתר את סמל VS Code."
+    },
+    {
+      "en": "Keep the original thinking, tool, and working progress rendering without a persistent indicator or VS Code logo.",
+      "he": "שמור על העיבוד המקורי של חשיבה, כלים והתקדמות עבודה ללא מחוון מתמשך או לוגו VS Code."
+    },
+    {
+      "en": "Preview tool calls while they run, then collapse each group to a single expandable summary row when the response moves on.",
+      "he": "הצג תצוגה מקדימה של קריאות כלים בזמן שהן פועלות, ולאחר מכן כווץ כל קבוצה לשורת סיכום אחת שניתנת להרחבה כאשר התשובה ממשיכה הלאה."
+    },
+    {
+      "en": "Keep tool calls in expanded, headerless chains without an internal scrolling limit.",
+      "he": "השאר קריאות כלים בשרשראות מורחבות ללא כותרת וללא מגבלת גלילה פנימית."
+    },
+    {
+      "en": "Use `/btw <question>` to ask a side question without adding it to the current conversation.",
+      "he": "השתמש ב-`/btw <question>` כדי לשאול שאלה צדדית בלי להוסיף אותה לשיחה הנוכחית."
+    },
+    {
+      "en": "Open a safe, unsent Agents draft and compare available models, providers, and billing information.",
+      "he": "פתח טיוטת סוכנים בטוחה שלא נשלחה והשווה בין מודלים זמינים, ספקים ופרטי חיוב."
+    },
+    {
+      "en": "The Agents draft opened, but its model picker could not be highlighted. Use Models in Chat or Agents after setting up a provider.",
+      "he": "טיוטת הסוכנים נפתחה, אך לא ניתן היה להדגיש את בורר המודלים שלה. השתמש ב'מודלים' בצ'אט או בסוכנים לאחר הגדרת ספק."
+    },
+    {
+      "en": "Models can come from different providers and vary in capability, speed, and billing or premium request usage. Review the details for your provider and plan before choosing.",
+      "he": "מודלים יכולים להגיע מספקים שונים ולהשתנות ביכולת, במהירות ובחיוב או בשימוש בבקשות פרימיום. סקור את הפרטים עבור הספק והתוכנית שלך לפני הבחירה."
+    },
+    {
+      "en": "The Agents draft opened, but its model picker is unavailable. Set up Chat or a model provider, then use Models in Chat or Agents to compare options and billing.",
+      "he": "טיוטת הסוכנים נפתחה, אך בורר המודלים שלה אינו זמין. הגדר את הצ'אט או ספק מודלים, ולאחר מכן השתמש ב'מודלים' בצ'אט או בסוכנים כדי להשוות אפשרויות וחיוב."
+    }
+  ]
+}
