@@ -1,0 +1,157 @@
+{
+  "vscode": "1.140.0",
+  "kind": "changed-string-review",
+  "batch": "01-of-03",
+  "entries": [
+    {
+      "path": "core/vs/platform/agentHost/common/agentHostCustomizationConfig/agentHost.config.githubEnterpriseUri.description",
+      "en": "Optional base URI of a GitHub Enterprise instance (for example \"https://ghe.example.com\" for GitHub Enterprise Server, or \"https://tenant.ghe.com\" for GitHub Enterprise Cloud). When set, the agent host authenticates and makes GitHub API calls against this instance instead of github.com. Normally pushed by the connected VS Code client from the selected enterprise account's authorization server; remote agent host operators can set it directly in the remote `agent-host-config.json`.",
+      "he": "כתובת URI בסיסית אופציונלית של מופע GitHub Enterprise (לדוגמה, \"https://ghe.example.com\" עבור GitHub Enterprise Server, או \"https://tenant.ghe.com\" עבור GitHub Enterprise Cloud). כאשר היא מוגדרת, מארח הסוכן מבצע אימות ושולח קריאות API של GitHub אל מופע זה במקום אל github.com. בדרך כלל הערך נדחף על ידי לקוח VS Code המחובר משרת ההרשאות של חשבון הארגון שנבחר; מפעילי מארח סוכן מרוחק יכולים להגדיר אותו ישירות בקובץ `agent-host-config.json` המרוחק."
+    },
+    {
+      "path": "core/vs/platform/agentHost/common/agentMerge/agentMerge.disabled.branchChanged",
+      "en": "Agent Merge was disabled because the checked-out branch changed from {0} to {1}. To resume, check out the branch you want to monitor and enable Agent Merge again.",
+      "he": "מיזוג הסוכן הושבת מכיוון שהענף שנמצא בצ'ק-אאוט השתנה מ-{0} ל-{1}. כדי להמשיך, בצע צ'ק-אאוט לענף שברצונך לנטר והפעל שוב את מיזוג הסוכן."
+    },
+    {
+      "path": "core/vs/platform/agentHost/common/agentMerge/agentMerge.notice.configuration.changed.global",
+      "en": "Agent Merge default settings changed for all sessions. For this session: {0}",
+      "he": "הגדרות ברירת המחדל של מיזוג הסוכן השתנו עבור כל ההפעלות. עבור הפעלה זו: {0}"
+    },
+    {
+      "path": "core/vs/platform/agentHost/common/agentMerge/agentMerge.notice.configuration.changed.session",
+      "en": "Agent Merge settings changed for this session. {0}",
+      "he": "הגדרות מיזוג הסוכן השתנו עבור הפעלה זו. {0}"
+    },
+    {
+      "path": "core/vs/platform/agentHost/common/agentMerge/agentMerge.notice.enabled",
+      "en": "It will wait for a pull request on this branch, then monitor it.",
+      "he": "מיזוג הסוכן ימתין לבקשת משיכה בענף זה ולאחר מכן ינטר אותה."
+    },
+    {
+      "path": "core/vs/platform/agentHost/common/agentMerge/agentMerge.notice.enabled.withPullRequest",
+      "en": "It is monitoring the pull request for this branch.",
+      "he": "מיזוג הסוכן מנטר את בקשת המשיכה של ענף זה."
+    },
+    {
+      "path": "core/vs/platform/agentHost/common/autoModeTiers/autoModeTier.balanceDescription",
+      "en": "Balances cost/speed and capability based on task complexity.",
+      "he": "מאזן בין עלות ומהירות לבין יכולת בהתאם למורכבות המשימה."
+    },
+    {
+      "path": "core/vs/platform/agentHost/common/autoModeTiers/autoModeTier.efficiencyDescription",
+      "en": "Optimizes for cost and speed, using more capable models only when needed.",
+      "he": "ממטב עלות ומהירות, ומשתמש במודלים בעלי יכולות גבוהות יותר רק בעת הצורך."
+    },
+    {
+      "path": "core/vs/platform/agentHost/common/autoModeTiers/autoModeTier.intelligenceDescription",
+      "en": "Optimizes for capability, using faster models only when the task allows it.",
+      "he": "ממטב את היכולת, ומשתמש במודלים מהירים יותר רק כשהמשימה מאפשרת זאת."
+    },
+    {
+      "path": "core/vs/platform/agentHost/common/copilotCliConfig/agentHost.config.autoModeTierOverride.description",
+      "en": "Overrides Auto's \"Optimize for\" preference. Accepts efficiency, balance, or intelligence. Applied when a session is created or resumed and when its model changes. Empty or unsupported values use the picker or service defaults.",
+      "he": "עוקף את ההעדפה \"מיטוב עבור\" של Auto. מקבל efficiency, balance או intelligence. מוחל בעת יצירה או חידוש של הפעלה וכאשר המודל שלה משתנה. ערכים ריקים או לא נתמכים משתמשים בברירות המחדל של הבורר או השירות."
+    },
+    {
+      "path": "core/vs/platform/agentHost/node/agentService/agentHost.download.agentSdkTitle",
+      "en": "Downloading {0} Agent",
+      "he": "מוריד סוכן {0}"
+    },
+    {
+      "path": "core/vs/platform/agentHost/node/shared/worktreeIsolation/agentHost.sessionConfig.worktreeIncludeFilesDescription",
+      "en": "Patterns, in .gitignore syntax, for git-ignored files to copy into the isolated worktree.",
+      "he": "תבניות, בתחביר `.gitignore`, עבור קבצים ש-Git מתעלם מהם ושיש להעתיק לעץ העבודה המבודד."
+    },
+    {
+      "path": "core/vs/sessions/browser/parts/mobile/contributions/mobileChangesView/changesView.empty",
+      "en": "No changes yet.",
+      "he": "אין שינויים עדיין."
+    },
+    {
+      "path": "core/vs/sessions/common/contextkeys/sessionActiveChatIsClosable",
+      "en": "Whether the active chat surface can be closed, either by hiding a non-main chat or by removing a side-by-side chat group",
+      "he": "האם ניתן לסגור את משטח הצ'אט הפעיל, בין אם בהסתרת צ'אט שאינו ראשי ובין אם בהסרת קבוצת צ'אטים זה לצד זה"
+    },
+    {
+      "path": "core/vs/sessions/contrib/changes/browser/sessionsChangesAccessibilityHelp/sessionsChanges.createPR",
+      "en": "For Agent Host sessions, Create PR opens a form with generated, editable title and description, a draft checkbox, and merge options. The form appears while generation is in progress and preserves anything you type. Use Tab to navigate and Escape to dismiss while keeping your text. Cancel discards your text.",
+      "he": "עבור הפעלות מארח הסוכן, 'צור PR' פותח טופס עם כותרת ותיאור שנוצרים וניתנים לעריכה, תיבת סימון לטיוטה ואפשרויות מיזוג. הטופס מופיע בזמן שהיצירה מתבצעת ושומר כל טקסט שאתה מקליד. השתמש ב-Tab כדי לנווט וב-Escape כדי לסגור את הטופס תוך שמירת הטקסט שלך. 'ביטול' מוחק את הטקסט."
+    },
+    {
+      "path": "core/vs/sessions/contrib/changes/browser/sessionsChangesAccessibilityHelp/sessionsChanges.createPR.overview",
+      "en": "You are in the Create Pull Request form. Title and description are generated in the background. Each field shows a loading indicator and reports a busy state until generation finishes. Your remembered options are shown immediately and can be changed while generation is in progress. You may start editing immediately; generated text never replaces your edits.",
+      "he": "אתה נמצא בטופס 'צור בקשת משיכה'. הכותרת והתיאור נוצרים ברקע. כל שדה מציג מחוון טעינה ומדווח על מצב עסוק עד שהיצירה מסתיימת. האפשרויות שנשמרו עבורך מוצגות מיד וניתן לשנות אותן בזמן שהיצירה מתבצעת. ניתן להתחיל לערוך מיד; טקסט שנוצר לעולם אינו מחליף את העריכות שלך."
+    },
+    {
+      "path": "core/vs/sessions/contrib/changes/browser/sessionsChangesAccessibilityHelp/sessionsChanges.createPR.preferences",
+      "en": "Draft, merge options, and the last-used submission action are remembered across sessions in this profile, even if you cancel. Title and description are kept in memory when you dismiss and reopen the form for the same session and branches. Cancel discards this content. Unavailable options are not applied, but your preferences are kept for repositories and hosts that support them.",
+      "he": "טיוטה, אפשרויות מיזוג ופעולת השליחה האחרונה שבה נעשה שימוש נשמרות בין הפעלות בפרופיל זה, גם אם תבטל. הכותרת והתיאור נשמרים בזיכרון כאשר סוגרים ופותחים מחדש את הטופס עבור אותה הפעלה ואותם ענפים. 'ביטול' מוחק תוכן זה. אפשרויות שאינן זמינות אינן מוחלות, אך ההעדפות שלך נשמרות עבור מאגרים ומארחים שתומכים בהן."
+    },
+    {
+      "path": "core/vs/sessions/contrib/changes/browser/sessionsChangesAccessibilityHelp/sessionsChanges.createPR.submit",
+      "en": "Create PR is disabled while details are being generated. It closes the form immediately, then commits and pushes your changes and creates the pull request in the background. When available, Tab to Pull Request Actions and press Enter or Space to open the dropdown. Send Create PR Message is available even during generation. It asks this session's agent to create the pull request with your selected options and generate its own title and description, without using the form's text. The last-used action becomes the primary button. Control+Enter on Windows and Linux, or Command+Enter on macOS, runs that primary action. Press Escape to dismiss the dropdown, or Escape in the form to close without submitting and keep your text. Cancel closes the form and discards your text.",
+      "he": "'צור PR' מושבת בזמן יצירת הפרטים. לאחר ההפעלה הוא סוגר מיד את הטופס, מבצע קומיט ודחיפה של השינויים ויוצר את בקשת המשיכה ברקע. כשזמין, עבור עם Tab אל 'פעולות בקשת משיכה' ולחץ Enter או Space כדי לפתוח את התפריט הנפתח. 'שלח הודעת יצירת PR' זמין גם בזמן היצירה; הוא מבקש מהסוכן של הפעלה זו ליצור את בקשת המשיכה עם האפשרויות שבחרת וליצור בעצמו כותרת ותיאור, בלי להשתמש בטקסט שבטופס. הפעולה האחרונה שבה נעשה שימוש הופכת ללחצן הראשי. Control+Enter ב-Windows ובלינוקס, או Command+Enter ב-macOS, מפעיל את הפעולה הראשית. לחץ Escape כדי לסגור את התפריט הנפתח, או Escape בטופס כדי לסגור ללא שליחה ולשמור את הטקסט. 'ביטול' סוגר את הטופס ומוחק את הטקסט."
+    },
+    {
+      "path": "core/vs/sessions/contrib/chat/browser/sessionChatInputToolbar/sessionChatPills.copyIssue",
+      "en": "Copy issue URL",
+      "he": "העתק כתובת URL של הסוגיה"
+    },
+    {
+      "path": "core/vs/sessions/contrib/chat/browser/sessionChatInputToolbar/sessionChatPills.copyPullRequest",
+      "en": "Copy pull request URL",
+      "he": "העתק כתובת URL של בקשת המשיכה"
+    },
+    {
+      "path": "core/vs/sessions/contrib/chat/browser/sessionsChatAccessibilityHelp/sessionsChat.archiveNudgeOnboarding",
+      "en": "The first time you activate the suggestion's Archive or Mark as Done button, a spotlight may reveal that session's action in the sessions list. It briefly waits for the list action to appear. The action waits until you activate the highlighted action, activate Understood, or press Escape to end the spotlight. Use Tab or Shift+Tab to move between the highlighted action and Understood, and Enter or Space to activate either. If the spotlight cannot be shown or is interrupted, the session is still archived or marked as done as long as the suggestion remains available. Once completed or skipped, the spotlight will not appear again.",
+      "he": "בפעם הראשונה שאתה מפעיל את הלחצן 'העבר לארכיון' או 'סמן כבוצע' של ההצעה, זרקור עשוי לחשוף את הפעולה של אותה הפעלה ברשימת ההפעלות. המערכת ממתינה לזמן קצר עד שהפעולה ברשימה תופיע. הפעולה ממתינה עד שתפעיל את הפעולה המודגשת, תפעיל את 'הבנתי' או תלחץ Escape כדי לסיים את הזרקור. השתמש ב-Tab או ב-Shift+Tab כדי לעבור בין הפעולה המודגשת לבין 'הבנתי', וב-Enter או Space כדי להפעיל אחת מהן. אם לא ניתן להציג את הזרקור או שהוא נקטע, ההפעלה עדיין מועברת לארכיון או מסומנת כבוצעה כל עוד ההצעה עדיין זמינה. לאחר השלמה או דילוג, הזרקור לא יופיע שוב."
+    },
+    {
+      "path": "core/vs/sessions/contrib/chat/browser/sessionsChatAccessibilityHelp/sessionsChat.background",
+      "en": "Outside high contrast themes, use Set Background to choose no background, the built-in theme-aware Codicons pattern, a new image, or one of the five most recently selected images. One randomly selected icon in the Codicons pattern is a Celebrate button; press Tab to find it, then press Enter or Space to activate it. Each activation selects another random icon as the next Celebrate button. Use Change Background Layout to choose whether an image repeats, stretches, or appears at an edge or corner for the current color theme. Moving through the layout picker previews each option; select one to save it, or press Escape to restore the previous layout. Both commands are available from the Command Palette and by right-clicking empty chat space. Change Background Layout is shown only for images. Background customization is unavailable while a high contrast theme is active.",
+      "he": "מחוץ לערכות נושא בניגודיות גבוהה, השתמש ב'הגדר רקע' כדי לבחור ללא רקע, בדפוס Codicons המובנה המותאם לערכת הנושא, בתמונה חדשה או באחת מחמש התמונות שנבחרו לאחרונה. סמל אחד שנבחר באקראי בדפוס Codicons משמש כלחצן 'חגיגה'; הקש Tab כדי למצוא אותו ולאחר מכן Enter או Space כדי להפעיל אותו. כל הפעלה בוחרת סמל אקראי אחר כלחצן 'חגיגה' הבא. השתמש ב'שנה פריסת רקע' כדי לבחור אם התמונה תחזור על עצמה, תימתח או תופיע בקצה או בפינה עבור ערכת הצבעים הנוכחית. מעבר בין האפשרויות בבורר הפריסה מציג תצוגה מקדימה; בחר אפשרות כדי לשמור אותה, או הקש Escape כדי לשחזר את הפריסה הקודמת. שתי הפקודות זמינות מלוח הפקודות ומלחיצה ימנית על שטח צ'אט ריק. 'שנה פריסת רקע' מוצגת רק עבור תמונות. התאמת הרקע אינה זמינה כאשר ערכת נושא בניגודיות גבוהה פעילה."
+    },
+    {
+      "path": "core/vs/sessions/contrib/chat/browser/sessionsChatAccessibilityHelp/sessionsChat.backgroundActivities",
+      "en": "Press Shift+Tab from the chat input to reach metadata and status pills above it, use the left and right arrows to move between pills, and press Enter or Space to activate one. Live browsers appear in their own pill, and the chat's subagents appear in another. A pill with more than one entry opens a picker. Subagents are grouped under Subagents: In Progress and Subagents: Completed. In Progress includes subagents waiting for input; Completed includes failed subagents. Use the up and down arrows to move between entries. When an entry has details, Tab moves through its row actions and detail links; Shift+Tab returns to the row action, and the up and down arrows continue moving between entries. Press Enter to open an entry, or Escape to dismiss the picker and return focus to the pill.",
+      "he": "הקש Shift+Tab משדה הקלט של הצ'אט כדי להגיע למטא-נתונים ולתוויות המצב שמעליו, השתמש בחצים שמאלה וימינה כדי לעבור בין התוויות והקש Enter או Space כדי להפעיל אחת מהן. דפדפנים פעילים מופיעים בתווית משלהם, ותת-הסוכנים של הצ'אט מופיעים בתווית אחרת. תווית עם יותר מרשומה אחת פותחת בורר. תת-הסוכנים מקובצים תחת 'תת-סוכנים: בתהליך' ו'תת-סוכנים: הושלמו'. 'בתהליך' כולל תת-סוכנים שממתינים לקלט; 'הושלמו' כולל גם תת-סוכנים שנכשלו. השתמש בחצים למעלה ולמטה כדי לעבור בין הרשומות. כאשר לרשומה יש פרטים, Tab עובר בין פעולות השורה וקישורי הפרטים; Shift+Tab מחזיר לפעולת השורה, והחצים למעלה ולמטה ממשיכים לעבור בין הרשומות. הקש Enter כדי לפתוח רשומה, או Escape כדי לסגור את הבורר ולהחזיר את המיקוד לתווית."
+    },
+    {
+      "path": "core/vs/sessions/contrib/chat/browser/sessionsChatAccessibilityHelp/sessionsChat.customizations",
+      "en": "Focus Chat Customizations in the left sidebar{0}.",
+      "he": "מקד את 'התאמות הצ'אט האישיות' בסרגל הצד השמאלי{0}."
+    },
+    {
+      "path": "core/vs/sessions/contrib/chat/browser/sessionsChatAccessibilityHelp/sessionsChat.devContainer",
+      "en": "When Dev Container Agent Host sessions are enabled, Docker is available on the host, and a local, SSH, Tunnel, or WSL folder contains a Dev Container configuration, open the folder's submenu and choose Use Dev Container. For remote folders, first connect to a host that supports Dev Container sessions. For WSL folders, Docker must be available in the WSL distribution. Use the arrow keys to navigate submenus and Enter to select. The workspace picker then identifies the folder with a Dev Container suffix. Choose Use Local or Use Remote Host to switch back.",
+      "he": "כאשר הפעלות מארח הסוכן של Dev Container מופעלות, Docker זמין במארח, ותיקייה מקומית, SSH, Tunnel או WSL מכילה תצורת Dev Container, פתח את תפריט המשנה של התיקייה ובחר 'השתמש ב-Dev Container'. עבור תיקיות מרוחקות, התחבר תחילה למארח שתומך בהפעלות Dev Container. עבור תיקיות WSL, Docker חייב להיות זמין בהפצת WSL. השתמש במקשי החצים כדי לנווט בתפריטי משנה וב-Enter כדי לבחור. לאחר מכן בורר סביבות העבודה מסמן את התיקייה בסיומת Dev Container. בחר 'השתמש במקומי' או 'השתמש במארח מרוחק' כדי לחזור."
+    },
+    {
+      "path": "core/vs/sessions/contrib/chat/browser/sessionsChatAccessibilityHelp/sessionsChat.externalSessionFilter",
+      "en": "The Sessions list Filter menu includes an External submenu. Choose None, Recent, Last 24 Hours, Last 7 Days, or Last 30 Days to control which sessions from other applications are shown.",
+      "he": "תפריט הסינון של רשימת ההפעלות כולל תת-תפריט 'חיצוני'. בחר 'ללא', 'אחרונות', '24 השעות האחרונות', '7 הימים האחרונים' או '30 הימים האחרונים' כדי לקבוע אילו הפעלות מיישומים אחרים יוצגו."
+    },
+    {
+      "path": "core/vs/sessions/contrib/chat/browser/sessionsChatAccessibilityHelp/sessionsChat.inputPills",
+      "en": "When session metadata or active-turn status pills appear above the input, press Shift+Tab to reach them, use the Left and Right arrow keys to move between them, and press Enter or Space to activate one. Open the context menu{0} to choose which pills are shown. Pull Requests Options lets you show all pull requests or only open and draft ones. Subagent Options offers Show All and Show In Progress. These choices are remembered across sessions. If every entry of a pill is filtered out, its options are also available in any other pill's context menu or the toolbar context menu.",
+      "he": "כאשר תוויות מטא-נתוני ההפעלה או מצב התור הפעיל מופיעות מעל שדה הקלט, הקש Shift+Tab כדי להגיע אליהן, השתמש בחצים שמאלה וימינה כדי לעבור ביניהן והקש Enter או Space כדי להפעיל אחת מהן. פתח את תפריט ההקשר{0} כדי לבחור אילו תוויות יוצגו. 'אפשרויות בקשות משיכה' מאפשרות להציג את כל בקשות המשיכה או רק את הפתוחות והטיוטות. 'אפשרויות תת-סוכנים' מציעות 'הצג הכול' ו'הצג בתהליך'. בחירות אלה נשמרות בין הפעלות. אם כל הרשומות של תווית מסוננות, האפשרויות שלה זמינות גם בתפריט ההקשר של כל תווית אחרת או בתפריט ההקשר של סרגל הכלים."
+    },
+    {
+      "path": "core/vs/sessions/contrib/chat/browser/sessionsChatAccessibilityHelp/sessionsChat.navigateChatTabs",
+      "en": "When a chat tab is focused, use the left and right arrow keys to move to and activate an adjacent chat tab, or Home and End to activate the first and last tabs. Tabs that do not fit are scrolled into view when activated. You can also scroll the tab row with the mouse wheel or drag the horizontal scrollbar that appears when hovering over overflowing tabs.",
+      "he": "כאשר לשונית צ'אט ממוקדת, השתמש בחצים שמאלה וימינה כדי לעבור ללשונית צ'אט סמוכה ולהפעיל אותה, או ב-Home וב-End כדי להפעיל את הלשונית הראשונה והאחרונה. לשוניות שאינן נכנסות בשטח הזמין נגללות לתצוגה כאשר מפעילים אותן. ניתן גם לגלול את שורת הלשוניות באמצעות גלגלת העכבר או לגרור את פס הגלילה האופקי שמופיע בעת ריחוף מעל לשוניות שחורגות מהשטח."
+    },
+    {
+      "path": "core/vs/sessions/contrib/chat/browser/sessionsChatAccessibilityHelp/sessionsChat.renameChat",
+      "en": "When Rename is available for a non-main chat, focus its tab or nested row in the Sessions list and invoke Rename{0}, or double-click its title, to rename it inline. Type the new title, then press Enter to confirm or Escape to cancel. From the chat transcript or input, invoking Rename opens a prompt instead.",
+      "he": "כאשר 'שנה שם' זמין עבור צ'אט שאינו ראשי, מקד את הלשונית שלו או את השורה המקוננת שלו ברשימת ההפעלות והפעל 'שנה שם'{0}, או לחץ פעמיים על הכותרת שלו, כדי לשנות את שמו במקום. הקלד את הכותרת החדשה ולאחר מכן הקש Enter לאישור או Escape לביטול. מתוך תמליל הצ'אט או שדה הקלט, הפעלת 'שנה שם' פותחת במקום זאת בקשה להזנת שם."
+    },
+    {
+      "path": "core/vs/sessions/contrib/chat/browser/sessionsChatAccessibilityHelp/sessionsChat.renameSession",
+      "en": "To rename a session inline, focus its row in the Sessions list and invoke Rename{0}, double-click its title, or open its context menu and choose Rename. Type the new title, then press Enter to confirm or Escape to cancel. From the main chat transcript or input, invoking Rename edits the header title inline when it is visible and opens a prompt otherwise.",
+      "he": "כדי לשנות את שם ההפעלה במקום, מקד את השורה שלה ברשימת ההפעלות והפעל 'שנה שם'{0}, לחץ פעמיים על הכותרת שלה, או פתח את תפריט ההקשר ובחר 'שנה שם'. הקלד את הכותרת החדשה ולאחר מכן הקש Enter לאישור או Escape לביטול. מתוך תמליל הצ'אט הראשי או שדה הקלט, הפעלת 'שנה שם' עורכת את כותרת העליונה במקום כאשר היא גלויה, ובמקרה אחר פותחת בקשה להזנת שם."
+    }
+  ]
+}
