@@ -1,0 +1,215 @@
+{
+  "vscode": "1.140.0",
+  "kind": "new-source-translation",
+  "batch": "new-short-10",
+  "entries": [
+    {
+      "en": "May use multiple models",
+      "he": "עשוי להשתמש במספר מודלים"
+    },
+    {
+      "en": "{0} (Migrations Available)",
+      "he": "{0} (העברות זמינות)"
+    },
+    {
+      "en": "Tool execution failed with exit code {0}",
+      "he": "הפעלת הכלי נכשלה עם קוד יציאה {0}"
+    },
+    {
+      "en": "Tool execution failed: {0}",
+      "he": "הפעלת הכלי נכשלה: {0}"
+    },
+    {
+      "en": "Unable to read marketplace '{0}' (HTTP {1}).",
+      "he": "לא ניתן לקרוא את ה-Marketplace '{0}' (HTTP {1})."
+    },
+    {
+      "en": "Unable to read marketplace '{0}'.",
+      "he": "לא ניתן לקרוא את ה-Marketplace '{0}'."
+    },
+    {
+      "en": "Run agents side by side",
+      "he": "הפעל סוכנים זה לצד זה"
+    },
+    {
+      "en": "Reset Copilot Harness Introduction",
+      "he": "אפס את המבוא למנגנון ההרצה של Copilot"
+    },
+    {
+      "en": "Smart Diff Layout Example",
+      "he": "דוגמה לפריסת Diff חכמה"
+    },
+    {
+      "en": "Try Smart Diff Layout",
+      "he": "נסה פריסת Diff חכמה"
+    },
+    {
+      "en": "@{0} committed this change",
+      "he": "@{0} ביצע קומיט לשינוי זה"
+    },
+    {
+      "en": "No additional commit message.",
+      "he": "אין הודעת קומיט נוספת."
+    },
+    {
+      "en": "@{0} opened this issue",
+      "he": "@{0} פתח סוגיה זו"
+    },
+    {
+      "en": "@{0} opened this pull request",
+      "he": "@{0} פתח בקשת משיכה זו"
+    },
+    {
+      "en": "Copy Base Branch {0}",
+      "he": "העתק את ענף הבסיס {0}"
+    },
+    {
+      "en": "Copy Head Branch {0}",
+      "he": "העתק את ענף הראש {0}"
+    },
+    {
+      "en": "Unable to load MCP package details. Try again.",
+      "he": "לא ניתן לטעון את פרטי חבילת ה-MCP. נסה שוב."
+    },
+    {
+      "en": "Select the global configuration",
+      "he": "בחר את התצורה הגלובלית"
+    },
+    {
+      "en": "User Configuration (deprecated)",
+      "he": "תצורת משתמש (מיושנת)"
+    },
+    {
+      "en": "This server requires VS Code configuration",
+      "he": "שרת זה דורש תצורת VS Code"
+    },
+    {
+      "en": "Add MCP Server to {0}",
+      "he": "הוסף שרת MCP אל {0}"
+    },
+    {
+      "en": "Select the configuration file for the new server",
+      "he": "בחר את קובץ התצורה עבור השרת החדש"
+    },
+    {
+      "en": "VS Code workspace configuration",
+      "he": "תצורת סביבת עבודה של VS Code"
+    },
+    {
+      "en": "This server requires .vscode/mcp.json",
+      "he": "שרת זה דורש `.vscode/mcp.json`"
+    },
+    {
+      "en": "Open MCP Configuration in {0}",
+      "he": "פתח תצורת MCP ב-{0}"
+    },
+    {
+      "en": "Select the configuration file to open",
+      "he": "בחר את קובץ התצורה לפתיחה"
+    },
+    {
+      "en": "Use the compact card-based variant.",
+      "he": "השתמש בגרסה הקומפקטית המבוססת על כרטיסים."
+    },
+    {
+      "en": "Use the compact variant without cards.",
+      "he": "השתמש בגרסה הקומפקטית ללא כרטיסים."
+    },
+    {
+      "en": "The example editor could not be opened.",
+      "he": "לא ניתן היה לפתוח את עורך הדוגמה."
+    },
+    {
+      "en": "Copy Feature Example Link",
+      "he": "העתק קישור לדוגמת תכונה"
+    },
+    {
+      "en": "Select a feature example",
+      "he": "בחר דוגמת תכונה"
+    },
+    {
+      "en": "Try Feature Example",
+      "he": "נסה דוגמת תכונה"
+    },
+    {
+      "en": "The example's view could not be opened.",
+      "he": "לא ניתן היה לפתוח את תצוגת הדוגמה."
+    },
+    {
+      "en": "This view is not available in the current window.",
+      "he": "תצוגה זו אינה זמינה בחלון הנוכחי."
+    },
+    {
+      "en": "This example requires the desktop Agents window.",
+      "he": "דוגמה זו דורשת את חלון הסוכנים בשולחן העבודה."
+    },
+    {
+      "en": "AI features are disabled.",
+      "he": "תכונות AI מושבתות."
+    },
+    {
+      "en": "Chat is disabled in this workspace.",
+      "he": "הצ'אט מושבת בסביבת עבודה זו."
+    },
+    {
+      "en": "Set up Chat before trying this example.",
+      "he": "הגדר את הצ'אט לפני שתנסה דוגמה זו."
+    },
+    {
+      "en": "The feature example run context is invalid.",
+      "he": "הקשר ההרצה של דוגמת התכונה אינו חוקי."
+    },
+    {
+      "en": "Feature example unavailable",
+      "he": "דוגמת התכונה אינה זמינה"
+    },
+    {
+      "en": "Show settings with an ExP treatment assignment",
+      "he": "הצג הגדרות עם הקצאת טיפול ExP"
+    },
+    {
+      "en": "This file type was detected from the current file.",
+      "he": "סוג קובץ זה זוהה מהקובץ הנוכחי."
+    },
+    {
+      "en": "Press {0} for release notes accessibility help.",
+      "he": "הקש {0} לעזרת נגישות עבור הערות הגרסה."
+    },
+    {
+      "en": "Opens in the Agents window.",
+      "he": "נפתח בחלון הסוכנים."
+    },
+    {
+      "en": "This feature example could not be loaded.",
+      "he": "לא ניתן היה לטעון את דוגמת התכונה הזו."
+    },
+    {
+      "en": "This feature example link is invalid.",
+      "he": "הקישור לדוגמת התכונה אינו חוקי."
+    },
+    {
+      "en": "Error loading webview provided by '{0}': {1}",
+      "he": "שגיאה בטעינת webview שסופק על ידי '{0}': {1}"
+    },
+    {
+      "en": "The available update action is {0}.",
+      "he": "פעולת העדכון הזמינה היא {0}."
+    },
+    {
+      "en": "Update availability is not yet known.",
+      "he": "זמינות העדכון עדיין אינה ידועה."
+    },
+    {
+      "en": "An update operation is in progress.",
+      "he": "פעולת עדכון מתבצעת כעת."
+    },
+    {
+      "en": "Update required by your organization",
+      "he": "נדרש עדכון על ידי הארגון שלך"
+    },
+    {
+      "en": "Toggle Editing/Locked Mode",
+      "he": "החלף מצב עריכה/נעילה"
+    }
+  ]
+}

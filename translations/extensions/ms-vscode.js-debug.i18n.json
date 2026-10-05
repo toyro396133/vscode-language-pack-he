@@ -234,7 +234,8 @@
 			"commands.networkOpenBodyInHexEditor.label": "פתח את גוף התגובה בעורך הקסדצימלי",
 			"commands.networkReplayXHR.label": "שלח שוב את הבקשה",
 			"commands.networkCopyURI.label": "העתק את כתובת ה-URL של הבקשה",
-			"commands.networkClear.label": "נקה את יומן הרשת"
+			"commands.networkClear.label": "נקה את יומן הרשת",
+			"configuration.resolveDebugEntrypoint": "כאשר הערך true (ברירת המחדל), js-debug משתמש במפות מקור כדי למפות מחדש נתיב `program` שאינו מסתיים ב-`.js` אל הפלט המהודר שלו לפני ההפעלה. הגדר ל-false כדי להפעיל את נתיב `program` בדיוק כפי שנכתב."
 		},
 		"bundle": {
 			"A \"url\" is required to launch an integrated browser": "נדרש \"url\" כדי להפעיל דפדפן משולב",

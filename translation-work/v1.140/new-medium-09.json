@@ -1,0 +1,119 @@
+{
+  "vscode": "1.140.0",
+  "kind": "new-source-translation",
+  "batch": "new-medium-09",
+  "entries": [
+    {
+      "en": "An external link requested this feature example in {0}.\n\n{1}\n\nOnly continue if you initiated this request.",
+      "he": "קישור חיצוני ביקש לפתוח דוגמת תכונה זו ב-{0}.\n\n{1}\n\nהמשך רק אם אתה יזמת את הבקשה."
+    },
+    {
+      "en": "This external link does not identify a feature example available in this version of {0}.",
+      "he": "קישור חיצוני זה אינו מזהה דוגמת תכונה שזמינה בגרסה זו של {0}."
+    },
+    {
+      "en": "Expected exactly one valid feature example identifier.",
+      "he": "נדרש מזהה חוקי אחד בדיוק של דוגמת תכונה."
+    },
+    {
+      "en": "The feature example '{0}' has an invalid presentation.",
+      "he": "לדוגמת התכונה '{0}' יש תצוגה לא חוקית."
+    },
+    {
+      "en": "The Agents window could not start the feature example.",
+      "he": "חלון הסוכנים לא הצליח להפעיל את דוגמת התכונה."
+    },
+    {
+      "en": "The feature example '{0}' is not available in the Agents window.",
+      "he": "דוגמת התכונה '{0}' אינה זמינה בחלון הסוכנים."
+    },
+    {
+      "en": "Controls how terminal text is antialiased on high-DPI displays.",
+      "he": "קובע כיצד מוחלק טקסט המסוף בתצוגות עם DPI גבוה."
+    },
+    {
+      "en": "Use grayscale antialiasing, which can make text look sharper. With GPU acceleration, this may require **Developer: Reload Window** to take effect.",
+      "he": "השתמש בהחלקת גווני אפור, שעשויה לגרום לטקסט להיראות חד יותר. עם האצת GPU, ייתכן שיידרש **Developer: Reload Window** כדי שהשינוי יחול."
+    },
+    {
+      "en": "Cannot create a task outside the current workspace folder: {0}",
+      "he": "לא ניתן ליצור משימה מחוץ לתיקיית סביבת העבודה הנוכחית: {0}"
+    },
+    {
+      "en": "Press Escape to close this help and return focus to the release notes.",
+      "he": "הקש Escape כדי לסגור עזרה זו ולהחזיר את המיקוד להערות הגרסה."
+    },
+    {
+      "en": "Use {0} to find text in the release notes. The Find input has its own accessibility help.",
+      "he": "השתמש ב-{0} כדי למצוא טקסט בהערות הגרסה. לשדה החיפוש יש עזרת נגישות משלו."
+    },
+    {
+      "en": "You are in the release notes. Use your screen reader's reading and heading navigation commands to explore the document and its table of contents.",
+      "he": "אתה נמצא בהערות הגרסה. השתמש בפקודות הקריאה והניווט בין כותרות של קורא המסך כדי לעיין במסמך ובתוכן העניינים שלו."
+    },
+    {
+      "en": "Some actions open another editor or window, including the Agents window. Chat examples prepare an input for you to review and do not send it automatically.",
+      "he": "פעולות מסוימות פותחות עורך או חלון אחר, כולל חלון הסוכנים. דוגמאות צ'אט מכינות קלט לסקירה שלך ואינן שולחות אותו אוטומטית."
+    },
+    {
+      "en": "Chat examples are prepared for review and are not sent automatically.",
+      "he": "דוגמאות צ'אט מוכנות לסקירה ואינן נשלחות אוטומטית."
+    },
+    {
+      "en": "This example is ready. Choose Try This to continue.",
+      "he": "דוגמה זו מוכנה. בחר 'נסה זאת' כדי להמשיך."
+    },
+    {
+      "en": "This example is not available in this version of VS Code.",
+      "he": "דוגמה זו אינה זמינה בגרסה זו של VS Code."
+    },
+    {
+      "en": "Gallery MCP servers cannot be installed in .mcp.json.",
+      "he": "לא ניתן להתקין שרתי MCP מהגלריה בתוך `.mcp.json`."
+    },
+    {
+      "en": "This workspace folder is no longer available for MCP server installation.",
+      "he": "תיקיית סביבת עבודה זו אינה זמינה עוד להתקנת שרת MCP."
+    },
+    {
+      "en": "This workspace configuration does not support MCP server installation. Select a workspace folder instead.",
+      "he": "תצורת סביבת עבודה זו אינה תומכת בהתקנת שרת MCP. בחר במקום זאת תיקיית סביבת עבודה."
+    },
+    {
+      "en": "An MCP workspace configuration file can only be selected for a workspace folder.",
+      "he": "ניתן לבחור קובץ תצורת MCP של סביבת עבודה רק עבור תיקיית סביבת עבודה."
+    },
+    {
+      "en": "The Agents window is blocked by your organization's minimum-version requirement. The overlay explains the required update.",
+      "he": "חלון הסוכנים חסום עקב דרישת גרסה מינימלית של הארגון שלך. שכבת הכיסוי מסבירה איזה עדכון נדרש."
+    },
+    {
+      "en": "Use Tab or Shift+Tab to move between available actions, then press Enter or Space to activate one.",
+      "he": "השתמש ב-Tab או ב-Shift+Tab כדי לעבור בין הפעולות הזמינות, ולאחר מכן הקש Enter או Space כדי להפעיל אחת מהן."
+    },
+    {
+      "en": "Use Tab or Shift+Tab to reach Open Editor Window, then press Enter or Space. This opens a new editor window.",
+      "he": "השתמש ב-Tab או ב-Shift+Tab כדי להגיע אל 'פתח חלון עורך', ולאחר מכן הקש Enter או Space. פעולה זו פותחת חלון עורך חדש."
+    },
+    {
+      "en": "Chat is read-only while this requirement is active.",
+      "he": "הצ'אט הוא לקריאה בלבד כל עוד דרישה זו פעילה."
+    },
+    {
+      "en": "Built-in updates are disabled by your organization. Contact your administrator for an approved update.",
+      "he": "עדכונים מובנים מושבתים על ידי הארגון שלך. פנה למנהל המערכת לקבלת עדכון מאושר."
+    },
+    {
+      "en": "Your organization requires an update to {0} to use AI features.",
+      "he": "הארגון שלך דורש עדכון של {0} כדי להשתמש בתכונות AI."
+    },
+    {
+      "en": "Your organization requires {0} {1} or later to use AI features.",
+      "he": "הארגון שלך דורש {0} בגרסה {1} ומעלה כדי להשתמש בתכונות AI."
+    },
+    {
+      "en": "Show the Execution Subagent its remaining iterations on every turn.",
+      "he": "הצג לתת-סוכן הביצוע את מספר האיטרציות שנותרו לו בכל תור."
+    }
+  ]
+}

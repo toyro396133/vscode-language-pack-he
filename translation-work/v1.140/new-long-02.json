@@ -1,0 +1,107 @@
+{
+  "vscode": "1.140.0",
+  "kind": "new-source-translation",
+  "batch": "new-long-02",
+  "entries": [
+    {
+      "en": "This host creates a new environment for each session. Open Select Repository to choose its repository. Selecting a repository does not start an environment; sending your first message does. The harness label identifies the available agent, and Agent Default means the host chooses the model.",
+      "he": "מארח זה יוצר סביבה חדשה עבור כל הפעלה. פתח את 'בחר מאגר' כדי לבחור את המאגר שלה. בחירת מאגר אינה מפעילה סביבה; שליחת ההודעה הראשונה שלך כן. תווית מנגנון ההרצה מזהה את הסוכן הזמין, ו'ברירת המחדל של הסוכן' פירושה שהמארח בוחר את המודל."
+    },
+    {
+      "en": "When choosing a GitHub repository in the browser, search or enter a GitHub URL or owner/repository. Use the arrow keys to navigate results, Enter to select, and Escape to cancel. Sign in to GitHub if prompted.",
+      "he": "בעת בחירת מאגר GitHub בדפדפן, חפש או הזן כתובת URL של GitHub או owner/repository. השתמש במקשי החצים כדי לנווט בתוצאות, ב-Enter כדי לבחור וב-Escape כדי לבטל. התחבר ל-GitHub אם תתבקש."
+    },
+    {
+      "en": "When you select assistant response text, an Ask Question input appears. Type a side question and press Enter to send it, press Shift+Enter to insert a new line, or press Escape to dismiss the input.",
+      "he": "כאשר אתה בוחר טקסט מתשובת העוזר, מופיע שדה 'שאל שאלה'. הקלד שאלת צד והקש Enter כדי לשלוח אותה, Shift+Enter כדי להוסיף שורה חדשה, או Escape כדי לסגור את השדה."
+    },
+    {
+      "en": "When you select assistant response text, an action menu appears. Press Tab to focus the menu, use the Up Arrow and Down Arrow keys to move between actions, and press Enter to activate one. Press Escape to dismiss the menu. Ask in a Side Chat opens a question input anchored to the selected text. Quote appends the selection as a blockquote in the chat input when the conversation is interactive. Copy copies the selected text.",
+      "he": "כאשר אתה בוחר טקסט מתשובת העוזר, מופיע תפריט פעולות. הקש Tab כדי למקד את התפריט, השתמש בחצים למעלה ולמטה כדי לעבור בין הפעולות והקש Enter כדי להפעיל אחת. הקש Escape כדי לסגור את התפריט. 'שאל בצ'אט צדדי' פותח שדה שאלה המעוגן לטקסט שנבחר. 'ציטוט' מוסיף את הבחירה כציטוט בלוק לשדה הקלט של הצ'אט כאשר השיחה אינטראקטיבית. 'העתק' מעתיק את הטקסט שנבחר."
+    },
+    {
+      "en": "Sessions with multiple user-facing chats show those chats nested beneath the session in the Sessions list. Use the arrow keys to navigate the list and Enter to show a chat as the session view. Side chats and subagent chats are omitted from this nested list: side chats are reachable from the Side Chats dropdown in the session's overflow menu, and subagent chats open from their pills in the chat transcript.",
+      "he": "הפעלות עם מספר צ'אטים הפונים למשתמש מציגות את הצ'אטים האלה מקוננים מתחת להפעלה ברשימת ההפעלות. השתמש במקשי החצים כדי לנווט ברשימה וב-Enter כדי להציג צ'אט כתצוגת ההפעלה. צ'אטים צדדיים וצ'אטים של תת-סוכנים אינם נכללים ברשימה המקוננת: ניתן להגיע לצ'אטים צדדיים מהתפריט הנפתח 'צ'אטים צדדיים' בתפריט הנוסף של ההפעלה, וצ'אטים של תת-סוכנים נפתחים מהתוויות שלהם בתמליל הצ'אט."
+    },
+    {
+      "en": "Sessions with multiple user-facing chats show those chats nested beneath the session in the Sessions list. Use the arrow keys to navigate the list and Enter to open a chat as a tab. Side chats and subagent chats are omitted from this nested list: side chats are reachable from the Side Chats dropdown in the session's overflow menu, and subagent chats open from their pills in the chat transcript.",
+      "he": "הפעלות עם מספר צ'אטים הפונים למשתמש מציגות את הצ'אטים האלה מקוננים מתחת להפעלה ברשימת ההפעלות. השתמש במקשי החצים כדי לנווט ברשימה וב-Enter כדי לפתוח צ'אט כלשונית. צ'אטים צדדיים וצ'אטים של תת-סוכנים אינם נכללים ברשימה המקוננת: ניתן להגיע לצ'אטים צדדיים מהתפריט הנפתח 'צ'אטים צדדיים' בתפריט הנוסף של ההפעלה, וצ'אטים של תת-סוכנים נפתחים מהתוויות שלהם בתמליל הצ'אט."
+    },
+    {
+      "en": "In a new session, the welcome heading is announced when shown. To disable this announcement, set accessibility.verbosity.newSessionWelcome to false. Press Tab to reach Set Welcome Name beside the welcome heading, or open its context menu{0}. Enter a custom name, or clear it to use your GitHub first name when available.",
+      "he": "בהפעלה חדשה, כותרת הברכה מוכרזת כאשר היא מוצגת. כדי להשבית הכרזה זו, הגדר את `accessibility.verbosity.newSessionWelcome` ל-false. הקש Tab כדי להגיע אל 'הגדר שם ברכה' לצד כותרת הברכה, או פתח את תפריט ההקשר שלה{0}. הזן שם מותאם אישית, או נקה אותו כדי להשתמש בשם הפרטי שלך ב-GitHub כאשר הוא זמין."
+    },
+    {
+      "en": "Copy Diagnostics and Download Diagnostics include the entire displayed snapshot, including collapsed sections. Review host names and addresses before sharing. Refresh reads current local state without discovery, authentication, or connection changes.",
+      "he": "'העתק אבחון' ו'הורד אבחון' כוללים את כל תמונת המצב המוצגת, כולל מקטעים מכווצים. סקור שמות וכתובות של מארחים לפני שיתוף. 'רענן' קורא את המצב המקומי הנוכחי ללא גילוי, אימות או שינויי חיבור."
+    },
+    {
+      "en": "On phones, Open Connection Information beside the Hosts sheet title closes the picker and opens this report. Closing the report returns focus to the host picker control, or its toolbar if that control was replaced.",
+      "he": "בטלפונים, 'פתח פרטי חיבור' לצד כותרת גיליון המארחים סוגר את הבורר ופותח דוח זה. סגירת הדוח מחזירה את המיקוד לפקד בורר המארחים, או לסרגל הכלים שלו אם הפקד הוחלף."
+    },
+    {
+      "en": "Snapshots include recorded connection stages and a bounded excerpt of the local Window log. Copy and Download use the captured text without collecting new logs. Known credentials are redacted; review messages before sharing.",
+      "he": "תמונות מצב כוללות שלבי חיבור שנרשמו וקטע מוגבל מיומן החלון המקומי. 'העתק' ו'הורד' משתמשים בטקסט שנאסף בלי לאסוף יומנים חדשים. פרטי התחברות ידועים מושחרים; סקור את ההודעות לפני שיתוף."
+    },
+    {
+      "en": "Copy Diagnostics and Download Diagnostics include the entire displayed snapshot, including collapsed sections. Review host names and addresses before sharing. Refresh re-runs host discovery and then captures current local state.",
+      "he": "'העתק אבחון' ו'הורד אבחון' כוללים את כל תמונת המצב המוצגת, כולל מקטעים מכווצים. סקור שמות וכתובות של מארחים לפני שיתוף. 'רענן' מפעיל מחדש את גילוי המארחים ולאחר מכן אוסף את המצב המקומי הנוכחי."
+    },
+    {
+      "en": "Use Tab and Shift+Tab to move between host actions, header actions, the report, and collapsed sections. Use arrow keys to scroll the focused report. Use Enter or Space to expand client details.",
+      "he": "השתמש ב-Tab וב-Shift+Tab כדי לעבור בין פעולות המארח, פעולות הכותרת, הדוח והמקטעים המכווצים. השתמש במקשי החצים כדי לגלול את הדוח הממוקד. השתמש ב-Enter או Space כדי להרחיב את פרטי הלקוח."
+    },
+    {
+      "en": "Connection information shows live host summaries with Connect and Disconnect beside each host. Expand a host to read its captured diagnostic details. Actions use current host state. An intentional disconnect keeps the host in the picker and pauses automatic connection. The separate Hidden hosts section has Restore actions that return hosts to discovery; restoration does not guarantee a connection.",
+      "he": "פרטי החיבור מציגים סיכומי מארחים חיים עם 'התחבר' ו'נתק' לצד כל מארח. הרחב מארח כדי לקרוא את פרטי האבחון שנאספו עבורו. הפעולות משתמשות במצב המארח הנוכחי. ניתוק מכוון משאיר את המארח בבורר ומשהה את החיבור האוטומטי. במקטע הנפרד 'מארחים מוסתרים' יש פעולות 'שחזר' שמחזירות מארחים לגילוי; השחזור אינו מבטיח חיבור."
+    },
+    {
+      "en": "Up to 200 lifecycle lines from the last 128 KiB of the current Window log; no rotated or remote logs. Messages may be unavailable at the current log level. Known credentials are redacted; review before sharing.",
+      "he": "עד 200 שורות של מחזור חיי החיבור מתוך 128 KiB האחרונים של יומן החלון הנוכחי; יומנים מסובבים או מרוחקים אינם נכללים. ייתכן שהודעות לא יהיו זמינות ברמת היומן הנוכחית. פרטי התחברות ידועים מושחרים; סקור לפני שיתוף."
+    },
+    {
+      "en": "Local snapshot, including connection-related Window logs. Known credentials are redacted, but host names, addresses, and messages can contain personal information. Review before sharing.",
+      "he": "תמונת מצב מקומית, כולל יומני חלון הקשורים לחיבור. פרטי התחברות ידועים מושחרים, אך שמות מארחים, כתובות והודעות עשויים להכיל מידע אישי. סקור לפני שיתוף."
+    },
+    {
+      "en": "Up to 200 connection and 200 discovery events from this window. A start without a completion may still be pending, or its completion may not have been captured. Error descriptions are redacted and bounded. These are client observations, not server logs.",
+      "he": "עד 200 אירועי חיבור ו-200 אירועי גילוי מחלון זה. התחלה ללא סיום עשויה עדיין להיות בהמתנה, או שהסיום שלה לא נאסף. תיאורי שגיאות מושחרים ומוגבלים. אלה תצפיות של הלקוח, לא יומני שרת."
+    },
+    {
+      "en": "Number of seconds with no Agent Host sessions actively working, waiting for input, or holding unsent drafts before automatically stopping a Dev Container. Set to 0 to disable automatic shutdown. Archiving or deleting sessions can still remove the container.",
+      "he": "מספר השניות שבהן אין הפעלות של מארח סוכן שעובדות באופן פעיל, ממתינות לקלט או מחזיקות טיוטות שלא נשלחו, לפני עצירה אוטומטית של Dev Container. הגדר ל-0 כדי להשבית כיבוי אוטומטי. העברה לארכיון או מחיקה של הפעלות עדיין עשויות להסיר את הקונטיינר."
+    },
+    {
+      "en": "Enable built-in tools to discover remote agent hosts, create and inspect remote sessions, and send messages between sessions in the Agents window. Requires {0}. Disabling this setting does not disconnect hosts or stop sessions already running.",
+      "he": "הפעל כלים מובנים לגילוי מארחי סוכן מרוחקים, ליצירה ובדיקה של הפעלות מרוחקות ולשליחת הודעות בין הפעלות בחלון הסוכנים. נדרש {0}. השבתת הגדרה זו אינה מנתקת מארחים ואינה עוצרת הפעלות שכבר פועלות."
+    },
+    {
+      "en": "Start this task on {0}? The host is selected from your connected remote agent hosts using the requested resources and current workload. The new session can send messages back to this chat.",
+      "he": "להתחיל משימה זו ב-{0}? המארח נבחר מתוך מארחי הסוכן המרוחקים המחוברים שלך בהתאם למשאבים המבוקשים ולעומס העבודה הנוכחי. ההפעלה החדשה יכולה לשלוח הודעות בחזרה לצ'אט זה."
+    },
+    {
+      "en": "Automations run on their selected Agent Host, not in this window. Creation and changes require a connected Agent Host that supports automations. Run now requests execution from that host; a disconnected or unsupported host never falls back to local execution. To use another host, duplicate the automation. The original history stays with its host, and an enabled original keeps scheduling until you disable it.",
+      "he": "אוטומציות פועלות במארח הסוכן שנבחר עבורן, לא בחלון זה. יצירה ושינויים דורשים מארח סוכן מחובר שתומך באוטומציות. 'הפעל עכשיו' מבקש הפעלה מאותו מארח; מארח מנותק או לא נתמך לעולם אינו עובר אוטומטית להפעלה מקומית. כדי להשתמש במארח אחר, שכפל את האוטומציה. ההיסטוריה המקורית נשארת עם המארח שלה, ואוטומציה מקורית מופעלת ממשיכה לפעול לפי לוח הזמנים עד שתשבית אותה."
+    },
+    {
+      "en": "In the automation dialog, Target controls are above the prompt. Agent and model pickers are inside the prompt input, and execution mode and permission controls are below it. Use Tab and Shift+Tab to move between fields and pickers. When creating an automation, you only need to enter a prompt. An empty name is derived from the prompt, and the target defaults to No workspace unless one is already supplied. An available Agent Host that supports the target is still required.",
+      "he": "בדו-שיח של האוטומציה, פקדי היעד נמצאים מעל הפרומפט. בוררי הסוכן והמודל נמצאים בתוך שדה הפרומפט, ופקדי מצב ההפעלה וההרשאות נמצאים מתחתיו. השתמש ב-Tab וב-Shift+Tab כדי לעבור בין שדות ובוררים. בעת יצירת אוטומציה, צריך להזין רק פרומפט. שם ריק נגזר מהפרומפט, והיעד מוגדר כברירת מחדל ל'ללא סביבת עבודה' אלא אם כבר סופק יעד. עדיין נדרש מארח סוכן זמין שתומך ביעד."
+    },
+    {
+      "en": "Precedence is native MDM, then server, then file. Most settings resolve per key, filling gaps from lower channels. Telemetry selects one whole block: omitted leaves never inherit from weaker blocks. Empty or unknown-only server/file objects still select a block; native MDM exposes only declared flat keys. The internal telemetry presence marker is not a policy setting. For sandbox.enabled, any managed true wins regardless of channel precedence, matching the runtime sandbox floor.",
+      "he": "סדר הקדימויות הוא MDM מקורי, לאחר מכן שרת ולבסוף קובץ. רוב ההגדרות נפתרות לכל מפתח בנפרד, כאשר פערים מתמלאים מערוצים בעדיפות נמוכה יותר. טלמטריה בוחרת מקטע שלם אחד: ערכי קצה שהושמטו לעולם אינם יורשים ממקטעים חלשים יותר. אובייקטים ריקים או כאלה שמכילים רק מפתחות לא מוכרים מהשרת או מהקובץ עדיין בוחרים מקטע; MDM מקורי חושף רק מפתחות שטוחים שהוגדרו. סמן הנוכחות הפנימי של הטלמטריה אינו הגדרת מדיניות. עבור `sandbox.enabled`, כל ערך true מנוהל גובר בלי קשר לסדר הקדימויות בין הערוצים, בהתאם לרצפת ארגז החול בזמן הריצה."
+    },
+    {
+      "en": "In Copilot agent-host sessions, use /sandbox-policy to view the effective sandbox policy. In the response, use Tab to focus Open Sandbox Policy and Enter to open the formatted report.",
+      "he": "בהפעלות מארח סוכן של Copilot, השתמש ב-`/sandbox-policy` כדי להציג את מדיניות ארגז החול בפועל. בתגובה, השתמש ב-Tab כדי למקד את 'פתח את מדיניות ארגז החול' וב-Enter כדי לפתוח את הדוח המעוצב."
+    },
+    {
+      "en": "When another Agent Host session is running, a new Agent Host chat may show an invitation to run agents side by side. Only one chat input notification is shown at a time. Use Tab to reach Open Agents Window, Ignore, or Dismiss notification. Open Agents Window copies the current prompt and attachments from that input without sending them or clearing it. An existing draft in the Agents Window is kept. Ignore turns off future invitations; Dismiss notification only hides the invitation for this chat until the window reloads.",
+      "he": "כאשר הפעלה אחרת של מארח סוכן פועלת, צ'אט חדש של מארח סוכן עשוי להציג הזמנה להריץ סוכנים זה לצד זה. בכל רגע מוצגת רק הודעה אחת בשדה הקלט של הצ'אט. השתמש ב-Tab כדי להגיע אל 'פתח חלון סוכנים', 'התעלם' או 'סגור הודעה'. 'פתח חלון סוכנים' מעתיק את הפרומפט והקבצים המצורפים הנוכחיים מהשדה בלי לשלוח או לנקות אותם. טיוטה קיימת בחלון הסוכנים נשמרת. 'התעלם' מכבה הזמנות עתידיות; 'סגור הודעה' רק מסתיר את ההזמנה עבור צ'אט זה עד לטעינה מחדש של החלון."
+    },
+    {
+      "en": "Depending on the active experiment, a new Copilot harness chat may show an introduction to the new Copilot experience when the session starts or after the first request is submitted. Once shown, sending messages does not dismiss it. Use Tab to reach let us know, Learn More, Got it!, or Not Helpful. Learn More opens documentation without hiding the introduction. Got it! and Not Helpful turn off future introductions.",
+      "he": "בהתאם לניסוי הפעיל, צ'אט חדש של מנגנון ההרצה של Copilot עשוי להציג מבוא לחוויית Copilot החדשה כאשר ההפעלה מתחילה או לאחר שליחת הבקשה הראשונה. לאחר שהמבוא מוצג, שליחת הודעות אינה סוגרת אותו. השתמש ב-Tab כדי להגיע אל 'ספר לנו', 'מידע נוסף', 'הבנתי!' או 'לא מועיל'. 'מידע נוסף' פותח תיעוד בלי להסתיר את המבוא. 'הבנתי!' ו'לא מועיל' מכבים הצגת מבוא בעתיד."
+    }
+  ]
+}

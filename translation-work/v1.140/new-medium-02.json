@@ -1,0 +1,207 @@
+{
+  "vscode": "1.140.0",
+  "kind": "new-source-translation",
+  "batch": "new-medium-02",
+  "entries": [
+    {
+      "en": "Agent Merge enabled; monitoring starts after this turn. {0}",
+      "he": "מיזוג הסוכן הופעל; הניטור יתחיל לאחר התור הזה. {0}"
+    },
+    {
+      "en": "Patterns, in .gitignore syntax, for git-ignored folders to symlink into the isolated worktree.",
+      "he": "תבניות, בתחביר `.gitignore`, עבור תיקיות ש-Git מתעלם מהן ושיש לקשר בקישור סמלי אל עץ העבודה המבודד."
+    },
+    {
+      "en": "Cannot determine SSH known-hosts file paths from ambiguous ssh -G output: {0}",
+      "he": "לא ניתן לקבוע את נתיבי קובצי known-hosts של SSH מפלט דו-משמעי של `ssh -G`: {0}"
+    },
+    {
+      "en": "SSH configuration directive {0} is not supported for remote agent host connections.",
+      "he": "הנחיית תצורת SSH {0} אינה נתמכת עבור חיבורים למארח סוכן מרוחק."
+    },
+    {
+      "en": "SSH ProxyCommand cannot safely expand this host or username on Windows.",
+      "he": "SSH ProxyCommand אינו יכול להרחיב בבטחה את המארח או שם המשתמש הזה ב-Windows."
+    },
+    {
+      "en": "Copilot connectors could not complete the request (HTTP {0}).",
+      "he": "מחברי Copilot לא הצליחו להשלים את הבקשה (HTTP {0})."
+    },
+    {
+      "en": "Copilot connectors could not be reached. Check your connection and try again.",
+      "he": "לא ניתן להגיע למחברי Copilot. בדוק את החיבור ונסה שוב."
+    },
+    {
+      "en": "The Copilot connectors request timed out. Try again.",
+      "he": "בקשת מחברי Copilot חרגה מהזמן. נסה שוב."
+    },
+    {
+      "en": "Copilot connectors are not available in this product.",
+      "he": "מחברי Copilot אינם זמינים במוצר זה."
+    },
+    {
+      "en": "The marketplace page is invalid. Start a new search.",
+      "he": "עמוד ה-Marketplace אינו חוקי. התחל חיפוש חדש."
+    },
+    {
+      "en": "The marketplace source '{0}' returned an invalid page.",
+      "he": "מקור ה-Marketplace '{0}' החזיר עמוד לא חוקי."
+    },
+    {
+      "en": "The marketplace source '{0}' returned invalid priority ordering.",
+      "he": "מקור ה-Marketplace '{0}' החזיר סדר עדיפויות לא חוקי."
+    },
+    {
+      "en": "The marketplace source '{0}' returned invalid relevance ordering.",
+      "he": "מקור ה-Marketplace '{0}' החזיר סדר רלוונטיות לא חוקי."
+    },
+    {
+      "en": "The MCP gallery returned too many empty pages. Try the search again.",
+      "he": "גלריית ה-MCP החזירה יותר מדי עמודים ריקים. נסה את החיפוש שוב."
+    },
+    {
+      "en": "VS Code GitHub authentication requires Git 2.31 or later. Update Git and retry.",
+      "he": "אימות GitHub של VS Code דורש Git 2.31 ומעלה. עדכן את Git ונסה שוב."
+    },
+    {
+      "en": "The Copilot Global MCP configuration must contain valid JSON: {0}",
+      "he": "תצורת ה-MCP הגלובלית של Copilot חייבת להכיל JSON חוקי: {0}"
+    },
+    {
+      "en": "The Copilot Global MCP configuration must be a JSON object whose 'mcpServers' property is an object.",
+      "he": "תצורת ה-MCP הגלובלית של Copilot חייבת להיות אובייקט JSON שהמאפיין `mcpServers` שלו הוא אובייקט."
+    },
+    {
+      "en": "Interactive inputs are not supported in Copilot Global MCP configuration. Use environment variable references instead.",
+      "he": "קלטים אינטראקטיביים אינם נתמכים בתצורת ה-MCP הגלובלית של Copilot. השתמש במקום זאת בהפניות למשתני סביבה."
+    },
+    {
+      "en": "VS Code input variables are not supported in Copilot Global MCP configuration. Use environment variable references instead.",
+      "he": "משתני קלט של VS Code אינם נתמכים בתצורת ה-MCP הגלובלית של Copilot. השתמש במקום זאת בהפניות למשתני סביבה."
+    },
+    {
+      "en": "'{0}' is not supported in Copilot Global MCP configuration.",
+      "he": "'{0}' אינו נתמך בתצורת ה-MCP הגלובלית של Copilot."
+    },
+    {
+      "en": "The Copilot Global MCP configuration changed while updating servers. Please try again.",
+      "he": "תצורת ה-MCP הגלובלית של Copilot השתנתה בזמן עדכון השרתים. נסה שוב."
+    },
+    {
+      "en": "To add a server named 'mcpServers', first wrap the existing servers in an 'mcpServers' object in .mcp.json.",
+      "he": "כדי להוסיף שרת בשם `mcpServers`, עטוף תחילה את השרתים הקיימים באובייקט `mcpServers` בתוך `.mcp.json`."
+    },
+    {
+      "en": "Sandbox configuration is not supported in Copilot Global MCP configuration.",
+      "he": "תצורת ארגז חול אינה נתמכת בתצורת ה-MCP הגלובלית של Copilot."
+    },
+    {
+      "en": "Sandbox configuration is not supported in .mcp.json. Use .vscode/mcp.json instead.",
+      "he": "תצורת ארגז חול אינה נתמכת ב-`.mcp.json`. השתמש במקום זאת ב-`.vscode/mcp.json`."
+    },
+    {
+      "en": "The .mcp.json file changed while updating MCP servers. Please try again.",
+      "he": "הקובץ `.mcp.json` השתנה בזמן עדכון שרתי MCP. נסה שוב."
+    },
+    {
+      "en": "The .mcp.json file must contain a valid JSON object. Fix the file before changing MCP servers.",
+      "he": "הקובץ `.mcp.json` חייב להכיל אובייקט JSON חוקי. תקן את הקובץ לפני שינוי שרתי MCP."
+    },
+    {
+      "en": "The 'mcpServers' property in .mcp.json must be an object. Fix the file before changing MCP servers.",
+      "he": "המאפיין `mcpServers` ב-`.mcp.json` חייב להיות אובייקט. תקן את הקובץ לפני שינוי שרתי MCP."
+    },
+    {
+      "en": "'{0}' is not supported in .mcp.json. Use .vscode/mcp.json.",
+      "he": "'{0}' אינו נתמך ב-`.mcp.json`. השתמש ב-`.vscode/mcp.json`."
+    },
+    {
+      "en": "The Agents window did not accept the feature example in time.",
+      "he": "חלון הסוכנים לא קיבל את דוגמת התכונה בזמן."
+    },
+    {
+      "en": "The feature example could not be sent to an Agents window.",
+      "he": "לא ניתן היה לשלוח את דוגמת התכונה לחלון הסוכנים."
+    },
+    {
+      "en": "Whether the single-pane Changes editor is being replaced during a session switch",
+      "he": "האם עורך השינויים בעל החלונית היחידה מוחלף בעת מעבר בין הפעלות"
+    },
+    {
+      "en": "The provider selected for new session creation before a draft exists",
+      "he": "הספק שנבחר ליצירת הפעלה חדשה לפני שקיימת טיוטה"
+    },
+    {
+      "en": "Whether the chat represented by the session or chat header has side chats",
+      "he": "האם לצ'אט שמיוצג על ידי כותרת ההפעלה או הצ'אט יש צ'אטים צדדיים"
+    },
+    {
+      "en": "The resource of the chat represented by the session or chat header",
+      "he": "המשאב של הצ'אט שמיוצג על ידי כותרת ההפעלה או הצ'אט"
+    },
+    {
+      "en": "Whether the chat represented by a side-by-side chat group header is pinned",
+      "he": "האם הצ'אט שמיוצג על ידי כותרת קבוצת צ'אטים זה לצד זה מוצמד"
+    },
+    {
+      "en": "Whether the session-style header represents one chat in a side-by-side chat group rather than the whole session",
+      "he": "האם הכותרת בסגנון הפעלה מייצגת צ'אט אחד בקבוצת צ'אטים זה לצד זה ולא את ההפעלה כולה"
+    },
+    {
+      "en": "Whether New Chat in This Session replaces Pin or Unpin as the primary action on session rows (A/B experiment)",
+      "he": "האם 'צ'אט חדש בהפעלה זו' מחליף את 'הצמד' או 'בטל הצמדה' כפעולה הראשית בשורות הפעלה (ניסוי A/B)"
+    },
+    {
+      "en": "Background color of the docked details pane in the agent sessions window.",
+      "he": "צבע הרקע של חלונית הפרטים המעוגנת בחלון הפעלות הסוכן."
+    },
+    {
+      "en": "Enables the PR Comment option when adding feedback in the Agents Window.",
+      "he": "מפעיל את האפשרות 'הערת PR' בעת הוספת משוב בחלון הסוכנים."
+    },
+    {
+      "en": "A pull request comment cannot be added to this line.",
+      "he": "לא ניתן להוסיף הערה לבקשת משיכה בשורה זו."
+    },
+    {
+      "en": "To use another Agent Host, duplicate this automation. The original keeps its schedule until you disable it.",
+      "he": "כדי להשתמש במארח סוכן אחר, שכפל אוטומציה זו. המקורית תשמור על לוח הזמנים שלה עד שתשבית אותה."
+    },
+    {
+      "en": "Choose an available Agent Host that supports automations.",
+      "he": "בחר מארח סוכן זמין שתומך באוטומציות."
+    },
+    {
+      "en": "The selected Agent Host and session type cannot run without a workspace. Choose a workspace or another session type.",
+      "he": "מארח הסוכן וסוג ההפעלה שנבחרו אינם יכולים לפעול ללא סביבת עבודה. בחר סביבת עבודה או סוג הפעלה אחר."
+    },
+    {
+      "en": "The selected Agent Host and session type cannot use this workspace. Choose another workspace or session type.",
+      "he": "מארח הסוכן וסוג ההפעלה שנבחרו אינם יכולים להשתמש בסביבת עבודה זו. בחר סביבת עבודה או סוג הפעלה אחר."
+    },
+    {
+      "en": "Automations from {0} could not be loaded. Reconnect to the Agent Host and try again.",
+      "he": "לא ניתן היה לטעון אוטומציות מ-{0}. התחבר מחדש למארח הסוכן ונסה שוב."
+    },
+    {
+      "en": "Automations from {0} are still loading. Wait for loading to finish, then try again.",
+      "he": "האוטומציות מ-{0} עדיין נטענות. המתן לסיום הטעינה ולאחר מכן נסה שוב."
+    },
+    {
+      "en": "Connect to this automation's Agent Host and try again.",
+      "he": "התחבר למארח הסוכן של אוטומציה זו ונסה שוב."
+    },
+    {
+      "en": "This automation has no Agent Host. Duplicate it and select an Agent Host.",
+      "he": "לאוטומציה זו אין מארח סוכן. שכפל אותה ובחר מארח סוכן."
+    },
+    {
+      "en": "{0} is unavailable. Reconnect to the Agent Host and try again.",
+      "he": "{0} אינו זמין. התחבר מחדש למארח הסוכן ונסה שוב."
+    },
+    {
+      "en": "{0} does not support automations. Use an Agent Host that supports automations.",
+      "he": "{0} אינו תומך באוטומציות. השתמש במארח סוכן שתומך באוטומציות."
+    }
+  ]
+}

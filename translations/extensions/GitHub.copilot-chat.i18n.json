@@ -306,15 +306,13 @@
 			"github.copilot.config.useResponsesApi": "השתמש ב-Responses API במקום ב-Chat Completions API כאשר נתמך. מפעיל חשיבה וסיכומי חשיבה.\n\n**הערה**: זהו כלי ניסיוני שעדיין לא הופעל עבור כל המשתמשים.\n\n**חשוב**: עבור מודלים של נקודת קצה מותאמת אישית, סוג ה-API אינו תלוי בהגדרה זו ונקבע לכל מודל בנפרד באמצעות המאפיין `apiType`, או מוסק מנתיב ה-`url` כאשר הוא לא צוין.",
 			"github.copilot.config.responsesApiContextManagement.enabled": "מפעיל ניהול הקשר עבור Responses API. דורש את `#github.copilot.chat.useResponsesApi#`.",
 			"github.copilot.config.responsesApi.promptCacheKey.enabled": "מפעיל הגדרת מפתח מטמון פרומפט עבור Responses API.",
-			"github.copilot.config.responsesApi.promptCacheBreakpoint.enabled": "מפעיל סימוני נקודת עצירה מפורשים של מטמון פרומפט עבור Responses API.",
+			"github.copilot.config.responsesApi.promptCacheBreakpoint.enabled": "מפעיל מטמון פרומפט מפורש עבור מודלי OpenAI נתמכים באמצעות Responses API. בקשות סוכן שומרות עד 20 נקודות עצירה של השיחה, בנוסף לשני עוגני קידומת עבור הוראות מערכת והקשר גלובלי.\n\n**הערה**: עבור מודלים שבהם משתמשים במפתח API משלך, נעשה שימוש במטמון פרומפט מפורש רק כאשר הגדרה זו מופעלת במפורש, מכיוון ששערים מסוימים אינם מעבירים את סימוני נקודות העצירה של המטמון.",
 			"github.copilot.config.updated53CodexPrompt.enabled": "מפעיל את הפרומפט המעודכן עבור מודל gpt-5.3-codex.",
 			"github.copilot.config.claudeOpus5Prompt.enabled": "מפעיל את פרומפט המערכת המעודכן המותאם למודל Claude Opus 5.",
 			"github.copilot.config.claudeSonnet5Prompt.enabled": "מפעיל את פרומפט המערכת המעודכן המותאם למודל Claude Sonnet 5.",
 			"github.copilot.config.gpt55GetChangedFilesTool.enabled": "מפעיל את כלי Get Changed Files עבור מודלי gpt-5.5.",
 			"github.copilot.config.gpt56Verbosity.enabled": "מגדיר את מפורטות התגובה לנמוכה עבור מודלי gpt-5.6.",
 			"github.copilot.config.gemini3GetChangedFilesTool.enabled": "מפעיל את כלי Get Changed Files עבור מודלי gemini-3.",
-			"github.copilot.config.gemini3LowReasoningEffort.enabled": "מגדיר את מאמץ ההיגיון לנמוך עבור מודלי gemini-3.",
-			"github.copilot.config.claudeOpusDefaultReasoningEffort": "דורס את מאמץ החשיבה המחדלי המוצג בבורר המודלים עבור מודלי Claude Opus. השאר ריק כדי להשתמש בברירת המחדל המובנית. מתעלם ממנו אם המודל אינו תומך ברמה שנבחרה.",
 			"github.copilot.config.gpt55ReadFileTool.enabled": "מפעיל את כלי Read File עבור מודלי gpt-5.5.",
 			"github.copilot.config.anthropic.tools.websearch.enabled": "הפעל את כלי חיפוש האינטרנט המובנה של Anthropic עבור מודלי Claude מסוג BYOK. כאשר מופעל, מאפשר ל-Claude לחפש באינטרנט מידע עדכני. \n\n**הערה**: זהו כלי ניסיוני הזמין רק עבור מודלי Claude מסוג BYOK של Anthropic.",
 			"github.copilot.config.anthropic.tools.websearch.maxUses": "מספר מרבי של חיפושי אינטרנט המותרים לכל בקשה. הטווח התקין הוא 1 עד 20. מונע קריאות API מוגזמות במהלך אינטראקציה בודדת. אם Claude חורג ממגבלה זו, התגובה מחזירה שגיאה.",
@@ -339,7 +337,6 @@
 			"github.copilot.config.notebook.alternativeNESFormat.enabled": "הפעל פורמט חלופי להצעות עריכה הבאה במחברות.",
 			"github.copilot.config.localWorkspaceRecording.enabled": "הפעל הקלטת סביבת עבודה מקומית לצורך ניתוח.",
 			"github.copilot.config.editRecording.enabled": "הפעל הקלטת עריכות לצורך ניתוח.",
-			"github.copilot.config.inlineChat.reasoningEffort": "שולט ברמת מאמץ ההיסק עבור בקשות צ'אט מוטבעות. ערכים נמוכים יותר מניבים תגובות מהירות יותר עם פחות אסימוני היסק. הערכים הנתמכים תלויים במודל.",
 			"github.copilot.config.inlineChat.enableThinking": "שולט אם חשיבה/היסק מופעלים עבור בקשות צ'אט מוטבעות. כאשר האפשרות מושבתת, סיכומי היסק מוסתרים לתגובות מהירות יותר.",
 			"github.copilot.config.debug.requestLogger.maxEntries": "המספר המקסימלי של רשומות לשמירה ביומן הבקשות לצורכי ניפוי באגים.",
 			"github.copilot.config.chat.agentDebugLog.fileLogging.enabled": "הפעל רישום ניפוי באגים לסוכן: כתיבת אירועי ניפוי באגים של הצ'אט (קריאות לכלים, בקשות LLM, שימוש באסימונים, שגיאות) לקובצי JSONL עבור חלונית הניפוי ומיומנות פתרון התקלות. דורש טעינה מחדש של החלון כדי להיכנס לתוקף.",
@@ -382,7 +379,6 @@
 			"github.copilot.config.cli.isolationOption.enabled": "אפשר את אפשרות מצב הבידוד עבור Copilot CLI. כשהאפשרות מופעלת, משתמשים יכולים לבחור בין מצבי עץ עבודה וסביבת עבודה.",
 			"github.copilot.config.cli.autoCommit.enabled": "אפשר קומיט אוטומטי עבור Copilot CLI. כשהאפשרות מופעלת, שינויים שבוצעו על ידי Copilot CLI יעברו קומיט אוטומטי למאגר בסוף כל תור.",
 			"github.copilot.config.cli.sessionController.enabled": "אפשר את ה-API החדש לבקר ההפעלות עבור Copilot CLI. דורש טעינה מחדש של VS Code.",
-			"github.copilot.config.cli.thinkingEffort.enabled": "אפשר מאמץ חשיבה עבור מודלי שפה ב-Copilot CLI.",
 			"github.copilot.config.cli.sessionControllerForSessionsApp.enabled": "אפשר את ה-API החדש לבקר ההפעלות עבור אפליקציית ההפעלות. דורש טעינה מחדש של VS Code.",
 			"github.copilot.config.cli.terminalLinks.enabled": "אפשר קישורי קבצים מתקדמים וניתנים ללחיצה במסופי Copilot CLI. פותר נתיבים יחסיים אל מול תיקיות מצב ההפעלה. דורש טעינה מחדש של VS Code.",
 			"github.copilot.config.cli.remote.enabled": "אפשר את הפקודה /remote עבור הפעלות Copilot CLI, המאפשרת צפייה והכוונה מ-GitHub.com ומאפליקציית GitHub לנייד.",
@@ -471,7 +467,9 @@
 			"github.copilot.command.sessions.sync": "סנכרן שינויים",
 			"github.copilot.command.sessions.discardChanges": "השלך שינויים",
 			"github.copilot.command.sessions.refreshChanges": "רענן",
-			"github.copilot.command.sessions.initializeRepository": "אתחל מאגר"
+			"github.copilot.command.sessions.initializeRepository": "אתחל מאגר",
+			"github.copilot.config.claudeDefaultReasoningEffort": "עוקף את מאמץ החשיבה המוגדר כברירת מחדל שמוצג בבורר המודלים עבור מודלי Claude, הן ב-Copilot Chat והן בהפעלות מקומיות של Copilot CLI (Agent Host). הפעלות מרוחקות של Agent Host אינן מושפעות. השאר ריק כדי להשתמש בברירת המחדל המובנית. ההגדרה מתעלמת אם המודל אינו תומך ברמה שנבחרה.",
+			"github.copilot.config.executionSubagent.turnWisePrompting": "הצג לתת-סוכן הביצוע את מספר האיטרציות שנותרו לו בכל תור."
 		}
 	}
 }

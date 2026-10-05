@@ -1,0 +1,207 @@
+{
+  "vscode": "1.140.0",
+  "kind": "new-source-translation",
+  "batch": "new-medium-04",
+  "entries": [
+    {
+      "en": "Not included in the captured snapshot. Refresh to capture details.",
+      "he": "לא נכלל בתמונת המצב שנאספה. רענן כדי לאסוף את הפרטים."
+    },
+    {
+      "en": "Host restored, but not found in the latest discovery.",
+      "he": "המארח שוחזר, אך לא נמצא בגילוי האחרון."
+    },
+    {
+      "en": "Host is no longer hidden, but discovery failed. Use Refresh to try again.",
+      "he": "המארח אינו מוסתר עוד, אך הגילוי נכשל. השתמש ב'רענן' כדי לנסות שוב."
+    },
+    {
+      "en": "Up to 100 local events since {0}. Earlier history is not captured. Host names and addresses are included; review before sharing.",
+      "he": "עד 100 אירועים מקומיים מאז {0}. היסטוריה מוקדמת יותר אינה נאספת. שמות וכתובות של מארחים כלולים; סקור לפני שיתוף."
+    },
+    {
+      "en": "{0}: disconnect requested by the user; automatic reconnect suppressed.",
+      "he": "{0}: המשתמש ביקש ניתוק; החיבור האוטומטי מחדש נמנע."
+    },
+    {
+      "en": "Discovery #{0} succeeded in {1} ms: {2} found, {3} with an active host, {4} dismissed.",
+      "he": "גילוי #{0} הצליח בתוך {1} ms: נמצאו {2}, מתוכם {3} עם מארח פעיל ו-{4} הוסתרו."
+    },
+    {
+      "en": "Host details use the last successful discovery in this window; they may be stale. No network requests are made when viewing or copying diagnostics.",
+      "he": "פרטי המארח משתמשים בגילוי המוצלח האחרון בחלון זה ועלולים להיות מיושנים. לא מתבצעות בקשות רשת בעת הצגה או העתקה של האבחון."
+    },
+    {
+      "en": "The Dev Container Agent Host disconnected while reconnecting.",
+      "he": "מארח הסוכן של Dev Container התנתק בזמן התחברות מחדש."
+    },
+    {
+      "en": "The SSH, Tunnel, or WSL host could not be connected for this Dev Container workspace.",
+      "he": "לא ניתן היה להתחבר למארח SSH, Tunnel או WSL עבור סביבת העבודה של Dev Container."
+    },
+    {
+      "en": "The SSH, Tunnel, or WSL connection for this Dev Container workspace is no longer configured.",
+      "he": "חיבור SSH, Tunnel או WSL עבור סביבת העבודה של Dev Container אינו מוגדר עוד."
+    },
+    {
+      "en": "Deleted dev tunnel '{0}', but failed to refresh dev tunnels: {1}",
+      "he": "מנהרת הפיתוח '{0}' נמחקה, אך רענון מנהרות הפיתוח נכשל: {1}"
+    },
+    {
+      "en": "Unable to archive Dev Container session '{0}' while disconnected.",
+      "he": "לא ניתן להעביר לארכיון את הפעלת Dev Container '{0}' בזמן ניתוק."
+    },
+    {
+      "en": "Timed out waiting for Dev Container session '{0}' to be archived.",
+      "he": "ההמתנה להעברת הפעלת Dev Container '{0}' לארכיון חרגה מהזמן."
+    },
+    {
+      "en": "Unable to unarchive Dev Container session '{0}' while disconnected.",
+      "he": "לא ניתן להוציא מהארכיון את הפעלת Dev Container '{0}' בזמן ניתוק."
+    },
+    {
+      "en": "Unable to unarchive Dev Container session '{0}': {1}",
+      "he": "לא ניתן להוציא מהארכיון את הפעלת Dev Container '{0}': {1}"
+    },
+    {
+      "en": "Timed out waiting for Dev Container session '{0}' to be unarchived.",
+      "he": "ההמתנה להוצאת הפעלת Dev Container '{0}' מהארכיון חרגה מהזמן."
+    },
+    {
+      "en": "Enter a display name for this remote agent host in this client. Leave empty to use the default name.",
+      "he": "הזן שם תצוגה למארח הסוכן המרוחק הזה בלקוח זה. השאר ריק כדי להשתמש בשם ברירת המחדל."
+    },
+    {
+      "en": "This remote Agent Host does not support Dev Container sessions. Update VS Code on the remote machine.",
+      "he": "מארח הסוכן המרוחק הזה אינו תומך בהפעלות Dev Container. עדכן את VS Code במחשב המרוחק."
+    },
+    {
+      "en": "Dev Container Agent Hosts require a local, SSH, Tunnel, or WSL workspace.",
+      "he": "מארחי סוכן של Dev Container דורשים סביבת עבודה מקומית, SSH, Tunnel או WSL."
+    },
+    {
+      "en": "No authentication is available to enumerate tunnels.",
+      "he": "אין אימות זמין לצורך מניית מנהרות."
+    },
+    {
+      "en": "Inspect a remote session's state and latest response",
+      "he": "בדוק את מצב ההפעלה המרוחקת ואת התגובה האחרונה שלה"
+    },
+    {
+      "en": "The agent host for the background chat is no longer connected.",
+      "he": "מארח הסוכן של צ'אט הרקע אינו מחובר עוד."
+    },
+    {
+      "en": "Unable to load the background chat for remote session tools.",
+      "he": "לא ניתן לטעון את צ'אט הרקע עבור כלי ההפעלה המרוחקת."
+    },
+    {
+      "en": "This chat cannot prepare client tools for background messages.",
+      "he": "צ'אט זה אינו יכול להכין כלי לקוח עבור הודעות רקע."
+    },
+    {
+      "en": "The target chat identity changed during inspection.",
+      "he": "זהות צ'אט היעד השתנתה במהלך הבדיקה."
+    },
+    {
+      "en": "The remote agent host disconnected or its connection changed during inspection.",
+      "he": "מארח הסוכן המרוחק התנתק או שהחיבור אליו השתנה במהלך הבדיקה."
+    },
+    {
+      "en": "The exact target chat no longer exists on its agent host.",
+      "he": "צ'אט היעד המדויק אינו קיים עוד במארח הסוכן שלו."
+    },
+    {
+      "en": "The agent host is {0}. Inspection does not reconnect it.",
+      "he": "מארח הסוכן הוא {0}. הבדיקה אינה מחברת אותו מחדש."
+    },
+    {
+      "en": "Use a session or chat on a remote agent host registered in this Agents window.",
+      "he": "השתמש בהפעלה או בצ'אט במארח סוכן מרוחק שרשום בחלון הסוכנים הזה."
+    },
+    {
+      "en": "Timed out waiting for remote message acknowledgement.",
+      "he": "ההמתנה לאישור קבלת ההודעה המרוחקת חרגה מהזמן."
+    },
+    {
+      "en": "A remote message request cannot be retried with different arguments.",
+      "he": "לא ניתן לנסות שוב בקשת הודעה מרוחקת עם ארגומנטים שונים."
+    },
+    {
+      "en": "The target chat identity changed while preparing the message.",
+      "he": "זהות צ'אט היעד השתנתה בזמן הכנת ההודעה."
+    },
+    {
+      "en": "The agent host connection changed. The message was not sent on the replacement connection.",
+      "he": "החיבור למארח הסוכן השתנה. ההודעה לא נשלחה דרך החיבור החלופי."
+    },
+    {
+      "en": "Provide a session reference and a non-empty message of at most {0} characters.",
+      "he": "ספק הפניה להפעלה והודעה שאינה ריקה באורך של עד {0} תווים."
+    },
+    {
+      "en": "Remote message limit reached ({0} requests per window).",
+      "he": "הגעת למגבלת ההודעות המרוחקות ({0} בקשות לכל חלון)."
+    },
+    {
+      "en": "Remote message delivery was not confirmed. It may already be queued; do not retry automatically. {0}",
+      "he": "מסירת ההודעה המרוחקת לא אושרה. ייתכן שהיא כבר נמצאת בתור; אל תנסה שוב אוטומטית. {0}"
+    },
+    {
+      "en": "The target session's working directories are unavailable. Open the session before sending a remote message.",
+      "he": "תיקיות העבודה של הפעלת היעד אינן זמינות. פתח את ההפעלה לפני שליחת הודעה מרוחקת."
+    },
+    {
+      "en": "The agent host provider for {0} is not registered and connected in this Agents window.",
+      "he": "ספק מארח הסוכן עבור {0} אינו רשום ומחובר בחלון הסוכנים הזה."
+    },
+    {
+      "en": "The target session's workspace is not trusted. Trust it before sending a remote message.",
+      "he": "סביבת העבודה של הפעלת היעד אינה מהימנה. תן בה אמון לפני שליחת הודעה מרוחקת."
+    },
+    {
+      "en": "A remote session creation request cannot be retried with different arguments.",
+      "he": "לא ניתן לנסות שוב בקשה ליצירת הפעלה מרוחקת עם ארגומנטים שונים."
+    },
+    {
+      "en": "Remote agent host {0} connection changed during session creation.",
+      "he": "החיבור למארח הסוכן המרוחק {0} השתנה במהלך יצירת ההפעלה."
+    },
+    {
+      "en": "Remote session creation limit reached ({0} requests per window).",
+      "he": "הגעת למגבלת יצירת ההפעלות המרוחקות ({0} בקשות לכל חלון)."
+    },
+    {
+      "en": "Remote session creation ended without a committed session. Do not retry automatically.",
+      "he": "יצירת ההפעלה המרוחקת הסתיימה ללא הפעלה שנקבעה. אל תנסה שוב אוטומטית."
+    },
+    {
+      "en": "Remote agent host {0} no longer matches this request. {1}",
+      "he": "מארח הסוכן המרוחק {0} אינו תואם עוד לבקשה זו. {1}"
+    },
+    {
+      "en": "No connected remote agent host matches this request. {0}",
+      "he": "אין מארח סוכן מרוחק מחובר שתואם לבקשה זו. {0}"
+    },
+    {
+      "en": "Remote session recursion limit reached (maximum depth {0}).",
+      "he": "הגעת למגבלת הרקורסיה של הפעלה מרוחקת (עומק מרבי {0})."
+    },
+    {
+      "en": "No agent supports the requested workspace and isolation with an available model or Auto fallback.",
+      "he": "אין סוכן שתומך בסביבת העבודה ובבידוד המבוקשים עם מודל זמין או חלופת Auto."
+    },
+    {
+      "en": "Remote agent host {0} no longer reports its workload.",
+      "he": "מארח הסוכן המרוחק {0} אינו מדווח עוד על עומס העבודה שלו."
+    },
+    {
+      "en": "Remote agent host {0} workspace changed during session creation.",
+      "he": "סביבת העבודה של מארח הסוכן המרוחק {0} השתנתה במהלך יצירת ההפעלה."
+    },
+    {
+      "en": "The workspace is not trusted. Trust it before starting an unattended session.",
+      "he": "סביבת העבודה אינה מהימנה. תן בה אמון לפני התחלת הפעלה ללא השגחה."
+    }
+  ]
+}

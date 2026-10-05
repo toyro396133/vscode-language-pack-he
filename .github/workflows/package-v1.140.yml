@@ -1,0 +1,79 @@
+name: Package Hebrew VS Code 1.140
+
+on:
+  push:
+    branches:
+      - 'translation/v1.140'
+    paths:
+      - '.github/workflows/package-v1.140.yml'
+      - '.vscodeignore'
+      - 'README.md'
+      - 'CHANGELOG.md'
+      - 'package.json'
+      - 'translations/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Validate finalized language pack
+        run: |
+          node scripts/vsloc.mjs status
+          node scripts/validate-translation.mjs
+
+      - name: Translation statistics
+        run: |
+          node scripts/translation-stats.mjs | tee translation-stats-1.140.json
+
+      - name: Package VSIX
+        run: |
+          npx --yes @vscode/vsce package --out hebrew-language-pack-1.140.0.vsix
+          ls -lh hebrew-language-pack-1.140.0.vsix
+
+      - name: Verify VSIX contents
+        shell: bash
+        run: |
+          unzip -l hebrew-language-pack-1.140.0.vsix > vsix-contents.txt
+          unzip -Z1 hebrew-language-pack-1.140.0.vsix > vsix-files.txt
+
+          if grep -E '^extension/(code\.deb|vscode-root(/|$)|translation-work(/|$)|source/en(/|$)|todo[^/]*\.json)$' vsix-files.txt; then
+            echo "VSIX contains build-only files" >&2
+            exit 1
+          fi
+
+          required=(
+            'extension/package.json'
+            'extension/translations/main.i18n.json'
+          )
+
+          for file in "${required[@]}"; do
+            if ! grep -Fxq "$file" vsix-files.txt; then
+              echo "VSIX is missing required file: $file" >&2
+              exit 1
+            fi
+          done
+
+          echo "VSIX content check passed."
+
+      - name: Upload VSIX
+        uses: actions/upload-artifact@v4
+        with:
+          name: vscode-hebrew-language-pack-1.140.0
+          path: |
+            hebrew-language-pack-1.140.0.vsix
+            translation-stats-1.140.json
+            vsix-contents.txt
+            vsix-files.txt

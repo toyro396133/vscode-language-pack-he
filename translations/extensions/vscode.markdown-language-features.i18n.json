@@ -144,7 +144,14 @@
 			"markdown.editor.toggleTabFocus.title": "החלף מצב הזזת מיקוד באמצעות מקש טאב",
 			"markdown.editor.smartEnter.title": "הכנס פסקה",
 			"markdown.editor.insertHardLineBreak.title": "הכנס מעבר שורה קשיח",
-			"markdown.editor.insertParagraph.title": "הכנס פסקה ללא המשך סימון"
+			"markdown.editor.insertParagraph.title": "הכנס פסקה ללא המשך סימון",
+			"markdown.editor.copyLinesUp.title": "העתק שורה למעלה",
+			"markdown.editor.copyLinesDown.title": "העתק שורה למטה",
+			"markdown.editor.moveLinesUp.title": "הזז שורה למעלה",
+			"markdown.editor.moveLinesDown.title": "הזז שורה למטה",
+			"markdown.editor.deleteLines.title": "מחק שורה",
+			"markdown.editor.joinLines.title": "אחד שורות",
+			"markdown.editor.toggleLocked.title": "החלף מצב עריכה/נעילה"
 		},
 		"bundle": {
 			"...1 additional file not shown": "...קובץ נוסף אחד לא מוצג",

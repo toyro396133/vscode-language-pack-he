@@ -5,3 +5,14 @@
 scripts/**
 **/*.vsix
 source/**
+translation-work/**
+docs/**
+NOTICE-OFFICIALIZATION.md
+package.official-template.json
+code.deb
+vscode-root/**
+todo*.json
+translation-memory-report.json
+translation-worklist.json
+translation-batch-report.json
+translation-stats-*.json
