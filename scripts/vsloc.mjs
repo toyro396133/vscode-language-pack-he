@@ -45,7 +45,26 @@ function manifestExtensions() {
   return map;
 }
 
-const appResources = (app) => path.join(app, 'Contents', 'Resources', 'app');
+function appResources(app) {
+  const candidates = [
+    app,
+    path.join(app, 'Contents', 'Resources', 'app'),
+    path.join(app, 'resources', 'app'),
+    path.join(app, 'Resources', 'app'),
+  ];
+
+  for (const candidate of candidates) {
+    if (
+      fs.existsSync(path.join(candidate, 'package.json')) &&
+      fs.existsSync(path.join(candidate, 'out')) &&
+      fs.existsSync(path.join(candidate, 'extensions'))
+    ) {
+      return candidate;
+    }
+  }
+
+  die(`לא נמצאו משאבי VS Code תחת ${app}. אפשר להעביר --app שמצביע ישירות לתיקיית resources/app.`);
+}
 
 // ---------------------------------------------------------------- extract
 
