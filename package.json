@@ -2,7 +2,7 @@
 	"name": "hebrew-ui-translation-amaarets",
 	"displayName": "Hebrew Language Pack for Visual Studio Code",
 	"description": "Language pack extension for Hebrew / חבילת שפה עברית ל-Visual Studio Code",
-	"version": "1.138.0",
+	"version": "1.140.0",
 	"publisher": "AMAARETS",
 	"repository": {
 		"type": "git",
