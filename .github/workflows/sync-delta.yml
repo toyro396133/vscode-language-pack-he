@@ -4,11 +4,14 @@ on:
   push:
     branches:
       - 'officialization/**'
+      - 'translation/**'
     paths:
       - '.github/workflows/sync-delta.yml'
       - 'scripts/vsloc.mjs'
       - 'scripts/translation-memory.mjs'
       - 'scripts/translation-worklist.mjs'
+      - 'scripts/compile-translation-batches.mjs'
+      - 'translation-work/**'
   workflow_dispatch:
     inputs:
       vscode_version:
@@ -89,6 +92,17 @@ jobs:
             --input todo.remaining.json \
             --out translation-worklist.json
 
+      - name: Compile reviewed translation batches
+        if: ${{ hashFiles('translation-work/v1.140/*.json') != '' }}
+        run: |
+          node scripts/compile-translation-batches.mjs \
+            --todo todo.json \
+            --prefilled todo.prefilled.json \
+            --workdir translation-work/v1.140 \
+            --manual-out todo.manual.json \
+            --merged-out todo.he.partial.json \
+            --remaining-out todo.after-manual.json \
+            --report translation-batch-report.json
       - name: Summarize delta
         shell: bash
         run: |
@@ -126,4 +140,8 @@ jobs:
             todo.remaining.json
             translation-memory-report.json
             translation-worklist.json
+            todo.manual.json
+            todo.he.partial.json
+            todo.after-manual.json
+            translation-batch-report.json
             source-en-new.tar.gz
