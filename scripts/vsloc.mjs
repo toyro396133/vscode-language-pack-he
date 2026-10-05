@@ -175,6 +175,16 @@ function loadTranslations() {
   return { core, exts };
 }
 
+function englishOf(value) {
+  if (typeof value === 'string') return value;
+  if (value && typeof value === 'object' && typeof value.en === 'string') return value.en;
+  return undefined;
+}
+
+function commentOf(value) {
+  return value && typeof value === 'object' && value.comment ? value.comment : undefined;
+}
+
 // ----------------------------------------------------------------- status
 
 function status(o) {
@@ -229,11 +239,13 @@ function diff(o) {
     const have = tr.core[mod] || {};
     for (const [k, v] of Object.entries(to.core[mod])) {
       const isNew = !(k in oldMod);
-      const isChanged = !isNew && oldMod[k].en !== v.en;
+      const en = englishOf(v);
+      const oldEn = englishOf(oldMod[k]);
+      const isChanged = !isNew && oldEn !== en;
       if (!isNew && !isChanged && k in have) continue;
       (todo.core[mod] ||= {})[k] = {
-        en: v.en, ...(v.comment ? { comment: v.comment } : {}),
-        ...(isChanged ? { was: oldMod[k].en, current: have[k] } : {}),
+        en, ...(commentOf(v) ? { comment: commentOf(v) } : {}),
+        ...(isChanged ? { was: oldEn, current: have[k] } : {}),
       };
       isNew ? added++ : changed++;
     }
@@ -247,10 +259,12 @@ function diff(o) {
     for (const sec of ['package', 'bundle']) {
       for (const [k, v] of Object.entries(to.exts[id][sec])) {
         const isNew = !(k in oldE[sec]);
-        const isChanged = !isNew && oldE[sec][k].en !== v.en;
+        const en = englishOf(v);
+        const oldEn = englishOf(oldE[sec][k]);
+        const isChanged = !isNew && oldEn !== en;
         if (!isNew && !isChanged && k in have[sec]) continue;
         ((todo.extensions[id] ||= {})[sec] ||= {})[k] = {
-          en: v.en, ...(isChanged ? { was: oldE[sec][k].en, current: have[sec][k] } : {}),
+          en, ...(isChanged ? { was: oldEn, current: have[sec][k] } : {}),
         };
         isNew ? added++ : changed++;
       }
