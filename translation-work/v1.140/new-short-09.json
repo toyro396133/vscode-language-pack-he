@@ -1,0 +1,227 @@
+{
+  "vscode": "1.140.0",
+  "kind": "new-source-translation",
+  "batch": "new-short-09",
+  "entries": [
+    {
+      "en": "{0}. Open the sale offer.",
+      "he": "{0}. פתח את הצעת המכירה."
+    },
+    {
+      "en": "Saving editor chat usage",
+      "he": "שומר שימוש בצ'אט העורך"
+    },
+    {
+      "en": "Dismiss Feedback Acknowledgement",
+      "he": "סגור את אישור קבלת המשוב"
+    },
+    {
+      "en": "Share any additional feedback (optional).",
+      "he": "שתף משוב נוסף (אופציונלי)."
+    },
+    {
+      "en": "Why did you switch harnesses?",
+      "he": "מדוע החלפת מנגנון הרצה?"
+    },
+    {
+      "en": "A feature I need was unavailable",
+      "he": "תכונה שאני צריך לא הייתה זמינה"
+    },
+    {
+      "en": "Copilot was too slow",
+      "he": "Copilot היה איטי מדי"
+    },
+    {
+      "en": "I prefer the Local experience",
+      "he": "אני מעדיף את החוויה המקומית"
+    },
+    {
+      "en": "Copilot did not work as expected",
+      "he": "Copilot לא פעל כמצופה"
+    },
+    {
+      "en": "Choose a Model and Provider",
+      "he": "בחר מודל וספק"
+    },
+    {
+      "en": "Try Model and Provider Selection",
+      "he": "נסה בחירת מודל וספק"
+    },
+    {
+      "en": "The plugin's repository directory is invalid.",
+      "he": "תיקיית המאגר של התוסף אינה חוקית."
+    },
+    {
+      "en": "No supported plugin manifest was found in '{0}'.",
+      "he": "לא נמצא מניפסט תוסף נתמך ב-'{0}'."
+    },
+    {
+      "en": "The cloud sandbox returned a different repository.",
+      "he": "ארגז החול בענן החזיר מאגר אחר."
+    },
+    {
+      "en": "Repository cloning failed.",
+      "he": "שכפול המאגר נכשל."
+    },
+    {
+      "en": "Repository cloning failed: {0}",
+      "he": "שכפול המאגר נכשל: {0}"
+    },
+    {
+      "en": "The cloud sandbox's project state is unavailable.",
+      "he": "מצב הפרויקט של ארגז החול בענן אינו זמין."
+    },
+    {
+      "en": "Existing cloud sandbox sessions.",
+      "he": "הפעלות קיימות של ארגז חול בענן."
+    },
+    {
+      "en": "Remote Sessions",
+      "he": "הפעלות מרוחקות"
+    },
+    {
+      "en": "{0} [Skip](#skip)",
+      "he": "{0} [דלג](#skip)"
+    },
+    {
+      "en": "Waiting for MCP servers {0}...",
+      "he": "ממתין לשרתי MCP ‏{0}..."
+    },
+    {
+      "en": "This is taking a little longer than usual",
+      "he": "זה נמשך קצת יותר מהרגיל"
+    },
+    {
+      "en": "Link copied to clipboard",
+      "he": "הקישור הועתק ללוח"
+    },
+    {
+      "en": "Hide subagent details: {0}",
+      "he": "הסתר פרטי תת-סוכן: {0}"
+    },
+    {
+      "en": "Show subagent details: {0}",
+      "he": "הצג פרטי תת-סוכן: {0}"
+    },
+    {
+      "en": "Stirring the solution",
+      "he": "מערבב את הפתרון"
+    },
+    {
+      "en": "Thanking all the fish",
+      "he": "מודה לכל הדגים"
+    },
+    {
+      "en": "Stabilizing the wormhole",
+      "he": "מייצב את חור התולעת"
+    },
+    {
+      "en": "Baking the ideas",
+      "he": "אופה את הרעיונות"
+    },
+    {
+      "en": "Consulting the oracle",
+      "he": "מתייעץ עם האורקל"
+    },
+    {
+      "en": "Digging straight down",
+      "he": "חופר ישר למטה"
+    },
+    {
+      "en": "Phase cancelled",
+      "he": "השלב בוטל"
+    },
+    {
+      "en": "Phase completed",
+      "he": "השלב הושלם"
+    },
+    {
+      "en": "Phase is running",
+      "he": "השלב פועל"
+    },
+    {
+      "en": "HydraFusion phase: {0}",
+      "he": "שלב HydraFusion: {0}"
+    },
+    {
+      "en": "Terminal Output · {0}",
+      "he": "פלט מסוף · {0}"
+    },
+    {
+      "en": "A preview is not available.",
+      "he": "תצוגה מקדימה אינה זמינה."
+    },
+    {
+      "en": "Open Full Output (Read-Only)",
+      "he": "פתח פלט מלא (לקריאה בלבד)"
+    },
+    {
+      "en": "Tool execution failed",
+      "he": "הפעלת הכלי נכשלה"
+    },
+    {
+      "en": "Response File Changes",
+      "he": "שינויי קבצים בתשובה"
+    },
+    {
+      "en": "{0} background commands",
+      "he": "{0} פקודות רקע"
+    },
+    {
+      "en": "1 background command",
+      "he": "פקודת רקע אחת"
+    },
+    {
+      "en": "Waiting for 1 background command",
+      "he": "ממתין לפקודת רקע אחת"
+    },
+    {
+      "en": "Waiting for {0} background commands",
+      "he": "ממתין ל-{0} פקודות רקע"
+    },
+    {
+      "en": "Waiting for {0} and {1}",
+      "he": "ממתין ל-{0} ול-{1}"
+    },
+    {
+      "en": "Waiting for your response",
+      "he": "ממתין לתגובה שלך"
+    },
+    {
+      "en": "Waiting for 1 subagent",
+      "he": "ממתין לתת-סוכן אחד"
+    },
+    {
+      "en": "Waiting for {0} subagents",
+      "he": "ממתין ל-{0} תת-סוכנים"
+    },
+    {
+      "en": "Waiting for terminal output",
+      "he": "ממתין לפלט המסוף"
+    },
+    {
+      "en": "{0} options, {1}",
+      "he": "{0} אפשרויות, {1}"
+    },
+    {
+      "en": "{0} details, {1}",
+      "he": "פרטי {0}, {1}"
+    },
+    {
+      "en": "Max context: {0}",
+      "he": "הקשר מרבי: {0}"
+    },
+    {
+      "en": "Alternative routing",
+      "he": "ניתוב חלופי"
+    },
+    {
+      "en": "Use Auto mode in {0}",
+      "he": "השתמש במצב Auto ב-{0}"
+    },
+    {
+      "en": "{0} Details, {1}",
+      "he": "פרטי {0}, {1}"
+    }
+  ]
+}
