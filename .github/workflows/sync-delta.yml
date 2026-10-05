@@ -1,0 +1,101 @@
+name: Prepare VS Code localization delta
+
+on:
+  push:
+    branches:
+      - 'officialization/**'
+    paths:
+      - '.github/workflows/sync-delta.yml'
+      - 'scripts/vsloc.mjs'
+  workflow_dispatch:
+    inputs:
+      vscode_version:
+        description: VS Code version to compare against the checked-in source snapshot
+        required: true
+        default: '1.140.0'
+
+permissions:
+  contents: read
+
+jobs:
+  delta:
+    runs-on: ubuntu-latest
+    env:
+      DEFAULT_VSCODE_VERSION: '1.140.0'
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Resolve VS Code version
+        id: version
+        shell: bash
+        run: |
+          VERSION="${{ inputs.vscode_version }}"
+          if [ -z "$VERSION" ]; then
+            VERSION="$DEFAULT_VSCODE_VERSION"
+          fi
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+
+      - name: Download VS Code
+        shell: bash
+        run: |
+          curl --fail --location --retry 3 \
+            "https://update.code.visualstudio.com/${{ steps.version.outputs.version }}/linux-deb-x64/stable" \
+            --output code.deb
+          dpkg-deb -x code.deb vscode-root
+          test -f vscode-root/usr/share/code/resources/app/package.json
+
+      - name: Extract source snapshot
+        run: |
+          node scripts/vsloc.mjs extract \
+            --app vscode-root/usr/share/code/resources/app \
+            --out source/en.new \
+            --ref-lang ru
+
+      - name: Generate localization delta
+        run: |
+          node scripts/vsloc.mjs diff \
+            --from source/en \
+            --to source/en.new \
+            --json todo.json
+
+      - name: Summarize delta
+        shell: bash
+        run: |
+          node - <<'NODE'
+          const fs = require('fs');
+          const todo = JSON.parse(fs.readFileSync('todo.json', 'utf8'));
+          let core = 0;
+          let extensions = 0;
+          for (const bucket of Object.values(todo.core || {})) core += Object.keys(bucket).length;
+          for (const ext of Object.values(todo.extensions || {})) {
+            for (const section of Object.values(ext || {})) extensions += Object.keys(section || {}).length;
+          }
+          const summary = [
+            '## Hebrew localization delta',
+            '',
+            `Target VS Code: ${todo.vscode || 'unknown'}`,
+            `Core strings requiring review: ${core}`,
+            `Built-in extension strings requiring review: ${extensions}`,
+            `Total requiring review: ${core + extensions}`,
+          ].join('\n');
+          fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, summary + '\n');
+          console.log(summary);
+          NODE
+
+      - name: Archive source snapshot
+        run: tar -czf source-en-new.tar.gz -C source en.new
+
+      - name: Upload delta artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: vscode-hebrew-delta-${{ steps.version.outputs.version }}
+          path: |
+            todo.json
+            source-en-new.tar.gz
