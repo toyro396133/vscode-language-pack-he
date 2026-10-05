@@ -3,6 +3,14 @@ name: Build & Release VSIX
 on:
   push:
     branches: [main]
+    paths:
+      - 'package.json'
+      - 'translations/**'
+      - 'README.md'
+      - 'CHANGELOG.md'
+      - 'LICENSE.md'
+      - 'languagepack.png'
+      - '.vscodeignore'
   workflow_dispatch:
 
 permissions:
@@ -24,7 +32,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
 
       - name: Install vsce
         run: npm install -g @vscode/vsce
@@ -37,14 +45,12 @@ jobs:
           root = pathlib.Path('.')
           errors = []
 
-          # כל קובץ JSON במאגר חייב להיות תקין
           for path in sorted(root.glob('translations/**/*.json')):
               try:
                   json.loads(path.read_text(encoding='utf-8'))
               except Exception as exc:
                   errors.append(f'{path}: JSON לא תקין — {exc}')
 
-          # כל נתיב שרשום במניפסט חייב להתקיים
           pkg = json.loads(pathlib.Path('package.json').read_text(encoding='utf-8'))
           entries = 0
           for loc in pkg.get('contributes', {}).get('localizations', []):
@@ -64,7 +70,6 @@ jobs:
         run: |
           VERSION=$(node -p "require('./package.json').version")
           TAG="v${VERSION}"
-          # גרסה זהה יכולה להידחף בכמה קומיטים — משייכים לתג ייחודי
           if git rev-parse -q --verify "refs/tags/${TAG}" >/dev/null; then
             TAG="v${VERSION}-build.${GITHUB_RUN_NUMBER}"
           fi
