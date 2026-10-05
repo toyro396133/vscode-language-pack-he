@@ -1,0 +1,207 @@
+{
+  "vscode": "1.140.0",
+  "kind": "new-source-translation",
+  "batch": "new-medium-01",
+  "entries": [
+    {
+      "en": "{0} is currently being updated. Please wait for the update to complete before launching.",
+      "he": "{0} מתעדכן כעת. המתן להשלמת העדכון לפני ההפעלה."
+    },
+    {
+      "en": "Match occurrences case-insensitively and independently of the Find widget.",
+      "he": "התאם מופעים ללא התחשבות ברישיות ובנפרד מווידג'ט החיפוש."
+    },
+    {
+      "en": "Match occurrences case-sensitively and independently of the Find widget.",
+      "he": "התאם מופעים תוך התחשבות ברישיות ובנפרד מווידג'ט החיפוש."
+    },
+    {
+      "en": "Use the Find widget's match case and whole word settings.",
+      "he": "השתמש בהגדרות התאמת הרישיות והמילה השלמה של ווידג'ט החיפוש."
+    },
+    {
+      "en": "Controls whether an indicator is rendered at the wrapping column of lines that wrap. Only has an effect when `#editor.wordWrap#` is enabled.",
+      "he": "קובע אם יוצג מחוון בעמודת הגלישה של שורות שנגלשות. משפיע רק כאשר `#editor.wordWrap#` מופעל."
+    },
+    {
+      "en": "Color of the indicator shown at the end of a soft wrapped line in the editor.",
+      "he": "צבע המחוון שמוצג בסוף שורה שנגלשה באופן רך בעורך."
+    },
+    {
+      "en": "The customization catalog could not complete the request (HTTP {0}). Try again later.",
+      "he": "קטלוג ההתאמות האישיות לא הצליח להשלים את הבקשה (HTTP {0}). נסה שוב מאוחר יותר."
+    },
+    {
+      "en": "The customization catalog page is invalid. Start a new search.",
+      "he": "העמוד בקטלוג ההתאמות האישיות אינו חוקי. התחל חיפוש חדש."
+    },
+    {
+      "en": "The customization catalog returned invalid JSON. Try again later.",
+      "he": "קטלוג ההתאמות האישיות החזיר JSON לא חוקי. נסה שוב מאוחר יותר."
+    },
+    {
+      "en": "The customization catalog returned an invalid response. Try again later.",
+      "he": "קטלוג ההתאמות האישיות החזיר תגובה לא חוקית. נסה שוב מאוחר יותר."
+    },
+    {
+      "en": "The customization catalog is receiving too many requests. Try again later.",
+      "he": "קטלוג ההתאמות האישיות מקבל יותר מדי בקשות. נסה שוב מאוחר יותר."
+    },
+    {
+      "en": "The customization catalog response is too large. Try a smaller page.",
+      "he": "התגובה מקטלוג ההתאמות האישיות גדולה מדי. נסה עמוד קטן יותר."
+    },
+    {
+      "en": "The customization catalog took too long to respond. Try again.",
+      "he": "קטלוג ההתאמות האישיות התעכב זמן רב מדי בתגובה. נסה שוב."
+    },
+    {
+      "en": "Unable to reach the customization catalog. Check your connection and try again.",
+      "he": "לא ניתן להגיע לקטלוג ההתאמות האישיות. בדוק את החיבור ונסה שוב."
+    },
+    {
+      "en": "The customization catalog returned too many unsupported entries. Try a different search.",
+      "he": "קטלוג ההתאמות האישיות החזיר יותר מדי רשומות שאינן נתמכות. נסה חיפוש אחר."
+    },
+    {
+      "en": "Sandboxing was disabled for this session through an approved bypass. You can enable it again.",
+      "he": "ארגז החול הושבת עבור הפעלה זו באמצעות עקיפה שאושרה. ניתן להפעיל אותו שוב."
+    },
+    {
+      "en": "Connection to {0} closed before recovery completed.",
+      "he": "החיבור אל {0} נסגר לפני שהשחזור הושלם."
+    },
+    {
+      "en": "Controls creation, messaging, and recursion safety limits for Agent Host session tools.",
+      "he": "קובע מגבלות בטיחות ליצירה, הודעות ורקורסיה עבור כלי ההפעלה של מארח הסוכן."
+    },
+    {
+      "en": "Whether Copilot agent sessions expose MCP servers provided by connected Copilot Connectors.",
+      "he": "האם הפעלות סוכן Copilot חושפות שרתי MCP שמסופקים על ידי מחברי Copilot מחוברים."
+    },
+    {
+      "en": "Whether the session list is served from the central catalog. When disabled, sessions are listed from provider metadata and per-session storage instead.",
+      "he": "האם רשימת ההפעלות מסופקת מהקטלוג המרכזי. כאשר האפשרות מושבתת, ההפעלות מוצגות במקום זאת ממטא-נתוני הספק ומאחסון נפרד לכל הפעלה."
+    },
+    {
+      "en": "Controls whether Copilot OpenTelemetry captures the authenticated account name, operating system username, and machine hostname. Independent of content capture.",
+      "he": "קובע אם Copilot OpenTelemetry אוסף את שם החשבון המאומת, שם המשתמש של מערכת ההפעלה ושם המארח של המחשב. הגדרה זו בלתי תלויה באיסוף תוכן."
+    },
+    {
+      "en": "Agent Merge was disabled because it could not confirm that {0} is still checked out. To resume, check out the branch you want to monitor and enable Agent Merge again.",
+      "he": "מיזוג הסוכן הושבת מכיוון שלא ניתן היה לאשר ש-{0} עדיין נמצא בצ'ק-אאוט. כדי להמשיך, בצע צ'ק-אאוט לענף שברצונך לנטר והפעל שוב את מיזוג הסוכן."
+    },
+    {
+      "en": "Agent Merge was disabled for a folder because no chat in this session works in it any more.",
+      "he": "מיזוג הסוכן הושבת עבור תיקייה מכיוון שאף צ'אט בהפעלה זו אינו עובד בה עוד."
+    },
+    {
+      "en": "Overrides the default thinking level shown in the model picker for Claude models. Empty uses the built-in default. Ignored for models that do not support the chosen level.",
+      "he": "עוקף את רמת החשיבה המוגדרת כברירת מחדל שמוצגת בבורר המודלים עבור מודלי Claude. ערך ריק משתמש בברירת המחדל המובנית. ההגדרה מתעלמת ממודלים שאינם תומכים ברמה שנבחרה."
+    },
+    {
+      "en": "Absolute path to a local Copilot runtime executable. Empty uses the bundled runtime.",
+      "he": "נתיב מוחלט לקובץ ההפעלה המקומי של סביבת הריצה של Copilot. ערך ריק משתמש בסביבת הריצה המצורפת."
+    },
+    {
+      "en": "When enabled, Copilot SDK sessions can use the experimental HydraFusion model.",
+      "he": "כאשר האפשרות מופעלת, הפעלות Copilot SDK יכולות להשתמש במודל HydraFusion הניסיוני."
+    },
+    {
+      "en": "Maximum number of characters available for skill descriptions in the Copilot SDK system message.",
+      "he": "מספר התווים המרבי הזמין לתיאורי מיומנויות בהודעת המערכת של Copilot SDK."
+    },
+    {
+      "en": "When enabled, Copilot SDK sessions force-enable tgrep indexed search, bypassing the repository-size threshold. Requires a local Git repository on a non-virtual filesystem.",
+      "he": "כאשר האפשרות מופעלת, הפעלות Copilot SDK מפעילות בכפייה חיפוש מאונדקס באמצעות tgrep ועוקפות את סף גודל המאגר. נדרש מאגר Git מקומי במערכת קבצים שאינה וירטואלית."
+    },
+    {
+      "en": "Cannot compute turn changes because the turn belongs to more than one chat.",
+      "he": "לא ניתן לחשב את שינויי התור מכיוון שהתור שייך ליותר מצ'אט אחד."
+    },
+    {
+      "en": "No checkpoint pair is available to compute turn changes using Git.",
+      "he": "אין זוג נקודות ביקורת זמין לחישוב שינויי התור באמצעות Git."
+    },
+    {
+      "en": "Cannot compute all turn changes using Git because the session includes non-Git folders.",
+      "he": "לא ניתן לחשב את כל שינויי התור באמצעות Git מכיוון שההפעלה כוללת תיקיות שאינן Git."
+    },
+    {
+      "en": "No checkpoint pair is available to compute turn changes in '{0}' using Git.",
+      "he": "אין זוג נקודות ביקורת זמין לחישוב שינויי התור ב-'{0}' באמצעות Git."
+    },
+    {
+      "en": "Git diff is unavailable for the requested turn in '{0}'.",
+      "he": "Git diff אינו זמין עבור התור המבוקש ב-'{0}'."
+    },
+    {
+      "en": "No working directory is available to compute turn changes using Git.",
+      "he": "אין תיקיית עבודה זמינה לחישוב שינויי התור באמצעות Git."
+    },
+    {
+      "en": "Changeset owner's working directory is not a Git repository: {0}",
+      "he": "תיקיית העבודה של בעל ערכת השינויים אינה מאגר Git: {0}"
+    },
+    {
+      "en": "A subagent could not be started or resumed. Its pending approval requests were cancelled. Start a new subagent to continue.",
+      "he": "לא ניתן היה להפעיל או לחדש תת-סוכן. בקשות האישור הממתינות שלו בוטלו. הפעל תת-סוכן חדש כדי להמשיך."
+    },
+    {
+      "en": "Session history changed while it was loading. Reopen the session to try again.",
+      "he": "היסטוריית ההפעלה השתנתה בזמן הטעינה. פתח מחדש את ההפעלה כדי לנסות שוב."
+    },
+    {
+      "en": "The Copilot runtime returned an invalid history cursor. Reopen the session to try again.",
+      "he": "סביבת הריצה של Copilot החזירה סמן היסטוריה לא חוקי. פתח מחדש את ההפעלה כדי לנסות שוב."
+    },
+    {
+      "en": "The sandbox capability '{0}' is unavailable on this host.",
+      "he": "יכולת ארגז החול '{0}' אינה זמינה במארח זה."
+    },
+    {
+      "en": "The /sandbox-policy command does not accept arguments.",
+      "he": "הפקודה `/sandbox-policy` אינה מקבלת ארגומנטים."
+    },
+    {
+      "en": "Docker failed to {0} Dev Container '{1}' (exit {2}): {3}",
+      "he": "Docker נכשל בביצוע {0} עבור Dev Container '{1}' (יציאה {2}): {3}"
+    },
+    {
+      "en": "Unable to check active VS Code sessions in Dev Container '{0}' (exit {1}): {2}",
+      "he": "לא ניתן לבדוק הפעלות VS Code פעילות ב-Dev Container '{0}' (יציאה {1}): {2}"
+    },
+    {
+      "en": "Allow Agent Merge to monitor the pull request for this chat's folder and work autonomously with these option changes? Unspecified options stay unchanged.",
+      "he": "לאפשר למיזוג הסוכן לנטר את בקשת המשיכה עבור תיקיית הצ'אט הזה ולעבוד באופן אוטונומי עם שינויי האפשרויות האלה? אפשרויות שלא צוינו יישארו ללא שינוי."
+    },
+    {
+      "en": "Stop Agent Merge monitoring and autonomous work for this chat's folder, and save these option changes? Unspecified options stay unchanged.",
+      "he": "להפסיק את ניטור מיזוג הסוכן ואת העבודה האוטונומית עבור תיקיית הצ'אט הזה ולשמור את שינויי האפשרויות האלה? אפשרויות שלא צוינו יישארו ללא שינוי."
+    },
+    {
+      "en": "Merge the pull request automatically when it is ready, including changes made by Agent Merge.",
+      "he": "מזג את בקשת המשיכה אוטומטית כאשר היא מוכנה, כולל שינויים שבוצעו על ידי מיזוג הסוכן."
+    },
+    {
+      "en": "Merge the pull request automatically when it is ready, only if Agent Merge has not made changes.",
+      "he": "מזג את בקשת המשיכה אוטומטית כאשר היא מוכנה, רק אם מיזוג הסוכן לא ביצע שינויים."
+    },
+    {
+      "en": "Do not resolve merge conflicts or update a behind branch.",
+      "he": "אל תפתור התנגשויות מיזוג ואל תעדכן ענף שנמצא מאחור."
+    },
+    {
+      "en": "Resolve merge conflicts and update the branch when it falls behind.",
+      "he": "פתור התנגשויות מיזוג ועדכן את הענף כאשר הוא נשאר מאחור."
+    },
+    {
+      "en": "Stop Agent Merge monitoring and autonomous work for this chat's folder?",
+      "he": "להפסיק את ניטור מיזוג הסוכן ואת העבודה האוטונומית עבור תיקיית הצ'אט הזה?"
+    },
+    {
+      "en": "Allow Agent Merge to monitor the pull request for this chat's folder and work autonomously using its existing options, including merging if configured?",
+      "he": "לאפשר למיזוג הסוכן לנטר את בקשת המשיכה עבור תיקיית הצ'אט הזה ולעבוד באופן אוטונומי באמצעות האפשרויות הקיימות שלו, כולל מיזוג אם הוגדר?"
+    }
+  ]
+}
