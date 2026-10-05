@@ -1,0 +1,307 @@
+{
+  "vscode": "1.140.0",
+  "kind": "new-source-translation",
+  "batch": "new-short-06",
+  "entries": [
+    {
+      "en": "Page visibility",
+      "he": "נראות הדף"
+    },
+    {
+      "en": "Page visibility: {0}.",
+      "he": "נראות הדף: {0}."
+    },
+    {
+      "en": "Host picker entries",
+      "he": "רשומות בבורר המארחים"
+    },
+    {
+      "en": "Unable to archive Dev Container session '{0}': {1}",
+      "he": "לא ניתן להעביר לארכיון את הפעלת Dev Container '{0}': {1}"
+    },
+    {
+      "en": "Dev Container Agent Host '{0}' did not reconnect.",
+      "he": "מארח הסוכן של Dev Container '{0}' לא התחבר מחדש."
+    },
+    {
+      "en": "Failed to rename {0}: {1}",
+      "he": "שינוי השם של {0} נכשל: {1}"
+    },
+    {
+      "en": "Rename Remote Agent Host",
+      "he": "שנה שם למארח הסוכן המרוחק"
+    },
+    {
+      "en": "Get Remote Session",
+      "he": "קבל הפעלה מרוחקת"
+    },
+    {
+      "en": "Reading remote session",
+      "he": "קורא הפעלה מרוחקת"
+    },
+    {
+      "en": "Read remote session",
+      "he": "קרא הפעלה מרוחקת"
+    },
+    {
+      "en": "Remote session on {0}",
+      "he": "הפעלה מרוחקת ב-{0}"
+    },
+    {
+      "en": ": Unavailable. {0}",
+      "he": ": לא זמין. {0}"
+    },
+    {
+      "en": "Remote session tools are disabled.",
+      "he": "כלי ההפעלה המרוחקת מושבתים."
+    },
+    {
+      "en": "Timed out reading the remote session's state.",
+      "he": "קריאת מצב ההפעלה המרוחקת חרגה מהזמן."
+    },
+    {
+      "en": "This session has no saved remote-session origin.",
+      "he": "להפעלה זו אין מקור שמור של הפעלה מרוחקת."
+    },
+    {
+      "en": "Timed out preparing the remote message.",
+      "he": "הכנת ההודעה המרוחקת חרגה מהזמן."
+    },
+    {
+      "en": "The target chat is archived or read-only.",
+      "he": "צ'אט היעד נמצא בארכיון או לקריאה בלבד."
+    },
+    {
+      "en": "A chat cannot send a remote message to itself.",
+      "he": "צ'אט אינו יכול לשלוח הודעה מרוחקת לעצמו."
+    },
+    {
+      "en": "The host connection is not available.",
+      "he": "החיבור למארח אינו זמין."
+    },
+    {
+      "en": "This host is dedicated to an existing session.",
+      "he": "מארח זה מוקצה להפעלה קיימת."
+    },
+    {
+      "en": "The workspace belongs to a different host.",
+      "he": "סביבת העבודה שייכת למארח אחר."
+    },
+    {
+      "en": "Workspace inspection failed: {0}",
+      "he": "בדיקת סביבת העבודה נכשלה: {0}"
+    },
+    {
+      "en": "The workspace is not a directory.",
+      "he": "סביבת העבודה אינה תיקייה."
+    },
+    {
+      "en": "The host does not support workspace-less sessions.",
+      "he": "המארח אינו תומך בהפעלות ללא סביבת עבודה."
+    },
+    {
+      "en": "The remote session link is invalid.",
+      "he": "הקישור להפעלה המרוחקת אינו חוקי."
+    },
+    {
+      "en": "Timed out reading the originating session's state.",
+      "he": "קריאת מצב הפעלת המקור חרגה מהזמן."
+    },
+    {
+      "en": "a matching remote host",
+      "he": "מארח מרוחק תואם"
+    },
+    {
+      "en": "Worktree base branch: {0}",
+      "he": "ענף הבסיס של עץ העבודה: {0}"
+    },
+    {
+      "en": "Create Remote Session?",
+      "he": "ליצור הפעלה מרוחקת?"
+    },
+    {
+      "en": "Delegate work to a matching remote agent host",
+      "he": "האצל עבודה למארח סוכן מרוחק תואם"
+    },
+    {
+      "en": "Create Remote Session",
+      "he": "צור הפעלה מרוחקת"
+    },
+    {
+      "en": "Creating remote session",
+      "he": "יוצר הפעלה מרוחקת"
+    },
+    {
+      "en": "Created remote session",
+      "he": "נוצרה הפעלה מרוחקת"
+    },
+    {
+      "en": "Requirements: {0}",
+      "he": "דרישות: {0}"
+    },
+    {
+      "en": "Created remote session on {0}",
+      "he": "נוצרה הפעלה מרוחקת ב-{0}"
+    },
+    {
+      "en": "Workspace: {0} ({1})",
+      "he": "סביבת עבודה: {0} ({1})"
+    },
+    {
+      "en": "List Agent Hosts",
+      "he": "הצג רשימת מארחי סוכן"
+    },
+    {
+      "en": "Reading remote agent hosts",
+      "he": "קורא מארחי סוכן מרוחקים"
+    },
+    {
+      "en": "Read remote agent hosts",
+      "he": "קרא מארחי סוכן מרוחקים"
+    },
+    {
+      "en": "Listed {0} remote agent hosts",
+      "he": "הוצגו {0} מארחי סוכן מרוחקים"
+    },
+    {
+      "en": "Send Remote Message",
+      "he": "שלח הודעה מרוחקת"
+    },
+    {
+      "en": "Sending a remote message",
+      "he": "שולח הודעה מרוחקת"
+    },
+    {
+      "en": "Remote messaging requires an originating chat.",
+      "he": "שליחת הודעות מרחוק דורשת צ'אט מקור."
+    },
+    {
+      "en": "Processed a remote message",
+      "he": "עובדה הודעה מרוחקת"
+    },
+    {
+      "en": "Queued a message on {0}",
+      "he": "הודעה הוכנסה לתור ב-{0}"
+    },
+    {
+      "en": "Sent a message on {0}",
+      "he": "נשלחה הודעה ב-{0}"
+    },
+    {
+      "en": "Required {0} logical CPUs; host reports unknown.",
+      "he": "נדרשים {0} מעבדים לוגיים; המארח מדווח שהכמות אינה ידועה."
+    },
+    {
+      "en": "Host ID does not match.",
+      "he": "מזהה המארח אינו תואם."
+    },
+    {
+      "en": "Required {0} logical CPUs; host reports {1}.",
+      "he": "נדרשים {0} מעבדים לוגיים; המארח מדווח על {1}."
+    },
+    {
+      "en": "Required {0} GiB of memory; host reports {1} GiB.",
+      "he": "נדרשים {0} GiB זיכרון; המארח מדווח על {1} GiB."
+    },
+    {
+      "en": "{0} must be a positive integer.",
+      "he": "{0} חייב להיות מספר שלם חיובי."
+    },
+    {
+      "en": "{0} must be {1} or {2}.",
+      "he": "{0} חייב להיות {1} או {2}."
+    },
+    {
+      "en": "{0} must be a positive number.",
+      "he": "{0} חייב להיות מספר חיובי."
+    },
+    {
+      "en": "{0} must be an object.",
+      "he": "{0} חייב להיות אובייקט."
+    },
+    {
+      "en": "{0} must be {1}, {2}, or {3}.",
+      "he": "{0} חייב להיות {1}, {2} או {3}."
+    },
+    {
+      "en": "{0} must be a non-empty string.",
+      "he": "{0} חייב להיות מחרוזת שאינה ריקה."
+    },
+    {
+      "en": "Required {0} GiB of memory; host reports unknown.",
+      "he": "נדרשים {0} GiB זיכרון; המארח מדווח שהכמות אינה ידועה."
+    },
+    {
+      "en": "Model {0}/{1} is not available.",
+      "he": "המודל {0}/{1} אינו זמין."
+    },
+    {
+      "en": "No usable agents have been advertised.",
+      "he": "לא פורסמו סוכנים שניתן להשתמש בהם."
+    },
+    {
+      "en": "Required platform {0}; host reports {1}.",
+      "he": "נדרשת פלטפורמה {0}; המארח מדווח על {1}."
+    },
+    {
+      "en": "Required platform {0}; host reports unknown.",
+      "he": "נדרשת פלטפורמה {0}; המארח מדווח שהפלטפורמה אינה ידועה."
+    },
+    {
+      "en": "{0} must not exceed {1} characters.",
+      "he": "{0} אינו יכול לחרוג מ-{1} תווים."
+    },
+    {
+      "en": "Unknown {0} property \"{1}\".",
+      "he": "המאפיין \"{1}\" של {0} אינו מוכר."
+    },
+    {
+      "en": "Running-session count is not available yet.",
+      "he": "מספר ההפעלות הפועלות עדיין אינו זמין."
+    },
+    {
+      "en": "The active chat is displayed as the session view.",
+      "he": "הצ'אט הפעיל מוצג כתצוגת ההפעלה."
+    },
+    {
+      "en": "{0}, branch {1}",
+      "he": "{0}, ענף {1}"
+    },
+    {
+      "en": "Automations from {0} are unavailable.",
+      "he": "אוטומציות מ-{0} אינן זמינות."
+    },
+    {
+      "en": "Automations from {0} are unavailable. {1}",
+      "he": "אוטומציות מ-{0} אינן זמינות. {1}"
+    },
+    {
+      "en": "{0} customizations",
+      "he": "{0} התאמות אישיות"
+    },
+    {
+      "en": "{0}, {1}, customization migrations available",
+      "he": "{0}, {1}, קיימות העברות של התאמות אישיות"
+    },
+    {
+      "en": "{0}, chat in folder {1}, updated {2}, {3}",
+      "he": "{0}, צ'אט בתיקייה {1}, עודכן {2}, {3}"
+    },
+    {
+      "en": "{0}, {1}, session has failing CI checks",
+      "he": "{0}, {1}, להפעלה יש בדיקות CI שנכשלו"
+    },
+    {
+      "en": "{0}, {1}, session needs input",
+      "he": "{0}, {1}, ההפעלה זקוקה לקלט"
+    },
+    {
+      "en": "{0}, {1}, contains unread sessions",
+      "he": "{0}, {1}, מכיל הפעלות שלא נקראו"
+    },
+    {
+      "en": "Configure External Sessions",
+      "he": "הגדר הפעלות חיצוניות"
+    }
+  ]
+}
