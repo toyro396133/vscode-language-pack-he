@@ -6,11 +6,13 @@ Move the mature community Hebrew translation into Microsoft's supported localiza
 
 ## Current state
 
-The community package currently targets VS Code 1.138 and already contains a large core + built-in-extension translation. The immediate engineering task is synchronization and quality assurance, not a new translation project.
+The community package now targets VS Code 1.140.0 and is synchronized against the matching English source snapshot.
 
-The next community release should be synchronized against the current stable VS Code source snapshot before it is presented as current.
+The finalized 1.140 release contains 26,084 core strings and 4,062 built-in-extension strings (30,146 total). The 1.138 → 1.140 source delta contained 1,683 items: 1,588 new strings and 95 changed English strings. All were reviewed or safely reused through exact translation memory, and the post-release delta against VS Code 1.140.0 is zero.
 
-## Phase A: make the community pack boringly reliable
+Release: https://github.com/toyro396133/vscode-language-pack-he/releases/tag/v1.140.0
+
+## Phase A: make the community pack boringly reliable — completed for 1.140
 
 1. Extract a fresh English source snapshot from the target VS Code build:
    `node scripts/vsloc.mjs extract --out source/en.new`
