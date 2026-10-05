@@ -139,10 +139,15 @@ for (const file of files) {
     manualSourceEntries++;
     for (const { location, ref } of targets) {
       if (seen.has(location)) {
-        errors.push(`${where}: duplicate target already translated in ${seen.get(location)}: ${location}`);
+        const previous = seen.get(location);
+        if (previous.he === entry.he) {
+          warnings.push(`${where}: duplicate target with identical translation already covered in ${previous.where}: ${location}`);
+          continue;
+        }
+        errors.push(`${where}: conflicting duplicate target already translated in ${previous.where}: ${location}`);
         continue;
       }
-      seen.set(location, where);
+      seen.set(location, { where, he: entry.he });
       setOverlay(manual, ref, entry.he);
       manualCount++;
     }
