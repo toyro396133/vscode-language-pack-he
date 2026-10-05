@@ -1,0 +1,307 @@
+{
+  "vscode": "1.140.0",
+  "kind": "new-source-translation",
+  "batch": "new-short-05",
+  "entries": [
+    {
+      "en": "Preparing worktree for Dev Container",
+      "he": "מכין עץ עבודה עבור Dev Container"
+    },
+    {
+      "en": "Starting Dev Container",
+      "he": "מפעיל Dev Container"
+    },
+    {
+      "en": "Choose Repository...",
+      "he": "בחר מאגר..."
+    },
+    {
+      "en": "GitHub sandbox sessions are not enabled.",
+      "he": "הפעלות ארגז החול של GitHub אינן מופעלות."
+    },
+    {
+      "en": "The GitHub sandbox draft is no longer available.",
+      "he": "טיוטת ארגז החול של GitHub אינה זמינה עוד."
+    },
+    {
+      "en": "Starting GitHub sandbox...",
+      "he": "מפעיל את ארגז החול של GitHub..."
+    },
+    {
+      "en": "Sandbox session not found.",
+      "he": "הפעלת ארגז החול לא נמצאה."
+    },
+    {
+      "en": "Could not capture connection information. {0}",
+      "he": "לא ניתן היה לאסוף את פרטי החיבור. {0}"
+    },
+    {
+      "en": "Open the report as plain text with {0}.",
+      "he": "פתח את הדוח כטקסט פשוט באמצעות {0}."
+    },
+    {
+      "en": "Show Connection Information",
+      "he": "הצג פרטי חיבור"
+    },
+    {
+      "en": "Log collection failed",
+      "he": "איסוף היומן נכשל"
+    },
+    {
+      "en": "Collection started at",
+      "he": "האיסוף התחיל ב-"
+    },
+    {
+      "en": "Connection-related Window log excerpt",
+      "he": "קטע מיומן החלון הקשור לחיבור"
+    },
+    {
+      "en": "Diagnostics copied.",
+      "he": "האבחון הועתק."
+    },
+    {
+      "en": "Copy Diagnostics",
+      "he": "העתק אבחון"
+    },
+    {
+      "en": "Could not copy. Try downloading diagnostics.",
+      "he": "לא ניתן היה להעתיק. נסה להוריד את האבחון."
+    },
+    {
+      "en": "Download Diagnostics",
+      "he": "הורד אבחון"
+    },
+    {
+      "en": "Could not download. Try copying diagnostics.",
+      "he": "לא ניתן היה להוריד. נסה להעתיק את האבחון."
+    },
+    {
+      "en": "Download requested.",
+      "he": "התבקשה הורדה."
+    },
+    {
+      "en": "Hidden from host picker",
+      "he": "מוסתר מבורר המארחים"
+    },
+    {
+      "en": "Connections managed on demand",
+      "he": "החיבורים מנוהלים לפי דרישה"
+    },
+    {
+      "en": "Disconnected. Automatic connection paused.",
+      "he": "מנותק. החיבור האוטומטי הושהה."
+    },
+    {
+      "en": "Hosts rediscovered and snapshot refreshed.",
+      "he": "המארחים התגלו מחדש ותמונת המצב רועננה."
+    },
+    {
+      "en": "Could not refresh connection information. {0}",
+      "he": "לא ניתן היה לרענן את פרטי החיבור. {0}"
+    },
+    {
+      "en": "Connection diagnostics report",
+      "he": "דוח אבחון חיבור"
+    },
+    {
+      "en": "Host restored to the picker.",
+      "he": "המארח הוחזר לבורר."
+    },
+    {
+      "en": "Snapshot refreshed.",
+      "he": "תמונת המצב רועננה."
+    },
+    {
+      "en": "Connection information",
+      "he": "פרטי חיבור"
+    },
+    {
+      "en": "The host is no longer available.",
+      "he": "המארח אינו זמין עוד."
+    },
+    {
+      "en": "The host is not hidden.",
+      "he": "המארח אינו מוסתר."
+    },
+    {
+      "en": "The host does not have manual connection controls.",
+      "he": "למארח אין פקדי חיבור ידניים."
+    },
+    {
+      "en": "Active tunnel hosts",
+      "he": "מארחי מנהרה פעילים"
+    },
+    {
+      "en": "Recent activity logs",
+      "he": "יומני פעילות אחרונים"
+    },
+    {
+      "en": "Advertised agents",
+      "he": "סוכנים שפורסמו"
+    },
+    {
+      "en": "Attempt elapsed at capture (ms)",
+      "he": "משך הניסיון בעת האיסוף (ms)"
+    },
+    {
+      "en": "Attempt started at",
+      "he": "הניסיון התחיל ב-"
+    },
+    {
+      "en": "Automatic connections enabled",
+      "he": "חיבורים אוטומטיים מופעלים"
+    },
+    {
+      "en": "Protocol client ID",
+      "he": "מזהה לקוח פרוטוקול"
+    },
+    {
+      "en": "Client protocol versions",
+      "he": "גרסאות פרוטוקול הלקוח"
+    },
+    {
+      "en": "Connection entry present",
+      "he": "רשומת חיבור קיימת"
+    },
+    {
+      "en": "{0}: connection entry removed.",
+      "he": "{0}: רשומת החיבור הוסרה."
+    },
+    {
+      "en": "{0}: connection requested ({1}).",
+      "he": "{0}: התבקש חיבור ({1})."
+    },
+    {
+      "en": "Disconnect reason",
+      "he": "סיבת הניתוק"
+    },
+    {
+      "en": "In last successful discovery",
+      "he": "בגילוי המוצלח האחרון"
+    },
+    {
+      "en": "Hosts in last successful discovery",
+      "he": "מארחים בגילוי המוצלח האחרון"
+    },
+    {
+      "en": "Discovery #{0} failed after {1} ms. {2}",
+      "he": "גילוי #{0} נכשל לאחר {1} ms. {2}"
+    },
+    {
+      "en": "Tunnel discovery failed",
+      "he": "גילוי המנהרה נכשל"
+    },
+    {
+      "en": "Tunnel discovery successful with {0} tunnels",
+      "he": "גילוי המנהרה הצליח עם {0} מנהרות"
+    },
+    {
+      "en": "Tunnel discovery not yet observed",
+      "he": "גילוי מנהרה עדיין לא נצפה"
+    },
+    {
+      "en": "Tunnel discovery successful with 1 tunnel",
+      "he": "גילוי המנהרה הצליח עם מנהרה אחת"
+    },
+    {
+      "en": "Tunnel discovery in progress",
+      "he": "גילוי מנהרה בתהליך"
+    },
+    {
+      "en": "Discovery #{0} started ({1}).",
+      "he": "גילוי #{0} התחיל ({1})."
+    },
+    {
+      "en": "Persistently dismissed",
+      "he": "הוסתר לצמיתות"
+    },
+    {
+      "en": "Remote hosts enabled",
+      "he": "מארחים מרוחקים מופעלים"
+    },
+    {
+      "en": "Last observed connection stage",
+      "he": "שלב החיבור האחרון שנצפה"
+    },
+    {
+      "en": "Last successful discovery",
+      "he": "הגילוי המוצלח האחרון"
+    },
+    {
+      "en": "Browser network signal: {0}.",
+      "he": "אות הרשת של הדפדפן: {0}."
+    },
+    {
+      "en": "Next reconnect attempt",
+      "he": "ניסיון החיבור מחדש הבא"
+    },
+    {
+      "en": "No discovery observed in this window.",
+      "he": "לא נצפה גילוי בחלון זה."
+    },
+    {
+      "en": "No connection entry",
+      "he": "אין רשומת חיבור"
+    },
+    {
+      "en": "Browser online signal",
+      "he": "אות המקוון של הדפדפן"
+    },
+    {
+      "en": "Connection attempt",
+      "he": "ניסיון חיבור"
+    },
+    {
+      "en": "Connection and discovery stages",
+      "he": "שלבי חיבור וגילוי"
+    },
+    {
+      "en": "Protocol connection",
+      "he": "חיבור פרוטוקול"
+    },
+    {
+      "en": "reconnecting; next attempt at {0}",
+      "he": "מתחבר מחדש; הניסיון הבא ב-{0}"
+    },
+    {
+      "en": "Secure browser context",
+      "he": "הקשר דפדפן מאובטח"
+    },
+    {
+      "en": "Server protocol versions",
+      "he": "גרסאות פרוטוקול השרת"
+    },
+    {
+      "en": "Remote host connection settings changed.",
+      "he": "הגדרות החיבור למארח המרוחק השתנו."
+    },
+    {
+      "en": "Connection setup (before protocol client)",
+      "he": "הגדרת החיבור (לפני לקוח הפרוטוקול)"
+    },
+    {
+      "en": "Stage observed at",
+      "he": "השלב נצפה ב-"
+    },
+    {
+      "en": "Standalone display mode",
+      "he": "מצב תצוגה עצמאי"
+    },
+    {
+      "en": "Connection status",
+      "he": "מצב החיבור"
+    },
+    {
+      "en": "Auto-connect suppressed",
+      "he": "חיבור אוטומטי נמנע"
+    },
+    {
+      "en": "Connection diagnostics",
+      "he": "אבחון חיבור"
+    },
+    {
+      "en": "Tunnel protocol version",
+      "he": "גרסת פרוטוקול המנהרה"
+    }
+  ]
+}
