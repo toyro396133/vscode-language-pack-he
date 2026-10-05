@@ -81,6 +81,12 @@ jobs:
             --remaining todo.remaining.json \
             --report translation-memory-report.json
 
+      - name: Generate deduplicated translation worklist
+        run: |
+          node scripts/translation-worklist.mjs \
+            --input todo.remaining.json \
+            --out translation-worklist.json
+
       - name: Summarize delta
         shell: bash
         run: |
@@ -117,4 +123,5 @@ jobs:
             todo.prefilled.json
             todo.remaining.json
             translation-memory-report.json
+            translation-worklist.json
             source-en-new.tar.gz
