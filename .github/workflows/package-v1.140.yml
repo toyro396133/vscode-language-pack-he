@@ -46,10 +46,34 @@ jobs:
         shell: bash
         run: |
           unzip -l hebrew-language-pack-1.140.0.vsix > vsix-contents.txt
-          if grep -E 'code\.deb|vscode-root/|translation-work/|source/en/|todo[^/]*\.json' vsix-contents.txt; then
+          unzip -Z1 hebrew-language-pack-1.140.0.vsix > vsix-files.txt
+
+          if grep -E '^extension/(code\.deb|vscode-root(/|$)|translation-work(/|$)|source/en(/|$)|todo[^/]*\.json)
+      - name: Upload VSIX
+        uses: actions/upload-artifact@v4
+        with:
+          name: vscode-hebrew-language-pack-1.140.0
+          path: |
+            hebrew-language-pack-1.140.0.vsix
+            translation-stats-1.140.json
+            vsix-contents.txt
+            vsix-files.txt
+ vsix-files.txt; then
             echo "VSIX contains build-only files" >&2
             exit 1
           fi
+
+          required=(
+            'extension/package.json'
+            'extension/translations/main.i18n.json'
+          )
+          for file in "${required[@]}"; do
+            if ! grep -Fxq "$file" vsix-files.txt; then
+              echo "VSIX is missing required file: $file" >&2
+              exit 1
+            fi
+          done
+
           echo "VSIX content check passed."
 
       - name: Upload VSIX
