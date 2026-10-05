@@ -7,6 +7,8 @@ on:
     paths:
       - '.github/workflows/sync-delta.yml'
       - 'scripts/vsloc.mjs'
+      - 'scripts/translation-memory.mjs'
+      - 'scripts/translation-worklist.mjs'
   workflow_dispatch:
     inputs:
       vscode_version:
