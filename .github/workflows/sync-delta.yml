@@ -73,6 +73,14 @@ jobs:
             --to source/en.new \
             --json todo.json
 
+      - name: Reuse exact translation memory
+        run: |
+          node scripts/translation-memory.mjs \
+            --todo todo.json \
+            --out todo.prefilled.json \
+            --remaining todo.remaining.json \
+            --report translation-memory-report.json
+
       - name: Summarize delta
         shell: bash
         run: |
@@ -106,4 +114,7 @@ jobs:
           name: vscode-hebrew-delta-${{ steps.version.outputs.version }}
           path: |
             todo.json
+            todo.prefilled.json
+            todo.remaining.json
+            translation-memory-report.json
             source-en-new.tar.gz
