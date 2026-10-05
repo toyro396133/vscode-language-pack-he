@@ -1,0 +1,307 @@
+{
+  "vscode": "1.140.0",
+  "kind": "new-source-translation",
+  "batch": "new-short-01",
+  "entries": [
+    {
+      "en": "Web",
+      "he": "Web"
+    },
+    {
+      "en": "Tier",
+      "he": "רמה"
+    },
+    {
+      "en": "user",
+      "he": "משתמש"
+    },
+    {
+      "en": ", {0}",
+      "he": ", {0}"
+    },
+    {
+      "en": "Quote",
+      "he": "ציטוט"
+    },
+    {
+      "en": "Author",
+      "he": "מחבר"
+    },
+    {
+      "en": "Cached",
+      "he": "במטמון"
+    },
+    {
+      "en": "Client",
+      "he": "לקוח"
+    },
+    {
+      "en": "Issue:",
+      "he": "סוגיה:"
+    },
+    {
+      "en": "Repair",
+      "he": "תקן"
+    },
+    {
+      "en": "Attempt",
+      "he": "ניסיון"
+    },
+    {
+      "en": "Cascade",
+      "he": "Cascade"
+    },
+    {
+      "en": "Desktop",
+      "he": "שולחן עבודה"
+    },
+    {
+      "en": "Trigger",
+      "he": "גורם מפעיל"
+    },
+    {
+      "en": "Verbose",
+      "he": "מפורט"
+    },
+    {
+      "en": "Approved",
+      "he": "אושר"
+    },
+    {
+      "en": "Confetti",
+      "he": "קונפטי"
+    },
+    {
+      "en": "Copy URI",
+      "he": "העתק URI"
+    },
+    {
+      "en": "Copy URL",
+      "he": "העתק כתובת URL"
+    },
+    {
+      "en": "Critique",
+      "he": "ביקורת"
+    },
+    {
+      "en": "Homepage",
+      "he": "דף הבית"
+    },
+    {
+      "en": "Keywords",
+      "he": "מילות מפתח"
+    },
+    {
+      "en": "Multiple",
+      "he": "מרובות"
+    },
+    {
+      "en": "Try This",
+      "he": "נסה זאת"
+    },
+    {
+      "en": "Celebrate",
+      "he": "חגוג"
+    },
+    {
+      "en": "Confetti!",
+      "he": "קונפטי!"
+    },
+    {
+      "en": "Connected",
+      "he": "מחובר"
+    },
+    {
+      "en": "Copy Hash",
+      "he": "העתק גיבוב"
+    },
+    {
+      "en": "Main pass",
+      "he": "מעבר ראשי"
+    },
+    {
+      "en": "New Agent",
+      "he": "סוכן חדש"
+    },
+    {
+      "en": "New Skill",
+      "he": "מיומנות חדשה"
+    },
+    {
+      "en": "Repairing",
+      "he": "מתקן"
+    },
+    {
+      "en": "automatic",
+      "he": "אוטומטי"
+    },
+    {
+      "en": "{0}: {1}.",
+      "he": "{0}: {1}."
+    },
+    {
+      "en": ", disabled",
+      "he": ", מושבת"
+    },
+    {
+      "en": "1 subagent",
+      "he": "תת-סוכן אחד"
+    },
+    {
+      "en": "Chat [{0}]",
+      "he": "צ'אט [{0}]"
+    },
+    {
+      "en": "Commit {0}",
+      "he": "קומיט {0}"
+    },
+    {
+      "en": "Configured",
+      "he": "מוגדר"
+    },
+    {
+      "en": "First pass",
+      "he": "מעבר ראשון"
+    },
+    {
+      "en": "Let’s cook",
+      "he": "בוא נבשל"
+    },
+    {
+      "en": "MCP server",
+      "he": "שרת MCP"
+    },
+    {
+      "en": "Manage {0}",
+      "he": "נהל את {0}"
+    },
+    {
+      "en": "New Prompt",
+      "he": "פרומפט חדש"
+    },
+    {
+      "en": "Selectable",
+      "he": "ניתן לבחירה"
+    },
+    {
+      "en": "Started at",
+      "he": "מועד התחלה"
+    },
+    {
+      "en": "Tool calls",
+      "he": "קריאות לכלים"
+    },
+    {
+      "en": "Usage: {0}",
+      "he": "שימוש: {0}"
+    },
+    {
+      "en": "View Setup",
+      "he": "הצג הגדרה"
+    },
+    {
+      "en": "selectable",
+      "he": "ניתן לבחירה"
+    },
+    {
+      "en": "{0} failed",
+      "he": "{0} נכשל"
+    },
+    {
+      "en": "All sources",
+      "he": "כל המקורות"
+    },
+    {
+      "en": "Captured at",
+      "he": "נאסף ב-"
+    },
+    {
+      "en": "Connect {0}",
+      "he": "התחבר אל {0}"
+    },
+    {
+      "en": "Fix-up pass",
+      "he": "מעבר תיקון"
+    },
+    {
+      "en": "Follow {0}.",
+      "he": "פעל לפי {0}."
+    },
+    {
+      "en": "GitHub Feed",
+      "he": "פיד GitHub"
+    },
+    {
+      "en": "HydraFusion",
+      "he": "HydraFusion"
+    },
+    {
+      "en": "MCP Gallery",
+      "he": "גלריית MCP"
+    },
+    {
+      "en": "MCP servers",
+      "he": "שרתי MCP"
+    },
+    {
+      "en": "Not Helpful",
+      "he": "לא מועיל"
+    },
+    {
+      "en": "Open '{0}'?",
+      "he": "לפתוח את '{0}'?"
+    },
+    {
+      "en": "Org default",
+      "he": "ברירת המחדל של הארגון"
+    },
+    {
+      "en": "Pick Folder",
+      "he": "בחר תיקייה"
+    },
+    {
+      "en": "Restore {0}",
+      "he": "שחזר את {0}"
+    },
+    {
+      "en": "Review pass",
+      "he": "מעבר סקירה"
+    },
+    {
+      "en": "Set Up Chat",
+      "he": "הגדר צ'אט"
+    },
+    {
+      "en": "Stage error",
+      "he": "שגיאת שלב"
+    },
+    {
+      "en": "This client",
+      "he": "לקוח זה"
+    },
+    {
+      "en": "Unavailable",
+      "he": "לא זמין"
+    },
+    {
+      "en": "Unsupported",
+      "he": "לא נתמך"
+    },
+    {
+      "en": "{0} Details",
+      "he": "פרטי {0}"
+    },
+    {
+      "en": "{0} Got it!",
+      "he": "{0} הבנתי!"
+    },
+    {
+      "en": "{0} for {1}",
+      "he": "{0} עבור {1}"
+    },
+    {
+      "en": "{0} running",
+      "he": "{0} פועל"
+    }
+  ]
+}
