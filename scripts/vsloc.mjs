@@ -308,7 +308,7 @@ function apply(o) {
 const o = args(process.argv.slice(2));
 const cmd = o._[0];
 if (cmd === 'extract') await extract(o);
-else if (cmd === 'status') process.exit(status(o) ? 0 : 0);
+else if (cmd === 'status') process.exit(status(o) ? 1 : 0);
 else if (cmd === 'diff') diff(o);
 else if (cmd === 'apply') apply(o);
 else {
