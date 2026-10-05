@@ -1,0 +1,207 @@
+{
+  "vscode": "1.140.0",
+  "kind": "new-source-translation",
+  "batch": "new-medium-05",
+  "entries": [
+    {
+      "en": "The agent host for {0} is not registered and connected in this Agents window.",
+      "he": "מארח הסוכן עבור {0} אינו רשום ומחובר בחלון הסוכנים הזה."
+    },
+    {
+      "en": "The originating chat or agent host connection changed.",
+      "he": "צ'אט המקור או החיבור למארח הסוכן השתנה."
+    },
+    {
+      "en": "The exact originating chat no longer exists on its agent host.",
+      "he": "צ'אט המקור המדויק אינו קיים עוד במארח הסוכן שלו."
+    },
+    {
+      "en": "The exact session or chat is no longer available: {0}",
+      "he": "ההפעלה או הצ'אט המדויקים אינם זמינים עוד: {0}"
+    },
+    {
+      "en": "Use an exact host-qualified session or chat reference returned by the remote session tools.",
+      "he": "השתמש בהפניה מדויקת להפעלה או לצ'אט הכוללת את המארח, כפי שהוחזרה על ידי כלי ההפעלה המרוחקת."
+    },
+    {
+      "en": "Remote delegation requires an originating chat on an Agent Host. Other chat providers are not supported.",
+      "he": "האצלת עבודה מרחוק דורשת צ'אט מקור במארח סוכן. ספקי צ'אט אחרים אינם נתמכים."
+    },
+    {
+      "en": "Remote session creation requires an originating session.",
+      "he": "יצירת הפעלה מרוחקת דורשת הפעלת מקור."
+    },
+    {
+      "en": "No workspace or files are inherited from this session.",
+      "he": "לא עוברים בירושה סביבת עבודה או קבצים מהפעלה זו."
+    },
+    {
+      "en": "List connected remote agent hosts and their resources",
+      "he": "הצג מארחי סוכן מרוחקים מחוברים ואת המשאבים שלהם"
+    },
+    {
+      "en": "Send this message to {0} on {1}? It will use the target chat's existing permissions and queue behind any active or pending turns.",
+      "he": "לשלוח הודעה זו אל {0} ב-{1}? היא תשתמש בהרשאות הקיימות של צ'אט היעד ותיכנס לתור אחרי תורים פעילים או ממתינים."
+    },
+    {
+      "en": "Send a message to a session on a connected agent host",
+      "he": "שלח הודעה להפעלה במארח סוכן מחובר"
+    },
+    {
+      "en": "Provide an exact session or chat reference returned by the remote session tools.",
+      "he": "ספק הפניה מדויקת להפעלה או לצ'אט שהוחזרה על ידי כלי ההפעלה המרוחקת."
+    },
+    {
+      "en": "{0} requires {1} isolation; an existing checkout is never switched to another branch.",
+      "he": "{0} דורש בידוד מסוג {1}; צ'ק-אאוט קיים לעולם אינו מועבר לענף אחר."
+    },
+    {
+      "en": "Host capabilities have not been received yet. Wait for host discovery to finish before creating a remote session.",
+      "he": "יכולות המארח עדיין לא התקבלו. המתן לסיום גילוי המארח לפני יצירת הפעלה מרוחקת."
+    },
+    {
+      "en": "Host does not support remote session delegation. Update the agent host.",
+      "he": "המארח אינו תומך בהאצלת הפעלות מרחוק. עדכן את מארח הסוכן."
+    },
+    {
+      "en": "Host is {0}. Establish a connection before creating a remote session; its capabilities are not available yet.",
+      "he": "מצב המארח הוא {0}. צור חיבור לפני יצירת הפעלה מרוחקת; היכולות שלו עדיין אינן זמינות."
+    },
+    {
+      "en": "{0} must identify an absolute folder using a file URI or a remote workspace URI from {1}.",
+      "he": "{0} חייב לזהות תיקייה מוחלטת באמצעות URI של קובץ או URI של סביבת עבודה מרוחקת מ-{1}."
+    },
+    {
+      "en": "Controls whether external sessions are shown in a separate External section instead of workspace or time groups. Pinned sessions and custom groups keep their placement.",
+      "he": "קובע אם הפעלות חיצוניות מוצגות במקטע 'חיצוני' נפרד במקום בקבוצות סביבת עבודה או זמן. הפעלות מוצמדות וקבוצות מותאמות אישית שומרות על מיקומן."
+    },
+    {
+      "en": "Controls whether the Done or Archived section is shown by default in the sessions list. This default is ignored after the corresponding filter is changed.",
+      "he": "קובע אם המקטע 'בוצע' או 'בארכיון' מוצג כברירת מחדל ברשימת ההפעלות. ברירת מחדל זו אינה בשימוש לאחר שינוי המסנן המתאים."
+    },
+    {
+      "en": "Controls whether collapsed sections in the sessions list show needs-input, CI-failure, or unread indicators for the unarchived sessions they contain.",
+      "he": "קובע אם מקטעים מכווצים ברשימת ההפעלות מציגים מחוונים לצורך בקלט, לכשלי CI או להפעלות שלא נקראו עבור ההפעלות שאינן בארכיון שהם מכילים."
+    },
+    {
+      "en": "Controls whether a confetti animation is shown when marking a session as done.",
+      "he": "קובע אם מוצגת הנפשת קונפטי כאשר מסמנים הפעלה כבוצעה."
+    },
+    {
+      "en": "Controls whether chats in a session are shown as individual tabs or whether the active chat is shown as the session view.",
+      "he": "קובע אם צ'אטים בהפעלה מוצגים כלשוניות נפרדות או שהצ'אט הפעיל מוצג כתצוגת ההפעלה."
+    },
+    {
+      "en": "Each chat is displayed as a tab in the session view.",
+      "he": "כל צ'אט מוצג כלשונית בתצוגת ההפעלה."
+    },
+    {
+      "en": "Automations from these providers are unavailable: {0}.",
+      "he": "אוטומציות מהספקים האלה אינן זמינות: {0}."
+    },
+    {
+      "en": "Automations from these providers are unavailable: {0}. {1}",
+      "he": "אוטומציות מהספקים האלה אינן זמינות: {0}. {1}"
+    },
+    {
+      "en": "Rename chat. Press Enter to confirm or Escape to cancel.",
+      "he": "שנה את שם הצ'אט. הקש Enter לאישור או Escape לביטול."
+    },
+    {
+      "en": "Rename session. Press Enter to confirm or Escape to cancel.",
+      "he": "שנה את שם ההפעלה. הקש Enter לאישור או Escape לביטול."
+    },
+    {
+      "en": "Controls which unarchived sessions are counted in the application badge when {0} is enabled. Sessions matching more than one enabled option are counted once.",
+      "he": "קובע אילו הפעלות שאינן בארכיון נספרות בתג היישום כאשר {0} מופעל. הפעלות שתואמות ליותר מאפשרות מופעלת אחת נספרות פעם אחת."
+    },
+    {
+      "en": "Count sessions with failing CI checks on an open, non-draft pull request that are no longer in progress and are not being handled by Agent Merge.",
+      "he": "ספור הפעלות עם בדיקות CI שנכשלו בבקשת משיכה פתוחה שאינה טיוטה, שאינן עוד בתהליך ואינן מטופלות על ידי מיזוג הסוכן."
+    },
+    {
+      "en": "Count unread sessions that are no longer in progress.",
+      "he": "ספור הפעלות שלא נקראו ואינן עוד בתהליך."
+    },
+    {
+      "en": "The selected provider does not currently provide Automation configuration.",
+      "he": "הספק שנבחר אינו מספק כרגע תצורת אוטומציה."
+    },
+    {
+      "en": "MCP server selected a non-http(s) destination ({0}), which is not allowed",
+      "he": "שרת ה-MCP בחר יעד שאינו http(s) ‏({0}), דבר שאינו מותר"
+    },
+    {
+      "en": "Telemetry contributions excluded by the selected block",
+      "he": "תרומות טלמטריה שהוחרגו על ידי המקטע שנבחר"
+    },
+    {
+      "en": "Excluded by higher-priority telemetry block (value omitted)",
+      "he": "הוחרג על ידי מקטע טלמטריה בעדיפות גבוהה יותר (הערך הושמט)"
+    },
+    {
+      "en": "The selected sources supply no managed-settings leaves.",
+      "he": "המקורות שנבחרו אינם מספקים ערכי קצה של הגדרות מנוהלות."
+    },
+    {
+      "en": "Controls the editor tab style when {0} is enabled, and the chat and side-panel tab style in the Agents window. High contrast themes retain explicit selection and focus borders.",
+      "he": "קובע את סגנון לשוניות העורך כאשר {0} מופעל, ואת סגנון לשוניות הצ'אט והחלונית הצדדית בחלון הסוכנים. ערכות נושא בניגודיות גבוהה שומרות על גבולות בחירה ומיקוד מפורשים."
+    },
+    {
+      "en": "Connect the active tab to the editor surface with an outside border and curved shoulders.",
+      "he": "חבר את הלשונית הפעילה למשטח העורך באמצעות גבול חיצוני וקצוות מעוגלים."
+    },
+    {
+      "en": "Background color of connected tabs in editor group title headers. Editor groups are the containers of editors.",
+      "he": "צבע הרקע של לשוניות מחוברות בכותרות של קבוצות עורכים. קבוצות עורכים הן המכלים של העורכים."
+    },
+    {
+      "en": "Plays a joyful sound / audio cue when confetti is shown.",
+      "he": "משמיע צליל שמח או רמז שמע כאשר מוצג קונפטי."
+    },
+    {
+      "en": "Provide information about how to access connection diagnostics accessibility help when the report is focused.",
+      "he": "ספק מידע כיצד לגשת לעזרת הנגישות של אבחון החיבור כאשר הדוח ממוקד."
+    },
+    {
+      "en": "Provide information about how to access accessibility help when discovering customizations.",
+      "he": "ספק מידע כיצד לגשת לעזרת נגישות בעת גילוי התאמות אישיות."
+    },
+    {
+      "en": "Announce the welcome message when a new session composer is shown.",
+      "he": "הכרז על הודעת הברכה כאשר מוצג עורך של הפעלה חדשה."
+    },
+    {
+      "en": "Provide information about how to access release notes accessibility help when the release notes are focused.",
+      "he": "ספק מידע כיצד לגשת לעזרת הנגישות של הערות הגרסה כאשר הערות הגרסה ממוקדות."
+    },
+    {
+      "en": "The GitHub Enterprise URL is unavailable. Sign in and try again.",
+      "he": "כתובת ה-URL של GitHub Enterprise אינה זמינה. התחבר ונסה שוב."
+    },
+    {
+      "en": "The plugin \"{0}\" has been enabled by your organization and cannot be disabled.",
+      "he": "התוסף \"{0}\" הופעל על ידי הארגון שלך ולא ניתן להשבית אותו."
+    },
+    {
+      "en": "This conversation is in use by another Codex app. Let any running task finish, then quit the app holding it open, such as ChatGPT, or exit the Codex CLI session.",
+      "he": "שיחה זו נמצאת בשימוש על ידי יישום Codex אחר. אפשר לכל משימה פועלת להסתיים, ולאחר מכן סגור את היישום שמחזיק אותה פתוחה, כגון ChatGPT, או צא מהפעלת Codex CLI."
+    },
+    {
+      "en": "The other app has locked this chat. It must release the lock before you can continue here.",
+      "he": "היישום האחר נעל את הצ'אט הזה. עליו לשחרר את הנעילה לפני שתוכל להמשיך כאן."
+    },
+    {
+      "en": "Quit the other app (e.g. ChatGPT, Codex CLI), then retry.",
+      "he": "צא מהיישום האחר (לדוגמה ChatGPT או Codex CLI), ולאחר מכן נסה שוב."
+    },
+    {
+      "en": "Couldn't prepare this conversation. Select Retry to try again. {0}",
+      "he": "לא ניתן היה להכין את השיחה הזו. בחר 'נסה שוב' כדי לנסות שוב. {0}"
+    },
+    {
+      "en": "HydraFusion routes the first eligible turn and may use multiple models. Premium usage varies with the selected route.",
+      "he": "HydraFusion מנתב את התור הראשון שמתאים ועשוי להשתמש במספר מודלים. השימוש בפרימיום משתנה בהתאם לנתיב שנבחר."
+    }
+  ]
+}
