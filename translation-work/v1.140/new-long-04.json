@@ -101,11 +101,11 @@
     },
     {
       "en": "Overrides the default thinking effort shown in the model picker for Claude models, in both Copilot Chat and local Copilot CLI (Agent Host) sessions. Remote Agent Host sessions are not affected. Leave empty to use the built-in default. Ignored if the model does not support the chosen level.",
-      "he": "עוקף את מאמץ החשיבה המוגדר כברירת מחדל שמוצג בבורר המודלים עבור מודלי Claude, הן ב-Copilot Chat והן בהפעלות מקומיות של Copilot CLI ‏(Agent Host). הפעלות מרוחקות של Agent Host אינן מושפעות. השאר ריק כדי להשתמש בברירת המחדל המובנית. ההגדרה מתעלמת אם המודל אינו תומך ברמה שנבחרה."
+      "he": "עוקף את מאמץ החשיבה המוגדר כברירת מחדל שמוצג בבורר המודלים עבור מודלי Claude, הן ב-Copilot Chat והן בהפעלות מקומיות של Copilot CLI (Agent Host). הפעלות מרוחקות של Agent Host אינן מושפעות. השאר ריק כדי להשתמש בברירת המחדל המובנית. ההגדרה מתעלמת אם המודל אינו תומך ברמה שנבחרה."
     },
     {
       "en": "When true (default), js-debug uses source maps to remap a non-`.js` `program` path to its compiled output before launching. Set to false to execute the `program` path exactly as written.",
-      "he": "כאשר הערך true (ברירת המחדל), ‏js-debug משתמש במפות מקור כדי למפות מחדש נתיב `program` שאינו מסתיים ב-`.js` אל הפלט המהודר שלו לפני ההפעלה. הגדר ל-false כדי להפעיל את נתיב `program` בדיוק כפי שנכתב."
+      "he": "כאשר הערך true (ברירת המחדל), js-debug משתמש במפות מקור כדי למפות מחדש נתיב `program` שאינו מסתיים ב-`.js` אל הפלט המהודר שלו לפני ההפעלה. הגדר ל-false כדי להפעיל את נתיב `program` בדיוק כפי שנכתב."
     },
     {
       "en": "Configure patterns, using `.gitignore` syntax, for folders to symlink from the current checkout into newly created worktrees. Only folders that match the patterns and are ignored by git (for example, listed in `.gitignore`) will be symlinked. Changes made through a symlink affect the folder in the current checkout.",
