@@ -78,6 +78,27 @@ jobs:
             --to source/en.new \
             --json todo.json
 
+      - name: Count localization delta
+        id: delta_state
+        shell: bash
+        run: |
+          node - <<'NODE'
+          const fs = require('fs');
+          const todo = JSON.parse(fs.readFileSync('todo.json', 'utf8'));
+          let total = 0;
+          for (const bucket of Object.values(todo.core || {})) {
+            total += Object.keys(bucket || {}).length;
+          }
+          for (const ext of Object.values(todo.extensions || {})) {
+            for (const section of Object.values(ext || {})) {
+              total += Object.keys(section || {}).length;
+            }
+          }
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, `count=${total}\n`);
+          fs.appendFileSync(process.env.GITHUB_OUTPUT, `has_delta=${total > 0 ? 'true' : 'false'}\n`);
+          console.log(`Localization delta items: ${total}`);
+          NODE
+
       - name: Reuse exact translation memory
         run: |
           node scripts/translation-memory.mjs \
@@ -93,7 +114,7 @@ jobs:
             --out translation-worklist.json
 
       - name: Compile reviewed translation batches
-        if: ${{ hashFiles('translation-work/v1.140/*.json') != '' }}
+        if: ${{ steps.delta_state.outputs.has_delta == 'true' && hashFiles('translation-work/v1.140/*.json') != '' }}
         run: |
           node scripts/compile-translation-batches.mjs \
             --todo todo.json \
