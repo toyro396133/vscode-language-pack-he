@@ -419,6 +419,7 @@
 	"scripts": {
 		"qa": "node scripts/vsloc.mjs status && node scripts/validate-translation.mjs",
 		"stats": "node scripts/translation-stats.mjs",
-		"package:vsix": "npx --yes @vscode/vsce package"
+		"package:vsix": "npx --yes @vscode/vsce package",
+		"memory": "node scripts/translation-memory.mjs"
 	}
 }
