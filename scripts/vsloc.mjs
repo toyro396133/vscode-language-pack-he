@@ -177,7 +177,10 @@ function loadTranslations() {
 
 function englishOf(value) {
   if (typeof value === 'string') return value;
-  if (value && typeof value === 'object' && typeof value.en === 'string') return value.en;
+  if (value && typeof value === 'object') {
+    if (typeof value.en === 'string') return value.en;
+    if (typeof value.message === 'string') return value.message;
+  }
   return undefined;
 }
 
