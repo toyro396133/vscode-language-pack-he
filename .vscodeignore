@@ -5,3 +5,7 @@
 scripts/**
 **/*.vsix
 source/**
+translation-work/**
+docs/**
+NOTICE-OFFICIALIZATION.md
+package.official-template.json
