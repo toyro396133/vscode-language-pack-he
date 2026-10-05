@@ -1,0 +1,307 @@
+{
+  "vscode": "1.140.0",
+  "kind": "new-source-translation",
+  "batch": "new-short-02",
+  "entries": [
+    {
+      "en": ", source {0}",
+      "he": ", מקור {0}"
+    },
+    {
+      "en": "5-hour limit",
+      "he": "מגבלת 5 שעות"
+    },
+    {
+      "en": "Browse mode.",
+      "he": "מצב עיון."
+    },
+    {
+      "en": "Compact View",
+      "he": "תצוגה קומפקטית"
+    },
+    {
+      "en": "Disconnected",
+      "he": "מנותק"
+    },
+    {
+      "en": "Dismiss Hint",
+      "he": "התעלם מהרמז"
+    },
+    {
+      "en": "Empty Groups",
+      "he": "קבוצות ריקות"
+    },
+    {
+      "en": "ExP Assigned",
+      "he": "ExP הוקצה"
+    },
+    {
+      "en": "Example: {0}",
+      "he": "דוגמה: {0}"
+    },
+    {
+      "en": "Hidden hosts",
+      "he": "מארחים מוסתרים"
+    },
+    {
+      "en": "Phase failed",
+      "he": "השלב נכשל"
+    },
+    {
+      "en": "Repairing...",
+      "he": "מתקן..."
+    },
+    {
+      "en": "Retry Repair",
+      "he": "נסה לתקן שוב"
+    },
+    {
+      "en": "Score: {0}/5",
+      "he": "ציון: {0}/5"
+    },
+    {
+      "en": "{0} {1}. {2}",
+      "he": "{0} {1}. {2}"
+    },
+    {
+      "en": "Agent Default",
+      "he": "ברירת המחדל של הסוכן"
+    },
+    {
+      "en": "Any feedback?",
+      "he": "יש משוב?"
+    },
+    {
+      "en": "Attempt phase",
+      "he": "שלב הניסיון"
+    },
+    {
+      "en": "Captured: {0}",
+      "he": "נאסף: {0}"
+    },
+    {
+      "en": "Critique pass",
+      "he": "מעבר ביקורת"
+    },
+    {
+      "en": "Disconnecting",
+      "he": "מתנתק"
+    },
+    {
+      "en": "Duration (ms)",
+      "he": "משך (ms)"
+    },
+    {
+      "en": "Imported {0}.",
+      "he": "יובא {0}."
+    },
+    {
+      "en": "Missing files",
+      "he": "קבצים חסרים"
+    },
+    {
+      "en": "Not connected",
+      "he": "לא מחובר"
+    },
+    {
+      "en": "Repair '{0}'?",
+      "he": "לתקן את '{0}'?"
+    },
+    {
+      "en": "Repaired {0}.",
+      "he": "התיקון של {0} הושלם."
+    },
+    {
+      "en": "Retry Install",
+      "he": "נסה להתקין שוב"
+    },
+    {
+      "en": "Revision pass",
+      "he": "מעבר שכתוב"
+    },
+    {
+      "en": "Search Remote",
+      "he": "חיפוש מרוחק"
+    },
+    {
+      "en": "Selected host",
+      "he": "המארח שנבחר"
+    },
+    {
+      "en": "Signing In...",
+      "he": "מתחבר..."
+    },
+    {
+      "en": "Try This: {0}",
+      "he": "נסה זאת: {0}"
+    },
+    {
+      "en": "no connection",
+      "he": "אין חיבור"
+    },
+    {
+      "en": "{0} cancelled",
+      "he": "{0} בוטל"
+    },
+    {
+      "en": "{0} subagents",
+      "he": "{0} תת-סוכנים"
+    },
+    {
+      "en": "{0}, archived",
+      "he": "{0}, בארכיון"
+    },
+    {
+      "en": "{0}. {1}. {2}",
+      "he": "{0}. {1}. {2}"
+    },
+    {
+      "en": "&&Open Example",
+      "he": "&&פתח דוגמה"
+    },
+    {
+      "en": "1 skill found.",
+      "he": "נמצאה מיומנות אחת."
+    },
+    {
+      "en": "Add PR Comment",
+      "he": "הוסף הערה לבקשת המשיכה"
+    },
+    {
+      "en": "Agent Feedback",
+      "he": "משוב סוכן"
+    },
+    {
+      "en": "Author Website",
+      "he": "אתר המחבר"
+    },
+    {
+      "en": "Back to Models",
+      "he": "חזרה למודלים"
+    },
+    {
+      "en": "Cached tunnels",
+      "he": "מנהרות במטמון"
+    },
+    {
+      "en": "Checks pending",
+      "he": "בדיקות ממתינות"
+    },
+    {
+      "en": "Connected {0}.",
+      "he": "החיבור אל {0} הושלם."
+    },
+    {
+      "en": "Connector: {0}",
+      "he": "מחבר: {0}"
+    },
+    {
+      "en": "Copilot Global",
+      "he": "Copilot גלובלי"
+    },
+    {
+      "en": "Disconnect {0}",
+      "he": "נתק את {0}"
+    },
+    {
+      "en": "Follow-up pass",
+      "he": "מעבר המשך"
+    },
+    {
+      "en": "GitHub Sandbox",
+      "he": "ארגז החול של GitHub"
+    },
+    {
+      "en": "Install '{0}'?",
+      "he": "להתקין את '{0}'?"
+    },
+    {
+      "en": "Installed {0}.",
+      "he": "ההתקנה של {0} הושלמה."
+    },
+    {
+      "en": "Installed: {0}",
+      "he": "מותקן: {0}"
+    },
+    {
+      "en": "Model: {0}/{1}",
+      "he": "מודל: {0}/{1}"
+    },
+    {
+      "en": "Not migratable",
+      "he": "לא ניתן להעברה"
+    },
+    {
+      "en": "Preview of {0}",
+      "he": "תצוגה מקדימה של {0}"
+    },
+    {
+      "en": "Repairing {0}.",
+      "he": "מתקן את {0}."
+    },
+    {
+      "en": "Show Chat Tabs",
+      "he": "הצג לשוניות צ'אט"
+    },
+    {
+      "en": "Something else",
+      "he": "משהו אחר"
+    },
+    {
+      "en": "Tunnel cluster",
+      "he": "אשכול מנהרות"
+    },
+    {
+      "en": "Workspace root",
+      "he": "שורש סביבת העבודה"
+    },
+    {
+      "en": "not selectable",
+      "he": "לא ניתן לבחירה"
+    },
+    {
+      "en": "{0} - {1}, {2}",
+      "he": "{0} - {1}, {2}"
+    },
+    {
+      "en": "{0}: {1}% used",
+      "he": "{0}: {1}% בשימוש"
+    },
+    {
+      "en": "1 customization",
+      "he": "התאמה אישית אחת"
+    },
+    {
+      "en": "Attempt trigger",
+      "he": "גורם הפעלת הניסיון"
+    },
+    {
+      "en": "Connecting {0}.",
+      "he": "מתחבר אל {0}."
+    },
+    {
+      "en": "Connection type",
+      "he": "סוג חיבור"
+    },
+    {
+      "en": "Copy Commit URL",
+      "he": "העתק כתובת URL של הקומיט"
+    },
+    {
+      "en": "Installing {0}.",
+      "he": "מתקין את {0}."
+    },
+    {
+      "en": "Letting it cook",
+      "he": "נותן לזה להתבשל"
+    },
+    {
+      "en": "Let’s cook, {0}",
+      "he": "בוא נבשל, {0}"
+    },
+    {
+      "en": "Mining at night",
+      "he": "כורה בלילה"
+    }
+  ]
+}
